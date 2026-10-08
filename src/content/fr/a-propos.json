@@ -13,7 +13,7 @@
       "ctas": [ { "label": "Parlons-nous!", "to": "@contact", "style": "violet" }, { "label": "Voir nos réalisations", "to": "@realisations", "style": "ghost" } ],
       "brief": [
         { "b": "Qui :", "t": "Charles-Erick et Jean-François BG, fondateurs des Viesigners." },
-        { "b": "Spécialités :", "t": "UX/UI, CRO, sites web, landing pages et design de produit SaaS et apps." },
+        { "b": "Spécialités :", "t": "UX/UI, CRO, sites web, landing pages et design de produit SaaS et applis." },
         { "b": "Où :", "t": "Québec et Vancouver, Canada — marchés francophones et anglophones." },
         { "b": "Reconnaissances :", "t": "top 3 % des experts web mondiaux (Toptal); projets reconnus par Awwwards, OCTAS, Osentreprendre et Gartner." }
       ]
@@ -41,7 +41,7 @@
       "items": [
         { "k": "Fondateurs", "v": "Charles-Erick et Jean-François BG — Maîtres en conception d'expériences web (2009)." },
         { "k": "Expérience", "v": "Plus de 30 années d'expérience combinée et plus de 600 projets numériques livrés." },
-        { "k": "Spécialités", "v": "UX/UI, optimisation du taux de conversion (CRO), sites web, landing pages, tunnels de vente, design de produit SaaS et apps, conseil d'affaires web." },
+        { "k": "Spécialités", "v": "UX/UI, optimisation du taux de conversion (CRO), sites web, landing pages, tunnels de vente, design de produit SaaS et applis, conseil d'affaires web." },
         { "k": "Réseau", "v": "Experts sélectionnés en publicité numérique, médias sociaux et SEO/GEO." },
         { "k": "Marchés", "v": "Plus de 30 domaines d'affaires, en français et en anglais, avec des clients dans plus de 6 pays." },
         { "k": "Bureaux", "v": "Québec et Vancouver, Canada." },

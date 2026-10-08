@@ -12,8 +12,14 @@
     "toptalJF": "https://www.toptal.com/designers/resume/jean-francois-b-g"
   },
   "legal": {
-    "privacy": "https://docs.google.com/document/d/1qTgYIzYSS77hyjOed2NVqTbrQTfDKk9Vxlm4z47uF14/edit?tab=t.0#heading=h.7ulsj23f40pu",
-    "terms": "https://docs.google.com/document/d/1Qe1i7yRyh_SQCOK9RA2f0hUM99DEfXp7pCj1Vf0PGFo/edit?tab=t.0#heading=h.3cv1kzs95pop"
+    "fr": {
+      "privacy": "https://docs.google.com/document/d/1qTgYIzYSS77hyjOed2NVqTbrQTfDKk9Vxlm4z47uF14/edit?tab=t.0#heading=h.7ulsj23f40pu",
+      "terms": "https://docs.google.com/document/d/1Qe1i7yRyh_SQCOK9RA2f0hUM99DEfXp7pCj1Vf0PGFo/edit?tab=t.0#heading=h.3cv1kzs95pop"
+    },
+    "en": {
+      "privacy": "https://docs.google.com/document/d/15IwzlyUQ20FT3wGHYUMsltzcC1zouH2p2N2FvbXbb6E/edit?tab=t.0#heading=h.nivmg1279y28",
+      "terms": "https://docs.google.com/document/d/1fbT0Is9NYfZ9j3fouXgxXuVtV1AcorlkK9uh-1A94PA/edit?tab=t.0#heading=h.cuaavcbi4l1k"
+    }
   },
   "hidden": [
     "a-propos",

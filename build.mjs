@@ -486,9 +486,9 @@ function footer(c) {
     <div><h2>${esc(T.nav.services)}</h2><ul>${SERVICE_KEYS.filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.nav[k])}</a></li>`).join('')}</ul></div>
     <div><h2>${esc(T.footer.company)}</h2><ul>${['a-propos', 'realisations', 'actualites', 'contact'].filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.nav[k])}</a></li>`).join('')}</ul></div>
     <div><h2>${esc(T.nav.contact)}</h2><address><span>Québec, Canada</span><span>Vancouver, Canada</span><a href="tel:${CFG.phoneRaw}">${esc(CFG.phone)}</a></address>
-      <div class="footer__social"><a href="${CFG.social.facebook}" rel="noopener me" aria-label="Facebook">${ico('fb')}</a><a href="${CFG.social.linkedin}" rel="noopener me" aria-label="LinkedIn">${ico('in')}</a></div></div>
+      <div class="footer__social"><a href="${CFG.social.facebook}" target="_blank" rel="noopener noreferrer me" aria-label="Facebook ${esc(T.newTab)}">${ico('fb')}</a><a href="${CFG.social.linkedin}" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn ${esc(T.newTab)}">${ico('in')}</a></div></div>
   </div>
-  <div class="footer__base"><span>© ${new Date().getFullYear()} ${esc(T.footer.rights)}</span><span><a href="${CFG.legal.privacy}" rel="noopener">${esc(T.footer.privacy)}</a> · <a href="${CFG.legal.terms}" rel="noopener">${esc(T.footer.terms)}</a></span></div>
+  <div class="footer__base"><span>© ${new Date().getFullYear()} ${esc(T.footer.rights)}</span><span><a href="${CFG.legal[lang].privacy}" target="_blank" rel="noopener noreferrer" aria-label="${esc(T.footer.privacy)} ${esc(T.newTab)}">${esc(T.footer.privacy)}</a> · <a href="${CFG.legal[lang].terms}" target="_blank" rel="noopener noreferrer" aria-label="${esc(T.footer.terms)} ${esc(T.newTab)}">${esc(T.footer.terms)}</a></span></div>
 </div></footer>`;
 }
 

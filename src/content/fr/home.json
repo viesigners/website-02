@@ -1,7 +1,7 @@
 {
  "meta": {
-  "title": "Viesigners | Agence web Québec : sites, tunnels, SaaS & apps",
-  "description": "Micro-agence web canadienne en UX/UI et CRO : sites web, landing pages, tunnels de vente, design de produit SaaS et apps. Multipliez vos ventes et votre revenu par client.",
+  "title": "Viesigners | Agence web Québec : sites, tunnels, SaaS & applis",
+  "description": "Micro-agence web canadienne en UX/UI et CRO : sites web, landing pages, tunnels de vente, design de produit SaaS et applis. Multipliez vos ventes et votre revenu par client.",
   "h1": "On t'aide à faire du Web ton Avantage déloyal"
  },
  "sections": [
@@ -147,7 +147,7 @@
      "span": "c-6",
      "to": "@design-produit",
      "cta": "Voir le service",
-     "title": "Optimisation UX/UI pour SaaS et apps mobiles",
+     "title": "Optimisation UX/UI pour SaaS et applis mobiles",
      "desc": "Bâtissez une expérience d'application de classe mondiale pour votre SaaS ou vos applications mobiles.",
      "mini": true
     },

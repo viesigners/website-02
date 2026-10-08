@@ -1,78 +1,200 @@
 {
-  "meta": {
-    "title": "Landing pages et tunnels de vente qui convertissent | Viesigners",
-    "description": "Landing pages et tunnels de vente conçus pour doubler ou tripler vos demandes et vos clients : offre, design, rédaction persuasive et développement rapide.",
-    "h1": "Création de landing page et de tunnel de vente qui convertissent"
+ "meta": {
+  "title": "Landing pages et tunnels de vente qui convertissent | Viesigners",
+  "description": "Landing pages et tunnels de vente conçus pour doubler ou tripler vos demandes et vos clients : offre, design, rédaction persuasive et développement rapide.",
+  "h1": "Création de landing page et de tunnel de vente qui convertissent"
+ },
+ "service": {
+  "name": "Landing pages et tunnels de vente",
+  "type": "Conception de landing pages, tunnels de vente et optimisation du taux de conversion",
+  "audience": "Entreprises de services, SaaS, consultants et coachs"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tag": "Landing pages et tunnels de vente",
+   "h1": "Doublez ou triplez vos *demandes et clients*",
+   "lead": "Nous avons triplé systématiquement les revenus de nos clients PME et généré jusqu'à 3500 % de hausse de demandes reçues avec des budgets publicitaires minimes, grâce à la performance de nos pages.",
+   "guarantee": "Augmentation de la performance garantie!",
+   "ctas": [
+    {
+     "label": "Discuter d'un projet",
+     "to": "@contact",
+     "style": "violet"
+    }
+   ],
+   "brief": [
+    {
+     "b": "Pour qui :",
+     "t": "entreprises de services, SaaS, consultants et coachs qui veulent plus de demandes, de rendez-vous et d'appels."
+    },
+    {
+     "b": "Ce que vous obtenez :",
+     "t": "architecture d'offre, design, rédaction persuasive et développement rapide, adapté au mobile."
+    },
+    {
+     "b": "Preuve :",
+     "t": "jusqu'à 3500 % de hausse de demandes avec des budgets publicitaires minimes."
+    },
+    {
+     "b": "Approche :",
+     "t": "notre ingénierie de landing page signature, appliquée à votre écosystème numérique."
+    }
+   ]
   },
-  "service": { "name": "Landing pages et tunnels de vente", "type": "Conception de landing pages, tunnels de vente et optimisation du taux de conversion", "audience": "Entreprises de services, SaaS, consultants et coachs" },
-  "sections": [
+  {
+   "type": "statement",
+   "wide": true,
+   "text": "Nous ne jouons pas aux devinettes. Nous appliquons notre *ingénierie de landing page signature* dans votre écosystème numérique, pour répliquer ce succès.",
+   "prose": [
+    "Une landing page (ou page de destination) a une seule mission : amener un visiteur précis à poser un seul geste. Chaque élément qui ne sert pas ce geste est de la friction.",
+    "Un tunnel de vente va plus loin : il enchaîne plusieurs pages et étapes (page d'atterrissage, formulaire, confirmation, suivi) pour accompagner la personne de l'intérêt jusqu'à la décision."
+   ]
+  },
+  {
+   "type": "deliverables",
+   "id": "inclus",
+   "h2": "Ce que votre page ou tunnel *inclut*",
+   "items": [
     {
-      "type": "page-hero",
-      "tag": "Landing pages et tunnels de vente",
-      "h1": "Doublez ou triplez vos *demandes et clients*",
-      "lead": "Nous avons triplé systématiquement les revenus de nos clients PME et généré jusqu'à 3500 % de hausse de demandes reçues avec des budgets publicitaires minimes, grâce à la performance de nos pages.",
-      "guarantee": "Augmentation de la performance garantie!",
-      "ctas": [ { "label": "Discuter d'un projet", "to": "@contact", "style": "violet" }, { "label": "Voir l'offre complète ↗", "to": "https://landingpage.viesigners.com/", "style": "ghost" } ],
-      "brief": [
-        { "b": "Pour qui :", "t": "entreprises de services, SaaS, consultants et coachs qui veulent plus de demandes, de rendez-vous et d'appels." },
-        { "b": "Ce que vous obtenez :", "t": "architecture d'offre, design, rédaction persuasive et développement rapide, adapté au mobile." },
-        { "b": "Preuve :", "t": "jusqu'à 3500 % de hausse de demandes avec des budgets publicitaires minimes." },
-        { "b": "Approche :", "t": "notre ingénierie de landing page signature, appliquée à votre écosystème numérique." }
-      ]
+     "h": "Architecture d'offre convaincante",
+     "p": "Votre offre est clarifiée, structurée et formulée pour mettre la valeur de votre service de l'avant dès les premières secondes."
     },
     {
-      "type": "statement", "wide": true,
-      "text": "Nous ne jouons pas aux devinettes. Nous appliquons notre *ingénierie de landing page signature* dans votre écosystème numérique, pour répliquer ce succès.",
-      "prose": [
-        "Une landing page (ou page de destination) a une seule mission : amener un visiteur précis à poser un seul geste. Chaque élément qui ne sert pas ce geste est de la friction.",
-        "Un tunnel de vente va plus loin : il enchaîne plusieurs pages et étapes (page d'atterrissage, formulaire, confirmation, suivi) pour accompagner la personne de l'intérêt jusqu'à la décision."
-      ]
+     "h": "Conception graphique",
+     "p": "Un design crédible et invitant, qui guide l'œil vers l'action et inspire confiance sans distraire."
     },
     {
-      "type": "deliverables", "id": "inclus",
-      "h2": "Ce que votre page ou tunnel *inclut*",
-      "items": [
-        { "h": "Architecture d'offre convaincante", "p": "Votre offre est clarifiée, structurée et formulée pour mettre la valeur de votre service de l'avant dès les premières secondes." },
-        { "h": "Conception graphique", "p": "Un design crédible et invitant, qui guide l'œil vers l'action et inspire confiance sans distraire." },
-        { "h": "Rédaction web", "p": "Des textes basés sur la psychologie de la vente et optimisés pour les moteurs de recherche (SEO), avec réponses aux objections et preuves sociales." },
-        { "h": "Développement web", "p": "Des pages rapides et évolutives, adaptées aux plateformes mobiles, où la vitesse de chargement ne coûte aucune conversion." },
-        { "h": "Tunnel et suivi", "p": "Formulaire, page de confirmation, courriels de suivi et connexion à votre outil de gestion des clients, selon votre besoin." },
-        { "h": "Mesure et tests", "p": "Suivi des conversions dès le premier jour et pistes de tests pour améliorer le rendement de la page dans le temps." }
-      ]
+     "h": "Rédaction web",
+     "p": "Des textes basés sur la psychologie de la vente et optimisés pour les moteurs de recherche (SEO), avec réponses aux objections et preuves sociales."
     },
     {
-      "type": "process",
-      "h2": "De l'offre à la *conversion*, étape par étape",
-      "steps": [
-        { "h": "Offre et audience", "p": "Nous définissons à qui vous parlez, quel problème vous résolvez et quelle action vous voulez obtenir.", "out": "Livrable : proposition de valeur et objectif de conversion." },
-        { "h": "Architecture et rédaction", "p": "Nous ordonnons les arguments, écrivons les textes et préparons les preuves.", "out": "Livrable : structure et textes validés." },
-        { "h": "Design et développement", "p": "Nous concevons, développons et testons la page sur mobile et ordinateur.", "out": "Livrable : page ou tunnel prêt à publier." },
-        { "h": "Lancement et optimisation", "p": "Nous mesurons le comportement réel et ajustons ce qui freine encore les demandes.", "out": "Livrable : résultats suivis et plan de tests." }
-      ]
+     "h": "Développement web",
+     "p": "Des pages rapides et évolutives, adaptées aux plateformes mobiles, où la vitesse de chargement ne coûte aucune conversion."
     },
     {
-      "type": "compare",
-      "h2": "Page ordinaire ou *page qui convertit?*",
-      "before": { "h": "Page ordinaire", "items": ["Plusieurs messages et plusieurs boutons concurrents", "Parle des caractéristiques plutôt que du bénéfice", "Chargement lent sur mobile", "On publie, puis on espère"] },
-      "after": { "h": "Landing page Viesigners", "items": ["Un message, un public, une action", "Valeur claire, objections traitées, preuves visibles", "Rapide et lisible sur tous les écrans", "Mesure, tests et amélioration continue"] }
+     "h": "Tunnel et suivi",
+     "p": "Formulaire, page de confirmation, courriels de suivi et connexion à votre outil de gestion des clients, selon votre besoin."
     },
     {
-      "type": "proof",
-      "items": [
-        { "n": "3500 %", "t": "de hausse de demandes reçues, avec des budgets publicitaires minimes" },
-        { "n": "3×", "t": "les revenus de nos clients PME, systématiquement triplés" },
-        { "n": "5×", "t": "jusqu'à cinq fois la performance initiale des pages optimisées" }
-      ]
+     "h": "Mesure et tests",
+     "p": "Suivi des conversions dès le premier jour et pistes de tests pour améliorer le rendement de la page dans le temps."
+    }
+   ]
+  },
+  {
+   "type": "process",
+   "h2": "De l'offre à la *conversion*, étape par étape",
+   "steps": [
+    {
+     "h": "Offre et audience",
+     "p": "Nous définissons à qui vous parlez, quel problème vous résolvez et quelle action vous voulez obtenir.",
+     "out": "Livrable : proposition de valeur et objectif de conversion."
     },
-    { "type": "faq", "h2": "Questions fréquentes sur les *landing pages*", "open": true },
-    { "type": "cta-final", "h2": "Prêt à *doubler vos demandes?*", "p": "Dites-nous quelle action vous voulez obtenir. Nous concevons la page qui y mène.", "cta": "Discuter d'un projet" }
-  ],
-  "faq": [
-    { "q": "Qu'est-ce qu'une landing page (page de destination)?", "a": ["Une landing page est une page web unique, créée pour une seule action précise : demander une soumission, réserver un appel, s'inscrire. Contrairement à un site complet, elle retire la navigation et les distractions pour concentrer le visiteur sur cet objectif."] },
-    { "q": "Quelle est la différence entre une landing page et un tunnel de vente?", "a": ["Une landing page est une seule page. Un tunnel de vente est une suite d'étapes (par exemple : page d'atterrissage, formulaire, page de confirmation, courriels de suivi) qui guide la personne jusqu'à la décision d'achat ou de prise de contact."] },
-    { "q": "Qu'est-ce qui fait qu'une landing page convertit?", "a": ["Les éléments qui comptent le plus : une offre claire dès l'écran d'accueil, un seul appel à l'action, des preuves sociales crédibles, des réponses aux objections, un chargement rapide sur mobile et un formulaire sans friction inutile."] },
-    { "q": "Dois-je faire de la publicité pour que ça fonctionne?", "a": ["Non, mais la publicité accélère les résultats : une bonne page transforme chaque clic en plus de demandes. Nous avons obtenu jusqu'à 3500 % de hausse de demandes avec des budgets publicitaires minimes. Voyez aussi notre service de [publicité numérique](@publicite)."] },
-    { "q": "En combien de temps verrai-je des résultats?", "a": ["Les premières données arrivent dès que la page reçoit du trafic. Le rythme dépend de votre volume de visiteurs; nous suivons les conversions dès le lancement et ajustons en fonction de ce que les données montrent."] },
-    { "q": "Offrez-vous une garantie?", "a": ["Oui. Chaque service vient avec une garantie que les autres agences n'osent pas offrir. [Contactez-nous](@contact) pour en connaître les détails."] }
-  ]
+    {
+     "h": "Architecture et rédaction",
+     "p": "Nous ordonnons les arguments, écrivons les textes et préparons les preuves.",
+     "out": "Livrable : structure et textes validés."
+    },
+    {
+     "h": "Design et développement",
+     "p": "Nous concevons, développons et testons la page sur mobile et ordinateur.",
+     "out": "Livrable : page ou tunnel prêt à publier."
+    },
+    {
+     "h": "Lancement et optimisation",
+     "p": "Nous mesurons le comportement réel et ajustons ce qui freine encore les demandes.",
+     "out": "Livrable : résultats suivis et plan de tests."
+    }
+   ]
+  },
+  {
+   "type": "compare",
+   "h2": "Page ordinaire ou *page qui convertit?*",
+   "before": {
+    "h": "Page ordinaire",
+    "items": [
+     "Plusieurs messages et plusieurs boutons concurrents",
+     "Parle des caractéristiques plutôt que du bénéfice",
+     "Chargement lent sur mobile",
+     "On publie, puis on espère"
+    ]
+   },
+   "after": {
+    "h": "Landing page Viesigners",
+    "items": [
+     "Un message, un public, une action",
+     "Valeur claire, objections traitées, preuves visibles",
+     "Rapide et lisible sur tous les écrans",
+     "Mesure, tests et amélioration continue"
+    ]
+   }
+  },
+  {
+   "type": "proof",
+   "items": [
+    {
+     "n": "3500 %",
+     "t": "de hausse de demandes reçues, avec des budgets publicitaires minimes"
+    },
+    {
+     "n": "3×",
+     "t": "les revenus de nos clients PME, systématiquement triplés"
+    },
+    {
+     "n": "5×",
+     "t": "jusqu'à cinq fois la performance initiale des pages optimisées"
+    }
+   ]
+  },
+  {
+   "type": "faq",
+   "h2": "Questions fréquentes sur les *landing pages*",
+   "open": true
+  },
+  {
+   "type": "cta-final",
+   "h2": "Prêt à *doubler vos demandes?*",
+   "p": "Dites-nous quelle action vous voulez obtenir. Nous concevons la page qui y mène.",
+   "cta": "Discuter d'un projet"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Qu'est-ce qu'une landing page (page de destination)?",
+   "a": [
+    "Une landing page est une page web unique, créée pour une seule action précise : demander une soumission, réserver un appel, s'inscrire. Contrairement à un site complet, elle retire la navigation et les distractions pour concentrer le visiteur sur cet objectif."
+   ]
+  },
+  {
+   "q": "Quelle est la différence entre une landing page et un tunnel de vente?",
+   "a": [
+    "Une landing page est une seule page. Un tunnel de vente est une suite d'étapes (par exemple : page d'atterrissage, formulaire, page de confirmation, courriels de suivi) qui guide la personne jusqu'à la décision d'achat ou de prise de contact."
+   ]
+  },
+  {
+   "q": "Qu'est-ce qui fait qu'une landing page convertit?",
+   "a": [
+    "Les éléments qui comptent le plus : une offre claire dès l'écran d'accueil, un seul appel à l'action, des preuves sociales crédibles, des réponses aux objections, un chargement rapide sur mobile et un formulaire sans friction inutile."
+   ]
+  },
+  {
+   "q": "Dois-je faire de la publicité pour que ça fonctionne?",
+   "a": [
+    "Non, mais la publicité accélère les résultats : une bonne page transforme chaque clic en plus de demandes. Nous avons obtenu jusqu'à 3500 % de hausse de demandes avec des budgets publicitaires minimes. Voyez aussi notre service de [publicité numérique](@publicite)."
+   ]
+  },
+  {
+   "q": "En combien de temps verrai-je des résultats?",
+   "a": [
+    "Les premières données arrivent dès que la page reçoit du trafic. Le rythme dépend de votre volume de visiteurs; nous suivons les conversions dès le lancement et ajustons en fonction de ce que les données montrent."
+   ]
+  },
+  {
+   "q": "Offrez-vous une garantie?",
+   "a": [
+    "Oui. Chaque service vient avec une garantie que les autres agences n'osent pas offrir. [Contactez-nous](@contact) pour en connaître les détails."
+   ]
+  }
+ ]
 }

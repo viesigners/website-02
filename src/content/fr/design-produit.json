@@ -1,14 +1,14 @@
 {
   "meta": {
-    "title": "Design de produit SaaS et apps mobiles — UX/UI | Viesigners",
+    "title": "Design de produit SaaS et applis mobiles — UX/UI | Viesigners",
     "description": "Optimisation UX/UI pour SaaS et applications mobiles : parcours usagers, systèmes de design, recherche utilisateurs et rédaction UX. Primés aux OCTAS, Osentreprendre et Gartner.",
-    "h1": "Optimisation UX/UI pour SaaS et apps mobiles"
+    "h1": "Optimisation UX/UI pour SaaS et applis mobiles"
   },
   "service": { "name": "Design de produit — UX/UI pour SaaS et applications mobiles", "type": "Design de produit numérique, UX/UI, systèmes de design", "audience": "Entreprises SaaS, scale-ups et créateurs d'applications mobiles" },
   "sections": [
     {
       "type": "page-hero",
-      "tag": "Design de produit — SaaS et apps",
+      "tag": "Design de produit — SaaS et applis",
       "h1": "Bâtissez une expérience d'application *de classe mondiale*",
       "lead": "Nous avons aidé une scale-up internationale à sécuriser 320 M$+ de financement et remporté des prix prestigieux pour le lancement et l'optimisation d'applications (OCTAS, Osentreprendre, Gartner).",
       "guarantee": "Satisfaction garantie!",

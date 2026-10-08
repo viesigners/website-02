@@ -200,7 +200,7 @@ em.acc, .acc {
 @media (min-width: 900px) { .drawer__in { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); } .drawer__foot { grid-column: 1 / -1; } }
 
 /* ---------- hero (home) ---------- */
-.hero { position: relative; overflow: clip; padding-top: clamp(8.5rem, 7rem + 6vw, 12.5rem); padding-bottom: clamp(2.5rem, 2rem + 3vw, 5rem); }
+.hero { position: relative; overflow: clip; padding-top: clamp(6.5rem, 5.25rem + 3.2vw, 9rem); padding-bottom: clamp(2.5rem, 2rem + 3vw, 5rem); }
 .hero__art { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
 .hero__art::before { content: ""; position: absolute; right: -14%; bottom: -30%; width: min(78rem, 130vw); aspect-ratio: 1; border-radius: 50%;
   background: radial-gradient(circle at 38% 32%, rgba(255, 72, 139, .42), rgba(227, 58, 219, .16) 38%, rgba(16, 20, 33, 0) 66%); }
@@ -229,7 +229,7 @@ em.acc, .acc {
 @keyframes slide { to { transform: translateX(-50%); } }
 
 /* ---------- inner page hero ---------- */
-.phero { padding-top: clamp(8.5rem, 7rem + 5vw, 11.5rem); padding-bottom: clamp(3rem, 2rem + 4vw, 6rem); position: relative; overflow: clip; }
+.phero { padding-top: clamp(6.5rem, 5.25rem + 3.2vw, 9rem); padding-bottom: clamp(3rem, 2rem + 4vw, 6rem); position: relative; overflow: clip; }
 .phero::before { content: ""; position: absolute; right: -10%; top: -25%; width: min(60rem, 120vw); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 40% 40%, rgba(255, 72, 139, .26), rgba(227, 58, 219, .1) 42%, transparent 68%); pointer-events: none; }
 .phero .wrap { position: relative; }
 .phero__grid { display: grid; gap: clamp(2rem, 1rem + 3vw, 4rem); grid-template-columns: 1fr; align-items: end; }
