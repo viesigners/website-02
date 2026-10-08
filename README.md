@@ -37,3 +37,15 @@ Syntaxe dans les textes : `*mot*` = accent (italique serif violet), `**mot**` = 
 
 ## À compléter avant la mise en ligne
 Voir `CONTENT-TODO.md`.
+
+## Publier sur GitHub Pages
+Le dépôt contient `.github/workflows/pages.yml` : à chaque `git push` sur `main`, GitHub construit le site (`node build.mjs`) et le publie.
+
+1. Dépôt GitHub → **Settings → Pages → Build and deployment → Source : GitHub Actions** (une seule fois).
+2. `git push` → onglet **Actions** pour suivre le déploiement. Adresse du site de test : `https://viesigners.github.io/website-02/`.
+3. Cette version « de test » est **non indexable** (`SITE_NOINDEX=1` : balise noindex + robots.txt qui bloque tout).
+
+Variables de build (voir le workflow) : `SITE_BASE` (sous-dossier, ex. `/website-02`), `SITE_ORIGIN` (domaine), `SITE_NOINDEX`.
+
+### Mise en ligne sur viesigners.com (plus tard)
+Dans le workflow : retirer `SITE_NOINDEX`, mettre `SITE_BASE: ""` et `SITE_ORIGIN: https://viesigners.com`, ajouter un fichier `src/assets/CNAME` contenant `viesigners.com`, puis configurer le domaine dans Settings → Pages et chez le registraire (DNS). Attention : GitHub Pages ne lit pas `_redirects`/`.htaccess` ; la redirection de `/` vers la langue du navigateur se fait alors par le JavaScript de repli.

@@ -20,7 +20,11 @@ const DIST = path.join(ROOT, 'dist');
 const CFG = JSON.parse(fs.readFileSync(path.join(SRC, 'config.json'), 'utf8'));
 const LANGS = ['fr', 'en'];
 const BUILD_DATE = new Date().toISOString().slice(0, 10);
-const ORIGIN = CFG.origin.replace(/\/$/, '');
+const ORIGIN = (process.env.SITE_ORIGIN || CFG.origin).replace(/\/$/, '');
+/* Sub-folder hosting (e.g. GitHub Pages project site at /website-02). Empty for a domain root. */
+const BASE = (process.env.SITE_BASE || CFG.basePath || '').replace(/\/$/, '');
+/* Staging builds (SITE_NOINDEX=1) tell search engines and AI crawlers to stay away. */
+const NOINDEX = process.env.SITE_NOINDEX === '1';
 
 /* ----------------------------- helpers ------------------------------------ */
 const rd = (p) => JSON.parse(fs.readFileSync(p, 'utf8'));
@@ -49,7 +53,7 @@ function imgSize(rel) {
 const IMG_CACHE = {};
 function img(rel, alt, { cls = '', lazy = true, sizes, fetchpriority } = {}) {
   const [w, h] = (IMG_CACHE[rel] ||= imgSize(rel));
-  return `<img src="/assets/img/${rel}" alt="${esc(alt)}" width="${w}" height="${h}"${cls ? ` class="${cls}"` : ''}${lazy ? ' loading="lazy" decoding="async"' : ''}${fetchpriority ? ` fetchpriority="${fetchpriority}"` : ''}${sizes ? ` sizes="${sizes}"` : ''}>`;
+  return `<img src="${BASE}/assets/img/${rel}" alt="${esc(alt)}" width="${w}" height="${h}"${cls ? ` class="${cls}"` : ''}${lazy ? ' loading="lazy" decoding="async"' : ''}${fetchpriority ? ` fetchpriority="${fetchpriority}"` : ''}${sizes ? ` sizes="${sizes}"` : ''}>`;
 }
 
 /* ----------------------------- routes ------------------------------------- */
@@ -77,11 +81,11 @@ const SERVICE_KEYS = ['sites-web', 'landing-pages', 'design-produit', 'coaching'
 const POSTS = { fr: [], en: [] };            // filled at load
 let CURRENT_POST_SLUGS = {};                 // key -> {fr,en}
 const url = (key, lang) => {
-  if (key.startsWith('post:')) { const s = CURRENT_POST_SLUGS[key.slice(5)]; return s?.[lang] ? `/${lang}/${ROUTES.actualites[lang]}/${s[lang]}/` : `/${lang}/${ROUTES.actualites[lang]}/`; }
+  if (key.startsWith('post:')) { const s = CURRENT_POST_SLUGS[key.slice(5)]; return s?.[lang] ? `${BASE}/${lang}/${ROUTES.actualites[lang]}/${s[lang]}/` : `${BASE}/${lang}/${ROUTES.actualites[lang]}/`; }
   const r = ROUTES[key]; if (!r) throw new Error('Unknown route ' + key);
-  return `/${lang}/${r[lang]}${r[lang] ? '/' : ''}`;
+  return `${BASE}/${lang}/${r[lang]}${r[lang] ? '/' : ''}`;
 };
-const abs = (u) => ORIGIN + u;
+const abs = (u) => ORIGIN + (BASE && !(u === BASE || u.startsWith(BASE + '/')) ? BASE : '') + u;
 
 /* ----------------------------- text formatting ---------------------------- */
 function fmt(s, lang) {
@@ -381,7 +385,7 @@ const SPRITE = `<svg width="0" height="0" style="position:absolute" aria-hidden=
 
 function head({ lang, T, page, canonical, alternates, jsonld, type = 'website', image, post, hidden = false }) {
   const title = page.meta.title, desc = page.meta.description;
-  const css = `/assets/css/site.css?v=${ASSET_HASH.css}`;
+  const css = `${BASE}/assets/css/site.css?v=${ASSET_HASH.css}`;
   return `<!doctype html>
 <html lang="${lang}" dir="ltr">
 <head>
@@ -392,7 +396,7 @@ function head({ lang, T, page, canonical, alternates, jsonld, type = 'website', 
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${canonical}">
 ${alternates.map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${a.href}">`).join('\n')}
-${hidden ? '<meta name="robots" content="noindex, follow">' : '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">'}
+${hidden || NOINDEX ? '<meta name="robots" content="noindex, follow">' : '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">'}
 <meta name="theme-color" content="#05051a">
 <meta name="color-scheme" content="dark">
 <meta name="author" content="Charles-Erick BG, Jean-François BG">
@@ -410,10 +414,10 @@ ${hidden ? '<meta name="robots" content="noindex, follow">' : '<meta name="robot
 ${post ? `<meta property="article:published_time" content="${post.date}">\n<meta property="article:modified_time" content="${post.modified || post.date}">` : ''}
 <link rel="alternate" type="text/markdown" href="${canonical}index.md">
 <link rel="alternate" type="text/plain" title="llms.txt" href="${abs('/llms.txt')}">
-<link rel="icon" href="/assets/img/favicon.png" type="image/png">
-<link rel="apple-touch-icon" href="/assets/img/favicon.png">
-<link rel="preload" href="/assets/fonts/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/fonts.css?v=${ASSET_HASH.fonts}">
+<link rel="icon" href="${BASE}/assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="${BASE}/assets/img/favicon.png">
+<link rel="preload" href="${BASE}/assets/fonts/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="${BASE}/assets/css/fonts.css?v=${ASSET_HASH.fonts}">
 <link rel="stylesheet" href="${css}">
 <script type="application/ld+json">${JSON.stringify(jsonld)}</script>
 </head>`;
@@ -596,11 +600,11 @@ ${header(ctx)}
 ${body}
 </main>
 ${footer(ctx)}
-<script src="/assets/js/site.js?v=${ASSET_HASH.js}" defer></script>
+<script src="${BASE}/assets/js/site.js?v=${ASSET_HASH.js}" defer></script>
 </body>
 </html>
 `;
-  const out = path.join(DIST, selfUrl);
+  const out = path.join(DIST, selfUrl.slice(BASE.length)); // files live at the site root; BASE is only the public URL prefix
   write(path.join(out, 'index.html'), html);
   write(path.join(out, 'index.md'), toMd(page, ctx));
   PAGES_OUT.push({ hidden: isHidden(key), lang, key, selfUrl, altUrls, title: page.meta.title, description: page.meta.description, md: toMd(page, ctx), nav: key === 'post' ? 'post' : key });
@@ -663,14 +667,14 @@ function build() {
 <meta name="description" content="Viesigners — UX/UI, CRO, sites web, landing pages et design de produit. / UX/UI, CRO, websites, landing pages and product design.">
 <link rel="canonical" href="${abs('/')}">
 ${rootAlt}
-<meta name="theme-color" content="#101421"><meta name="color-scheme" content="dark"><meta name="robots" content="index, follow">
-<link rel="icon" href="/assets/img/favicon.png">
+<meta name="theme-color" content="#101421"><meta name="color-scheme" content="dark"><meta name="robots" content="${NOINDEX ? 'noindex, follow' : 'index, follow'}">
+<link rel="icon" href="${BASE}/assets/img/favicon.png">
 <style>html{background:#101421;color:#fff;font-family:system-ui,sans-serif}body{margin:0;min-height:100dvh;display:grid;place-items:center}a{color:#ff488b;margin:0 .75rem}p{text-align:center}</style>
-<script>(function(){var l;try{l=localStorage.getItem('vz-lang')}catch(e){}if(l!=='fr'&&l!=='en'){var a=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'en'];l='en';for(var i=0;i<a.length;i++){var c=String(a[i]).toLowerCase().slice(0,2);if(c==='fr'||c==='en'){l=c;break}}}location.replace('/'+l+'/'+location.search+location.hash)})();</script>
-</head><body><p><a href="/fr/" hreflang="fr" lang="fr">Viesigners — Français</a><a href="/en/" hreflang="en" lang="en">Viesigners — English</a></p></body></html>`);
+<script>(function(){var l;try{l=localStorage.getItem('vz-lang')}catch(e){}if(l!=='fr'&&l!=='en'){var a=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'en'];l='en';for(var i=0;i<a.length;i++){var c=String(a[i]).toLowerCase().slice(0,2);if(c==='fr'||c==='en'){l=c;break}}}location.replace('${BASE}/'+l+'/'+location.search+location.hash)})();</script>
+</head><body><p><a href="${BASE}/fr/" hreflang="fr" lang="fr">Viesigners — Français</a><a href="${BASE}/en/" hreflang="en" lang="en">Viesigners — English</a></p></body></html>`);
 
   /* 404 */
-  write(path.join(DIST, '404.html'), `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>404 | Viesigners</title><meta name="robots" content="noindex"><link rel="stylesheet" href="/assets/css/fonts.css"><link rel="stylesheet" href="/assets/css/site.css"></head><body><div class="page-bg"></div><main class="chooser"><div><h1 class="display">404.<br><em class="acc">Cette page a pris un détour.</em></h1><p class="lead" style="margin:0 auto 2rem">This page took a detour.</p><div class="opts"><a class="pill" href="/fr/">Accueil</a><a class="pill pill--ghost" href="/en/">Home</a></div></div></main></body></html>`);
+  write(path.join(DIST, '404.html'), `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>404 | Viesigners</title><meta name="robots" content="noindex"><link rel="stylesheet" href="${BASE}/assets/css/fonts.css"><link rel="stylesheet" href="${BASE}/assets/css/site.css"></head><body><div class="page-bg"></div><main class="chooser"><div><h1 class="display">404.<br><em class="acc">Cette page a pris un détour.</em></h1><p class="lead" style="margin:0 auto 2rem">This page took a detour.</p><div class="opts"><a class="pill" href="${BASE}/fr/">Accueil</a><a class="pill pill--ghost" href="${BASE}/en/">Home</a></div></div></main></body></html>`);
 
   /* sitemap with hreflang alternates */
   const urls = [{ loc: abs('/'), alts: LANGS.map((l) => ({ l, href: abs('/' + l + '/') })).concat([{ l: 'x-default', href: abs('/') }]) }];
@@ -680,9 +684,11 @@ ${rootAlt}
   }
   write(path.join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.map((u) => `<url><loc>${u.loc}</loc><lastmod>${BUILD_DATE}</lastmod>${u.alts.map((a) => `<xhtml:link rel="alternate" hreflang="${a.l}" href="${a.href}"/>`).join('')}</url>`).join('\n')}\n</urlset>\n`);
 
+  write(path.join(DIST, '.nojekyll'), ''); // GitHub Pages: serve files as-is
   /* robots: everything open, AI crawlers explicitly welcome */
   const bots = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot-Extended', 'Bingbot', 'CCBot', 'cohere-ai', 'Meta-ExternalAgent', 'Amazonbot', 'DuckAssistBot', 'MistralAI-User'];
-  write(path.join(DIST, 'robots.txt'), `# Viesigners — all crawlers, including AI search and assistants, are welcome.\nUser-agent: *\nAllow: /\n\n${bots.map((b) => `User-agent: ${b}\nAllow: /\n`).join('\n')}\nSitemap: ${abs('/sitemap.xml')}\n# LLM-friendly summaries: ${abs('/llms.txt')} and ${abs('/llms-full.txt')}\n`);
+  if (NOINDEX) write(path.join(DIST, 'robots.txt'), `# staging build — do not index\nUser-agent: *\nDisallow: /\n`);
+  else write(path.join(DIST, 'robots.txt'), `# Viesigners — all crawlers, including AI search and assistants, are welcome.\nUser-agent: *\nAllow: /\n\n${bots.map((b) => `User-agent: ${b}\nAllow: /\n`).join('\n')}\nSitemap: ${abs('/sitemap.xml')}\n# LLM-friendly summaries: ${abs('/llms.txt')} and ${abs('/llms-full.txt')}\n`);
 
   /* llms.txt + llms-full.txt */
   const llms = [`# Viesigners`, '', `> ${TR.fr.orgDescription}`, '', `> ${TR.en.orgDescription}`, ''];
