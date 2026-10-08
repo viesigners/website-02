@@ -1,0 +1,35 @@
+{
+  "key": "landing", "slug": "landing-page-elements-that-convert", "date": "2026-10-03", "modified": "2026-10-03",
+  "tag": "Landing pages", "read": "5 min read",
+  "title": "Landing page: seven elements that make it convert",
+  "metaTitle": "Landing page: 7 elements that make it convert | Viesigners",
+  "description": "A clear offer, a single action, proof, speed: the seven elements a landing page needs to turn visitors into inquiries.",
+  "keywords": ["landing page", "conversion rate", "sales funnel"],
+  "summary": [
+    "A high-performing landing page defends **one offer, for one audience, with one action.**",
+    "Clarity, proof and speed matter more than the amount of information.",
+    "Measuring from day one lets you improve the page with data."
+  ],
+  "body": [
+    { "h2": "One page, one mission" },
+    { "p": "A landing page is a page designed for a single action: request a quote, book a call, sign up. Everything that doesn't serve that action is friction." },
+    { "h2": "The seven elements" },
+    { "ul": [
+      "**A clear promise on the first screen:** who you help and what result you bring.",
+      "**A single main action:** one button, one verb, one promise. Secondary actions stay discreet.",
+      "**Value before features:** talk about what the person gets, not what you do.",
+      "**Credible proof:** quantified results, client logos, specific testimonials.",
+      "**Answers to objections:** price, timing, risk, comparison with alternatives.",
+      "**A form without needless friction:** only the necessary fields.",
+      "**A fast page on mobile:** one second too many costs inquiries."
+    ] },
+    { "h2": "Measure to improve" },
+    { "p": "Set up conversion tracking before you publish. Watch where visitors leave, test one change at a time (headline, button, proof) and keep what works." },
+    { "h2": "Going further" },
+    { "p": "We design [landing pages and sales funnels](@landing-pages) that have generated up to a 3,500% increase in inquiries with minimal ad budgets. If you want to make them even more profitable with [digital advertising](@publicite), that's possible too." }
+  ],
+  "faq": [
+    { "q": "How many fields should a landing page form have?", "a": ["As few as possible: every extra field lowers the chance of a response. Ask only for what you need to take the next step."] },
+    { "q": "Should a landing page have a navigation menu?", "a": ["Generally no. Removing navigation focuses the visitor on the main action and reduces leaks."] }
+  ]
+}

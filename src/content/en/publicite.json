@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Profitable Digital Advertising (Google Ads, Meta, LinkedIn) | Viesigners",
+    "description": "Digital advertising run with media experts from our network and plugged into pages built to convert: every ad dollar works harder.",
+    "h1": "Digital advertising"
+  },
+  "service": { "name": "Digital advertising", "type": "Digital advertising, acquisition strategy and conversion rate optimization", "audience": "Service businesses, SaaS and growing brands" },
+  "sections": [
+    {
+      "type": "page-hero",
+      "tag": "Digital advertising",
+      "h1": "Ads that *pay off*, not ads that cost",
+      "lead": "We don't run your campaigns alone: we orchestrate them with selected media experts from our network, and we build the pages that turn every click into an inquiry.",
+      "ctas": [ { "label": "Get your free action plan", "to": "@contact", "style": "violet" }, { "label": "See landing pages", "to": "@landing-pages", "style": "ghost" } ],
+      "brief": [
+        { "b": "Who it's for:", "t": "service businesses, SaaS and brands that want to win more customers at a controlled cost." },
+        { "b": "Our role:", "t": "offer strategy, landing pages, conversion tracking and coordination with the media expert." },
+        { "b": "Platforms:", "t": "Google Ads, Meta, LinkedIn and others, depending on where your customers are." },
+        { "b": "Proof:", "t": "up to a 3,500% increase in inquiries with minimal ad budgets." }
+      ]
+    },
+    {
+      "type": "statement", "wide": true,
+      "text": "An ad is only worth as much as *the page it lands on.*",
+      "prose": [
+        "Many companies raise their ad budget when the real problem lies after the click: a vague message, a slow page, a painful form. The cost per customer climbs, and the platform gets the blame.",
+        "That's our strength: upstream (offer and message) and downstream (page, funnel, measurement). The media experts in our network run the campaigns; we make sure the traffic they win actually converts."
+      ]
+    },
+    {
+      "type": "deliverables", "id": "inclus",
+      "h2": "What we *put in place*",
+      "items": [
+        { "h": "Offer and audience strategy", "p": "Who are you targeting, with what promise and on which channel? We craft an offer that's hard to ignore before spending a dollar." },
+        { "h": "Landing pages and funnels", "p": "[Landing pages](@landing-pages) and funnels designed for each campaign, consistent with the ad's message." },
+        { "h": "Search and social campaigns", "p": "Setup and coordination with the media expert from our network: Google Ads, Meta (Facebook and Instagram), LinkedIn and other relevant platforms." },
+        { "h": "Tracking and attribution", "p": "Conversion and event tracking setup, so you know which ads truly bring in customers." },
+        { "h": "Continuous optimization", "p": "Testing of messages, visuals and pages based on data, to lower acquisition cost over time." },
+        { "h": "Clear reporting", "p": "Indicators that speak business — inquiries, cost per inquiry, customers — rather than mere impressions." }
+      ]
+    },
+    {
+      "type": "process",
+      "h2": "From diagnosis to a *profitable campaign*",
+      "steps": [
+        { "h": "Funnel diagnosis", "p": "We examine your offer, your site and your current data to spot where budget leaks.", "out": "Deliverable: friction points and action plan." },
+        { "h": "Offer and page", "p": "We build the page or funnel that will receive the paid traffic.", "out": "Deliverable: landing page ready and tracked." },
+        { "h": "Launch with the media expert", "p": "Campaigns launch with an expert from our network, aligned with your offer.", "out": "Deliverable: active campaigns." },
+        { "h": "Measurement and optimization", "p": "We analyze results and keep improving ads and pages.", "out": "Deliverable: report and next experiments." }
+      ]
+    },
+    {
+      "type": "compare",
+      "h2": "Ads alone or *ads + a page that converts?*",
+      "before": { "h": "Ads alone", "items": ["Sends clicks to the homepage", "Ad message differs from the page's", "Measures clicks and impressions", "When it doesn't work, raise the budget"] },
+      "after": { "h": "Ads + Viesigners page", "items": ["Each ad leads to a dedicated page", "Same promise from ad to action", "Measures inquiries and customers", "When it doesn't work, fix the friction"] }
+    },
+    {
+      "type": "proof", "items": [
+        { "n": "3,500%", "t": "increase in inquiries received, with minimal ad budgets" },
+        { "n": "3×", "t": "the revenue of our SMB clients, consistently tripled" }
+      ]
+    },
+    { "type": "faq", "h2": "Frequently asked questions about *digital advertising*", "open": true },
+    { "type": "cta-final", "h2": "Every ad dollar can *work harder.*", "p": "Let's review your funnel and find where your budget leaks.", "cta": "Get your free action plan" }
+  ],
+  "faq": [
+    { "q": "Do you run the ad campaigns yourselves?", "a": ["We orchestrate strategy, pages and tracking, and work with selected media experts from our network to run the campaigns. You get a single point of contact and specialists for each platform."] },
+    { "q": "What ad budget should I plan for?", "a": ["There's no universal figure: it depends on your market, your offer and your goals. Our pages have generated up to a 3,500% increase in inquiries with minimal budgets. We set a realistic starting budget during the diagnosis."] },
+    { "q": "Which platforms do you advertise on?", "a": ["We choose based on where your ideal customers are: Google Ads for search intent, Meta for discovery, LinkedIn for B2B, among others."] },
+    { "q": "Why is the landing page as important as the ad?", "a": ["The ad earns the click; the page earns the inquiry. If the page is vague, slow or inconsistent with the ad's promise, cost per customer rises even with an excellent campaign."] },
+    { "q": "How do I measure return on investment?", "a": ["We set up conversion tracking from the start to tie each ad to inquiries and customers, then compare acquisition cost to the value of a customer."] }
+  ]
+}

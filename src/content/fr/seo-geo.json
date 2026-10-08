@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "SEO et GEO : être trouvé sur Google et cité par les IA | Viesigners",
+    "description": "SEO et GEO (Generative Engine Optimization) : audit technique, contenu orienté réponses, données structurées et visibilité dans Google, ChatGPT, Gemini et Perplexity.",
+    "h1": "SEO/GEO"
+  },
+  "service": { "name": "SEO et GEO (Generative Engine Optimization)", "type": "Optimisation pour les moteurs de recherche et les moteurs de réponses IA", "audience": "Entreprises de services, SaaS et marques en croissance" },
+  "sections": [
+    {
+      "type": "page-hero",
+      "tag": "SEO/GEO",
+      "h1": "Soyez trouvé sur Google, *cité par les IA*",
+      "lead": "Le GEO (Generative Engine Optimization) consiste à rendre votre contenu compréhensible, fiable et citable par les moteurs de réponses comme ChatGPT, Gemini, Perplexity et Google AI Overviews, en plus du SEO classique.",
+      "ctas": [ { "label": "Obtiens ton plan d'action gratuit", "to": "@contact", "style": "violet" }, { "label": "Voir la création de site web", "to": "@sites-web", "style": "ghost" } ],
+      "brief": [
+        { "b": "SEO :", "t": "être bien classé quand vos clients cherchent sur Google ou Bing." },
+        { "b": "GEO :", "t": "être cité quand ils posent leur question à une IA." },
+        { "b": "Notre rôle :", "t": "structure, contenu, données structurées et suivi, avec des experts SEO de notre réseau." },
+        { "b": "Preuve par l'exemple :", "t": "ce site applique ces pratiques : FAQ sur chaque page, données structurées, llms.txt et accès ouvert aux robots IA." }
+      ]
+    },
+    {
+      "type": "statement", "wide": true,
+      "text": "Il y a désormais deux façons d'être trouvé : être *classé* ou être *cité.*",
+      "prose": [
+        "Vos clients posent de plus en plus leurs questions directement à des assistants IA, qui répondent en quelques lignes en citant quelques sources. Si votre contenu n'est pas clair, structuré et fiable, ces sources seront vos concurrents.",
+        "Bonne nouvelle : le GEO s'appuie sur les mêmes fondations que le bon SEO — clarté, structure, expertise — auxquelles s'ajoutent quelques pratiques précises que nous appliquons pour vous."
+      ]
+    },
+    {
+      "type": "deliverables", "id": "inclus",
+      "h2": "Ce que nous *optimisons*",
+      "items": [
+        { "h": "Audit technique et de contenu", "p": "Exploration, indexation, vitesse, structure, duplication et lacunes de contenu : un état des lieux priorisé par impact." },
+        { "h": "Architecture et intentions de recherche", "p": "Recherche de mots-clés et de questions réelles, puis structure du site qui répond à chaque intention." },
+        { "h": "Contenu orienté réponses", "p": "Réponses directes en début de page, sections de questions-réponses (FAQ), définitions claires et preuves pour être repris et cité." },
+        { "h": "Données structurées", "p": "Balisage schema.org (organisation, services, FAQ, articles, auteurs) pour que les moteurs comprennent qui vous êtes et ce que vous offrez." },
+        { "h": "Optimisation pour les IA", "p": "Accès des robots IA (robots.txt), fichier llms.txt, cohérence de votre entité sur le web, auteurs identifiés et sources vérifiables." },
+        { "h": "Performance et suivi", "p": "Vitesse et Core Web Vitals, suivi des classements, du trafic organique et de vos mentions dans les réponses IA." }
+      ]
+    },
+    {
+      "type": "process",
+      "h2": "Une démarche en *quatre temps*",
+      "steps": [
+        { "h": "Audit", "p": "Nous mesurons où vous êtes visible aujourd'hui, sur Google comme dans les réponses IA.", "out": "Livrable : audit priorisé." },
+        { "h": "Stratégie", "p": "Nous ciblons les questions et les mots-clés qui mènent à des clients.", "out": "Livrable : feuille de route de contenu." },
+        { "h": "Mise en œuvre", "p": "Corrections techniques, contenu, données structurées et optimisation pour les IA.", "out": "Livrable : site optimisé." },
+        { "h": "Suivi", "p": "Nous suivons classements, trafic et citations, et nous ajustons.", "out": "Livrable : rapport de visibilité." }
+      ]
+    },
+    {
+      "type": "compare",
+      "h2": "SEO classique ou *SEO + GEO?*",
+      "lead": "Les deux se complètent : le premier vous rend visible, le second vous rend citable.",
+      "before": { "h": "SEO classique", "items": ["Objectif : se classer dans une liste de liens", "Mots-clés et liens entrants", "Succès mesuré par les positions et les clics"] },
+      "after": { "h": "SEO + GEO", "items": ["Objectif : se classer et être cité dans les réponses IA", "Questions réelles, réponses directes, données structurées", "Succès mesuré par les positions, le trafic et les citations"] }
+    },
+    { "type": "faq", "h2": "Questions fréquentes sur le *SEO et le GEO*", "open": true },
+    { "type": "cta-final", "h2": "Soyez la réponse que vos clients *trouvent.*", "p": "Faisons le point sur votre visibilité, sur Google comme dans les IA.", "cta": "Obtiens ton plan d'action gratuit" }
+  ],
+  "faq": [
+    { "q": "Qu'est-ce que le GEO (Generative Engine Optimization)?", "a": ["Le GEO est l'ensemble des pratiques qui rendent votre contenu compréhensible, fiable et citable par les moteurs de réponses basés sur l'IA, comme ChatGPT, Gemini, Perplexity ou Google AI Overviews. Il complète le SEO traditionnel."] },
+    { "q": "Quelle est la différence entre le SEO et le GEO?", "a": ["Le SEO vise à vous classer dans les résultats de recherche. Le GEO vise à ce que les IA vous citent dans leurs réponses. Les deux reposent sur un contenu clair, structuré et crédible, mais le GEO insiste sur les réponses directes, les données structurées et l'identité claire de votre entreprise."] },
+    { "q": "Comment faire pour que ChatGPT ou Gemini cite mon entreprise?", "a": ["Publiez des réponses claires et vérifiables à des questions précises, identifiez vos auteurs et votre entreprise, ajoutez des données structurées, autorisez les robots IA dans votre fichier robots.txt et entretenez une présence cohérente ailleurs sur le web. Aucune technique ne garantit une citation, mais ces pratiques augmentent vos chances."] },
+    { "q": "Le SEO fonctionne-t-il encore à l'ère des IA?", "a": ["Oui. Les moteurs de réponses s'appuient souvent sur les mêmes sources que les moteurs de recherche. Un site bien structuré, rapide et riche en réponses utiles reste la base des deux."] },
+    { "q": "Travaillez-vous avec des experts SEO?", "a": ["Oui. Nous concevons la structure et le contenu de votre site et nous collaborons avec des experts SEO sélectionnés de notre réseau pour les mandats d'optimisation continue."] },
+    { "q": "Combien de temps faut-il pour voir des résultats?", "a": ["Le SEO et le GEO sont des investissements progressifs : les corrections techniques peuvent avoir un effet rapide, tandis que l'autorité et les classements se bâtissent dans le temps. Nous suivons des indicateurs dès le départ pour montrer les progrès."] }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "key": "geo", "slug": "what-is-geo", "date": "2026-10-03", "modified": "2026-10-03",
+  "tag": "SEO/GEO", "read": "6 min read",
+  "title": "What is GEO and why your business should care",
+  "metaTitle": "What is GEO (Generative Engine Optimization)? | Viesigners",
+  "description": "GEO makes your content citable by ChatGPT, Gemini and Perplexity. Definition, how it differs from SEO, and seven concrete steps to apply.",
+  "keywords": ["GEO", "Generative Engine Optimization", "SEO", "ChatGPT", "AI visibility"],
+  "summary": [
+    "**GEO (Generative Engine Optimization)** aims to have AI like ChatGPT, Gemini or Perplexity understand, trust and cite your content.",
+    "It doesn't replace SEO: it builds on it and adds specific practices (direct answers, structured data, a clear entity).",
+    "The basic steps are simple and within reach of most sites."
+  ],
+  "body": [
+    { "h2": "GEO in one sentence" },
+    { "p": "GEO is the set of practices that make your content easy to understand, verify and cite for AI-based answer engines. Where SEO tries to place you in a list of links, GEO tries to get you to appear **in the answer itself**." },
+    { "h2": "Why it matters now" },
+    { "p": "More and more people ask their questions directly to an AI assistant rather than browse ten links. These assistants synthesize an answer and cite a small number of sources. If your site isn't among them, your competitors take the spot." },
+    { "h2": "SEO and GEO: what changes, what stays" },
+    { "ul": [
+      "**What stays:** a fast, well-structured site with useful content and demonstrated expertise.",
+      "**What's added:** direct answers at the top of pages, question-and-answer sections, structured data and a clear company identity on the web.",
+      "**What changes in measurement:** besides rankings and clicks, you track citations and mentions in AI answers."
+    ] },
+    { "h2": "Seven concrete steps" },
+    { "ul": [
+      "Answer a specific question in the first two sentences of a page.",
+      "Add an FAQ to every important page, with short, verifiable answers.",
+      "Clearly identify the company and authors (names, roles, consistent contact details).",
+      "Add schema.org structured data (organization, service, FAQ, article).",
+      "Allow AI crawlers in robots.txt and provide an llms.txt file.",
+      "Cite sources and dated figures rather than vague claims.",
+      "Keep the site fast, readable on mobile and up to date."
+    ] },
+    { "h2": "An honest caveat" },
+    { "p": "No technique guarantees an AI citation. These practices increase your chances and also improve your visitors' experience, which is already a good return on investment. To learn about our support, see our [SEO/GEO](@seo-geo) service." }
+  ],
+  "faq": [
+    { "q": "Does GEO replace SEO?", "a": ["No. GEO builds on SEO foundations (structure, content, performance) and adds practices specific to AI answer engines."] },
+    { "q": "Can I measure my visibility in AI?", "a": ["Yes, by regularly checking whether your business is cited for a set of key questions in the main assistants, and by tracking traffic coming from those sources."] }
+  ]
+}

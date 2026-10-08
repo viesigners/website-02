@@ -1,0 +1,34 @@
+{
+  "key": "friction", "slug": "why-visitors-leave", "date": "2026-10-03", "modified": "2026-10-03",
+  "tag": "CRO", "read": "5 min read",
+  "title": "Friction: why your visitors leave without acting",
+  "metaTitle": "UX friction: why your visitors leave without acting | Viesigners",
+  "description": "A vague message, a complicated journey, a poorly perceived offer: the five sources of friction that cost your site customers, and how to spot them.",
+  "keywords": ["friction", "CRO", "conversion rate", "UX"],
+  "summary": [
+    "**Friction** is anything that makes your offer harder to understand or the next step harder to take.",
+    "It costs more than a lack of traffic: it wastes the traffic you already have.",
+    "You can spot it by looking at three things: the message, the journey and the perception of value."
+  ],
+  "body": [
+    { "h2": "What we mean by friction" },
+    { "p": "Friction is the difficulty of articulating the value of your offer persuasively and turning it into an experience that flows like a water slide. When the message doesn't land or the path is complicated, the person leaves without acting." },
+    { "h2": "The five most common sources" },
+    { "ul": [
+      "**A vague message:** an outside visitor can't tell within seconds what you offer and for whom.",
+      "**A journey that multiplies choices:** too many buttons, too many pages, no obvious next step.",
+      "**A poorly phrased offer:** value is described by features rather than outcomes.",
+      "**Low-profit customers:** the offer attracts people who aren't the right audience.",
+      "**A perception gap:** your service is better than the image your site gives of it."
+    ] },
+    { "h2": "How to spot friction on your site" },
+    { "p": "Ask three people outside your company to visit your homepage for five seconds, then tell you what you offer and what they'd do next. Hesitations and misunderstandings point straight to friction." },
+    { "p": "Then look at your data: pages where visitors leave, form steps that get abandoned, time before the first click." },
+    { "h2": "Reduce before you add" },
+    { "p": "Adding complexity on top of an already irritating foundation only speeds up failure. Start by clarifying the message and simplifying the path. Our [website creation](@sites-web) and [landing page](@landing-pages) services are built for exactly that." }
+  ],
+  "faq": [
+    { "q": "What is friction in UX?", "a": ["Any element that increases a user's effort, confusion or hesitation between interest and action: vague copy, an overlong form, cluttered navigation, a slow site."] },
+    { "q": "How can I reduce friction quickly?", "a": ["Clarify your promise in the page headline, remove options that don't serve the main action and shorten your forms to what's strictly necessary."] }
+  ]
+}

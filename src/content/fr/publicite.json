@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Publicité numérique rentable (Google Ads, Meta, LinkedIn) | Viesigners",
+    "description": "Publicité numérique pilotée avec des experts média de notre réseau et branchée sur des pages conçues pour convertir : chaque dollar publicitaire travaille plus fort.",
+    "h1": "Publicité numérique"
+  },
+  "service": { "name": "Publicité numérique", "type": "Publicité numérique, stratégie d'acquisition et optimisation du taux de conversion", "audience": "Entreprises de services, SaaS et marques en croissance" },
+  "sections": [
+    {
+      "type": "page-hero",
+      "tag": "Publicité numérique",
+      "h1": "Des publicités qui *rapportent*, pas qui coûtent",
+      "lead": "Nous ne gérons pas vos campagnes seuls : nous les orchestrons avec des experts média sélectionnés de notre réseau, et nous bâtissons les pages qui transforment chaque clic en demande.",
+      "ctas": [ { "label": "Obtiens ton plan d'action gratuit", "to": "@contact", "style": "violet" }, { "label": "Voir les landing pages", "to": "@landing-pages", "style": "ghost" } ],
+      "brief": [
+        { "b": "Pour qui :", "t": "entreprises de services, SaaS et marques qui veulent acquérir plus de clients à un coût maîtrisé." },
+        { "b": "Notre rôle :", "t": "stratégie d'offre, pages de destination, suivi des conversions et pilotage avec l'expert média." },
+        { "b": "Plateformes :", "t": "Google Ads, Meta, LinkedIn et autres, selon l'endroit où se trouvent vos clients." },
+        { "b": "Preuve :", "t": "jusqu'à 3500 % de hausse de demandes avec des budgets publicitaires minimes." }
+      ]
+    },
+    {
+      "type": "statement", "wide": true,
+      "text": "Une publicité ne vaut que ce que vaut *la page où elle atterrit.*",
+      "prose": [
+        "Beaucoup d'entreprises augmentent leur budget publicitaire alors que le vrai problème se trouve après le clic : un message flou, une page lente, un formulaire pénible. Le coût par client monte, et on accuse la plateforme.",
+        "Notre force est là : en amont (offre et message) et en aval (page, tunnel, mesure). Les experts média de notre réseau s'occupent des campagnes; nous nous assurons que le trafic qu'ils obtiennent se convertit."
+      ]
+    },
+    {
+      "type": "deliverables", "id": "inclus",
+      "h2": "Ce que nous mettons *en place*",
+      "items": [
+        { "h": "Stratégie d'offre et d'audience", "p": "Qui visez-vous, avec quelle promesse et sur quel canal? Nous formulons une offre difficile à ignorer avant de dépenser un dollar." },
+        { "h": "Pages de destination et tunnels", "p": "Des [landing pages](@landing-pages) et des tunnels conçus pour chaque campagne, en cohérence avec le message de l'annonce." },
+        { "h": "Campagnes de recherche et sociales", "p": "Mise en place et pilotage avec l'expert média de notre réseau : Google Ads, Meta (Facebook et Instagram), LinkedIn et autres plateformes pertinentes." },
+        { "h": "Suivi et attribution", "p": "Configuration du suivi des conversions et des événements, pour savoir quelles annonces rapportent vraiment des clients." },
+        { "h": "Optimisation continue", "p": "Tests de messages, de visuels et de pages, selon les données, pour réduire le coût d'acquisition dans le temps." },
+        { "h": "Rapports clairs", "p": "Des indicateurs qui parlent d'affaires — demandes, coût par demande, clients — plutôt que de simples impressions." }
+      ]
+    },
+    {
+      "type": "process",
+      "h2": "Du diagnostic à la *campagne rentable*",
+      "steps": [
+        { "h": "Diagnostic de l'entonnoir", "p": "Nous examinons votre offre, votre site et vos données actuelles pour repérer où le budget fuit.", "out": "Livrable : points de friction et plan d'action." },
+        { "h": "Offre et page", "p": "Nous construisons la page ou le tunnel qui accueillera le trafic payant.", "out": "Livrable : page de destination prête et suivie." },
+        { "h": "Lancement avec l'expert média", "p": "Les campagnes sont lancées avec un expert de notre réseau, aligné sur votre offre.", "out": "Livrable : campagnes actives." },
+        { "h": "Mesure et optimisation", "p": "Nous analysons les résultats et améliorons annonces et pages en continu.", "out": "Livrable : rapport et prochaines expériences." }
+      ]
+    },
+    {
+      "type": "compare",
+      "h2": "Publicité seule ou *publicité + page qui convertit?*",
+      "before": { "h": "Publicité seule", "items": ["Envoie les clics vers la page d'accueil", "Message de l'annonce différent de celui de la page", "On mesure les clics et les impressions", "Quand ça ne marche pas, on augmente le budget"] },
+      "after": { "h": "Publicité + page Viesigners", "items": ["Chaque annonce mène à une page dédiée", "Même promesse de l'annonce jusqu'à l'action", "On mesure les demandes et les clients", "Quand ça ne marche pas, on corrige la friction"] }
+    },
+    {
+      "type": "proof", "items": [
+        { "n": "3500 %", "t": "de hausse de demandes reçues, avec des budgets publicitaires minimes" },
+        { "n": "3×", "t": "les revenus de nos clients PME, systématiquement triplés" }
+      ]
+    },
+    { "type": "faq", "h2": "Questions fréquentes sur la *publicité numérique*", "open": true },
+    { "type": "cta-final", "h2": "Chaque dollar publicitaire peut *travailler plus fort.*", "p": "Faisons le point sur votre entonnoir et trouvons où votre budget fuit.", "cta": "Obtiens ton plan d'action gratuit" }
+  ],
+  "faq": [
+    { "q": "Gérez-vous vous-mêmes les campagnes publicitaires?", "a": ["Nous orchestrons la stratégie, les pages et le suivi, et nous travaillons avec des experts média sélectionnés de notre réseau pour le pilotage des campagnes. Vous avez ainsi un seul point de contact et des spécialistes de chaque plateforme."] },
+    { "q": "Quel budget publicitaire faut-il prévoir?", "a": ["Il n'existe pas de chiffre universel : cela dépend de votre marché, de votre offre et de vos objectifs. Nos pages ont généré jusqu'à 3500 % de hausse de demandes avec des budgets minimes. Nous définissons un budget de départ réaliste lors du diagnostic."] },
+    { "q": "Sur quelles plateformes faites-vous de la publicité?", "a": ["Nous choisissons selon l'endroit où se trouvent vos clients idéaux : Google Ads pour l'intention de recherche, Meta pour la découverte, LinkedIn pour le B2B, entre autres."] },
+    { "q": "Pourquoi la page de destination est-elle aussi importante que l'annonce?", "a": ["L'annonce obtient le clic; la page obtient la demande. Si la page est floue, lente ou différente de la promesse de l'annonce, le coût par client augmente même avec une excellente campagne."] },
+    { "q": "Comment mesurer le retour sur investissement?", "a": ["Nous configurons le suivi des conversions dès le départ afin de relier chaque annonce à des demandes et à des clients, puis nous comparons le coût d'acquisition à la valeur d'un client."] }
+  ]
+}

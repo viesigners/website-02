@@ -1,0 +1,165 @@
+{
+ "meta": {
+  "title": "Work — Award-winning Sites, Apps and Platforms | Viesigners",
+  "description": "Projects for Ubisoft, Warner Bros., Marvel, Wizards of the Coast, Spin Master, the Musée de la civilisation and Pharmy (+48% conversions).",
+  "h1": "Work"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tag": "Work",
+   "h1": "A few projects you might *recognize…*",
+   "lead": "More than 600 digital projects, from major brands to startups. Here's a selection of experiences designed and optimized by Les Viesigners.",
+   "ctas": [
+    {
+     "label": "It's my turn",
+     "to": "@contact",
+     "style": "violet"
+    }
+   ],
+   "brief": [
+    {
+     "b": "Projects:",
+     "t": "more than 600 digital projects and companies propelled onto the web."
+    },
+    {
+     "b": "Brands:",
+     "t": "Ubisoft, Warner Bros., Marvel, Wizards of the Coast, Spin Master, among others."
+    },
+    {
+     "b": "Headline result:",
+     "t": "+48% conversions for the Pharmy platform."
+    },
+    {
+     "b": "Recognition:",
+     "t": "Awwwards, OCTAS, Osentreprendre, Gartner."
+    }
+   ]
+  },
+  {
+   "type": "work",
+   "h2": "*Selected* projects",
+   "items": [
+    {
+     "img": "assassins-creed.jpg",
+     "alt": "Online platform designed for Assassin's Creed Odyssey",
+     "title": "Assassin's Creed Odyssey",
+     "result": "Online platform — Ubisoft"
+    },
+    {
+     "img": "warner-bros.jpg",
+     "alt": "Video game interface designed for Warner Bros.",
+     "title": "Warner Bros.",
+     "result": "Video game interface"
+    },
+    {
+     "img": "marvel.jpg",
+     "alt": "Game interface designed for Marvel",
+     "title": "Marvel",
+     "result": "Game interface"
+    },
+    {
+     "img": "musee-civilisation.jpg",
+     "alt": "Launch of the SaaS platform \"Collections\" for the Musée de la civilisation — OCTAS finalist",
+     "title": "\"Collections\" — Musée de la civilisation",
+     "result": "SaaS launch · OCTAS finalist"
+    },
+    {
+     "img": "pharmy.png",
+     "alt": "Optimization of the clinical trial search platform Pharmy — 48% increase in conversions",
+     "title": "Pharmy",
+     "result": "+48% conversions"
+    },
+    {
+     "img": "wizards.jpg",
+     "alt": "Website designed for Wizards of the Coast",
+     "title": "Wizards of the Coast",
+     "result": "Website"
+    },
+    {
+     "img": "spin-master.jpg",
+     "alt": "App interface designed for Spin Master",
+     "title": "Spin Master",
+     "result": "App interface"
+    },
+    {
+     "img": "trouve-un-stage.jpg",
+     "alt": "Launch of the SaaS platform \"Trouve un stage\" — Osentreprendre prize winner",
+     "title": "\"Trouve un stage\"",
+     "result": "SaaS launch · Osentreprendre prize winner"
+    }
+   ],
+   "awards": {
+    "label": "Projects recognized by",
+    "items": [
+     {
+      "file": "award-gartner.png",
+      "alt": "Gartner"
+     },
+     {
+      "file": "award-awwwards.png",
+      "alt": "Awwwards"
+     },
+     {
+      "file": "award-osentreprendre.png",
+      "alt": "Osentreprendre"
+     },
+     {
+      "file": "award-octas.png",
+      "alt": "OCTAS"
+     }
+    ]
+   }
+  },
+  {
+   "type": "proof",
+   "h2": "*Measurable* results",
+   "items": [
+    {
+     "n": "+48%",
+     "t": "conversions for the Pharmy clinical trial search platform"
+    },
+    {
+     "n": "$320M+",
+     "t": "in funding secured by an international scale-up we supported"
+    },
+    {
+     "n": "3,500%",
+     "t": "increase in inquiries received with minimal ad budgets"
+    }
+   ],
+   "theme": "dark"
+  },
+  {
+   "type": "faq",
+   "h2": "Questions about *our work*",
+   "open": true
+  },
+  {
+   "type": "cta-final",
+   "h2": "Your project could be *next.*",
+   "p": "Tell us where you want to go; we'll map the shortest path.",
+   "cta": "It's my turn"
+  }
+ ],
+ "faq": [
+  {
+   "q": "What kinds of projects do you deliver?",
+   "a": [
+    "Websites, landing pages and sales funnels, SaaS platforms and mobile apps, for companies of all sizes, from startups to major brands."
+   ]
+  },
+  {
+   "q": "Do you have quantified results?",
+   "a": [
+    "Yes. For example: +48% conversions for the Pharmy platform, up to a 3,500% increase in inquiries with minimal ad budgets, and up to 5× the initial performance of optimized pages."
+   ]
+  },
+  {
+   "q": "Can you share more cases on request?",
+   "a": [
+    "Yes, subject to confidentiality agreements. [Contact us](@contact) with your sector, and we'll present relevant examples."
+   ]
+  }
+ ]
+}

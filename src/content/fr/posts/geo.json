@@ -1,0 +1,41 @@
+{
+  "key": "geo", "slug": "quest-ce-que-le-geo", "date": "2026-10-03", "modified": "2026-10-03",
+  "tag": "SEO/GEO", "read": "6 min de lecture",
+  "title": "Qu'est-ce que le GEO et pourquoi votre entreprise devrait s'en soucier",
+  "metaTitle": "Qu'est-ce que le GEO (Generative Engine Optimization)? | Viesigners",
+  "description": "Le GEO consiste à rendre votre contenu citable par ChatGPT, Gemini et Perplexity. Définition, différences avec le SEO et sept gestes concrets à appliquer.",
+  "keywords": ["GEO", "Generative Engine Optimization", "SEO", "ChatGPT", "visibilité IA"],
+  "summary": [
+    "Le **GEO (Generative Engine Optimization)** vise à ce que les IA comme ChatGPT, Gemini ou Perplexity comprennent, fassent confiance et citent votre contenu.",
+    "Il ne remplace pas le SEO : il s'appuie dessus et ajoute des pratiques précises (réponses directes, données structurées, entité claire).",
+    "Les gestes de base sont simples et à la portée de la plupart des sites."
+  ],
+  "body": [
+    { "h2": "Le GEO en une phrase" },
+    { "p": "Le GEO est l'ensemble des pratiques qui rendent votre contenu facile à comprendre, à vérifier et à citer pour les moteurs de réponses basés sur l'IA. Là où le SEO cherche à vous placer dans une liste de liens, le GEO cherche à vous faire apparaître **dans la réponse elle-même**." },
+    { "h2": "Pourquoi c'est important maintenant" },
+    { "p": "De plus en plus de personnes posent leurs questions directement à un assistant IA plutôt que de parcourir dix liens. Ces assistants synthétisent une réponse et citent un petit nombre de sources. Si votre site n'en fait pas partie, vos concurrents prennent la place." },
+    { "h2": "SEO et GEO : ce qui change, ce qui reste" },
+    { "ul": [
+      "**Ce qui reste :** un site rapide, bien structuré, avec un contenu utile et une expertise démontrée.",
+      "**Ce qui s'ajoute :** des réponses directes dès le début des pages, des sections de questions-réponses, des données structurées et une identité d'entreprise claire sur le web.",
+      "**Ce qui change dans la mesure :** en plus des positions et des clics, on suit les citations et les mentions dans les réponses des IA."
+    ] },
+    { "h2": "Sept gestes concrets" },
+    { "ul": [
+      "Répondre à une question précise dans les deux premières phrases d'une page.",
+      "Ajouter une FAQ à chaque page importante, avec des réponses courtes et vérifiables.",
+      "Identifier clairement l'entreprise et les auteurs (noms, rôles, coordonnées cohérentes).",
+      "Ajouter des données structurées schema.org (organisation, service, FAQ, article).",
+      "Autoriser les robots IA dans le fichier robots.txt et proposer un fichier llms.txt.",
+      "Citer des sources et des chiffres datés plutôt que des affirmations vagues.",
+      "Garder un site rapide, lisible sur mobile et à jour."
+    ] },
+    { "h2": "Un avertissement honnête" },
+    { "p": "Aucune technique ne garantit une citation par une IA. Ces pratiques augmentent vos chances et améliorent aussi l'expérience de vos visiteurs, ce qui est déjà un bon retour sur investissement. Pour en savoir plus sur notre accompagnement, voyez notre service [SEO/GEO](@seo-geo)." }
+  ],
+  "faq": [
+    { "q": "Le GEO remplace-t-il le SEO?", "a": ["Non. Le GEO s'appuie sur les fondations du SEO (structure, contenu, performance) et y ajoute des pratiques propres aux moteurs de réponses IA."] },
+    { "q": "Puis-je mesurer ma visibilité dans les IA?", "a": ["Oui, en vérifiant régulièrement si votre entreprise est citée pour une série de questions clés dans les principaux assistants, et en suivant le trafic provenant de ces sources."] }
+  ]
+}

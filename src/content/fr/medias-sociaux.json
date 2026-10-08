@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Médias sociaux : stratégie et contenu qui nourrissent votre entonnoir | Viesigners",
+    "description": "Une présence sur les médias sociaux alignée sur votre offre : stratégie, voix de marque, contenu et suivi, relié à vos pages de conversion.",
+    "h1": "Médias sociaux"
+  },
+  "service": { "name": "Médias sociaux", "type": "Stratégie de médias sociaux et marketing de contenu", "audience": "Entreprises de services, consultants, coachs et SaaS" },
+  "sections": [
+    {
+      "type": "page-hero",
+      "tag": "Médias sociaux",
+      "h1": "Une présence sociale qui *nourrit votre entonnoir*",
+      "lead": "Publier n'est pas une stratégie. Nous alignons vos médias sociaux sur votre offre et vos pages de conversion, avec des experts de notre réseau, pour que chaque publication rapproche un client de la décision.",
+      "ctas": [ { "label": "Obtiens ton plan d'action gratuit", "to": "@contact", "style": "violet" }, { "label": "Voir la publicité numérique", "to": "@publicite", "style": "ghost" } ],
+      "brief": [
+        { "b": "Pour qui :", "t": "entreprises de services, consultants, coachs et SaaS qui veulent gagner en crédibilité et en demandes." },
+        { "b": "Notre rôle :", "t": "stratégie de contenu, positionnement, liens vers vos pages de conversion et suivi." },
+        { "b": "Réseaux :", "t": "LinkedIn, Facebook, Instagram et autres, selon votre clientèle." },
+        { "b": "Approche :", "t": "le contenu sert l'offre — et non l'inverse." }
+      ]
+    },
+    {
+      "type": "statement", "wide": true,
+      "text": "Occuper le terrain ne suffit pas : il faut *alimenter l'entonnoir.*",
+      "prose": [
+        "Beaucoup d'entreprises publient régulièrement sans voir de retombées, parce que leur contenu n'est relié ni à une offre claire ni à une page qui convertit.",
+        "Nous partons de votre offre et de vos clients idéaux, puis nous bâtissons une présence cohérente : une voix reconnaissable, des sujets qui répondent aux vraies questions et un chemin clair vers la prise de contact."
+      ]
+    },
+    {
+      "type": "deliverables", "id": "inclus",
+      "h2": "Ce que nous *mettons en place*",
+      "items": [
+        { "h": "Stratégie de contenu", "p": "Axes éditoriaux, sujets et formats alignés sur votre offre et sur les questions de vos clients idéaux." },
+        { "h": "Positionnement et voix de marque", "p": "Un ton et un message reconnaissables, cohérents avec votre site et vos campagnes." },
+        { "h": "Optimisation des profils", "p": "Profils et pages complétés pour inspirer confiance et orienter les visiteurs vers votre page de conversion." },
+        { "h": "Calendrier éditorial", "p": "Un rythme de publication réaliste, planifié à l'avance, que vous pouvez tenir." },
+        { "h": "Création de contenu", "p": "Visuels, textes et vidéos courtes réalisés avec les experts de notre réseau, selon votre budget." },
+        { "h": "Suivi et liens mesurables", "p": "Liens avec suivi (UTM) vers vos pages pour savoir quels contenus génèrent de vraies demandes." }
+      ]
+    },
+    {
+      "type": "process",
+      "h2": "Une présence bâtie *en quatre temps*",
+      "steps": [
+        { "h": "Cadrage", "p": "Nous clarifions votre offre, votre public et vos objectifs.", "out": "Livrable : plateforme de message." },
+        { "h": "Stratégie", "p": "Nous choisissons les réseaux, les sujets et les formats.", "out": "Livrable : plan de contenu." },
+        { "h": "Production et publication", "p": "Le contenu est créé et publié selon le calendrier.", "out": "Livrable : contenus publiés." },
+        { "h": "Analyse", "p": "Nous mesurons l'effet sur les visites, les demandes et les relations.", "out": "Livrable : rapport et ajustements." }
+      ]
+    },
+    {
+      "type": "compare",
+      "h2": "Publier pour publier ou *publier pour convertir?*",
+      "before": { "h": "Occuper le terrain", "items": ["Sujets choisis au hasard ou par habitude", "Aucun lien avec l'offre ni avec une page de conversion", "Mesure centrée sur les mentions « j'aime »", "Épuisement et irrégularité"] },
+      "after": { "h": "Alimenter l'entonnoir", "items": ["Sujets issus des vraies questions de vos clients", "Chaque contenu mène à une prochaine étape claire", "Mesure centrée sur les demandes et les relations", "Rythme réaliste et planifié"] }
+    },
+    { "type": "faq", "h2": "Questions fréquentes sur les *médias sociaux*", "open": true },
+    { "type": "cta-final", "h2": "Faites travailler *vos médias sociaux.*", "p": "Dites-nous qui vous voulez joindre; nous bâtirons la présence qui y mène.", "cta": "Obtiens ton plan d'action gratuit" }
+  ],
+  "faq": [
+    { "q": "Sur quels réseaux sociaux devrais-je être présent?", "a": ["Sur ceux où se trouvent vos clients idéaux et où vous pouvez maintenir un rythme réaliste. Pour du B2B ou des services professionnels, LinkedIn est souvent prioritaire; Facebook et Instagram conviennent mieux à d'autres publics. Nous le déterminons lors du cadrage."] },
+    { "q": "Créez-vous le contenu à ma place?", "a": ["Nous définissons la stratégie et la ligne éditoriale, puis nous produisons ou coordonnons le contenu avec des experts de notre réseau, selon votre budget et le temps que vous souhaitez y consacrer."] },
+    { "q": "Quelle est la différence entre les médias sociaux organiques et payants?", "a": ["Le contenu organique bâtit la crédibilité et la relation dans le temps; le payant accélère la portée vers une offre précise. Les deux fonctionnent mieux ensemble. Voyez notre service de [publicité numérique](@publicite)."] },
+    { "q": "Comment savoir si mes médias sociaux fonctionnent?", "a": ["Nous suivons les visites, les demandes et les conversations qui proviennent de chaque réseau, au-delà des mentions « j'aime ». Si un contenu ne mène à aucune action, nous ajustons."] }
+  ]
+}

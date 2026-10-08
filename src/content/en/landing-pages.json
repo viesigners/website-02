@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Landing Pages & Sales Funnels That Convert | Viesigners",
+    "description": "Landing pages and sales funnels designed to double or triple your inquiries and customers: offer, design, persuasive copy and fast development.",
+    "h1": "Landing pages and sales funnels that convert"
+  },
+  "service": { "name": "Landing pages and sales funnels", "type": "Landing page design, sales funnels and conversion rate optimization", "audience": "Service businesses, SaaS, consultants and coaches" },
+  "sections": [
+    {
+      "type": "page-hero",
+      "tag": "Landing pages and sales funnels",
+      "h1": "Double or triple your *inquiries and customers*",
+      "lead": "We have consistently tripled the revenue of our SMB clients and generated up to a 3,500% increase in inquiries received with minimal ad budgets, thanks to the performance of our pages.",
+      "guarantee": "Performance increase guaranteed!",
+      "ctas": [ { "label": "Discuss a project", "to": "@contact", "style": "violet" }, { "label": "See the full offer ↗", "to": "https://landingpage.viesigners.com/", "style": "ghost" } ],
+      "brief": [
+        { "b": "Who it's for:", "t": "service businesses, SaaS, consultants and coaches who want more inquiries, appointments and calls." },
+        { "b": "What you get:", "t": "offer architecture, design, persuasive copy and fast, mobile-ready development." },
+        { "b": "Proof:", "t": "up to a 3,500% increase in inquiries with minimal ad budgets." },
+        { "b": "Approach:", "t": "our signature landing page engineering, applied to your digital ecosystem." }
+      ]
+    },
+    {
+      "type": "statement", "wide": true,
+      "text": "We don't guess. We apply our *signature landing page engineering* within your digital ecosystem to replicate that success.",
+      "prose": [
+        "A landing page has a single mission: to lead one specific visitor to take one specific action. Every element that doesn't serve that action is friction.",
+        "A sales funnel goes further: it chains several pages and steps (landing page, form, confirmation, follow-up) to guide a person from interest to decision."
+      ]
+    },
+    {
+      "type": "deliverables", "id": "inclus",
+      "h2": "What your page or funnel *includes*",
+      "items": [
+        { "h": "Compelling offer architecture", "p": "Your offer is clarified, structured and phrased to put the value of your service front and center in the first seconds." },
+        { "h": "Graphic design", "p": "A credible, inviting design that guides the eye to action and builds trust without distracting." },
+        { "h": "Web copywriting", "p": "Copy based on sales psychology and optimized for search engines (SEO), with answers to objections and social proof." },
+        { "h": "Web development", "p": "Fast, scalable pages adapted to mobile platforms, where loading speed never costs a conversion." },
+        { "h": "Funnel and follow-up", "p": "Form, confirmation page, follow-up emails and a connection to your customer management tool, as needed." },
+        { "h": "Measurement and testing", "p": "Conversion tracking from day one and test ideas to improve the page's performance over time." }
+      ]
+    },
+    {
+      "type": "process",
+      "h2": "From offer to *conversion*, step by step",
+      "steps": [
+        { "h": "Offer and audience", "p": "We define who you're talking to, which problem you solve and which action you want.", "out": "Deliverable: value proposition and conversion goal." },
+        { "h": "Architecture and copy", "p": "We order the arguments, write the copy and prepare the proof.", "out": "Deliverable: approved structure and copy." },
+        { "h": "Design and development", "p": "We design, build and test the page on mobile and desktop.", "out": "Deliverable: page or funnel ready to publish." },
+        { "h": "Launch and optimization", "p": "We measure real behavior and adjust what still holds back inquiries.", "out": "Deliverable: tracked results and test plan." }
+      ]
+    },
+    {
+      "type": "compare",
+      "h2": "Ordinary page or *page that converts?*",
+      "before": { "h": "Ordinary page", "items": ["Several messages and several competing buttons", "Talks about features rather than benefits", "Slow loading on mobile", "Publish, then hope"] },
+      "after": { "h": "Viesigners landing page", "items": ["One message, one audience, one action", "Clear value, objections handled, proof visible", "Fast and readable on every screen", "Measurement, testing and continuous improvement"] }
+    },
+    {
+      "type": "proof",
+      "items": [
+        { "n": "3,500%", "t": "increase in inquiries received, with minimal ad budgets" },
+        { "n": "3×", "t": "the revenue of our SMB clients, consistently tripled" },
+        { "n": "5×", "t": "up to five times the initial performance of optimized pages" }
+      ]
+    },
+    { "type": "faq", "h2": "Frequently asked questions about *landing pages*", "open": true },
+    { "type": "cta-final", "h2": "Ready to *double your inquiries?*", "p": "Tell us which action you want. We'll design the page that leads to it.", "cta": "Discuss a project" }
+  ],
+  "faq": [
+    { "q": "What is a landing page?", "a": ["A landing page is a single web page created for one specific action: request a quote, book a call, sign up. Unlike a full site, it removes navigation and distractions to focus the visitor on that goal."] },
+    { "q": "What's the difference between a landing page and a sales funnel?", "a": ["A landing page is a single page. A sales funnel is a sequence of steps (for example: landing page, form, confirmation page, follow-up emails) that guides a person to a purchase or contact decision."] },
+    { "q": "What makes a landing page convert?", "a": ["The elements that matter most: a clear offer on the first screen, a single call to action, credible social proof, answers to objections, fast loading on mobile and a form without needless friction."] },
+    { "q": "Do I need to run ads for it to work?", "a": ["No, but ads speed up results: a good page turns every click into more inquiries. We've achieved up to a 3,500% increase in inquiries with minimal ad budgets. See also our [digital advertising](@publicite) service."] },
+    { "q": "How soon will I see results?", "a": ["The first data arrives as soon as the page receives traffic. The pace depends on your visitor volume; we track conversions from launch and adjust based on what the data shows."] },
+    { "q": "Do you offer a guarantee?", "a": ["Yes. Every service comes with a guarantee that other agencies don't dare to offer. [Contact us](@contact) to learn the details."] }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "title": "Contact — Obtiens ton plan d'action gratuit | Viesigners",
+  "description": "Parlez-nous de votre projet : plan d'action gratuit, site web, landing page, design de produit, publicité, SEO/GEO. Bureaux à Québec et Vancouver. +1 581-502-1115.",
+  "h1": "Contact"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tag": "Parlons-nous!",
+   "h1": "Obtiens ton *plan d'action gratuit*",
+   "lead": "Décrivez-nous votre situation en quelques lignes. Nous revenons vers vous avec une réponse claire sur la façon dont nous pouvons vous aider — ou sur le fait que ce n'est pas le bon moment.",
+   "ctas": []
+  },
+  {
+   "type": "contact",
+   "h2": "On a hâte de *vous lire.*",
+   "lead": "Plus vous nous donnez de contexte, plus notre réponse sera utile.",
+   "points": [
+    "Réponse personnelle des fondateurs, pas d'un agent de ventes",
+    "Aucun engagement",
+    "En français ou en anglais"
+   ],
+   "hours": "Du lundi au vendredi",
+   "labels": {
+    "phone": "Téléphone",
+    "where": "Bureaux",
+    "hours": "Disponibilité"
+   },
+   "form": {
+    "subject": "Nouvelle demande — viesigners.com",
+    "name": "Nom",
+    "email": "Courriel",
+    "phone": "Téléphone",
+    "site": "Site web actuel",
+    "optional": "(facultatif)",
+    "topic": "Sujet",
+    "choose": "Choisir…",
+    "topics": [
+     {
+      "t": "Plan d'action gratuit"
+     },
+     {
+      "t": "Site web",
+      "page": "sites-web"
+     },
+     {
+      "t": "Landing page ou tunnel de vente",
+      "page": "landing-pages"
+     },
+     {
+      "t": "Design de produit (SaaS et apps)",
+      "page": "design-produit"
+     },
+     {
+      "t": "Publicité numérique",
+      "page": "publicite"
+     },
+     {
+      "t": "Médias sociaux",
+      "page": "medias-sociaux"
+     },
+     {
+      "t": "SEO/GEO",
+      "page": "seo-geo"
+     },
+     {
+      "t": "Conseil d'affaires web",
+      "page": "coaching"
+     },
+     {
+      "t": "Autre"
+     }
+    ],
+    "message": "Votre message",
+    "submit": "Envoyer ma demande",
+    "note": "Nous utilisons vos renseignements uniquement pour répondre à votre demande.",
+    "ok": "Merci! Votre message est envoyé. Nous vous répondons rapidement.",
+    "fail": "L'envoi a échoué. Réessayez ou appelez-nous au +1 581-502-1115.",
+    "required": "Ce champ est requis.",
+    "emailErr": "Entrez une adresse courriel valide."
+   }
+  },
+  {
+   "type": "faq",
+   "h2": "Avant de nous *écrire*",
+   "open": true
+  }
+ ],
+ "faq": [
+  {
+   "q": "Qu'est-ce que le plan d'action gratuit?",
+   "a": [
+    "C'est un premier regard professionnel sur votre situation : nous identifions les points de friction qui coûtent le plus cher et les priorités qui auraient le plus d'effet sur vos conversions."
+   ]
+  },
+  {
+   "q": "Que se passe-t-il après l'envoi de mon message?",
+   "a": [
+    "Nous lisons votre demande et nous vous répondons personnellement. Si nous pouvons vous aider, nous proposons un échange pour préciser vos objectifs; sinon, nous vous le disons honnêtement."
+   ]
+  },
+  {
+   "q": "Travaillez-vous avec tout le monde?",
+   "a": [
+    "Non. Nous travaillons avec des entreprises de service qui veulent croître et qui visent des résultats mesurables. Si c'est votre cas, c'est le temps de se parler!"
+   ]
+  }
+ ]
+}

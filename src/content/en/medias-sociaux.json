@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Social Media Strategy & Content That Feeds Your Funnel | Viesigners",
+    "description": "A social media presence aligned with your offer: strategy, brand voice, content and tracking, connected to your conversion pages.",
+    "h1": "Social media"
+  },
+  "service": { "name": "Social media", "type": "Social media strategy and content marketing", "audience": "Service businesses, consultants, coaches and SaaS" },
+  "sections": [
+    {
+      "type": "page-hero",
+      "tag": "Social media",
+      "h1": "A social presence that *feeds your funnel*",
+      "lead": "Posting is not a strategy. We align your social media with your offer and your conversion pages, with experts from our network, so every post moves a customer closer to a decision.",
+      "ctas": [ { "label": "Get your free action plan", "to": "@contact", "style": "violet" }, { "label": "See digital advertising", "to": "@publicite", "style": "ghost" } ],
+      "brief": [
+        { "b": "Who it's for:", "t": "service businesses, consultants, coaches and SaaS companies that want more credibility and inquiries." },
+        { "b": "Our role:", "t": "content strategy, positioning, links to your conversion pages and tracking." },
+        { "b": "Networks:", "t": "LinkedIn, Facebook, Instagram and others, depending on your audience." },
+        { "b": "Approach:", "t": "content serves the offer — not the other way around." }
+      ]
+    },
+    {
+      "type": "statement", "wide": true,
+      "text": "Holding space isn't enough: you need to *feed the funnel.*",
+      "prose": [
+        "Many companies post regularly without seeing results, because their content isn't tied to a clear offer or to a page that converts.",
+        "We start from your offer and your ideal customers, then build a coherent presence: a recognizable voice, topics that answer real questions and a clear path to getting in touch."
+      ]
+    },
+    {
+      "type": "deliverables", "id": "inclus",
+      "h2": "What we *put in place*",
+      "items": [
+        { "h": "Content strategy", "p": "Editorial pillars, topics and formats aligned with your offer and your ideal customers' questions." },
+        { "h": "Positioning and brand voice", "p": "A recognizable tone and message, consistent with your site and campaigns." },
+        { "h": "Profile optimization", "p": "Profiles and pages completed to build trust and steer visitors to your conversion page." },
+        { "h": "Editorial calendar", "p": "A realistic publishing rhythm, planned ahead, that you can actually sustain." },
+        { "h": "Content creation", "p": "Visuals, copy and short videos produced with experts from our network, according to your budget." },
+        { "h": "Tracking and measurable links", "p": "Tracked links (UTM) to your pages so you know which content generates real inquiries." }
+      ]
+    },
+    {
+      "type": "process",
+      "h2": "A presence built *in four steps*",
+      "steps": [
+        { "h": "Framing", "p": "We clarify your offer, your audience and your goals.", "out": "Deliverable: message platform." },
+        { "h": "Strategy", "p": "We choose the networks, topics and formats.", "out": "Deliverable: content plan." },
+        { "h": "Production and publishing", "p": "Content is created and published on schedule.", "out": "Deliverable: published content." },
+        { "h": "Analysis", "p": "We measure the effect on visits, inquiries and relationships.", "out": "Deliverable: report and adjustments." }
+      ]
+    },
+    {
+      "type": "compare",
+      "h2": "Posting to post or *posting to convert?*",
+      "before": { "h": "Holding space", "items": ["Topics chosen at random or by habit", "No link to the offer or to a conversion page", "Measured by likes", "Burnout and irregularity"] },
+      "after": { "h": "Feeding the funnel", "items": ["Topics drawn from your customers' real questions", "Every piece leads to a clear next step", "Measured by inquiries and relationships", "A realistic, planned rhythm"] }
+    },
+    { "type": "faq", "h2": "Frequently asked questions about *social media*", "open": true },
+    { "type": "cta-final", "h2": "Put your *social media to work.*", "p": "Tell us who you want to reach; we'll build the presence that gets there.", "cta": "Get your free action plan" }
+  ],
+  "faq": [
+    { "q": "Which social networks should I be on?", "a": ["The ones where your ideal customers are and where you can keep a realistic rhythm. For B2B or professional services, LinkedIn is often the priority; Facebook and Instagram suit other audiences better. We determine this during framing."] },
+    { "q": "Do you create the content for me?", "a": ["We define the strategy and editorial line, then produce or coordinate the content with experts from our network, according to your budget and the time you want to invest."] },
+    { "q": "What's the difference between organic and paid social media?", "a": ["Organic content builds credibility and relationships over time; paid accelerates reach toward a specific offer. They work best together. See our [digital advertising](@publicite) service."] },
+    { "q": "How do I know if my social media is working?", "a": ["We track visits, inquiries and conversations coming from each network, beyond likes. If a piece of content leads to no action, we adjust."] }
+  ]
+}

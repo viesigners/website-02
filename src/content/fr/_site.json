@@ -1,0 +1,100 @@
+{
+ "servicesLabel": "Nos services",
+ "nav": {
+  "home": "Accueil",
+  "services": "Services",
+  "a-propos": "À propos",
+  "charles-erick": "Charles-Erick BG",
+  "jean-francois": "Jean-François BG",
+  "realisations": "Réalisations",
+  "actualites": "Actualités",
+  "contact": "Contact",
+  "sites-web": "Sites web",
+  "landing-pages": "Landing pages",
+  "design-produit": "Design de produit",
+  "publicite": "Publicité numérique",
+  "medias-sociaux": "Médias sociaux",
+  "seo-geo": "SEO/GEO",
+  "coaching": "Conseil d'affaires web"
+ },
+ "navSub": {
+  "sites-web": "Sites qui bâtissent la notoriété et convertissent",
+  "landing-pages": "Pages et tunnels de vente qui génèrent des demandes",
+  "design-produit": "UX/UI pour SaaS et applications mobiles",
+  "publicite": "Campagnes rentables, propulsées par nos pages",
+  "medias-sociaux": "Présence sociale qui nourrit votre entonnoir",
+  "seo-geo": "Soyez trouvé sur Google et cité par les IA",
+  "coaching": "Offres et lancements pour entrepreneurs de services"
+ },
+ "brief": "En bref",
+ "updated": "Mis à jour le",
+ "breadcrumb": "Fil d'Ariane",
+ "faqTitle": "Des questions?",
+ "by": "Par",
+ "keypoints": "À retenir",
+ "authorLine": "Fondateurs des Viesigners — experts en UX/UI et en optimisation du taux de conversion (CRO).",
+ "skip": "Passer au contenu",
+ "mainNav": "Navigation principale",
+ "langLabel": "Langue",
+ "langSwitch": "Switch to English",
+ "ctaShort": "Plan d'action gratuit",
+ "menu": "Menu",
+ "top": "Retour en haut",
+ "footerTag": "La pédale d'accélérateur des *entreprises en croissance.*",
+ "footer": {
+  "who": "Viesigners",
+  "blurb": "Micro-agence canadienne en UX/UI et optimisation du taux de conversion. Québec et Vancouver.",
+  "cta": "Parlons-nous!",
+  "company": "Entreprise",
+  "rights": "Les Viesigners. Tous droits réservés.",
+  "privacy": "Politique de confidentialité",
+  "terms": "Conditions générales"
+ },
+ "orgDescription": "Viesigners est une micro-agence web canadienne (Québec et Vancouver) spécialisée en UX/UI et en optimisation du taux de conversion (CRO) : sites web, landing pages, tunnels de vente, design de produit SaaS et applications, et conseil d'affaires web. En collaboration avec un réseau d'experts, elle accompagne aussi les entreprises en publicité numérique, SEO et GEO.",
+ "knowsAbout": [
+  "UX/UI design",
+  "Optimisation du taux de conversion (CRO)",
+  "Conception de sites web",
+  "Landing pages",
+  "Tunnels de vente",
+  "Design de produit SaaS",
+  "Design d'applications mobiles",
+  "SEO",
+  "GEO (Generative Engine Optimization)",
+  "Publicité numérique",
+  "Conseil d'affaires web"
+ ],
+ "awards": [
+  "Top 3 % des experts web mondiaux (Toptal)",
+  "Projets reconnus par Awwwards",
+  "Finaliste OCTAS",
+  "Prix Osentreprendre"
+ ],
+ "jobTitle": "Cofondateur, expert UX/UI et CRO",
+ "postCta": {
+  "h2": "Prêt à *réduire la friction?*",
+  "p": "Dites-nous où votre site perd des clients. On vous revient avec un plan d'action concret.",
+  "cta": "Obtiens ton plan d'action gratuit"
+ },
+ "labels": {
+  "services": "Services",
+  "friction": "Le problème",
+  "stats": "Résultats",
+  "work": "Réalisations",
+  "fit": "Pour qui",
+  "slot": "Témoignages",
+  "faq": "FAQ",
+  "deliverables": "Inclus",
+  "process": "Processus",
+  "compare": "Comparatif",
+  "proof": "Preuves",
+  "people": "L'équipe",
+  "facts": "En faits",
+  "testimonials": "Témoignages"
+ },
+ "call": "Appeler",
+ "close": "Fermer",
+ "translatedFrom": {
+  "en": "Traduit de l'anglais"
+ }
+}

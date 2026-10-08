@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "title": "Professional Website Design | Viesigners — UX/UI & CRO",
+    "description": "Professional websites designed to build your authority and convert: structure, UX/UI design, strategic copywriting and fast development. 600+ projects delivered.",
+    "h1": "Professional website creation"
+  },
+  "service": { "name": "Professional website creation", "type": "Website design, UX/UI and conversion rate optimization", "audience": "Service businesses, SaaS and growing brands" },
+  "sections": [
+    {
+      "type": "page-hero",
+      "tag": "Professional website creation",
+      "h1": "Root your *reputation* and take the place you deserve",
+      "lead": "We have delivered more than 600 digital projects and advised giants like Dell, Nerf and HP over our 30 combined years of experience. The quality of our sites has been recognized by Awwwards.",
+      "guarantee": "Performance increase guaranteed!",
+      "ctas": [ { "label": "Discuss a project", "to": "@contact", "style": "violet" }, { "label": "See our work", "to": "@realisations", "style": "ghost" } ],
+      "brief": [
+        { "b": "Who it's for:", "t": "service businesses, SaaS and growing brands that want results, not just a pretty site." },
+        { "b": "What you get:", "t": "site structure, UX/UI design, strategic copywriting and fast, mobile-ready development." },
+        { "b": "Proof:", "t": "more than 600 digital projects delivered; quality recognized by Awwwards." },
+        { "b": "Approach:", "t": "UX/UI and CRO — every page is designed to trigger an action." }
+      ]
+    },
+    {
+      "type": "statement", "wide": true,
+      "text": "We don't build standard brochure sites. We build the next generation of websites: *the best virtual representative* you'll ever have.",
+      "prose": [
+        "Your website is the only member of your team that works 24 hours a day. If it doesn't clarify your value within seconds and guide visitors to the next step, it leaves money on the table.",
+        "That's why we design every site as a business asset: a structure that follows the intentions of your ideal customers, a design that strengthens your credibility, copy that persuades, and technology that never slows anyone down."
+      ]
+    },
+    {
+      "type": "deliverables", "id": "inclus",
+      "h2": "What your site *includes*",
+      "lead": "Four pillars, plus the technical foundations that make you findable and measurable.",
+      "items": [
+        { "h": "Site structure", "p": "A clear, intuitive architecture aligned with the intentions of your ideal customers: sitemap, journeys and information hierarchy." },
+        { "h": "Graphic design and UX", "p": "Crafted with precision to boost your credibility: applied visual identity, mockups, interactions and baseline accessibility." },
+        { "h": "Strategic copywriting", "p": "Copy that blends persuasion to convert with SEO techniques to be found, with clear answers to your customers' questions." },
+        { "h": "Web development", "p": "Fast, scalable pages strategically adapted to mobile platforms, built so you can keep evolving them." },
+        { "h": "SEO and GEO foundations", "p": "Semantic markup, metadata, structured data and question-and-answer content, so search engines and AI assistants understand you." },
+        { "h": "Measurement and optimization", "p": "Conversion tracking in place at launch, so friction points are fixed with data rather than hunches." }
+      ]
+    },
+    {
+      "type": "process",
+      "h2": "A process with *no trial and error*",
+      "lead": "Four clear steps, with a deliverable at the end of each.",
+      "steps": [
+        { "h": "Diagnosis", "p": "We clarify your goals, your offer and your ideal customers, and spot what creates friction today.", "out": "Deliverable: measurable goals and priorities." },
+        { "h": "Structure and message", "p": "We build the site architecture and craft a message that puts the value of your offer front and center.", "out": "Deliverable: sitemap and key copy." },
+        { "h": "Design and development", "p": "We design the screens, validate with you, then build a fast, mobile-ready site.", "out": "Deliverable: complete, tested site." },
+        { "h": "Launch and optimization", "p": "We publish, measure real behavior and improve what still holds back conversion.", "out": "Deliverable: live site and improvement plan." }
+      ]
+    },
+    {
+      "type": "compare",
+      "h2": "Standard brochure site or *site that converts?*",
+      "before": { "h": "Standard brochure site", "items": ["Presents the company and mostly talks about itself", "Navigation mirrors the org chart", "Pretty, but slow and hard to read on mobile", "Little to no measurement: you can't tell what works"] },
+      "after": { "h": "Site designed by Viesigners", "items": ["Answers the intentions of ideal customers first", "Journeys that naturally lead to action", "Fast and designed mobile-first", "Every page is measured and improvable"] }
+    },
+    {
+      "type": "proof",
+      "items": [
+        { "n": "600+", "t": "digital projects delivered for companies of all sizes" },
+        { "n": "5×", "t": "up to five times the initial performance of optimized pages and sites" },
+        { "n": "30+", "t": "business fields covered, from SaaS to wellness" }
+      ]
+    },
+    { "type": "faq", "h2": "Frequently asked questions about *website creation*", "open": true },
+    { "type": "cta-final", "h2": "Ready to build *your best virtual representative?*", "p": "Let's talk about your project. Together we'll assess where your site can gain clarity and conversions.", "cta": "Discuss a project" }
+  ],
+  "faq": [
+    { "q": "How long does it take to create a professional website?", "a": ["It depends on scope: number of pages, functional complexity, and how fast approvals and content come in. After the diagnosis, we give you a precise schedule before we start."] },
+    { "q": "How much does a website by Viesigners cost?", "a": ["The price depends on project scope. We prepare a clear proposal after a first conversation, and we always weigh the investment against the expected return: more inquiries, more customers, more value per customer. [Let's talk](@contact)."] },
+    { "q": "Will my site rank well on Google and in AI answers?", "a": ["Yes, it's built in from the start: clear structure, SEO-oriented copy, semantic markup, structured data and question-and-answer content. To go further, see our [SEO/GEO](@seo-geo) service."] },
+    { "q": "What's the difference between a website and a landing page?", "a": ["A website presents your whole business and answers many intentions. A [landing page](@landing-pages) is a single page designed for one action (request a quote, book a call). They complement each other."] },
+    { "q": "Do you offer a guarantee?", "a": ["Yes. Every service we offer comes with a guarantee that other agencies don't dare to offer. [Contact us](@contact) to learn the details."] }
+  ]
+}

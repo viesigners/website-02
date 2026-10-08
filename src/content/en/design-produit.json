@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "SaaS & Mobile App Product Design — UX/UI | Viesigners",
+    "description": "UX/UI optimization for SaaS and mobile apps: user journeys, design systems, user research and UX writing. Award-winning work recognized by OCTAS, Osentreprendre and Gartner.",
+    "h1": "UX/UI optimization for SaaS and mobile apps"
+  },
+  "service": { "name": "Product design — UX/UI for SaaS and mobile apps", "type": "Digital product design, UX/UI, design systems", "audience": "SaaS companies, scale-ups and mobile app makers" },
+  "sections": [
+    {
+      "type": "page-hero",
+      "tag": "Product design — SaaS and apps",
+      "h1": "Build a *world-class* app experience",
+      "lead": "We helped an international scale-up secure $320M+ in funding and won prestigious awards for launching and optimizing apps (OCTAS, Osentreprendre, Gartner).",
+      "guarantee": "Satisfaction guaranteed!",
+      "ctas": [ { "label": "Build a world-class UX", "to": "@contact", "style": "violet" }, { "label": "Toptal profile (top 3%) ↗", "to": "https://www.toptal.com/designers/resume/jean-francois-b-g#XAEE74", "style": "ghost" } ],
+      "brief": [
+        { "b": "Who it's for:", "t": "SaaS companies, scale-ups and mobile app makers." },
+        { "b": "What you get:", "t": "optimized user journeys, a design system, user research and UX writing." },
+        { "b": "Proof:", "t": "$320M+ in funding secured by a scale-up we supported; OCTAS, Osentreprendre and Gartner recognition." },
+        { "b": "Collaboration:", "t": "we work hand in hand with your internal teams, in iterative phases." }
+      ]
+    },
+    {
+      "type": "statement", "wide": true,
+      "text": "We rework the experience of your SaaS and apps to turn them into *world-class assets* that engage your users, free up your internal teams and win over your investors.",
+      "prose": [
+        "A product is judged within minutes: does the user understand the value, reach a first success, and have a reason to come back? Onboarding, screen clarity and design system consistency directly drive activation, retention and customer lifetime."
+      ]
+    },
+    {
+      "type": "deliverables", "id": "inclus",
+      "h2": "What we *design and optimize*",
+      "items": [
+        { "h": "User journey optimization", "p": "Delivered in iterative phases that account for technical debt: we ship value without freezing your roadmap." },
+        { "h": "Design systems", "p": "A world-class design system: components, principles and documentation that speed up your teams and keep everything consistent." },
+        { "h": "User research and benchmarking", "p": "Interviews, usability tests and competitive analysis to inform your decisions with facts." },
+        { "h": "UX writing", "p": "Interface copy that gives your product personality without losing clarity." },
+        { "h": "Onboarding and activation", "p": "Simplifying onboarding and the experience to increase loyalty and extend customer lifetime." },
+        { "h": "Collaboration with your internal teams", "p": "Seamless: shared tools, polished developer handoffs and rituals aligned with your work cycles." }
+      ]
+    },
+    {
+      "type": "process",
+      "h2": "An *iterative*, measurable approach",
+      "steps": [
+        { "h": "Discovery and audit", "p": "We analyze your product, your usage data and your technical constraints.", "out": "Deliverable: UX diagnosis and prioritized opportunities." },
+        { "h": "Research and hypotheses", "p": "We validate real user needs and form testable hypotheses.", "out": "Deliverable: research synthesis." },
+        { "h": "Iterative design", "p": "We design, test and refine in phases, collaborating with your teams.", "out": "Deliverable: journeys and components ready to build." },
+        { "h": "Delivery and measurement", "p": "We support implementation and measure the effect on activation and retention.", "out": "Deliverable: tracked results and next steps." }
+      ]
+    },
+    {
+      "type": "proof",
+      "items": [
+        { "n": "$320M+", "t": "in funding secured by an international scale-up we supported" },
+        { "n": "+48%", "t": "conversions for the Pharmy clinical trial search platform" },
+        { "n": "Top 3%", "t": "of the world's web experts, according to Toptal" }
+      ]
+    },
+    { "type": "faq", "h2": "Frequently asked questions about *product design*", "open": true },
+    { "type": "cta-final", "h2": "Ready to build a *world-class UX?*", "p": "Let's talk about your product: we'll find the most profitable experience gains.", "cta": "Build a world-class UX" }
+  ],
+  "faq": [
+    { "q": "What does UX/UI optimization for a SaaS or app include?", "a": ["It covers journey analysis, user research, redesign of key screens, UX writing, creating or improving a design system, and support during implementation. We first target what has the greatest effect on activation and retention."] },
+    { "q": "Do you work with our internal teams?", "a": ["Yes. We collaborate with your designers, developers and product managers, and adapt our deliveries to your tools and work cycles to free up your teams rather than slow them down."] },
+    { "q": "What is a design system and do I need one?", "a": ["A design system is a library of components, rules and documentation that keeps the interface consistent and speeds up development. It pays off as soon as several people or teams work on the same product."] },
+    { "q": "How do you measure UX improvement?", "a": ["We define indicators with you before starting (for example activation, a journey's conversion rate or retention) and track them after implementation. For the Pharmy platform, optimization led to a 48% increase in conversions."] },
+    { "q": "Do you also design mobile apps?", "a": ["Yes, we design and optimize the experience of mobile apps as well as web SaaS platforms. See our [work](@realisations)."] }
+  ]
+}

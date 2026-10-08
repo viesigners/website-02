@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "title": "About Viesigners — The BG Twins, UX/UI and CRO experts",
+    "description": "Viesigners is a Canadian web micro-agency founded by Charles-Erick and Jean-François BG: 30+ combined years in UX/UI and conversion rate optimization.",
+    "h1": "About Viesigners"
+  },
+  "sections": [
+    {
+      "type": "page-hero",
+      "tag": "About",
+      "h1": "Hi! This is *The BG Twins*",
+      "lead": "We are hybrid experts in web experience design, UX/UI and conversion rate optimization (CRO) — originally from Québec, Canada — with more than 30 combined years helping companies perform online.",
+      "ctas": [ { "label": "Let's talk!", "to": "@contact", "style": "violet" }, { "label": "See our work", "to": "@realisations", "style": "ghost" } ],
+      "brief": [
+        { "b": "Who:", "t": "Charles-Erick and Jean-François BG, founders of Viesigners." },
+        { "b": "Specialties:", "t": "UX/UI, CRO, websites, landing pages and SaaS and app product design." },
+        { "b": "Where:", "t": "Québec and Vancouver, Canada — French- and English-speaking markets." },
+        { "b": "Recognition:", "t": "top 3% of the world's web experts (Toptal); projects recognized by Awwwards, OCTAS, Osentreprendre and Gartner." }
+      ]
+    },
+    {
+      "type": "statement", "wide": true,
+      "text": "A unique approach that unites *customer experience* and *web business strategy.*",
+      "prose": [
+        "Surrounded by a network of select digital experts, as human as they are skilled, we act as business advisors, strategic consultants, senior freelancers and delivery partners in designing offers and digital experiences.",
+        "We're a micro-agency by choice: you work directly with the experts, not with an inexperienced employee, and never feel like a number."
+      ]
+    },
+    {
+      "type": "people",
+      "h2": "The founders",
+      "lead": "Two brothers, one obsession: reducing the friction between a quality offer and the people who need it.",
+      "items": [
+        { "to": "charles-erick", "name": "Charles-Erick BG", "role": "Co-founder", "photo": "a", "alt": "Charles-Erick BG, co-founder of Viesigners", "text": "Hybrid expert in UX/UI and conversion rate optimization.", "cta": "View profile" },
+        { "to": "jean-francois", "name": "Jean-François BG", "role": "Co-founder", "photo": "b", "alt": "Jean-François BG, co-founder of Viesigners", "text": "Hybrid UX/UI expert, declared in the top 3% of the world's web experts by Toptal.", "cta": "View profile" }
+      ]
+    },
+    {
+      "type": "facts",
+      "h2": "Viesigners in *a few facts*",
+      "items": [
+        { "k": "Founders", "v": "Charles-Erick and Jean-François BG — Masters of web experience design (2009)." },
+        { "k": "Experience", "v": "More than 30 years of combined experience and more than 600 digital projects delivered." },
+        { "k": "Specialties", "v": "UX/UI, conversion rate optimization (CRO), websites, landing pages, sales funnels, SaaS and app product design, business advisory." },
+        { "k": "Network", "v": "Selected experts in digital advertising, social media and SEO/GEO." },
+        { "k": "Markets", "v": "More than 30 business fields, in French and English, with clients in more than 6 countries." },
+        { "k": "Offices", "v": "Québec and Vancouver, Canada." },
+        { "k": "Recognition", "v": "Toptal top 3%; projects recognized by Awwwards, OCTAS, Osentreprendre and Gartner." }
+      ]
+    },
+    { "type": "faq", "h2": "Questions about *Viesigners*", "open": true },
+    { "type": "cta-final", "h2": "Let's get *acquainted.*", "p": "Tell us where you are; we'll honestly tell you whether we can help.", "cta": "Let's talk!" }
+  ],
+  "faq": [
+    { "q": "Who are The BG Twins?", "a": ["Charles-Erick and Jean-François BG are the founders of Viesigners. They are hybrid experts in UX/UI and CRO, originally from Québec, with more than 30 years of combined experience."] },
+    { "q": "Where is the agency located?", "a": ["Viesigners has offices in Québec and Vancouver, Canada, and collaborates remotely with clients in more than 6 countries."] },
+    { "q": "Why work with a micro-agency?", "a": ["Because you work directly with the experts, with no inexperienced go-between, and all the energy is focused on your return on investment."] },
+    { "q": "Who do you work with besides the founding team?", "a": ["A limited network of selected experts in digital advertising, social media and SEO/GEO, whom we bring into your project as needed."] }
+  ]
+}

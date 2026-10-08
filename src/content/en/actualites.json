@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "title": "News — UX/UI, CRO, SEO and GEO | Viesigners",
+    "description": "Practical articles on conversion rate optimization, landing pages, product design, SEO and GEO, by the founders of Viesigners.",
+    "h1": "News"
+  },
+  "sections": [
+    {
+      "type": "page-hero",
+      "tag": "News",
+      "h1": "Ideas to make the web *your unfair advantage*",
+      "lead": "Concrete articles on conversion, user experience, SEO and GEO.",
+      "ctas": []
+    },
+    { "type": "posts-list" },
+    { "type": "faq", "h2": "Questions about *our articles*", "open": true },
+    { "type": "cta-final", "h2": "A topic *you'd like covered?*", "p": "Tell us what you'd like to understand; we might turn it into an article.", "cta": "Let's talk!" }
+  ],
+  "faq": [
+    { "q": "Who writes Viesigners' articles?", "a": ["The articles are written by the founders, Charles-Erick and Jean-François BG, drawing on their experience in UX/UI and conversion rate optimization."] },
+    { "q": "What topics do you cover?", "a": ["Conversion, landing pages, SaaS and app product design, digital advertising, social media, SEO and GEO."] },
+    { "q": "Can I suggest a topic?", "a": ["Yes, gladly. Use the [contact page](@contact) to propose one."] }
+  ]
+}

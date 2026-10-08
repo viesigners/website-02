@@ -1,0 +1,435 @@
+{
+ "meta": {
+  "title": "Viesigners | Agence web Québec : sites, tunnels, SaaS & apps",
+  "description": "Micro-agence web canadienne en UX/UI et CRO : sites web, landing pages, tunnels de vente, design de produit SaaS et apps. Multipliez vos ventes et votre revenu par client.",
+  "h1": "On t'aide à faire du Web ton Avantage déloyal"
+ },
+ "sections": [
+  {
+   "type": "hero-home",
+   "tag": "Agence web & performance numérique : sites, tunnels, SaaS et apps",
+   "h1": "Multipliez vos ventes et boostez votre revenu par client, grâce au *web rentable*",
+   "lead": "Nous aidons les entreprises de services, SaaS et applications mobiles à optimiser leur présence numérique pour deux résultats précis : acquérir plus de clients et maximiser la valeur de chacun — une approche qui met la psychologie humaine au service de votre rentabilité.",
+   "cta": "Démarrer un projet",
+   "advised": "On a conseillé plus de 600 entreprises, dont certaines parmi les plus grandes",
+   "logosLabel": "Entreprises conseillées par Viesigners",
+   "logos": [
+    {
+     "id": "warner",
+     "alt": "Warner Bros."
+    },
+    {
+     "id": "marvel",
+     "alt": "Marvel"
+    },
+    {
+     "id": "salesforce",
+     "alt": "Salesforce"
+    },
+    {
+     "id": "disney",
+     "alt": "Disney"
+    },
+    {
+     "id": "hp",
+     "alt": "HP"
+    },
+    {
+     "id": "dell",
+     "alt": "Dell"
+    },
+    {
+     "id": "ubisoft",
+     "alt": "Ubisoft"
+    }
+   ]
+  },
+  {
+   "type": "friction",
+   "h2": "Vous avez une offre de qualité, mais vos *revenus ne suivent pas?*",
+   "lead": "La plupart des entreprises en croissance ont de bonnes idées et un produit ou service de qualité… mais elles se heurtent quand même au plafond de verre :",
+   "pains": [
+    "Des visiteurs qui atterrissent sur leur site, mais qui repartent sans agir",
+    "Un message qui semble flou ou trop complexe pour un œil extérieur",
+    "Un parcours client qui crée de la friction",
+    "Des clients qui ne rapportent pas assez pour être vraiment profitables",
+    "L'écart frustrant entre la qualité réelle de leur service et la façon dont elle est perçue"
+   ],
+   "fig": [
+    "Friction",
+    "Fluidité"
+   ],
+   "reveal": {
+    "h3": "Le problème est la présence de *points de friction* dans vos parcours clients",
+    "p": [
+     "La réalité… c'est que vous n'avez pas besoin de tactiques marketing complexes, de pile technologique automatisée de bout en bout ou de clients plus engagés. Parce qu'ajouter de la complexité sur une fondation déjà irritante ne fait qu'accélérer l'échec.",
+     "Le véritable frein, c'est la friction : la difficulté à articuler la valeur de votre offre de manière persuasive et à la traduire en une expérience client qui coule comme une glissade d'eau. Parce que quand le message ne passe pas ou que le chemin est compliqué, l'argent reste dans les poches de vos clients."
+    ],
+    "cost": "Et ça vous coûte cher…"
+   }
+  },
+  {
+   "type": "founders",
+   "kicker": "Et si vous laissiez tomber les essais-erreurs?",
+   "h2": "Découvrez les fondateurs des Viesigners : la micro-agence web canadienne no 1 pour *rentabiliser votre entreprise*",
+   "sub": "Charles-Erick & Jean-François BG — Maîtres en conception d'expériences web (2009)",
+   "text": [
+    "**Bonjour! Ici Les Frères BG.** Nous sommes des experts hybrides en conception d'expériences web, UX/UI et optimisation du taux de conversion (CRO) — originaires du Québec, Canada — avec plus de 30 années combinées à aider des entreprises de toutes tailles et de tous secteurs, dans des marchés anglophones comme francophones, à performer en ligne.",
+    "**Une approche unique, qui rallie expérience client et stratégies d'affaires web.** Entourés d'un réseau d'experts select du domaine numérique, aussi humains que compétents, nous opérons comme conseillers d'affaires, consultants stratégiques, pigistes seniors et partenaires de réalisation en conception d'offres et d'expériences numériques, afin de :"
+   ],
+   "checks": [
+    "**Améliorer les pages de destination et les parcours de vente** pour augmenter les demandes, les rendez-vous et les appels",
+    "**Clarifier et formuler des offres percutantes** pour inciter immédiatement les clients à passer à l'action",
+    "**Simplifier l'onboarding et l'expérience** des applications et services pour fidéliser davantage et prolonger la durée de vie client"
+   ],
+   "cta": {
+    "label": "Faire connaissance avec les frères BG",
+    "to": "a-propos"
+   },
+   "photoAlt": "Charles-Erick et Jean-François BG, motivés à faire croître votre entreprise!",
+   "chip": {
+    "b": "Toptal top 3 %",
+    "t": "Déclarés parmi les meilleurs experts web mondiaux"
+   },
+   "press": {
+    "label": "Tel que vu dans",
+    "items": [
+     {
+      "file": "press-coveo.png",
+      "alt": "Blogue Coveo"
+     },
+     {
+      "file": "press-o2web.png",
+      "alt": "Blogue O2 Web"
+     },
+     {
+      "file": "press-socom.svg",
+      "alt": "SOCOM"
+     },
+     {
+      "file": "press-superdads.png",
+      "alt": "Superdads"
+     },
+     {
+      "file": "press-2gars-adwords.png",
+      "alt": "Les 2 gars d'Adwords"
+     }
+    ]
+   },
+   "school": {
+    "file": "logo-laval.png",
+    "alt": "Université Laval"
+   }
+  },
+  {
+   "type": "services",
+   "h2": "Des stratégies d'affaires web *minutieusement adaptées* à votre niveau d'évolution",
+   "lead": "Chaque service est conçu pour une seule chose : réduire la friction entre votre offre et vos clients.",
+   "cards": [
+    {
+     "span": "c-6",
+     "hero": true,
+     "to": "@sites-web",
+     "cta": "Voir le service",
+     "title": "Création de site web professionnel",
+     "desc": "Enracinez votre notoriété et prenez la place qui vous revient dans votre marché. Plus de 600 projets livrés, reconnus par Awwwards.",
+     "mini": true
+    },
+    {
+     "span": "c-6",
+     "to": "@landing-pages",
+     "cta": "Voir le service",
+     "title": "Création de landing page et de tunnel de vente qui convertissent",
+     "desc": "Doublez ou triplez vos demandes et clients : jusqu'à 3500 % de hausse de demandes avec des budgets publicitaires minimes.",
+     "mini": true
+    },
+    {
+     "span": "c-6",
+     "to": "@design-produit",
+     "cta": "Voir le service",
+     "title": "Optimisation UX/UI pour SaaS et apps mobiles",
+     "desc": "Bâtissez une expérience d'application de classe mondiale pour votre SaaS ou vos applications mobiles.",
+     "mini": true
+    },
+    {
+     "span": "c-6",
+     "to": "@coaching",
+     "cta": "Voir le service",
+     "title": "Conseil d'affaires web et stratégies performantes",
+     "desc": "Accélérez le lancement de nouveaux services avec un plan d'action validé, de l'offre au tunnel de vente.",
+     "mini": true,
+     "hero": true
+    },
+    {
+     "span": "c-4",
+     "mini": true,
+     "to": "@publicite",
+     "cta": "Voir le service",
+     "title": "Publicité numérique",
+     "desc": "Des campagnes pilotées par des experts de notre réseau, branchées sur des pages conçues pour convertir : chaque dollar publicitaire travaille plus fort."
+    },
+    {
+     "span": "c-4",
+     "mini": true,
+     "to": "@medias-sociaux",
+     "cta": "Voir le service",
+     "title": "Médias sociaux",
+     "desc": "Une présence sociale cohérente avec votre offre, qui nourrit votre entonnoir au lieu de simplement occuper le terrain."
+    },
+    {
+     "span": "c-4",
+     "mini": true,
+     "to": "@seo-geo",
+     "cta": "Voir le service",
+     "title": "SEO/GEO",
+     "desc": "Soyez trouvé sur Google et cité dans les réponses de ChatGPT, Gemini, Perplexity et compagnie."
+    }
+   ]
+  },
+  {
+   "type": "stats",
+   "h2": "Arrêtez de laisser de l'argent sur la table et *maximisez votre rentabilité*",
+   "lead": "Nous aidons les entreprises à croître plus rapidement en appliquant des systèmes stratégiques validés auprès de grandes marques comme Disney, Marvel, Hasbro et Dell, ainsi qu'auprès de plus de 600 organisations de toute taille, qui ont connu une croissance accélérée. **Votre entreprise n'est PAS un cobaye!** Vous profitez d'une approche concrète, performante et mesurable qui aligne votre offre, votre positionnement et votre expérience numérique sur vos objectifs d'affaires.",
+   "items": [
+    {
+     "n": "5×",
+     "h": "Augmentation du taux de conversion",
+     "p": "Nous laissons les chiffres parler pour nous. Les pages et sites que nous avons créés et optimisés ont obtenu jusqu'à 5× leur performance initiale."
+    },
+    {
+     "n": "600+",
+     "h": "Entreprises que nous avons aidées à ce jour",
+     "p": "Nous avons conseillé plus de 600 entreprises, certaines parmi les plus grandes sur la planète terre (et des startups aussi!)."
+    },
+    {
+     "n": "30+",
+     "h": "Marchés que nous avons pénétrés",
+     "p": "B2B, B2C, B2B2C, e-commerce, SaaS, services locaux ou en ligne, mieux-être, baseball… on a touché à plus de 30 domaines."
+    },
+    {
+     "n": "6+",
+     "h": "Notre portée internationale",
+     "p": "Des entrepreneurs et entreprises provenant de plus de 6 pays à travers le monde nous ont fait confiance."
+    }
+   ]
+  },
+  {
+   "type": "work",
+   "id": "realisations",
+   "h2": "Quelques réalisations que vous reconnaîtrez *peut-être…*",
+   "lead": "Nous avons conçu plus de 600 sites web, applications et landing pages pour des PME et de grandes entreprises, bâti des tunnels en ligne à haut taux de conversion pour des startups et des solopreneurs, et aidé des entreprises à gagner en visibilité, en clients et en rentabilité.",
+   "items": [
+    {
+     "img": "assassins-creed.jpg",
+     "alt": "Plateforme en ligne conçue pour Assassin's Creed Odyssey",
+     "title": "Assassin's Creed Odyssey",
+     "result": "Plateforme en ligne — Ubisoft"
+    },
+    {
+     "img": "warner-bros.jpg",
+     "alt": "Interface de jeu vidéo conçue pour la compagnie Warner Bros.",
+     "title": "Warner Bros.",
+     "result": "Interface de jeu vidéo"
+    },
+    {
+     "img": "marvel.jpg",
+     "alt": "Interface de jeu conçue pour la compagnie Marvel",
+     "title": "Marvel",
+     "result": "Interface de jeu"
+    },
+    {
+     "img": "musee-civilisation.jpg",
+     "alt": "Lancement de la plateforme SaaS « Collections » pour le Musée de la civilisation — finaliste aux OCTAS",
+     "title": "« Collections » — Musée de la civilisation",
+     "result": "Lancement SaaS · finaliste aux OCTAS"
+    },
+    {
+     "img": "pharmy.png",
+     "alt": "Optimisation de la plateforme de recherche d'études cliniques Pharmy — augmentation des conversions de 48 %",
+     "title": "Pharmy",
+     "result": "+48 % de conversions"
+    },
+    {
+     "img": "wizards.jpg",
+     "alt": "Site web conçu pour la marque Wizards of the Coast",
+     "title": "Wizards of the Coast",
+     "result": "Site web"
+    },
+    {
+     "img": "spin-master.jpg",
+     "alt": "Interface d'application conçue pour Spin Master",
+     "title": "Spin Master",
+     "result": "Interface d'application"
+    },
+    {
+     "img": "trouve-un-stage.jpg",
+     "alt": "Lancement de la plateforme SaaS « Trouve un stage » — gagnant du prix Osentreprendre",
+     "title": "« Trouve un stage »",
+     "result": "Lancement SaaS · gagnant du prix Osentreprendre"
+    }
+   ],
+   "awards": {
+    "label": "Projets reconnus par",
+    "items": [
+     {
+      "file": "award-gartner.png",
+      "alt": "Gartner"
+     },
+     {
+      "file": "award-awwwards.png",
+      "alt": "Awwwards"
+     },
+     {
+      "file": "award-osentreprendre.png",
+      "alt": "Osentreprendre"
+     },
+     {
+      "file": "award-octas.png",
+      "alt": "OCTAS"
+     }
+    ]
+   },
+   "cta": {
+    "label": "Voir toutes nos réalisations",
+    "to": "realisations"
+   }
+  },
+  {
+   "type": "fit",
+   "h2": "Soyons clairs : nous ne travaillons *PAS* avec tout le monde",
+   "yes": {
+    "h": "C'est pour vous si :",
+    "items": [
+     "Vous êtes une entreprise de service — SaaS, applications, services en ligne ou services locaux",
+     "Vous désirez faire croître votre entreprise",
+     "Vous êtes sérieux — vous voulez des résultats, pas seulement de belles pages qui flattent votre ego"
+    ]
+   },
+   "no": {
+    "h": "Ce n'est pas pour vous si…",
+    "items": [
+     "Vous ne visez pas à croître",
+     "Vous voulez simplement un joli site ou une jolie application",
+     "Vous n'êtes pas prêts à adopter une approche orientée sur les résultats plutôt que sur le ressenti"
+    ]
+   },
+   "foot": {
+    "p": "Si vous correspondez au profil recherché, c'est le temps de se parler!",
+    "label": "C'est mon tour",
+    "to": "contact"
+   }
+  },
+  {
+   "type": "testimonials",
+   "h2": "Ce qu'on ressent en travaillant avec nous",
+   "items": [
+    {
+     "name": "Elodie Marcotte",
+     "role": "",
+     "date": "2026-02-18",
+     "lang": "fr",
+     "title": "L’accompagnement de Charles-Érick a largement dépassé mes attentes",
+     "text": "Dans le peu de mots que cet espace me permet, je peux dire que l’accompagnement de Charles-Érick a largement dépassé mes attentes. Créatif, vif d’esprit et super bien organisé, il va bien au-delà de la simple réflexion en expérience utilisateur. C’est quelqu’un de profondément humain, et ça se ressent directement dans son travail. Je le recommande les yeux fermés."
+    },
+    {
+     "name": "khrystopher Dubé",
+     "role": "",
+     "date": "2025-11-21",
+     "lang": "fr",
+     "title": "Transformer mes idées en une page de conversion efficace et professionnelle",
+     "text": "Un immense merci à Charles-Érick pour son travail remarquable. Dès le début, il a su me mettre en confiance, a été pleinement à l’écoute de mes besoins et a réussi à transformer mes idées en une page de conversion efficace et professionnelle."
+    },
+    {
+     "name": "Marie-Eve Gratton",
+     "role": "Design UX et UI",
+     "date": "2026-02-20",
+     "lang": "fr",
+     "title": "Une référence lorsqu’il est question de stratégie web et de design UX",
+     "text": "Que dire de Charles-Érick… un humain véritablement à part. Sa grande force est sa capacité à amener ses clients et ses collègues à un autre niveau grâce à sa réflexion stratégique et sa compréhension fine du UX. Charles-Érick est une référence lorsqu’il est question de stratégie web et de design UX. Son approche est toujours réfléchie, claire et structurée. C’est d’ailleurs un réel plaisir de collaborer avec lui et de donner vie visuellement aux idées que nous développons ensemble. Je le recommande sans hésitation !"
+    },
+    {
+     "name": "Emilie Gosselin",
+     "role": "VP Growth & Transformation / VP Croissance et transformation - MBA",
+     "date": "2023-04-07",
+     "lang": "fr",
+     "title": "Des solutions innovantes, créatives, tout en démontrant la valeur ajoutée",
+     "text": "Charles-Erick a été une personne clé sur les différents mandats en apportant toujours des solutions innovantes, créatives tout en démontrant la valeur ajoutée. Toujours à la recherche de la meilleure solution pour répondre aux besoins utilisateurs, ses réflexions étaient toujours très poussées, méthodiques et basées sur des recherches exhaustives. Que se soit en brainstorm pour appuyer un plan stratégique, en création de maquettes UX, tests A/B ou pour des parcours utilisateur, son travail a permis de créer des solutions créatives pour notre équipe, tout en étant très performante pour les clients et O2. Charles-Érick est un excellent joueur d'équipe, toujours très investie dans son travail, sa présence sur les rencontres clients était très appréciée. Ce fut un réel plaisir de travailler, brainstormer avec Charles-Érick sur différents projets stratégiques pour les clients ou pour faire évoluer l'Agence."
+    },
+    {
+     "name": "François L.",
+     "role": "Entrepreneur | Digital Marketing Executive | Bilingual (EN/FR) | Intl. TEDx Speaker | Brian Tracy Co-Author",
+     "date": "2023-04-03",
+     "lang": "fr",
+     "title": "Il sait simplifier les idées pour qu’elles aient du sens",
+     "text": "Charles-Erick est un excellent designer UX. Très professionnel, il a une façon de simplifier les idées pour qu’elles aient du sens. Toujours enthousiaste à l’idée de collaborer avec lui sur différents projets qui demandent son œil aiguisé et sa démarche de design axée sur la valeur :)",
+     "translatedFrom": "en"
+    },
+    {
+     "name": "Tony Raymond",
+     "role": "Responsable, Création Multimédia | Leader, Multimedia Creation",
+     "date": "2012-05-07",
+     "lang": "fr",
+     "title": "Une authentique machine à idées",
+     "text": "Charles-Erick est une authentique machine à idées. Inventif, structuré et ouvert d'esprit, il n'hésite pas à remettre les idées en questions, tant les siennes que celles des autres si cela peut permettre d'améliorer les résultats. Son savoir-faire n'a d'égal que son savoir-être et il possède les qualités d'un leader au sein d'une équipe. Ce fut un plaisir de collaborer avec lui."
+    }
+   ],
+   "slot": {
+    "h3": "Insérez votre histoire à succès ici!",
+    "cta": "Contactez-nous"
+   }
+  },
+  {
+   "type": "faq",
+   "h2": "Des *questions?*",
+   "open": true
+  },
+  {
+   "type": "cta-final",
+   "h2": "Ce qu'on essaie de dire, c'est qu'il est temps d'appuyer sur le *ti-bouton!*",
+   "p": "La pédale d'accélérateur des entreprises en croissance.",
+   "cta": "Let's go!"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Qu'est-ce que Viesigners?",
+   "a": [
+    "Viesigners est une micro-agence web canadienne basée à Québec et à Vancouver, fondée par Charles-Erick et Jean-François BG. Nous sommes spécialisés en UX/UI et en optimisation du taux de conversion (CRO) : sites web, landing pages, tunnels de vente, design de produit SaaS et applications mobiles, et conseil d'affaires web.",
+    "Avec notre réseau d'experts, nous accompagnons aussi nos clients en publicité numérique, en médias sociaux et en SEO/GEO."
+   ]
+  },
+  {
+   "q": "Que fait une agence numérique, exactement?",
+   "a": [
+    "Une agence numérique tisse des liens invisibles entre les marques et les esprits. Elle code des émotions. Elle conçoit des histoires qui intéressent, expliquent et motivent l'action.",
+    "Du moins, c'est ce que nous nous efforçons de faire tous les jours : construire des écosystèmes digitaux performants — sites, applications, campagnes et contenus qui propulsent les marques vers plus de visibilité, d'engagement et de croissance mesurable."
+   ]
+  },
+  {
+   "q": "Quels sont les avantages d'une micro-agence comme la vôtre?",
+   "a": [
+    "D'abord, nous ne connaissons aucune agence web qui, comme nous, se fait un code d'honneur d'offrir des services dignes du top 3 % mondial, sans vous faire prendre en charge par un employé sans expérience ni vous donner l'impression d'être un numéro, comme on le voit dans de plus grandes agences.",
+    "Nous croyons que c'est la raison pour laquelle un nombre grandissant de nos clients nous réserve des budgets préalablement prévus pour d'autres experts : nous livrons nos promesses et focalisons la totalité de nos actions sur votre ROI."
+   ]
+  },
+  {
+   "q": "Comment m'assurer d'en avoir pour mon argent?",
+   "a": [
+    "Chaque service que nous offrons vient avec une garantie que les autres agences n'osent pas offrir. [Contactez-nous](@contact) pour en connaître les détails."
+   ]
+  },
+  {
+   "q": "Travaillez-vous avec des grandes ou des petites entreprises?",
+   "a": [
+    "Nous offrons des services pour les entreprises en démarrage et les PME, comme pour les grandes corporations. Le principal critère est que vous devez avoir le désir de croître.",
+    "Si vous sentez qu'un service pourrait vous aider, [contactez-nous](@contact) et nous évaluerons comment vous soutenir au mieux dans vos objectifs, soit à l'interne ou par l'entremise de notre réseau restreint d'experts sélectionnés."
+   ]
+  },
+  {
+   "q": "Dans quelles langues et dans quels marchés travaillez-vous?",
+   "a": [
+    "Nous travaillons en français et en anglais, avec des clients au Québec, au Canada et dans plus de 6 pays. Nos bureaux sont à Québec et à Vancouver, et nous collaborons à distance avec des équipes partout dans le monde."
+   ]
+  }
+ ]
+}

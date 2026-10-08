@@ -1,0 +1,34 @@
+{
+  "key": "friction", "slug": "pourquoi-visiteurs-repartent", "date": "2026-10-03", "modified": "2026-10-03",
+  "tag": "CRO", "read": "5 min de lecture",
+  "title": "La friction : pourquoi vos visiteurs repartent sans agir",
+  "metaTitle": "Friction UX : pourquoi vos visiteurs repartent sans agir | Viesigners",
+  "description": "Un message flou, un parcours compliqué, une offre mal perçue : les cinq sources de friction qui coûtent des clients à votre site, et comment les repérer.",
+  "keywords": ["friction", "CRO", "taux de conversion", "UX"],
+  "summary": [
+    "La **friction** est tout ce qui rend plus difficile la compréhension de votre offre ou le passage à l'action.",
+    "Elle coûte plus cher que l'absence de trafic : elle gaspille celui que vous avez déjà.",
+    "On la repère en observant trois choses : le message, le parcours et la perception de valeur."
+  ],
+  "body": [
+    { "h2": "Ce qu'on appelle friction" },
+    { "p": "La friction, c'est la difficulté à articuler la valeur de votre offre de manière persuasive et à la traduire en une expérience qui coule comme une glissade d'eau. Quand le message ne passe pas ou que le chemin est compliqué, la personne repart sans agir." },
+    { "h2": "Les cinq sources les plus courantes" },
+    { "ul": [
+      "**Un message flou :** un visiteur extérieur ne comprend pas en quelques secondes ce que vous offrez et pour qui.",
+      "**Un parcours qui multiplie les choix :** trop de boutons, trop de pages, aucune prochaine étape évidente.",
+      "**Une offre mal formulée :** la valeur est décrite par ses caractéristiques plutôt que par ses résultats.",
+      "**Des clients peu rentables :** l'offre attire des gens qui ne sont pas le bon public.",
+      "**Un écart de perception :** votre service est meilleur que l'image que votre site en donne."
+    ] },
+    { "h2": "Comment repérer la friction sur votre site" },
+    { "p": "Demandez à trois personnes extérieures à votre entreprise de visiter votre page d'accueil pendant cinq secondes, puis de vous dire ce que vous offrez et ce qu'elles feraient ensuite. Les hésitations et les erreurs de compréhension pointent directement vers la friction." },
+    { "p": "Observez ensuite vos données : pages où les visiteurs quittent, étapes de formulaire abandonnées, temps avant le premier clic." },
+    { "h2": "Réduire avant d'ajouter" },
+    { "p": "Ajouter de la complexité sur une fondation déjà irritante ne fait qu'accélérer l'échec. Commencez par clarifier le message et simplifier le chemin. Nos services de [création de site web](@sites-web) et de [landing pages](@landing-pages) sont conçus pour cela." }
+  ],
+  "faq": [
+    { "q": "Qu'est-ce que la friction en UX?", "a": ["C'est tout élément qui augmente l'effort, la confusion ou l'hésitation d'un utilisateur entre l'intérêt et l'action : texte flou, formulaire trop long, navigation chargée, lenteur du site."] },
+    { "q": "Comment réduire la friction rapidement?", "a": ["Clarifiez votre promesse dans le titre de la page, retirez les options qui ne servent pas l'action principale et raccourcissez vos formulaires au strict nécessaire."] }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Design de produit SaaS et apps mobiles — UX/UI | Viesigners",
+    "description": "Optimisation UX/UI pour SaaS et applications mobiles : parcours usagers, systèmes de design, recherche utilisateurs et rédaction UX. Primés aux OCTAS, Osentreprendre et Gartner.",
+    "h1": "Optimisation UX/UI pour SaaS et apps mobiles"
+  },
+  "service": { "name": "Design de produit — UX/UI pour SaaS et applications mobiles", "type": "Design de produit numérique, UX/UI, systèmes de design", "audience": "Entreprises SaaS, scale-ups et créateurs d'applications mobiles" },
+  "sections": [
+    {
+      "type": "page-hero",
+      "tag": "Design de produit — SaaS et apps",
+      "h1": "Bâtissez une expérience d'application *de classe mondiale*",
+      "lead": "Nous avons aidé une scale-up internationale à sécuriser 320 M$+ de financement et remporté des prix prestigieux pour le lancement et l'optimisation d'applications (OCTAS, Osentreprendre, Gartner).",
+      "guarantee": "Satisfaction garantie!",
+      "ctas": [ { "label": "Bâtir une UX de classe mondiale", "to": "@contact", "style": "violet" }, { "label": "Profil Toptal (top 3 %) ↗", "to": "https://www.toptal.com/designers/resume/jean-francois-b-g#XAEE74", "style": "ghost" } ],
+      "brief": [
+        { "b": "Pour qui :", "t": "entreprises SaaS, scale-ups et créateurs d'applications mobiles." },
+        { "b": "Ce que vous obtenez :", "t": "parcours usagers optimisés, système de design, recherche utilisateurs et rédaction UX." },
+        { "b": "Preuve :", "t": "320 M$+ de financement sécurisé par une scale-up accompagnée; prix OCTAS, Osentreprendre et Gartner." },
+        { "b": "Collaboration :", "t": "nous travaillons main dans la main avec vos équipes internes, en phases itératives." }
+      ]
+    },
+    {
+      "type": "statement", "wide": true,
+      "text": "Nous revoyons l'expérience de vos SaaS et applications pour en faire *des actifs de classe mondiale* qui engagent vos utilisateurs, libèrent vos équipes internes et séduisent vos investisseurs.",
+      "prose": [
+        "Un produit se juge en quelques minutes : l'utilisateur comprend-il la valeur, arrive-t-il à son premier succès, a-t-il une raison de revenir? L'onboarding, la clarté des écrans et la cohérence du système de design déterminent directement l'activation, la rétention et la durée de vie client."
+      ]
+    },
+    {
+      "type": "deliverables", "id": "inclus",
+      "h2": "Ce que nous *concevons et optimisons*",
+      "items": [
+        { "h": "Optimisation de parcours usagers", "p": "Réalisée en phases itératives, qui tiennent compte de la dette technique : on livre de la valeur sans geler votre feuille de route." },
+        { "h": "Systèmes de design", "p": "Un système de design de classe mondiale : composants, principes et documentation qui accélèrent vos équipes et assurent la cohérence." },
+        { "h": "Recherches utilisateurs et comparatives", "p": "Entrevues, tests d'utilisabilité et analyses comparatives pour éclairer vos décisions avec des faits." },
+        { "h": "Rédaction UX", "p": "Des textes d'interface qui donnent une personnalité à votre produit, sans perdre en clarté." },
+        { "h": "Onboarding et activation", "p": "Simplification de l'intégration et de l'expérience pour fidéliser davantage et prolonger la durée de vie client." },
+        { "h": "Collaboration avec vos équipes internes", "p": "Impeccable : outils partagés, livraisons soignées pour les développeurs et rituels alignés sur vos cycles de travail." }
+      ]
+    },
+    {
+      "type": "process",
+      "h2": "Une démarche *itérative*, mesurable",
+      "steps": [
+        { "h": "Découverte et audit", "p": "Nous analysons votre produit, vos données d'usage et vos contraintes techniques.", "out": "Livrable : diagnostic UX et opportunités priorisées." },
+        { "h": "Recherche et hypothèses", "p": "Nous validons les besoins réels des utilisateurs et formulons des hypothèses testables.", "out": "Livrable : synthèse de recherche." },
+        { "h": "Conception itérative", "p": "Nous concevons, testons et affinons par phases, en collaboration avec vos équipes.", "out": "Livrable : parcours et composants prêts à développer." },
+        { "h": "Livraison et mesure", "p": "Nous accompagnons la mise en œuvre et mesurons l'effet sur l'activation et la rétention.", "out": "Livrable : résultats suivis et prochaines étapes." }
+      ]
+    },
+    {
+      "type": "proof",
+      "items": [
+        { "n": "320 M$+", "t": "de financement sécurisé par une scale-up internationale accompagnée" },
+        { "n": "+48 %", "t": "de conversions pour la plateforme de recherche d'études cliniques Pharmy" },
+        { "n": "Top 3 %", "t": "des experts web mondiaux, selon Toptal" }
+      ]
+    },
+    { "type": "faq", "h2": "Questions fréquentes sur le *design de produit*", "open": true },
+    { "type": "cta-final", "h2": "Prêt à bâtir une *UX de classe mondiale?*", "p": "Parlons de votre produit : nous repérerons les gains d'expérience les plus rentables.", "cta": "Bâtir une UX de classe mondiale" }
+  ],
+  "faq": [
+    { "q": "Que comprend l'optimisation UX/UI d'un SaaS ou d'une application?", "a": ["Elle couvre l'analyse des parcours, la recherche utilisateurs, la refonte des écrans clés, la rédaction UX, la création ou l'amélioration d'un système de design et l'accompagnement de la mise en œuvre. Nous ciblons d'abord ce qui a le plus d'effet sur l'activation et la rétention."] },
+    { "q": "Travaillez-vous avec nos équipes internes?", "a": ["Oui. Nous collaborons avec vos designers, développeurs et gestionnaires de produit, et nous adaptons nos livraisons à vos outils et à vos cycles de travail pour libérer vos équipes plutôt que de les ralentir."] },
+    { "q": "Qu'est-ce qu'un système de design et en ai-je besoin?", "a": ["Un système de design est une bibliothèque de composants, de règles et de documentation qui garantit la cohérence de l'interface et accélère le développement. Il devient rentable dès que plusieurs personnes ou équipes travaillent sur le même produit."] },
+    { "q": "Comment mesurez-vous l'amélioration de l'expérience utilisateur?", "a": ["Nous définissons avec vous des indicateurs avant de commencer (par exemple l'activation, le taux de conversion d'un parcours ou la rétention) et nous les suivons après la mise en œuvre. Pour la plateforme Pharmy, l'optimisation a mené à une hausse des conversions de 48 %."] },
+    { "q": "Concevez-vous aussi des applications mobiles?", "a": ["Oui, nous concevons et optimisons l'expérience des applications mobiles comme des plateformes SaaS web. Voyez nos [réalisations](@realisations)."] }
+  ]
+}

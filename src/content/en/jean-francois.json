@@ -1,0 +1,107 @@
+{
+ "meta": {
+  "title": "Jean-François BG — Co-founder of Viesigners | Toptal top 3%, UX/UI and CRO",
+  "description": "Jean-François BG, co-founder of Viesigners: UX/UI and CRO expert declared in the top 3% of the world's web experts by Toptal.",
+  "h1": "Jean-François BG"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tag": "Co-founder of Viesigners",
+   "h1": "Jean-François *BG*",
+   "lead": "Hybrid expert in digital user experience (UX/UI) and conversion rate optimization (CRO), co-founder of Viesigners with his brother Charles-Erick, and declared in the top 3% of the world's web experts by Toptal.",
+   "ctas": [
+    {
+     "label": "Talk to Jean-François",
+     "to": "@contact",
+     "style": "violet"
+    },
+    {
+     "label": "Toptal profile ↗",
+     "to": "https://www.toptal.com/designers/resume/jean-francois-b-g#XAEE74",
+     "style": "ghost"
+    }
+   ],
+   "brief": [
+    {
+     "b": "Role:",
+     "t": "co-founder of Viesigners."
+    },
+    {
+     "b": "Expertise:",
+     "t": "UX/UI, CRO, designing offers and digital experiences."
+    },
+    {
+     "b": "Recognition:",
+     "t": "top 3% of the world's web experts, according to Toptal."
+    },
+    {
+     "b": "Based in:",
+     "t": "Québec, Canada — French- and English-speaking markets."
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "wide": true,
+   "text": "Interfaces and digital experiences that *free up teams* and win over investors.",
+   "prose": [
+    "With Charles-Erick, Jean-François forms “The BG Twins”. Their work has been recognized by Awwwards, OCTAS, Osentreprendre and Gartner, and helped secure $320M+ in funding for an international scale-up."
+   ]
+  },
+  {
+   "type": "facts",
+   "h2": "Areas of *work*",
+   "items": [
+    {
+     "k": "Product design",
+     "v": "[UX/UI for SaaS and mobile apps](@design-produit): user journeys, design systems, user research."
+    },
+    {
+     "k": "Websites",
+     "v": "[Professional website creation](@sites-web)."
+    },
+    {
+     "k": "Landing pages",
+     "v": "[Pages and sales funnels](@landing-pages) that convert."
+    },
+    {
+     "k": "Toptal",
+     "v": "[Jean-François's Toptal profile](https://www.toptal.com/designers/resume/jean-francois-b-g#XAEE74) — top 3% of the world's web experts."
+    }
+   ],
+   "theme": "dark"
+  },
+  {
+   "type": "faq",
+   "h2": "Questions about *Jean-François*",
+   "open": true
+  },
+  {
+   "type": "cta-final",
+   "h2": "Let's talk about *your product.*",
+   "p": "One first conversation is enough to know whether we can help.",
+   "cta": "Let's talk!"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Who is Jean-François BG?",
+   "a": [
+    "Jean-François BG is co-founder of Viesigners, a Canadian web micro-agency. He is a hybrid expert in UX/UI and CRO, declared in the top 3% of the world's web experts by Toptal."
+   ]
+  },
+  {
+   "q": "What is Toptal's top 3%?",
+   "a": [
+    "Toptal is a network of vetted talent. Jean-François is recognized there among the world's best web experts; his profile can be viewed on Toptal."
+   ]
+  },
+  {
+   "q": "How can I reach him?",
+   "a": [
+    "Through the [contact page](@contact) or by phone at +1 581-502-1115."
+   ]
+  }
+ ]
+}

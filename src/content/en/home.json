@@ -1,0 +1,439 @@
+{
+ "meta": {
+  "title": "Viesigners | Web agency Québec: websites, funnels, SaaS & apps",
+  "description": "Canadian web micro-agency in UX/UI and CRO: websites, landing pages, sales funnels, SaaS and app product design. Multiply your sales and your revenue per customer.",
+  "h1": "We help you make the Web your Unfair Advantage"
+ },
+ "sections": [
+  {
+   "type": "hero-home",
+   "tag": "Web agency & digital performance: websites, funnels, SaaS and apps",
+   "h1": "Multiply your sales and boost your revenue per customer, with *profitable web*",
+   "lead": "We help service businesses, SaaS companies and mobile app makers optimize their digital presence for two precise results: winning more customers and maximizing the value of each one — an approach that puts human psychology to work for your profitability.",
+   "cta": "Start a project",
+   "advised": "We've advised more than 600 businesses, including some of the biggest",
+   "logosLabel": "Companies advised by Viesigners",
+   "logos": [
+    {
+     "id": "warner",
+     "alt": "Warner Bros."
+    },
+    {
+     "id": "marvel",
+     "alt": "Marvel"
+    },
+    {
+     "id": "salesforce",
+     "alt": "Salesforce"
+    },
+    {
+     "id": "disney",
+     "alt": "Disney"
+    },
+    {
+     "id": "hp",
+     "alt": "HP"
+    },
+    {
+     "id": "dell",
+     "alt": "Dell"
+    },
+    {
+     "id": "ubisoft",
+     "alt": "Ubisoft"
+    }
+   ]
+  },
+  {
+   "type": "friction",
+   "h2": "You have a quality offer, but your *revenue isn't keeping up?*",
+   "lead": "Most growing businesses have good ideas and a quality product or service… yet they still hit the glass ceiling:",
+   "pains": [
+    "Visitors land on their site, but leave without taking action",
+    "A message that feels vague or too complex to an outsider",
+    "A customer journey that creates friction",
+    "Customers who don't bring in enough to be truly profitable",
+    "The frustrating gap between the real quality of their service and how it's perceived"
+   ],
+   "fig": [
+    "Friction",
+    "Flow"
+   ],
+   "reveal": {
+    "h3": "The problem is the *friction points* in your customer journeys",
+    "p": [
+     "The reality… is that you don't need complex marketing tactics, an end-to-end automated tech stack, or more engaged customers. Adding complexity on top of an already irritating foundation only speeds up failure.",
+     "The real obstacle is friction: the difficulty of articulating the value of your offer persuasively and turning it into a customer experience that flows like a water slide. Because when the message doesn't land or the path is complicated, the money stays in your customers' pockets."
+    ],
+    "cost": "And it's costing you…"
+   }
+  },
+  {
+   "type": "founders",
+   "kicker": "What if you stopped relying on trial and error?",
+   "h2": "Meet the founders of Viesigners: Canada's #1 web micro-agency for *making your business profitable*",
+   "sub": "Charles-Erick & Jean-François BG — Masters of web experience design (2009)",
+   "text": [
+    "**Hi! This is The BG Twins.** We are hybrid experts in web experience design, UX/UI and conversion rate optimization (CRO) — originally from Québec, Canada — with more than 30 combined years helping companies of all sizes and sectors, in English- and French-speaking markets, perform online.",
+    "**A unique approach that unites customer experience and web business strategy.** Surrounded by a network of select digital experts, as human as they are skilled, we act as business advisors, strategic consultants, senior freelancers and delivery partners in designing offers and digital experiences, in order to:"
+   ],
+   "checks": [
+    "**Improve landing pages and sales journeys** to increase inquiries, appointments and calls",
+    "**Clarify and craft compelling offers** that immediately prompt customers to act",
+    "**Simplify onboarding and the experience** of apps and services to increase loyalty and extend customer lifetime"
+   ],
+   "cta": {
+    "label": "Get to know the BG brothers",
+    "to": "a-propos"
+   },
+   "photoAlt": "Charles-Erick and Jean-François BG, motivated to grow your business!",
+   "chip": {
+    "b": "Toptal top 3%",
+    "t": "Declared among the world's best web experts"
+   },
+   "press": {
+    "label": "As seen in",
+    "items": [
+     {
+      "file": "press-coveo.png",
+      "alt": "Coveo blog"
+     },
+     {
+      "file": "press-o2web.png",
+      "alt": "O2 Web blog"
+     },
+     {
+      "file": "press-socom.svg",
+      "alt": "SOCOM"
+     },
+     {
+      "file": "press-superdads.png",
+      "alt": "Superdads"
+     },
+     {
+      "file": "press-2gars-adwords.png",
+      "alt": "Les 2 gars d'Adwords"
+     }
+    ]
+   },
+   "school": {
+    "file": "logo-laval.png",
+    "alt": "Université Laval"
+   }
+  },
+  {
+   "type": "services",
+   "h2": "Web business strategies *carefully tailored* to your stage of growth",
+   "lead": "Every service is built for one thing: reducing the friction between your offer and your customers.",
+   "cards": [
+    {
+     "span": "c-6",
+     "hero": true,
+     "to": "@sites-web",
+     "cta": "See the service",
+     "title": "Professional website creation",
+     "desc": "Root your reputation and take the place you deserve in your market. 600+ projects delivered, recognized by Awwwards.",
+     "mini": true
+    },
+    {
+     "span": "c-6",
+     "to": "@landing-pages",
+     "cta": "See the service",
+     "title": "Landing pages and sales funnels that convert",
+     "desc": "Double or triple your inquiries and customers: up to a 3,500% increase in inquiries with minimal ad budgets.",
+     "mini": true
+    },
+    {
+     "span": "c-6",
+     "to": "@design-produit",
+     "cta": "See the service",
+     "title": "UX/UI optimization for SaaS and mobile apps",
+     "desc": "Build a world-class app experience for your SaaS or mobile apps.",
+     "mini": true
+    },
+    {
+     "span": "c-6",
+     "to": "@coaching",
+     "cta": "See the service",
+     "title": "Business advisory and high-performing strategies",
+     "desc": "Speed up the launch of new services with a validated action plan, from offer to sales funnel.",
+     "mini": true,
+     "hero": true
+    },
+    {
+     "span": "c-4",
+     "mini": true,
+     "to": "@publicite",
+     "cta": "See the service",
+     "title": "Digital advertising",
+     "desc": "Campaigns run by experts from our network, plugged into pages built to convert: every ad dollar works harder."
+    },
+    {
+     "span": "c-4",
+     "mini": true,
+     "to": "@medias-sociaux",
+     "cta": "See the service",
+     "title": "Social media",
+     "desc": "A social presence consistent with your offer that feeds your funnel instead of just holding space."
+    },
+    {
+     "span": "c-4",
+     "mini": true,
+     "to": "@seo-geo",
+     "cta": "See the service",
+     "title": "SEO/GEO",
+     "desc": "Get found on Google and cited in the answers of ChatGPT, Gemini, Perplexity and the rest."
+    }
+   ]
+  },
+  {
+   "type": "stats",
+   "h2": "Stop leaving money on the table and *maximize your profitability*",
+   "lead": "We help companies grow faster by applying strategic systems proven with major brands like Disney, Marvel, Hasbro and Dell, as well as with over 600 organizations of every size that experienced accelerated growth. **Your business is NOT a guinea pig!** You benefit from a concrete, high-performing, measurable approach that aligns your offer, your positioning and your digital experience with your business goals.",
+   "items": [
+    {
+     "n": "5×",
+     "h": "Increase in conversion rate",
+     "p": "We let the numbers speak for us. The pages and sites we've built and optimized have reached up to 5× their initial performance."
+    },
+    {
+     "n": "600+",
+     "h": "Companies we've helped to date",
+     "p": "We've advised more than 600 companies, some of the largest on planet Earth (and startups too!)."
+    },
+    {
+     "n": "30+",
+     "h": "Markets we've broken into",
+     "p": "B2B, B2C, B2B2C, e-commerce, SaaS, local or online services, wellness, baseball… we've worked in more than 30 fields."
+    },
+    {
+     "n": "6+",
+     "h": "Our international reach",
+     "p": "Entrepreneurs and companies from more than 6 countries around the world have trusted us."
+    }
+   ]
+  },
+  {
+   "type": "work",
+   "id": "realisations",
+   "h2": "A few projects you might *recognize…*",
+   "lead": "We've built over 600 websites, apps and landing pages for SMEs and large corporations, created high-converting online funnels for startups and solopreneurs, and helped businesses gain visibility, clients and profitability.",
+   "items": [
+    {
+     "img": "assassins-creed.jpg",
+     "alt": "Online platform designed for Assassin's Creed Odyssey",
+     "title": "Assassin's Creed Odyssey",
+     "result": "Online platform — Ubisoft"
+    },
+    {
+     "img": "warner-bros.jpg",
+     "alt": "Video game interface designed for Warner Bros.",
+     "title": "Warner Bros.",
+     "result": "Video game interface"
+    },
+    {
+     "img": "marvel.jpg",
+     "alt": "Game interface designed for Marvel",
+     "title": "Marvel",
+     "result": "Game interface"
+    },
+    {
+     "img": "musee-civilisation.jpg",
+     "alt": "Launch of the SaaS platform \"Collections\" for the Musée de la civilisation — OCTAS finalist",
+     "title": "\"Collections\" — Musée de la civilisation",
+     "result": "SaaS launch · OCTAS finalist"
+    },
+    {
+     "img": "pharmy.png",
+     "alt": "Optimization of the clinical trial search platform Pharmy — 48% increase in conversions",
+     "title": "Pharmy",
+     "result": "+48% conversions"
+    },
+    {
+     "img": "wizards.jpg",
+     "alt": "Website designed for Wizards of the Coast",
+     "title": "Wizards of the Coast",
+     "result": "Website"
+    },
+    {
+     "img": "spin-master.jpg",
+     "alt": "App interface designed for Spin Master",
+     "title": "Spin Master",
+     "result": "App interface"
+    },
+    {
+     "img": "trouve-un-stage.jpg",
+     "alt": "Launch of the SaaS platform \"Trouve un stage\" — Osentreprendre prize winner",
+     "title": "\"Trouve un stage\"",
+     "result": "SaaS launch · Osentreprendre prize winner"
+    }
+   ],
+   "awards": {
+    "label": "Projects recognized by",
+    "items": [
+     {
+      "file": "award-gartner.png",
+      "alt": "Gartner"
+     },
+     {
+      "file": "award-awwwards.png",
+      "alt": "Awwwards"
+     },
+     {
+      "file": "award-osentreprendre.png",
+      "alt": "Osentreprendre"
+     },
+     {
+      "file": "award-octas.png",
+      "alt": "OCTAS"
+     }
+    ]
+   },
+   "cta": {
+    "label": "See all our work",
+    "to": "realisations"
+   }
+  },
+  {
+   "type": "fit",
+   "h2": "Let's be clear: we do *NOT* work with everyone",
+   "yes": {
+    "h": "It's for you if:",
+    "items": [
+     "You're a service business — SaaS, apps, online services or local services",
+     "You want to grow your business",
+     "You're serious — you want results, not just pretty pages that flatter your ego"
+    ]
+   },
+   "no": {
+    "h": "It's not for you if…",
+    "items": [
+     "You're not aiming to grow",
+     "You just want a nice-looking site or app",
+     "You're not ready to adopt a results-driven approach over a feelings-driven one"
+    ]
+   },
+   "foot": {
+    "p": "If you match the profile we're looking for, it's time to talk!",
+    "label": "It's my turn",
+    "to": "contact"
+   }
+  },
+  {
+   "type": "testimonials",
+   "h2": "What it feels like to work with us",
+   "items": [
+    {
+     "name": "Elodie Marcotte",
+     "role": "",
+     "date": "2026-02-18",
+     "lang": "en",
+     "title": "Charles-Érick’s support went far beyond my expectations",
+     "text": "In the few words this space allows me, I can say that Charles-Érick’s support went far beyond my expectations. Creative, quick-witted and incredibly well organized, he goes well beyond simple user experience thinking. He is a deeply human person, and it shows directly in his work. I recommend him with my eyes closed.",
+     "translatedFrom": "fr"
+    },
+    {
+     "name": "khrystopher Dubé",
+     "role": "",
+     "date": "2025-11-21",
+     "lang": "en",
+     "title": "He turned my ideas into an effective, professional conversion page",
+     "text": "A huge thank you to Charles-Érick for his remarkable work. From the start, he put me at ease, listened fully to my needs and managed to turn my ideas into an effective, professional conversion page.",
+     "translatedFrom": "fr"
+    },
+    {
+     "name": "Marie-Eve Gratton",
+     "role": "Design UX et UI",
+     "date": "2026-02-20",
+     "lang": "en",
+     "title": "A true reference when it comes to web strategy and UX design",
+     "text": "What can I say about Charles-Érick… a truly one-of-a-kind human. His great strength is his ability to take his clients and colleagues to another level through his strategic thinking and his fine understanding of UX. Charles-Érick is a reference when it comes to web strategy and UX design. His approach is always thoughtful, clear and structured. It’s also a real pleasure to collaborate with him and to bring visually to life the ideas we develop together. I recommend him without hesitation!",
+     "translatedFrom": "fr"
+    },
+    {
+     "name": "Emilie Gosselin",
+     "role": "VP Growth & Transformation / VP Croissance et transformation - MBA",
+     "date": "2023-04-07",
+     "lang": "en",
+     "title": "Innovative, creative solutions that always demonstrate added value",
+     "text": "Charles-Erick was a key person on the various mandates, always bringing innovative, creative solutions while demonstrating added value. Always looking for the best solution to meet user needs, his thinking was always in-depth, methodical and based on exhaustive research. Whether in brainstorming to support a strategic plan, creating UX mockups, A/B tests or user journeys, his work made it possible to create creative solutions for our team, while being highly effective for clients and O2. Charles-Érick is an excellent team player, always very invested in his work, and his presence at client meetings was greatly appreciated. It was a real pleasure to work and brainstorm with Charles-Érick on various strategic projects for clients or to help the Agency evolve.",
+     "translatedFrom": "fr"
+    },
+    {
+     "name": "François L.",
+     "role": "Entrepreneur | Digital Marketing Executive | Bilingual (EN/FR) | Intl. TEDx Speaker | Brian Tracy Co-Author",
+     "date": "2023-04-03",
+     "lang": "en",
+     "title": "A way to simplify ideas so they make sense",
+     "text": "Charles-Erick is a great UX designer. Very profesionnal and has a way to simplify ideas in order for them to make sense. Always looking forward to collaborate with him on different projects which require his keen eye and value oriented design thought process :)"
+    },
+    {
+     "name": "Tony Raymond",
+     "role": "Responsable, Création Multimédia | Leader, Multimedia Creation",
+     "date": "2012-05-07",
+     "lang": "en",
+     "title": "A genuine idea machine",
+     "text": "Charles-Erick is a genuine idea machine. Inventive, structured and open-minded, he doesn’t hesitate to question ideas, both his own and those of others, if it can improve results. His know-how is matched only by his people skills, and he has the qualities of a leader within a team. It was a pleasure to collaborate with him.",
+     "translatedFrom": "fr"
+    }
+   ],
+   "slot": {
+    "h3": "Insert your success story here!",
+    "cta": "Contact us"
+   }
+  },
+  {
+   "type": "faq",
+   "h2": "Got *questions?*",
+   "open": true
+  },
+  {
+   "type": "cta-final",
+   "h2": "What we're trying to say is: it's time to hit the *go button!*",
+   "p": "The accelerator pedal for growing businesses.",
+   "cta": "Let's go!"
+  }
+ ],
+ "faq": [
+  {
+   "q": "What is Viesigners?",
+   "a": [
+    "Viesigners is a Canadian web micro-agency based in Québec and Vancouver, founded by Charles-Erick and Jean-François BG. We specialize in UX/UI and conversion rate optimization (CRO): websites, landing pages, sales funnels, SaaS and mobile app product design, and business advisory.",
+    "With our network of experts, we also support clients in digital advertising, social media and SEO/GEO."
+   ]
+  },
+  {
+   "q": "What does a digital agency actually do?",
+   "a": [
+    "A digital agency weaves invisible links between brands and minds. It codes emotions. It designs stories that interest, explain and motivate action.",
+    "At least, that's what we strive to do every day: build high-performing digital ecosystems — sites, apps, campaigns and content that propel brands toward more visibility, engagement and measurable growth."
+   ]
+  },
+  {
+   "q": "What are the advantages of a micro-agency like yours?",
+   "a": [
+    "First, we don't know of any web agency that, like us, makes it a point of honor to deliver top 3% worldwide quality without handing you off to an inexperienced employee or making you feel like a number, as you often see in larger agencies.",
+    "We believe that's why a growing number of our clients set aside budgets originally planned for other experts: we deliver on our promises and focus all of our actions on your ROI."
+   ]
+  },
+  {
+   "q": "How can I be sure I'll get my money's worth?",
+   "a": [
+    "Every service we offer comes with a guarantee that other agencies don't dare to offer. [Contact us](@contact) to learn the details."
+   ]
+  },
+  {
+   "q": "Do you work with large or small companies?",
+   "a": [
+    "We serve startups and SMBs as well as large corporations. The main criterion is that you must want to grow.",
+    "If you feel a service could help you, [contact us](@contact) and we'll assess how best to support your goals, either in-house or through our limited network of selected experts."
+   ]
+  },
+  {
+   "q": "Which languages and markets do you work in?",
+   "a": [
+    "We work in French and English, with clients in Québec, across Canada and in more than 6 countries. Our offices are in Québec and Vancouver, and we collaborate remotely with teams around the world."
+   ]
+  }
+ ]
+}

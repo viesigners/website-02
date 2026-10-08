@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "title": "À propos de Viesigners — Les frères BG, experts UX/UI et CRO",
+    "description": "Viesigners est une micro-agence web canadienne fondée par Charles-Erick et Jean-François BG : plus de 30 années combinées en UX/UI et en optimisation du taux de conversion.",
+    "h1": "À propos de Viesigners"
+  },
+  "sections": [
+    {
+      "type": "page-hero",
+      "tag": "À propos",
+      "h1": "Bonjour! Ici *Les Frères BG*",
+      "lead": "Nous sommes des experts hybrides en conception d'expériences web, UX/UI et optimisation du taux de conversion (CRO) — originaires du Québec, Canada — avec plus de 30 années combinées à aider des entreprises à performer en ligne.",
+      "ctas": [ { "label": "Parlons-nous!", "to": "@contact", "style": "violet" }, { "label": "Voir nos réalisations", "to": "@realisations", "style": "ghost" } ],
+      "brief": [
+        { "b": "Qui :", "t": "Charles-Erick et Jean-François BG, fondateurs des Viesigners." },
+        { "b": "Spécialités :", "t": "UX/UI, CRO, sites web, landing pages et design de produit SaaS et apps." },
+        { "b": "Où :", "t": "Québec et Vancouver, Canada — marchés francophones et anglophones." },
+        { "b": "Reconnaissances :", "t": "top 3 % des experts web mondiaux (Toptal); projets reconnus par Awwwards, OCTAS, Osentreprendre et Gartner." }
+      ]
+    },
+    {
+      "type": "statement", "wide": true,
+      "text": "Une approche unique qui rallie *expérience client* et *stratégies d'affaires web.*",
+      "prose": [
+        "Entourés d'un réseau d'experts sélects du domaine numérique, aussi humains que compétents, nous opérons comme conseillers d'affaires, consultants stratégiques, pigistes seniors et partenaires de réalisation en conception d'offres et d'expériences numériques.",
+        "Nous sommes une micro-agence par choix : vous travaillez directement avec les experts, sans être pris en charge par un employé sans expérience, et sans avoir l'impression d'être un numéro."
+      ]
+    },
+    {
+      "type": "people",
+      "h2": "Les fondateurs",
+      "lead": "Deux frères, une même obsession : réduire la friction entre une offre de qualité et ceux qui en ont besoin.",
+      "items": [
+        { "to": "charles-erick", "name": "Charles-Erick BG", "role": "Cofondateur", "photo": "a", "alt": "Charles-Erick BG, cofondateur des Viesigners", "text": "Expert hybride en UX/UI et en optimisation du taux de conversion.", "cta": "Voir le profil" },
+        { "to": "jean-francois", "name": "Jean-François BG", "role": "Cofondateur", "photo": "b", "alt": "Jean-François BG, cofondateur des Viesigners", "text": "Expert hybride en UX/UI, déclaré dans le top 3 % des experts web mondiaux par Toptal.", "cta": "Voir le profil" }
+      ]
+    },
+    {
+      "type": "facts",
+      "h2": "Viesigners en *quelques faits*",
+      "items": [
+        { "k": "Fondateurs", "v": "Charles-Erick et Jean-François BG — Maîtres en conception d'expériences web (2009)." },
+        { "k": "Expérience", "v": "Plus de 30 années d'expérience combinée et plus de 600 projets numériques livrés." },
+        { "k": "Spécialités", "v": "UX/UI, optimisation du taux de conversion (CRO), sites web, landing pages, tunnels de vente, design de produit SaaS et apps, conseil d'affaires web." },
+        { "k": "Réseau", "v": "Experts sélectionnés en publicité numérique, médias sociaux et SEO/GEO." },
+        { "k": "Marchés", "v": "Plus de 30 domaines d'affaires, en français et en anglais, avec des clients dans plus de 6 pays." },
+        { "k": "Bureaux", "v": "Québec et Vancouver, Canada." },
+        { "k": "Reconnaissances", "v": "Top 3 % Toptal; projets reconnus par Awwwards, OCTAS, Osentreprendre et Gartner." }
+      ]
+    },
+    { "type": "faq", "h2": "Questions sur *Viesigners*", "open": true },
+    { "type": "cta-final", "h2": "Faisons *connaissance.*", "p": "Dites-nous où vous en êtes; nous vous dirons honnêtement si nous pouvons vous aider.", "cta": "Parlons-nous!" }
+  ],
+  "faq": [
+    { "q": "Qui sont Les frères BG?", "a": ["Charles-Erick et Jean-François BG sont les fondateurs de Viesigners. Ils sont des experts hybrides en UX/UI et en CRO, originaires du Québec, avec plus de 30 années d'expérience combinée."] },
+    { "q": "Où est située l'agence?", "a": ["Viesigners a des bureaux à Québec et à Vancouver, au Canada, et collabore à distance avec des clients dans plus de 6 pays."] },
+    { "q": "Pourquoi travailler avec une micro-agence?", "a": ["Parce que vous travaillez directement avec les experts, sans intermédiaire inexpérimenté, et que toute l'énergie est concentrée sur votre retour sur investissement."] },
+    { "q": "Avec qui travaillez-vous en plus de l'équipe fondatrice?", "a": ["Avec un réseau restreint d'experts sélectionnés en publicité numérique, médias sociaux et SEO/GEO, que nous intégrons à votre projet au besoin."] }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "SEO & GEO: Get Found on Google and Cited by AI | Viesigners",
+    "description": "SEO and GEO (Generative Engine Optimization): technical audit, answer-first content, structured data and visibility in Google, ChatGPT, Gemini and Perplexity.",
+    "h1": "SEO/GEO"
+  },
+  "service": { "name": "SEO and GEO (Generative Engine Optimization)", "type": "Search engine and AI answer engine optimization", "audience": "Service businesses, SaaS and growing brands" },
+  "sections": [
+    {
+      "type": "page-hero",
+      "tag": "SEO/GEO",
+      "h1": "Get found on Google, *cited by AI*",
+      "lead": "GEO (Generative Engine Optimization) means making your content understandable, trustworthy and citable by answer engines like ChatGPT, Gemini, Perplexity and Google AI Overviews, on top of classic SEO.",
+      "ctas": [ { "label": "Get your free action plan", "to": "@contact", "style": "violet" }, { "label": "See website creation", "to": "@sites-web", "style": "ghost" } ],
+      "brief": [
+        { "b": "SEO:", "t": "rank well when your customers search on Google or Bing." },
+        { "b": "GEO:", "t": "be cited when they ask their question to an AI." },
+        { "b": "Our role:", "t": "structure, content, structured data and tracking, with SEO experts from our network." },
+        { "b": "Proof by example:", "t": "this site applies these practices: an FAQ on every page, structured data, llms.txt and open access for AI crawlers." }
+      ]
+    },
+    {
+      "type": "statement", "wide": true,
+      "text": "There are now two ways to be found: be *ranked* or be *cited.*",
+      "prose": [
+        "Your customers increasingly ask their questions directly to AI assistants, which answer in a few lines and cite a handful of sources. If your content isn't clear, structured and trustworthy, those sources will be your competitors.",
+        "The good news: GEO builds on the same foundations as good SEO — clarity, structure, expertise — plus a few specific practices that we apply for you."
+      ]
+    },
+    {
+      "type": "deliverables", "id": "inclus",
+      "h2": "What we *optimize*",
+      "items": [
+        { "h": "Technical and content audit", "p": "Crawling, indexing, speed, structure, duplication and content gaps: a snapshot prioritized by impact." },
+        { "h": "Architecture and search intent", "p": "Keyword and real-question research, then a site structure that answers each intent." },
+        { "h": "Answer-first content", "p": "Direct answers at the top of pages, question-and-answer (FAQ) sections, clear definitions and proof so you can be quoted and cited." },
+        { "h": "Structured data", "p": "schema.org markup (organization, services, FAQ, articles, authors) so engines understand who you are and what you offer." },
+        { "h": "AI optimization", "p": "AI crawler access (robots.txt), an llms.txt file, a consistent entity across the web, identified authors and verifiable sources." },
+        { "h": "Performance and tracking", "p": "Speed and Core Web Vitals, tracking of rankings, organic traffic and your mentions in AI answers." }
+      ]
+    },
+    {
+      "type": "process",
+      "h2": "A *four-step* approach",
+      "steps": [
+        { "h": "Audit", "p": "We measure where you're visible today, on Google and in AI answers.", "out": "Deliverable: prioritized audit." },
+        { "h": "Strategy", "p": "We target the questions and keywords that lead to customers.", "out": "Deliverable: content roadmap." },
+        { "h": "Implementation", "p": "Technical fixes, content, structured data and AI optimization.", "out": "Deliverable: optimized site." },
+        { "h": "Tracking", "p": "We track rankings, traffic and citations, and adjust.", "out": "Deliverable: visibility report." }
+      ]
+    },
+    {
+      "type": "compare",
+      "h2": "Classic SEO or *SEO + GEO?*",
+      "lead": "The two complement each other: the first makes you visible, the second makes you citable.",
+      "before": { "h": "Classic SEO", "items": ["Goal: rank in a list of links", "Keywords and backlinks", "Success measured by positions and clicks"] },
+      "after": { "h": "SEO + GEO", "items": ["Goal: rank and be cited in AI answers", "Real questions, direct answers, structured data", "Success measured by positions, traffic and citations"] }
+    },
+    { "type": "faq", "h2": "Frequently asked questions about *SEO and GEO*", "open": true },
+    { "type": "cta-final", "h2": "Be the answer your customers *find.*", "p": "Let's review your visibility, on Google and in AI.", "cta": "Get your free action plan" }
+  ],
+  "faq": [
+    { "q": "What is GEO (Generative Engine Optimization)?", "a": ["GEO is the set of practices that make your content understandable, trustworthy and citable by AI-based answer engines such as ChatGPT, Gemini, Perplexity or Google AI Overviews. It complements traditional SEO."] },
+    { "q": "What's the difference between SEO and GEO?", "a": ["SEO aims to rank you in search results. GEO aims to have AI cite you in its answers. Both rely on clear, structured, credible content, but GEO emphasizes direct answers, structured data and a clear company identity."] },
+    { "q": "How do I get ChatGPT or Gemini to cite my business?", "a": ["Publish clear, verifiable answers to specific questions, identify your authors and company, add structured data, allow AI crawlers in your robots.txt and maintain a consistent presence elsewhere on the web. No technique guarantees a citation, but these practices increase your chances."] },
+    { "q": "Does SEO still work in the age of AI?", "a": ["Yes. Answer engines often rely on the same sources as search engines. A well-structured, fast site rich in useful answers remains the foundation of both."] },
+    { "q": "Do you work with SEO experts?", "a": ["Yes. We design your site's structure and content and collaborate with selected SEO experts from our network for ongoing optimization mandates."] },
+    { "q": "How long before I see results?", "a": ["SEO and GEO are gradual investments: technical fixes can have a quick effect, while authority and rankings build over time. We track indicators from the start to show progress."] }
+  ]
+}

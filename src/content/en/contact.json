@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "title": "Contact — Get Your Free Action Plan | Viesigners",
+  "description": "Tell us about your project: free action plan, website, landing page, product design, advertising, SEO/GEO. Offices in Québec and Vancouver. +1 581-502-1115.",
+  "h1": "Contact"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tag": "Let's talk!",
+   "h1": "Get your *free action plan*",
+   "lead": "Describe your situation in a few lines. We'll come back with a clear answer on how we can help — or on why now isn't the right time.",
+   "ctas": []
+  },
+  {
+   "type": "contact",
+   "h2": "We can't wait to *hear from you.*",
+   "lead": "The more context you give us, the more useful our answer will be.",
+   "points": [
+    "A personal reply from the founders, not a sales agent",
+    "No commitment",
+    "In French or English"
+   ],
+   "hours": "Monday to Friday",
+   "labels": {
+    "phone": "Phone",
+    "where": "Offices",
+    "hours": "Availability"
+   },
+   "form": {
+    "subject": "New inquiry — viesigners.com",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "site": "Current website",
+    "optional": "(optional)",
+    "topic": "Topic",
+    "choose": "Choose…",
+    "topics": [
+     {
+      "t": "Free action plan"
+     },
+     {
+      "t": "Website",
+      "page": "sites-web"
+     },
+     {
+      "t": "Landing page or sales funnel",
+      "page": "landing-pages"
+     },
+     {
+      "t": "Product design (SaaS and apps)",
+      "page": "design-produit"
+     },
+     {
+      "t": "Digital advertising",
+      "page": "publicite"
+     },
+     {
+      "t": "Social media",
+      "page": "medias-sociaux"
+     },
+     {
+      "t": "SEO/GEO",
+      "page": "seo-geo"
+     },
+     {
+      "t": "Business advisory",
+      "page": "coaching"
+     },
+     {
+      "t": "Other"
+     }
+    ],
+    "message": "Your message",
+    "submit": "Send my request",
+    "note": "We use your information only to answer your request.",
+    "ok": "Thank you! Your message has been sent. We'll reply shortly.",
+    "fail": "Sending failed. Try again or call us at +1 581-502-1115.",
+    "required": "This field is required.",
+    "emailErr": "Enter a valid email address."
+   }
+  },
+  {
+   "type": "faq",
+   "h2": "Before you *write to us*",
+   "open": true
+  }
+ ],
+ "faq": [
+  {
+   "q": "What is the free action plan?",
+   "a": [
+    "It's a first professional look at your situation: we identify the friction points that cost you the most and the priorities that would have the greatest effect on your conversions."
+   ]
+  },
+  {
+   "q": "What happens after I send my message?",
+   "a": [
+    "We read your request and reply personally. If we can help, we propose a conversation to clarify your goals; if not, we tell you honestly."
+   ]
+  },
+  {
+   "q": "Do you work with everyone?",
+   "a": [
+    "No. We work with service businesses that want to grow and aim for measurable results. If that's you, it's time to talk!"
+   ]
+  }
+ ]
+}

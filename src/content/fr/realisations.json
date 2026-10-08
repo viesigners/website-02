@@ -1,0 +1,165 @@
+{
+ "meta": {
+  "title": "Réalisations — sites, apps et plateformes primés | Viesigners",
+  "description": "Découvrez des projets pour Ubisoft, Warner Bros., Marvel, Wizards of the Coast, Spin Master, le Musée de la civilisation et Pharmy (+48 % de conversions).",
+  "h1": "Réalisations"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tag": "Réalisations",
+   "h1": "Quelques réalisations que vous reconnaîtrez *peut-être…*",
+   "lead": "Plus de 600 projets numériques, de grandes marques aux startups. Voici une sélection d'expériences conçues et optimisées par Les Viesigners.",
+   "ctas": [
+    {
+     "label": "C'est mon tour",
+     "to": "@contact",
+     "style": "violet"
+    }
+   ],
+   "brief": [
+    {
+     "b": "Projets :",
+     "t": "plus de 600 projets numériques et entreprises propulsés sur le web."
+    },
+    {
+     "b": "Marques :",
+     "t": "Ubisoft, Warner Bros., Marvel, Wizards of the Coast, Spin Master, entre autres."
+    },
+    {
+     "b": "Résultat vedette :",
+     "t": "+48 % de conversions pour la plateforme Pharmy."
+    },
+    {
+     "b": "Reconnaissances :",
+     "t": "Awwwards, OCTAS, Osentreprendre, Gartner."
+    }
+   ]
+  },
+  {
+   "type": "work",
+   "h2": "Projets *sélectionnés*",
+   "items": [
+    {
+     "img": "assassins-creed.jpg",
+     "alt": "Plateforme en ligne conçue pour Assassin's Creed Odyssey",
+     "title": "Assassin's Creed Odyssey",
+     "result": "Plateforme en ligne — Ubisoft"
+    },
+    {
+     "img": "warner-bros.jpg",
+     "alt": "Interface de jeu vidéo conçue pour la compagnie Warner Bros.",
+     "title": "Warner Bros.",
+     "result": "Interface de jeu vidéo"
+    },
+    {
+     "img": "marvel.jpg",
+     "alt": "Interface de jeu conçue pour la compagnie Marvel",
+     "title": "Marvel",
+     "result": "Interface de jeu"
+    },
+    {
+     "img": "musee-civilisation.jpg",
+     "alt": "Lancement de la plateforme SaaS « Collections » pour le Musée de la civilisation — finaliste aux OCTAS",
+     "title": "« Collections » — Musée de la civilisation",
+     "result": "Lancement SaaS · finaliste aux OCTAS"
+    },
+    {
+     "img": "pharmy.png",
+     "alt": "Optimisation de la plateforme de recherche d'études cliniques Pharmy — augmentation des conversions de 48 %",
+     "title": "Pharmy",
+     "result": "+48 % de conversions"
+    },
+    {
+     "img": "wizards.jpg",
+     "alt": "Site web conçu pour la marque Wizards of the Coast",
+     "title": "Wizards of the Coast",
+     "result": "Site web"
+    },
+    {
+     "img": "spin-master.jpg",
+     "alt": "Interface d'application conçue pour Spin Master",
+     "title": "Spin Master",
+     "result": "Interface d'application"
+    },
+    {
+     "img": "trouve-un-stage.jpg",
+     "alt": "Lancement de la plateforme SaaS « Trouve un stage » — gagnant du prix Osentreprendre",
+     "title": "« Trouve un stage »",
+     "result": "Lancement SaaS · gagnant du prix Osentreprendre"
+    }
+   ],
+   "awards": {
+    "label": "Projets reconnus par",
+    "items": [
+     {
+      "file": "award-gartner.png",
+      "alt": "Gartner"
+     },
+     {
+      "file": "award-awwwards.png",
+      "alt": "Awwwards"
+     },
+     {
+      "file": "award-osentreprendre.png",
+      "alt": "Osentreprendre"
+     },
+     {
+      "file": "award-octas.png",
+      "alt": "OCTAS"
+     }
+    ]
+   }
+  },
+  {
+   "type": "proof",
+   "h2": "Des résultats *mesurables*",
+   "items": [
+    {
+     "n": "+48 %",
+     "t": "de conversions pour la plateforme de recherche d'études cliniques Pharmy"
+    },
+    {
+     "n": "320 M$+",
+     "t": "de financement sécurisé par une scale-up internationale accompagnée"
+    },
+    {
+     "n": "3500 %",
+     "t": "de hausse de demandes reçues avec des budgets publicitaires minimes"
+    }
+   ],
+   "theme": "dark"
+  },
+  {
+   "type": "faq",
+   "h2": "Questions sur *nos réalisations*",
+   "open": true
+  },
+  {
+   "type": "cta-final",
+   "h2": "Votre projet pourrait être *le prochain.*",
+   "p": "Dites-nous où vous voulez aller; nous cartographierons le chemin le plus court.",
+   "cta": "C'est mon tour"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Quels types de projets réalisez-vous?",
+   "a": [
+    "Des sites web, des landing pages et tunnels de vente, des plateformes SaaS et des applications mobiles, pour des entreprises de toutes tailles, des startups aux grandes marques."
+   ]
+  },
+  {
+   "q": "Avez-vous des résultats chiffrés?",
+   "a": [
+    "Oui. Par exemple : +48 % de conversions pour la plateforme Pharmy, jusqu'à 3500 % de hausse de demandes avec des budgets publicitaires minimes, et jusqu'à 5× la performance initiale de pages optimisées."
+   ]
+  },
+  {
+   "q": "Pouvez-vous partager d'autres cas sur demande?",
+   "a": [
+    "Oui, selon les ententes de confidentialité. [Contactez-nous](@contact) en précisant votre secteur, et nous vous présenterons des exemples pertinents."
+   ]
+  }
+ ]
+}

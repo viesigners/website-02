@@ -1,0 +1,28 @@
+{
+  "origin": "https://viesigners.com",
+  "published": "2026-10-03",
+  "phone": "+1 581-502-1115",
+  "phoneRaw": "+15815021115",
+  "email": "",
+  "formEndpoint": "",
+  "social": {
+    "facebook": "https://www.facebook.com/viesigners",
+    "linkedin": "https://www.linkedin.com/company/viesigners",
+    "toptal": "",
+    "toptalJF": "https://www.toptal.com/designers/resume/jean-francois-b-g"
+  },
+  "legal": {
+    "privacy": "https://docs.google.com/document/d/1qTgYIzYSS77hyjOed2NVqTbrQTfDKk9Vxlm4z47uF14/edit?tab=t.0#heading=h.7ulsj23f40pu",
+    "terms": "https://docs.google.com/document/d/1Qe1i7yRyh_SQCOK9RA2f0hUM99DEfXp7pCj1Vf0PGFo/edit?tab=t.0#heading=h.3cv1kzs95pop"
+  },
+  "hidden": [
+    "a-propos",
+    "charles-erick",
+    "jean-francois",
+    "realisations",
+    "actualites",
+    "publicite",
+    "medias-sociaux",
+    "seo-geo"
+  ]
+}

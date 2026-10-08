@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "title": "Création de site web professionnel | Viesigners — UX/UI & CRO",
+    "description": "Sites web professionnels conçus pour bâtir votre notoriété et convertir : structure, design UX/UI, rédaction stratégique et développement rapide. Plus de 600 projets livrés.",
+    "h1": "Création de site web professionnel"
+  },
+  "service": { "name": "Création de site web professionnel", "type": "Conception de site web, UX/UI et optimisation du taux de conversion", "audience": "Entreprises de services, SaaS et marques en croissance" },
+  "sections": [
+    {
+      "type": "page-hero",
+      "tag": "Création de site web professionnel",
+      "h1": "Enracinez votre *notoriété* et prenez la place qui vous revient",
+      "lead": "Nous avons livré plus de 600 projets numériques et conseillé des géants comme Dell, Nerf et HP durant nos 30 années d'expérience combinée. La qualité de nos sites a été reconnue par Awwwards.",
+      "guarantee": "Augmentation de la performance garantie!",
+      "ctas": [ { "label": "Discuter d'un projet", "to": "@contact", "style": "violet" }, { "label": "Voir nos réalisations", "to": "@realisations", "style": "ghost" } ],
+      "brief": [
+        { "b": "Pour qui :", "t": "entreprises de services, SaaS et marques en croissance qui veulent des résultats, pas seulement un joli site." },
+        { "b": "Ce que vous obtenez :", "t": "structure de site, design UX/UI, rédaction stratégique et développement rapide, adapté au mobile." },
+        { "b": "Preuve :", "t": "plus de 600 projets numériques livrés; qualité reconnue par Awwwards." },
+        { "b": "Approche :", "t": "UX/UI et CRO — chaque page est pensée pour déclencher une action." }
+      ]
+    },
+    {
+      "type": "statement", "wide": true,
+      "text": "Nous ne créons pas des sites vitrines standards. Nous bâtissons la nouvelle génération de sites web : *le meilleur représentant virtuel* que vous n'aurez jamais.",
+      "prose": [
+        "Votre site est le seul membre de votre équipe qui travaille 24 heures sur 24. S'il ne clarifie pas votre valeur en quelques secondes et ne guide pas vos visiteurs vers la prochaine étape, il laisse de l'argent sur la table.",
+        "C'est pourquoi nous concevons chaque site comme un actif commercial : une structure qui suit les intentions de vos clients idéaux, un design qui renforce votre crédibilité, des textes qui persuadent, et une technique qui ne ralentit personne."
+      ]
+    },
+    {
+      "type": "deliverables", "id": "inclus",
+      "h2": "Ce que votre site *inclut*",
+      "lead": "Quatre piliers, plus les fondations techniques qui permettent d'être trouvé et mesuré.",
+      "items": [
+        { "h": "Structure de site", "p": "Une architecture claire et intuitive, qui se colle aux intentions de vos clients idéaux : plan du site, parcours et hiérarchie de l'information." },
+        { "h": "Design graphique et UX", "p": "Conçus avec précision pour booster votre crédibilité : identité visuelle appliquée, maquettes, interactions et accessibilité de base." },
+        { "h": "Rédaction stratégique", "p": "Un texte qui fusionne persuasion pour convertir et techniques SEO pour être trouvé, avec des réponses claires aux questions de vos clients." },
+        { "h": "Développement web", "p": "Des pages rapides et évolutives, stratégiquement adaptées aux plateformes mobiles, pensées pour que vous puissiez les faire évoluer." },
+        { "h": "Fondations SEO et GEO", "p": "Balisage sémantique, métadonnées, données structurées et contenu de type question-réponse, pour être compris des moteurs et des assistants IA." },
+        { "h": "Mesure et optimisation", "p": "Suivi des conversions en place dès le lancement, afin de repérer les points de friction et de les corriger avec des données plutôt qu'avec des intuitions." }
+      ]
+    },
+    {
+      "type": "process",
+      "h2": "Un processus *sans essais-erreurs*",
+      "lead": "Quatre étapes claires, avec un livrable à la fin de chacune.",
+      "steps": [
+        { "h": "Diagnostic", "p": "Nous clarifions vos objectifs, votre offre et vos clients idéaux, et repérons ce qui crée de la friction aujourd'hui.", "out": "Livrable : objectifs mesurables et priorités." },
+        { "h": "Structure et message", "p": "Nous bâtissons l'architecture du site et formulons un message qui met la valeur de votre offre de l'avant.", "out": "Livrable : plan du site et textes clés." },
+        { "h": "Design et développement", "p": "Nous concevons les écrans, validons avec vous, puis développons un site rapide et adapté au mobile.", "out": "Livrable : site complet, testé." },
+        { "h": "Lancement et optimisation", "p": "Nous publions, mesurons le comportement réel et améliorons ce qui freine encore la conversion.", "out": "Livrable : site en ligne et plan d'amélioration." }
+      ]
+    },
+    {
+      "type": "compare",
+      "h2": "Site vitrine standard ou *site qui convertit?*",
+      "before": { "h": "Site vitrine standard", "items": ["Présente l'entreprise et parle surtout de lui-même", "Navigation calquée sur l'organigramme", "Beau, mais lent et peu lisible sur mobile", "Peu ou pas de mesure : on ne sait pas ce qui fonctionne"] },
+      "after": { "h": "Site conçu par Viesigners", "items": ["Répond d'abord aux intentions des clients idéaux", "Parcours qui mène naturellement à l'action", "Rapide et pensé mobile d'abord", "Chaque page est mesurée et améliorable"] }
+    },
+    {
+      "type": "proof",
+      "items": [
+        { "n": "600+", "t": "projets numériques livrés pour des entreprises de toutes tailles" },
+        { "n": "5×", "t": "jusqu'à cinq fois la performance initiale des pages et sites optimisés" },
+        { "n": "30+", "t": "domaines d'affaires touchés, du SaaS au mieux-être" }
+      ]
+    },
+    { "type": "faq", "h2": "Questions fréquentes sur la *création de site web*", "open": true },
+    { "type": "cta-final", "h2": "Prêt à bâtir *votre meilleur représentant virtuel?*", "p": "Parlons de votre projet. Nous évaluerons ensemble où votre site peut gagner en clarté et en conversions.", "cta": "Discuter d'un projet" }
+  ],
+  "faq": [
+    { "q": "Combien de temps faut-il pour créer un site web professionnel?", "a": ["Cela dépend de la portée : nombre de pages, complexité des fonctionnalités, et rapidité des approbations et du contenu. Après le diagnostic, nous vous remettons un échéancier précis avant de commencer."] },
+    { "q": "Combien coûte un site web conçu par Viesigners?", "a": ["Le prix dépend de la portée du projet. Nous établissons une proposition claire après un premier échange, et nous évaluons toujours l'investissement en regard du retour attendu : plus de demandes, plus de clients, plus de valeur par client. [Parlons-en](@contact)."] },
+    { "q": "Mon site sera-t-il bien référencé sur Google et dans les IA?", "a": ["Oui, c'est intégré dès le départ : structure claire, rédaction orientée SEO, balisage sémantique, données structurées et contenu de type question-réponse. Pour aller plus loin, consultez notre service [SEO/GEO](@seo-geo)."] },
+    { "q": "Quelle est la différence entre un site web et une landing page?", "a": ["Un site web présente l'ensemble de votre entreprise et répond à plusieurs intentions. Une [landing page](@landing-pages) est une page unique, conçue pour une seule action (demander une soumission, réserver un appel). Les deux se complètent."] },
+    { "q": "Offrez-vous une garantie?", "a": ["Oui. Chaque service que nous offrons vient avec une garantie que les autres agences n'osent pas offrir. [Contactez-nous](@contact) pour en connaître les détails."] }
+  ]
+}

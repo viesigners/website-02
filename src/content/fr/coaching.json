@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "title": "Conseil d'affaires web et stratégies performantes | Viesigners",
+    "description": "Conseil d'affaires web pour entrepreneurs de services : design d'offre, stratégie de lancement, validation de marché et tunnels de vente en ligne. Jusqu'à 15 000 $/mois en récurrence.",
+    "h1": "Conseil d'affaires web et stratégies performantes"
+  },
+  "service": { "name": "Conseil d'affaires web et stratégies performantes", "type": "Conseil d'affaires web, design d'offre, stratégie de lancement et tunnels de vente", "audience": "Entrepreneurs de services, consultants, coachs et experts" },
+  "sections": [
+    {
+      "type": "page-hero",
+      "tag": "Conseil d'affaires web",
+      "h1": "Accélérez le lancement de *nouveaux services*",
+      "lead": "Nous avons bâti de zéro des tunnels générant jusqu'à 15 000 $/mois en récurrence, aidé nos clients, comme Sébastien et Julie, à signer 12 000 $ en 6 semaines sur une nouvelle offre de consultation ou obtenir 3 premiers clients Premium en 14 jours pour une offre d'accompagnement.",
+      "guarantee": "Résultats garantis!",
+      "ctas": [ { "label": "Vérifier mon admissibilité", "to": "@contact", "style": "violet" } ],
+      "brief": [
+        { "b": "Pour qui :", "t": "entrepreneurs de services, consultants, coachs et experts qui veulent lancer ou faire croître une offre." },
+        { "b": "Ce que vous obtenez :", "t": "une offre difficile à refuser, une stratégie de lancement validée et un tunnel de vente en ligne." },
+        { "b": "Preuve :", "t": "jusqu'à 15 000 $/mois en récurrence; 12 000 $ signés en 6 semaines; 3 clients Premium en 14 jours." },
+        { "b": "Approche :", "t": "un plan d'action validé plutôt que de l'improvisation." }
+      ]
+    },
+    {
+      "type": "statement", "wide": true,
+      "text": "Nous remplaçons votre improvisation par *un plan d'action validé* pour transformer votre expertise en revenus croissants.",
+      "prose": [
+        "Votre expertise est solide, mais une expertise ne se vend pas toute seule. Il faut une offre claire, un marché qui la veut et un chemin simple pour dire oui.",
+        "Nous travaillons avec vous comme conseillers d'affaires et consultants stratégiques : on conçoit l'offre, on valide qu'elle intéresse vraiment votre marché, puis on bâtit le tunnel qui la vend — sans stratégies louches ou inauthentiques."
+      ]
+    },
+    {
+      "type": "deliverables", "id": "inclus",
+      "h2": "Ce que nous *bâtissons* avec vous",
+      "lead": "Trois piliers, du concept à la première vente.",
+      "items": [
+        { "h": "Design d'offres et modèles d'affaires", "p": "Une offre difficile à refuser et profitable : promesse, contenu, format, prix et modèle d'affaires qui se tiennent ensemble." },
+        { "h": "Stratégie de lancement et validation de marché", "p": "Nous testons l'intérêt réel avant d'investir des mois de travail, puis nous planifions un lancement qui accélère votre succès." },
+        { "h": "Création de tunnels de vente en ligne", "p": "Page d'atterrissage, formulaire, confirmation et suivi : un parcours simple et authentique, de l'intérêt à la décision." },
+        { "h": "Plan d'action validé", "p": "Des priorités claires, dans le bon ordre, pour savoir quoi faire cette semaine plutôt que d'essayer de tout faire." }
+      ]
+    },
+    {
+      "type": "process",
+      "h2": "Du concept à la *première vente*",
+      "lead": "Quatre étapes, avec un livrable à la fin de chacune.",
+      "steps": [
+        { "h": "Admissibilité", "p": "Un premier échange pour comprendre votre expertise, vos objectifs et confirmer que nous pouvons vous aider.", "out": "Livrable : décision claire des deux côtés." },
+        { "h": "Offre et validation", "p": "Nous concevons l'offre et la confrontons à votre marché avant de la lancer.", "out": "Livrable : offre validée." },
+        { "h": "Tunnel de vente", "p": "Nous bâtissons le parcours en ligne qui présente l'offre et mène à l'action.", "out": "Livrable : tunnel prêt à publier." },
+        { "h": "Lancement et ajustements", "p": "Nous lançons, mesurons les premiers résultats et ajustons ce qui freine encore les ventes.", "out": "Livrable : premiers clients et plan de suite." }
+      ]
+    },
+    {
+      "type": "proof", "theme": "dark",
+      "items": [
+        { "n": "15 000 $", "t": "par mois en récurrence, générés par des tunnels bâtis de zéro" },
+        { "n": "12 000 $", "t": "signés en 6 semaines sur une nouvelle offre de consultation" },
+        { "n": "3 clients", "t": "Premium obtenus en 14 jours pour une offre d'accompagnement" }
+      ]
+    },
+    {
+      "type": "fit", "theme": "light",
+      "h2": "Est-ce que cet accompagnement est *pour vous?*",
+      "yes": { "h": "C'est pour vous si :", "items": [
+        "Vous êtes entrepreneur de services, consultant, coach ou expert",
+        "Vous voulez lancer une nouvelle offre ou faire croître celle que vous avez",
+        "Vous voulez des résultats mesurables, pas seulement de belles idées"
+      ] },
+      "no": { "h": "Ce n'est pas pour vous si…", "items": [
+        "Vous ne visez pas à croître",
+        "Vous cherchez une solution magique sans y mettre le travail",
+        "Vous n'êtes pas prêt à valider votre offre auprès du marché"
+      ] },
+      "foot": { "p": "Un premier échange suffit pour savoir si c'est le bon moment.", "label": "Vérifier mon admissibilité", "to": "contact" }
+    },
+    { "type": "faq", "h2": "Questions fréquentes sur le *conseil d'affaires web*", "open": true },
+    { "type": "cta-final", "h2": "Prêt à transformer votre expertise en *revenus croissants?*", "p": "Parlons de votre offre : nous vous dirons honnêtement si nous pouvons vous aider.", "cta": "Vérifier mon admissibilité" }
+  ],
+  "faq": [
+    { "q": "Qu'est-ce que le conseil d'affaires web de Viesigners?", "a": ["C'est un accompagnement pour entrepreneurs de services qui veulent lancer ou faire croître une offre. Nous concevons l'offre, validons le marché, planifions le lancement et bâtissons le tunnel de vente en ligne qui la vend."] },
+    { "q": "À qui s'adresse cet accompagnement?", "a": ["Aux entrepreneurs de services, consultants, coachs et experts qui veulent transformer leur expertise en revenus croissants et qui sont prêts à agir sur un plan validé."] },
+    { "q": "Pourquoi « vérifier mon admissibilité »?", "a": ["Parce que nous ne travaillons pas avec tout le monde. Un premier échange permet de confirmer que vous correspondez au profil recherché et que nous pouvons réellement vous aider."] },
+    { "q": "Combien de temps faut-il pour lancer une offre?", "a": ["Cela dépend de votre point de départ. À titre d'exemples, des clients ont signé 12 000 $ en 6 semaines sur une nouvelle offre de consultation, et obtenu leurs 3 premiers clients Premium en 14 jours. Ce sont des cas réels, pas des promesses pour tous."] },
+    { "q": "Dois-je déjà avoir un site web?", "a": ["Non. Le tunnel de vente peut être votre première présence en ligne. Si vous avez déjà un site, nous l'intégrons au parcours. Voyez aussi nos services de [sites web](@sites-web) et de [landing pages](@landing-pages)."] },
+    { "q": "Offrez-vous une garantie?", "a": ["Oui. Chaque service vient avec une garantie que les autres agences n'osent pas offrir. [Contactez-nous](@contact) pour en connaître les détails."] }
+  ]
+}

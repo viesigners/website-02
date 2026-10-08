@@ -1,0 +1,107 @@
+{
+ "meta": {
+  "title": "Charles-Erick BG — Co-founder of Viesigners | UX/UI and CRO expert",
+  "description": "Charles-Erick BG, co-founder of Viesigners: hybrid UX/UI and conversion rate optimization expert with 30+ combined years of experience with his brother.",
+  "h1": "Charles-Erick BG"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tag": "Co-founder of Viesigners",
+   "h1": "Charles-Erick *BG*",
+   "lead": "Hybrid expert in digital user experience (UX/UI) and conversion rate optimization (CRO), co-founder of Viesigners with his brother Jean-François.",
+   "ctas": [
+    {
+     "label": "Talk to Charles-Erick",
+     "to": "@contact",
+     "style": "violet"
+    },
+    {
+     "label": "See Jean-François's profile",
+     "to": "@jean-francois",
+     "style": "ghost"
+    }
+   ],
+   "brief": [
+    {
+     "b": "Role:",
+     "t": "co-founder of Viesigners."
+    },
+    {
+     "b": "Expertise:",
+     "t": "UX/UI, CRO, designing offers and digital experiences."
+    },
+    {
+     "b": "Education:",
+     "t": "master of web experience design (2009)."
+    },
+    {
+     "b": "Based in:",
+     "t": "Québec, Canada — French- and English-speaking markets."
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "wide": true,
+   "text": "Helping companies of all sizes *perform online*, with more than 30 combined years alongside his brother.",
+   "prose": [
+    "With Jean-François, Charles-Erick forms “The BG Twins”: a duo that unites customer experience and web business strategy, working as business advisor, strategic consultant and delivery partner."
+   ]
+  },
+  {
+   "type": "facts",
+   "h2": "Areas of *work*",
+   "items": [
+    {
+     "k": "Websites",
+     "v": "[Professional website creation](@sites-web): structure, design, copy and development."
+    },
+    {
+     "k": "Landing pages",
+     "v": "[Pages and sales funnels](@landing-pages) that convert."
+    },
+    {
+     "k": "Product design",
+     "v": "[UX/UI for SaaS and mobile apps](@design-produit)."
+    },
+    {
+     "k": "Advisory",
+     "v": "Offer design, launch strategy and market validation for service entrepreneurs."
+    }
+   ],
+   "theme": "dark"
+  },
+  {
+   "type": "faq",
+   "h2": "Questions about *Charles-Erick*",
+   "open": true
+  },
+  {
+   "type": "cta-final",
+   "h2": "Let's talk about *your project.*",
+   "p": "One first conversation is enough to know whether we can help.",
+   "cta": "Let's talk!"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Who is Charles-Erick BG?",
+   "a": [
+    "Charles-Erick BG is co-founder of Viesigners, a Canadian web micro-agency. He is a hybrid expert in UX/UI and conversion rate optimization, with more than 30 years of combined experience with his brother Jean-François."
+   ]
+  },
+  {
+   "q": "What does Charles-Erick do for clients?",
+   "a": [
+    "He helps companies improve their landing pages and sales journeys, clarify their offers and simplify the experience of their apps and services."
+   ]
+  },
+  {
+   "q": "How can I reach him?",
+   "a": [
+    "Through the [contact page](@contact) or by phone at +1 581-502-1115."
+   ]
+  }
+ ]
+}

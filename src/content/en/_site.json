@@ -1,0 +1,100 @@
+{
+ "servicesLabel": "Our services",
+ "nav": {
+  "home": "Home",
+  "services": "Services",
+  "a-propos": "About",
+  "charles-erick": "Charles-Erick BG",
+  "jean-francois": "Jean-François BG",
+  "realisations": "Work",
+  "actualites": "News",
+  "contact": "Contact",
+  "sites-web": "Websites",
+  "landing-pages": "Landing pages",
+  "design-produit": "Product design",
+  "publicite": "Digital advertising",
+  "medias-sociaux": "Social media",
+  "seo-geo": "SEO/GEO",
+  "coaching": "Business advisory"
+ },
+ "navSub": {
+  "sites-web": "Websites that build authority and convert",
+  "landing-pages": "Pages and sales funnels that generate leads",
+  "design-produit": "UX/UI for SaaS and mobile apps",
+  "publicite": "Profitable campaigns, powered by our pages",
+  "medias-sociaux": "A social presence that feeds your funnel",
+  "seo-geo": "Get found on Google and cited by AI",
+  "coaching": "Offers and launches for service entrepreneurs"
+ },
+ "brief": "At a glance",
+ "updated": "Last updated",
+ "breadcrumb": "Breadcrumb",
+ "faqTitle": "Questions?",
+ "by": "By",
+ "keypoints": "Key takeaways",
+ "authorLine": "Founders of Viesigners — UX/UI and conversion rate optimization (CRO) experts.",
+ "skip": "Skip to content",
+ "mainNav": "Main navigation",
+ "langLabel": "Language",
+ "langSwitch": "Passer au français",
+ "ctaShort": "Free action plan",
+ "menu": "Menu",
+ "top": "Back to top",
+ "footerTag": "The accelerator pedal for *growing businesses.*",
+ "footer": {
+  "who": "Viesigners",
+  "blurb": "Canadian micro-agency in UX/UI and conversion rate optimization. Québec and Vancouver.",
+  "cta": "Let's talk!",
+  "company": "Company",
+  "rights": "Les Viesigners. All rights reserved.",
+  "privacy": "Privacy policy",
+  "terms": "Terms and conditions"
+ },
+ "orgDescription": "Viesigners is a Canadian web micro-agency (Québec and Vancouver) specialized in UX/UI and conversion rate optimization (CRO): websites, landing pages, sales funnels, SaaS and app product design, and business advisory. With a network of vetted experts, it also supports companies in digital advertising, SEO and GEO.",
+ "knowsAbout": [
+  "UX/UI design",
+  "Conversion rate optimization (CRO)",
+  "Website design",
+  "Landing pages",
+  "Sales funnels",
+  "SaaS product design",
+  "Mobile app design",
+  "SEO",
+  "GEO (Generative Engine Optimization)",
+  "Digital advertising",
+  "Business advisory"
+ ],
+ "awards": [
+  "Top 3% of the world's web experts (Toptal)",
+  "Projects recognized by Awwwards",
+  "OCTAS finalist",
+  "Osentreprendre award"
+ ],
+ "jobTitle": "Co-founder, UX/UI and CRO expert",
+ "postCta": {
+  "h2": "Ready to *remove the friction?*",
+  "p": "Tell us where your site loses customers. We'll come back with a concrete action plan.",
+  "cta": "Get your free action plan"
+ },
+ "labels": {
+  "services": "Services",
+  "friction": "The problem",
+  "stats": "Results",
+  "work": "Work",
+  "fit": "Who it's for",
+  "slot": "Testimonials",
+  "faq": "FAQ",
+  "deliverables": "What's included",
+  "process": "Process",
+  "compare": "Comparison",
+  "proof": "Proof",
+  "people": "The team",
+  "facts": "Key facts",
+  "testimonials": "Testimonials"
+ },
+ "call": "Call",
+ "close": "Close",
+ "translatedFrom": {
+  "fr": "Translated from French"
+ }
+}

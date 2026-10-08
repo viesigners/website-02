@@ -1,0 +1,35 @@
+{
+  "key": "landing", "slug": "landing-page-elements-qui-convertissent", "date": "2026-10-03", "modified": "2026-10-03",
+  "tag": "Landing pages", "read": "5 min de lecture",
+  "title": "Landing page : sept éléments qui la font convertir",
+  "metaTitle": "Landing page : 7 éléments qui font convertir | Viesigners",
+  "description": "Offre claire, une seule action, preuves, rapidité : les sept éléments qu'une landing page doit réunir pour transformer des visiteurs en demandes.",
+  "keywords": ["landing page", "page de destination", "taux de conversion", "tunnel de vente"],
+  "summary": [
+    "Une landing page performante défend **une offre, pour un public, avec une seule action.**",
+    "La clarté, la preuve et la rapidité comptent plus que la quantité d'information.",
+    "Mesurer dès le premier jour permet d'améliorer la page avec des données."
+  ],
+  "body": [
+    { "h2": "Une page, une mission" },
+    { "p": "Une landing page est une page conçue pour une seule action : demander une soumission, réserver un appel, s'inscrire. Tout ce qui ne sert pas cette action est de la friction." },
+    { "h2": "Les sept éléments" },
+    { "ul": [
+      "**Une promesse claire dès l'écran d'accueil :** qui vous aidez et quel résultat vous apportez.",
+      "**Une seule action principale :** un bouton, un verbe, une promesse. Les actions secondaires restent discrètes.",
+      "**La valeur avant les caractéristiques :** parlez de ce que la personne obtient, pas de ce que vous faites.",
+      "**Des preuves crédibles :** résultats chiffrés, logos de clients, témoignages précis.",
+      "**Des réponses aux objections :** prix, délais, risque, comparaison avec les alternatives.",
+      "**Un formulaire sans friction inutile :** seulement les champs nécessaires.",
+      "**Une page rapide sur mobile :** une seconde de trop coûte des demandes."
+    ] },
+    { "h2": "Mesurer pour améliorer" },
+    { "p": "Configurez le suivi des conversions avant de publier. Observez où les visiteurs quittent, testez un changement à la fois (titre, bouton, preuve) et gardez ce qui fonctionne." },
+    { "h2": "Pour aller plus loin" },
+    { "p": "Nous concevons des [landing pages et des tunnels de vente](@landing-pages) qui ont généré jusqu'à 3500 % de hausse de demandes avec des budgets publicitaires minimes. Si vous voulez les rentabiliser davantage avec de la [publicité numérique](@publicite), c'est aussi possible." }
+  ],
+  "faq": [
+    { "q": "Combien de champs un formulaire de landing page devrait-il avoir?", "a": ["Le moins possible : chaque champ supplémentaire réduit la probabilité de réponse. Demandez uniquement ce dont vous avez besoin pour faire la prochaine étape."] },
+    { "q": "Une landing page doit-elle avoir un menu de navigation?", "a": ["En général non. Retirer la navigation concentre le visiteur sur l'action principale et réduit les fuites."] }
+  ]
+}
