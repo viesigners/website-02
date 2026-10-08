@@ -7,7 +7,7 @@
  "sections": [
   {
    "type": "hero-home",
-   "tag": "Web agency & digital performance: websites, funnels, SaaS and apps",
+   "tag": "Web, UX/UI and Marketing Agency: websites, funnels, SaaS and Apps",
    "h1": "Multiply your sales and boost your revenue per customer, with *profitable web*",
    "lead": "We help service businesses, SaaS companies and mobile app makers optimize their digital presence for two precise results: winning more customers and maximizing the value of each one — an approach that puts human psychology to work for your profitability.",
    "cta": "Start a project",
@@ -325,56 +325,139 @@
    "items": [
     {
      "name": "Elodie Marcotte",
-     "role": "",
+     "role": "Founder",
      "date": "2026-02-18",
      "lang": "en",
      "title": "Charles-Érick’s support went far beyond my expectations",
      "text": "In the few words this space allows me, I can say that Charles-Érick’s support went far beyond my expectations. Creative, quick-witted and incredibly well organized, he goes well beyond simple user experience thinking. He is a deeply human person, and it shows directly in his work. I recommend him with my eyes closed.",
-     "translatedFrom": "fr"
+     "translatedFrom": "fr",
+     "company": "I Am Alice"
     },
     {
-     "name": "khrystopher Dubé",
-     "role": "",
+     "name": "Khrystopher Dubé",
+     "role": "Founder",
      "date": "2025-11-21",
      "lang": "en",
      "title": "He turned my ideas into an effective, professional conversion page",
      "text": "A huge thank you to Charles-Érick for his remarkable work. From the start, he put me at ease, listened fully to my needs and managed to turn my ideas into an effective, professional conversion page.",
-     "translatedFrom": "fr"
+     "translatedFrom": "fr",
+     "company": "Horizon Santé Animale"
     },
     {
      "name": "Marie-Eve Gratton",
-     "role": "Design UX et UI",
+     "role": "Freelance UX/UI Design Expert",
      "date": "2026-02-20",
      "lang": "en",
      "title": "A true reference when it comes to web strategy and UX design",
      "text": "What can I say about Charles-Érick… a truly one-of-a-kind human. His great strength is his ability to take his clients and colleagues to another level through his strategic thinking and his fine understanding of UX. Charles-Érick is a reference when it comes to web strategy and UX design. His approach is always thoughtful, clear and structured. It’s also a real pleasure to collaborate with him and to bring visually to life the ideas we develop together. I recommend him without hesitation!",
-     "translatedFrom": "fr"
+     "translatedFrom": "fr",
+     "company": ""
     },
     {
      "name": "Emilie Gosselin",
-     "role": "VP Growth & Transformation / VP Croissance et transformation - MBA",
+     "role": "VP Growth & Transformation",
      "date": "2023-04-07",
      "lang": "en",
      "title": "Innovative, creative solutions that always demonstrate added value",
      "text": "Charles-Erick was a key person on the various mandates, always bringing innovative, creative solutions while demonstrating added value. Always looking for the best solution to meet user needs, his thinking was always in-depth, methodical and based on exhaustive research. Whether in brainstorming to support a strategic plan, creating UX mockups, A/B tests or user journeys, his work made it possible to create creative solutions for our team, while being highly effective for clients and O2. Charles-Érick is an excellent team player, always very invested in his work, and his presence at client meetings was greatly appreciated. It was a real pleasure to work and brainstorm with Charles-Érick on various strategic projects for clients or to help the Agency evolve.",
-     "translatedFrom": "fr"
+     "translatedFrom": "fr",
+     "company": "Datmos"
     },
     {
      "name": "François L.",
-     "role": "Entrepreneur | Digital Marketing Executive | Bilingual (EN/FR) | Intl. TEDx Speaker | Brian Tracy Co-Author",
+     "role": "CEO",
      "date": "2023-04-03",
      "lang": "en",
      "title": "A way to simplify ideas so they make sense",
-     "text": "Charles-Erick is a great UX designer. Very profesionnal and has a way to simplify ideas in order for them to make sense. Always looking forward to collaborate with him on different projects which require his keen eye and value oriented design thought process :)"
+     "text": "Charles-Erick is a great UX designer. Very profesionnal and has a way to simplify ideas in order for them to make sense. Always looking forward to collaborate with him on different projects which require his keen eye and value oriented design thought process :)",
+     "company": "Feedbaak"
     },
     {
      "name": "Tony Raymond",
-     "role": "Responsable, Création Multimédia | Leader, Multimedia Creation",
+     "role": "Multimedia Production Coordinator",
      "date": "2012-05-07",
      "lang": "en",
      "title": "A genuine idea machine",
      "text": "Charles-Erick is a genuine idea machine. Inventive, structured and open-minded, he doesn’t hesitate to question ideas, both his own and those of others, if it can improve results. His know-how is matched only by his people skills, and he has the qualities of a leader within a team. It was a pleasure to collaborate with him.",
-     "translatedFrom": "fr"
+     "translatedFrom": "fr",
+     "company": "Graffartis/EducExpert"
+    },
+    {
+     "name": "Molka Bahloul",
+     "role": "Freelance Digital Marketing Expert",
+     "date": "2026-09",
+     "lang": "en",
+     "title": "Work that helped multiply inquiries fivefold",
+     "text": "I had the chance to collaborate with Charles-Erick on several projects and to witness his expertise in UI-UX and conversion optimization. His work notably contributed to multiplying inquiries by 5 for Toiture Dérek Fortier, by 2.3 for Gouttière Moisan and by 4.7 for Monnaie Timbres de la Capitale.\n\nProfessional, proactive and always attentive, he quickly understands clients’ needs and proposes effective solutions. I recommend Viesigners to any business wishing to improve its website, user experience and conversions.",
+     "translatedFrom": "fr",
+     "company": ""
+    },
+    {
+     "name": "Michael Roussel",
+     "role": "Co-founder",
+     "date": "2026-08",
+     "lang": "en",
+     "title": "Very concrete, relevant, results-oriented support",
+     "text": "He supported us on several projects, and we notably collaborated with him on Flokon’s user interface analysis, customer journey optimization and website sales funnel optimization.\n\nHe is a humane, multidisciplinary, creative person who can think differently. He is extremely pleasant to work with and always knows how to adapt to our needs.\n\nIn our early days, he adjusted his service offering to propose very concrete, relevant, results-oriented support.\n\nI recommend him 200%. It’s rare these days to work with someone so professional, competent and caring.",
+     "translatedFrom": "fr",
+     "company": "Flokon"
+    },
+    {
+     "name": "Tom Pigott",
+     "role": "Co-founder",
+     "date": "2026-04",
+     "lang": "en",
+     "title": "Contributed greatly to the success we are enjoying today",
+     "text": "Jean-Francois has been an incredible collaborator on a SaaS project that I have been focused on over the past several years. His unique insight and experience into what makes great UX/UI, how to A/B test all aspect of our landing page, fine tuning our lead gen funnel, etc., have all contributed greatly to the success we are enjoying today. I highly recommend Jean-Francois and his agency!",
+     "company": "JetPlay"
+    },
+    {
+     "name": "Simon Bouchard",
+     "role": "CEO",
+     "date": "2026-04",
+     "lang": "en",
+     "title": "An approach that’s both strategic and very concrete, focused on measurable results",
+     "text": "I’ve had the opportunity to collaborate with Charles-Erick on several occasions and I highly recommend him.\n\nHe is a CRO and UX expert with a great ability to quickly grasp the issues and identify where a business is losing conversion opportunities. His approach is both strategic and very concrete, focused on measurable results.\n\nWhat especially sets him apart is his structured approach. He doesn’t work on intuition or by trial and error. He formulates hypotheses, tests them and validates them with concrete data, which leads to real, lasting improvements.\n\nHe doesn’t just give theoretical advice. He offers clear, actionable avenues adapted to real-world conditions.\n\nIf you truly want to improve your web performance, your conversion or the clarity of your offer, he is definitely someone to talk to.",
+     "translatedFrom": "fr",
+     "company": "Exposant 3"
+    },
+    {
+     "name": "Miguel Duarte",
+     "role": "",
+     "date": "2026-03",
+     "lang": "en",
+     "title": "One of the most professional and detail-oriented UX designers I’ve come across",
+     "text": "I’ve worked with Jean-François on a SaaS project, and I can honestly say he’s one of the most professional and detail-oriented UX designers I’ve come across. What really sets him apart is his communication. He has a rare ability to tailor his delivery depending on who he’s talking to, whether it’s a developer, a business stakeholder, or anyone else on the team. Everyone walks away with clarity.\n\nHis grasp of the entire user journey goes far beyond surface-level design. He doesn’t just polish interfaces, he digs into root causes, questions assumptions, and crafts UX-driven solutions that address the real problems underneath. That kind of thinking elevates the whole project, not just the design layer. He’s also incredibly reliable and easy to work with. Deadlines are met, feedback loops are tight, and there’s never any ambiguity about where things stand. He brings a genuine passion for the work that’s contagious, the kind of energy that raises the bar for everyone involved.\n\nIf you get the chance to work with Jean-François, take it. He’s the kind of professional that makes you feel like your project is in good hands from day one.",
+     "company": ""
+    },
+    {
+     "name": "Jorge Gomes",
+     "role": "",
+     "date": "2026-03",
+     "lang": "en",
+     "title": "We couldn’t be happier with the results",
+     "text": "I’ve been working with Jean-François for over 3 years on a SaaS platform, where he leads our UI/UX, and we couldn’t be happier with the results.\n\nHe’s a pleasure to work with. Very human, positive energy, easy to talk to, and always open to hear others’ opinions and insights.\n\nHe has earned the full trust of our team and has repeatedly risen to our most difficult challenges and shown a remarkable ability to adapt as our platform and needs continue to evolve. Highly recommend.",
+     "company": ""
+    },
+    {
+     "name": "Sabrina Déry",
+     "role": "Web and Graphic Designer",
+     "date": "2026-03",
+     "lang": "en",
+     "title": "His UX and copywriting expertise takes projects further",
+     "text": "I thoroughly enjoyed collaborating with Charles-Érick as a web designer. His expertise in UX and copywriting allows us to take projects further and optimize conversion for our clients. He is very professional, competent and friendly. I recommend him without hesitation!",
+     "translatedFrom": "fr",
+     "company": "Base 132"
+    },
+    {
+     "name": "Maxime Joyal",
+     "role": "Founder",
+     "date": "2026-03",
+     "lang": "en",
+     "title": "A genuine desire to understand my situation and help concretely",
+     "text": "Charles-Éric took the time to respond to my call for help in the group La Gang de pigistes, and I was pleasantly surprised by his generosity and professionalism.\n\nHe offered me a meeting to guide and orient me, with a genuine desire to understand my situation and help me concretely. Our exchange was clear, structured and relevant.\nThank you for your time, your listening and your openness.\n\nIt makes all the difference to come across professionals who are human and committed. I can’t wait to discover what he’ll be able to offer me in the coming weeks!",
+     "translatedFrom": "fr",
+     "company": "Maxime Joyal Media"
     }
    ],
    "slot": {

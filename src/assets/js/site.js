@@ -94,7 +94,7 @@
       form.querySelectorAll('[required]').forEach(f => {
         const bad = !f.checkValidity();
         f.setAttribute('aria-invalid', String(bad));
-        const err = f.parentElement.querySelector('.err');
+        const err = f.closest('.field')?.querySelector('.err');
         if (err) err.textContent = bad ? (f.type === 'email' ? form.dataset.msgEmail : form.dataset.msgRequired) : '';
         if (bad && ok) { f.focus(); ok = false; }
       });
@@ -105,7 +105,7 @@
       const btn = form.querySelector('button[type=submit]'); btn.disabled = true;
       try {
         if (!endpoint) throw new Error('no-endpoint');
-        const res = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(data) });
+        const res = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ ...data, _subject: form.dataset.subject, _replyto: data.email, _template: 'table', _captcha: 'false' }) });
         if (!res.ok) throw new Error('http');
         form.reset(); show(form.dataset.msgOk, false);
       } catch (_) {
@@ -116,6 +116,9 @@
         } else show(form.dataset.msgFail, true);
       } finally { btn.disabled = false; }
     });
+    // picking a country also sets the matching calling code
+    const country = form.querySelector('[data-country]'), dial = form.querySelector('[data-dial]');
+    country && dial && country.addEventListener('change', () => { const o = [...dial.options].find(x => x.dataset.cc === country.value); if (o) dial.value = o.value; });
     form.querySelectorAll('[required]').forEach(f => f.addEventListener('blur', () => { f.setAttribute('aria-invalid', String(!f.checkValidity())); }));
   }
 })();

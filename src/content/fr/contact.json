@@ -8,7 +8,7 @@
   {
    "type": "page-hero",
    "tag": "Parlons-nous!",
-   "h1": "Obtiens ton *plan d'action gratuit*",
+   "h1": "Voyons comment faire *croître ton entreprise*",
    "lead": "Décrivez-nous votre situation en quelques lignes. Nous revenons vers vous avec une réponse claire sur la façon dont nous pouvons vous aider — ou sur le fait que ce n'est pas le bon moment.",
    "ctas": []
   },
@@ -29,56 +29,60 @@
    },
    "form": {
     "subject": "Nouvelle demande — viesigners.com",
-    "name": "Nom",
     "email": "Courriel",
     "phone": "Téléphone",
-    "site": "Site web actuel",
-    "optional": "(facultatif)",
-    "topic": "Sujet",
     "choose": "Choisir…",
-    "topics": [
-     {
-      "t": "Plan d'action gratuit"
-     },
-     {
-      "t": "Site web",
-      "page": "sites-web"
-     },
-     {
-      "t": "Landing page ou tunnel de vente",
-      "page": "landing-pages"
-     },
-     {
-      "t": "Design de produit (SaaS et apps)",
-      "page": "design-produit"
-     },
-     {
-      "t": "Publicité numérique",
-      "page": "publicite"
-     },
-     {
-      "t": "Médias sociaux",
-      "page": "medias-sociaux"
-     },
-     {
-      "t": "SEO/GEO",
-      "page": "seo-geo"
-     },
-     {
-      "t": "Conseil d'affaires web",
-      "page": "coaching"
-     },
-     {
-      "t": "Autre"
-     }
-    ],
-    "message": "Votre message",
+    "message": "Parlez-nous de votre projet",
     "submit": "Envoyer ma demande",
     "note": "Nous utilisons vos renseignements uniquement pour répondre à votre demande.",
     "ok": "Merci! Votre message est envoyé. Nous vous répondons rapidement.",
     "fail": "L'envoi a échoué. Réessayez ou appelez-nous au +1 581-502-1115.",
     "required": "Ce champ est requis.",
-    "emailErr": "Entrez une adresse courriel valide."
+    "emailErr": "Entrez une adresse courriel valide.",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "dial": "Indicatif téléphonique",
+    "website": "Site web",
+    "budget": "Budget du projet",
+    "budgetPh": "ex. 5 000 $",
+    "country": "Pays",
+    "need": "Comment pouvons-nous vous aider?",
+    "needs": [
+     {
+      "t": "Je veux mon plan d'action gratuit"
+     },
+     {
+      "t": "J'ai besoin d'aide avec ma conversion"
+     },
+     {
+      "t": "J'ai besoin de plus de clients"
+     },
+     {
+      "t": "J'ai besoin de plus de prospects"
+     },
+     {
+      "t": "J'ai besoin de plus de revenus de mes clients"
+     },
+     {
+      "t": "J'ai besoin d'un site web",
+      "page": "sites-web"
+     },
+     {
+      "t": "J'ai besoin d'une landing page ou d'un tunnel de vente",
+      "page": "landing-pages"
+     },
+     {
+      "t": "J'ai besoin d'aide pour mon SaaS ou mon application",
+      "page": "design-produit"
+     },
+     {
+      "t": "J'ai besoin de conseils d'affaires pour une nouvelle offre",
+      "page": "coaching"
+     },
+     {
+      "t": "Je voulais simplement dire bonjour"
+     }
+    ]
    }
   },
   {

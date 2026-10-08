@@ -27,11 +27,13 @@ jobs:
       - name: Build
         run: node build.mjs
         env:
-          # Project site: https://<owner>.github.io/<repo>/  → needs the sub-folder prefix.
-          SITE_BASE: /${{ github.event.repository.name }}
-          SITE_ORIGIN: https://${{ github.repository_owner }}.github.io
-          # Staging: keep search engines and AI crawlers out. Remove this line when going live on viesigners.com.
-          SITE_NOINDEX: "1"
+          # Production: viesigners.com is served from the domain root (custom domain set in Settings → Pages).
+          SITE_BASE: ""
+          SITE_ORIGIN: https://viesigners.com
+          # To publish a private preview instead (project URL + not indexable), use:
+          #   SITE_BASE: /${{ github.event.repository.name }}
+          #   SITE_ORIGIN: https://${{ github.repository_owner }}.github.io
+          #   SITE_NOINDEX: "1"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

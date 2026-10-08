@@ -8,7 +8,7 @@
   {
    "type": "page-hero",
    "tag": "Let's talk!",
-   "h1": "Get your *free action plan*",
+   "h1": "Let's see how to *grow your business*",
    "lead": "Describe your situation in a few lines. We'll come back with a clear answer on how we can help — or on why now isn't the right time.",
    "ctas": []
   },
@@ -29,56 +29,60 @@
    },
    "form": {
     "subject": "New inquiry — viesigners.com",
-    "name": "Name",
     "email": "Email",
     "phone": "Phone",
-    "site": "Current website",
-    "optional": "(optional)",
-    "topic": "Topic",
     "choose": "Choose…",
-    "topics": [
-     {
-      "t": "Free action plan"
-     },
-     {
-      "t": "Website",
-      "page": "sites-web"
-     },
-     {
-      "t": "Landing page or sales funnel",
-      "page": "landing-pages"
-     },
-     {
-      "t": "Product design (SaaS and apps)",
-      "page": "design-produit"
-     },
-     {
-      "t": "Digital advertising",
-      "page": "publicite"
-     },
-     {
-      "t": "Social media",
-      "page": "medias-sociaux"
-     },
-     {
-      "t": "SEO/GEO",
-      "page": "seo-geo"
-     },
-     {
-      "t": "Business advisory",
-      "page": "coaching"
-     },
-     {
-      "t": "Other"
-     }
-    ],
-    "message": "Your message",
+    "message": "Tell us about your project",
     "submit": "Send my request",
     "note": "We use your information only to answer your request.",
     "ok": "Thank you! Your message has been sent. We'll reply shortly.",
     "fail": "Sending failed. Try again or call us at +1 581-502-1115.",
     "required": "This field is required.",
-    "emailErr": "Enter a valid email address."
+    "emailErr": "Enter a valid email address.",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "dial": "Country calling code",
+    "website": "Website",
+    "budget": "Project budget",
+    "budgetPh": "e.g. $5,000",
+    "country": "Country",
+    "need": "How can we help?",
+    "needs": [
+     {
+      "t": "I'd like my free action plan"
+     },
+     {
+      "t": "I need help with my conversion"
+     },
+     {
+      "t": "I need more customers"
+     },
+     {
+      "t": "I need more leads"
+     },
+     {
+      "t": "I need more revenue from my customers"
+     },
+     {
+      "t": "I need a website",
+      "page": "sites-web"
+     },
+     {
+      "t": "I need a landing page or sales funnel",
+      "page": "landing-pages"
+     },
+     {
+      "t": "I need help with my SaaS or app",
+      "page": "design-produit"
+     },
+     {
+      "t": "I need business advice for a new offer",
+      "page": "coaching"
+     },
+     {
+      "t": "Just wanted to say hi"
+     }
+    ]
    }
   },
   {

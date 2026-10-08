@@ -49,3 +49,9 @@ Variables de build (voir le workflow) : `SITE_BASE` (sous-dossier, ex. `/website
 
 ### Mise en ligne sur viesigners.com (plus tard)
 Dans le workflow : retirer `SITE_NOINDEX`, mettre `SITE_BASE: ""` et `SITE_ORIGIN: https://viesigners.com`, ajouter un fichier `src/assets/CNAME` contenant `viesigners.com`, puis configurer le domaine dans Settings → Pages et chez le registraire (DNS). Attention : GitHub Pages ne lit pas `_redirects`/`.htaccess` ; la redirection de `/` vers la langue du navigateur se fait alors par le JavaScript de repli.
+
+## Production (viesigners.com) — état actuel
+- Le workflow construit pour la racine du domaine (`SITE_BASE: ""`, `SITE_ORIGIN: https://viesigners.com`), indexable.
+- Pages masquées (voir `hidden` dans `src/config.json`) : construites mais `noindex`, hors sitemap et `llms.txt`.
+- Formulaire de contact : envoie à `freres.bg@viesigners.com` via FormSubmit (`formEndpoint` dans `src/config.json`). **À la toute première soumission, FormSubmit envoie un courriel d'activation à cette adresse : cliquer sur le lien de confirmation.** En cas d'échec, le formulaire ouvre le courriel de l'utilisateur (repli mailto).
+- Aperçu privé non indexable sous `/website-02/` : voir les lignes commentées dans le workflow.

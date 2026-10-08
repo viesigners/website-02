@@ -7,7 +7,7 @@
  "sections": [
   {
    "type": "hero-home",
-   "tag": "Agence web & performance numérique : sites, tunnels, SaaS et apps",
+   "tag": "Agence web, UX/UI et marketing : sites, tunnels, SaaS et applis",
    "h1": "Multipliez vos ventes et boostez votre revenu par client, grâce au *web rentable*",
    "lead": "Nous aidons les entreprises de services, SaaS et applications mobiles à optimiser leur présence numérique pour deux résultats précis : acquérir plus de clients et maximiser la valeur de chacun — une approche qui met la psychologie humaine au service de votre rentabilité.",
    "cta": "Démarrer un projet",
@@ -325,52 +325,143 @@
    "items": [
     {
      "name": "Elodie Marcotte",
-     "role": "",
+     "role": "Fondatrice",
      "date": "2026-02-18",
      "lang": "fr",
      "title": "L’accompagnement de Charles-Érick a largement dépassé mes attentes",
-     "text": "Dans le peu de mots que cet espace me permet, je peux dire que l’accompagnement de Charles-Érick a largement dépassé mes attentes. Créatif, vif d’esprit et super bien organisé, il va bien au-delà de la simple réflexion en expérience utilisateur. C’est quelqu’un de profondément humain, et ça se ressent directement dans son travail. Je le recommande les yeux fermés."
+     "text": "Dans le peu de mots que cet espace me permet, je peux dire que l’accompagnement de Charles-Érick a largement dépassé mes attentes. Créatif, vif d’esprit et super bien organisé, il va bien au-delà de la simple réflexion en expérience utilisateur. C’est quelqu’un de profondément humain, et ça se ressent directement dans son travail. Je le recommande les yeux fermés.",
+     "company": "I Am Alice",
+     "joiner": "d’"
     },
     {
-     "name": "khrystopher Dubé",
-     "role": "",
+     "name": "Khrystopher Dubé",
+     "role": "Fondateur",
      "date": "2025-11-21",
      "lang": "fr",
      "title": "Transformer mes idées en une page de conversion efficace et professionnelle",
-     "text": "Un immense merci à Charles-Érick pour son travail remarquable. Dès le début, il a su me mettre en confiance, a été pleinement à l’écoute de mes besoins et a réussi à transformer mes idées en une page de conversion efficace et professionnelle."
+     "text": "Un immense merci à Charles-Érick pour son travail remarquable. Dès le début, il a su me mettre en confiance, a été pleinement à l’écoute de mes besoins et a réussi à transformer mes idées en une page de conversion efficace et professionnelle.",
+     "company": "Horizon Santé Animale",
+     "joiner": "d’"
     },
     {
      "name": "Marie-Eve Gratton",
-     "role": "Design UX et UI",
+     "role": "Experte en design UX/UI (freelance)",
      "date": "2026-02-20",
      "lang": "fr",
      "title": "Une référence lorsqu’il est question de stratégie web et de design UX",
-     "text": "Que dire de Charles-Érick… un humain véritablement à part. Sa grande force est sa capacité à amener ses clients et ses collègues à un autre niveau grâce à sa réflexion stratégique et sa compréhension fine du UX. Charles-Érick est une référence lorsqu’il est question de stratégie web et de design UX. Son approche est toujours réfléchie, claire et structurée. C’est d’ailleurs un réel plaisir de collaborer avec lui et de donner vie visuellement aux idées que nous développons ensemble. Je le recommande sans hésitation !"
+     "text": "Que dire de Charles-Érick… un humain véritablement à part. Sa grande force est sa capacité à amener ses clients et ses collègues à un autre niveau grâce à sa réflexion stratégique et sa compréhension fine du UX. Charles-Érick est une référence lorsqu’il est question de stratégie web et de design UX. Son approche est toujours réfléchie, claire et structurée. C’est d’ailleurs un réel plaisir de collaborer avec lui et de donner vie visuellement aux idées que nous développons ensemble. Je le recommande sans hésitation !",
+     "company": ""
     },
     {
      "name": "Emilie Gosselin",
-     "role": "VP Growth & Transformation / VP Croissance et transformation - MBA",
+     "role": "VP Croissance et transformation",
      "date": "2023-04-07",
      "lang": "fr",
      "title": "Des solutions innovantes, créatives, tout en démontrant la valeur ajoutée",
-     "text": "Charles-Erick a été une personne clé sur les différents mandats en apportant toujours des solutions innovantes, créatives tout en démontrant la valeur ajoutée. Toujours à la recherche de la meilleure solution pour répondre aux besoins utilisateurs, ses réflexions étaient toujours très poussées, méthodiques et basées sur des recherches exhaustives. Que se soit en brainstorm pour appuyer un plan stratégique, en création de maquettes UX, tests A/B ou pour des parcours utilisateur, son travail a permis de créer des solutions créatives pour notre équipe, tout en étant très performante pour les clients et O2. Charles-Érick est un excellent joueur d'équipe, toujours très investie dans son travail, sa présence sur les rencontres clients était très appréciée. Ce fut un réel plaisir de travailler, brainstormer avec Charles-Érick sur différents projets stratégiques pour les clients ou pour faire évoluer l'Agence."
+     "text": "Charles-Erick a été une personne clé sur les différents mandats en apportant toujours des solutions innovantes, créatives tout en démontrant la valeur ajoutée. Toujours à la recherche de la meilleure solution pour répondre aux besoins utilisateurs, ses réflexions étaient toujours très poussées, méthodiques et basées sur des recherches exhaustives. Que se soit en brainstorm pour appuyer un plan stratégique, en création de maquettes UX, tests A/B ou pour des parcours utilisateur, son travail a permis de créer des solutions créatives pour notre équipe, tout en étant très performante pour les clients et O2. Charles-Érick est un excellent joueur d'équipe, toujours très investie dans son travail, sa présence sur les rencontres clients était très appréciée. Ce fut un réel plaisir de travailler, brainstormer avec Charles-Érick sur différents projets stratégiques pour les clients ou pour faire évoluer l'Agence.",
+     "company": "Datmos",
+     "joiner": "chez"
     },
     {
      "name": "François L.",
-     "role": "Entrepreneur | Digital Marketing Executive | Bilingual (EN/FR) | Intl. TEDx Speaker | Brian Tracy Co-Author",
+     "role": "PDG",
      "date": "2023-04-03",
      "lang": "fr",
      "title": "Il sait simplifier les idées pour qu’elles aient du sens",
      "text": "Charles-Erick est un excellent designer UX. Très professionnel, il a une façon de simplifier les idées pour qu’elles aient du sens. Toujours enthousiaste à l’idée de collaborer avec lui sur différents projets qui demandent son œil aiguisé et sa démarche de design axée sur la valeur :)",
-     "translatedFrom": "en"
+     "translatedFrom": "en",
+     "company": "Feedbaak",
+     "joiner": "de"
     },
     {
      "name": "Tony Raymond",
-     "role": "Responsable, Création Multimédia | Leader, Multimedia Creation",
+     "role": "Coordonnateur de production multimédia",
      "date": "2012-05-07",
      "lang": "fr",
      "title": "Une authentique machine à idées",
-     "text": "Charles-Erick est une authentique machine à idées. Inventif, structuré et ouvert d'esprit, il n'hésite pas à remettre les idées en questions, tant les siennes que celles des autres si cela peut permettre d'améliorer les résultats. Son savoir-faire n'a d'égal que son savoir-être et il possède les qualités d'un leader au sein d'une équipe. Ce fut un plaisir de collaborer avec lui."
+     "text": "Charles-Erick est une authentique machine à idées. Inventif, structuré et ouvert d'esprit, il n'hésite pas à remettre les idées en questions, tant les siennes que celles des autres si cela peut permettre d'améliorer les résultats. Son savoir-faire n'a d'égal que son savoir-être et il possède les qualités d'un leader au sein d'une équipe. Ce fut un plaisir de collaborer avec lui.",
+     "company": "Graffartis/EducExpert",
+     "joiner": "chez"
+    },
+    {
+     "name": "Molka Bahloul",
+     "role": "Spécialiste en marketing numérique (freelance)",
+     "date": "2026-09",
+     "lang": "fr",
+     "title": "Un travail qui a contribué à multiplier les demandes par 5",
+     "text": "J’ai eu la chance de collaborer avec Charles-Erick sur plusieurs projets et de constater son expertise en UI-UX et en optimisation de la conversion. Son travail a notamment contribué à multiplier les demandes par 5 pour Toiture Dérek Fortier, par 2,3 pour Gouttière Moisan et par 4,7 pour Monnaie Timbres de la Capitale.\n\nProfessionnel, proactif et toujours à l’écoute, il comprend rapidement les besoins des clients et propose des solutions efficaces. Je recommande Viesigners à toute entreprise souhaitant améliorer son site Web, l’expérience utilisateur et ses conversions.",
+     "company": ""
+    },
+    {
+     "name": "Michael Roussel",
+     "role": "Cofondateur",
+     "date": "2026-08",
+     "lang": "fr",
+     "title": "Un accompagnement très concret, pertinent et orienté vers les résultats",
+     "text": "Il nous a accompagnés sur plusieurs projets, et nous avons notamment collaboré avec lui pour Flokon sur l’analyse de l’interface utilisateur, l’optimisation du parcours client et du funnel de vente du site web.\n\nC’est une personne humaine, multidisciplinaire, créative et capable de penser autrement. Il est extrêmement agréable de travailler avec lui, et il sait toujours s’adapter à nos besoins.\n\nÀ nos débuts, il a su ajuster son offre de services afin de nous proposer un accompagnement très concret, pertinent et orienté vers les résultats.\n\nJe le recommande à 200 %. Il est rare, de nos jours, de travailler avec une personne aussi professionnelle, compétente et bienveillante.",
+     "company": "Flokon",
+     "joiner": "de"
+    },
+    {
+     "name": "Tom Pigott",
+     "role": "Cofondateur",
+     "date": "2026-04",
+     "lang": "fr",
+     "title": "A grandement contribué au succès dont nous profitons aujourd’hui",
+     "text": "Jean-François a été un collaborateur incroyable sur un projet SaaS auquel je me consacre depuis plusieurs années. Sa vision unique et son expérience de ce qui fait un excellent UX/UI, de la façon de tester en A/B tous les aspects de notre landing page, d’affiner notre entonnoir de génération de prospects, etc., ont tous grandement contribué au succès dont nous profitons aujourd’hui. Je recommande fortement Jean-François et son agence!",
+     "translatedFrom": "en",
+     "company": "JetPlay",
+     "joiner": "de"
+    },
+    {
+     "name": "Simon Bouchard",
+     "role": "PDG",
+     "date": "2026-04",
+     "lang": "fr",
+     "title": "Une approche à la fois stratégique et très concrète, orientée vers des résultats mesurables",
+     "text": "J’ai eu l’occasion de collaborer avec Charles-Erick à plusieurs reprises et je le recommande fortement.\n\nC’est un expert en CRO et UX avec une grande capacité à comprendre rapidement les enjeux et à identifier où une entreprise perd des opportunités de conversion. Son approche est à la fois stratégique et très concrète, orientée vers des résultats mesurables.\n\nCe qui le distingue particulièrement, c’est son approche structurée. Il ne fonctionne pas à l’intuition ou à tâtons. Il formule des hypothèses, les teste et les valide avec des données concrètes, ce qui permet d’obtenir des améliorations réelles et durables.\n\nIl ne se contente pas de donner des conseils théoriques. Il propose des pistes claires, actionnables et adaptées à la réalité du terrain.\n\nSi vous cherchez réellement à améliorer votre performance web, votre conversion ou la clarté de votre offre, c’est définitivement quelqu’un à qui parler.",
+     "company": "Exposant 3",
+     "joiner": "d’"
+    },
+    {
+     "name": "Miguel Duarte",
+     "role": "",
+     "date": "2026-03",
+     "lang": "fr",
+     "title": "L’un des designers UX les plus professionnels et rigoureux que j’aie croisés",
+     "text": "J’ai travaillé avec Jean-François sur un projet SaaS, et je peux honnêtement dire qu’il est l’un des designers UX les plus professionnels et les plus rigoureux que j’aie croisés. Ce qui le distingue vraiment, c’est sa communication. Il a une rare capacité à adapter son discours selon son interlocuteur, qu’il s’agisse d’un développeur, d’un décideur d’affaires ou de n’importe qui d’autre dans l’équipe. Tout le monde repart avec de la clarté.\n\nSa compréhension de l’ensemble du parcours utilisateur va bien au-delà du design de surface. Il ne se contente pas de peaufiner des interfaces : il creuse les causes profondes, remet en question les hypothèses et conçoit des solutions guidées par l’UX qui répondent aux vrais problèmes sous-jacents. Cette façon de penser élève tout le projet, pas seulement la couche design. Il est aussi incroyablement fiable et agréable à travailler. Les échéances sont respectées, les boucles de rétroaction sont serrées et il n’y a jamais d’ambiguïté sur l’état d’avancement. Il apporte une véritable passion pour le travail, contagieuse, le genre d’énergie qui élève la barre pour tous ceux qui sont impliqués.\n\nSi vous avez la chance de travailler avec Jean-François, saisissez-la. C’est le genre de professionnel qui vous donne l’impression que votre projet est entre bonnes mains dès le premier jour.",
+     "translatedFrom": "en",
+     "company": ""
+    },
+    {
+     "name": "Jorge Gomes",
+     "role": "",
+     "date": "2026-03",
+     "lang": "fr",
+     "title": "On ne pourrait pas être plus heureux des résultats",
+     "text": "Je travaille avec Jean-François depuis plus de 3 ans sur une plateforme SaaS, où il dirige notre UI/UX, et nous ne pourrions pas être plus heureux des résultats.\n\nC’est un plaisir de travailler avec lui. Très humain, plein d’énergie positive, facile à parler, et toujours ouvert à écouter les opinions et les idées des autres.\n\nIl a gagné toute la confiance de notre équipe, a relevé à maintes reprises nos défis les plus difficiles et a démontré une remarquable capacité d’adaptation à mesure que notre plateforme et nos besoins évoluent. Je le recommande fortement.",
+     "translatedFrom": "en",
+     "company": ""
+    },
+    {
+     "name": "Sabrina Déry",
+     "role": "Designer web et graphique",
+     "date": "2026-03",
+     "lang": "fr",
+     "title": "Son expertise en UX et en rédaction permet de pousser les projets plus loin",
+     "text": "J’ai beaucoup apprécié collaborer avec Charles-Érick en tant que designer web. Son expertise en UX et en rédaction permet de pousser les projets plus loin et d’optimiser la conversion pour nos clients. Il est très professionnel, compétent et sympathique. Je le recommande sans hésiter!",
+     "company": "Base 132",
+     "joiner": "chez"
+    },
+    {
+     "name": "Maxime Joyal",
+     "role": "Fondatrice",
+     "date": "2026-03",
+     "lang": "fr",
+     "title": "Une réelle volonté de comprendre ma situation et de m’aider concrètement",
+     "text": "Charles-Éric a pris le temps de répondre à mon appel à l’aide sur le groupe La Gang de pigistes, et j’ai été agréablement surprise par sa générosité et son professionnalisme.\n\nIl m’a offert une rencontre pour m’éclairer et m’orienter, avec une réelle volonté de comprendre ma situation et de m’aider concrètement. Notre échange a été clair, structuré et pertinent.\nMerci pour ton temps, ton écoute et ton ouverture.\n\nÇa fait toute la différence de tomber sur des professionnels humains et engagés. J’ai hâte de découvrir ce qu’il pourra me proposer dans les prochaines semaines!",
+     "company": "Maxime Joyal Media",
+     "joiner": "de"
     }
    ],
    "slot": {

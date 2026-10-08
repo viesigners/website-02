@@ -37,7 +37,7 @@
  "mainNav": "Main navigation",
  "langLabel": "Language",
  "langSwitch": "Passer au français",
- "ctaShort": "Free action plan",
+ "ctaShort": "Let's grow!",
  "menu": "Menu",
  "top": "Back to top",
  "footerTag": "The accelerator pedal for *growing businesses.*",
@@ -96,5 +96,6 @@
  "close": "Close",
  "translatedFrom": {
   "fr": "Translated from French"
- }
+ },
+ "at": "at"
 }

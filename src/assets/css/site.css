@@ -438,10 +438,12 @@ em.acc, .acc {
 .tq::before { content: "“"; color: var(--pink-600); margin-right: .05em; }
 .tq::after { content: "”"; color: var(--pink-600); margin-left: .02em; }
 .tcard blockquote p { color: var(--text-2); font-size: .98rem; line-height: 1.62; }
+.tcard blockquote p + p { margin-top: .85em; }
+.tcard blockquote .tq:last-child { margin-bottom: 0; }
 .tnote { margin: -.6rem 0 0; font-family: var(--f-mono); font-size: .68rem; letter-spacing: .03em; text-transform: uppercase; color: var(--text-3); }
-.tcard figcaption { display: flex; align-items: center; gap: .9rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
-.avatar { flex: none; width: 2.8rem; height: 2.8rem; border-radius: 50%; display: grid; place-items: center; background: var(--navy); color: #fff; font-family: var(--f-mono); font-size: .8rem; font-weight: 500; letter-spacing: .04em; }
+.tcard figcaption { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
 .who { display: grid; gap: .1rem; min-width: 0; }
+.tlogo { flex: none; height: clamp(24px, 2.2vw, 32px); width: auto; max-width: 8rem; object-fit: contain; filter: var(--logo-filter); opacity: .9; }
 .who b { font-weight: 600; letter-spacing: -.01em; }
 .who span { color: var(--text-2); font-size: .85rem; line-height: 1.35; }
 .who time { color: var(--text-3); font-family: var(--f-mono); font-size: .7rem; letter-spacing: .03em; text-transform: uppercase; margin-top: .25rem; }
@@ -525,7 +527,11 @@ em.acc, .acc {
 .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--pink); box-shadow: 0 0 0 4px rgba(255, 72, 139, .25); }
 .field [aria-invalid="true"] { border-color: var(--pink-600); }
 .field .err { color: #c1124f; font-size: .9rem; }
-.row2 { display: grid; gap: 1.2rem; align-items: end; }
+.row2 { display: grid; gap: 1.2rem; align-items: start; }
+.req { color: var(--pink-600); margin-left: .1em; }
+.phone { display: flex; gap: .5rem; }
+.phone select { width: auto; flex: none; max-width: 7.5rem; padding-inline: .7rem; }
+.phone input { min-width: 0; flex: 1; }
 @media (min-width: 640px) { .row2 { grid-template-columns: 1fr 1fr; } }
 .form .note { font-size: .85rem; color: var(--text-3); }
 .form .status { padding: 1rem 1.2rem; border-radius: var(--r-md); background: rgba(13, 124, 85, .12); color: #0d7c55; }

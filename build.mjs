@@ -244,10 +244,15 @@ R.fit = (s, c) => {
 R.testimonials = (s, c) => {
   const { lang } = c;
   const initials = (n) => n.replace(/[^\p{L}\s-]/gu, '').split(/[\s-]+/).filter(Boolean).slice(0, 2).map((w) => w[0].toUpperCase()).join('');
-  const fmtDate = (d) => new Date(d).toLocaleDateString(lang === 'fr' ? 'fr-CA' : 'en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+  const loc = lang === 'fr' ? 'fr-CA' : 'en-CA';
+  // full dates (YYYY-MM-DD) or month-only dates (YYYY-MM, when the source only gives an approximate month)
+  const fmtDate = (d) => (d.length === 7
+    ? new Date(d + '-15').toLocaleDateString(loc, { year: 'numeric', month: 'long', timeZone: 'UTC' })
+    : new Date(d).toLocaleDateString(loc, { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }));
+  const items = s.items.slice().sort((a, b) => b.date.localeCompare(a.date)); // newest first
   return `<section class="section" id="temoignages"><div class="wrap">
   ${secHead({ h2: s.h2 }, c, 'testimonials')}
-  <div class="tgrid">${s.items.map((t, k) => `<figure class="tcard rv" style="--d:${(k % 3) * .06}s"><blockquote lang="${t.lang}">${t.title ? `<h3 class="tq">${esc(t.title)}</h3>` : ''}<p>${esc(t.text)}</p></blockquote>${t.translatedFrom ? `<p class="tnote">${esc(c.T.translatedFrom[t.translatedFrom])}</p>` : ''}<figcaption><span class="avatar" aria-hidden="true">${esc(initials(t.name))}</span><span class="who"><b>${esc(t.name)}</b>${t.role ? `<span>${esc(t.role)}</span>` : ''}<time datetime="${t.date}">${esc(fmtDate(t.date))}</time></span></figcaption></figure>`).join('')}
+  <div class="tgrid">${items.map((t, k) => `<figure class="tcard rv" style="--d:${(k % 3) * .06}s"><blockquote lang="${t.lang}">${t.title ? `<h3 class="tq">${esc(t.title)}</h3>` : ''}${t.text ? t.text.split(/\n\s*\n/).map((p) => `<p>${esc(p).replace(/\n/g, '<br>')}</p>`).join('') : ''}</blockquote>${t.translatedFrom ? `<p class="tnote">${esc(c.T.translatedFrom[t.translatedFrom])}</p>` : ''}<figcaption><span class="who"><b>${esc(t.name)}</b>${(t.role || t.company) ? `<span>${esc([t.role, t.company ? `${t.role ? (t.joiner || c.T.at) + (/[’']$/.test(t.joiner || '') ? '' : ' ') : ''}${t.company}` : ''].filter(Boolean).join(' '))}</span>` : ''}<time datetime="${t.date}">${esc(fmtDate(t.date))}</time></span>${t.logo ? img('testimonials/' + t.logo, t.company || t.name, { cls: 'tlogo' }) : ''}</figcaption></figure>`).join('')}
     <a class="tcard tcard--slot rv" href="${url('contact', lang)}"><h3>${fmt(s.slot.h3, lang)}</h3><span class="slot-go" aria-hidden="true">${ico('arrow')}</span></a>
   </div>
 </div></section>`;
@@ -333,9 +338,21 @@ R.article = (s, c) => {
 </article></div></section>`;
 };
 
+const DIAL = { CA: 1, US: 1, FR: 33, BE: 32, CH: 41, LU: 352, GB: 44, IE: 353, DE: 49, ES: 34, IT: 39, PT: 351, NL: 31, AT: 43, SE: 46, NO: 47, DK: 45, FI: 358, PL: 48, CZ: 420, GR: 30, RO: 40, HU: 36, TR: 90, IL: 972, LB: 961, AE: 971, SA: 966, QA: 974, EG: 20, MA: 212, DZ: 213, TN: 216, SN: 221, CI: 225, CM: 237, NG: 234, ZA: 27, KE: 254, IN: 91, PK: 92, CN: 86, JP: 81, KR: 82, SG: 65, HK: 852, TW: 886, TH: 66, VN: 84, PH: 63, ID: 62, MY: 60, AU: 61, NZ: 64, MX: 52, BR: 55, AR: 54, CL: 56, CO: 57, PE: 51, UY: 598, HT: 509, CR: 506, PA: 507, RU: 7, UA: 380 };
+const flagOf = (cc) => String.fromCodePoint(...[...cc].map((ch) => 0x1f1e6 + ch.charCodeAt(0) - 65));
+function countryOptions(lang) {
+  const dn = new Intl.DisplayNames([lang === 'fr' ? 'fr-CA' : 'en-CA'], { type: 'region' });
+  const top = ['CA', 'US', 'FR'];
+  const rest = Object.keys(DIAL).filter((cc) => !top.includes(cc)).sort((x, y) => dn.of(x).localeCompare(dn.of(y), lang));
+  return [...top, ...rest].map((cc) => ({ cc, name: dn.of(cc), dial: '+' + DIAL[cc], flag: flagOf(cc) }));
+}
+
 R.contact = (s, c) => {
   const { lang, T } = c;
   const f = s.form;
+  const countries = countryOptions(lang);
+  const req = '<span class="req" aria-hidden="true">*</span>';
+  const err = '<p class="err" role="alert"></p>';
   return `<section class="section"><div class="wrap"><div class="contact">
   <div class="contact__info">
     <h2 class="rv">${fmt(s.h2, lang)}</h2>
@@ -349,15 +366,22 @@ R.contact = (s, c) => {
   </div>
   <form class="form rv" novalidate method="post" action="${CFG.formEndpoint || '#'}" data-endpoint="${esc(CFG.formEndpoint || '')}" data-mailto="${esc(CFG.email || '')}" data-subject="${esc(f.subject)}" data-msg-ok="${esc(f.ok)}" data-msg-fail="${esc(f.fail)}" data-msg-required="${esc(f.required)}" data-msg-email="${esc(f.emailErr)}">
     <div class="row2">
-      <div class="field"><label for="f-name">${esc(f.name)}</label><input id="f-name" name="name" autocomplete="name" required><p class="err" role="alert"></p></div>
-      <div class="field"><label for="f-email">${esc(f.email)}</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required><p class="err" role="alert"></p></div>
+      <div class="field"><label for="f-first">${esc(f.firstName)} ${req}</label><input id="f-first" name="first_name" autocomplete="given-name" required>${err}</div>
+      <div class="field"><label for="f-last">${esc(f.lastName)} ${req}</label><input id="f-last" name="last_name" autocomplete="family-name" required>${err}</div>
     </div>
     <div class="row2">
-      <div class="field"><label for="f-phone">${esc(f.phone)} <small>${esc(f.optional)}</small></label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></div>
-      <div class="field"><label for="f-site">${esc(f.site)} <small>${esc(f.optional)}</small></label><input id="f-site" name="website" type="url" autocomplete="url" inputmode="url" placeholder="https://"></div>
+      <div class="field"><label for="f-email">${esc(f.email)} ${req}</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required>${err}</div>
+      <div class="field"><label for="f-phone">${esc(f.phone)} ${req}</label><div class="phone"><select name="dial" aria-label="${esc(f.dial)}" data-dial>${countries.map((k) => `<option value="${k.dial}" data-cc="${k.cc}"${k.cc === 'CA' ? ' selected' : ''}>${k.flag} ${k.dial}</option>`).join('')}</select><input id="f-phone" name="phone" type="tel" autocomplete="tel-national" inputmode="tel" required></div>${err}</div>
     </div>
-    <div class="field"><label for="f-topic">${esc(f.topic)}</label><select id="f-topic" name="topic" required><option value="">${esc(f.choose)}</option>${f.topics.filter((t) => !(t.page && isHidden(t.page))).map((t) => `<option>${esc(t.t)}</option>`).join('')}</select><p class="err" role="alert"></p></div>
-    <div class="field"><label for="f-msg">${esc(f.message)}</label><textarea id="f-msg" name="message" required></textarea><p class="err" role="alert"></p></div>
+    <div class="row2">
+      <div class="field"><label for="f-site">${esc(f.website)} ${req}</label><input id="f-site" name="website" autocomplete="url" inputmode="url" required>${err}</div>
+      <div class="field"><label for="f-budget">${esc(f.budget)} ${req}</label><input id="f-budget" name="budget" inputmode="text" placeholder="${esc(f.budgetPh)}" required>${err}</div>
+    </div>
+    <div class="row2">
+      <div class="field"><label for="f-country">${esc(f.country)} ${req}</label><select id="f-country" name="country" autocomplete="country" required data-country>${countries.map((k) => `<option value="${k.cc}"${k.cc === 'CA' ? ' selected' : ''}>${k.flag} ${esc(k.name)}</option>`).join('')}</select>${err}</div>
+      <div class="field"><label for="f-need">${esc(f.need)} ${req}</label><select id="f-need" name="need" required><option value="">${esc(f.choose)}</option>${f.needs.filter((t) => !(t.page && isHidden(t.page))).map((t) => `<option>${esc(t.t)}</option>`).join('')}</select>${err}</div>
+    </div>
+    <div class="field"><label for="f-msg">${esc(f.message)} ${req}</label><textarea id="f-msg" name="message" required></textarea>${err}</div>
     <div class="hp" aria-hidden="true"><label>Website<input name="website_hp" tabindex="-1" autocomplete="off"></label></div>
     <p class="status" role="status" tabindex="-1" hidden></p>
     <button class="pill pill--violet" type="submit">${esc(f.submit)}</button>

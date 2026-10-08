@@ -37,7 +37,7 @@
  "mainNav": "Navigation principale",
  "langLabel": "Langue",
  "langSwitch": "Switch to English",
- "ctaShort": "Plan d'action gratuit",
+ "ctaShort": "Accélérez ma croissance!",
  "menu": "Menu",
  "top": "Retour en haut",
  "footerTag": "La pédale d'accélérateur des *entreprises en croissance.*",
@@ -96,5 +96,6 @@
  "close": "Fermer",
  "translatedFrom": {
   "en": "Traduit de l'anglais"
- }
+ },
+ "at": "chez"
 }
