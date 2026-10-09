@@ -1,0 +1,47 @@
+{
+ "meta": {
+  "title": "Merci! Votre message a été envoyé | Viesigners",
+  "description": "Votre message a été envoyé aux fondateurs de Viesigners. Nous vous répondrons personnellement.",
+  "h1": "Merci"
+ },
+ "noindex": true,
+ "sections": [
+  {
+   "type": "page-hero",
+   "tag": "Message envoyé",
+   "h1": "Merci! *On vous revient* bientôt.",
+   "lead": "Votre message est en route vers les fondateurs. Nous lisons chaque demande personnellement et répondons dès que possible.",
+   "ctas": [
+    {
+     "label": "Retour à l'accueil",
+     "to": "@home",
+     "style": "violet"
+    },
+    {
+     "label": "Appeler le +1 581-502-1115",
+     "to": "tel:+15815021115",
+     "style": "ghost"
+    }
+   ]
+  },
+  {
+   "type": "process",
+   "h2": "Et *ensuite?*",
+   "lead": "Trois étapes simples.",
+   "steps": [
+    {
+     "h": "Nous lisons votre message",
+     "p": "Les fondateurs lisent chaque demande eux-mêmes, avec soin."
+    },
+    {
+     "h": "Nous vous répondons personnellement",
+     "p": "Vous recevrez une réponse personnelle par courriel. Si nous pouvons vous aider, nous proposerons un court échange pour préciser vos objectifs."
+    },
+    {
+     "h": "Nous regardons votre situation",
+     "p": "Si nous sommes un bon match, vous repartirez avec des priorités concrètes pour réduire la friction et croître."
+    }
+   ]
+  }
+ ]
+}

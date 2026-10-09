@@ -71,6 +71,7 @@ const ROUTES = {
   'jean-francois': { fr: 'a-propos/jean-francois-bg', en: 'about/jean-francois-bg' },
   realisations: { fr: 'realisations', en: 'work' },
   contact: { fr: 'contact', en: 'contact' },
+  merci: { fr: 'merci', en: 'thank-you' }, // shown after a form submission: noindex, never linked
   actualites: { fr: 'actualites', en: 'news' },
 };
 /* pages temporarily hidden: still built, but removed from menu, footer, links, sitemap and llms.txt, and marked noindex.
@@ -364,7 +365,7 @@ R.contact = (s, c) => {
       <div><dt>${esc(s.labels.hours)}</dt><dd>${esc(s.hours)}</dd></div>
     </dl>
   </div>
-  <form class="form rv" novalidate method="post" action="${CFG.formEndpoint || '#'}" data-endpoint="${esc(CFG.formEndpoint || '')}" data-mailto="${esc(CFG.email || '')}" data-subject="${esc(f.subject)}" data-msg-ok="${esc(f.ok)}" data-msg-fail="${esc(f.fail)}" data-msg-required="${esc(f.required)}" data-msg-email="${esc(f.emailErr)}">
+  <form class="form rv" novalidate method="post" action="${CFG.formEndpoint || '#'}" data-endpoint="${esc(CFG.formEndpoint || '')}" data-thanks="${url('merci', lang)}" data-mailto="${esc(CFG.email || '')}" data-subject="${esc(f.subject)}" data-msg-ok="${esc(f.ok)}" data-msg-fail="${esc(f.fail)}" data-msg-required="${esc(f.required)}" data-msg-email="${esc(f.emailErr)}">
     <div class="row2">
       <div class="field"><label for="f-first">${esc(f.firstName)} ${req}</label><input id="f-first" name="first_name" autocomplete="given-name" required>${err}</div>
       <div class="field"><label for="f-last">${esc(f.lastName)} ${req}</label><input id="f-last" name="last_name" autocomplete="family-name" required>${err}</div>
@@ -615,7 +616,7 @@ function buildPage({ lang, key, page, post }) {
   if (key === 'realisations') graph.push({ '@type': 'ItemList', '@id': canonical + '#list', itemListElement: page.sections.filter((s) => s.type === 'work').flatMap((s) => s.items).map((i, n) => ({ '@type': 'ListItem', position: n + 1, item: { '@type': 'CreativeWork', name: i.title, description: i.result || i.alt, image: abs('/assets/img/work/' + i.img), creator: { '@id': abs('/#organization') } } })) });
 
   const jsonld = { '@context': 'https://schema.org', '@graph': graph };
-  const html = `${head({ lang, T, page, canonical, alternates, jsonld, type: key === 'post' ? 'article' : 'website', post, hidden: isHidden(key) })}
+  const html = `${head({ lang, T, page, canonical, alternates, jsonld, type: key === 'post' ? 'article' : 'website', post, hidden: isHidden(key) || !!page.noindex })}
 <body class="${key === 'home' ? 'home' : ''}">
 ${SPRITE}
 <div class="page-bg" aria-hidden="true"></div>
@@ -631,7 +632,7 @@ ${footer(ctx)}
   const out = path.join(DIST, selfUrl.slice(BASE.length)); // files live at the site root; BASE is only the public URL prefix
   write(path.join(out, 'index.html'), html);
   write(path.join(out, 'index.md'), toMd(page, ctx));
-  PAGES_OUT.push({ hidden: isHidden(key), lang, key, selfUrl, altUrls, title: page.meta.title, description: page.meta.description, md: toMd(page, ctx), nav: key === 'post' ? 'post' : key });
+  PAGES_OUT.push({ hidden: isHidden(key) || !!page.noindex, lang, key, selfUrl, altUrls, title: page.meta.title, description: page.meta.description, md: toMd(page, ctx), nav: key === 'post' ? 'post' : key });
 }
 
 /* ----------------------------- driver ------------------------------------- */

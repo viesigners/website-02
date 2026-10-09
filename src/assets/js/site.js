@@ -107,7 +107,7 @@
         if (!endpoint) throw new Error('no-endpoint');
         const res = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ ...data, _subject: form.dataset.subject, _replyto: data.email, _template: 'table', _captcha: 'false' }) });
         if (!res.ok) throw new Error('http');
-        form.reset(); show(form.dataset.msgOk, false);
+        form.reset(); if (form.dataset.thanks) { location.href = form.dataset.thanks; return; } show(form.dataset.msgOk, false);
       } catch (_) {
         const to = form.dataset.mailto;
         if (to) {

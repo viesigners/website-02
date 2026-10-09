@@ -1,0 +1,47 @@
+{
+ "meta": {
+  "title": "Thank you! Your message was sent | Viesigners",
+  "description": "Your message has been sent to the Viesigners founders. We'll reply personally.",
+  "h1": "Thank you"
+ },
+ "noindex": true,
+ "sections": [
+  {
+   "type": "page-hero",
+   "tag": "Message sent",
+   "h1": "Thank you! *We'll be in touch* soon.",
+   "lead": "Your message is on its way to the founders. We read every request personally and reply as soon as we can.",
+   "ctas": [
+    {
+     "label": "Back to the home page",
+     "to": "@home",
+     "style": "violet"
+    },
+    {
+     "label": "Call +1 581-502-1115",
+     "to": "tel:+15815021115",
+     "style": "ghost"
+    }
+   ]
+  },
+  {
+   "type": "process",
+   "h2": "What happens *next*",
+   "lead": "Three simple steps.",
+   "steps": [
+    {
+     "h": "We read your message",
+     "p": "The founders read every request themselves, with care."
+    },
+    {
+     "h": "We reply personally",
+     "p": "You'll get a personal reply by email. If we can help, we'll suggest a short conversation to clarify your goals."
+    },
+    {
+     "h": "We look at your situation",
+     "p": "If we're a good fit, you'll get concrete priorities to reduce friction and grow."
+    }
+   ]
+  }
+ ]
+}
