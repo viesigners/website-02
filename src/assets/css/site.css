@@ -166,6 +166,9 @@ em.acc, .acc {
 .hmenu[aria-expanded="true"] .hmenu__i i:nth-child(2) { opacity: 0; }
 .hmenu[aria-expanded="true"] .hmenu__i i:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 @media (min-width: 640px) { .hphone span { display: inline; } }
+/* below 640px: icons only — the phone number and the "Menu" label go away together (the label stays available to screen readers) */
+.hbtn { position: relative; }
+@media (max-width: 639.98px) { .hmenu__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; } .hmenu, .hphone { width: 3rem; padding-inline: 0; justify-content: center; } .hphone svg { width: 1.4rem; height: 1.4rem; } }
 
 .drawer { position: fixed; inset: 0; z-index: var(--z-menu); background: var(--charcoal); padding: 6.5rem 0 2rem; overflow-y: auto; transform: translateY(-100%); visibility: hidden; transition: transform .6s var(--ease), visibility 0s .6s; }
 .drawer::before { content: ""; position: absolute; right: -15%; bottom: -35%; width: min(60rem, 120vw); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 40% 36%, rgba(255, 72, 139, .3), rgba(227, 58, 219, .1) 42%, transparent 68%); pointer-events: none; }
