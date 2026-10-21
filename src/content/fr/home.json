@@ -8,7 +8,7 @@
   {
    "type": "hero-home",
    "tag": "Agence web, UX/UI et marketing : sites, tunnels, SaaS et applis",
-   "h1": "Multipliez vos ventes et boostez votre revenu par client, grâce au *web rentable*",
+   "h1": "Multipliez vos ventes et boostez votre revenu par client, grâce à une *stratégie de croissance pilotée par l'UX*",
    "lead": "Nous aidons les entreprises de services, SaaS et applications mobiles à optimiser leur présence numérique pour deux résultats précis : acquérir plus de clients et maximiser la valeur de chacun — une approche qui met la psychologie humaine au service de votre rentabilité.",
    "cta": "Démarrer un projet",
    "advised": "On a conseillé plus de 600 entreprises, dont certaines parmi les plus grandes",
@@ -41,6 +41,51 @@
     {
      "id": "ubisoft",
      "alt": "Ubisoft"
+    },
+    {
+     "id": "abbvie",
+     "alt": "AbbVie",
+     "ext": "svg"
+    },
+    {
+     "id": "meccano",
+     "alt": "Meccano",
+     "ext": "svg"
+    },
+    {
+     "id": "monopoly",
+     "alt": "Monopoly",
+     "ext": "svg"
+    },
+    {
+     "id": "sthubert",
+     "alt": "St-Hubert",
+     "ext": "png"
+    },
+    {
+     "id": "wizards",
+     "alt": "Wizards of the Coast",
+     "ext": "svg"
+    },
+    {
+     "id": "dnd",
+     "alt": "Dungeons & Dragons",
+     "ext": "svg"
+    },
+    {
+     "id": "bombardier",
+     "alt": "Bombardier",
+     "ext": "svg"
+    },
+    {
+     "id": "transformers",
+     "alt": "Transformers",
+     "ext": "svg"
+    },
+    {
+     "id": "nerf",
+     "alt": "Nerf",
+     "ext": "svg"
     }
    ]
   },

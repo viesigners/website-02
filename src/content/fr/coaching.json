@@ -8,7 +8,7 @@
   "sections": [
     {
       "type": "page-hero",
-      "tag": "Conseil d'affaires web",
+      "tagH1": true, "tag": "Conseil d'affaires web",
       "h1": "Accélérez le lancement de *nouveaux services*",
       "lead": "Nous avons bâti de zéro des tunnels générant jusqu'à 15 000 $/mois en récurrence, aidé nos clients, comme Sébastien et Julie, à signer 12 000 $ en 6 semaines sur une nouvelle offre de consultation ou obtenir 3 premiers clients Premium en 14 jours pour une offre d'accompagnement.",
       "guarantee": "Résultats garantis!",

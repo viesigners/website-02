@@ -8,7 +8,7 @@
   "sections": [
     {
       "type": "page-hero",
-      "tag": "Digital advertising",
+      "tagH1": true, "tag": "Digital advertising",
       "h1": "Ads that *pay off*, not ads that cost",
       "lead": "We don't run your campaigns alone: we orchestrate them with selected media experts from our network, and we build the pages that turn every click into an inquiry.",
       "ctas": [ { "label": "Get your free action plan", "to": "@contact", "style": "violet" }, { "label": "See landing pages", "to": "@landing-pages", "style": "ghost" } ],

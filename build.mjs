@@ -47,8 +47,9 @@ function imgSize(rel) {
       i += 2 + b.readUInt16BE(i + 2);
     }
   }
-  const m = fs.readFileSync(p, 'utf8').match(/viewBox="[\d.]+ [\d.]+ ([\d.]+) ([\d.]+)"/);
-  return m ? [Math.round(m[1]), Math.round(m[2])] : [200, 60];
+  const svg = fs.readFileSync(p, 'utf8');
+  const m = svg.match(/viewBox="[\d.]+ [\d.]+ ([\d.]+) ([\d.]+)"/) || svg.match(/<svg[^>]*\swidth="([\d.]+)(?:px)?"[^>]*\sheight="([\d.]+)(?:px)?"/);
+  return m ? [+(+m[1]).toFixed(2), +(+m[2]).toFixed(2)] : [200, 60];
 }
 const IMG_CACHE = {};
 function img(rel, alt, { cls = '', lazy = true, sizes, fetchpriority } = {}) {
@@ -114,13 +115,13 @@ const splitLabel = (c, type) => (c.T.labels?.[type] ? `<p class="label rv">${esc
 
 R['hero-home'] = (s, c) => {
   const { lang, T } = c;
-  const logos = s.logos.map((l) => img(`logo-${l.id}.png`, l.alt, { lazy: false }));
+  const logos = s.logos.map((l) => img(`logo-${l.id}.${l.ext || 'png'}`, l.alt, { lazy: false, cls: (([w, h]) => (w / h > 4.2 ? 'wide' : ''))(IMG_CACHE[`logo-${l.id}.${l.ext || 'png'}`] ||= imgSize(`logo-${l.id}.${l.ext || 'png'}`)) }));
   const dup = logos.map((x) => x.replace(/alt="[^"]*"/, 'alt=""'));
   return `<section class="hero" aria-labelledby="h1">
   <div class="hero__art" aria-hidden="true"><div class="hero__dots"></div></div>
   <div class="wrap">
-    <p class="label">${fmt(s.tag, lang)}</p>
-    <h1 id="h1">${fmt(s.h1, lang)}</h1>
+    <h1 id="h1" class="label">${fmt(s.tag, lang)}</h1>
+    <h2 class="hero__title">${fmt(s.h1, lang)}</h2>
     <p class="hero__lead">${fmt(s.lead, lang)}</p>
     <div class="hero__cta"><a class="pill" href="${url('contact', lang)}">${esc(s.cta)}</a></div>
     <div class="logos">
@@ -140,8 +141,9 @@ R['page-hero'] = (s, c) => {
   ${c.crumbs.length > 2 ? `<nav aria-label="${esc(T.breadcrumb)}"><ol class="crumbs">${crumbs}</ol></nav>` : ''}
   <div class="phero__grid">
     <div>
-      ${s.tag ? `<p class="eyebrow-tag">${fmt(s.tag, lang)}</p>` : ''}
-      <h1 id="h1" class="display">${fmt(s.h1, lang)}</h1>
+      ${s.tagH1 && s.tag ? `<h1 id="h1" class="eyebrow-tag">${fmt(s.tag, lang)}</h1>
+      <h2 class="display phero__title">${fmt(s.h1, lang)}</h2>` : `${s.tag ? `<p class="eyebrow-tag">${fmt(s.tag, lang)}</p>` : ''}
+      <h1 id="h1" class="display phero__title">${fmt(s.h1, lang)}</h1>`}
       <p class="lead">${fmt(s.lead, lang)}</p>
       ${s.guarantee ? `<p class="guar" style="margin-bottom:1.6rem">${ico('shield')}${esc(s.guarantee)}</p><br>` : ''}
       <div class="phero__actions">${ctas}</div>

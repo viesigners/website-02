@@ -8,7 +8,7 @@
   "sections": [
     {
       "type": "page-hero",
-      "tag": "Product design — SaaS and apps",
+      "tagH1": true, "tag": "Product design — SaaS and apps",
       "h1": "Build a *world-class* app experience",
       "lead": "We helped an international scale-up secure $320M+ in funding and won prestigious awards for launching and optimizing apps (OCTAS, Osentreprendre, Gartner).",
       "guarantee": "Satisfaction guaranteed!",

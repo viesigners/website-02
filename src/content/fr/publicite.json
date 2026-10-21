@@ -8,7 +8,7 @@
   "sections": [
     {
       "type": "page-hero",
-      "tag": "Publicité numérique",
+      "tagH1": true, "tag": "Publicité numérique",
       "h1": "Des publicités qui *rapportent*, pas qui coûtent",
       "lead": "Nous ne gérons pas vos campagnes seuls : nous les orchestrons avec des experts média sélectionnés de notre réseau, et nous bâtissons les pages qui transforment chaque clic en demande.",
       "ctas": [ { "label": "Obtiens ton plan d'action gratuit", "to": "@contact", "style": "violet" }, { "label": "Voir les landing pages", "to": "@landing-pages", "style": "ghost" } ],

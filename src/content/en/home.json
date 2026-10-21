@@ -8,7 +8,7 @@
   {
    "type": "hero-home",
    "tag": "Web, UX/UI and Marketing Agency: websites, funnels, SaaS and Apps",
-   "h1": "Multiply your sales and boost your revenue per customer, with *profitable web*",
+   "h1": "Multiply your sales and boost your revenue per customer, with *UX‑led growth strategies*",
    "lead": "We help service businesses, SaaS companies and mobile app makers optimize their digital presence for two precise results: winning more customers and maximizing the value of each one — an approach that puts human psychology to work for your profitability.",
    "cta": "Start a project",
    "advised": "We've advised more than 600 businesses, including some of the biggest",
@@ -41,6 +41,51 @@
     {
      "id": "ubisoft",
      "alt": "Ubisoft"
+    },
+    {
+     "id": "abbvie",
+     "alt": "AbbVie",
+     "ext": "svg"
+    },
+    {
+     "id": "meccano",
+     "alt": "Meccano",
+     "ext": "svg"
+    },
+    {
+     "id": "monopoly",
+     "alt": "Monopoly",
+     "ext": "svg"
+    },
+    {
+     "id": "sthubert",
+     "alt": "St-Hubert",
+     "ext": "png"
+    },
+    {
+     "id": "wizards",
+     "alt": "Wizards of the Coast",
+     "ext": "svg"
+    },
+    {
+     "id": "dnd",
+     "alt": "Dungeons & Dragons",
+     "ext": "svg"
+    },
+    {
+     "id": "bombardier",
+     "alt": "Bombardier",
+     "ext": "svg"
+    },
+    {
+     "id": "transformers",
+     "alt": "Transformers",
+     "ext": "svg"
+    },
+    {
+     "id": "nerf",
+     "alt": "Nerf",
+     "ext": "svg"
     }
    ]
   },

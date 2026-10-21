@@ -8,7 +8,7 @@
   "sections": [
     {
       "type": "page-hero",
-      "tag": "Design de produit — SaaS et applis",
+      "tagH1": true, "tag": "Design de produit — SaaS et applis",
       "h1": "Bâtissez une expérience d'application *de classe mondiale*",
       "lead": "Nous avons aidé une scale-up internationale à sécuriser 320 M$+ de financement et remporté des prix prestigieux pour le lancement et l'optimisation d'applications (OCTAS, Osentreprendre, Gartner).",
       "guarantee": "Satisfaction garantie!",

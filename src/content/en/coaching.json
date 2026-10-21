@@ -8,7 +8,7 @@
   "sections": [
     {
       "type": "page-hero",
-      "tag": "Business advisory",
+      "tagH1": true, "tag": "Business advisory",
       "h1": "Speed up the launch of *new services*",
       "lead": "We built funnels from scratch generating up to $15,000/month in recurring revenue, and helped clients like Sébastien and Julie sign $12,000 in 6 weeks on a new consulting offer or land their first 3 Premium clients in 14 days for a coaching offer.",
       "guarantee": "Results guaranteed!",

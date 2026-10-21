@@ -8,7 +8,7 @@
   "sections": [
     {
       "type": "page-hero",
-      "tag": "SEO/GEO",
+      "tagH1": true, "tag": "SEO/GEO",
       "h1": "Soyez trouvé sur Google, *cité par les IA*",
       "lead": "Le GEO (Generative Engine Optimization) consiste à rendre votre contenu compréhensible, fiable et citable par les moteurs de réponses comme ChatGPT, Gemini, Perplexity et Google AI Overviews, en plus du SEO classique.",
       "ctas": [ { "label": "Obtiens ton plan d'action gratuit", "to": "@contact", "style": "violet" }, { "label": "Voir la création de site web", "to": "@sites-web", "style": "ghost" } ],

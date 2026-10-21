@@ -8,7 +8,7 @@
   "sections": [
     {
       "type": "page-hero",
-      "tag": "Médias sociaux",
+      "tagH1": true, "tag": "Médias sociaux",
       "h1": "Une présence sociale qui *nourrit votre entonnoir*",
       "lead": "Publier n'est pas une stratégie. Nous alignons vos médias sociaux sur votre offre et vos pages de conversion, avec des experts de notre réseau, pour que chaque publication rapproche un client de la décision.",
       "ctas": [ { "label": "Obtiens ton plan d'action gratuit", "to": "@contact", "style": "violet" }, { "label": "Voir la publicité numérique", "to": "@publicite", "style": "ghost" } ],

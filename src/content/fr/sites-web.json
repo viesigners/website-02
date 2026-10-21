@@ -8,7 +8,7 @@
   "sections": [
     {
       "type": "page-hero",
-      "tag": "Création de site web professionnel",
+      "tagH1": true, "tag": "Création de site web professionnel",
       "h1": "Enracinez votre *notoriété* et prenez la place qui vous revient",
       "lead": "Nous avons livré plus de 600 projets numériques et conseillé des géants comme Dell, Nerf et HP durant nos 30 années d'expérience combinée. La qualité de nos sites a été reconnue par Awwwards.",
       "guarantee": "Augmentation de la performance garantie!",

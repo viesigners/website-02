@@ -12,7 +12,7 @@
  "sections": [
   {
    "type": "page-hero",
-   "tag": "Landing pages et tunnels de vente",
+   "tagH1": true, "tag": "Landing pages et tunnels de vente",
    "h1": "Doublez ou triplez vos *demandes et clients*",
    "lead": "Nous avons triplé systématiquement les revenus de nos clients PME et généré jusqu'à 3500 % de hausse de demandes reçues avec des budgets publicitaires minimes, grâce à la performance de nos pages.",
    "guarantee": "Augmentation de la performance garantie!",

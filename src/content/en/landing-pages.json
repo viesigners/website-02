@@ -12,7 +12,7 @@
  "sections": [
   {
    "type": "page-hero",
-   "tag": "Landing pages and sales funnels",
+   "tagH1": true, "tag": "Landing pages and sales funnels",
    "h1": "Double or triple your *inquiries and customers*",
    "lead": "We have consistently tripled the revenue of our SMB clients and generated up to a 3,500% increase in inquiries received with minimal ad budgets, thanks to the performance of our pages.",
    "guarantee": "Performance increase guaranteed!",

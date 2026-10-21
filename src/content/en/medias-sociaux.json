@@ -8,7 +8,7 @@
   "sections": [
     {
       "type": "page-hero",
-      "tag": "Social media",
+      "tagH1": true, "tag": "Social media",
       "h1": "A social presence that *feeds your funnel*",
       "lead": "Posting is not a strategy. We align your social media with your offer and your conversion pages, with experts from our network, so every post moves a customer closer to a decision.",
       "ctas": [ { "label": "Get your free action plan", "to": "@contact", "style": "violet" }, { "label": "See digital advertising", "to": "@publicite", "style": "ghost" } ],

@@ -8,7 +8,7 @@
   "sections": [
     {
       "type": "page-hero",
-      "tag": "Professional website creation",
+      "tagH1": true, "tag": "Professional website creation",
       "h1": "Root your *reputation* and take the place you deserve",
       "lead": "We have delivered more than 600 digital projects and advised giants like Dell, Nerf and HP over our 30 combined years of experience. The quality of our sites has been recognized by Awwwards.",
       "guarantee": "Performance increase guaranteed!",
