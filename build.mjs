@@ -146,6 +146,7 @@ R['page-hero'] = (s, c) => {
       <h2 class="display phero__title">${fmt(s.h1, lang)}</h2>` : `${s.tag ? `<p class="eyebrow-tag">${fmt(s.tag, lang)}</p>` : ''}
       <h1 id="h1" class="display phero__title">${fmt(s.h1, lang)}</h1>`}
       <p class="lead">${fmt(s.lead, lang)}</p>
+      ${s.byline ? `<p class="byline">${esc(s.byline)}</p>` : ''}
       ${s.guarantee ? `<p class="guar" style="margin-bottom:1.6rem">${ico('shield')}${esc(s.guarantee)}</p><br>` : ''}
       <div class="phero__actions">${ctas}</div>
     </div>
@@ -322,6 +323,11 @@ R.casecard = (s, c) => `<section class="section section--tight"><div class="wrap
   </article>
 </div></section>`;
 
+R.related = (s, c) => `<section class="section section--tight"><div class="wrap">
+  ${secHead(s, c, 'related')}
+  <div class="related related--${s.items.filter((k) => !isHidden(k)).length}">${s.items.filter((k) => !isHidden(k)).map((k, i) => `<article class="card rv" style="--d:${i * .08}s"><h3><a class="more" href="${url(k, c.lang)}" aria-label="${esc(c.T.nav[k])}"></a>${esc(c.T.nav[k])}</h3><p>${esc(c.T.navSub[k])}</p><div class="card__foot"><span class="link-arrow">${esc(s.cta)} ${ico('arrow')}</span></div></article>`).join('')}</div>
+</div></section>`;
+
 R.people = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'people')}
   <div class="people">${s.items.map((p, k) => `<article class="person rv" style="--d:${k * .1}s"><div class="person__photo person__photo--${p.photo}">${img('founders-2.jpg', p.alt, { sizes: '(min-width:760px) 50vw, 100vw' })}</div><div class="person__body"><h3><a class="more" href="${url(p.to, c.lang)}" aria-label="${esc(p.name)}"></a>${esc(p.name)}</h3><p class="role">${esc(p.role)}</p><p class="prose">${fmt(p.text, c.lang)}</p><span class="link-arrow">${esc(p.cta)} ${ico('arrow')}</span></div></article>`).join('')}</div>
@@ -432,6 +438,7 @@ const SPRITE = `<svg width="0" height="0" style="position:absolute" aria-hidden=
 </defs></svg>`;
 
 function head({ lang, T, page, canonical, alternates, jsonld, type = 'website', image, post, hidden = false }) {
+  const art = post ? { date: post.date, modified: post.modified || post.date } : page.article ? { date: page.published, modified: page.updated || BUILD_DATE } : null;
   const title = page.meta.title, desc = page.meta.description;
   const css = `${BASE}/assets/css/site.css?v=${ASSET_HASH.css}`;
   return `<!doctype html>
@@ -459,7 +466,7 @@ ${hidden || NOINDEX ? '<meta name="robots" content="noindex, follow">' : '<meta 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(desc)}">
-${post ? `<meta property="article:published_time" content="${post.date}">\n<meta property="article:modified_time" content="${post.modified || post.date}">` : ''}
+${art ? `<meta property="article:published_time" content="${art.date}">\n<meta property="article:modified_time" content="${art.modified}">` : ''}
 <link rel="alternate" type="text/markdown" href="${canonical}index.md">
 <link rel="alternate" type="text/plain" title="llms.txt" href="${abs('/llms.txt')}">
 <link rel="icon" href="${BASE}/assets/img/favicon.png" type="image/png">
@@ -556,6 +563,7 @@ function toMd(page, c) {
       case 'deliverables': L.push(`## ${t(s.h2)}`, '', ...(s.lead ? [t(s.lead), ''] : []), ...s.items.map((i) => `- **${t(i.h)}** — ${t(i.p)}`), ''); break;
       case 'process': L.push(`## ${t(s.h2)}`, '', ...s.steps.map((p, i) => `${i + 1}. **${t(p.h)}** — ${t(p.p)}`), ''); break;
       case 'compare': L.push(`## ${t(s.h2)}`, '', `### ${t(s.before.h)}`, ...s.before.items.map((i) => `- ${t(i)}`), '', `### ${t(s.after.h)}`, ...s.after.items.map((i) => `- ${t(i)}`), ''); break;
+      case 'related': L.push(`## ${t(s.h2)}`, '', ...s.items.filter((k) => !isHidden(k)).map((k) => `- [${T.nav[k]}](${abs(url(k, lang))}): ${T.navSub[k]}`), ''); break;
       case 'casecard': L.push(`## ${t(s.h)}`, '', `- **${s.n}** ${t(s.nt)}`, `- [${t(s.h)}](${abs(url(s.to, lang))})`, ''); break;
       case 'casestudy': L.push(`## ${t(s.h2)}`, '', ...(s.client ? [t(s.client), ''] : []), ...s.results.map((i) => `- **${i.n}** ${t(i.t)}`), '', `### ${t(s.problem.h)}`, '', t(s.problem.lead), '', ...s.problem.items.map((i) => `- ${t(i)}`), '', `### ${t(s.did.h)}`, '', ...s.did.steps.map((p, i) => `${i + 1}. **${t(p.h)}** — ${t(p.p)}`), '', `> ${t(s.quote.text)}`, `> — ${s.quote.by}`, '', t(s.note), ''); break;
       case 'proof': L.push(...s.items.map((i) => `- **${i.n}** ${t(i.t)}`), ''); break;
@@ -577,7 +585,7 @@ function toMd(page, c) {
 const THEME = {
   'hero-home': 'dark', 'page-hero': 'dark', 'cta-final': 'dark',
   friction: 'light', founders: 'dark', services: 'light', stats: 'dark', work: 'light', fit: 'dark', slot: 'light', testimonials: 'light', faq: 'light',
-  statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', people: 'dark', facts: 'light',
+  statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', related: 'light', people: 'dark', facts: 'light',
   'posts-list': 'light', article: 'light', contact: 'light', 'rich-text': 'light',
 };
 const ASSET_HASH = {};
@@ -638,11 +646,12 @@ function buildPage({ lang, key, page, post }) {
   if (key === 'post') {
     graph.push({ '@type': 'BlogPosting', '@id': canonical + '#article', headline: post.title, description: post.description, inLanguage: lang, datePublished: post.date, dateModified: post.modified || post.date, mainEntityOfPage: { '@id': pageId }, author: [{ '@id': abs('/#charles-erick') }, { '@id': abs('/#jean-francois') }], publisher: { '@id': abs('/#organization') }, image: abs('/assets/img/og-card.jpg'), keywords: post.keywords, wordCount: post.body.map((b) => b.h2 || b.h3 || b.p || (b.ul || []).join(' ')).join(' ').split(/\s+/).length });
   }
+  if (page.article) graph.push({ '@type': 'Article', '@id': canonical + '#article', headline: plain(page.meta.h1), description: page.meta.description, inLanguage: lang, datePublished: page.published, dateModified: page.updated || BUILD_DATE, mainEntityOfPage: { '@id': pageId }, author: [{ '@id': abs('/#jean-francois') }], publisher: { '@id': abs('/#organization') }, image: abs('/assets/img/og-card.jpg'), about: ['UX/UI design', 'Conversion rate optimization (CRO)', 'B2B SaaS'], isPartOf: { '@id': pageId } });
   if (page.faq?.length) graph.push({ '@type': 'FAQPage', '@id': canonical + '#faq', inLanguage: lang, mainEntity: page.faq.map((f) => ({ '@type': 'Question', name: plain(f.q), acceptedAnswer: { '@type': 'Answer', text: f.a.map(plain).join(' ') } })) });
   if (key === 'realisations') graph.push({ '@type': 'ItemList', '@id': canonical + '#list', itemListElement: page.sections.filter((s) => s.type === 'work').flatMap((s) => s.items).map((i, n) => ({ '@type': 'ListItem', position: n + 1, item: { '@type': 'CreativeWork', name: i.title, description: i.result || i.alt, image: abs('/assets/img/work/' + i.img), creator: { '@id': abs('/#organization') } } })) });
 
   const jsonld = { '@context': 'https://schema.org', '@graph': graph };
-  const html = `${head({ lang, T, page, canonical, alternates, jsonld, type: key === 'post' ? 'article' : 'website', post, hidden: isHidden(key) || !!page.noindex })}
+  const html = `${head({ lang, T, page, canonical, alternates, jsonld, type: key === 'post' || page.article ? 'article' : 'website', post, hidden: isHidden(key) || !!page.noindex })}
 <body class="${key === 'home' ? 'home' : ''}">
 ${SPRITE}
 <div class="page-bg" aria-hidden="true"></div>

@@ -146,6 +146,15 @@
    "open": true
   },
   {
+   "type": "related",
+   "h2": "Vous aimerez *aussi*",
+   "cta": "Voir le service",
+   "items": [
+    "landing-pages",
+    "sites-web"
+   ]
+  },
+  {
    "type": "cta-final",
    "h2": "Prêt à bâtir une *UX de classe mondiale?*",
    "p": "Parlons de votre produit : nous repérerons les gains d'expérience les plus rentables.",

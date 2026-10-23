@@ -1,7 +1,7 @@
 {
  "meta": {
-  "title": "B2B AI SaaS Case Study: +31% MRR, −24% Churn in 90 Days | Viesigners",
-  "description": "How we lifted a B2B AI SaaS's MRR by 31% and cut churn by 24% in 90 days: a rewritten value proposition, faster time-to-value and a redesigned key feature page.",
+  "title": "B2B SaaS Case Study: +31% MRR, −24% Churn | Viesigners",
+  "description": "How we lifted a B2B AI SaaS's MRR by 31% and cut churn by 24% in 90 days: a rewritten value proposition, faster onboarding and a redesigned feature page.",
   "h1": "How a B2B AI SaaS lifted MRR by 31% and cut churn by 24% in 90 days"
  },
  "sections": [
@@ -9,7 +9,7 @@
    "type": "page-hero",
    "tag": "Case study",
    "h1": "How a B2B AI SaaS lifted *MRR by 31%* and cut churn by 24% in 90 days",
-   "lead": "Steady traffic, but revenue was leaking through poor free-to-paid conversion and high onboarding churn. By re-aligning the value proposition, shortening time-to-value and redesigning a key feature page, we delivered measurable growth within weeks.",
+   "lead": "Steady traffic, but revenue was leaking through poor free-to-paid conversion and high onboarding churn. By re-aligning the value proposition, shortening time-to-value and [redesigning a key feature page](@landing-pages), we delivered measurable growth within weeks.",
    "brief": [
     {
      "b": "Client:",
@@ -33,7 +33,8 @@
      "label": "Book a 15-minute teardown",
      "to": "@contact"
     }
-   ]
+   ],
+   "byline": "By Jean-François BG (Toptal Top 3%) · Published October 2026"
   },
   {
    "type": "casestudy",
@@ -56,7 +57,7 @@
     "h": "The problem",
     "lead": "Steady traffic, but revenue was leaking through poor free-to-paid conversion and high onboarding churn.",
     "items": [
-     "**Value proposition mismatch:** the homepage talked about complex features instead of the concrete outcome, so visitors left within seconds.",
+     "**Value proposition mismatch:** the [homepage](@sites-web) talked about complex features instead of the concrete outcome, so visitors left within seconds.",
      "**Slow time-to-value:** a steep onboarding curve kept new sign-ups from reaching their first \"Aha!\" moment."
     ]
    },
@@ -69,11 +70,11 @@
      },
      {
       "h": "Accelerated time-to-value",
-      "p": "Iterative UX/UI mockups simplified onboarding and the core feature interfaces. New users reached their first \"Aha!\" faster: more free-to-paid conversions and up to 40% less churn on key segments."
+      "p": "Iterative [UX/UI](@design-produit) mockups simplified onboarding and the core feature interfaces. New users reached their first \"Aha!\" faster: more free-to-paid conversions and up to 40% less churn on key segments."
      },
      {
       "h": "Redesigned the high-intent feature page",
-      "p": "We analyzed behavior data on the main revenue page, found the drop-off points and delivered CRO mockups in 3 days. The dev team shipped them the next day: +30% conversions in 4 days."
+      "p": "We analyzed behavior data on the main revenue page, found the drop-off points and delivered [CRO](@landing-pages) mockups in 3 days. The dev team shipped them the next day: +30% conversions in 4 days."
      }
     ]
    },
@@ -158,6 +159,16 @@
    "open": true
   },
   {
+   "type": "related",
+   "h2": "The services behind *these results*",
+   "cta": "See the service",
+   "items": [
+    "sites-web",
+    "landing-pages",
+    "design-produit"
+   ]
+  },
+  {
    "type": "cta-final",
    "h2": "Want to spot the leaks in your *funnel and onboarding?*",
    "p": "If your product has steady traffic but conversion or retention is lagging, let's review your flow together.",
@@ -183,5 +194,7 @@
     "Results depend on each product, but the method applies. We start with a user-journey teardown to spot the leaks in your funnel, onboarding and key feature pages. [Book a 15-minute teardown](@contact)."
    ]
   }
- ]
+ ],
+ "article": true,
+ "published": "2026-10-23"
 }

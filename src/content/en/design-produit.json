@@ -146,6 +146,15 @@
    "open": true
   },
   {
+   "type": "related",
+   "h2": "You might *also like*",
+   "cta": "See the service",
+   "items": [
+    "landing-pages",
+    "sites-web"
+   ]
+  },
+  {
    "type": "cta-final",
    "h2": "Ready to build a *world-class UX?*",
    "p": "Let's talk about your product: we'll find the most profitable experience gains.",
