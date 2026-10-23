@@ -64,6 +64,7 @@ const ROUTES = {
   'landing-pages': { fr: 'landing-pages', en: 'landing-pages' },
   'design-produit': { fr: 'design-de-produit', en: 'product-design' },
   coaching: { fr: 'conseil-affaires-web', en: 'business-advisory' },
+  'cas-saas': { fr: 'design-de-produit/etude-de-cas-saas-b2b-ia', en: 'product-design/b2b-ai-saas-case-study' },
   publicite: { fr: 'publicite-numerique', en: 'digital-advertising' },
   'medias-sociaux': { fr: 'medias-sociaux', en: 'social-media' },
   'seo-geo': { fr: 'seo-geo', en: 'seo-geo' },
@@ -301,6 +302,26 @@ R.proof = (s, c) => `<section class="section section--tight"><div class="wrap">
   <div class="proof ${s.items.length === 2 ? 'proof--2' : ''}">${s.items.map((i, k) => `<div class="proof__item rv" style="--d:${k * .08}s"><b>${esc(i.n)}</b><span>${fmt(i.t, c.lang)}</span></div>`).join('')}</div>
 </div></section>`;
 
+R.casestudy = (s, c) => `<section class="section"><div class="wrap">
+  ${secHead(s, c, 'casestudy')}
+  ${s.client ? `<p class="cs__client rv">${fmt(s.client, c.lang)}</p>` : ''}
+  <div class="proof">${s.results.map((i, k) => `<div class="proof__item rv" style="--d:${k * .08}s"><b>${esc(i.n)}</b><span>${fmt(i.t, c.lang)}</span></div>`).join('')}</div>
+  <div class="cs">
+    <div class="cs__col rv"><h3>${esc(s.problem.h)}</h3><p>${fmt(s.problem.lead, c.lang)}</p><ul>${s.problem.items.map((i) => `<li>${ico('x')}<span>${fmt(i, c.lang)}</span></li>`).join('')}</ul></div>
+    <div class="cs__col rv" style="--d:.1s"><h3>${esc(s.did.h)}</h3><ol class="cs__steps">${s.did.steps.map((i) => `<li><b>${fmt(i.h, c.lang)}</b><span>${fmt(i.p, c.lang)}</span></li>`).join('')}</ol></div>
+  </div>
+  <figure class="cs__quote rv"><blockquote><p>${fmt(s.quote.text, c.lang)}</p></blockquote><figcaption>${esc(s.quote.by)}</figcaption></figure>
+  <p class="cs__note rv">${fmt(s.note, c.lang)}</p>
+  <p class="cs__cta rv"><a class="pill" href="${url('contact', c.lang)}">${esc(s.cta)}</a> <span>${esc(s.ctaNote)}</span></p>
+</div></section>`;
+
+R.casecard = (s, c) => `<section class="section section--tight"><div class="wrap">
+  <article class="casecard rv"><a class="more" href="${url(s.to, c.lang)}" aria-label="${esc(s.h)}"></a>
+    <div class="casecard__n"><p class="eyebrow-tag">${esc(s.tag)}</p><b>${esc(s.n)}</b><span>${fmt(s.nt, c.lang)}</span></div>
+    <div class="casecard__body"><h2>${fmt(s.h, c.lang)}</h2><p>${fmt(s.p, c.lang)}</p><span class="link-arrow">${esc(s.cta)} ${ico('arrow')}</span></div>
+  </article>
+</div></section>`;
+
 R.people = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'people')}
   <div class="people">${s.items.map((p, k) => `<article class="person rv" style="--d:${k * .1}s"><div class="person__photo person__photo--${p.photo}">${img('founders-2.jpg', p.alt, { sizes: '(min-width:760px) 50vw, 100vw' })}</div><div class="person__body"><h3><a class="more" href="${url(p.to, c.lang)}" aria-label="${esc(p.name)}"></a>${esc(p.name)}</h3><p class="role">${esc(p.role)}</p><p class="prose">${fmt(p.text, c.lang)}</p><span class="link-arrow">${esc(p.cta)} ${ico('arrow')}</span></div></article>`).join('')}</div>
@@ -484,7 +505,7 @@ function footer(c) {
   return `<footer class="footer"><div class="wrap">
   <p class="footer__tag display">${fmt(T.footerTag, lang)}</p>
   <div class="footer__grid">
-    <div><h2>${esc(T.footer.who)}</h2><p style="color:var(--text-2);max-width:34ch">${esc(T.footer.blurb)}</p>
+    <div><a class="footer__logo" href="${url('home', lang)}" aria-label="Viesigners — ${esc(T.nav.home)}">${img('logo-viesigners.png', 'Viesigners')}</a><p style="color:var(--text-2);max-width:34ch">${esc(T.footer.blurb)}</p>
       <p style="margin-top:1.4rem"><a class="pill pill--sm" href="${url('contact', lang)}">${esc(T.footer.cta)}</a></p></div>
     <div><h2>${esc(T.nav.services)}</h2><ul>${SERVICE_KEYS.filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.nav[k])}</a></li>`).join('')}</ul></div>
     <div><h2>${esc(T.footer.company)}</h2><ul>${['a-propos', 'realisations', 'actualites', 'contact'].filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.nav[k])}</a></li>`).join('')}</ul></div>
@@ -535,6 +556,8 @@ function toMd(page, c) {
       case 'deliverables': L.push(`## ${t(s.h2)}`, '', ...(s.lead ? [t(s.lead), ''] : []), ...s.items.map((i) => `- **${t(i.h)}** — ${t(i.p)}`), ''); break;
       case 'process': L.push(`## ${t(s.h2)}`, '', ...s.steps.map((p, i) => `${i + 1}. **${t(p.h)}** — ${t(p.p)}`), ''); break;
       case 'compare': L.push(`## ${t(s.h2)}`, '', `### ${t(s.before.h)}`, ...s.before.items.map((i) => `- ${t(i)}`), '', `### ${t(s.after.h)}`, ...s.after.items.map((i) => `- ${t(i)}`), ''); break;
+      case 'casecard': L.push(`## ${t(s.h)}`, '', `- **${s.n}** ${t(s.nt)}`, `- [${t(s.h)}](${abs(url(s.to, lang))})`, ''); break;
+      case 'casestudy': L.push(`## ${t(s.h2)}`, '', ...(s.client ? [t(s.client), ''] : []), ...s.results.map((i) => `- **${i.n}** ${t(i.t)}`), '', `### ${t(s.problem.h)}`, '', t(s.problem.lead), '', ...s.problem.items.map((i) => `- ${t(i)}`), '', `### ${t(s.did.h)}`, '', ...s.did.steps.map((p, i) => `${i + 1}. **${t(p.h)}** — ${t(p.p)}`), '', `> ${t(s.quote.text)}`, `> — ${s.quote.by}`, '', t(s.note), ''); break;
       case 'proof': L.push(...s.items.map((i) => `- **${i.n}** ${t(i.t)}`), ''); break;
       case 'people': L.push(`## ${t(s.h2)}`, '', ...s.items.map((p) => `- **${p.name}** (${p.role}) — ${t(p.text)}`), ''); break;
       case 'facts': L.push(`## ${t(s.h2)}`, '', ...s.items.map((i) => `- **${t(i.k)}**: ${t(i.v)}`), ''); break;
@@ -554,7 +577,7 @@ function toMd(page, c) {
 const THEME = {
   'hero-home': 'dark', 'page-hero': 'dark', 'cta-final': 'dark',
   friction: 'light', founders: 'dark', services: 'light', stats: 'dark', work: 'light', fit: 'dark', slot: 'light', testimonials: 'light', faq: 'light',
-  statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', people: 'dark', facts: 'light',
+  statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', people: 'dark', facts: 'light',
   'posts-list': 'light', article: 'light', contact: 'light', 'rich-text': 'light',
 };
 const ASSET_HASH = {};
@@ -576,6 +599,7 @@ function buildPage({ lang, key, page, post }) {
   const crumbs = [{ name: T.nav.home, url: url('home', lang) }];
   if (SERVICE_KEYS.includes(key)) { /* Home > Service */ }
   if (['charles-erick', 'jean-francois'].includes(key)) crumbs.push({ name: T.nav['a-propos'], url: url('a-propos', lang) });
+  if (key === 'cas-saas') crumbs.push({ name: T.nav['design-produit'], url: url('design-produit', lang) });
   if (key === 'post') crumbs.push({ name: T.nav.actualites, url: url('actualites', lang) });
   if (key !== 'home') crumbs.push({ name: key === 'post' ? post.title : T.nav[key], url: selfUrl });
 

@@ -420,6 +420,40 @@ em.acc, .acc {
 .proof__item span { display: block; margin-top: .7rem; color: var(--text-2); max-width: 30ch; line-height: 1.4; }
 @media (min-width: 760px) { .proof { grid-template-columns: repeat(3, minmax(0, 1fr)); } .proof--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
+/* ---------- case study ---------- */
+.cs__client { margin-top: clamp(1.4rem, 1rem + 1.4vw, 2.2rem); color: var(--text-2); font-family: var(--f-mono); font-size: .8rem; letter-spacing: .03em; text-transform: uppercase; }
+.casestudy-proof, .cs__client + .proof { margin-top: clamp(1.6rem, 1rem + 2vw, 3rem); }
+.cs { display: grid; gap: clamp(2rem, 1rem + 3vw, 4rem); margin-top: clamp(2.6rem, 1.5rem + 4vw, 5rem); }
+.cs__col h3 { font-size: clamp(1.3rem, 1.1rem + .8vw, 1.8rem); margin-bottom: 1rem; }
+.cs__col > p { color: var(--text-2); max-width: 52ch; line-height: 1.55; }
+.cs__col ul { list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; gap: .9rem; }
+.cs__col li { display: grid; grid-template-columns: 1.2rem 1fr; gap: .7rem; color: var(--text-2); line-height: 1.5; }
+.cs__col li svg { width: 1.1rem; height: 1.1rem; margin-top: .2rem; color: var(--pink); }
+.cs__steps { list-style: none; counter-reset: cs; padding: 0; margin: 0; display: grid; gap: 1.4rem; }
+.cs__steps li { counter-increment: cs; display: grid; grid-template-columns: 1fr; gap: .35rem; padding-left: 3rem; position: relative; }
+.cs__steps li::before { content: counter(cs, decimal-leading-zero); position: absolute; left: 0; top: .1rem; font-family: var(--f-mono); font-size: .8rem; color: var(--pink); }
+.cs__steps b { font-family: var(--f-display); font-weight: 400; font-size: 1.15rem; letter-spacing: -0.015em; }
+.cs__steps span { color: var(--text-2); line-height: 1.55; }
+.cs__quote { margin: clamp(2.6rem, 1.5rem + 4vw, 5rem) 0 0; padding: clamp(1.6rem, 1rem + 2vw, 2.6rem); border-radius: var(--r-lg); background: var(--card); max-width: 62rem; }
+.cs__quote::before { content: "\201C"; display: block; height: .75em; overflow: visible; font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(5rem, 3.5rem + 5vw, 8rem); line-height: 1.05; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: .2rem; padding-top: .08em; }
+.cs__quote p { font-family: var(--f-display); font-weight: 300; font-size: clamp(1.2rem, 1rem + 1vw, 1.8rem); line-height: 1.35; letter-spacing: -0.02em; }
+.cs__quote figcaption { margin-top: 1.2rem; color: var(--text-2); font-family: var(--f-mono); font-size: .78rem; letter-spacing: .03em; text-transform: uppercase; }
+.cs__note { margin-top: 1.6rem; color: var(--text-2); max-width: 62ch; }
+.cs__cta { margin-top: 1.8rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.4rem; }
+.cs__cta span { color: var(--text-2); font-size: .95rem; }
+@media (min-width: 960px) { .cs { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); } }
+
+.casecard { position: relative; display: grid; gap: clamp(1.4rem, 1rem + 2vw, 3rem); padding: clamp(1.6rem, 1rem + 2.4vw, 3rem); border-radius: var(--r-lg); background: var(--card); transition: background .4s var(--ease); }
+.casecard:hover { background: var(--card-2, var(--card)); }
+.casecard .more { position: absolute; inset: 0; border-radius: inherit; z-index: 1; }
+.casecard__n .eyebrow-tag { margin-bottom: 1.2rem; }
+.casecard__n b { display: block; font-family: var(--f-display); font-weight: 300; font-size: clamp(3.4rem, 2rem + 5vw, 6.5rem); line-height: 1.12; letter-spacing: -0.04em; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.casecard__n span { display: block; margin-top: .5rem; color: var(--text-2); max-width: 26ch; line-height: 1.4; }
+.casecard__body h2 { margin-block: 0 .8rem; font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2.2rem); max-width: 28ch; }
+.casecard__body p { color: var(--text-2); max-width: 52ch; line-height: 1.55; }
+.casecard .link-arrow { margin-top: 1.4rem; display: inline-flex; }
+@media (min-width: 960px) { .casecard { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); align-items: center; } }
+
 /* ---------- FAQ ---------- */
 .faq { max-width: 62rem; margin-left: auto; width: 100%; }
 .faq details { border-top: 1px solid var(--line); }
@@ -568,6 +602,8 @@ em.acc, .acc {
 /* ---------- footer ---------- */
 .footer { position: relative; background: var(--charcoal); color: #fff; padding-top: clamp(2rem, 1rem + 3vw, 4rem); padding-bottom: 2rem; overflow: clip; --text: #fff; --text-2: rgba(219, 229, 237, .78); --text-3: rgba(179, 192, 212, .7); --line: rgba(179, 192, 212, .18); }
 .footer__grid { display: grid; gap: 2.4rem; padding-top: clamp(2.5rem, 2rem + 3vw, 5rem); border-top: 1px solid var(--line); }
+.footer__logo { display: inline-block; margin-bottom: 1.3rem; }
+.footer__logo img { width: 132px; height: auto; display: block; }
 .footer h2 { font-family: var(--f-mono); font-size: .75rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: var(--text-3); margin-bottom: 1.1rem; display: flex; gap: .6rem; align-items: center; line-height: 1.2; }
 .footer h2::before { content: ""; width: .42rem; height: .42rem; border-radius: 50%; background: var(--pink); }
 .footer ul { display: grid; gap: .6rem; }

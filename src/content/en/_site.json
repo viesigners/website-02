@@ -16,6 +16,7 @@
   "medias-sociaux": "Social media",
   "seo-geo": "SEO/GEO",
   "coaching": "Business advisory",
+  "cas-saas": "Case study: B2B AI SaaS",
   "merci": "Thank you"
  },
  "navSub": {
@@ -41,17 +42,17 @@
  "ctaShort": "Let's grow!",
  "menu": "Menu",
  "top": "Back to top",
- "footerTag": "The accelerator pedal for *growing businesses.*",
+ "footerTag": "The accelerator pedal for *growing businesses*",
  "footer": {
   "who": "Viesigners",
-  "blurb": "Canadian micro-agency in UX/UI and conversion rate optimization. Québec and Vancouver.",
+  "blurb": "A lean UX/UI and conversion agency. Two senior founders and a network of trusted specialists, in Québec and Vancouver.",
   "cta": "Let's talk!",
   "company": "Company",
   "rights": "Les Viesigners. All rights reserved.",
   "privacy": "Privacy policy",
   "terms": "Terms and conditions"
  },
- "orgDescription": "Viesigners is a Canadian web micro-agency (Québec and Vancouver) specialized in UX/UI and conversion rate optimization (CRO): websites, landing pages, sales funnels, SaaS and app product design, and business advisory. With a network of vetted experts, it also supports companies in digital advertising, SEO and GEO.",
+ "orgDescription": "Viesigners is a lean Canadian web agency (Québec and Vancouver) specialized in UX/UI and conversion rate optimization (CRO): websites, landing pages, sales funnels, SaaS and app product design, and business advisory. With a network of vetted experts, it also supports companies in digital advertising, SEO and GEO.",
  "knowsAbout": [
   "UX/UI design",
   "Conversion rate optimization (CRO)",
@@ -89,6 +90,7 @@
   "process": "Process",
   "compare": "Comparison",
   "proof": "Proof",
+  "casestudy": "Case study",
   "people": "The team",
   "facts": "Key facts",
   "testimonials": "Testimonials"

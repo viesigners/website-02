@@ -1,0 +1,192 @@
+{
+ "meta": {
+  "title": "Étude de cas SaaS B2B en IA : +31 % de MRR, −24 % d'attrition | Viesigners",
+  "description": "Comment nous avons augmenté le MRR d'un SaaS B2B en IA de 31 % et réduit son attrition de 24 % en 90 jours : proposition de valeur refaite, valeur plus rapide, page clé redessinée.",
+  "h1": "Comment un SaaS B2B en IA a augmenté son MRR de 31 % et réduit son attrition de 24 % en 90 jours"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tag": "Étude de cas",
+   "h1": "Comment un SaaS B2B en IA a augmenté son *MRR de 31 %* et réduit son attrition de 24 % en 90 jours",
+   "lead": "Un trafic stable, mais des revenus qui fuyaient : peu de conversions du gratuit au payant et une forte attrition à l'intégration. En réalignant la proposition de valeur, en accélérant le temps avant la valeur et en redessinant une page clé, nous avons produit une croissance mesurable en quelques semaines.",
+   "brief": [
+    {
+     "b": "Client :",
+     "t": "un SaaS B2B en IA pour la création de jeux (nom confidentiel)."
+    },
+    {
+     "b": "Problème :",
+     "t": "peu de conversions du gratuit au payant et forte attrition à l'intégration."
+    },
+    {
+     "b": "Résultats :",
+     "t": "+31 % de MRR en 4 jours, −24 % d'attrition en 90 jours, +30 % de conversions sur la page de fonction en 4 jours."
+    },
+    {
+     "b": "Exécution :",
+     "t": "100 % senior, par le cofondateur Jean-François (Toptal Top 3 %)."
+    }
+   ],
+   "ctas": [
+    {
+     "label": "Réserver un bilan de 15 minutes",
+     "to": "@contact"
+    }
+   ]
+  },
+  {
+   "type": "casestudy",
+   "h2": "De *revenus qui fuient* à +31 % de MRR",
+   "results": [
+    {
+     "n": "+31 %",
+     "t": "de revenu mensuel récurrent (MRR), 4 jours après la mise en ligne"
+    },
+    {
+     "n": "−24 %",
+     "t": "d'attrition en 90 jours, jusqu'à −40 % sur des segments clés"
+    },
+    {
+     "n": "+30 %",
+     "t": "de conversions sur la page de la fonction principale, en 4 jours"
+    }
+   ],
+   "problem": {
+    "h": "Le problème",
+    "lead": "Un trafic stable, mais des revenus qui fuyaient : peu de conversions du gratuit au payant et une forte attrition à l'intégration.",
+    "items": [
+     "**Proposition de valeur décalée :** l'accueil parlait de fonctions complexes plutôt que du résultat concret, et les visiteurs partaient en quelques secondes.",
+     "**Valeur trop lente à venir :** une intégration trop abrupte empêchait les nouveaux inscrits d'atteindre leur premier « Aha! »."
+    ]
+   },
+   "did": {
+    "h": "Ce que nous avons fait",
+    "steps": [
+     {
+      "h": "Réaligner la proposition de valeur",
+      "p": "Nous avons refait le message de l'accueil autour de ce que le produit apporte à ses usagers, puis livré des maquettes restructurées pour réduire les abandons et accélérer le passage au payant."
+     },
+     {
+      "h": "Accélérer le temps avant la valeur",
+      "p": "Des maquettes UX/UI itératives ont simplifié l'intégration et les interfaces des fonctions clés. Les nouveaux usagers atteignent plus vite leur premier « Aha! » : plus de conversions du gratuit au payant et jusqu'à 40 % d'attrition en moins sur les segments clés."
+     },
+     {
+      "h": "Redessiner la page à forte intention",
+      "p": "Nous avons analysé les données de comportement de la page qui génère le revenu, repéré les points d'abandon et livré des maquettes CRO en 3 jours. L'équipe de développement les a mises en ligne le lendemain : +30 % de conversions en 4 jours."
+     }
+    ]
+   },
+   "quote": {
+    "text": "Leur regard et leur expérience de ce qui fait une excellente UX/UI, leur façon de tester en A/B chaque aspect de notre landing page et d'affiner notre tunnel de génération de leads ont grandement contribué au succès que nous connaissons aujourd'hui. Je recommande leur agence!",
+    "by": "PDG, SaaS B2B en IA (nom confidentiel)"
+   },
+   "note": "100 % de la refonte UX/UI et de la stratégie CRO a été exécuté directement par le cofondateur Jean-François (Toptal Top 3 %), sans déléguer à des juniors.",
+   "cta": "Réserver un bilan de 15 minutes",
+   "ctaNote": "Sans pression de vente : des pistes concrètes sur votre parcours usager.",
+   "theme": "light"
+  },
+  {
+   "type": "testimonials",
+   "h2": "D'autres *résultats SaaS* marquants",
+   "slot": {
+    "h3": "Insérez votre histoire à succès ici!",
+    "cta": "Contactez-nous"
+   },
+   "items": [
+    {
+     "name": "Elodie Marcotte",
+     "role": "Fondatrice",
+     "date": "2026-02-18",
+     "lang": "fr",
+     "title": "L’accompagnement de Charles-Érick a largement dépassé mes attentes",
+     "text": "Dans le peu de mots que cet espace me permet, je peux dire que l’accompagnement de Charles-Érick a largement dépassé mes attentes. Créatif, vif d’esprit et super bien organisé, il va bien au-delà de la simple réflexion en expérience utilisateur. C’est quelqu’un de profondément humain, et ça se ressent directement dans son travail. Je le recommande les yeux fermés.",
+     "company": "I Am Alice",
+     "joiner": "d’"
+    },
+    {
+     "name": "François L.",
+     "role": "PDG",
+     "date": "2023-04-03",
+     "lang": "fr",
+     "title": "Il sait simplifier les idées pour qu’elles aient du sens",
+     "text": "Charles-Erick est un excellent designer UX. Très professionnel, il a une façon de simplifier les idées pour qu’elles aient du sens. Toujours enthousiaste à l’idée de collaborer avec lui sur différents projets qui demandent son œil aiguisé et sa démarche de design axée sur la valeur :)",
+     "translatedFrom": "en",
+     "company": "Feedbaak",
+     "joiner": "de"
+    },
+    {
+     "name": "Michael Roussel",
+     "role": "Cofondateur",
+     "date": "2026-08",
+     "lang": "fr",
+     "title": "Un accompagnement très concret, pertinent et orienté vers les résultats",
+     "text": "Il nous a accompagnés sur plusieurs projets, et nous avons notamment collaboré avec lui pour Flokon sur l’analyse de l’interface utilisateur, l’optimisation du parcours client et du funnel de vente du site web.\n\nC’est une personne humaine, multidisciplinaire, créative et capable de penser autrement. Il est extrêmement agréable de travailler avec lui, et il sait toujours s’adapter à nos besoins.\n\nÀ nos débuts, il a su ajuster son offre de services afin de nous proposer un accompagnement très concret, pertinent et orienté vers les résultats.\n\nJe le recommande à 200 %. Il est rare, de nos jours, de travailler avec une personne aussi professionnelle, compétente et bienveillante.",
+     "company": "Flokon",
+     "joiner": "de"
+    },
+    {
+     "name": "Tom Pigott",
+     "role": "Cofondateur",
+     "date": "2026-04",
+     "lang": "fr",
+     "title": "A grandement contribué au succès dont nous profitons aujourd’hui",
+     "text": "Jean-François a été un collaborateur incroyable sur un projet SaaS auquel je me consacre depuis plusieurs années. Sa vision unique et son expérience de ce qui fait un excellent UX/UI, de la façon de tester en A/B tous les aspects de notre landing page, d’affiner notre entonnoir de génération de prospects, etc., ont tous grandement contribué au succès dont nous profitons aujourd’hui. Je recommande fortement Jean-François et son agence!",
+     "translatedFrom": "en",
+     "company": "JetPlay",
+     "joiner": "de"
+    },
+    {
+     "name": "Jorge Gomes",
+     "role": "",
+     "date": "2026-03",
+     "lang": "fr",
+     "title": "On ne pourrait pas être plus heureux des résultats",
+     "text": "Je travaille avec Jean-François depuis plus de 3 ans sur une plateforme SaaS, où il dirige notre UI/UX, et nous ne pourrions pas être plus heureux des résultats.\n\nC’est un plaisir de travailler avec lui. Très humain, plein d’énergie positive, facile à parler, et toujours ouvert à écouter les opinions et les idées des autres.\n\nIl a gagné toute la confiance de notre équipe, a relevé à maintes reprises nos défis les plus difficiles et a démontré une remarquable capacité d’adaptation à mesure que notre plateforme et nos besoins évoluent. Je le recommande fortement.",
+     "translatedFrom": "en",
+     "company": ""
+    }
+   ],
+   "theme": "dark"
+  },
+  {
+   "type": "statement",
+   "text": "Les frères jumeaux derrière Viesigners : Charles-Erick et Jean-François BG (Toptal Top 3 %).",
+   "prose": [
+    "Avant de nous concentrer sur le SaaS, nous avons passé 16 ans à concevoir des expériences web à haute conversion pour des marques comme Salesforce, Dell et Disney.",
+    "Aujourd'hui, nous apportons cette rigueur UX de calibre entreprise aux startups SaaS B2B, sans la lourdeur des grandes agences. Nous ne déléguons pas votre dossier : vous obtenez une exécution 100 % senior, directement par nous, pour chaque analyse de tunnel et chaque optimisation."
+   ]
+  },
+  {
+   "type": "faq",
+   "h2": "Questions fréquentes sur *cette étude de cas*",
+   "open": true
+  },
+  {
+   "type": "cta-final",
+   "h2": "Repérons les fuites de votre *tunnel et de votre intégration*",
+   "p": "Si votre produit a un trafic stable mais que la conversion ou la rétention stagne, passons votre parcours en revue ensemble.",
+   "cta": "Réserver un bilan de 15 minutes"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Quels résultats cette étude de cas a-t-elle produits?",
+   "a": [
+    "+31 % de revenu mensuel récurrent en 4 jours après la mise en ligne, −24 % d'attrition sur 90 jours (jusqu'à −40 % sur des segments clés) et +30 % de conversions sur la page de la fonction principale en 4 jours."
+   ]
+  },
+  {
+   "q": "Qu'avez-vous changé pour obtenir ces résultats?",
+   "a": [
+    "Trois choses : nous avons réaligné la proposition de valeur de l'accueil autour du résultat pour l'usager, simplifié l'intégration pour que les usagers atteignent plus vite leur premier « Aha! », et redessiné la page à forte intention à partir des données de comportement."
+   ]
+  },
+  {
+   "q": "Pouvez-vous faire la même chose pour mon SaaS?",
+   "a": [
+    "Les résultats dépendent de chaque produit, mais la méthode s'applique. Nous commençons par un bilan du parcours usager pour repérer les fuites dans votre tunnel, votre intégration et vos pages clés. [Réserver un bilan de 15 minutes](@contact)."
+   ]
+  }
+ ]
+}

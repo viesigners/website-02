@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "À propos de Viesigners — Les frères BG, experts UX/UI et CRO",
-    "description": "Viesigners est une micro-agence web canadienne fondée par Charles-Erick et Jean-François BG : plus de 30 années combinées en UX/UI et en optimisation du taux de conversion.",
+    "description": "Viesigners est une agence web canadienne lean fondée par Charles-Erick et Jean-François BG : plus de 30 années combinées en UX/UI et en optimisation du taux de conversion.",
     "h1": "À propos de Viesigners"
   },
   "sections": [
@@ -23,7 +23,7 @@
       "text": "Une approche unique qui rallie *expérience client* et *stratégies d'affaires web.*",
       "prose": [
         "Entourés d'un réseau d'experts sélects du domaine numérique, aussi humains que compétents, nous opérons comme conseillers d'affaires, consultants stratégiques, pigistes seniors et partenaires de réalisation en conception d'offres et d'expériences numériques.",
-        "Nous sommes une micro-agence par choix : vous travaillez directement avec les experts, sans être pris en charge par un employé sans expérience, et sans avoir l'impression d'être un numéro."
+        "Nous gardons notre équipe petite par choix : vous travaillez directement avec les experts, sans être pris en charge par un employé sans expérience, et sans avoir l'impression d'être un numéro."
       ]
     },
     {
@@ -54,7 +54,7 @@
   "faq": [
     { "q": "Qui sont Les frères BG?", "a": ["Charles-Erick et Jean-François BG sont les fondateurs de Viesigners. Ils sont des experts hybrides en UX/UI et en CRO, originaires du Québec, avec plus de 30 années d'expérience combinée."] },
     { "q": "Où est située l'agence?", "a": ["Viesigners a des bureaux à Québec et à Vancouver, au Canada, et collabore à distance avec des clients dans plus de 6 pays."] },
-    { "q": "Pourquoi travailler avec une micro-agence?", "a": ["Parce que vous travaillez directement avec les experts, sans intermédiaire inexpérimenté, et que toute l'énergie est concentrée sur votre retour sur investissement."] },
+    { "q": "Pourquoi travailler avec une agence lean?", "a": ["Parce que vous travaillez directement avec les experts, sans intermédiaire inexpérimenté, et que toute l'énergie est concentrée sur votre retour sur investissement."] },
     { "q": "Avec qui travaillez-vous en plus de l'équipe fondatrice?", "a": ["Avec un réseau restreint d'experts sélectionnés en publicité numérique, médias sociaux et SEO/GEO, que nous intégrons à votre projet au besoin."] }
   ]
 }

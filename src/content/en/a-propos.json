@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "About Viesigners — The BG Twins, UX/UI and CRO experts",
-    "description": "Viesigners is a Canadian web micro-agency founded by Charles-Erick and Jean-François BG: 30+ combined years in UX/UI and conversion rate optimization.",
+    "description": "Viesigners is a lean Canadian web agency founded by Charles-Erick and Jean-François BG: 30+ combined years in UX/UI and conversion rate optimization.",
     "h1": "About Viesigners"
   },
   "sections": [
@@ -23,7 +23,7 @@
       "text": "A unique approach that unites *customer experience* and *web business strategy.*",
       "prose": [
         "Surrounded by a network of select digital experts, as human as they are skilled, we act as business advisors, strategic consultants, senior freelancers and delivery partners in designing offers and digital experiences.",
-        "We're a micro-agency by choice: you work directly with the experts, not with an inexperienced employee, and never feel like a number."
+        "We keep our team small by choice: you work directly with the experts, not with an inexperienced employee, and never feel like a number."
       ]
     },
     {
@@ -54,7 +54,7 @@
   "faq": [
     { "q": "Who are The BG Twins?", "a": ["Charles-Erick and Jean-François BG are the founders of Viesigners. They are hybrid experts in UX/UI and CRO, originally from Québec, with more than 30 years of combined experience."] },
     { "q": "Where is the agency located?", "a": ["Viesigners has offices in Québec and Vancouver, Canada, and collaborates remotely with clients in more than 6 countries."] },
-    { "q": "Why work with a micro-agency?", "a": ["Because you work directly with the experts, with no inexperienced go-between, and all the energy is focused on your return on investment."] },
+    { "q": "Why work with a lean agency?", "a": ["Because you work directly with the experts, with no inexperienced go-between, and all the energy is focused on your return on investment."] },
     { "q": "Who do you work with besides the founding team?", "a": ["A limited network of selected experts in digital advertising, social media and SEO/GEO, whom we bring into your project as needed."] }
   ]
 }
