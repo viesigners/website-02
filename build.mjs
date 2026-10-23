@@ -404,7 +404,7 @@ R.contact = (s, c) => {
       <div><dt>${esc(s.labels.hours)}</dt><dd>${esc(s.hours)}</dd></div>
     </dl>
   </div>
-  <form class="form rv" novalidate method="post" action="${CFG.formEndpoint || '#'}" data-endpoint="${esc(CFG.formEndpoint || '')}" data-thanks="${url('merci', lang)}" data-mailto="${esc(CFG.email || '')}" data-subject="${esc(f.subject)}" data-msg-ok="${esc(f.ok)}" data-msg-fail="${esc(f.fail)}" data-msg-required="${esc(f.required)}" data-msg-email="${esc(f.emailErr)}">
+  <form class="form rv" data-clarity-mask="True" novalidate method="post" action="${CFG.formEndpoint || '#'}" data-endpoint="${esc(CFG.formEndpoint || '')}" data-thanks="${url('merci', lang)}" data-mailto="${esc(CFG.email || '')}" data-subject="${esc(f.subject)}" data-msg-ok="${esc(f.ok)}" data-msg-fail="${esc(f.fail)}" data-msg-required="${esc(f.required)}" data-msg-email="${esc(f.emailErr)}">
     <div class="row2">
       <div class="field"><label for="f-first">${esc(f.firstName)} ${req}</label><input id="f-first" name="first_name" autocomplete="given-name" required>${err}</div>
       <div class="field"><label for="f-last">${esc(f.lastName)} ${req}</label><input id="f-last" name="last_name" autocomplete="family-name" required>${err}</div>
@@ -491,6 +491,17 @@ ${art ? `<meta property="article:published_time" content="${art.date}">\n<meta p
 </head>`;
 }
 
+/* cookie consent: analytics (Microsoft Clarity) only loads after an explicit "accept" (see site.js) */
+function cookieBanner({ lang, T }) {
+  if (!CFG.clarityId) return '';
+  const k = T.cookie;
+  return `<div class="cookie" role="dialog" aria-modal="false" aria-labelledby="ck-t" aria-describedby="ck-d" data-clarity="${esc(CFG.clarityId)}" hidden>
+  <h2 id="ck-t">${esc(k.title)}</h2>
+  <p id="ck-d">${esc(k.text)} <a href="${CFG.legal[lang].privacy}" target="_blank" rel="noopener noreferrer">${esc(k.policy)}</a></p>
+  <div class="cookie__actions"><button type="button" class="pill pill--sm" data-cookie="granted">${esc(k.accept)}</button><button type="button" class="pill pill--sm pill--ghost" data-cookie="denied">${esc(k.decline)}</button></div>
+</div>`;
+}
+
 function header(c) {
   const { lang, T, key } = c;
   const alt = lang === 'fr' ? 'en' : 'fr';
@@ -532,7 +543,7 @@ function footer(c) {
     <div><h2>${esc(T.nav.contact)}</h2><address><span>Québec, Canada</span><span>Vancouver, Canada</span><a href="tel:${CFG.phoneRaw}">${esc(CFG.phone)}</a></address>
       <div class="footer__social"><a href="${CFG.social.facebook}" target="_blank" rel="noopener noreferrer me" aria-label="Facebook ${esc(T.newTab)}">${ico('fb')}</a><a href="${CFG.social.linkedin}" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn ${esc(T.newTab)}">${ico('in')}</a></div></div>
   </div>
-  <div class="footer__base"><span>© ${new Date().getFullYear()} ${esc(T.footer.rights)}</span><span><a href="${CFG.legal[lang].privacy}" target="_blank" rel="noopener noreferrer" aria-label="${esc(T.footer.privacy)} ${esc(T.newTab)}">${esc(T.footer.privacy)}</a> · <a href="${CFG.legal[lang].terms}" target="_blank" rel="noopener noreferrer" aria-label="${esc(T.footer.terms)} ${esc(T.newTab)}">${esc(T.footer.terms)}</a></span></div>
+  <div class="footer__base"><span>© ${new Date().getFullYear()} ${esc(T.footer.rights)}</span><span><a href="${CFG.legal[lang].privacy}" target="_blank" rel="noopener noreferrer" aria-label="${esc(T.footer.privacy)} ${esc(T.newTab)}">${esc(T.footer.privacy)}</a> · <a href="${CFG.legal[lang].terms}" target="_blank" rel="noopener noreferrer" aria-label="${esc(T.footer.terms)} ${esc(T.newTab)}">${esc(T.footer.terms)}</a>${CFG.clarityId ? ` · <button type="button" class="linklike" data-cookie-open>${esc(T.footer.cookies)}</button>` : ''}</span></div>
 </div></footer>`;
 }
 
@@ -680,6 +691,7 @@ ${header(ctx)}
 ${body}
 </main>
 ${footer(ctx)}
+${cookieBanner(ctx)}
 <script src="${BASE}/assets/js/site.js?v=${ASSET_HASH.js}" defer></script>
 </body>
 </html>

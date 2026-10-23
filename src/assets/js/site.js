@@ -121,4 +121,35 @@
     country && dial && country.addEventListener('change', () => { const o = [...dial.options].find(x => x.dataset.cc === country.value); if (o) dial.value = o.value; });
     form.querySelectorAll('[required]').forEach(f => f.addEventListener('blur', () => { f.setAttribute('aria-invalid', String(!f.checkValidity())); }));
   }
+
+  /* cookie consent: Microsoft Clarity loads only after an explicit "accept"; nothing runs without a choice (or without JS) */
+  const ck = d.querySelector('.cookie');
+  if (ck) {
+    const KEY = 'vz-consent', id = ck.dataset.clarity;
+    const read = () => { try { return localStorage.getItem(KEY); } catch (_) { return null; } };
+    const save = v => { try { localStorage.setItem(KEY, v); } catch (_) {} };
+    let loaded = false;
+    // add further trackers (e.g. a Meta pixel) as extra functions in this list: they all run only after consent
+    const trackers = [
+      () => {
+        if (!id) return;
+      (function (c, l, a, r, i, t, y) { c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); }; t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i; y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y); })(window, d, 'clarity', 'script', id);
+      },
+    ];
+    const load = () => { if (loaded) return; loaded = true; trackers.forEach(run => run()); };
+    const stop = () => {
+      try { if (window.clarity) window.clarity('consent', false); } catch (_) {}
+      const host = location.hostname.replace(/^www\./, '');
+      ['_clck', '_clsk', 'CLID', 'ANONCHK', 'MR', 'MUID', 'SM'].forEach(n => ['', '; domain=' + host, '; domain=.' + host].forEach(dm => { d.cookie = n + '=; Max-Age=0; path=/' + dm; }));
+    };
+    const show = () => { ck.hidden = false; };
+    const choose = v => { save(v); ck.hidden = true; v === 'granted' ? load() : stop(); };
+    ck.querySelectorAll('[data-cookie]').forEach(btn => btn.addEventListener('click', () => choose(btn.dataset.cookie)));
+    d.querySelectorAll('[data-cookie-open]').forEach(btn => btn.addEventListener('click', show));
+    const saved = read();
+    if (saved === 'granted') load();
+    else if (saved === 'denied') { /* respect the earlier choice */ }
+    else if (navigator.globalPrivacyControl === true) save('denied'); // Global Privacy Control counts as a refusal
+    else requestAnimationFrame(show);
+  }
 })();

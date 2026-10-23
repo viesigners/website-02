@@ -50,7 +50,8 @@
   "company": "Company",
   "rights": "Les Viesigners. All rights reserved.",
   "privacy": "Privacy policy",
-  "terms": "Terms and conditions"
+  "terms": "Terms and conditions",
+  "cookies": "Cookie settings"
  },
  "orgDescription": "Viesigners is a lean Canadian web agency (Québec and Vancouver) specialized in UX/UI and conversion rate optimization (CRO): websites, landing pages, sales funnels, SaaS and app product design, and business advisory. With a network of vetted experts, it also supports companies in digital advertising, SEO and GEO.",
  "knowsAbout": [
@@ -103,5 +104,12 @@
   "fr": "Translated from French"
  },
  "at": "at",
- "newTab": "(opens in a new tab)"
+ "newTab": "(opens in a new tab)",
+ "cookie": {
+  "title": "Cookies",
+  "text": "We use cookies and similar technologies to understand how visitors use this site and to measure our marketing, so we can improve both. They only run if you accept, and you can change your mind at any time.",
+  "accept": "Accept",
+  "decline": "Decline",
+  "policy": "Privacy policy"
+ }
 }
