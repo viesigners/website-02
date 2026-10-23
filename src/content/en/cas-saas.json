@@ -30,11 +30,11 @@
    ],
    "ctas": [
     {
-     "label": "Book a 15-minute teardown",
+     "label": "Book a free 15-minute teardown",
      "to": "https://cal.com/viesigners/user-journey-teardown-call"
     }
    ],
-   "byline": "By Jean-François BG (Toptal Top 3%) · Published October 2026"
+   "byline": "By Jean-François BG (Toptal Top 3%)"
   },
   {
    "type": "casestudy",
@@ -85,7 +85,7 @@
     "role": "Name under NDA"
    },
    "note": "100% of the UX/UI redesign and CRO strategy was executed directly by co-founder Jean-François (Toptal Top 3%), with no delegation to junior staff.",
-   "cta": "Book a 15-minute teardown",
+   "cta": "Book a free 15-minute teardown",
    "ctaNote": "No sales pitch: just actionable feedback on your user journey.",
    "theme": "light",
    "ctaHref": "https://cal.com/viesigners/user-journey-teardown-call"
@@ -134,7 +134,7 @@
   },
   {
    "type": "testimonials",
-   "h2": "What *clients* say",
+   "h2": "What *SaaS clients* say",
    "slot": {
     "h3": "Insert your success story here!",
     "cta": "Contact us"
@@ -192,14 +192,21 @@
   },
   {
    "type": "bio",
-   "text": "The twin brothers behind Viesigners: Charles-Erick & Jean-François BG (Toptal Top 3%).",
+   "text": "The twin brothers behind *Viesigners*",
    "prose": [
     "Before focusing on SaaS, we spent 16 years engineering high-converting web experiences for brands like Salesforce, Dell and Disney.",
     "Today we bring that enterprise-grade UX rigor to B2B SaaS startups, without the slow agency bureaucracy. We don't delegate your account: you get 100% senior execution from us directly on every funnel teardown and optimization."
    ],
    "alt": "Charles-Erick and Jean-François BG, co-founders of Viesigners, smiling in front of their office windows",
    "img": "charles-erick-jean-francois-bg-viesigners-founders.jpg",
-   "imgName": "Charles-Erick and Jean-François BG, co-founders of Viesigners"
+   "imgName": "Charles-Erick and Jean-François BG, co-founders of Viesigners",
+   "checks": [
+    "Toptal Top 3% experts",
+    "100% senior execution on every project",
+    "Your account is never delegated"
+   ],
+   "names": "Charles-Erick & Jean-François BG",
+   "caption": "Co-founders · Toptal Top 3%"
   },
   {
    "type": "faq",
@@ -220,7 +227,7 @@
    "type": "cta-final",
    "h2": "Want to spot the leaks in your *funnel and onboarding?*",
    "p": "If your product has steady traffic but conversion or retention is lagging, let's review your flow together.",
-   "cta": "Book a 15-minute teardown",
+   "cta": "Book a free 15-minute teardown",
    "href": "https://cal.com/viesigners/user-journey-teardown-call"
   }
  ],
@@ -240,7 +247,7 @@
   {
    "q": "Can you do the same for my SaaS?",
    "a": [
-    "Results depend on each product, but the method applies. We start with a user-journey teardown to spot the leaks in your funnel, onboarding and key feature pages. [Book a 15-minute teardown](https://cal.com/viesigners/user-journey-teardown-call)."
+    "Results depend on each product, but the method applies. We start with a user-journey teardown to spot the leaks in your funnel, onboarding and key feature pages. [Book a free 15-minute teardown](https://cal.com/viesigners/user-journey-teardown-call)."
    ]
   }
  ],

@@ -160,8 +160,13 @@ R.statement = (s, c) => `<section class="section statement${s.wide ? ' statement
 </div></section>`;
 
 R.bio = (s, c) => `<section class="section"><div class="wrap bio">
-  <div class="bio__text"><h2 class="display rv">${fmt(s.text, c.lang)}</h2>${s.prose ? `<div class="prose rv" style="--d:.1s">${s.prose.map((p) => `<p>${fmt(p, c.lang)}</p>`).join('')}</div>` : ''}</div>
-  <figure class="bio__photo rv" style="--d:.15s">${img(s.img, s.alt, { sizes: '(min-width:960px) 40vw, 100vw' })}</figure>
+  <div class="bio__text">
+    ${splitLabel(c, 'bio')}
+    <h2 class="display rv">${fmt(s.text, c.lang)}</h2>
+    ${s.prose ? `<div class="prose rv" style="--d:.1s">${s.prose.map((p, k) => `<p${k === 0 ? ' class="bio__lead"' : ''}>${fmt(p, c.lang)}</p>`).join('')}</div>` : ''}
+    ${s.checks ? `<ul class="bio__checks rv" style="--d:.15s">${s.checks.map((t) => `<li>${ico('check')}<span>${fmt(t, c.lang)}</span></li>`).join('')}</ul>` : ''}
+  </div>
+  <div class="bio__media rv" style="--d:.15s"><figure class="bio__photo">${img(s.img, s.alt, { sizes: '(min-width:960px) 40vw, 100vw' })}<figcaption class="bio__cap"><b>${esc(s.names)}</b><span>${esc(s.caption)}</span></figcaption></figure></div>
 </div></section>`;
 
 R.friction = (s, c) => {
@@ -561,7 +566,7 @@ function toMd(page, c) {
     switch (s.type) {
       case 'hero-home': L.push(t(s.h1), '', t(s.lead), ''); break;
       case 'page-hero': L.push(t(s.lead), '', s.brief ? `## ${T.brief}` : '', ...(s.brief || []).map((b) => `- ${b.b ? t(b.b) + ' ' : ''}${t(b.t)}`), ''); break;
-      case 'bio': L.push(t(s.text), '', ...(s.prose || []).flatMap((p) => [t(p), '']), ''); break;
+      case 'bio': L.push(`## ${t(s.text)}`, '', ...(s.prose || []).flatMap((p) => [t(p), '']), ...(s.checks || []).map((k) => `- ${t(k)}`), '', `${s.names} — ${s.caption}`, ''); break;
       case 'statement': L.push(t(s.text), '', ...(s.prose || []).flatMap((p) => [t(p), '']), ''); break;
       case 'friction': L.push(`## ${t(s.h2)}`, '', t(s.lead), '', ...s.pains.map((p) => `- ${t(p)}`), '', t(s.reveal.h3), '', ...s.reveal.p.flatMap((p) => [t(p), '']), t(s.reveal.cost), ''); break;
       case 'founders': L.push(`## ${t(s.h2)}`, '', ...s.text.flatMap((p) => [t(p), '']), ...s.checks.map((k) => `- ${t(k)}`), ''); break;

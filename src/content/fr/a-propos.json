@@ -15,7 +15,7 @@
         { "b": "Qui :", "t": "Charles-Erick et Jean-François BG, fondateurs des Viesigners." },
         { "b": "Spécialités :", "t": "UX/UI, CRO, sites web, landing pages et design de produit SaaS et applis." },
         { "b": "Où :", "t": "Québec et Vancouver, Canada — marchés francophones et anglophones." },
-        { "b": "Reconnaissances :", "t": "top 3 % des experts web mondiaux (Toptal); projets reconnus par Awwwards, OCTAS, Osentreprendre et Gartner." }
+        { "b": "Reconnaissances :", "t": "top 3% des experts web mondiaux (Toptal); projets reconnus par Awwwards, OCTAS, Osentreprendre et Gartner." }
       ]
     },
     {
@@ -32,7 +32,7 @@
       "lead": "Deux frères, une même obsession : réduire la friction entre une offre de qualité et ceux qui en ont besoin.",
       "items": [
         { "to": "charles-erick", "name": "Charles-Erick BG", "role": "Cofondateur", "photo": "a", "alt": "Charles-Erick BG, cofondateur des Viesigners", "text": "Expert hybride en UX/UI et en optimisation du taux de conversion.", "cta": "Voir le profil" },
-        { "to": "jean-francois", "name": "Jean-François BG", "role": "Cofondateur", "photo": "b", "alt": "Jean-François BG, cofondateur des Viesigners", "text": "Expert hybride en UX/UI, déclaré dans le top 3 % des experts web mondiaux par Toptal.", "cta": "Voir le profil" }
+        { "to": "jean-francois", "name": "Jean-François BG", "role": "Cofondateur", "photo": "b", "alt": "Jean-François BG, cofondateur des Viesigners", "text": "Expert hybride en UX/UI, déclaré dans le top 3% des experts web mondiaux par Toptal.", "cta": "Voir le profil" }
       ]
     },
     {
@@ -45,7 +45,7 @@
         { "k": "Réseau", "v": "Experts sélectionnés en publicité numérique, médias sociaux et SEO/GEO." },
         { "k": "Marchés", "v": "Plus de 30 domaines d'affaires, en français et en anglais, avec des clients dans plus de 6 pays." },
         { "k": "Bureaux", "v": "Québec et Vancouver, Canada." },
-        { "k": "Reconnaissances", "v": "Top 3 % Toptal; projets reconnus par Awwwards, OCTAS, Osentreprendre et Gartner." }
+        { "k": "Reconnaissances", "v": "Top 3% Toptal; projets reconnus par Awwwards, OCTAS, Osentreprendre et Gartner." }
       ]
     },
     { "type": "faq", "h2": "Questions sur *Viesigners*", "open": true },
