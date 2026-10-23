@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "title": "Politique de confidentialité | Viesigners",
+  "description": "Comment Viesigners collecte, utilise et protège vos renseignements personnels lorsque vous visitez notre site ou utilisez nos services.",
+  "h1": "Politique de confidentialité"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "compact": true,
+   "tag": "Mentions légales",
+   "h1": "Politique de confidentialité",
+   "lead": "Les Frères BG ou Viesigners exploitent le site [viesigners.com](https://viesigners.com). Votre vie privée est importante pour nous. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations personnelles lorsque vous visitez notre site web ou utilisez nos services.",
+   "byline": "Dernière mise à jour : 15 janvier 2026",
+   "ctas": []
+  },
+  {
+   "type": "legal",
+   "blocks": [
+    {
+     "h": "1. Informations que nous collectons",
+     "p": [
+      "Nous collectons les informations personnelles que vous nous fournissez volontairement, notamment votre nom, votre adresse courriel, votre numéro de téléphone, des informations sur votre entreprise, ainsi que tout autre détail transmis via nos formulaires de contact, d'inscription à l’infolettre ou lors de la prise de rendez-vous pour une consultation. Nous pouvons également recueillir des informations non identifiables personnellement, telles que votre type de navigateur, votre système d'exploitation, les pages consultées ainsi que la date et l’heure de votre visite."
+     ]
+    },
+    {
+     "h": "2. Données de journal (Log Data)",
+     "p": [
+      "Comme de nombreux opérateurs de sites, nous collectons des données de journal via des outils comme Microsoft Clarity afin de mieux comprendre comment les utilisateurs interagissent avec notre site et d’optimiser leur expérience. Ces données peuvent inclure votre adresse IP, votre type de navigateur, les pages de provenance ou de sortie, et d'autres statistiques."
+     ]
+    },
+    {
+     "h": "3. Cookies",
+     "p": [
+      "Notre site utilise des cookies pour améliorer votre expérience, mémoriser vos préférences et analyser les performances du site. Vous pouvez configurer votre navigateur pour refuser tous les cookies ou pour vous avertir lorsqu’un cookie est envoyé. Cependant, certaines fonctionnalités du site pourraient ne pas fonctionner correctement sans l'utilisation de cookies.",
+      "Les cookies d’analyse ne sont déposés qu’après votre acceptation dans la bannière de consentement. Vous pouvez modifier votre choix en tout temps grâce au lien « Paramètres des témoins » au bas de chaque page."
+     ]
+    },
+    {
+     "h": "4. DNT (Do Not Track) et GPC (Global Privacy Control)",
+     "p": [
+      "Nous ne répondons pas actuellement aux signaux « Do Not Track » (DNT) émis par les navigateurs. Cependant, nous respectons les signaux Global Privacy Control (GPC) conformément aux lois applicables en matière de confidentialité."
+     ]
+    },
+    {
+     "h": "5. Fournisseurs de services",
+     "p": [
+      "Nous pouvons faire appel à des prestataires de services tiers pour nous aider à fournir nos services (comme les processeurs de paiement, les plateformes d’envoi de courriels ou les outils d’analyse). Ces fournisseurs ont accès à vos informations uniquement pour effectuer ces tâches en notre nom et sont contractuellement tenus de ne pas divulguer ni utiliser vos informations à d’autres fins."
+     ]
+    },
+    {
+     "h": "6. Communication",
+     "p": [
+      "Nous pouvons utiliser vos informations personnelles pour communiquer avec vous, par exemple pour vous envoyer des mises à jour, répondre à vos demandes ou vous proposer du contenu marketing. Vous pouvez vous désabonner des communications par courriel en cliquant sur le lien « se désabonner » présent dans chaque message. Pour ne plus recevoir de messages texte (SMS), répondez simplement « STOP » à tout moment. Des frais standards de messagerie peuvent s’appliquer."
+     ]
+    },
+    {
+     "h": "7. Sécurité",
+     "p": [
+      "Toutes les transactions effectuées sur nos plateformes sont protégées par des fournisseurs de sécurité reconnus, tels que Stripe et PayPal. Cependant, aucune méthode de transmission sur Internet ou de stockage électronique n’est totalement sécurisée. En utilisant nos services, vous reconnaissez et acceptez ce risque."
+     ]
+    },
+    {
+     "h": "8. Transfert international de données",
+     "p": [
+      "Vos données peuvent être stockées et traitées sur des serveurs situés en dehors de votre pays de résidence. Les lois sur la protection des données de ces pays peuvent différer de celles de votre juridiction. En utilisant notre site, vous consentez à ce transfert."
+     ]
+    },
+    {
+     "h": "9. Liens vers d'autres sites",
+     "p": [
+      "Notre site peut contenir des liens vers d'autres sites web qui ne sont pas exploités par nous. Si vous cliquez sur un lien tiers, vous serez redirigé vers ce site.",
+      "Nous vous conseillons vivement de lire la politique de confidentialité de chaque site que vous visitez. Nous ne sommes pas responsables du contenu, des politiques de confidentialité ou des pratiques de ces sites tiers."
+     ]
+    },
+    {
+     "h": "10. Confidentialité des enfants",
+     "p": [
+      "Nos services ne sont pas destinés aux enfants de moins de 13 ans. Nous ne collectons pas sciemment de données personnelles concernant des enfants.",
+      "Si nous découvrons que nous avons collecté des informations personnelles d’un enfant sans le consentement vérifié des parents, nous supprimerons ces données dès que possible."
+     ]
+    },
+    {
+     "h": "11. Modifications de cette politique",
+     "p": [
+      "Nous nous réservons le droit de modifier ou mettre à jour cette politique de confidentialité à tout moment. Toute modification sera affichée sur cette page avec la date de mise à jour. Nous vous encourageons à consulter cette politique régulièrement."
+     ]
+    },
+    {
+     "h": "12. Programme de marketing par messagerie SMS/MMS",
+     "p": [
+      "Nous pouvons utiliser des messages SMS/MMS pour vous envoyer des mises à jour importantes ou des offres promotionnelles. Nous ne vendons ni ne louons vos informations mobiles à des tiers pour quelque raison que ce soit. Vos données sont utilisées exclusivement pour vous transmettre du contenu que vous avez accepté de recevoir."
+     ]
+    },
+    {
+     "h": "13. Nous contacter",
+     "p": [
+      "Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à l’adresse suivante :",
+      "[freres.bg@viesigners.com](mailto:freres.bg@viesigners.com)"
+     ]
+    }
+   ]
+  }
+ ]
+}

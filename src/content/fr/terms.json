@@ -1,0 +1,103 @@
+{
+ "meta": {
+  "title": "Conditions générales d’utilisation | Viesigners",
+  "description": "Les conditions qui s’appliquent à l’utilisation du site et des services de Viesigners : utilisation autorisée, propriété intellectuelle, paiements, remboursements et droit applicable.",
+  "h1": "Conditions générales d’utilisation"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "compact": true,
+   "tag": "Mentions légales",
+   "h1": "Conditions générales d’utilisation",
+   "lead": "Bienvenue sur les sites de Viesigners, accessibles via [viesigners.com](https://viesigners.com) (collectivement désignés comme le « Site »). En accédant à ce Site ou en utilisant nos services, vous acceptez de vous conformer aux présentes Conditions générales d’utilisation (« CGU »). Veuillez les lire attentivement.",
+   "byline": "Dernière mise à jour : 10 avril 2025",
+   "ctas": []
+  },
+  {
+   "type": "legal",
+   "blocks": [
+    {
+     "h": "1. Acceptation des conditions",
+     "p": [
+      "En accédant à nos sites ou en achetant l’un de nos produits ou services, vous confirmez avoir lu, compris et accepté ces conditions. Si vous êtes en désaccord avec une partie quelconque des conditions, veuillez ne pas utiliser nos services."
+     ]
+    },
+    {
+     "h": "2. Utilisation autorisée",
+     "p": [
+      "Vous vous engagez à utiliser ce site uniquement à des fins licites, dans le respect de toutes les lois applicables, et à ne pas porter atteinte aux droits d’autrui ni au bon fonctionnement du Site.",
+      "Il est strictement interdit :"
+     ],
+     "ul": [
+      "d’utiliser notre contenu sans autorisation ;",
+      "d’introduire un virus ou tout autre code malveillant ;",
+      "de tenter de perturber ou de compromettre la sécurité du Site."
+     ]
+    },
+    {
+     "h": "3. Contenu et propriété intellectuelle",
+     "p": [
+      "Tout le contenu présent sur ce site – y compris les textes, images, vidéos, logos, marques, concepts, méthodes, outils et ressources – est la propriété exclusive de Viesigners ou utilisé avec autorisation. Il est interdit de copier, reproduire, distribuer, modifier ou exploiter tout ou partie de ce contenu sans notre accord écrit préalable."
+     ]
+    },
+    {
+     "h": "4. Produits, services et paiements",
+     "p": [
+      "Nos pages de vente décrivent nos offres de services, de formations et d'accompagnements. Les prix sont indiqués en devise locale ou en dollars américains, taxes incluses ou non selon les cas. Le paiement est exigible au moment de l’achat, et peut être traité par des plateformes sécurisées telles que Stripe ou PayPal. Certains produits peuvent être accompagnés de conditions spécifiques (garanties, droits d’usage, politiques de remboursement), indiquées sur la page de vente correspondante."
+     ]
+    },
+    {
+     "h": "5. Politique de remboursement",
+     "p": [
+      "Sauf indication contraire sur la page de vente, les achats de produits numériques, services personnalisés ou consultations sont non remboursables. En cas de problème ou d'insatisfaction, merci de nous contacter à [freres.bg@viesigners.com](mailto:freres.bg@viesigners.com) : nous ferons de notre mieux pour trouver une solution."
+     ]
+    },
+    {
+     "h": "6. Modifications des services ou du site",
+     "p": [
+      "Nous nous réservons le droit de modifier, suspendre ou interrompre tout ou partie du Site ou de ses services à tout moment, avec ou sans préavis. Nous ne saurions être tenus responsables envers vous ou un tiers pour toute modification, changement de prix, suspension ou interruption du service."
+     ]
+    },
+    {
+     "h": "7. Limitation de responsabilité",
+     "p": [
+      "Nous faisons de notre mieux pour assurer la fiabilité, la sécurité et la qualité du contenu proposé. Cependant, nous ne garantissons pas que le site soit exempt d’erreurs, de bugs ou d’interruptions, ni que l’utilisation des services vous garantisse un résultat précis. En aucun cas, Viesigners, ses fondateurs, employés ou partenaires ne pourront être tenus responsables de dommages directs ou indirects résultant de l’utilisation ou de l’impossibilité d’utiliser le site ou ses services."
+     ]
+    },
+    {
+     "h": "8. Comptes utilisateurs et sécurité",
+     "p": [
+      "Certaines sections du site ou certains services peuvent nécessiter la création d’un compte utilisateur. Vous êtes responsable de la confidentialité de vos identifiants et de toute activité effectuée à partir de votre compte. Si vous soupçonnez un accès non autorisé, vous devez nous en informer immédiatement."
+     ]
+    },
+    {
+     "h": "9. Liens externes",
+     "p": [
+      "Notre site peut contenir des liens vers des sites tiers. Ces liens sont fournis à titre informatif uniquement. Nous n'avons aucun contrôle sur ces sites externes et déclinons toute responsabilité quant à leur contenu, sécurité ou pratiques de confidentialité."
+     ]
+    },
+    {
+     "h": "10. Droit applicable",
+     "p": [
+      "Ces conditions sont régies par les lois du Québec (Canada). Tout litige relatif à l'utilisation de nos services sera soumis à la juridiction exclusive des tribunaux compétents de la province de Québec."
+     ]
+    },
+    {
+     "h": "11. Modification des conditions",
+     "p": [
+      "Nous pouvons mettre à jour ces conditions d’utilisation à tout moment. Les modifications seront publiées sur cette page avec la date de mise à jour.",
+      "En continuant d’utiliser notre site après publication des changements, vous acceptez les nouvelles conditions."
+     ]
+    },
+    {
+     "h": "12. Contact",
+     "p": [
+      "Pour toute question concernant ces conditions, vous pouvez nous écrire à :",
+      "[freres.bg@viesigners.com](mailto:freres.bg@viesigners.com)"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "meta": {
+  "title": "Privacy Policy | Viesigners",
+  "description": "How Viesigners collects, uses and protects your personal information when you visit our website or use our services.",
+  "h1": "Privacy policy"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "compact": true,
+   "tag": "Legal",
+   "h1": "Privacy policy",
+   "lead": "The BG Brothers or Viesigners operate [viesigners.com](https://viesigners.com) (the “Services”). Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal information when you visit our website or use our services.",
+   "byline": "Last updated: April 10, 2025",
+   "ctas": []
+  },
+  {
+   "type": "legal",
+   "blocks": [
+    {
+     "h": "1. Information We Collect",
+     "p": [
+      "We collect personal information that you voluntarily provide to us, including your name, email address, phone number, company information, and any other details you submit through contact forms, newsletter sign-ups, or when scheduling a consultation. We may also collect non-personally identifiable information such as your browser type, operating system, pages viewed, and the date and time of your visit."
+     ]
+    },
+    {
+     "h": "2. Log Data",
+     "p": [
+      "Like many site operators, we collect log data through tools such as Microsoft Clarity to better understand how users interact with our website and to optimize your experience. This data may include your IP address, browser type, referring/exit pages, and other statistics."
+     ]
+    },
+    {
+     "h": "3. Cookies",
+     "p": [
+      "Our website uses cookies to enhance your experience, remember your preferences, and analyze site performance. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, some features of the site may not function properly without them.",
+      "Analytics cookies are only set after you accept them through the cookie banner. You can change your choice at any time with the “Cookie settings” link at the bottom of every page."
+     ]
+    },
+    {
+     "h": "4. Do Not Track (DNT) & Global Privacy Control (GPC)",
+     "p": [
+      "We currently do not respond to browser-based “Do Not Track” signals. However, we respect Global Privacy Control (GPC) signals as required by applicable privacy laws."
+     ]
+    },
+    {
+     "h": "5. Service Providers",
+     "p": [
+      "We may engage third-party service providers to help us deliver our services (such as payment processors, email platforms, or analytics tools). These providers have access to your information only to perform these tasks on our behalf and are contractually bound not to disclose or use your information for any other purpose."
+     ]
+    },
+    {
+     "h": "6. Communication",
+     "p": [
+      "We may use your personal information to communicate with you—for example, to send updates, respond to inquiries, or provide marketing content. You can unsubscribe from email communications by clicking the \"unsubscribe\" link in any of our emails. To opt out of SMS messages, reply \"STOP\" at any time. Standard messaging rates may apply."
+     ]
+    },
+    {
+     "h": "7. Security",
+     "p": [
+      "All transactions made through our platforms are protected by industry-leading security providers, such as Stripe and PayPal. However, please note that no method of transmission over the internet or electronic storage is 100% secure. By using our services, you acknowledge and accept this risk."
+     ]
+    },
+    {
+     "h": "8. Internal Data Transfers",
+     "p": [
+      "Your information may be stored and processed on servers located outside of your country of residence. The data protection laws in those countries may differ from those in your jurisdiction. By using our website, you consent to this transfer."
+     ]
+    },
+    {
+     "h": "9. Links to Other Sites",
+     "p": [
+      "Our website may contain links to other websites that are not operated by us. If you click on a third-party link, you will be directed to that site. We strongly advise you to review the privacy policy of every site you visit. We are not responsible for the content, privacy policies, or practices of any third-party sites or services."
+     ]
+    },
+    {
+     "h": "10. Children’s Privacy",
+     "p": [
+      "Our services are not intended for children under the age of 13. We do not knowingly collect personal data from children. If we become aware that we have collected personal information from a child without verified parental consent, we will delete that information as quickly as possible."
+     ]
+    },
+    {
+     "h": "11. Changes to This Policy",
+     "p": [
+      "We reserve the right to update or change this Privacy Policy at any time. Any changes will be posted on this page with the updated date. We encourage you to review this policy periodically."
+     ]
+    },
+    {
+     "h": "12. SMS and MMS Mobile Messaging Marketing Program",
+     "p": [
+      "We may use SMS/MMS messages to share important updates or marketing offers. We do not sell or rent your mobile information to third parties for any reason. Your information is used exclusively for delivering content you have opted in to receive."
+     ]
+    },
+    {
+     "h": "13. Contact Us",
+     "p": [
+      "If you have any questions about this Privacy Policy, please contact us at:",
+      "[freres.bg@viesigners.com](mailto:freres.bg@viesigners.com)"
+     ]
+    }
+   ]
+  }
+ ]
+}

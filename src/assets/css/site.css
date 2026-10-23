@@ -646,6 +646,8 @@ em.acc, .acc {
 .footer__base { margin-top: 3rem; padding-top: 1.4rem; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: .8rem 2rem; justify-content: space-between; font-family: var(--f-mono); font-size: .72rem; letter-spacing: .03em; text-transform: uppercase; color: var(--text-3); }
 .footer__base a { color: var(--text-3); }
 .footer__base a:hover { color: #fff; }
+.footer__base .linklike { color: var(--text-3); text-transform: inherit; letter-spacing: inherit; text-decoration: none; }
+.footer__base .linklike:hover { color: #fff; }
 @media (min-width: 900px) { .footer__grid { grid-template-columns: 1.6fr 1fr 1fr 1fr; } }
 
 /* ---------- reveal ---------- */
@@ -677,3 +679,16 @@ em.acc, .acc {
 @media (min-width: 640px) { .cookie { right: auto; left: 1.5rem; bottom: 1.5rem; } }
 .linklike { appearance: none; background: none; border: 0; padding: 0; margin: 0; font: inherit; color: inherit; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
 .linklike:hover { color: var(--accent-text, var(--pink)); }
+
+/* ---------- legal pages ---------- */
+.phero--compact { padding-bottom: clamp(2rem, 1.4rem + 2.4vw, 3.6rem); }
+.phero--compact .phero__title { max-width: 22ch; font-size: clamp(2.2rem, 1.2rem + 3.4vw, 4rem); }
+.phero--compact .lead { max-width: 60ch; }
+.legal { padding-top: clamp(2.6rem, 1.8rem + 3vw, 5rem); }
+.legal__body { max-width: 46rem; }
+.legal__block + .legal__block { margin-top: clamp(1.8rem, 1.3rem + 1.6vw, 2.8rem); }
+.legal__block h2 { font-size: clamp(1.3rem, 1.1rem + .8vw, 1.75rem); line-height: 1.2; margin-bottom: .8rem; }
+.legal__block p, .legal__block li { color: var(--text-2); line-height: 1.65; }
+.legal__block p + p { margin-top: .8rem; }
+.legal__block ul { margin: .9rem 0 0; padding-left: 1.2rem; display: grid; gap: .45rem; }
+.legal__block a { color: var(--accent-text, var(--pink-600)); text-decoration: underline; text-underline-offset: 3px; }

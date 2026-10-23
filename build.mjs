@@ -73,6 +73,8 @@ const ROUTES = {
   'jean-francois': { fr: 'a-propos/jean-francois-bg', en: 'about/jean-francois-bg' },
   realisations: { fr: 'realisations', en: 'work' },
   contact: { fr: 'contact', en: 'contact' },
+  privacy: { fr: 'politique-de-confidentialite', en: 'privacy-policy' },
+  terms: { fr: 'conditions-generales', en: 'terms-of-use' },
   merci: { fr: 'merci', en: 'thank-you' }, // shown after a form submission: noindex, never linked
   actualites: { fr: 'actualites', en: 'news' },
 };
@@ -95,7 +97,7 @@ function fmt(s, lang) {
   if (s == null) return '';
   let h = esc(s);
   h = h.replace(/\[([^\]]+)\]\(@([\w:-]+)\)/g, (_, t, k) => (isHidden(k) ? t : `<a href="${url(k, lang)}">${t}</a>`));
-  h = h.replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g, '<a href="$2" rel="noopener">$1</a>');
+  h = h.replace(/\[([^\]]+)\]\(((?:https?:|mailto:)[^)]+)\)/g, '<a href="$2" rel="noopener">$1</a>');
   h = h.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
   h = h.replace(/\*([^*]+)\*/g, '<em class="acc">$1</em>');
   if (lang === 'fr') h = h.replace(/ ([:;!?»])/g, ' $1').replace(/« /g, '« ');
@@ -138,7 +140,7 @@ R['page-hero'] = (s, c) => {
   const crumbs = c.crumbs.map((b, i) => i === c.crumbs.length - 1 ? `<li><span aria-current="page">${esc(b.name)}</span></li>` : `<li><a href="${b.url}">${esc(b.name)}</a></li>`).join('');
   const ctas = (s.ctas || []).filter((b) => !(b.to.startsWith('@') && isHidden(b.to.slice(1)))).map((b) => `<a class="pill ${b.style === 'ghost' ? 'pill--ghost' : b.style === 'violet' ? 'pill--violet' : ''}" href="${b.to.startsWith('@') ? url(b.to.slice(1), lang) : b.to}"${/^https?:/.test(b.to) ? ' target="_blank" rel="noopener"' : ''}>${esc(b.label)}</a>`).join('');
   const brief = s.brief ? `<aside class="brief rv" aria-labelledby="brief-t" style="--d:.15s"><h2 id="brief-t">${esc(T.brief)}</h2><ul>${s.brief.map((i) => `<li>${ico('check')}<span>${i.b ? `<strong>${fmt(i.b, lang)}</strong> ` : ''}${fmt(i.t, lang)}</span></li>`).join('')}</ul><p class="upd">${esc(T.updated)} <time datetime="${page.updated || BUILD_DATE}">${new Date(page.updated || BUILD_DATE).toLocaleDateString(lang === 'fr' ? 'fr-CA' : 'en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time></p></aside>` : '';
-  return `<section class="phero" aria-labelledby="h1"><div class="wrap">
+  return `<section class="phero${s.compact ? ' phero--compact' : ''}" aria-labelledby="h1"><div class="wrap">
   ${c.crumbs.length > 2 ? `<nav aria-label="${esc(T.breadcrumb)}"><ol class="crumbs">${crumbs}</ol></nav>` : ''}
   <div class="phero__grid">
     <div>
@@ -157,6 +159,10 @@ R['page-hero'] = (s, c) => {
 R.statement = (s, c) => `<section class="section statement${s.wide ? ' statement--wide' : ''}"><div class="wrap">
   <p${rv()}>${fmt(s.text, c.lang)}</p>
   ${s.prose ? `<div class="prose rv" style="--d:.1s">${s.prose.map((p) => `<p>${fmt(p, c.lang)}</p>`).join('')}</div>` : ''}
+</div></section>`;
+
+R.legal = (s, c) => `<section class="section legal"><div class="wrap">
+  <div class="legal__body">${s.blocks.map((k) => `<section class="legal__block"><h2>${esc(k.h)}</h2>${(k.p || []).map((t) => `<p>${fmt(t, c.lang)}</p>`).join('')}${k.ul ? `<ul>${k.ul.map((t) => `<li>${fmt(t, c.lang)}</li>`).join('')}</ul>` : ''}</section>`).join('')}</div>
 </div></section>`;
 
 R.bio = (s, c) => `<section class="section"><div class="wrap bio">
@@ -497,7 +503,7 @@ function cookieBanner({ lang, T }) {
   const k = T.cookie;
   return `<div class="cookie" role="dialog" aria-modal="false" aria-labelledby="ck-t" aria-describedby="ck-d" data-clarity="${esc(CFG.clarityId)}" hidden>
   <h2 id="ck-t">${esc(k.title)}</h2>
-  <p id="ck-d">${esc(k.text)} <a href="${CFG.legal[lang].privacy}" target="_blank" rel="noopener noreferrer">${esc(k.policy)}</a></p>
+  <p id="ck-d">${esc(k.text)} <a href="${url('privacy', lang)}" target="_blank" rel="noopener noreferrer">${esc(k.policy)}</a></p>
   <div class="cookie__actions"><button type="button" class="pill pill--sm" data-cookie="granted">${esc(k.accept)}</button><button type="button" class="pill pill--sm pill--ghost" data-cookie="denied">${esc(k.decline)}</button></div>
 </div>`;
 }
@@ -543,7 +549,7 @@ function footer(c) {
     <div><h2>${esc(T.nav.contact)}</h2><address><span>Québec, Canada</span><span>Vancouver, Canada</span><a href="tel:${CFG.phoneRaw}">${esc(CFG.phone)}</a></address>
       <div class="footer__social"><a href="${CFG.social.facebook}" target="_blank" rel="noopener noreferrer me" aria-label="Facebook ${esc(T.newTab)}">${ico('fb')}</a><a href="${CFG.social.linkedin}" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn ${esc(T.newTab)}">${ico('in')}</a></div></div>
   </div>
-  <div class="footer__base"><span>© ${new Date().getFullYear()} ${esc(T.footer.rights)}</span><span><a href="${CFG.legal[lang].privacy}" target="_blank" rel="noopener noreferrer" aria-label="${esc(T.footer.privacy)} ${esc(T.newTab)}">${esc(T.footer.privacy)}</a> · <a href="${CFG.legal[lang].terms}" target="_blank" rel="noopener noreferrer" aria-label="${esc(T.footer.terms)} ${esc(T.newTab)}">${esc(T.footer.terms)}</a>${CFG.clarityId ? ` · <button type="button" class="linklike" data-cookie-open>${esc(T.footer.cookies)}</button>` : ''}</span></div>
+  <div class="footer__base"><span>© ${new Date().getFullYear()} ${esc(T.footer.rights)}</span><span><a href="${url('privacy', lang)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(T.footer.privacy)} ${esc(T.newTab)}">${esc(T.footer.privacy)}</a> · <a href="${url('terms', lang)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(T.footer.terms)} ${esc(T.newTab)}">${esc(T.footer.terms)}</a>${CFG.clarityId ? ` · <button type="button" class="linklike" data-cookie-open>${esc(T.footer.cookies)}</button>` : ''}</span></div>
 </div></footer>`;
 }
 
@@ -577,6 +583,7 @@ function toMd(page, c) {
     switch (s.type) {
       case 'hero-home': L.push(t(s.h1), '', t(s.lead), ''); break;
       case 'page-hero': L.push(t(s.lead), '', s.brief ? `## ${T.brief}` : '', ...(s.brief || []).map((b) => `- ${b.b ? t(b.b) + ' ' : ''}${t(b.t)}`), ''); break;
+      case 'legal': L.push(...s.blocks.flatMap((k) => [`## ${t(k.h)}`, '', ...(k.p || []).flatMap((p) => [t(p), '']), ...(k.ul || []).map((i) => `- ${t(i)}`), ''])); break;
       case 'bio': L.push(`## ${t(s.text)}`, '', ...(s.prose || []).flatMap((p) => [t(p), '']), ...(s.checks || []).map((k) => `- ${t(k)}`), '', `${s.names} — ${s.caption}`, ''); break;
       case 'statement': L.push(t(s.text), '', ...(s.prose || []).flatMap((p) => [t(p), '']), ''); break;
       case 'friction': L.push(`## ${t(s.h2)}`, '', t(s.lead), '', ...s.pains.map((p) => `- ${t(p)}`), '', t(s.reveal.h3), '', ...s.reveal.p.flatMap((p) => [t(p), '']), t(s.reveal.cost), ''); break;
@@ -610,7 +617,7 @@ function toMd(page, c) {
 const THEME = {
   'hero-home': 'dark', 'page-hero': 'dark', 'cta-final': 'dark',
   friction: 'light', founders: 'dark', services: 'light', stats: 'dark', work: 'light', fit: 'dark', slot: 'light', testimonials: 'light', faq: 'light',
-  statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', related: 'light', bio: 'light', people: 'dark', facts: 'light',
+  statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', related: 'light', bio: 'light', legal: 'light', people: 'dark', facts: 'light',
   'posts-list': 'light', article: 'light', contact: 'light', 'rich-text': 'light',
 };
 const ASSET_HASH = {};

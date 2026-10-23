@@ -1,0 +1,103 @@
+{
+ "meta": {
+  "title": "Terms of Use | Viesigners",
+  "description": "The terms that apply when you use the Viesigners website and services: permitted use, intellectual property, payments, refunds and governing law.",
+  "h1": "Terms of use"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "compact": true,
+   "tag": "Legal",
+   "h1": "Terms of use",
+   "lead": "Welcome to the BG Brothers and Viesigners, accessible via [viesigners.com](https://viesigners.com) (collectively referred to as the “Site”). By accessing this Site or using our services, you agree to be bound by these Terms of Use (“Terms”). Please read them carefully.",
+   "byline": "Last updated: April 10, 2025",
+   "ctas": []
+  },
+  {
+   "type": "legal",
+   "blocks": [
+    {
+     "h": "1. Acceptance of Terms",
+     "p": [
+      "By accessing our sites or purchasing any of our products or services, you confirm that you have read, understood, and agreed to these terms. If you do not agree with any part of these terms, please do not use our services."
+     ]
+    },
+    {
+     "h": "2. Permitted Use",
+     "p": [
+      "You agree to use this Site only for lawful purposes and in accordance with applicable laws. You also agree not to interfere with or disrupt the proper functioning of the Site.",
+      "It is strictly prohibited to:"
+     ],
+     "ul": [
+      "Use our content without permission;",
+      "Introduce any virus or malicious code;",
+      "Attempt to breach or disrupt the Site’s security."
+     ]
+    },
+    {
+     "h": "3. Content and Intellectual Property",
+     "p": [
+      "All content on this Site – including text, images, videos, logos, trademarks, concepts, methods, tools, and resources – is the exclusive property of UX for the Planet or used with permission. You may not copy, reproduce, distribute, modify, or exploit any part of this content without our prior written consent."
+     ]
+    },
+    {
+     "h": "4. Products, Services, and Payments",
+     "p": [
+      "Our sales pages describe our services, courses, and coaching offers. Prices are displayed in local currency or USD, with or without taxes depending on the context.",
+      "Payment is due at the time of purchase and may be processed through secure platforms such as Stripe or PayPal. Some products may include specific terms (guarantees, usage rights, refund policies) indicated on the respective sales page."
+     ]
+    },
+    {
+     "h": "5. Refund Policy",
+     "p": [
+      "Unless otherwise stated on the sales page, purchases of digital products, customized services, or consultations are non-refundable. If you experience any issues or dissatisfaction, please contact us at [freres.bg@viesigners.com](mailto:freres.bg@viesigners.com) – we’ll do our best to help."
+     ]
+    },
+    {
+     "h": "6. Changes to Services or Site",
+     "p": [
+      "We reserve the right to modify, suspend, or discontinue any part of the Site or its services at any time, with or without notice. We are not liable to you or any third party for any such changes, price adjustments, or service interruptions."
+     ]
+    },
+    {
+     "h": "7. Limitation of Liability",
+     "p": [
+      "We strive to provide reliable, secure, and high-quality content. However, we do not guarantee the Site will be error-free, bug-free, or always available, nor do we promise specific outcomes from using our services. Under no circumstances shall UX for the Planet, its founders, employees, or partners be liable for any direct or indirect damages resulting from the use or inability to use our services or content."
+     ]
+    },
+    {
+     "h": "8. User Accounts and Security",
+     "p": [
+      "Some parts of the Site or services may require creating a user account. You are responsible for maintaining the confidentiality of your credentials and for any activity carried out using your account. If you suspect unauthorized use, please notify us immediately."
+     ]
+    },
+    {
+     "h": "9. External Links",
+     "p": [
+      "Our site may contain links to third-party websites. These links are provided for your convenience. We have no control over external sites and are not responsible for their content, privacy practices, or reliability."
+     ]
+    },
+    {
+     "h": "10. Governing Law",
+     "p": [
+      "These terms are governed by the laws of Québec, Canada. Any disputes related to the use of our services shall be submitted to the exclusive jurisdiction of the competent courts of the province of Québec."
+     ]
+    },
+    {
+     "h": "11. Changes to These Terms",
+     "p": [
+      "We may update these Terms of Use at any time. Updates will be posted on this page along with the updated date. By continuing to use our site after any changes are posted, you accept the new terms."
+     ]
+    },
+    {
+     "h": "12. Contact",
+     "p": [
+      "If you have any questions about these Terms of Use, please reach out to us at:",
+      "[freres.bg@viesigners.com](mailto:freres.bg@viesigners.com)"
+     ]
+    }
+   ]
+  }
+ ]
+}
