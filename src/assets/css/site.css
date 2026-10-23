@@ -434,10 +434,7 @@ em.acc, .acc {
 .cs__steps li::before { content: counter(cs, decimal-leading-zero); position: absolute; left: 0; top: .1rem; font-family: var(--f-mono); font-size: .8rem; color: var(--pink); }
 .cs__steps b { font-family: var(--f-display); font-weight: 400; font-size: 1.15rem; letter-spacing: -0.015em; }
 .cs__steps span { color: var(--text-2); line-height: 1.55; }
-.cs__quote { margin: clamp(2.6rem, 1.5rem + 4vw, 5rem) 0 0; padding: clamp(1.6rem, 1rem + 2vw, 2.6rem); border-radius: var(--r-lg); background: var(--card); max-width: 62rem; }
-.cs__quote::before { content: "\201C"; display: block; height: .75em; overflow: visible; font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(5rem, 3.5rem + 5vw, 8rem); line-height: 1.05; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: .2rem; padding-top: .08em; }
-.cs__quote p { font-family: var(--f-display); font-weight: 300; font-size: clamp(1.2rem, 1rem + 1vw, 1.8rem); line-height: 1.35; letter-spacing: -0.02em; }
-.cs__quote figcaption { margin-top: 1.2rem; color: var(--text-2); font-family: var(--f-mono); font-size: .78rem; letter-spacing: .03em; text-transform: uppercase; }
+.tcard.cs__quote { margin: clamp(2.6rem, 1.5rem + 4vw, 5rem) 0 0; max-width: 46rem; }
 .cs__note { margin-top: 1.6rem; color: var(--text-2); max-width: 62ch; }
 .cs__cta { margin-top: 1.8rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.4rem; }
 .cs__cta span { color: var(--text-2); font-size: .95rem; }
@@ -457,7 +454,7 @@ em.acc, .acc {
 .related { display: grid; gap: clamp(.8rem, .5rem + 1vw, 1.25rem); margin-top: clamp(1.8rem, 1rem + 2vw, 3rem); }
 .related .card h3 { font-size: clamp(1.35rem, 1.1rem + .9vw, 1.8rem); }
 @media (min-width: 900px) { .related { grid-template-columns: repeat(3, minmax(0, 1fr)); } .related--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } .related--1 { grid-template-columns: minmax(0, 1fr); } }
-.byline { margin-top: 1.4rem; color: var(--text-2); font-family: var(--f-mono); font-size: .78rem; letter-spacing: .03em; text-transform: uppercase; }
+.byline { margin-top: 1.4rem; margin-bottom: 2rem; color: var(--text-2); font-family: var(--f-mono); font-size: .78rem; letter-spacing: .03em; text-transform: uppercase; }
 
 /* ---------- FAQ ---------- */
 .faq { max-width: 62rem; margin-left: auto; width: 100%; }
@@ -479,6 +476,23 @@ em.acc, .acc {
 /* ---------- slot ---------- */
 .slot { border: 1.5px dashed var(--line-2); border-radius: var(--r-lg); padding: clamp(2rem, 1rem + 4vw, 4.5rem); text-align: center; }
 .slot h3 { font-family: var(--f-display); font-weight: 300; font-size: clamp(1.8rem, 1.2rem + 2.2vw, 3.2rem); letter-spacing: -0.028em; line-height: 1.1; margin-bottom: 1.6rem; }
+
+@media (min-width: 760px) { .work--even { grid-template-columns: repeat(2, minmax(0, 1fr)); } .work--even .work__item { grid-column: auto !important; grid-row: auto !important; } .work--even .work__item img { aspect-ratio: 4 / 3 !important; } }
+
+.work--even { row-gap: clamp(2.8rem, 2rem + 3vw, 4.5rem); }
+.work--even .work__item { background: transparent; border-radius: 0; overflow: visible; }
+.work--even .work__item img { border-radius: var(--r-lg); height: auto; }
+.work--even .work__item figcaption { position: static; inset: auto; padding: 1.3rem .2rem 0; background: none; color: var(--text); }
+.work--even .work__item figcaption b { font-size: clamp(1.15rem, 1rem + .6vw, 1.45rem); }
+.work--even .work__item figcaption span { display: block; margin-top: .45rem; color: var(--accent-text, var(--pink-600)); }
+.work--even .work__item figcaption p { margin-top: .7rem; color: var(--text-2); font-size: .98rem; line-height: 1.55; max-width: 52ch; }
+@media (min-width: 760px) { .work--even .work__item:last-child:nth-child(odd) { grid-column: 1 / -1 !important; justify-self: center; width: calc(50% - .6rem); } }
+.bio { display: grid; gap: clamp(2rem, 1rem + 3vw, 4rem); align-items: center; }
+.bio__text h2 { font-size: clamp(1.9rem, 1rem + 2.8vw, 3.2rem); line-height: 1.08; max-width: 20ch; }
+.bio__text .prose { margin-top: 1.8rem; }
+.bio__photo { margin: 0; max-width: 30rem; border-radius: var(--r-lg); overflow: hidden; background: var(--card); }
+.bio__photo img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 40%; }
+@media (min-width: 960px) { .bio { grid-template-columns: minmax(0, 7fr) minmax(0, 4.4fr); } .bio__photo { max-width: none; } }
 
 /* ---------- testimonials (masonry columns) ---------- */
 .tgrid { column-count: 1; column-gap: clamp(.8rem, .5rem + 1vw, 1.25rem); }

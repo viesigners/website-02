@@ -31,7 +31,7 @@
    "ctas": [
     {
      "label": "Réserver un bilan de 15 minutes",
-     "to": "@contact"
+     "to": "https://cal.com/viesigners/user-journey-teardown-call"
     }
    ],
    "byline": "Par Jean-François BG (Toptal Top 3 %) · Publié en octobre 2026"
@@ -79,17 +79,62 @@
     ]
    },
    "quote": {
+    "title": "Je recommande vivement leur agence",
     "text": "Leur regard et leur expérience de ce qui fait une excellente UX/UI, leur façon de tester en A/B chaque aspect de notre landing page et d'affiner notre tunnel de génération de leads ont grandement contribué au succès que nous connaissons aujourd'hui. Je recommande leur agence!",
-    "by": "PDG, SaaS B2B en IA (nom confidentiel)"
+    "name": "PDG, SaaS B2B en IA",
+    "role": "Nom confidentiel"
    },
    "note": "100 % de la refonte UX/UI et de la stratégie CRO a été exécuté directement par le cofondateur Jean-François (Toptal Top 3 %), sans déléguer à des juniors.",
    "cta": "Réserver un bilan de 15 minutes",
    "ctaNote": "Sans pression de vente : des pistes concrètes sur votre parcours usager.",
-   "theme": "light"
+   "theme": "light",
+   "ctaHref": "https://cal.com/viesigners/user-journey-teardown-call"
+  },
+  {
+   "type": "work",
+   "even": true,
+   "h2": "D'autres *résultats SaaS* marquants",
+   "items": [
+    {
+     "img": "assassins-creed.jpg",
+     "alt": "UX du Quest Creator, la plateforme de contenu créé par les joueurs conçue pour Assassin's Creed Odyssey",
+     "title": "Assassin's Creed Odyssey : plateforme UGC",
+     "result": "UX du Quest Creator · 10 M+ d'usagers",
+     "desc": "Direction de l'UX du Quest Creator pour transformer des millions d'usagers passifs en créateurs engagés, sur une base de plus de 10 M d'usagers."
+    },
+    {
+     "img": "musee-civilisation.jpg",
+     "alt": "Plateforme SaaS « Collections » du Musée de la civilisation : plus de 54 000 archives transformées en application web consultable, finaliste aux OCTAS",
+     "title": "« Collections » : Musée de la civilisation",
+     "result": "54 000+ archives · finaliste aux OCTAS",
+     "desc": "Conseil UX qui a transformé plus de 54 000 archives du musée en une application web fluide et consultable, et valu une nomination comme finaliste aux OCTAS."
+    },
+    {
+     "img": "spin-master.jpg",
+     "alt": "Application Builder/Controller Hub de Meccano pour Spin Master : écran de contrôle et instructions de montage téléchargeables sur deux téléphones",
+     "title": "Application Builder/Controller Hub de Meccano",
+     "result": "500 K+ téléchargements",
+     "desc": "Conception de l'architecture de l'information et de l'UX pour aplanir la courbe d'apprentissage, rendre la navigation intuitive et favoriser une adoption rapide : plus de 500 K téléchargements."
+    },
+    {
+     "img": "pharmy.png",
+     "alt": "Optimisation de la plateforme de recherche d'études cliniques Pharmy : augmentation des conversions de 48 %",
+     "title": "Pharmy : recherche d'études cliniques",
+     "result": "+48 % de conversions",
+     "desc": "Optimisation de la plateforme de recherche d'études cliniques, qui a fait grimper les conversions de 48 %."
+    },
+    {
+     "img": "trouve-un-stage.jpg",
+     "alt": "Lancement de la plateforme SaaS « Trouve un stage », gagnant du prix Osentreprendre",
+     "title": "« Trouve un stage »",
+     "result": "Lancement SaaS · gagnant Osentreprendre",
+     "desc": "Lancement de la plateforme SaaS « Trouve un stage », couronnée du prix Osentreprendre."
+    }
+   ]
   },
   {
    "type": "testimonials",
-   "h2": "D'autres *résultats SaaS* marquants",
+   "h2": "Ce que *nos clients* en disent",
    "slot": {
     "h3": "Insérez votre histoire à succès ici!",
     "cta": "Contactez-nous"
@@ -151,12 +196,15 @@
    "theme": "dark"
   },
   {
-   "type": "statement",
+   "type": "bio",
    "text": "Les frères jumeaux derrière Viesigners : Charles-Erick et Jean-François BG (Toptal Top 3 %).",
    "prose": [
     "Avant de nous concentrer sur le SaaS, nous avons passé 16 ans à concevoir des expériences web à haute conversion pour des marques comme Salesforce, Dell et Disney.",
     "Aujourd'hui, nous apportons cette rigueur UX de calibre entreprise aux startups SaaS B2B, sans la lourdeur des grandes agences. Nous ne déléguons pas votre dossier : vous obtenez une exécution 100 % senior, directement par nous, pour chaque analyse de tunnel et chaque optimisation."
-   ]
+   ],
+   "alt": "Charles-Erick et Jean-François BG, cofondateurs de Viesigners, souriants devant les fenêtres de leur bureau",
+   "img": "charles-erick-jean-francois-bg-viesigners-founders.jpg",
+   "imgName": "Charles-Erick et Jean-François BG, cofondateurs de Viesigners"
   },
   {
    "type": "faq",
@@ -177,7 +225,8 @@
    "type": "cta-final",
    "h2": "Repérons les fuites de votre *tunnel et de votre intégration*",
    "p": "Si votre produit a un trafic stable mais que la conversion ou la rétention stagne, passons votre parcours en revue ensemble.",
-   "cta": "Réserver un bilan de 15 minutes"
+   "cta": "Réserver un bilan de 15 minutes",
+   "href": "https://cal.com/viesigners/user-journey-teardown-call"
   }
  ],
  "faq": [
@@ -196,10 +245,12 @@
   {
    "q": "Pouvez-vous faire la même chose pour mon SaaS?",
    "a": [
-    "Les résultats dépendent de chaque produit, mais la méthode s'applique. Nous commençons par un bilan du parcours usager pour repérer les fuites dans votre tunnel, votre intégration et vos pages clés. [Réserver un bilan de 15 minutes](@contact)."
+    "Les résultats dépendent de chaque produit, mais la méthode s'applique. Nous commençons par un bilan du parcours usager pour repérer les fuites dans votre tunnel, votre intégration et vos pages clés. [Réserver un bilan de 15 minutes](https://cal.com/viesigners/user-journey-teardown-call)."
    ]
   }
  ],
  "article": true,
- "published": "2026-10-23"
+ "published": "2026-10-23",
+ "ogImage": "og-case-study-fr.jpg",
+ "ogAlt": "Étude de cas : un SaaS B2B en IA a augmenté son MRR de 31 % en 4 jours et réduit son attrition de 24 % en 90 jours, par Viesigners"
 }

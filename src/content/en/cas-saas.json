@@ -31,7 +31,7 @@
    "ctas": [
     {
      "label": "Book a 15-minute teardown",
-     "to": "@contact"
+     "to": "https://cal.com/viesigners/user-journey-teardown-call"
     }
    ],
    "byline": "By Jean-François BG (Toptal Top 3%) · Published October 2026"
@@ -79,17 +79,62 @@
     ]
    },
    "quote": {
+    "title": "Highly recommend their agency",
     "text": "Their unique insight and experience into what makes great UX/UI, how to A/B test all aspects of our landing page, fine-tuning our lead gen funnel, have all contributed greatly to the success we are enjoying today. I highly recommend their agency!",
-    "by": "CEO, B2B AI SaaS (name under NDA)"
+    "name": "CEO, B2B AI SaaS",
+    "role": "Name under NDA"
    },
    "note": "100% of the UX/UI redesign and CRO strategy was executed directly by co-founder Jean-François (Toptal Top 3%), with no delegation to junior staff.",
    "cta": "Book a 15-minute teardown",
    "ctaNote": "No sales pitch: just actionable feedback on your user journey.",
-   "theme": "light"
+   "theme": "light",
+   "ctaHref": "https://cal.com/viesigners/user-journey-teardown-call"
+  },
+  {
+   "type": "work",
+   "even": true,
+   "h2": "More great *SaaS results*",
+   "items": [
+    {
+     "img": "assassins-creed.jpg",
+     "alt": "UX of the Quest Creator UGC platform designed for Assassin's Creed Odyssey",
+     "title": "Assassin's Creed Odyssey: UGC platform",
+     "result": "Quest Creator UX · 10M+ users",
+     "desc": "Led the UX of the Quest Creator to transform millions of passive users into engaged creators across a 10M+ user base."
+    },
+    {
+     "img": "musee-civilisation.jpg",
+     "alt": "\"Collections\" SaaS platform for the Musée de la civilisation: 54,000+ museum archives turned into a searchable web app, OCTAS finalist",
+     "title": "\"Collections\": Musée de la civilisation",
+     "result": "54,000+ archives · OCTAS finalist",
+     "desc": "UX consulting that turned 54,000+ museum archives into a seamless, searchable web app, earning an OCTAS finalist nomination."
+    },
+    {
+     "img": "spin-master.jpg",
+     "alt": "Meccano's Builder/Controller Hub app for Spin Master: controller screen and downloadable building instructions on two phones",
+     "title": "Meccano's Builder/Controller Hub App",
+     "result": "500K+ downloads",
+     "desc": "Engineered the information architecture and UX to flatten the learning curve, making navigation intuitive and driving rapid adoption with 500K+ downloads."
+    },
+    {
+     "img": "pharmy.png",
+     "alt": "Optimization of the clinical trial search platform Pharmy: 48% increase in conversions",
+     "title": "Pharmy: clinical trial search platform",
+     "result": "+48% conversions",
+     "desc": "Optimization of the clinical trial search platform, which increased conversions by 48%."
+    },
+    {
+     "img": "trouve-un-stage.jpg",
+     "alt": "Launch of the SaaS platform \"Trouve un stage\", Osentreprendre prize winner",
+     "title": "\"Trouve un stage\"",
+     "result": "SaaS launch · Osentreprendre winner",
+     "desc": "Launch of the SaaS platform \"Trouve un stage\", recognized with the Osentreprendre prize."
+    }
+   ]
   },
   {
    "type": "testimonials",
-   "h2": "More great *SaaS results*",
+   "h2": "What *clients* say",
    "slot": {
     "h3": "Insert your success story here!",
     "cta": "Contact us"
@@ -146,12 +191,15 @@
    "theme": "dark"
   },
   {
-   "type": "statement",
+   "type": "bio",
    "text": "The twin brothers behind Viesigners: Charles-Erick & Jean-François BG (Toptal Top 3%).",
    "prose": [
     "Before focusing on SaaS, we spent 16 years engineering high-converting web experiences for brands like Salesforce, Dell and Disney.",
     "Today we bring that enterprise-grade UX rigor to B2B SaaS startups, without the slow agency bureaucracy. We don't delegate your account: you get 100% senior execution from us directly on every funnel teardown and optimization."
-   ]
+   ],
+   "alt": "Charles-Erick and Jean-François BG, co-founders of Viesigners, smiling in front of their office windows",
+   "img": "charles-erick-jean-francois-bg-viesigners-founders.jpg",
+   "imgName": "Charles-Erick and Jean-François BG, co-founders of Viesigners"
   },
   {
    "type": "faq",
@@ -172,7 +220,8 @@
    "type": "cta-final",
    "h2": "Want to spot the leaks in your *funnel and onboarding?*",
    "p": "If your product has steady traffic but conversion or retention is lagging, let's review your flow together.",
-   "cta": "Book a 15-minute teardown"
+   "cta": "Book a 15-minute teardown",
+   "href": "https://cal.com/viesigners/user-journey-teardown-call"
   }
  ],
  "faq": [
@@ -191,10 +240,12 @@
   {
    "q": "Can you do the same for my SaaS?",
    "a": [
-    "Results depend on each product, but the method applies. We start with a user-journey teardown to spot the leaks in your funnel, onboarding and key feature pages. [Book a 15-minute teardown](@contact)."
+    "Results depend on each product, but the method applies. We start with a user-journey teardown to spot the leaks in your funnel, onboarding and key feature pages. [Book a 15-minute teardown](https://cal.com/viesigners/user-journey-teardown-call)."
    ]
   }
  ],
  "article": true,
- "published": "2026-10-23"
+ "published": "2026-10-23",
+ "ogImage": "og-case-study-en.jpg",
+ "ogAlt": "Case study: a B2B AI SaaS lifted MRR by 31% in 4 days and cut churn by 24% in 90 days, by Viesigners"
 }

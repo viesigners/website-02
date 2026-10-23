@@ -136,7 +136,7 @@ R['hero-home'] = (s, c) => {
 R['page-hero'] = (s, c) => {
   const { lang, T, page } = c;
   const crumbs = c.crumbs.map((b, i) => i === c.crumbs.length - 1 ? `<li><span aria-current="page">${esc(b.name)}</span></li>` : `<li><a href="${b.url}">${esc(b.name)}</a></li>`).join('');
-  const ctas = (s.ctas || []).filter((b) => !(b.to.startsWith('@') && isHidden(b.to.slice(1)))).map((b) => `<a class="pill ${b.style === 'ghost' ? 'pill--ghost' : b.style === 'violet' ? 'pill--violet' : ''}" href="${b.to.startsWith('@') ? url(b.to.slice(1), lang) : b.to}">${esc(b.label)}</a>`).join('');
+  const ctas = (s.ctas || []).filter((b) => !(b.to.startsWith('@') && isHidden(b.to.slice(1)))).map((b) => `<a class="pill ${b.style === 'ghost' ? 'pill--ghost' : b.style === 'violet' ? 'pill--violet' : ''}" href="${b.to.startsWith('@') ? url(b.to.slice(1), lang) : b.to}"${/^https?:/.test(b.to) ? ' target="_blank" rel="noopener"' : ''}>${esc(b.label)}</a>`).join('');
   const brief = s.brief ? `<aside class="brief rv" aria-labelledby="brief-t" style="--d:.15s"><h2 id="brief-t">${esc(T.brief)}</h2><ul>${s.brief.map((i) => `<li>${ico('check')}<span>${i.b ? `<strong>${fmt(i.b, lang)}</strong> ` : ''}${fmt(i.t, lang)}</span></li>`).join('')}</ul><p class="upd">${esc(T.updated)} <time datetime="${page.updated || BUILD_DATE}">${new Date(page.updated || BUILD_DATE).toLocaleDateString(lang === 'fr' ? 'fr-CA' : 'en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time></p></aside>` : '';
   return `<section class="phero" aria-labelledby="h1"><div class="wrap">
   ${c.crumbs.length > 2 ? `<nav aria-label="${esc(T.breadcrumb)}"><ol class="crumbs">${crumbs}</ol></nav>` : ''}
@@ -157,6 +157,11 @@ R['page-hero'] = (s, c) => {
 R.statement = (s, c) => `<section class="section statement${s.wide ? ' statement--wide' : ''}"><div class="wrap">
   <p${rv()}>${fmt(s.text, c.lang)}</p>
   ${s.prose ? `<div class="prose rv" style="--d:.1s">${s.prose.map((p) => `<p>${fmt(p, c.lang)}</p>`).join('')}</div>` : ''}
+</div></section>`;
+
+R.bio = (s, c) => `<section class="section"><div class="wrap bio">
+  <div class="bio__text"><h2 class="display rv">${fmt(s.text, c.lang)}</h2>${s.prose ? `<div class="prose rv" style="--d:.1s">${s.prose.map((p) => `<p>${fmt(p, c.lang)}</p>`).join('')}</div>` : ''}</div>
+  <figure class="bio__photo rv" style="--d:.15s">${img(s.img, s.alt, { sizes: '(min-width:960px) 40vw, 100vw' })}</figure>
 </div></section>`;
 
 R.friction = (s, c) => {
@@ -228,7 +233,7 @@ R.stats = (s, c) => `<section class="section"><div class="wrap">
 
 R.work = (s, c) => `<section class="section"${s.id ? ` id="${s.id}"` : ''}><div class="wrap">
   ${secHead(s, c, 'work')}
-  <div class="work">${s.items.map((i, k) => `<figure class="work__item rv" style="--d:${(k % 3) * .07}s">${img('work/' + i.img, i.alt, { sizes: k === 0 ? '(min-width:760px) 66vw, 100vw' : '(min-width:760px) 33vw, 100vw' })}<figcaption><b>${esc(i.title)}</b>${i.result ? `<span>${esc(i.result)}</span>` : ''}</figcaption></figure>`).join('')}</div>
+  <div class="work${s.even ? ' work--even' : ''}">${s.items.map((i, k) => `<figure class="work__item rv" style="--d:${(k % 3) * .07}s">${img('work/' + i.img, i.alt, { sizes: k === 0 ? '(min-width:760px) 66vw, 100vw' : '(min-width:760px) 33vw, 100vw' })}<figcaption><b>${esc(i.title)}</b>${i.result ? `<span>${esc(i.result)}</span>` : ''}${i.desc ? `<p>${fmt(i.desc, c.lang)}</p>` : ''}</figcaption></figure>`).join('')}</div>
   ${s.awards ? `<div class="awards rv"><span class="press__label">${esc(s.awards.label)}</span>${s.awards.items.map((p) => img(p.file, p.alt)).join('')}</div>` : ''}
   ${s.cta && !isHidden(s.cta.to) ? `<p style="margin-top:2.5rem"><a class="pill pill--violet" href="${url(s.cta.to, c.lang)}">${esc(s.cta.label)}</a></p>` : ''}
 </div></section>`;
@@ -311,9 +316,9 @@ R.casestudy = (s, c) => `<section class="section"><div class="wrap">
     <div class="cs__col rv"><h3>${esc(s.problem.h)}</h3><p>${fmt(s.problem.lead, c.lang)}</p><ul>${s.problem.items.map((i) => `<li>${ico('x')}<span>${fmt(i, c.lang)}</span></li>`).join('')}</ul></div>
     <div class="cs__col rv" style="--d:.1s"><h3>${esc(s.did.h)}</h3><ol class="cs__steps">${s.did.steps.map((i) => `<li><b>${fmt(i.h, c.lang)}</b><span>${fmt(i.p, c.lang)}</span></li>`).join('')}</ol></div>
   </div>
-  <figure class="cs__quote rv"><blockquote><p>${fmt(s.quote.text, c.lang)}</p></blockquote><figcaption>${esc(s.quote.by)}</figcaption></figure>
+  <figure class="tcard cs__quote rv"><blockquote>${s.quote.title ? `<h3 class="tq">${esc(s.quote.title)}</h3>` : ''}<p>${fmt(s.quote.text, c.lang)}</p></blockquote><figcaption><span class="who"><b>${esc(s.quote.name)}</b><span>${esc(s.quote.role)}</span></span></figcaption></figure>
   <p class="cs__note rv">${fmt(s.note, c.lang)}</p>
-  <p class="cs__cta rv"><a class="pill" href="${url('contact', c.lang)}">${esc(s.cta)}</a> <span>${esc(s.ctaNote)}</span></p>
+  <p class="cs__cta rv"><a class="pill" href="${s.ctaHref || url('contact', c.lang)}"${s.ctaHref ? ' target="_blank" rel="noopener"' : ''}>${esc(s.cta)}</a> <span>${esc(s.ctaNote)}</span></p>
 </div></section>`;
 
 R.casecard = (s, c) => `<section class="section section--tight"><div class="wrap">
@@ -342,7 +347,7 @@ R['cta-final'] = (s, c) => `<section class="section section--tight"><div class="
   <div class="cta-final rv">
     <h2 class="display">${fmt(s.h2, c.lang)}</h2>
     <p>${fmt(s.p, c.lang)}</p>
-    <div class="actions"><a class="pill" href="${url(s.to || 'contact', c.lang)}">${fmt(s.cta, c.lang)}</a>${s.secondary ? `<a class="pill pill--ghost" href="${s.secondary.href}">${esc(s.secondary.label)}</a>` : ''}</div>
+    <div class="actions"><a class="pill" href="${s.href || url(s.to || 'contact', c.lang)}"${s.href ? ' target="_blank" rel="noopener"' : ''}>${fmt(s.cta, c.lang)}</a>${s.secondary ? `<a class="pill pill--ghost" href="${s.secondary.href}">${esc(s.secondary.label)}</a>` : ''}</div>
   </div>
 </div></section>`;
 
@@ -463,6 +468,9 @@ ${hidden || NOINDEX ? '<meta name="robots" content="noindex, follow">' : '<meta 
 <meta property="og:locale" content="${lang === 'fr' ? 'fr_CA' : 'en_CA'}">
 <meta property="og:locale:alternate" content="${lang === 'fr' ? 'en_CA' : 'fr_CA'}">
 <meta property="og:image" content="${abs('/assets/img/' + (image || 'og-card.jpg'))}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="${esc(page.ogAlt || title)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(desc)}">
@@ -553,6 +561,7 @@ function toMd(page, c) {
     switch (s.type) {
       case 'hero-home': L.push(t(s.h1), '', t(s.lead), ''); break;
       case 'page-hero': L.push(t(s.lead), '', s.brief ? `## ${T.brief}` : '', ...(s.brief || []).map((b) => `- ${b.b ? t(b.b) + ' ' : ''}${t(b.t)}`), ''); break;
+      case 'bio': L.push(t(s.text), '', ...(s.prose || []).flatMap((p) => [t(p), '']), ''); break;
       case 'statement': L.push(t(s.text), '', ...(s.prose || []).flatMap((p) => [t(p), '']), ''); break;
       case 'friction': L.push(`## ${t(s.h2)}`, '', t(s.lead), '', ...s.pains.map((p) => `- ${t(p)}`), '', t(s.reveal.h3), '', ...s.reveal.p.flatMap((p) => [t(p), '']), t(s.reveal.cost), ''); break;
       case 'founders': L.push(`## ${t(s.h2)}`, '', ...s.text.flatMap((p) => [t(p), '']), ...s.checks.map((k) => `- ${t(k)}`), ''); break;
@@ -585,7 +594,7 @@ function toMd(page, c) {
 const THEME = {
   'hero-home': 'dark', 'page-hero': 'dark', 'cta-final': 'dark',
   friction: 'light', founders: 'dark', services: 'light', stats: 'dark', work: 'light', fit: 'dark', slot: 'light', testimonials: 'light', faq: 'light',
-  statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', related: 'light', people: 'dark', facts: 'light',
+  statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', related: 'light', bio: 'light', people: 'dark', facts: 'light',
   'posts-list': 'light', article: 'light', contact: 'light', 'rich-text': 'light',
 };
 const ASSET_HASH = {};
@@ -647,11 +656,17 @@ function buildPage({ lang, key, page, post }) {
     graph.push({ '@type': 'BlogPosting', '@id': canonical + '#article', headline: post.title, description: post.description, inLanguage: lang, datePublished: post.date, dateModified: post.modified || post.date, mainEntityOfPage: { '@id': pageId }, author: [{ '@id': abs('/#charles-erick') }, { '@id': abs('/#jean-francois') }], publisher: { '@id': abs('/#organization') }, image: abs('/assets/img/og-card.jpg'), keywords: post.keywords, wordCount: post.body.map((b) => b.h2 || b.h3 || b.p || (b.ul || []).join(' ')).join(' ').split(/\s+/).length });
   }
   if (page.article) graph.push({ '@type': 'Article', '@id': canonical + '#article', headline: plain(page.meta.h1), description: page.meta.description, inLanguage: lang, datePublished: page.published, dateModified: page.updated || BUILD_DATE, mainEntityOfPage: { '@id': pageId }, author: [{ '@id': abs('/#jean-francois') }], publisher: { '@id': abs('/#organization') }, image: abs('/assets/img/og-card.jpg'), about: ['UX/UI design', 'Conversion rate optimization (CRO)', 'B2B SaaS'], isPartOf: { '@id': pageId } });
+  const bio = page.sections.find((s) => s.type === 'bio');
+  if (bio) {
+    const [iw, ih] = (IMG_CACHE[bio.img] ||= imgSize(bio.img));
+    graph.push({ '@type': 'ImageObject', '@id': canonical + '#founders-photo', url: abs('/assets/img/' + bio.img), contentUrl: abs('/assets/img/' + bio.img), width: iw, height: ih, encodingFormat: 'image/jpeg', name: bio.imgName || bio.alt, caption: bio.alt, description: bio.alt, inLanguage: lang, about: [{ '@id': abs('/#charles-erick') }, { '@id': abs('/#jean-francois') }], copyrightHolder: { '@id': abs('/#organization') }, creditText: 'Viesigners' });
+    const art = graph.find((x) => x['@type'] === 'Article'); if (art) art.image = [abs('/assets/img/' + (page.ogImage || 'og-card.jpg')), { '@id': canonical + '#founders-photo' }];
+  }
   if (page.faq?.length) graph.push({ '@type': 'FAQPage', '@id': canonical + '#faq', inLanguage: lang, mainEntity: page.faq.map((f) => ({ '@type': 'Question', name: plain(f.q), acceptedAnswer: { '@type': 'Answer', text: f.a.map(plain).join(' ') } })) });
   if (key === 'realisations') graph.push({ '@type': 'ItemList', '@id': canonical + '#list', itemListElement: page.sections.filter((s) => s.type === 'work').flatMap((s) => s.items).map((i, n) => ({ '@type': 'ListItem', position: n + 1, item: { '@type': 'CreativeWork', name: i.title, description: i.result || i.alt, image: abs('/assets/img/work/' + i.img), creator: { '@id': abs('/#organization') } } })) });
 
   const jsonld = { '@context': 'https://schema.org', '@graph': graph };
-  const html = `${head({ lang, T, page, canonical, alternates, jsonld, type: key === 'post' || page.article ? 'article' : 'website', post, hidden: isHidden(key) || !!page.noindex })}
+  const html = `${head({ lang, T, page, canonical, alternates, jsonld, type: key === 'post' || page.article ? 'article' : 'website', image: page.ogImage, post, hidden: isHidden(key) || !!page.noindex })}
 <body class="${key === 'home' ? 'home' : ''}">
 ${SPRITE}
 <div class="page-bg" aria-hidden="true"></div>
