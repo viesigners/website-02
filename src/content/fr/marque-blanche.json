@@ -29,8 +29,8 @@
      "t": "des spécialistes seniors travaillent dans l'ombre, sous votre marque et selon vos standards."
     },
     {
-     "b": "Discrétion :",
-     "t": "vous restez le seul point de contact avec votre client."
+     "b": "Relation client :",
+     "t": "vous restez le fournisseur officiel de vos clients."
     }
    ],
    "ctas": [
@@ -106,7 +106,7 @@
     },
     {
      "h": "Livraison sous votre marque",
-     "p": "Nous nous présentons comme des consultants ou des pigistes engagés par votre entreprise, sans jamais prétendre être autre chose : le projet et le client demeurent les vôtres.",
+     "p": "Le projet et le client demeurent les vôtres.",
      "out": "Livrable : un travail prêt à présenter comme le vôtre."
     },
     {
@@ -119,7 +119,7 @@
   {
    "type": "fit",
    "theme": "light",
-   "h2": "Ce partenariat est-il *fait pour vous?*",
+   "h2": "Ce partenariat est-il *pour vous?*",
    "yes": {
     "h": "Il est fait pour vous si :",
     "items": [
@@ -175,19 +175,19 @@
   {
    "q": "Contactez-vous directement nos clients?",
    "a": [
-    "Seulement si vous le demandez. Par défaut, vous restez le seul contact; nous pouvons nous joindre à un appel comme membre de votre équipe quand c'est utile."
+    "Généralement, nous prenons les devants sur nos parties du projet, en vous gardant toujours en CC et dans la boucle. Mais cela dépend de votre préférence : si vous préférez rester le seul contact, nous suivons votre façon de faire."
    ]
   },
   {
    "q": "Quel type de travail pouvez-vous prendre en charge?",
    "a": [
-    "UX/UI et design de produit pour SaaS et applications, sites web, landing pages et tunnels de vente (CRO), SEO et GEO, rédaction, et conseil d'affaires."
+    "Voici quelques exemples : UX/UI et design de produit pour SaaS et applications, sites web, landing pages et tunnels de vente (CRO), SEO et GEO, rédaction et conseil d'affaires, et bien plus. [Contactez-nous](@contact) pour connaître l'éventail complet."
    ]
   },
   {
    "q": "Quand une agence devrait-elle vous appeler?",
    "a": [
-    "Quand vous avez plus de travail que de capacité, ou quand un client demande une expertise hors de vos compétences de base et que vous ne voulez ni refuser le mandat ni le livrer mal."
+    "Quand vous avez plus de travail que de capacité, ou quand un client demande une expertise hors de vos compétences de base et que vous ne voulez ni refuser le mandat ni le livrer mal. Idéalement, contactez-nous avant que le besoin émerge : un premier contact permet de s'assurer du fit et de s'aligner sur les méthodes de travail, pour être prêts quand vous aurez besoin de nous."
    ]
   },
   {
@@ -205,7 +205,7 @@
   {
    "q": "Comment est-ce facturé et à quelle vitesse pouvons-nous commencer?",
    "a": [
-    "Cela dépend de la portée. Nous cadrons le besoin par un court appel ou un courriel, puis nous envoyons une proposition claire avec livrables, échéancier et prix. Nos tarifs tiennent compte de la marge des agences : vous pouvez bâtir la vôtre par-dessus."
+    "Cela dépend de la portée. Nous cadrons le besoin par un court appel ou un courriel, puis nous envoyons une proposition claire avec livrables, échéancier et prix. Nos tarifs tiennent compte de la marge des agences : vous pouvez ajouter la vôtre par-dessus."
    ]
   }
  ]

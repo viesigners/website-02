@@ -29,8 +29,8 @@
      "t": "senior specialists work behind the scenes, under your brand and to your standards."
     },
     {
-     "b": "Discretion:",
-     "t": "you stay the single point of contact with your client."
+     "b": "Client relationship:",
+     "t": "you remain your clients' official provider."
     }
    ],
    "ctas": [
@@ -106,7 +106,7 @@
     },
     {
      "h": "Delivery under your brand",
-     "p": "We present ourselves as consultants or freelancers hired by your company, never as something we are not, so the project and the client stay yours.",
+     "p": "The project and the client stay yours.",
      "out": "Deliverable: work ready to present as yours."
     },
     {
@@ -175,19 +175,19 @@
   {
    "q": "Do you contact our clients directly?",
    "a": [
-    "Only if you ask. By default you remain the only contact; we can join a call as part of your team when it helps."
+    "Usually, we take the lead on our parts of the project, always keeping you in CC and in the loop. But it depends on your preference: if you'd rather remain the only contact, we follow your lead."
    ]
   },
   {
    "q": "What kind of work can you take on?",
    "a": [
-    "UX/UI and product design for SaaS and apps, websites, landing pages and funnels (CRO), SEO and GEO, copywriting, and business advisory."
+    "Here are a few examples: UX/UI and product design for SaaS and apps, websites, landing pages and funnels (CRO), SEO and GEO, copywriting and business advisory, and more. [Contact us](@contact) to learn about the full range."
    ]
   },
   {
    "q": "When should an agency call you?",
    "a": [
-    "When you have more work than capacity, or when a client asks for expertise outside your core skills and you do not want to turn the work down or deliver it badly."
+    "When you have more work than capacity, or when a client asks for expertise outside your core skills and you do not want to turn the work down or deliver it badly. Ideally, get in touch before the need arises: a first contact lets us check the fit and align on ways of working, so we are ready when you need us."
    ]
   },
   {
@@ -205,7 +205,7 @@
   {
    "q": "How is it priced and how fast can we start?",
    "a": [
-    "It depends on the scope. We scope the need through a short call or an email, then send a clear proposal with deliverables, timeline and price. Our pricing is set with agency margins in mind, so you can build yours on top."
+    "It depends on the scope. We scope the need through a short call or an email, then send a clear proposal with deliverables, timeline and price. Our pricing is set with agency margins in mind, so you can add yours on top."
    ]
   }
  ]
