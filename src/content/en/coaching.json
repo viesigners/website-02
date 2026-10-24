@@ -56,7 +56,7 @@
    "type": "deliverables",
    "id": "inclus",
    "h2": "What we *build* with you",
-   "lead": "Three pillars, from concept to first sale.",
+   "lead": "The pillars that take you from concept to first sale.",
    "items": [
     {
      "h": "Offer design and business models",
@@ -79,7 +79,7 @@
   {
    "type": "process",
    "h2": "From concept to *first sale*",
-   "lead": "Four steps, with a deliverable at the end of each.",
+   "lead": "A clear process, with a deliverable at the end of each step.",
    "steps": [
     {
      "h": "Eligibility",

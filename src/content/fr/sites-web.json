@@ -61,7 +61,7 @@
    "type": "deliverables",
    "id": "inclus",
    "h2": "Ce que votre site *inclut*",
-   "lead": "Quatre piliers, plus les fondations techniques qui permettent d'être trouvé et mesuré.",
+   "lead": "Les piliers d'un site qui performe, plus les fondations techniques qui permettent d'être trouvé et mesuré.",
    "items": [
     {
      "h": "Structure de site",
@@ -92,7 +92,7 @@
   {
    "type": "process",
    "h2": "Un processus *sans essais-erreurs*",
-   "lead": "Quatre étapes claires, avec un livrable à la fin de chacune.",
+   "lead": "Un processus clair, avec un livrable à la fin de chaque étape.",
    "steps": [
     {
      "h": "Diagnostic",

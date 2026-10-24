@@ -61,7 +61,7 @@
    "type": "deliverables",
    "id": "inclus",
    "h2": "What your site *includes*",
-   "lead": "Four pillars, plus the technical foundations that make you findable and measurable.",
+   "lead": "The pillars of a site that performs, plus the technical foundations that make you findable and measurable.",
    "items": [
     {
      "h": "Site structure",
@@ -92,7 +92,7 @@
   {
    "type": "process",
    "h2": "A process with *no trial and error*",
-   "lead": "Four clear steps, with a deliverable at the end of each.",
+   "lead": "A clear process, with a deliverable at the end of each step.",
    "steps": [
     {
      "h": "Diagnosis",

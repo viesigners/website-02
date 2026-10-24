@@ -50,7 +50,7 @@
   {
    "type": "statement",
    "wide": true,
-   "text": "Il y a désormais deux façons d'être trouvé : être *classé* ou être *cité.*",
+   "text": "Aujourd'hui, on peut être trouvé en étant *classé* ou en étant *cité.*",
    "prose": [
     "Vos clients posent de plus en plus leurs questions directement à des assistants IA, qui répondent en quelques lignes en citant quelques sources. Si votre contenu n'est pas clair, structuré et fiable, ces sources seront vos concurrents.",
     "Bonne nouvelle : le GEO s'appuie sur les mêmes fondations que le bon SEO — clarté, structure, expertise — auxquelles s'ajoutent quelques pratiques précises que nous appliquons pour vous."
@@ -89,7 +89,7 @@
   },
   {
    "type": "process",
-   "h2": "Une démarche en *quatre temps*",
+   "h2": "Une démarche *étape par étape*",
    "steps": [
     {
      "h": "Audit",
@@ -116,7 +116,7 @@
   {
    "type": "compare",
    "h2": "SEO classique ou *SEO + GEO?*",
-   "lead": "Les deux se complètent : le premier vous rend visible, le second vous rend citable.",
+   "lead": "Ils se complètent : le premier vous rend visible, le second vous rend citable.",
    "before": {
     "h": "SEO classique",
     "items": [

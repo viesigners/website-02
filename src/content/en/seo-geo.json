@@ -50,7 +50,7 @@
   {
    "type": "statement",
    "wide": true,
-   "text": "There are now two ways to be found: be *ranked* or be *cited.*",
+   "text": "These days, you can be found by being *ranked* or by being *cited.*",
    "prose": [
     "Your customers increasingly ask their questions directly to AI assistants, which answer in a few lines and cite a handful of sources. If your content isn't clear, structured and trustworthy, those sources will be your competitors.",
     "The good news: GEO builds on the same foundations as good SEO — clarity, structure, expertise — plus a few specific practices that we apply for you."
@@ -89,7 +89,7 @@
   },
   {
    "type": "process",
-   "h2": "A *four-step* approach",
+   "h2": "A *step-by-step* approach",
    "steps": [
     {
      "h": "Audit",
@@ -116,7 +116,7 @@
   {
    "type": "compare",
    "h2": "Classic SEO or *SEO + GEO?*",
-   "lead": "The two complement each other: the first makes you visible, the second makes you citable.",
+   "lead": "They complement each other: the first makes you visible, the second makes you citable.",
    "before": {
     "h": "Classic SEO",
     "items": [

@@ -56,7 +56,7 @@
    "type": "deliverables",
    "id": "inclus",
    "h2": "Ce que nous *bâtissons* avec vous",
-   "lead": "Trois piliers, du concept à la première vente.",
+   "lead": "Les piliers qui mènent du concept à la première vente.",
    "items": [
     {
      "h": "Design d'offres et modèles d'affaires",
@@ -79,7 +79,7 @@
   {
    "type": "process",
    "h2": "Du concept à la *première vente*",
-   "lead": "Quatre étapes, avec un livrable à la fin de chacune.",
+   "lead": "Un processus clair, avec un livrable à la fin de chaque étape.",
    "steps": [
     {
      "h": "Admissibilité",
