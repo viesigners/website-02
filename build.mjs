@@ -478,7 +478,7 @@ ${hidden || NOINDEX ? '<meta name="robots" content="noindex, follow">' : '<meta 
 <meta property="og:url" content="${canonical}">
 <meta property="og:locale" content="${lang === 'fr' ? 'fr_CA' : 'en_CA'}">
 <meta property="og:locale:alternate" content="${lang === 'fr' ? 'en_CA' : 'fr_CA'}">
-<meta property="og:image" content="${abs('/assets/img/' + (image || 'og-card.jpg'))}">
+<meta property="og:image" content="${abs('/assets/img/' + (image || `og-card-${lang}.jpg`))}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="${esc(page.ogAlt || title)}">
@@ -559,7 +559,7 @@ function orgNodes(lang, T) {
   return [
     {
       '@type': ['Organization', 'ProfessionalService'], '@id': o, name: 'Viesigners', alternateName: ['Les Viesigners', 'Les frères BG', 'The BG Twins'],
-      url: abs('/'), logo: { '@type': 'ImageObject', url: abs('/assets/img/favicon.png') }, image: abs('/assets/img/og-card.jpg'),
+      url: abs('/'), logo: { '@type': 'ImageObject', url: abs('/assets/img/favicon.png') }, image: abs(`/assets/img/og-card-${lang}.jpg`),
       description: T.orgDescription, telephone: CFG.phone, foundingDate: '2009',
       address: [{ '@type': 'PostalAddress', addressLocality: 'Québec', addressRegion: 'QC', addressCountry: 'CA' }, { '@type': 'PostalAddress', addressLocality: 'Vancouver', addressRegion: 'BC', addressCountry: 'CA' }],
       areaServed: [{ '@type': 'Country', name: 'Canada' }, { '@type': 'Place', name: 'Worldwide' }],
@@ -662,7 +662,7 @@ function buildPage({ lang, key, page, post }) {
     '@type': key === 'post' ? 'WebPage' : key === 'contact' ? 'ContactPage' : key === 'a-propos' ? 'AboutPage' : ['actualites', 'realisations'].includes(key) ? 'CollectionPage' : 'WebPage',
     '@id': pageId, url: canonical, name: page.meta.title, description: page.meta.description, inLanguage: lang, isPartOf: { '@id': abs('/#website') }, about: { '@id': abs('/#organization') },
     datePublished: page.published || CFG.published, dateModified: page.updated || BUILD_DATE, breadcrumb: { '@id': canonical + '#breadcrumb' },
-    primaryImageOfPage: { '@type': 'ImageObject', url: abs('/assets/img/' + (page.image || 'og-card.jpg')) },
+    primaryImageOfPage: { '@type': 'ImageObject', url: abs('/assets/img/' + (page.image || `og-card-${lang}.jpg`)) },
   };
   if (page.speakable !== false) webpage.speakable = { '@type': 'SpeakableSpecification', cssSelector: ['h1', '.lead', '.brief li'] };
   graph.push(webpage);
@@ -676,14 +676,14 @@ function buildPage({ lang, key, page, post }) {
   }
   if (key === 'charles-erick' || key === 'jean-francois') webpage.mainEntity = { '@id': abs('/#' + key) };
   if (key === 'post') {
-    graph.push({ '@type': 'BlogPosting', '@id': canonical + '#article', headline: post.title, description: post.description, inLanguage: lang, datePublished: post.date, dateModified: post.modified || post.date, mainEntityOfPage: { '@id': pageId }, author: [{ '@id': abs('/#charles-erick') }, { '@id': abs('/#jean-francois') }], publisher: { '@id': abs('/#organization') }, image: abs('/assets/img/og-card.jpg'), keywords: post.keywords, wordCount: post.body.map((b) => b.h2 || b.h3 || b.p || (b.ul || []).join(' ')).join(' ').split(/\s+/).length });
+    graph.push({ '@type': 'BlogPosting', '@id': canonical + '#article', headline: post.title, description: post.description, inLanguage: lang, datePublished: post.date, dateModified: post.modified || post.date, mainEntityOfPage: { '@id': pageId }, author: [{ '@id': abs('/#charles-erick') }, { '@id': abs('/#jean-francois') }], publisher: { '@id': abs('/#organization') }, image: abs(`/assets/img/og-card-${lang}.jpg`), keywords: post.keywords, wordCount: post.body.map((b) => b.h2 || b.h3 || b.p || (b.ul || []).join(' ')).join(' ').split(/\s+/).length });
   }
-  if (page.article) graph.push({ '@type': 'Article', '@id': canonical + '#article', headline: plain(page.meta.h1), description: page.meta.description, inLanguage: lang, datePublished: page.published, dateModified: page.updated || BUILD_DATE, mainEntityOfPage: { '@id': pageId }, author: [{ '@id': abs('/#jean-francois') }], publisher: { '@id': abs('/#organization') }, image: abs('/assets/img/og-card.jpg'), about: ['UX/UI design', 'Conversion rate optimization (CRO)', 'B2B SaaS'], isPartOf: { '@id': pageId } });
+  if (page.article) graph.push({ '@type': 'Article', '@id': canonical + '#article', headline: plain(page.meta.h1), description: page.meta.description, inLanguage: lang, datePublished: page.published, dateModified: page.updated || BUILD_DATE, mainEntityOfPage: { '@id': pageId }, author: [{ '@id': abs('/#jean-francois') }], publisher: { '@id': abs('/#organization') }, image: abs(`/assets/img/og-card-${lang}.jpg`), about: ['UX/UI design', 'Conversion rate optimization (CRO)', 'B2B SaaS'], isPartOf: { '@id': pageId } });
   const bio = page.sections.find((s) => s.type === 'bio');
   if (bio) {
     const [iw, ih] = (IMG_CACHE[bio.img] ||= imgSize(bio.img));
     graph.push({ '@type': 'ImageObject', '@id': canonical + '#founders-photo', url: abs('/assets/img/' + bio.img), contentUrl: abs('/assets/img/' + bio.img), width: iw, height: ih, encodingFormat: 'image/jpeg', name: bio.imgName || bio.alt, caption: bio.alt, description: bio.alt, inLanguage: lang, about: [{ '@id': abs('/#charles-erick') }, { '@id': abs('/#jean-francois') }], copyrightHolder: { '@id': abs('/#organization') }, creditText: 'Viesigners' });
-    const art = graph.find((x) => x['@type'] === 'Article'); if (art) art.image = [abs('/assets/img/' + (page.ogImage || 'og-card.jpg')), { '@id': canonical + '#founders-photo' }];
+    const art = graph.find((x) => x['@type'] === 'Article'); if (art) art.image = [abs('/assets/img/' + (page.ogImage || `og-card-${lang}.jpg`)), { '@id': canonical + '#founders-photo' }];
   }
   if (page.faq?.length) graph.push({ '@type': 'FAQPage', '@id': canonical + '#faq', inLanguage: lang, mainEntity: page.faq.map((f) => ({ '@type': 'Question', name: plain(f.q), acceptedAnswer: { '@type': 'Answer', text: f.a.map(plain).join(' ') } })) });
   if (key === 'realisations') graph.push({ '@type': 'ItemList', '@id': canonical + '#list', itemListElement: page.sections.filter((s) => s.type === 'work').flatMap((s) => s.items).map((i, n) => ({ '@type': 'ListItem', position: n + 1, item: { '@type': 'CreativeWork', name: i.title, description: i.result || i.alt, image: abs('/assets/img/work/' + i.img), creator: { '@id': abs('/#organization') } } })) });
