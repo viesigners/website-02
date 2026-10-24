@@ -1,0 +1,212 @@
+{
+ "meta": {
+  "title": "Marque blanche pour agences : UX/UI, web et CRO | Viesigners",
+  "description": "UX/UI, web, CRO, SEO/GEO et rédaction en marque blanche pour agences et pigistes : des spécialistes seniors sous votre marque, au besoin.",
+  "h1": "Expertise UX/UI, web et CRO en marque blanche pour agences et pigistes"
+ },
+ "service": {
+  "name": "Expertise UX/UI, web et CRO en marque blanche pour agences et pigistes",
+  "type": "Design, web, CRO, SEO/GEO, rédaction et conseil d'affaires en marque blanche",
+  "audience": "Agences numériques et pigistes"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tag": "Programme de partenariat",
+   "h1": "Expertise UX/UI, web et CRO en *marque blanche* pour agences et pigistes",
+   "lead": "Quand les besoins d'un client dépassent votre équipe, nous intervenons dans l'ombre : UX/UI, conception web, SEO/GEO, rédaction et conseil d'affaires, livrés par des spécialistes seniors sous votre marque.",
+   "brief": [
+    {
+     "b": "Pour qui :",
+     "t": "agences et pigistes qui ont plus de travail que de capacité, ou dont un client a un besoin hors de leurs compétences de base."
+    },
+    {
+     "b": "Ce que nous faisons :",
+     "t": "UX/UI, web, CRO, SEO/GEO, rédaction et plus encore. [Contactez-nous](@contact) pour toute la gamme."
+    },
+    {
+     "b": "Comment :",
+     "t": "des spécialistes seniors travaillent dans l'ombre, sous votre marque et selon vos standards."
+    },
+    {
+     "b": "Discrétion :",
+     "t": "vous restez le seul point de contact avec votre client."
+    }
+   ],
+   "ctas": [
+    {
+     "label": "Discuter d'un projet",
+     "to": "@contact"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "wide": true,
+   "text": "Un débordement ou une expertise manquante ne devrait pas *vous faire perdre un client.*",
+   "prose": [
+    "Les agences et les pigistes viennent nous voir pour l'expertise qu'ils n'ont pas à l'interne, ou le temps qu'ils n'ont pas. Vous gardez la relation et le crédit; nous livrons le travail, selon votre échéancier."
+   ]
+  },
+  {
+   "type": "deliverables",
+   "id": "inclus",
+   "h2": "Ce que les agences viennent *chercher chez nous*",
+   "lead": "L'expertise que votre équipe n'a pas à l'interne, ou n'a pas le temps de développer.",
+   "items": [
+    {
+     "h": "UX/UI et design de produit",
+     "p": "Parcours, interfaces et systèmes de design pour SaaS et applications mobiles.",
+     "to": "design-produit"
+    },
+    {
+     "h": "Conception de sites web",
+     "p": "Des sites professionnels conçus pour établir votre crédibilité et convertir.",
+     "to": "sites-web"
+    },
+    {
+     "h": "CRO",
+     "p": "Audits et optimisation de la conversion pour transformer plus de vos visiteurs en clients."
+    },
+    {
+     "h": "Landing pages et tunnels de vente",
+     "p": "Des pages et des tunnels conçus pour transformer plus de visiteurs en demandes.",
+     "to": "landing-pages"
+    },
+    {
+     "h": "SEO et GEO",
+     "p": "Audits techniques, données structurées et contenu axé sur les réponses pour être trouvé sur Google et cité par les IA.",
+     "to": "seo-geo"
+    },
+    {
+     "h": "Rédaction",
+     "p": "Des textes persuasifs, pensés pour le SEO, qui sonnent comme votre client."
+    },
+    {
+     "h": "Conseil d'affaires",
+     "p": "Conception d'offre, stratégie de lancement et tunnels de vente pour vos clients qui vendent des services.",
+     "to": "coaching"
+    }
+   ]
+  },
+  {
+   "type": "process",
+   "h2": "Comment nous travaillons *avec vous*",
+   "lead": "Un processus clair, avec un livrable à la fin de chaque étape.",
+   "steps": [
+    {
+     "h": "Cadrage",
+     "p": "Un appel ou un courriel suffit : nous comprenons votre client, son besoin et vos contraintes.",
+     "out": "Livrable : une compréhension commune du besoin."
+    },
+    {
+     "h": "Proposition",
+     "p": "Une portée, un échéancier et un prix clairs, établis en tenant compte de votre marge, pour que vous puissiez ajouter la vôtre en toute confiance.",
+     "out": "Livrable : portée, échéancier et prix."
+    },
+    {
+     "h": "Livraison sous votre marque",
+     "p": "Nous nous présentons comme des consultants ou des pigistes engagés par votre entreprise, sans jamais prétendre être autre chose : le projet et le client demeurent les vôtres.",
+     "out": "Livrable : un travail prêt à présenter comme le vôtre."
+    },
+    {
+     "h": "Transfert et suivi",
+     "p": "Nous remettons tout proprement et restons disponibles pour les ajustements.",
+     "out": "Livrable : fichiers, documentation et transfert complet."
+    }
+   ]
+  },
+  {
+   "type": "fit",
+   "theme": "light",
+   "h2": "Ce partenariat est-il *fait pour vous?*",
+   "yes": {
+    "h": "Il est fait pour vous si :",
+    "items": [
+     "Vous dirigez une agence ou une pratique de pigiste et vous êtes à pleine capacité",
+     "Un client a besoin d'une expertise hors de vos compétences de base",
+     "Vous voulez des spécialistes seniors qui travaillent sous votre marque",
+     "Vous tenez à la discrétion et à un point de contact unique"
+    ]
+   },
+   "no": {
+    "h": "Il n'est pas fait pour vous si…",
+    "items": [
+     "Vous cherchez la capacité de production la moins chère possible",
+     "Vous ne vous souciez pas de la qualité du service et de la livraison",
+     "Vous n'êtes pas orienté vers les résultats"
+    ]
+   },
+   "foot": {
+    "p": "Un appel ou un courriel suffit pour voir si ça convient.",
+    "label": "Discuter d'un projet",
+    "to": "contact"
+   }
+  },
+  {
+   "type": "faq",
+   "h2": "Questions fréquentes sur *la marque blanche*",
+   "open": true
+  },
+  {
+   "type": "related",
+   "h2": "Vous aimerez *aussi*",
+   "cta": "Voir le service",
+   "items": [
+    "sites-web",
+    "landing-pages",
+    "design-produit"
+   ]
+  },
+  {
+   "type": "cta-final",
+   "h2": "Besoin d'experts *dans l'ombre?*",
+   "p": "Parlez-nous du besoin de votre client : nous vous dirons honnêtement si nous pouvons aider.",
+   "cta": "Discuter d'un projet"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Que veut dire « marque blanche » ici?",
+   "a": [
+    "Nous travaillons dans l'ombre, sous votre marque. Les livrables sont à vous, vous restez le seul point de contact avec votre client, et nous restons invisibles à moins que vous souhaitiez nous inclure."
+   ]
+  },
+  {
+   "q": "Contactez-vous directement nos clients?",
+   "a": [
+    "Seulement si vous le demandez. Par défaut, vous restez le seul contact; nous pouvons nous joindre à un appel comme membre de votre équipe quand c'est utile."
+   ]
+  },
+  {
+   "q": "Quel type de travail pouvez-vous prendre en charge?",
+   "a": [
+    "UX/UI et design de produit pour SaaS et applications, sites web, landing pages et tunnels de vente (CRO), SEO et GEO, rédaction, et conseil d'affaires."
+   ]
+  },
+  {
+   "q": "Quand une agence devrait-elle vous appeler?",
+   "a": [
+    "Quand vous avez plus de travail que de capacité, ou quand un client demande une expertise hors de vos compétences de base et que vous ne voulez ni refuser le mandat ni le livrer mal."
+   ]
+  },
+  {
+   "q": "Comment gérez-vous la confidentialité?",
+   "a": [
+    "Nous signons volontiers une entente de confidentialité avant tout échange, et nous ne nommons pas nos partenaires ni ne montrons de travaux réalisés ensemble sans accord écrit."
+   ]
+  },
+  {
+   "q": "Les pigistes peuvent-ils en profiter aussi?",
+   "a": [
+    "Oui. Les pigistes ont souvent besoin d'une compétence qu'ils n'ont pas, ou de bras supplémentaires sur un plus gros projet. Le processus est le même : un court échange de cadrage (appel ou courriel), une proposition claire, puis la livraison sous votre nom."
+   ]
+  },
+  {
+   "q": "Comment est-ce facturé et à quelle vitesse pouvons-nous commencer?",
+   "a": [
+    "Cela dépend de la portée. Nous cadrons le besoin par un court appel ou un courriel, puis nous envoyons une proposition claire avec livrables, échéancier et prix. Nos tarifs tiennent compte de la marge des agences : vous pouvez bâtir la vôtre par-dessus."
+   ]
+  }
+ ]
+}

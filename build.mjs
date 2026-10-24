@@ -73,6 +73,7 @@ const ROUTES = {
   'jean-francois': { fr: 'a-propos/jean-francois-bg', en: 'about/jean-francois-bg' },
   realisations: { fr: 'realisations', en: 'work' },
   contact: { fr: 'contact', en: 'contact' },
+  'marque-blanche': { fr: 'partenaire-marque-blanche', en: 'white-label-partner' },
   privacy: { fr: 'politique-de-confidentialite', en: 'privacy-policy' },
   terms: { fr: 'conditions-generales', en: 'terms-of-use' },
   merci: { fr: 'merci', en: 'thank-you' }, // shown after a form submission: noindex, never linked
@@ -258,7 +259,8 @@ R.fit = (s, c) => {
     <div class="fit__col fit__col--yes rv"><h3>${fmt(s.yes.h, lang)}</h3><ul>${li(s.yes.items, 'check')}</ul></div>
     <div class="fit__col fit__col--no rv" style="--d:.1s"><h3>${fmt(s.no.h, lang)}</h3><ul>${li(s.no.items, 'x')}</ul></div>
   </div>
-  ${s.foot ? `<div class="fit__foot rv"><p>${fmt(s.foot.p, lang)}</p><a class="pill pill--violet" href="${url(s.foot.to, lang)}">${esc(s.foot.label)}</a></div>` : ''}
+  ${s.foot ? `<div class="fit__foot rv"><p>${fmt(s.foot.p, lang)}</p><a class="pill pill--violet" href="${s.foot.href || url(s.foot.to, lang)}">${esc(s.foot.label)}</a></div>` : ''}
+  ${s.partner && !isHidden(s.partner.to) ? `<article class="casecard casecard--word rv"><a class="more" href="${url(s.partner.to, lang)}" aria-label="${esc(s.partner.label)}"></a><div class="casecard__n"><p class="eyebrow-tag">${esc(s.partner.tag)}</p><b>${esc(s.partner.word)}</b></div><div class="casecard__body"><h3>${fmt(s.partner.h, lang)}</h3><p>${fmt(s.partner.p, lang)}</p><span class="link-arrow">${esc(s.partner.label)} ${ico('arrow')}</span></div></article>` : ''}
 </div></section>`;
 };
 
@@ -295,7 +297,7 @@ R.faq = (s, c) => {
 
 R.deliverables = (s, c) => `<section class="section"${s.id ? ` id="${s.id}"` : ''}><div class="wrap"><div class="split">
   <div class="split__head">${splitLabel(c, 'deliverables')}<h2 class="rv">${fmt(s.h2, c.lang)}</h2>${s.lead ? `<p class="lead rv">${fmt(s.lead, c.lang)}</p>` : ''}</div>
-  <div class="dl">${s.items.map((i, k) => `<div class="dl__item rv" style="--d:${k * .04}s"><h3>${fmt(i.h, c.lang)}</h3><p>${fmt(i.p, c.lang)}</p></div>`).join('')}</div>
+  <div class="dl">${s.items.map((i, k) => { const link = i.to && !isHidden(i.to); return `<div class="dl__item${link ? ' dl__item--link' : ''} rv" style="--d:${k * .04}s"><h3>${link ? `<a class="more" href="${url(i.to, c.lang)}" aria-label="${esc(plain(i.h))}"></a>` : ''}${fmt(i.h, c.lang)}</h3><p>${fmt(i.p, c.lang)}</p></div>`; }).join('')}</div>
 </div></div></section>`;
 
 R.process = (s, c) => `<section class="section"><div class="wrap">
@@ -665,7 +667,7 @@ function buildPage({ lang, key, page, post }) {
   if (page.speakable !== false) webpage.speakable = { '@type': 'SpeakableSpecification', cssSelector: ['h1', '.lead', '.brief li'] };
   graph.push(webpage);
   graph.push({ '@type': 'BreadcrumbList', '@id': canonical + '#breadcrumb', itemListElement: crumbs.map((b, i) => ({ '@type': 'ListItem', position: i + 1, name: b.name, item: abs(b.url) })) });
-  if (SERVICE_KEYS.includes(key) && page.service) {
+  if ((SERVICE_KEYS.includes(key) || key === 'marque-blanche') && page.service) {
     graph.push({
       '@type': 'Service', '@id': canonical + '#service', name: page.service.name, serviceType: page.service.type, description: page.meta.description, provider: { '@id': abs('/#organization') },
       areaServed: [{ '@type': 'Country', name: 'Canada' }, { '@type': 'Place', name: 'Worldwide' }], availableChannel: { '@type': 'ServiceChannel', serviceUrl: abs(url('contact', lang)) },

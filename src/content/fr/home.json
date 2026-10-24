@@ -140,16 +140,12 @@
     "label": "Tel que vu dans",
     "items": [
      {
-      "file": "press-coveo.png",
-      "alt": "Blogue Coveo"
-     },
-     {
-      "file": "press-o2web.png",
-      "alt": "Blogue O2 Web"
-     },
-     {
       "file": "press-socom.svg",
       "alt": "SOCOM"
+     },
+     {
+      "file": "press-coveo.png",
+      "alt": "Blogue Coveo"
      },
      {
       "file": "press-superdads.png",
@@ -158,6 +154,10 @@
      {
       "file": "press-2gars-adwords.png",
       "alt": "Les 2 gars d'Adwords"
+     },
+     {
+      "file": "press-o2web.png",
+      "alt": "Blogue O2 Web"
      }
     ]
    },
@@ -362,6 +362,14 @@
     "p": "Si vous correspondez au profil recherché, c'est le temps de se parler!",
     "label": "C'est mon tour",
     "to": "contact"
+   },
+   "partner": {
+    "tag": "Pour agences et pigistes",
+    "word": "Marque blanche",
+    "h": "Vous dirigez une agence? *Faisons équipe.*",
+    "p": "Débordement ou expertise manquante sur le projet d'un client : nos spécialistes seniors prennent le relais sous votre marque, avec de la place pour votre marge.",
+    "label": "Découvrir le programme en marque blanche",
+    "to": "marque-blanche"
    }
   },
   {

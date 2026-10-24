@@ -385,6 +385,9 @@ em.acc, .acc {
 .dl__item:hover { padding-left: .7rem; }
 .dl__item h3 { font-size: clamp(1.3rem, 1rem + 1.1vw, 1.9rem); font-weight: 400; letter-spacing: -0.022em; }
 .dl__item p { color: var(--text-2); max-width: 52ch; }
+.dl__item--link .more { position: absolute; inset: 0; z-index: 1; }
+.dl__item--link h3::after { content: "→"; margin-left: .6rem; color: var(--pink); font-family: var(--f-mono); font-size: .8em; display: inline-block; transition: transform .4s var(--ease); }
+.dl__item--link:hover h3::after { transform: translateX(.4rem); }
 @media (min-width: 960px) { .split { grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); } .split__head { position: sticky; top: 7rem; } .dl__item { grid-template-columns: minmax(0, 4fr) minmax(0, 5fr); align-items: baseline; } }
 
 /* ---------- process ---------- */
@@ -446,7 +449,7 @@ em.acc, .acc {
 .casecard__n .eyebrow-tag { margin-bottom: 1.2rem; }
 .casecard__n b { display: block; font-family: var(--f-display); font-weight: 300; font-size: clamp(3.4rem, 2rem + 5vw, 6.5rem); line-height: 1.12; letter-spacing: -0.04em; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .casecard__n span { display: block; margin-top: .5rem; color: var(--text-2); max-width: 26ch; line-height: 1.4; }
-.casecard__body h2 { margin-block: 0 .8rem; font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2.2rem); max-width: 28ch; }
+.casecard__body h2, .casecard__body h3 { margin-block: 0 .8rem; font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2.2rem); max-width: 28ch; }
 .casecard__body p { color: var(--text-2); max-width: 52ch; line-height: 1.55; }
 .casecard .link-arrow { margin-top: 1.4rem; display: inline-flex; }
 @media (min-width: 960px) { .casecard { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); align-items: center; } }
@@ -692,3 +695,7 @@ em.acc, .acc {
 .legal__block p + p { margin-top: .8rem; }
 .legal__block ul { margin: .9rem 0 0; padding-left: 1.2rem; display: grid; gap: .45rem; }
 .legal__block a { color: var(--accent-text, var(--pink-600)); text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- casecard variant: a word instead of a figure (agency partner card) ---------- */
+.casecard--word { margin-top: clamp(6.4rem, 4rem + 9vw, 12rem); }
+.casecard--word .casecard__n b { font-size: clamp(2.6rem, 1.5rem + 3.4vw, 4.8rem); line-height: 1.06; letter-spacing: -0.035em; padding-bottom: .12em; }

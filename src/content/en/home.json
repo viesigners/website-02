@@ -140,16 +140,12 @@
     "label": "As seen in",
     "items": [
      {
-      "file": "press-coveo.png",
-      "alt": "Coveo blog"
-     },
-     {
-      "file": "press-o2web.png",
-      "alt": "O2 Web blog"
-     },
-     {
       "file": "press-socom.svg",
       "alt": "SOCOM"
+     },
+     {
+      "file": "press-coveo.png",
+      "alt": "Coveo blog"
      },
      {
       "file": "press-superdads.png",
@@ -158,6 +154,10 @@
      {
       "file": "press-2gars-adwords.png",
       "alt": "Les 2 gars d'Adwords"
+     },
+     {
+      "file": "press-o2web.png",
+      "alt": "O2 Web blog"
      }
     ]
    },
@@ -362,6 +362,14 @@
     "p": "If you match the profile we're looking for, it's time to talk!",
     "label": "It's my turn",
     "to": "contact"
+   },
+   "partner": {
+    "tag": "For agencies and freelancers",
+    "word": "White-label",
+    "h": "Run an agency? *Let's team up.*",
+    "p": "Overflow, or a skills gap on a client project: our senior specialists step in under your brand, with room for your margin.",
+    "label": "Discover the white-label program",
+    "to": "marque-blanche"
    }
   },
   {
