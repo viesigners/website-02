@@ -18,7 +18,7 @@
    "lead": "Nous ne gérons pas vos campagnes seuls : nous les orchestrons avec des experts média sélectionnés de notre réseau, et nous bâtissons les pages qui transforment chaque clic en demande.",
    "ctas": [
     {
-     "label": "Obtiens ton plan d'action gratuit",
+     "label": "Discuter d'un projet",
      "to": "@contact",
      "style": "violet"
     },
@@ -166,7 +166,7 @@
    "type": "cta-final",
    "h2": "Chaque dollar publicitaire peut *travailler plus fort.*",
    "p": "Faisons le point sur votre entonnoir et trouvons où votre budget fuit.",
-   "cta": "Obtiens ton plan d'action gratuit"
+   "cta": "Discuter d'un projet"
   }
  ],
  "faq": [

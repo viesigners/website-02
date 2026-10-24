@@ -1,7 +1,7 @@
 {
  "meta": {
-  "title": "Contact — Obtiens ton plan d'action gratuit | Viesigners",
-  "description": "Parlez-nous de votre projet : plan d'action gratuit, site web, landing page, design de produit, publicité, SEO/GEO. Bureaux à Québec et Vancouver. +1 581-502-1115.",
+  "title": "Contact — Parlons de votre projet | Viesigners",
+  "description": "Parlez-nous de votre projet : site web, landing page, design de produit, publicité, SEO/GEO. Bureaux à Québec et Vancouver. +1 581-502-1115.",
   "h1": "Contact"
  },
  "sections": [
@@ -49,21 +49,6 @@
     "need": "Comment pouvons-nous vous aider?",
     "needs": [
      {
-      "t": "Je veux mon plan d'action gratuit"
-     },
-     {
-      "t": "J'ai besoin d'aide avec ma conversion"
-     },
-     {
-      "t": "J'ai besoin de plus de clients"
-     },
-     {
-      "t": "J'ai besoin de plus de prospects"
-     },
-     {
-      "t": "J'ai besoin de plus de revenus de mes clients"
-     },
-     {
       "t": "J'ai besoin d'un site web",
       "page": "sites-web"
      },
@@ -76,7 +61,7 @@
       "page": "design-produit"
      },
      {
-      "t": "J'ai besoin de conseils d'affaires pour une nouvelle offre",
+      "t": "J'ai besoin de conseils d'affaires",
       "page": "coaching"
      },
      {
@@ -92,12 +77,6 @@
   }
  ],
  "faq": [
-  {
-   "q": "Qu'est-ce que le plan d'action gratuit?",
-   "a": [
-    "C'est un premier regard professionnel sur votre situation : nous identifions les points de friction qui coûtent le plus cher et les priorités qui auraient le plus d'effet sur vos conversions."
-   ]
-  },
   {
    "q": "Que se passe-t-il après l'envoi de mon message?",
    "a": [

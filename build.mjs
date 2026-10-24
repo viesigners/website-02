@@ -415,10 +415,8 @@ R.contact = (s, c) => {
       <div class="field"><label for="f-first">${esc(f.firstName)} ${req}</label><input id="f-first" name="first_name" autocomplete="given-name" required>${err}</div>
       <div class="field"><label for="f-last">${esc(f.lastName)} ${req}</label><input id="f-last" name="last_name" autocomplete="family-name" required>${err}</div>
     </div>
-    <div class="row2">
-      <div class="field"><label for="f-email">${esc(f.email)} ${req}</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required>${err}</div>
-      <div class="field"><label for="f-phone">${esc(f.phone)} ${req}</label><div class="phone"><select name="dial" aria-label="${esc(f.dial)}" data-dial>${countries.map((k) => `<option value="${k.dial}" data-cc="${k.cc}"${k.cc === 'CA' ? ' selected' : ''}>${k.flag} ${k.dial}</option>`).join('')}</select><input id="f-phone" name="phone" type="tel" autocomplete="tel-national" inputmode="tel" required></div>${err}</div>
-    </div>
+    <div class="field"><label for="f-email">${esc(f.email)} ${req}</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required>${err}</div>
+    <div class="field"><label for="f-phone">${esc(f.phone)} ${req}</label><div class="phone"><select name="dial" aria-label="${esc(f.dial)}" data-dial>${countries.map((k) => `<option value="${k.dial}" data-cc="${k.cc}"${k.cc === 'CA' ? ' selected' : ''}>${k.flag} ${k.dial}</option>`).join('')}</select><input id="f-phone" name="phone" type="tel" autocomplete="tel-national" inputmode="tel" required></div>${err}</div>
     <div class="row2">
       <div class="field"><label for="f-site">${esc(f.website)} ${req}</label><input id="f-site" name="website" autocomplete="url" inputmode="url" required>${err}</div>
       <div class="field"><label for="f-budget">${esc(f.budget)} ${req}</label><input id="f-budget" name="budget" inputmode="text" placeholder="${esc(f.budgetPh)}" required>${err}</div>

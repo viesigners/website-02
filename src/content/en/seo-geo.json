@@ -18,7 +18,7 @@
    "lead": "GEO (Generative Engine Optimization) means making your content understandable, trustworthy and citable by answer engines like ChatGPT, Gemini, Perplexity and Google AI Overviews, on top of classic SEO.",
    "ctas": [
     {
-     "label": "Get your free action plan",
+     "label": "Discuss a project",
      "to": "@contact",
      "style": "violet"
     },
@@ -152,7 +152,7 @@
    "type": "cta-final",
    "h2": "Be the answer your customers *find.*",
    "p": "Let's review your visibility, on Google and in AI.",
-   "cta": "Get your free action plan"
+   "cta": "Discuss a project"
   }
  ],
  "faq": [

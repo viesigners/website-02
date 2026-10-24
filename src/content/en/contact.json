@@ -1,7 +1,7 @@
 {
  "meta": {
-  "title": "Contact — Get Your Free Action Plan | Viesigners",
-  "description": "Tell us about your project: free action plan, website, landing page, product design, advertising, SEO/GEO. Offices in Québec and Vancouver. +1 581-502-1115.",
+  "title": "Contact — Let's Talk About Your Project | Viesigners",
+  "description": "Tell us about your project: website, landing page, product design, advertising, SEO/GEO. Offices in Québec and Vancouver. +1 581-502-1115.",
   "h1": "Contact"
  },
  "sections": [
@@ -49,21 +49,6 @@
     "need": "How can we help?",
     "needs": [
      {
-      "t": "I'd like my free action plan"
-     },
-     {
-      "t": "I need help with my conversion"
-     },
-     {
-      "t": "I need more customers"
-     },
-     {
-      "t": "I need more leads"
-     },
-     {
-      "t": "I need more revenue from my customers"
-     },
-     {
       "t": "I need a website",
       "page": "sites-web"
      },
@@ -76,7 +61,7 @@
       "page": "design-produit"
      },
      {
-      "t": "I need business advice for a new offer",
+      "t": "I need business advice",
       "page": "coaching"
      },
      {
@@ -92,12 +77,6 @@
   }
  ],
  "faq": [
-  {
-   "q": "What is the free action plan?",
-   "a": [
-    "It's a first professional look at your situation: we identify the friction points that cost you the most and the priorities that would have the greatest effect on your conversions."
-   ]
-  },
   {
    "q": "What happens after I send my message?",
    "a": [

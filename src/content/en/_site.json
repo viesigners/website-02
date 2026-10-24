@@ -55,7 +55,7 @@
   "terms": "Terms and conditions",
   "cookies": "Cookie settings"
  },
- "orgDescription": "Viesigners is a lean Canadian web agency (Québec and Vancouver) specialized in UX/UI and conversion rate optimization (CRO): websites, landing pages, sales funnels, SaaS and app product design, and business advisory. With a network of vetted experts, it also supports companies in digital advertising, SEO and GEO.",
+ "orgDescription": "Viesigners is a lean Canadian UX/UI, web and marketing agency (Québec and Vancouver) specialized in UX/UI and conversion rate optimization (CRO): websites, landing pages, sales funnels, SaaS and app product design, and business advisory. With a network of vetted experts, it also supports companies in digital advertising, SEO and GEO.",
  "knowsAbout": [
   "UX/UI design",
   "Conversion rate optimization (CRO)",
@@ -78,8 +78,8 @@
  "jobTitle": "Co-founder, UX/UI and CRO expert",
  "postCta": {
   "h2": "Ready to *remove the friction?*",
-  "p": "Tell us where your site loses customers. We'll come back with a concrete action plan.",
-  "cta": "Get your free action plan"
+  "p": "Tell us where your site loses customers. We'll reply personally.",
+  "cta": "Discuss a project"
  },
  "labels": {
   "services": "Services",
