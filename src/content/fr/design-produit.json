@@ -1,7 +1,7 @@
 {
  "meta": {
-  "title": "Design de produit SaaS et applis mobiles — UX/UI | Viesigners",
-  "description": "Design UX/UI pour SaaS et applis mobiles : parcours usagers, systèmes de design, recherche et rédaction UX. Primé aux OCTAS, Osentreprendre et Gartner.",
+  "title": "Agence UX/UI pour SaaS et applications | Viesigners",
+  "description": "Agence UX/UI pour équipes SaaS et applications : intégration, systèmes de design et prototypes cliquables qui aident votre produit à convertir, activer et fidéliser.",
   "h1": "Optimisation UX/UI pour SaaS et applis mobiles"
  },
  "service": {
@@ -13,13 +13,13 @@
   {
    "type": "page-hero",
    "tagH1": true,
-   "tag": "Design de produit — SaaS et applis",
-   "h1": "Bâtissez une expérience d'application *de classe mondiale*",
-   "lead": "Nous avons aidé une scale-up internationale à sécuriser 320 M$+ de financement et remporté des prix prestigieux pour le lancement et l'optimisation d'applications (OCTAS, Osentreprendre, Gartner).",
+   "tag": "Design de produit pour SaaS et applications",
+   "h1": "L'UX/UI qui aide votre SaaS ou votre application à *convertir, activer et fidéliser*",
+   "lead": "Nous transformons les produits complexes en expériences claires qui convertissent : intégration, écrans clés et système de design, bâtis avec votre équipe.",
    "guarantee": "Satisfaction garantie!",
    "ctas": [
     {
-     "label": "Bâtir une UX de classe mondiale",
+     "label": "Discuter de mon produit",
      "to": "@contact",
      "style": "violet"
     },
@@ -32,7 +32,7 @@
    "brief": [
     {
      "b": "Pour qui :",
-     "t": "entreprises SaaS, scale-ups et créateurs d'applications mobiles."
+     "t": "Fondateurs dont le MVP doit fonctionner comme un vrai produit; équipes dont le produit a dépassé sa première conception; produits qui ont du trafic, mais une faible activation."
     },
     {
      "b": "Ce que vous obtenez :",
@@ -49,6 +49,32 @@
    ]
   },
   {
+   "type": "deliverables",
+   "id": "quand-appeler",
+   "theme": "light",
+   "label": "Quand nous appeler",
+   "h2": "Ça vous *dit quelque chose?*",
+   "items": [
+    {
+     "h": "Votre MVP est lancé, mais l'UX manque de finition"
+    },
+    {
+     "h": "Votre produit a dépassé sa conception initiale"
+    },
+    {
+     "h": "Votre application web est complexe et difficile à utiliser"
+    },
+    {
+     "h": "Des usagers s'inscrivent, mais n'activent pas le produit ou ne restent pas"
+    },
+    {
+     "h": "Vous n'avez pas la capacité à l'interne pour des écrans haute fidélité"
+    }
+   ],
+   "icon": "x",
+   "lead": "La plupart des équipes qui bâtissent des SaaS et des applications sont coincées avec au moins un de ces problèmes."
+  },
+  {
    "type": "statement",
    "wide": true,
    "text": "Nous revoyons l'expérience de vos SaaS et applications pour en faire *des actifs de classe mondiale* qui engagent vos utilisateurs, libèrent vos équipes internes et séduisent vos investisseurs.",
@@ -62,30 +88,39 @@
    "h2": "Ce que nous *concevons et optimisons*",
    "items": [
     {
-     "h": "Optimisation de parcours usagers",
-     "p": "Réalisée en phases itératives, qui tiennent compte de la dette technique : on livre de la valeur sans geler votre feuille de route."
+     "h": "Parcours usagers et prototypes cliquables",
+     "p": "Des parcours optimisés et des prototypes cliquables, livrés en phases itératives qui tiennent compte de la dette technique : on livre de la valeur sans geler votre feuille de route."
     },
     {
      "h": "Systèmes de design",
-     "p": "Un système de design de classe mondiale : composants, principes et documentation qui accélèrent vos équipes et assurent la cohérence."
+     "p": "Composants, principes et documentation qui accélèrent vos équipes et assurent la cohérence."
     },
     {
-     "h": "Recherches utilisateurs et comparatives",
-     "p": "Entrevues, tests d'utilisabilité et analyses comparatives pour éclairer vos décisions avec des faits."
+     "h": "Audit UX, recherche utilisateurs et analyse de la concurrence",
+     "p": "Un audit UX, des entrevues, des tests d'utilisabilité et une analyse de la concurrence pour éclairer vos décisions avec des faits."
+    },
+    {
+     "h": "Écrans haute fidélité à partir de vos maquettes filaires",
+     "p": "À partir de vos maquettes filaires ou de zéro, nous concevons les écrans haute fidélité que votre équipe n'a pas la capacité de produire."
     },
     {
      "h": "Rédaction UX",
      "p": "Des textes d'interface qui donnent une personnalité à votre produit, sans perdre en clarté."
     },
     {
-     "h": "Onboarding et activation",
-     "p": "Simplification de l'intégration et de l'expérience pour fidéliser davantage et prolonger la durée de vie client."
+     "h": "Parcours d'intégration et activation",
+     "p": "Simplification des parcours d'intégration et de l'expérience pour que plus d'usagers activent le produit, restent et prolongent la durée de vie client."
     },
     {
      "h": "Collaboration avec vos équipes internes",
      "p": "Impeccable : outils partagés, livraisons soignées pour les développeurs et rituels alignés sur vos cycles de travail."
     }
    ]
+  },
+  {
+   "type": "statement",
+   "wide": true,
+   "text": "Ce sont les fondateurs qui font le travail. *Aucun passage de relais à des juniors.*"
   },
   {
    "type": "process",
@@ -111,7 +146,8 @@
      "p": "Nous accompagnons la mise en œuvre et mesurons l'effet sur l'activation et la rétention.",
      "out": "Livrable : résultats suivis et prochaines étapes."
     }
-   ]
+   ],
+   "lead": "Nous fixons le rythme selon votre échéance, avec des séances de travail régulières et de plus petites mises à jour tout au long de la semaine."
   },
   {
    "type": "proof",
@@ -156,9 +192,9 @@
   },
   {
    "type": "cta-final",
-   "h2": "Prêt à bâtir une *UX de classe mondiale?*",
+   "h2": "Trouvons où votre produit *perd des usagers*",
    "p": "Parlons de votre produit : nous repérerons les gains d'expérience les plus rentables.",
-   "cta": "Bâtir une UX de classe mondiale"
+   "cta": "Discuter de mon produit"
   }
  ],
  "faq": [
@@ -190,6 +226,36 @@
    "q": "Concevez-vous aussi des applications mobiles?",
    "a": [
     "Oui, nous concevons et optimisons l'expérience des applications mobiles comme des plateformes SaaS web. Voyez nos [réalisations](@realisations)."
+   ]
+  },
+  {
+   "q": "Comment tarifez-vous un projet?",
+   "a": [
+    "Nous évaluons le prix en fonction des objectifs à atteindre : on ne prend pas une Ferrari pour aller au dépanneur du coin. Les efforts que nous investissons et le plan que nous proposons sont parfaitement alignés avec votre ambition et le potentiel de retour sur investissement."
+   ]
+  },
+  {
+   "q": "Que se passe-t-il si la portée change?",
+   "a": [
+    "Les objectifs évoluent, c'est normal. Nous ajustons le plan pour rester alignés avec votre ambition et le retour attendu, et nous convenons du changement avec vous avant qu'il n'affecte votre échéancier ou votre budget."
+   ]
+  },
+  {
+   "q": "Comment planifiez-vous le calendrier et nos rencontres?",
+   "a": [
+    "Nous planifions le rythme selon les délais requis, avec des séances de travail régulières et de plus petites mises à jour tout au long de la semaine. Si c'est un rush, nous nous impliquons tous les deux, en synergie, pour livrer au même niveau de qualité que nous nous engageons toujours à livrer."
+   ]
+  },
+  {
+   "q": "Comment gérez-vous les commentaires et les retours?",
+   "a": [
+    "Les retours font partie du travail, pas d'une surprise à la fin. Vous voyez les designs en cours de route, avec de plus petites mises à jour tout au long de la semaine, et vos commentaires sont intégrés rapidement pour que les itérations ne s'accumulent pas."
+   ]
+  },
+  {
+   "q": "Qui travaille exactement sur mon projet?",
+   "a": [
+    "Les fondateurs, directement. Nous sommes des spécialistes seniors (top 3 % Toptal), et nous ne confions pas votre projet à des juniors."
    ]
   }
  ]

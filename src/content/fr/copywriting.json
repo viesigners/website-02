@@ -1,0 +1,181 @@
+{
+ "meta": {
+  "title": "Copywriting de conversion pour sites web et SaaS | Viesigners",
+  "description": "Copywriting persuasif et pensé pour le SEO pour sites web, landing pages, tunnels de vente et SaaS : des messages clairs qui convertissent, dans une voix qui vous ressemble.",
+  "h1": "Copywriting de conversion"
+ },
+ "service": {
+  "name": "Copywriting de conversion",
+  "type": "Rédaction pour sites web, landing pages, tunnels de vente, SEO/GEO et produits",
+  "audience": "Entreprises, équipes SaaS et agences"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tagH1": true,
+   "tag": "Copywriting de conversion",
+   "h1": "Des mots qui poussent les visiteurs à *passer à l'action*",
+   "lead": "Nous rédigeons les messages qui expliquent votre valeur, répondent aux questions de vos clients et les mènent à l'étape suivante, pour votre site web, vos landing pages, vos tunnels de vente et votre produit.",
+   "brief": [
+    {
+     "b": "Pour qui :",
+     "t": "entreprises, équipes SaaS et agences dont les pages attirent des visiteurs sans les convaincre."
+    },
+    {
+     "b": "Ce que vous obtenez :",
+     "t": "des textes persuasifs, pensés pour le SEO, qui vous ressemblent, bâtis sur les vrais mots et les vraies questions de vos clients."
+    },
+    {
+     "b": "Approche :",
+     "t": "nous écoutons comment vos clients parlent, puis nous rédigeons, peaufinons et alignons les mots avec le design."
+    },
+    {
+     "b": "Collaboration :",
+     "t": "nous travaillons avec votre équipe et vos designers pour que les mots et la mise en page forment un tout."
+    }
+   ],
+   "ctas": [
+    {
+     "label": "Discuter d'un projet",
+     "to": "@contact",
+     "style": "violet"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "wide": true,
+   "text": "Un beau design ne sauvera pas *un message qui ne passe pas*.",
+   "prose": [
+    "Les visiteurs décident en quelques secondes si vous comprenez leur problème. Des mots clairs et précis expliquent votre valeur, répondent aux objections et rendent la prochaine étape évidente."
+   ]
+  },
+  {
+   "type": "deliverables",
+   "id": "inclus",
+   "h2": "Ce que nous *rédigeons*",
+   "lead": "Des textes pour chaque étape entre une première visite et une première vente.",
+   "items": [
+    {
+     "h": "Textes de site web",
+     "p": "Des messages pour vos pages d'accueil, de services et à propos, qui bâtissent la confiance et expliquent ce que vous faites avec les mots de vos clients.",
+     "to": "sites-web"
+    },
+    {
+     "h": "Landing pages et tunnels de vente",
+     "p": "Des pages persuasives bâties autour d'une seule action : offre, preuves, objections et appel à l'action clair.",
+     "to": "landing-pages"
+    },
+    {
+     "h": "Contenu SEO et GEO",
+     "p": "Un contenu axé sur les réponses, bien structuré, avec de vraies réponses à de vraies questions, pour être trouvé sur Google et cité par les IA.",
+     "to": "seo-geo"
+    },
+    {
+     "h": "Publications pour les médias sociaux",
+     "p": "Des publications dans la voix de votre marque, qui amorcent des conversations et mènent vers votre offre.",
+     "to": "medias-sociaux"
+    },
+    {
+     "h": "Rédaction de produit et UX",
+     "p": "Intégration, écrans vides et textes d'interface qui guident les usagers et donnent une voix à votre produit.",
+     "to": "design-produit"
+    },
+    {
+     "h": "Messages et ton de voix",
+     "p": "Une proposition de valeur claire et une voix cohérente sur chaque page et chaque canal."
+    },
+    {
+     "h": "Audit et réécriture de textes",
+     "p": "Nous passons en revue ce que vous avez, repérons où les mots perdent les gens et réécrivons ce qui compte le plus."
+    }
+   ]
+  },
+  {
+   "type": "process",
+   "h2": "Des mots de vos clients à *votre prochaine conversion*",
+   "lead": "Un processus clair, avec un livrable à la fin de chaque étape.",
+   "steps": [
+    {
+     "h": "Écouter",
+     "p": "Nous étudions comment vos clients parlent de leurs problèmes : avis, forums, questions de recherche et concurrents.",
+     "out": "Livrable : langage et objections de vos clients."
+    },
+    {
+     "h": "Définir le message",
+     "p": "Nous définissons ce que vous dites, à qui et dans quel ordre, pour que chaque page ait une mission claire.",
+     "out": "Livrable : message et structure des pages."
+    },
+    {
+     "h": "Rédiger",
+     "p": "Nous rédigeons des textes de génération de demande, avec le SEO, le GEO et les réponses que vos clients cherchent intégrés.",
+     "out": "Livrable : textes prêts pour votre révision."
+    },
+    {
+     "h": "Peaufiner",
+     "p": "Nous ajustons selon vos commentaires et alignons les mots avec le design.",
+     "out": "Livrable : textes finaux, prêts à publier."
+    }
+   ]
+  },
+  {
+   "type": "faq",
+   "h2": "Questions fréquentes sur *la rédaction*",
+   "open": true
+  },
+  {
+   "type": "related",
+   "h2": "Vous aimerez *aussi*",
+   "cta": "Voir le service",
+   "items": [
+    "sites-web",
+    "landing-pages",
+    "design-produit"
+   ]
+  },
+  {
+   "type": "cta-final",
+   "h2": "Prêt pour des mots qui *travaillent aussi fort que vous?*",
+   "p": "Parlez-nous de votre offre et de vos clients : nous vous dirons honnêtement où de meilleurs mots peuvent faire la différence.",
+   "cta": "Discuter d'un projet"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Quelle est la différence entre le copywriting et la rédaction de contenu?",
+   "a": [
+    "Le copywriting vise à pousser quelqu'un à agir : demander une soumission, s'inscrire, acheter. La rédaction de contenu informe ou éduque surtout. Les deux se complètent : nous faisons les deux, avec le même but de faire avancer vos clients d'une étape."
+   ]
+  },
+  {
+   "q": "Écrivez-vous des textes optimisés pour le SEO?",
+   "a": [
+    "Oui. Nous intégrons les termes de recherche et les vraies questions de vos clients dans le texte, avec une structure claire et des réponses directes, pour être trouvé sur Google et cité par les assistants IA sans que ça sonne robotique."
+   ]
+  },
+  {
+   "q": "Pouvez-vous écrire en français et en anglais?",
+   "a": [
+    "Oui. Nous travaillons dans les deux langues et écrivons pour chaque public, sans traduire mot à mot."
+   ]
+  },
+  {
+   "q": "Comment faites-vous pour que les textes sonnent comme notre marque?",
+   "a": [
+    "Nous partons de votre offre, de vos clients et des mots qu'ils utilisent, puis nous convenons d'un ton de voix avec vous avant de rédiger à grande échelle. Vous révisez les textes et nous les peaufinons jusqu'à ce qu'ils vous ressemblent."
+   ]
+  },
+  {
+   "q": "Travaillez-vous avec nos designers et développeurs?",
+   "a": [
+    "Oui. Les mots et la mise en page fonctionnent mieux ensemble, donc nous collaborons avec vos designers et développeurs, ou avec nos propres services de [conception de sites](@sites-web) et de [landing pages](@landing-pages)."
+   ]
+  },
+  {
+   "q": "Comment savez-vous si les textes fonctionnent?",
+   "a": [
+    "Nous convenons d'un objectif mesurable avant de commencer, comme des demandes ou des conversions sur une page, et nous le suivons après la mise en ligne pour continuer d'améliorer ce qui compte."
+   ]
+  }
+ ]
+}

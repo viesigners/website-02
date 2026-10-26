@@ -80,7 +80,8 @@
     },
     {
      "h": "Copywriting",
-     "p": "Persuasive, SEO-aware copy that sounds like your client."
+     "p": "Persuasive, SEO-aware copy that sounds like your client.",
+     "to": "copywriting"
     },
     {
      "h": "Business advisory",

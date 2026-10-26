@@ -9,18 +9,19 @@
   "realisations": "Work",
   "actualites": "News",
   "contact": "Contact",
-  "sites-web": "Websites",
-  "landing-pages": "Landing pages",
+  "sites-web": "Website creation",
+  "landing-pages": "Landing pages and funnels",
   "design-produit": "Product design",
   "publicite": "Digital advertising",
-  "medias-sociaux": "Social media",
-  "seo-geo": "SEO/GEO",
+  "medias-sociaux": "Social media marketing",
+  "seo-geo": "SEO and GEO",
   "coaching": "Business advisory",
   "cas-saas": "Case study: B2B AI SaaS",
   "merci": "Thank you",
   "privacy": "Privacy policy",
   "terms": "Terms of use",
-  "marque-blanche": "White-label partner"
+  "marque-blanche": "White-label partner",
+  "copywriting": "Copywriting"
  },
  "navSub": {
   "sites-web": "Websites that build authority and convert",
@@ -29,7 +30,8 @@
   "publicite": "Profitable campaigns, powered by our pages",
   "medias-sociaux": "A social presence that feeds your funnel",
   "seo-geo": "Get found on Google and cited by AI",
-  "coaching": "Offers and launches for service entrepreneurs"
+  "coaching": "Offers and launches for service entrepreneurs",
+  "copywriting": "Words that turn visitors into customers"
  },
  "brief": "At a glance",
  "updated": "Last updated",
@@ -114,5 +116,6 @@
   "accept": "Accept",
   "decline": "Decline",
   "policy": "Privacy policy"
- }
+ },
+ "navAll": "View all services"
 }

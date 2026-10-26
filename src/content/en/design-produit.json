@@ -1,7 +1,7 @@
 {
  "meta": {
-  "title": "SaaS & Mobile App Product Design — UX/UI | Viesigners",
-  "description": "UX/UI design for SaaS and mobile apps: user journeys, design systems, research and UX writing. Award-winning, recognized by OCTAS, Osentreprendre and Gartner.",
+  "title": "SaaS & App UX/UI Design Agency | Viesigners",
+  "description": "UX/UI design agency for SaaS and app teams: onboarding, design systems and clickable prototypes that help your product convert, activate and retain.",
   "h1": "UX/UI optimization for SaaS and mobile apps"
  },
  "service": {
@@ -13,13 +13,13 @@
   {
    "type": "page-hero",
    "tagH1": true,
-   "tag": "Product design — SaaS and apps",
-   "h1": "Build a *world-class* app experience",
-   "lead": "We helped an international scale-up secure $320M+ in funding and won prestigious awards for launching and optimizing apps (OCTAS, Osentreprendre, Gartner).",
+   "tag": "Product design for SaaS and apps",
+   "h1": "UX/UI that helps your SaaS or app *convert, activate and retain*",
+   "lead": "We turn complex products into clear, converting experiences: onboarding, key screens and a design system, built with your team.",
    "guarantee": "Satisfaction guaranteed!",
    "ctas": [
     {
-     "label": "Build a world-class UX",
+     "label": "Discuss my product",
      "to": "@contact",
      "style": "violet"
     },
@@ -32,7 +32,7 @@
    "brief": [
     {
      "b": "Who it's for:",
-     "t": "SaaS companies, scale-ups and mobile app makers."
+     "t": "Founders whose MVP needs to work like a real product; teams whose product outgrew its first design; products with good traffic but weak activation."
     },
     {
      "b": "What you get:",
@@ -49,6 +49,32 @@
    ]
   },
   {
+   "type": "deliverables",
+   "id": "quand-appeler",
+   "theme": "light",
+   "label": "When to call us",
+   "h2": "Does this *sound familiar?*",
+   "items": [
+    {
+     "h": "Your MVP shipped, but the UX lacks polish"
+    },
+    {
+     "h": "Your product has grown beyond its initial design"
+    },
+    {
+     "h": "Your web app is complex and hard to use"
+    },
+    {
+     "h": "Users sign up but don't activate or stay"
+    },
+    {
+     "h": "You don't have the internal capacity for high-fidelity screens"
+    }
+   ],
+   "icon": "x",
+   "lead": "Most teams building SaaS and apps are stuck with at least one of these."
+  },
+  {
    "type": "statement",
    "wide": true,
    "text": "We rework the experience of your SaaS and apps to turn them into *world-class assets* that engage your users, free up your internal teams and win over your investors.",
@@ -62,30 +88,39 @@
    "h2": "What we *design and optimize*",
    "items": [
     {
-     "h": "User journey optimization",
-     "p": "Delivered in iterative phases that account for technical debt: we ship value without freezing your roadmap."
+     "h": "User journeys and clickable prototypes",
+     "p": "Optimized journeys and clickable prototypes, delivered in iterative phases that account for technical debt: we ship value without freezing your roadmap."
     },
     {
      "h": "Design systems",
-     "p": "A world-class design system: components, principles and documentation that speed up your teams and keep everything consistent."
+     "p": "Components, principles and documentation that speed up your teams and keep everything consistent."
     },
     {
-     "h": "User research and benchmarking",
-     "p": "Interviews, usability tests and competitive analysis to inform your decisions with facts."
+     "h": "UX audit, user research and competitor research",
+     "p": "A UX audit, interviews, usability tests and competitor research to inform your decisions with facts."
+    },
+    {
+     "h": "High-fidelity screens from your wireframes",
+     "p": "Starting from your wireframes or from scratch, we design the hi-fi screens your team lacks the capacity to produce."
     },
     {
      "h": "UX writing",
      "p": "Interface copy that gives your product personality without losing clarity."
     },
     {
-     "h": "Onboarding and activation",
-     "p": "Simplifying onboarding and the experience to increase loyalty and extend customer lifetime."
+     "h": "Onboarding flows and activation",
+     "p": "Simplifying onboarding flows and the experience so more users activate, stay and extend customer lifetime."
     },
     {
      "h": "Collaboration with your internal teams",
      "p": "Seamless: shared tools, polished developer handoffs and rituals aligned with your work cycles."
     }
    ]
+  },
+  {
+   "type": "statement",
+   "wide": true,
+   "text": "Senior founders do the work. *No handoff to junior staff.*"
   },
   {
    "type": "process",
@@ -111,7 +146,8 @@
      "p": "We support implementation and measure the effect on activation and retention.",
      "out": "Deliverable: tracked results and next steps."
     }
-   ]
+   ],
+   "lead": "We set the rhythm around your deadline, with regular working sessions and smaller updates throughout the week."
   },
   {
    "type": "proof",
@@ -156,9 +192,9 @@
   },
   {
    "type": "cta-final",
-   "h2": "Ready to build a *world-class UX?*",
+   "h2": "Let's find where your product *loses users*",
    "p": "Let's talk about your product: we'll find the most profitable experience gains.",
-   "cta": "Build a world-class UX"
+   "cta": "Discuss my product"
   }
  ],
  "faq": [
@@ -190,6 +226,36 @@
    "q": "Do you also design mobile apps?",
    "a": [
     "Yes, we design and optimize the experience of mobile apps as well as web SaaS platforms. See our [work](@realisations)."
+   ]
+  },
+  {
+   "q": "How do you price a project?",
+   "a": [
+    "We price according to the goals to reach: you wouldn't take a Ferrari to the corner store. The effort we invest and the plan we propose are aligned with your ambition and the potential return on investment."
+   ]
+  },
+  {
+   "q": "What if our scope changes?",
+   "a": [
+    "Goals evolve, and that's normal. We adjust the plan to stay aligned with your ambition and the expected return, and we agree on the change with you before it affects your timeline or budget."
+   ]
+  },
+  {
+   "q": "How do you plan the schedule and our meetings?",
+   "a": [
+    "We set the rhythm around the deadline you need, with regular working sessions and smaller updates throughout the week. If it's a rush, both founders get involved, in sync, to deliver at the same level of quality we always commit to."
+   ]
+  },
+  {
+   "q": "How do you handle feedback?",
+   "a": [
+    "Feedback is part of the work, not a surprise at the end. You see the designs along the way, with smaller updates throughout the week, and your comments are reflected quickly so iterations don't pile up."
+   ]
+  },
+  {
+   "q": "Who exactly works on my project?",
+   "a": [
+    "The founders, hands-on. We are senior specialists (Toptal top 3%), and we don't hand your project off to junior staff."
    ]
   }
  ]

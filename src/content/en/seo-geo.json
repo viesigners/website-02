@@ -2,10 +2,10 @@
  "meta": {
   "title": "SEO & GEO: Get Found on Google and Cited by AI | Viesigners",
   "description": "SEO and GEO (Generative Engine Optimization): technical audit, answer-first content, structured data and visibility in Google, ChatGPT, Gemini and Perplexity.",
-  "h1": "SEO/GEO"
+  "h1": "SEO and GEO optimization"
  },
  "service": {
-  "name": "SEO and GEO (Generative Engine Optimization)",
+  "name": "SEO and GEO optimization",
   "type": "Search engine and AI answer engine optimization",
   "audience": "Service businesses, SaaS and growing brands"
  },
@@ -13,7 +13,7 @@
   {
    "type": "page-hero",
    "tagH1": true,
-   "tag": "SEO/GEO",
+   "tag": "SEO and GEO optimization",
    "h1": "Get found on Google, *cited by AI*",
    "lead": "GEO (Generative Engine Optimization) means making your content understandable, trustworthy and citable by answer engines like ChatGPT, Gemini, Perplexity and Google AI Overviews, on top of classic SEO.",
    "ctas": [
@@ -21,11 +21,6 @@
      "label": "Discuss a project",
      "to": "@contact",
      "style": "violet"
-    },
-    {
-     "label": "See website creation",
-     "to": "@sites-web",
-     "style": "ghost"
     }
    ],
    "brief": [
@@ -39,7 +34,7 @@
     },
     {
      "b": "Our role:",
-     "t": "structure, content, structured data and tracking, with SEO experts from our network."
+     "t": "we do part of the work ourselves (structure, content, structured data and tracking) and bring in vetted SEO experts from our network for the rest."
     },
     {
      "b": "Proof by example:",

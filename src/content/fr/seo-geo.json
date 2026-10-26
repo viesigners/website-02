@@ -2,10 +2,10 @@
  "meta": {
   "title": "SEO et GEO : être trouvé sur Google et cité par les IA | Viesigners",
   "description": "SEO et GEO (Generative Engine Optimization) : audit technique, contenu orienté réponses, données structurées et visibilité dans Google, ChatGPT, Gemini et Perplexity.",
-  "h1": "SEO/GEO"
+  "h1": "Optimisation SEO et GEO"
  },
  "service": {
-  "name": "SEO et GEO (Generative Engine Optimization)",
+  "name": "Optimisation SEO et GEO",
   "type": "Optimisation pour les moteurs de recherche et les moteurs de réponses IA",
   "audience": "Entreprises de services, SaaS et marques en croissance"
  },
@@ -13,7 +13,7 @@
   {
    "type": "page-hero",
    "tagH1": true,
-   "tag": "SEO/GEO",
+   "tag": "Optimisation SEO et GEO",
    "h1": "Soyez trouvé sur Google, *cité par les IA*",
    "lead": "Le GEO (Generative Engine Optimization) consiste à rendre votre contenu compréhensible, fiable et citable par les moteurs de réponses comme ChatGPT, Gemini, Perplexity et Google AI Overviews, en plus du SEO classique.",
    "ctas": [
@@ -21,11 +21,6 @@
      "label": "Discuter d'un projet",
      "to": "@contact",
      "style": "violet"
-    },
-    {
-     "label": "Voir la création de site web",
-     "to": "@sites-web",
-     "style": "ghost"
     }
    ],
    "brief": [
@@ -39,7 +34,7 @@
     },
     {
      "b": "Notre rôle :",
-     "t": "structure, contenu, données structurées et suivi, avec des experts SEO de notre réseau."
+     "t": "nous réalisons une partie du travail nous-mêmes (structure, contenu, données structurées et suivi) et faisons appel à des experts SEO de confiance de notre réseau pour le reste."
     },
     {
      "b": "Preuve par l'exemple :",

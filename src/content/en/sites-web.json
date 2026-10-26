@@ -2,10 +2,10 @@
  "meta": {
   "title": "Professional Website Design | Viesigners — UX/UI & CRO",
   "description": "Professional websites that build your authority and convert: structure, UX/UI design and strategic copywriting. 600+ projects delivered.",
-  "h1": "Professional website creation"
+  "h1": "Website design and development"
  },
  "service": {
-  "name": "Professional website creation",
+  "name": "Website design and development",
   "type": "Website design, UX/UI and conversion rate optimization",
   "audience": "Service businesses, SaaS and growing brands"
  },
@@ -13,7 +13,7 @@
   {
    "type": "page-hero",
    "tagH1": true,
-   "tag": "Professional website creation",
+   "tag": "Website design and development",
    "h1": "Root your *reputation* and take the place you deserve",
    "lead": "We have delivered more than 600 digital projects and advised giants like Dell, Nerf and HP over our 30 combined years of experience. The quality of our sites has been recognized by Awwwards.",
    "guarantee": "Performance increase guaranteed!",

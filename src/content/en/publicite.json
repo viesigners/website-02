@@ -2,10 +2,10 @@
  "meta": {
   "title": "Profitable Digital Advertising (Google Ads, Meta, LinkedIn) | Viesigners",
   "description": "Digital advertising run with media experts from our network and plugged into pages built to convert: every ad dollar works harder.",
-  "h1": "Digital advertising"
+  "h1": "Digital advertising management"
  },
  "service": {
-  "name": "Digital advertising",
+  "name": "Digital advertising management",
   "type": "Digital advertising, acquisition strategy and conversion rate optimization",
   "audience": "Service businesses, SaaS and growing brands"
  },
@@ -13,7 +13,7 @@
   {
    "type": "page-hero",
    "tagH1": true,
-   "tag": "Digital advertising",
+   "tag": "Digital advertising management",
    "h1": "Ads that *pay off*, not ads that cost",
    "lead": "We don't run your campaigns alone: we orchestrate them with selected media experts from our network, and we build the pages that turn every click into an inquiry.",
    "ctas": [
@@ -21,11 +21,6 @@
      "label": "Discuss a project",
      "to": "@contact",
      "style": "violet"
-    },
-    {
-     "label": "See landing pages",
-     "to": "@landing-pages",
-     "style": "ghost"
     }
    ],
    "brief": [
@@ -50,7 +45,7 @@
   {
    "type": "statement",
    "wide": true,
-   "text": "An ad is only worth as much as *the page it lands on.*",
+   "text": "An ad is only worth as much as *the page it lands on*",
    "prose": [
     "Many companies raise their ad budget when the real problem lies after the click: a vague message, a slow page, a painful form. The cost per customer climbs, and the platform gets the blame.",
     "That's our strength: upstream (offer and message) and downstream (page, funnel, measurement). The media experts in our network run the campaigns; we make sure the traffic they win actually converts."

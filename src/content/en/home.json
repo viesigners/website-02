@@ -204,32 +204,12 @@
      "desc": "Speed up the launch of new services with a validated action plan, from offer to sales funnel.",
      "mini": true,
      "hero": true
-    },
-    {
-     "span": "c-4",
-     "mini": true,
-     "to": "@publicite",
-     "cta": "See the service",
-     "title": "Digital advertising",
-     "desc": "Campaigns run by experts from our network, plugged into pages built to convert: every ad dollar works harder."
-    },
-    {
-     "span": "c-4",
-     "mini": true,
-     "to": "@medias-sociaux",
-     "cta": "See the service",
-     "title": "Social media",
-     "desc": "A social presence consistent with your offer that feeds your funnel instead of just holding space."
-    },
-    {
-     "span": "c-4",
-     "mini": true,
-     "to": "@seo-geo",
-     "cta": "See the service",
-     "title": "SEO/GEO",
-     "desc": "Get found on Google and cited in the answers of ChatGPT, Gemini, Perplexity and the rest."
     }
-   ]
+   ],
+   "all": {
+    "label": "View all services",
+    "to": "services"
+   }
   },
   {
    "type": "stats",

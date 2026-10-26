@@ -204,32 +204,12 @@
      "desc": "Accélérez le lancement de nouveaux services avec un plan d'action validé, de l'offre au tunnel de vente.",
      "mini": true,
      "hero": true
-    },
-    {
-     "span": "c-4",
-     "mini": true,
-     "to": "@publicite",
-     "cta": "Voir le service",
-     "title": "Publicité numérique",
-     "desc": "Des campagnes pilotées par des experts de notre réseau, branchées sur des pages conçues pour convertir : chaque dollar publicitaire travaille plus fort."
-    },
-    {
-     "span": "c-4",
-     "mini": true,
-     "to": "@medias-sociaux",
-     "cta": "Voir le service",
-     "title": "Médias sociaux",
-     "desc": "Une présence sociale cohérente avec votre offre, qui nourrit votre entonnoir au lieu de simplement occuper le terrain."
-    },
-    {
-     "span": "c-4",
-     "mini": true,
-     "to": "@seo-geo",
-     "cta": "Voir le service",
-     "title": "SEO/GEO",
-     "desc": "Soyez trouvé sur Google et cité dans les réponses de ChatGPT, Gemini, Perplexity et compagnie."
     }
-   ]
+   ],
+   "all": {
+    "label": "Voir tous les services",
+    "to": "services"
+   }
   },
   {
    "type": "stats",

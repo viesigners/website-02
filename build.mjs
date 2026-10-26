@@ -73,6 +73,8 @@ const ROUTES = {
   'jean-francois': { fr: 'a-propos/jean-francois-bg', en: 'about/jean-francois-bg' },
   realisations: { fr: 'realisations', en: 'work' },
   contact: { fr: 'contact', en: 'contact' },
+  copywriting: { fr: 'copywriting', en: 'copywriting' },
+  services: { fr: 'services', en: 'services' },
   'marque-blanche': { fr: 'partenaire-marque-blanche', en: 'white-label-partner' },
   privacy: { fr: 'politique-de-confidentialite', en: 'privacy-policy' },
   terms: { fr: 'conditions-generales', en: 'terms-of-use' },
@@ -83,7 +85,8 @@ const ROUTES = {
    Edit "hidden" in src/config.json to bring them back (empty list = everything visible). */
 const HIDDEN = new Set(CFG.hidden || []);
 const isHidden = (key) => (key === 'post' || key.startsWith('post:') ? HIDDEN.has('actualites') || HIDDEN.has(key) : HIDDEN.has(key));
-const SERVICE_KEYS = ['sites-web', 'landing-pages', 'design-produit', 'coaching', 'publicite', 'medias-sociaux', 'seo-geo'];
+const SERVICE_KEYS = ['sites-web', 'landing-pages', 'design-produit', 'coaching', 'publicite', 'medias-sociaux', 'seo-geo', 'copywriting'];
+const MAIN_SERVICE_KEYS = ['sites-web', 'landing-pages', 'design-produit', 'coaching']; // menu and footer stay short: the rest lives on the services hub
 const POSTS = { fr: [], en: [] };            // filled at load
 let CURRENT_POST_SLUGS = {};                 // key -> {fr,en}
 const url = (key, lang) => {
@@ -235,8 +238,29 @@ R.services = (s, c) => {
   return `<section class="section" id="services"><div class="wrap">
   ${secHead(s, c, 'services')}
   <div class="bento">${cards}</div>
+  ${s.all ? `<p class="services__all rv"><a class="link-arrow" href="${url(s.all.to, lang)}">${esc(s.all.label)} ${ico('arrow')}</a></p>` : ''}
 </div></section>`;
 };
+
+R.hub = (s, c) => {
+  const { lang } = c;
+  const cards = s.items.filter((k) => !(k.to.startsWith('@') && isHidden(k.to.slice(1)))).map((k, i) => {
+    const to = k.to.startsWith('@') ? url(k.to.slice(1), lang) : k.to;
+    return `<article class="card hub__${k.area} hub--${k.size}${k.size === 'lg' ? ' card--hero' : ''} rv" style="--d:${(i % 3) * .07}s">
+    <h3><a class="more" href="${to}" aria-label="${esc(k.title)}"></a>${fmt(k.title, lang)}</h3>
+    <p>${fmt(k.desc, lang)}</p>
+    <div class="card__foot"><span class="link-arrow">${esc(k.cta)} ${ico('arrow')}</span></div>
+  </article>`;
+  }).join('');
+  return `<section class="section" id="services"><div class="wrap">
+  ${secHead(s, c, 'services')}
+  <div class="hub">${cards}</div>
+</div></section>`;
+};
+
+R.partner = (s, c) => `<section class="section section--tight section--partner"><div class="wrap">
+  <article class="casecard casecard--word rv"><a class="more" href="${url(s.to, c.lang)}" aria-label="${esc(s.label)}"></a><div class="casecard__n"><p class="eyebrow-tag">${esc(s.tag)}</p><b>${esc(s.word)}</b></div><div class="casecard__body"><h2>${fmt(s.h, c.lang)}</h2><p>${fmt(s.p, c.lang)}</p><span class="link-arrow">${esc(s.label)} ${ico('arrow')}</span></div></article>
+</div></section>`;
 
 R.stats = (s, c) => `<section class="section"><div class="wrap">
   ${s.h2 ? secHead(s, c, 'stats') : ''}
@@ -296,8 +320,8 @@ R.faq = (s, c) => {
 };
 
 R.deliverables = (s, c) => `<section class="section"${s.id ? ` id="${s.id}"` : ''}><div class="wrap"><div class="split">
-  <div class="split__head">${splitLabel(c, 'deliverables')}<h2 class="rv">${fmt(s.h2, c.lang)}</h2>${s.lead ? `<p class="lead rv">${fmt(s.lead, c.lang)}</p>` : ''}</div>
-  <div class="dl">${s.items.map((i, k) => { const link = i.to && !isHidden(i.to); return `<div class="dl__item${link ? ' dl__item--link' : ''} rv" style="--d:${k * .04}s"><h3>${link ? `<a class="more" href="${url(i.to, c.lang)}" aria-label="${esc(plain(i.h))}"></a>` : ''}${fmt(i.h, c.lang)}</h3><p>${fmt(i.p, c.lang)}</p></div>`; }).join('')}</div>
+  <div class="split__head">${s.label ? `<p class="label rv">${esc(s.label)}</p>` : splitLabel(c, 'deliverables')}<h2 class="rv">${fmt(s.h2, c.lang)}</h2>${s.lead ? `<p class="lead rv">${fmt(s.lead, c.lang)}</p>` : ''}</div>
+  <div class="dl">${s.items.map((i, k) => { const link = i.to && !isHidden(i.to); return `<div class="dl__item${link ? ' dl__item--link' : ''}${i.p ? '' : ' dl__item--solo'}${s.icon ? ' dl__item--icon' : ''} rv" style="--d:${k * .04}s">${s.icon ? ico(s.icon, 'dl__icon') : ''}<h3>${link ? `<a class="more" href="${url(i.to, c.lang)}" aria-label="${esc(plain(i.h))}"></a>` : ''}${fmt(i.h, c.lang)}</h3>${i.p ? `<p>${fmt(i.p, c.lang)}</p>` : ''}</div>`; }).join('')}</div>
 </div></div></section>`;
 
 R.process = (s, c) => `<section class="section"><div class="wrap">
@@ -516,7 +540,7 @@ function header(c) {
   const main = [['home', 'home'], ['a-propos', 'a-propos'], ['realisations', 'realisations'], ['actualites', 'actualites'], ['contact', 'contact']]
       .filter(([k]) => !isHidden(k))
     .map(([k, label]) => `<a href="${url(k, lang)}"${cur(k, k === 'a-propos' ? ['charles-erick', 'jean-francois'] : k === 'actualites' ? ['post'] : [])}>${esc(T.nav[label])}</a>`).join('');
-  const services = SERVICE_KEYS.filter((k) => !isHidden(k)).map((k) => `<a href="${url(k, lang)}"${cur(k)}>${esc(T.nav[k])}<small>${esc(T.navSub[k])}</small></a>`).join('');
+  const services = MAIN_SERVICE_KEYS.filter((k) => !isHidden(k)).map((k) => `<a href="${url(k, lang)}"${cur(k)}>${esc(T.nav[k])}<small>${esc(T.navSub[k])}</small></a>`).join('') + `<a class="drawer__all" href="${url('services', lang)}"${cur('services')}>${esc(T.navAll)} ${ico('arrow')}</a>`;
   return `<a class="skip" href="#main">${esc(T.skip)}</a>
 <header class="header" id="top">
   <div class="header__in">
@@ -544,7 +568,7 @@ function footer(c) {
   <div class="footer__grid">
     <div><a class="footer__logo" href="${url('home', lang)}" aria-label="Viesigners — ${esc(T.nav.home)}">${img('logo-viesigners.png', 'Viesigners')}</a><p style="color:var(--text-2);max-width:34ch">${esc(T.footer.blurb)}</p>
       <p style="margin-top:1.4rem"><a class="pill pill--sm" href="${url('contact', lang)}">${esc(T.footer.cta)}</a></p></div>
-    <div><h2>${esc(T.nav.services)}</h2><ul>${SERVICE_KEYS.filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.nav[k])}</a></li>`).join('')}</ul></div>
+    <div><h2>${esc(T.nav.services)}</h2><ul>${MAIN_SERVICE_KEYS.filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.footer.nav?.[k] || T.nav[k])}</a></li>`).join('')}<li><a class="footer__all" href="${url('services', lang)}">${esc(T.navAll)} ${ico('arrow')}</a></li></ul></div>
     <div><h2>${esc(T.footer.company)}</h2><ul>${['a-propos', 'realisations', 'actualites', 'contact'].filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.nav[k])}</a></li>`).join('')}</ul></div>
     <div><h2>${esc(T.nav.contact)}</h2><address><span>Québec, Canada</span><span>Vancouver, Canada</span><a href="tel:${CFG.phoneRaw}">${esc(CFG.phone)}</a></address>
       <div class="footer__social"><a href="${CFG.social.facebook}" target="_blank" rel="noopener noreferrer me" aria-label="Facebook ${esc(T.newTab)}">${ico('fb')}</a><a href="${CFG.social.linkedin}" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn ${esc(T.newTab)}">${ico('in')}</a></div></div>
@@ -588,6 +612,8 @@ function toMd(page, c) {
       case 'statement': L.push(t(s.text), '', ...(s.prose || []).flatMap((p) => [t(p), '']), ''); break;
       case 'friction': L.push(`## ${t(s.h2)}`, '', t(s.lead), '', ...s.pains.map((p) => `- ${t(p)}`), '', t(s.reveal.h3), '', ...s.reveal.p.flatMap((p) => [t(p), '']), t(s.reveal.cost), ''); break;
       case 'founders': L.push(`## ${t(s.h2)}`, '', ...s.text.flatMap((p) => [t(p), '']), ...s.checks.map((k) => `- ${t(k)}`), ''); break;
+      case 'partner': L.push(`## ${t(s.h)}`, '', t(s.p), '', `[${s.label}](${abs(url(s.to, lang))})`, ''); break;
+      case 'hub': L.push(`## ${t(s.h2)}`, '', t(s.lead), '', ...s.items.flatMap((k) => [`### ${t(k.title)}`, t(k.desc), '']), ''); break;
       case 'services': L.push(`## ${t(s.h2)}`, '', t(s.lead), '', ...s.cards.flatMap((k) => [`### ${t(k.title)}`, t(k.desc), ...(k.items || []).map((i) => `- ${i.b ? t(i.b) + ' — ' : ''}${t(i.t)}`), '']), ''); break;
       case 'stats': L.push(s.h2 ? `## ${t(s.h2)}` : '', '', ...s.items.map((i) => `- **${i.n}** ${t(i.h)}: ${t(i.p)}`), ''); break;
       case 'work': L.push(`## ${t(s.h2)}`, '', ...s.items.map((i) => `- ${i.title}${i.result ? ' — ' + i.result : ''}`), ''); break;
@@ -617,7 +643,7 @@ function toMd(page, c) {
 const THEME = {
   'hero-home': 'dark', 'page-hero': 'dark', 'cta-final': 'dark',
   friction: 'light', founders: 'dark', services: 'light', stats: 'dark', work: 'light', fit: 'dark', slot: 'light', testimonials: 'light', faq: 'light',
-  statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', related: 'light', bio: 'light', legal: 'light', people: 'dark', facts: 'light',
+  statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', hub: 'light', partner: 'dark', related: 'light', bio: 'light', legal: 'light', people: 'dark', facts: 'light',
   'posts-list': 'light', article: 'light', contact: 'light', 'rich-text': 'light',
 };
 const ASSET_HASH = {};
@@ -637,7 +663,7 @@ function buildPage({ lang, key, page, post }) {
 
   /* breadcrumbs */
   const crumbs = [{ name: T.nav.home, url: url('home', lang) }];
-  if (SERVICE_KEYS.includes(key)) { /* Home > Service */ }
+  if (SERVICE_KEYS.includes(key) || key === 'cas-saas') crumbs.push({ name: T.nav.services, url: url('services', lang) }); // Home > Services > Service
   if (['charles-erick', 'jean-francois'].includes(key)) crumbs.push({ name: T.nav['a-propos'], url: url('a-propos', lang) });
   if (key === 'cas-saas') crumbs.push({ name: T.nav['design-produit'], url: url('design-produit', lang) });
   if (key === 'post') crumbs.push({ name: T.nav.actualites, url: url('actualites', lang) });
@@ -659,7 +685,7 @@ function buildPage({ lang, key, page, post }) {
   const graph = [...orgNodes(lang, T)];
   const pageId = canonical + '#webpage';
   const webpage = {
-    '@type': key === 'post' ? 'WebPage' : key === 'contact' ? 'ContactPage' : key === 'a-propos' ? 'AboutPage' : ['actualites', 'realisations'].includes(key) ? 'CollectionPage' : 'WebPage',
+    '@type': key === 'post' ? 'WebPage' : key === 'contact' ? 'ContactPage' : key === 'a-propos' ? 'AboutPage' : ['actualites', 'realisations', 'services'].includes(key) ? 'CollectionPage' : 'WebPage',
     '@id': pageId, url: canonical, name: page.meta.title, description: page.meta.description, inLanguage: lang, isPartOf: { '@id': abs('/#website') }, about: { '@id': abs('/#organization') },
     datePublished: page.published || CFG.published, dateModified: page.updated || BUILD_DATE, breadcrumb: { '@id': canonical + '#breadcrumb' },
     primaryImageOfPage: { '@type': 'ImageObject', url: abs('/assets/img/' + (page.image || `og-card-${lang}.jpg`)) },
@@ -686,6 +712,10 @@ function buildPage({ lang, key, page, post }) {
     const art = graph.find((x) => x['@type'] === 'Article'); if (art) art.image = [abs('/assets/img/' + (page.ogImage || `og-card-${lang}.jpg`)), { '@id': canonical + '#founders-photo' }];
   }
   if (page.faq?.length) graph.push({ '@type': 'FAQPage', '@id': canonical + '#faq', inLanguage: lang, mainEntity: page.faq.map((f) => ({ '@type': 'Question', name: plain(f.q), acceptedAnswer: { '@type': 'Answer', text: f.a.map(plain).join(' ') } })) });
+  if (key === 'services') {
+    const hub = page.sections.find((s) => s.type === 'hub');
+    graph.push({ '@type': 'ItemList', '@id': canonical + '#list', name: plain(page.meta.h1), itemListElement: hub.items.filter((k) => !(k.to.startsWith('@') && isHidden(k.to.slice(1)))).map((k, n) => ({ '@type': 'ListItem', position: n + 1, item: { '@type': 'Service', name: plain(k.title), description: plain(k.desc), url: abs(url(k.to.slice(1), lang)), provider: { '@id': abs('/#organization') } } })) });
+  }
   if (key === 'realisations') graph.push({ '@type': 'ItemList', '@id': canonical + '#list', itemListElement: page.sections.filter((s) => s.type === 'work').flatMap((s) => s.items).map((i, n) => ({ '@type': 'ListItem', position: n + 1, item: { '@type': 'CreativeWork', name: i.title, description: i.result || i.alt, image: abs('/assets/img/work/' + i.img), creator: { '@id': abs('/#organization') } } })) });
 
   const jsonld = { '@context': 'https://schema.org', '@graph': graph };

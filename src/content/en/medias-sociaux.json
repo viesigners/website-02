@@ -2,10 +2,10 @@
  "meta": {
   "title": "Social Media Strategy & Content That Feeds Your Funnel | Viesigners",
   "description": "A social media presence aligned with your offer: strategy, brand voice, content and tracking, connected to your conversion pages.",
-  "h1": "Social media"
+  "h1": "Social media marketing and content creation"
  },
  "service": {
-  "name": "Social media",
+  "name": "Social media marketing and content creation",
   "type": "Social media strategy and content marketing",
   "audience": "Service businesses, consultants, coaches and SaaS"
  },
@@ -13,7 +13,7 @@
   {
    "type": "page-hero",
    "tagH1": true,
-   "tag": "Social media",
+   "tag": "Social media marketing and content creation",
    "h1": "A social presence that *feeds your funnel*",
    "lead": "Posting is not a strategy. We align your social media with your offer and your conversion pages, with experts from our network, so every post moves a customer closer to a decision.",
    "ctas": [
@@ -21,11 +21,6 @@
      "label": "Discuss a project",
      "to": "@contact",
      "style": "violet"
-    },
-    {
-     "label": "See digital advertising",
-     "to": "@publicite",
-     "style": "ghost"
     }
    ],
    "brief": [

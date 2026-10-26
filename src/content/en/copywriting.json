@@ -1,0 +1,181 @@
+{
+ "meta": {
+  "title": "Conversion Copywriting for Websites & SaaS | Viesigners",
+  "description": "Persuasive, SEO-aware copywriting for websites, landing pages, funnels and SaaS: clear messages that convert, in a voice that sounds like you.",
+  "h1": "Conversion copywriting"
+ },
+ "service": {
+  "name": "Conversion copywriting",
+  "type": "Website, landing page, funnel, SEO/GEO and product copywriting",
+  "audience": "Businesses, SaaS teams and agencies"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tagH1": true,
+   "tag": "Conversion copywriting",
+   "h1": "Words that make visitors *take action*",
+   "lead": "We write the messages that explain your value, answer your customers' questions and lead them to the next step, for your website, landing pages, funnels and product.",
+   "brief": [
+    {
+     "b": "Who it's for:",
+     "t": "businesses, SaaS teams and agencies whose pages attract visitors but don't convince them."
+    },
+    {
+     "b": "What you get:",
+     "t": "persuasive, SEO-aware copy that sounds like you, built on your customers' real words and questions."
+    },
+    {
+     "b": "Approach:",
+     "t": "we listen to how your customers talk, then write, refine and align the words with the design."
+    },
+    {
+     "b": "Collaboration:",
+     "t": "we work with your team and your designers so words and layout work as one."
+    }
+   ],
+   "ctas": [
+    {
+     "label": "Discuss a project",
+     "to": "@contact",
+     "style": "violet"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "wide": true,
+   "text": "Great design can't rescue a *message that doesn't land*.",
+   "prose": [
+    "Visitors decide in seconds whether you understand their problem. Clear, specific words explain your value, answer objections and make the next step obvious."
+   ]
+  },
+  {
+   "type": "deliverables",
+   "id": "inclus",
+   "h2": "What we *write*",
+   "lead": "Copy for every step between a first visit and a first sale.",
+   "items": [
+    {
+     "h": "Website copy",
+     "p": "Messages for your home, service and about pages that build trust and explain what you do in your customers' words.",
+     "to": "sites-web"
+    },
+    {
+     "h": "Landing pages and funnels",
+     "p": "Persuasive pages built around one action: offer, proof, objections and a clear call to action.",
+     "to": "landing-pages"
+    },
+    {
+     "h": "SEO and GEO content",
+     "p": "Answer-first content with a clear structure and real answers to real questions, to be found on Google and cited by AI.",
+     "to": "seo-geo"
+    },
+    {
+     "h": "Social media posts",
+     "p": "Posts in your brand's voice that start conversations and lead people toward your offer.",
+     "to": "medias-sociaux"
+    },
+    {
+     "h": "Product and UX writing",
+     "p": "Onboarding, empty states and interface text that guide users and give your product a voice.",
+     "to": "design-produit"
+    },
+    {
+     "h": "Messaging and tone of voice",
+     "p": "A clear value proposition and a voice that stays consistent across every page and channel."
+    },
+    {
+     "h": "Copy audit and rewrite",
+     "p": "We review what you have, find where the words lose people and rewrite what matters most."
+    }
+   ]
+  },
+  {
+   "type": "process",
+   "h2": "From your customers' words to *your next conversion*",
+   "lead": "A clear process, with a deliverable at the end of each step.",
+   "steps": [
+    {
+     "h": "Listen",
+     "p": "We study how your customers talk about their problems: reviews, forums, search questions and your competitors.",
+     "out": "Deliverable: customer language and objections."
+    },
+    {
+     "h": "Message",
+     "p": "We define what you say, to whom and in what order, so each page has one clear job.",
+     "out": "Deliverable: messaging and page structure."
+    },
+    {
+     "h": "Write",
+     "p": "We write demand-generation copy, with SEO, GEO and the answers your customers are looking for built in.",
+     "out": "Deliverable: copy ready for your review."
+    },
+    {
+     "h": "Refine",
+     "p": "We adjust with your feedback and align the words with the design.",
+     "out": "Deliverable: final copy, ready to publish."
+    }
+   ]
+  },
+  {
+   "type": "faq",
+   "h2": "Frequently asked questions about *copywriting*",
+   "open": true
+  },
+  {
+   "type": "related",
+   "h2": "You might *also like*",
+   "cta": "See the service",
+   "items": [
+    "sites-web",
+    "landing-pages",
+    "design-produit"
+   ]
+  },
+  {
+   "type": "cta-final",
+   "h2": "Ready for words that *work as hard as you do?*",
+   "p": "Tell us about your offer and your customers: we'll tell you honestly where better words can make the difference.",
+   "cta": "Discuss a project"
+  }
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between copywriting and content writing?",
+   "a": [
+    "Copywriting is written to make someone take an action: request a quote, sign up, buy. Content writing mostly informs or educates. The two work together: we write both, with the same goal of moving your customers one step forward."
+   ]
+  },
+  {
+   "q": "Do you write SEO-friendly copy?",
+   "a": [
+    "Yes. We build search terms and the real questions your customers ask into the copy, with a clear structure and direct answers, so it can be found on Google and quoted by AI assistants without sounding robotic."
+   ]
+  },
+  {
+   "q": "Can you write in French and in English?",
+   "a": [
+    "Yes. We work in both languages and write for each audience rather than translating word for word."
+   ]
+  },
+  {
+   "q": "How do you make the copy sound like our brand?",
+   "a": [
+    "We start from your offer, your customers and the words they use, then agree on a tone of voice with you before writing at scale. You review the copy and we refine it until it sounds like you."
+   ]
+  },
+  {
+   "q": "Do you work with our designers and developers?",
+   "a": [
+    "Yes. Words and layout work best together, so we collaborate with your designers and developers, or with our own [web design](@sites-web) and [landing page](@landing-pages) services."
+   ]
+  },
+  {
+   "q": "How do you know if the copy works?",
+   "a": [
+    "We agree on a measurable goal before starting, such as inquiries or conversions on a page, and we track it after launch so we can keep improving what matters."
+   ]
+  }
+ ]
+}

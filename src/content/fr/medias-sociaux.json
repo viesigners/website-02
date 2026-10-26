@@ -2,10 +2,10 @@
  "meta": {
   "title": "Médias sociaux : stratégie et contenu qui nourrissent votre entonnoir | Viesigners",
   "description": "Une présence sur les médias sociaux alignée sur votre offre : stratégie, voix de marque, contenu et suivi, relié à vos pages de conversion.",
-  "h1": "Médias sociaux"
+  "h1": "Marketing des médias sociaux et création de contenu"
  },
  "service": {
-  "name": "Médias sociaux",
+  "name": "Marketing des médias sociaux et création de contenu",
   "type": "Stratégie de médias sociaux et marketing de contenu",
   "audience": "Entreprises de services, consultants, coachs et SaaS"
  },
@@ -13,7 +13,7 @@
   {
    "type": "page-hero",
    "tagH1": true,
-   "tag": "Médias sociaux",
+   "tag": "Marketing des médias sociaux et création de contenu",
    "h1": "Une présence sociale qui *nourrit votre entonnoir*",
    "lead": "Publier n'est pas une stratégie. Nous alignons vos médias sociaux sur votre offre et vos pages de conversion, avec des experts de notre réseau, pour que chaque publication rapproche un client de la décision.",
    "ctas": [
@@ -21,11 +21,6 @@
      "label": "Discuter d'un projet",
      "to": "@contact",
      "style": "violet"
-    },
-    {
-     "label": "Voir la publicité numérique",
-     "to": "@publicite",
-     "style": "ghost"
     }
    ],
    "brief": [

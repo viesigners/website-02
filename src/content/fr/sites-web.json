@@ -2,10 +2,10 @@
  "meta": {
   "title": "Création de site web professionnel | Viesigners — UX/UI & CRO",
   "description": "Sites web professionnels qui bâtissent votre notoriété et convertissent : structure, design UX/UI, rédaction stratégique. Plus de 600 projets livrés.",
-  "h1": "Création de site web professionnel"
+  "h1": "Conception et développement de sites web"
  },
  "service": {
-  "name": "Création de site web professionnel",
+  "name": "Conception et développement de sites web",
   "type": "Conception de site web, UX/UI et optimisation du taux de conversion",
   "audience": "Entreprises de services, SaaS et marques en croissance"
  },
@@ -13,7 +13,7 @@
   {
    "type": "page-hero",
    "tagH1": true,
-   "tag": "Création de site web professionnel",
+   "tag": "Conception et développement de sites web",
    "h1": "Enracinez votre *notoriété* et prenez la place qui vous revient",
    "lead": "Nous avons livré plus de 600 projets numériques et conseillé des géants comme Dell, Nerf et HP durant nos 30 années d'expérience combinée. La qualité de nos sites a été reconnue par Awwwards.",
    "guarantee": "Augmentation de la performance garantie!",

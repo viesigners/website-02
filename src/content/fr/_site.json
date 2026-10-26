@@ -9,18 +9,19 @@
   "realisations": "Réalisations",
   "actualites": "Actualités",
   "contact": "Contact",
-  "sites-web": "Sites web",
-  "landing-pages": "Landing pages",
+  "sites-web": "Création de site web",
+  "landing-pages": "Landing pages et tunnels de vente",
   "design-produit": "Design de produit",
   "publicite": "Publicité numérique",
-  "medias-sociaux": "Médias sociaux",
-  "seo-geo": "SEO/GEO",
+  "medias-sociaux": "Marketing des médias sociaux",
+  "seo-geo": "SEO et GEO",
   "coaching": "Conseil d'affaires web",
   "cas-saas": "Étude de cas : SaaS B2B en IA",
   "merci": "Merci",
   "privacy": "Politique de confidentialité",
   "terms": "Conditions générales",
-  "marque-blanche": "Partenaire en marque blanche"
+  "marque-blanche": "Partenaire en marque blanche",
+  "copywriting": "Copywriting"
  },
  "navSub": {
   "sites-web": "Sites qui bâtissent la notoriété et convertissent",
@@ -29,7 +30,8 @@
   "publicite": "Campagnes rentables, propulsées par nos pages",
   "medias-sociaux": "Présence sociale qui nourrit votre entonnoir",
   "seo-geo": "Soyez trouvé sur Google et cité par les IA",
-  "coaching": "Offres et lancements pour entrepreneurs de services"
+  "coaching": "Offres et lancements pour entrepreneurs de services",
+  "copywriting": "Des mots qui transforment les visiteurs en clients"
  },
  "brief": "En bref",
  "updated": "Mis à jour le",
@@ -54,7 +56,10 @@
   "rights": "Les Viesigners. Tous droits réservés.",
   "privacy": "Politique de confidentialité",
   "terms": "Conditions générales",
-  "cookies": "Paramètres des témoins"
+  "cookies": "Paramètres des témoins",
+  "nav": {
+   "sites-web": "Sites web"
+  }
  },
  "orgDescription": "Viesigners est une agence UX/UI, web et marketing canadienne lean (Québec et Vancouver) spécialisée en UX/UI et en optimisation du taux de conversion (CRO) : sites web, landing pages, tunnels de vente, design de produit SaaS et applications, et conseil d'affaires web. En collaboration avec un réseau d'experts, elle accompagne aussi les entreprises en publicité numérique, SEO et GEO.",
  "knowsAbout": [
@@ -114,5 +119,6 @@
   "accept": "Accepter",
   "decline": "Refuser",
   "policy": "Politique de confidentialité"
- }
+ },
+ "navAll": "Voir tous les services"
 }

@@ -2,10 +2,10 @@
  "meta": {
   "title": "Publicité numérique rentable (Google Ads, Meta, LinkedIn) | Viesigners",
   "description": "Publicité numérique pilotée avec des experts média de notre réseau et branchée sur des pages conçues pour convertir : chaque dollar publicitaire travaille plus fort.",
-  "h1": "Publicité numérique"
+  "h1": "Gestion de la publicité numérique"
  },
  "service": {
-  "name": "Publicité numérique",
+  "name": "Gestion de la publicité numérique",
   "type": "Publicité numérique, stratégie d'acquisition et optimisation du taux de conversion",
   "audience": "Entreprises de services, SaaS et marques en croissance"
  },
@@ -13,7 +13,7 @@
   {
    "type": "page-hero",
    "tagH1": true,
-   "tag": "Publicité numérique",
+   "tag": "Gestion de la publicité numérique",
    "h1": "Des publicités qui *rapportent*, pas qui coûtent",
    "lead": "Nous ne gérons pas vos campagnes seuls : nous les orchestrons avec des experts média sélectionnés de notre réseau, et nous bâtissons les pages qui transforment chaque clic en demande.",
    "ctas": [
@@ -21,11 +21,6 @@
      "label": "Discuter d'un projet",
      "to": "@contact",
      "style": "violet"
-    },
-    {
-     "label": "Voir les landing pages",
-     "to": "@landing-pages",
-     "style": "ghost"
     }
    ],
    "brief": [
@@ -50,7 +45,7 @@
   {
    "type": "statement",
    "wide": true,
-   "text": "Une publicité ne vaut que ce que vaut *la page où elle atterrit.*",
+   "text": "Une publicité ne vaut que ce que vaut *la page où elle atterrit*",
    "prose": [
     "Beaucoup d'entreprises augmentent leur budget publicitaire alors que le vrai problème se trouve après le clic : un message flou, une page lente, un formulaire pénible. Le coût par client monte, et on accuse la plateforme.",
     "Notre force est là : en amont (offre et message) et en aval (page, tunnel, mesure). Les experts média de notre réseau s'occupent des campagnes; nous nous assurons que le trafic qu'ils obtiennent se convertit."

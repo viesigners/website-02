@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "UX/UI, Web & Marketing Services | Viesigners",
+    "description": "Websites, landing pages and funnels, product design, business advisory, advertising, social media and SEO/GEO: all Viesigners services in one place.",
+    "h1": "UX/UI, web and marketing services"
+  },
+  "sections": [
+    {
+      "type": "page-hero",
+      "tag": "UX/UI, web and marketing services",
+      "h1": "Your comprehensive *growth toolbox*",
+      "lead": "Viesigners is a lean UX/UI, web and marketing agency in Québec and Vancouver. Our core services cover your website, your landing pages and funnels, your product and your business strategy. Copywriting, digital advertising, social media and SEO/GEO extend them, with vetted specialists from our network when you need more.",
+      "ctas": [
+        {
+          "label": "Discuss a project",
+          "to": "@contact"
+        }
+      ],
+      "tagH1": true
+    },
+    {
+      "type": "hub",
+      "h2": "Choose where to *start*",
+      "lead": "Every service is built for one thing: making your business grow.",
+      "items": [
+        {
+          "area": "web",
+          "size": "lg",
+          "to": "@sites-web",
+          "cta": "See the service",
+          "title": "Website creation",
+          "desc": "Root your reputation and take the place you deserve in your market. 600+ projects delivered, recognized by Awwwards."
+        },
+        {
+          "area": "land",
+          "size": "md",
+          "to": "@landing-pages",
+          "cta": "See the service",
+          "title": "Landing pages and funnels",
+          "desc": "Double or triple your inquiries and customers: up to a 3,500% increase in inquiries with minimal ad budgets."
+        },
+        {
+          "area": "adv",
+          "size": "lg",
+          "to": "@design-produit",
+          "cta": "See the service",
+          "title": "Product design",
+          "desc": "For SaaS and app teams: more users who activate, convert and stay. +31% MRR and -24% churn in 90 days for a B2B AI SaaS."
+        },
+        {
+          "area": "prod",
+          "size": "md",
+          "to": "@coaching",
+          "cta": "See the service",
+          "title": "Business advisory",
+          "desc": "Speed up the launch of new services with a validated action plan, from offer to sales funnel."
+        },
+        {
+          "area": "ads",
+          "size": "sm",
+          "to": "@publicite",
+          "cta": "See the service",
+          "title": "Digital advertising",
+          "desc": "Campaigns run by experts from our network, plugged into pages built to convert: every ad dollar works harder."
+        },
+        {
+          "area": "soc",
+          "size": "md",
+          "to": "@medias-sociaux",
+          "cta": "See the service",
+          "title": "Social media marketing",
+          "desc": "A social presence consistent with your offer that feeds your funnel instead of just holding space."
+        },
+        {
+          "area": "seo",
+          "size": "sm",
+          "to": "@seo-geo",
+          "cta": "See the service",
+          "title": "SEO and GEO",
+          "desc": "Get found on Google and cited in the answers of ChatGPT, Gemini, Perplexity and the rest."
+        },
+        {
+          "area": "copy",
+          "size": "sm",
+          "to": "@copywriting",
+          "cta": "See the service",
+          "title": "Copywriting",
+          "desc": "Persuasive, SEO-aware copy for your website, landing pages and product: clear messages that turn visitors into customers."
+        }
+      ]
+    },
+    {
+      "type": "partner",
+      "tag": "For agencies and freelancers",
+      "word": "White-label",
+      "h": "Run an agency? *Let's team up.*",
+      "p": "Overflow, or a skills gap on a client project: our senior specialists step in under your brand, with room for your margin.",
+      "label": "Discover the white-label program",
+      "to": "marque-blanche"
+    },
+    {
+      "type": "faq",
+      "h2": "Frequently asked questions about *our services*",
+      "open": true
+    },
+    {
+      "type": "cta-final",
+      "h2": "Not sure what your *best strategy is?*",
+      "p": "There's more growth in your business than you're seeing today. Tell us about it: we'll find where customers slip away and build the plan to win them back.",
+      "cta": "Discuss a project"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which service should I start with?",
+      "a": [
+        "Start with the problem that costs you the most: a website that doesn't build trust, a landing page or funnel that doesn't convert, a product that loses users, or an offer that hasn't found its market. A first conversation is enough to find the right starting point. [Contact us](@contact)."
+      ]
+    },
+    {
+      "q": "Can I combine several services?",
+      "a": [
+        "Yes, the services are designed to work together. For example, a [landing page](@landing-pages) built to convert makes your advertising work harder, and a clear [product experience](@design-produit) keeps the customers you win."
+      ]
+    },
+    {
+      "q": "Do you deliver everything yourselves?",
+      "a": [
+        "Our core services are delivered by the founders. We do part of the work ourselves, such as strategy, structure and content, and bring in vetted experts from our network where it helps, for example for ad campaigns and SEO. We coordinate everything, so you keep a single point of contact."
+      ]
+    }
+  ]
+}
