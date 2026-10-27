@@ -44,7 +44,7 @@
   {
    "type": "statement",
    "wide": true,
-   "text": "Des interfaces et des expériences numériques qui *libèrent les équipes* et séduisent les investisseurs.",
+   "text": "Des interfaces et des expériences numériques qui *libèrent les équipes* et séduisent les investisseurs",
    "prose": [
     "Avec Charles-Erick, Jean-François forme « Les frères BG ». Leur travail a été reconnu par Awwwards, les OCTAS, Osentreprendre et Gartner, et a contribué à sécuriser 320 M$+ de financement pour une scale-up internationale."
    ]
@@ -79,7 +79,7 @@
   },
   {
    "type": "cta-final",
-   "h2": "Parlons de *votre produit.*",
+   "h2": "Parlons de *votre produit*",
    "p": "Un premier échange suffit pour savoir si nous pouvons vous aider.",
    "cta": "Parlons-nous!"
   }

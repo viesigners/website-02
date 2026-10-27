@@ -21,7 +21,8 @@
   "privacy": "Politique de confidentialité",
   "terms": "Conditions générales",
   "marque-blanche": "Partenaire en marque blanche",
-  "copywriting": "Copywriting"
+  "copywriting": "Copywriting",
+  "cebg": "Charles-Erick BG"
  },
  "navSub": {
   "sites-web": "Sites qui bâtissent la notoriété et convertissent",
@@ -104,7 +105,10 @@
   "bio": "Qui nous sommes",
   "people": "L'équipe",
   "facts": "En faits",
-  "testimonials": "Témoignages"
+  "testimonials": "Témoignages",
+  "cases": "Réalisations",
+  "results": "Résultats",
+  "portfolio": "Portfolio"
  },
  "call": "Appeler",
  "close": "Fermer",
@@ -120,5 +124,9 @@
   "decline": "Refuser",
   "policy": "Politique de confidentialité"
  },
- "navAll": "Voir tous les services"
+ "navAll": "Voir tous les services",
+ "applyCta": "Me joindre au sujet de ce rôle",
+ "copyLink": "Copier le lien",
+ "copied": "Lien copié",
+ "myRole": "Mon rôle"
 }

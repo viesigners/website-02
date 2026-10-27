@@ -10,3 +10,8 @@
 8. **Typos corrigées vs le site actuel** : « que nous n'aurez jamais », « Résultats garanties », « aidé », « internationnale », « top 3% »…
 9. **Garanties** — le texte « garanti » vient du site actuel; les détails sont à préciser dans les FAQ.
 10. **Consentement aux témoins** — le site actuel utilise CookieYes; aucun suivi n'est installé ici. Ajouter analytics/pixels + bannière de consentement au besoin.
+
+## Page portfolio personnelle (/charles-erick-bg/)
+- Digital Marketing : texte, chiffres, citations et images repris tels quels de la page Carrd (traduits en FR). Le témoignage d'Alex Elexis est une traduction libre (l'original français n'était pas disponible).
+- Design de produit et Design UX/UI : sections **rédigées à partir des projets Viesigners** (Pharmy, Collections, Trouve un stage, Warner, Marvel, Spin Master, Assassin's Creed, Wizards of the Coast). Les titres de rôle (« Senior Product Designer… », « Senior UX/UI Designer… ») et les listes « Ce que j'apporte » sont des propositions à valider. Aucune liste « Mon rôle » inventée pour ces deux sections.
+- Courriel de contact : `person.email` dans `src/config.json`; téléphone = celui de Viesigners.

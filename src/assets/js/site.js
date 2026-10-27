@@ -11,6 +11,7 @@
   const header = d.querySelector('.header');
   const drawer = d.querySelector('.drawer'), menuBtn = d.querySelector('.hmenu');
   let lastY = scrollY, ticking = false;
+  const roleNav = d.querySelector('.rolenav'), roleSecs = d.querySelectorAll('[data-role-section]'), lastRole = roleSecs[roleSecs.length - 1];
   const onScroll = () => {
     const y = Math.max(0, scrollY), dy = y - lastY;
     header && header.classList.toggle('is-stuck', y > 24);
@@ -18,6 +19,9 @@
       if (y < 80 || dy < -4) header.classList.remove('is-hidden');
       else if (dy > 6) header.classList.add('is-hidden');
     }
+    d.documentElement.classList.toggle('hdr-hidden', !!header && header.classList.contains('is-hidden'));
+    // portfolio page: the role bar stops following once the last role section (UX/UI) has ended
+    if (roleNav && lastRole) roleNav.classList.toggle('is-done', lastRole.getBoundingClientRect().bottom < 150);
     if (Math.abs(dy) > 4) lastY = y;
     ticking = false;
   };
@@ -54,6 +58,18 @@
       }
     } catch (_) {}
     d.addEventListener('keydown', e => { if (e.key === 'Escape' && drawer.classList.contains('is-open')) { setOpen(false); menuBtn.focus(); } });
+  }
+
+  /* portfolio page: copy a role's direct link, highlight the role being read */
+  d.querySelectorAll('.copylink').forEach(b => b.addEventListener('click', async () => {
+    const url = location.origin + location.pathname + b.dataset.copy;
+    try { await navigator.clipboard.writeText(url); } catch (_) { return; }
+    const t = b.textContent; b.textContent = b.dataset.done; setTimeout(() => { b.textContent = t; }, 1800);
+  }));
+  const spy = d.querySelectorAll('[data-spy]'), secs = d.querySelectorAll('[data-role-section]');
+  if (spy.length && secs.length && 'IntersectionObserver' in window) {
+    const so = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) spy.forEach(a => a.classList.toggle('is-active', a.dataset.spy === e.target.id)); }), { rootMargin: '-35% 0px -55% 0px' });
+    secs.forEach(s => so.observe(s));
   }
 
   /* reveal on first view */

@@ -116,19 +116,13 @@
   {
    "type": "founders",
    "kicker": "Et si vous laissiez tomber les essais-erreurs?",
-   "h2": "Découvrez les fondateurs des Viesigners : l'agence UX/UI, web et marketing canadienne lean no 1 pour *rentabiliser votre entreprise*",
+   "h2": "Découvrez les fondateurs : l'agence UX/UI, web et marketing canadienne lean no 1 pour *rentabiliser votre entreprise*",
    "sub": "Charles-Erick & Jean-François BG — Maîtres en conception d'expériences web (2009)",
    "text": [
-    "**Bonjour! Ici Les Frères BG.** Nous sommes des experts hybrides en conception d'expériences web, UX/UI et optimisation du taux de conversion (CRO) — originaires du Québec, Canada — avec plus de 30 années combinées à aider des entreprises de toutes tailles et de tous secteurs, dans des marchés anglophones comme francophones, à performer en ligne.",
-    "**Une approche unique, qui rallie expérience client et stratégies d'affaires web.** Entourés d'un réseau d'experts select du domaine numérique, aussi humains que compétents, nous opérons comme conseillers d'affaires, consultants stratégiques, pigistes seniors et partenaires de réalisation en conception d'offres et d'expériences numériques, afin de :"
-   ],
-   "checks": [
-    "**Améliorer les pages de destination et les parcours de vente** pour augmenter les demandes, les rendez-vous et les appels",
-    "**Clarifier et formuler des offres percutantes** pour inciter immédiatement les clients à passer à l'action",
-    "**Simplifier l'onboarding et l'expérience** des applications et services pour fidéliser davantage et prolonger la durée de vie client"
+    "**Bonjour! Ici Les Frères BG.** Experts hybrides en UX/UI et optimisation du taux de conversion (CRO), originaires du Québec, avec plus de 30 années combinées à aider des entreprises de toutes tailles à performer en ligne, en français comme en anglais."
    ],
    "cta": {
-    "label": "Faire connaissance avec les frères BG",
+    "label": "Plus sur les Frères BG",
     "to": "a-propos"
    },
    "photoAlt": "Charles-Erick et Jean-François BG, motivés à faire croître votre entreprise!",

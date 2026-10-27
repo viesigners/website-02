@@ -45,7 +45,7 @@
   {
    "type": "statement",
    "wide": true,
-   "text": "Aujourd'hui, on peut être trouvé en étant *classé* ou en étant *cité.*",
+   "text": "Aujourd'hui, on peut être trouvé en étant *classé* ou en étant *cité*",
    "prose": [
     "Vos clients posent de plus en plus leurs questions directement à des assistants IA, qui répondent en quelques lignes en citant quelques sources. Si votre contenu n'est pas clair, structuré et fiable, ces sources seront vos concurrents.",
     "Bonne nouvelle : le GEO s'appuie sur les mêmes fondations que le bon SEO — clarté, structure, expertise — auxquelles s'ajoutent quelques pratiques précises que nous appliquons pour vous."
@@ -145,7 +145,7 @@
   },
   {
    "type": "cta-final",
-   "h2": "Soyez la réponse que vos clients *trouvent.*",
+   "h2": "Soyez la réponse que vos clients *trouvent*",
    "p": "Faisons le point sur votre visibilité, sur Google comme dans les IA.",
    "cta": "Discuter d'un projet"
   }

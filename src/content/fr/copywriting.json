@@ -45,7 +45,7 @@
   {
    "type": "statement",
    "wide": true,
-   "text": "Un beau design ne sauvera pas *un message qui ne passe pas*.",
+   "text": "Un beau design ne sauvera pas *un message qui ne passe pas*",
    "prose": [
     "Les visiteurs décident en quelques secondes si vous comprenez leur problème. Des mots clairs et précis expliquent votre valeur, répondent aux objections et rendent la prochaine étape évidente."
    ]

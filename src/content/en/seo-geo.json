@@ -45,7 +45,7 @@
   {
    "type": "statement",
    "wide": true,
-   "text": "These days, you can be found by being *ranked* or by being *cited.*",
+   "text": "These days, you can be found by being *ranked* or by being *cited*",
    "prose": [
     "Your customers increasingly ask their questions directly to AI assistants, which answer in a few lines and cite a handful of sources. If your content isn't clear, structured and trustworthy, those sources will be your competitors.",
     "The good news: GEO builds on the same foundations as good SEO — clarity, structure, expertise — plus a few specific practices that we apply for you."
@@ -145,7 +145,7 @@
   },
   {
    "type": "cta-final",
-   "h2": "Be the answer your customers *find.*",
+   "h2": "Be the answer your customers *find*",
    "p": "Let's review your visibility, on Google and in AI.",
    "cta": "Discuss a project"
   }

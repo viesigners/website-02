@@ -44,7 +44,7 @@
   {
    "type": "statement",
    "wide": true,
-   "text": "Aider des entreprises de toutes tailles à *performer en ligne*, depuis plus de 30 années combinées avec son frère.",
+   "text": "Aider des entreprises de toutes tailles à *performer en ligne*, depuis plus de 30 années combinées avec son frère",
    "prose": [
     "Avec Jean-François, Charles-Erick forme « Les frères BG » : un duo qui rallie expérience client et stratégies d'affaires web, et qui intervient comme conseiller d'affaires, consultant stratégique et partenaire de réalisation."
    ]
@@ -79,7 +79,7 @@
   },
   {
    "type": "cta-final",
-   "h2": "Parlons de *votre projet.*",
+   "h2": "Parlons de *votre projet*",
    "p": "Un premier échange suffit pour savoir si nous pouvons vous aider.",
    "cta": "Parlons-nous!"
   }

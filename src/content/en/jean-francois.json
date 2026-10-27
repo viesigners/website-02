@@ -44,7 +44,7 @@
   {
    "type": "statement",
    "wide": true,
-   "text": "Interfaces and digital experiences that *free up teams* and win over investors.",
+   "text": "Interfaces and digital experiences that *free up teams* and win over investors",
    "prose": [
     "With Charles-Erick, Jean-François forms “The BG Twins”. Their work has been recognized by Awwwards, OCTAS, Osentreprendre and Gartner, and helped secure $320M+ in funding for an international scale-up."
    ]
@@ -79,7 +79,7 @@
   },
   {
    "type": "cta-final",
-   "h2": "Let's talk about *your product.*",
+   "h2": "Let's talk about *your product*",
    "p": "One first conversation is enough to know whether we can help.",
    "cta": "Let's talk!"
   }

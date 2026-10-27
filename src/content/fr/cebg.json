@@ -1,0 +1,475 @@
+{
+ "meta": {
+  "title": "Charles-Erick BG — Stratège senior en marketing numérique et écosystèmes web de croissance | Portfolio",
+  "description": "Portfolio de Charles-Erick BG : marketing numérique et croissance, design de produit et design UX/UI. 4,7× plus de demandes, +3 500 % de prospects, +48 % de conversions. Basé à Québec, Canada.",
+  "h1": "Charles-Erick BG"
+ },
+ "personJobTitle": "Stratège senior en marketing numérique et écosystèmes web de croissance",
+ "apply": {
+  "email": "cebgagnon@gmail.com"
+ },
+ "sections": [
+  {
+   "type": "profile-hero",
+   "name": "Charles-Erick BG",
+   "portraitAlt": "Portrait de Charles-Erick BG",
+   "h1": "Stratège senior en marketing numérique et *écosystèmes web de croissance*",
+   "lead": "Je transforme une expertise complexe en écosystèmes web performants. J'aide les entreprises à dominer leur marché grâce à un contenu qui engage, convertit et brille.",
+   "cta": "Ajoutez-moi à votre équipe",
+   "glance": [
+    {
+     "k": "Rôles",
+     "v": "Marketing numérique et croissance · Design de produit · Design UX/UI"
+    },
+    {
+     "k": "Basé à",
+     "v": "Québec, Canada"
+    },
+    {
+     "k": "Langues",
+     "v": "Français et anglais"
+    },
+    {
+     "k": "Expérience",
+     "v": "30+ années combinées avec Jean-François BG chez Viesigners"
+    }
+   ],
+   "advised": {
+    "label": "J'ai conseillé :",
+    "logos": [
+     {
+      "file": "logo-dell.png",
+      "alt": "Dell"
+     },
+     {
+      "file": "logo-hp.png",
+      "alt": "HP"
+     },
+     {
+      "file": "logo-salesforce.png",
+      "alt": "Salesforce"
+     }
+    ],
+    "more": "+400 autres..."
+   }
+  },
+  {
+   "type": "role-nav",
+   "label": "Portfolio par rôle",
+   "items": [
+    {
+     "id": "digital-marketing",
+     "label": "Marketing numérique"
+    },
+    {
+     "id": "product-design",
+     "label": "Design de produit"
+    },
+    {
+     "id": "ux-ui-design",
+     "label": "Design UX/UI"
+    }
+   ]
+  },
+  {
+   "type": "cases",
+   "id": "digital-marketing",
+   "label": "Marketing numérique",
+   "h2": "Réalisations *phares*",
+   "lead": "Rôle de stratège senior en marketing numérique et croissance : contenu, acquisition, marketing de produit et conversion.",
+   "apply": {
+    "subject": "Candidature — poste en marketing numérique et croissance"
+   },
+   "items": [
+    {
+     "brand": "logo-viesigners.png",
+     "brandAlt": "Viesigners",
+     "tag": "Viesigners · Lancement de notre propre offre",
+     "h3": "Stratégie de contenu et d'acquisition",
+     "paras": [
+      "Pour soutenir le lancement de notre nouvelle offre d'accompagnement, nous devions générer des occasions qualifiées sans recourir à la prospection à froid. Plutôt que de forcer la vente, nous avons mis en place une stratégie de contenu et d'aimants à prospects ciblée, combinée à des processus de qualification stricts et à des conversations personnalisées.",
+      "L'objectif principal : bâtir une audience captive et structurer un écosystème d'acquisition organique capable de faire croître nos revenus de façon prévisible."
+     ],
+     "nums": [
+      {
+       "n": "+500 %",
+       "t": "Croissance du chiffre d'affaires sur 3 ans"
+      },
+      {
+       "n": "4,5 K+",
+       "t": "Prospects qualifiés dans la communauté"
+      },
+      {
+       "n": "100 %",
+       "t": "Acquisition organique"
+      }
+     ],
+     "role": "Stratégie de contenu, création d'aimants à prospects, processus de qualification, bâtir une communauté, vente sociale et marketing."
+    },
+    {
+     "brand": "portfolio/logo-dialog-insight.png",
+     "brandAlt": "Dialog Insight",
+     "tag": "Dialog Insight · SaaS de marketing numérique",
+     "h3": "Adoption de produit et marketing SaaS",
+     "paras": [
+      "Dialog Insight, une plateforme SaaS de marketing numérique, déployait une toute nouvelle architecture de l'information. Le défi : assurer une transition fluide pour une base d'utilisateurs experts, attachés à leurs habitudes et exigeants. En collaboration avec des membres de l'équipe marketing, j'ai mené des dizaines d'entrevues clients pour affiner le message, contribué à établir les règles de communication et rédigé des communications stratégiques dans le produit (bannières, fenêtres modales, règles d'affichage, etc.).",
+      "L'objectif principal : coordonner les efforts entre les équipes pour rendre la valeur des nouvelles fonctionnalités facile à saisir et assurer une adoption rapide, tout en allégeant la charge de l'équipe de soutien."
+     ],
+     "nums": [
+      {
+       "n": "0",
+       "t": "Friction à l'adoption"
+      },
+      {
+       "n": "25+",
+       "t": "Entrevues clients réalisées"
+      },
+      {
+       "n": "Multicanal",
+       "t": "Stratégie de contenu",
+       "sm": true
+      },
+      {
+       "n": "Succès confirmé!",
+       "t": "Par l'équipe de soutien à la clientèle",
+       "sm": true
+      }
+     ],
+     "role": "Marketing de produit SaaS, recherche utilisateur, rédaction, architecture de l'information, stratégie de contenu B2B.",
+     "invert": true
+    }
+   ],
+   "seen": {
+    "label": "Tel que vu dans",
+    "items": [
+     {
+      "file": "press-coveo.png",
+      "alt": "Coveo"
+     },
+     {
+      "file": "press-socom.svg",
+      "alt": "SOCOM"
+     },
+     {
+      "file": "press-2gars-adwords.png",
+      "alt": "Les 2 gars d'Adwords"
+     },
+     {
+      "file": "press-o2web.png",
+      "alt": "O2 Web"
+     }
+    ]
+   }
+  },
+  {
+   "type": "result-cards",
+   "theme": "dark",
+   "label": "Plus de résultats",
+   "h2": "Vous en voulez *plus?!*",
+   "roleLabel": "Mon rôle",
+   "items": [
+    {
+     "img": "portfolio/results-valuables.jpg",
+     "alt": "Landing page d'un service d'achat d'objets de valeur",
+     "h3": "4,7× plus de demandes reçues",
+     "p": "Pour ce service d'achat d'objets de valeur, il fallait établir instantanément l'autorité et la confiance. En repensant le message marketing pour répondre directement aux objections et en optimisant le design de la page, nous avons multiplié les demandes sans changer l'offre ni le budget publicitaire.",
+     "roles": [
+      "Accompagnement en conception de proposition de valeur",
+      "Rédaction",
+      "Conception de landing page",
+      "Production visuelle",
+      "Alignement de la stratégie Google Ads"
+     ]
+    },
+    {
+     "img": "portfolio/results-niche-leads.jpg",
+     "alt": "Landing page d'une offre de marché de niche",
+     "h3": "+3 500 % de prospects générés",
+     "p": "Le défi : propulser l'acquisition dans un marché très niche. En revoyant complètement l'offre principale et en repensant les angles de message pour Meta Ads, nous avons transformé un budget minimal en véritable machine de croissance.",
+     "quote": {
+      "text": "Un immense merci à Charles-Erick pour son travail remarquable!",
+      "cite": "— Fondateur"
+     },
+     "roles": [
+      "Accompagnement en conception de proposition de valeur",
+      "Rédaction",
+      "Conception de landing page",
+      "Accompagnement et alignement de la stratégie Meta Ads",
+      "Optimisation de tout l'entonnoir (CRO)"
+     ]
+    },
+    {
+     "img": "portfolio/results-roofing.jpg",
+     "alt": "Landing page d'une entreprise de toitures de métal",
+     "h3": "3,15× plus de demandes reçues",
+     "p": "Ce projet exigeait de positionner une offre haut de gamme et d'éduquer rapidement les prospects pour justifier l'investissement dans un toit de métal (« 40 ans de tranquillité d'esprit »). La nouvelle architecture web filtre et qualifie efficacement la clientèle :",
+     "quote": {
+      "text": "Je le recommande à toute entreprise qui veut transformer ses campagnes en vrais résultats!",
+      "cite": "— Propriétaire"
+     },
+     "roles": [
+      "Accompagnement en conception de proposition de valeur",
+      "Rédaction",
+      "Conception de landing page",
+      "Alignement de la stratégie Google Ads"
+     ],
+     "logoBg": "#000"
+    },
+    {
+     "img": "portfolio/results-local-service.jpg",
+     "alt": "Landing page d'une entreprise de services locaux",
+     "h3": "2,3× plus de clients générés",
+     "p": "L'objectif : tirer le maximum des campagnes publicitaires locales. En éliminant toute friction pour nous joindre et en intégrant stratégiquement la preuve sociale, la page convertit maintenant instantanément les recherches en demandes de soumission.",
+     "quote": {
+      "text": "Charles-Erick, je veux lancer un nouveau service et j'aimerais qu'on répète le même succès. Quand es-tu disponible cette semaine?",
+      "cite": "— Propriétaire"
+     },
+     "roles": [
+      "Accompagnement en conception de proposition de valeur",
+      "Rédaction",
+      "Conception de landing page",
+      "Alignement de la stratégie Google Ads"
+     ]
+    }
+   ],
+   "awards": {
+    "label": "Projets reconnus par",
+    "items": [
+     {
+      "file": "award-octas.png",
+      "alt": "OCTAS"
+     },
+     {
+      "file": "award-osentreprendre.png",
+      "alt": "Osentreprendre"
+     },
+     {
+      "file": "award-gartner.png",
+      "alt": "Gartner"
+     },
+     {
+      "file": "award-awwwards.png",
+      "alt": "Awwwards"
+     }
+    ]
+   }
+  },
+  {
+   "type": "portfolio",
+   "id": "product-design",
+   "theme": "light",
+   "label": "Design de produit",
+   "h2": "Designer de produit senior pour *SaaS et applications*",
+   "lead": "Plateformes SaaS et applications conçues et optimisées avec Viesigners : de lancements primés à des gains de conversion mesurables.",
+   "apply": {
+    "subject": "Candidature — poste en design de produit"
+   },
+   "skillsLabel": "Ce que j'apporte",
+   "skills": [
+    "Optimisation de parcours usagers, en phases itératives qui tiennent compte de la dette technique",
+    "Systèmes de design",
+    "Recherches utilisateurs et comparatives",
+    "Rédaction UX",
+    "Collaboration impeccable avec les équipes internes"
+   ],
+   "proof": [
+    {
+     "n": "+48 %",
+     "t": "de conversions pour la plateforme de recherche d'études cliniques Pharmy"
+    },
+    {
+     "n": "320 M$+",
+     "t": "de financement sécurisé par une scale-up internationale accompagnée"
+    },
+    {
+     "n": "2",
+     "t": "lancements SaaS primés (finaliste OCTAS, gagnant Osentreprendre)"
+    }
+   ],
+   "items": [
+    {
+     "img": "pharmy.png",
+     "alt": "Plateforme de recherche d'études cliniques Pharmy",
+     "title": "Pharmy",
+     "result": "+48 % de conversions",
+     "text": "Optimisation de la plateforme de recherche d'études cliniques."
+    },
+    {
+     "img": "musee-civilisation.jpg",
+     "alt": "Plateforme SaaS « Collections » du Musée de la civilisation",
+     "title": "« Collections » — Musée de la civilisation",
+     "result": "Lancement SaaS · finaliste aux OCTAS",
+     "text": "Lancement de la plateforme SaaS du musée."
+    },
+    {
+     "img": "trouve-un-stage.jpg",
+     "alt": "Plateforme SaaS « Trouve un stage »",
+     "title": "« Trouve un stage »",
+     "result": "Lancement SaaS · gagnant du prix Osentreprendre",
+     "text": "Lancement de la plateforme SaaS de recherche de stages."
+    }
+   ]
+  },
+  {
+   "type": "portfolio",
+   "id": "ux-ui-design",
+   "theme": "dark",
+   "label": "Design UX/UI",
+   "h2": "Designer UX/UI senior pour *sites web, jeux et applications*",
+   "lead": "Interfaces et sites web pour de grandes marques mondiales, reconnus par Awwwards et conçus pour convertir.",
+   "apply": {
+    "subject": "Candidature — poste en design UX/UI"
+   },
+   "skillsLabel": "Ce que j'apporte",
+   "skills": [
+    "Structure de site claire et intuitive, alignée sur les intentions des clients",
+    "Design graphique et UX conçus avec précision pour booster la crédibilité",
+    "Conception d'interfaces pour applications, jeux et plateformes en ligne",
+    "Pages rapides, adaptées aux plateformes mobiles"
+   ],
+   "proof": [
+    {
+     "n": "600+",
+     "t": "projets numériques livrés pour des entreprises de toutes tailles"
+    },
+    {
+     "n": "Awwwards",
+     "t": "reconnaissance de la qualité des sites"
+    },
+    {
+     "n": "Dell · Nerf · HP",
+     "t": "parmi les géants conseillés",
+     "sm": true
+    }
+   ],
+   "items": [
+    {
+     "img": "warner-bros.jpg",
+     "alt": "Interface de jeu vidéo conçue pour Warner Bros.",
+     "title": "Warner Bros.",
+     "result": "Interface de jeu vidéo",
+     "text": "Conception d'une interface de jeu mobile."
+    },
+    {
+     "img": "marvel.jpg",
+     "alt": "Interface de jeu conçue pour Marvel",
+     "title": "Marvel",
+     "result": "Interface de jeu",
+     "text": "Conception d'une interface de jeu mobile."
+    },
+    {
+     "img": "spin-master.jpg",
+     "alt": "Interface d'application conçue pour Spin Master",
+     "title": "Spin Master",
+     "result": "Interface d'application",
+     "text": "Conception de l'interface d'une application compagnon."
+    },
+    {
+     "img": "assassins-creed.jpg",
+     "alt": "Plateforme en ligne conçue pour Assassin's Creed Odyssey",
+     "title": "Assassin's Creed Odyssey",
+     "result": "Plateforme en ligne — Ubisoft",
+     "text": "Plateforme en ligne pour le lancement du jeu."
+    },
+    {
+     "img": "wizards.jpg",
+     "alt": "Site web conçu pour Wizards of the Coast",
+     "title": "Wizards of the Coast",
+     "result": "Site web",
+     "text": "Conception du site web de la marque."
+    }
+   ]
+  },
+  {
+   "type": "testimonials",
+   "theme": "light",
+   "h2": "Ce qu'on ressent en *travaillant avec moi*",
+   "items": [
+    {
+     "name": "Alex Elexis",
+     "role": "Commercial Growth Manager, Alkegen",
+     "date": "",
+     "lang": "fr",
+     "stars": 5,
+     "title": "Un regard neuf sur la vente numérique!",
+     "text": "[...] J'aimerais profiter de l'occasion pour exprimer notre satisfaction à l'égard du travail de Charles-Erick. [...] Les discussions que nous avons eues avec lui ont ouvert de nouveaux horizons quant à notre approche et à la présentation de notre gamme de produits. Elles nous ont donné un regard neuf sur la vente numérique.",
+     "note": "Traduction libre — original en français"
+    },
+    {
+     "name": "Emilie Gosselin",
+     "role": "VP Croissance et transformation, O2 Web",
+     "date": "",
+     "lang": "fr",
+     "stars": 5,
+     "title": "Une personne clé sur différents mandats!",
+     "text": "[…] apportant toujours des solutions innovantes, créatives tout en démontrant la valeur ajoutée. Toujours à la recherche de la meilleure solution pour répondre aux besoins utilisateurs, ses réflexions étaient toujours très poussées, méthodiques et basées sur des recherches exhaustives. […] Ce fut un réel plaisir de travailler, brainstormer avec Charles-Érick sur différents projets stratégiques pour les clients ou pour faire évoluer l'Agence."
+    },
+    {
+     "name": "Tony Raymond",
+     "role": "Coordonnateur multimédia, Graffartis",
+     "date": "",
+     "lang": "fr",
+     "stars": 5,
+     "title": "Charles-Erick est une authentique machine à idées!",
+     "text": "Inventif, structuré et ouvert d'esprit, il n'hésite pas à remettre les idées en questions, tant les siennes que celles des autres si cela peut permettre d'améliorer les résultats. Son savoir-faire n'a d'égal que son savoir-être et il possède les qualités d'un leader au sein d'une équipe. Ce fut un plaisir de collaborer avec lui."
+    }
+   ],
+   "noslot": true
+  },
+  {
+   "type": "contact-links",
+   "theme": "dark",
+   "id": "contact",
+   "h2": "Prêt à *dominer votre marché?*",
+   "p": "Deux façons de me joindre :",
+   "phone": "Téléphone",
+   "email": "Courriel",
+   "rolesLabel": "Vous recrutez pour un rôle précis?",
+   "roles": [
+    {
+     "id": "digital-marketing",
+     "label": "Marketing numérique"
+    },
+    {
+     "id": "product-design",
+     "label": "Design de produit"
+    },
+    {
+     "id": "ux-ui-design",
+     "label": "Design UX/UI"
+    }
+   ]
+  },
+  {
+   "type": "faq",
+   "h2": "Questions *de recrutement*",
+   "open": true
+  }
+ ],
+ "faq": [
+  {
+   "q": "À quels types de rôles Charles-Erick BG est-il ouvert?",
+   "a": [
+    "Des rôles seniors en marketing numérique et croissance, en design de produit et en design UX/UI. Chacun a sa propre section sur cette page, avec un lien direct que vous pouvez utiliser dans une candidature."
+   ]
+  },
+  {
+   "q": "Puis-je renvoyer directement vers un seul rôle?",
+   "a": [
+    "Oui. Ajoutez #digital-marketing, #product-design ou #ux-ui-design après l'adresse de la page, ou utilisez le bouton « Copier le lien » de chaque section."
+   ]
+  },
+  {
+   "q": "Où est-il basé et dans quelles langues travaille-t-il?",
+   "a": [
+    "À Québec, au Canada. Il travaille en français et en anglais, dans des marchés francophones comme anglophones."
+   ]
+  },
+  {
+   "q": "Comment le joindre?",
+   "a": [
+    "Par téléphone au +1 581-502-1115 ou par courriel à cebgagnon@gmail.com."
+   ]
+  }
+ ]
+}

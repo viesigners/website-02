@@ -1,0 +1,477 @@
+{
+ "meta": {
+  "title": "Charles-Erick BG — Senior Digital Marketing & Growth Web Ecosystems Strategist | Portfolio",
+  "description": "Portfolio of Charles-Erick BG: digital marketing and growth, product design and UX/UI design. 4.7× more inquiries, +3,500% leads, +48% conversions. Based in Québec, Canada.",
+  "h1": "Charles-Erick BG"
+ },
+ "personJobTitle": "Senior Digital Marketing and Growth Web Ecosystems Strategist",
+ "apply": {
+  "email": "cebgagnon@gmail.com"
+ },
+ "sections": [
+  {
+   "type": "profile-hero",
+   "name": "Charles-Erick BG",
+   "portraitAlt": "Portrait of Charles-Erick BG",
+   "h1": "Senior Digital Marketing and *Growth Web Ecosystems* Strategist",
+   "lead": "I turn complex expertise into high-performing web ecosystems. I help businesses dominate their market with content that engages, converts and shines.",
+   "cta": "Add me to your team",
+   "glance": [
+    {
+     "k": "Roles",
+     "v": "Digital Marketing & Growth · Product Design · UX/UI Design"
+    },
+    {
+     "k": "Based in",
+     "v": "Québec, Canada"
+    },
+    {
+     "k": "Languages",
+     "v": "French and English"
+    },
+    {
+     "k": "Experience",
+     "v": "30+ combined years with Jean-François BG at Viesigners"
+    }
+   ],
+   "advised": {
+    "label": "I've advised:",
+    "logos": [
+     {
+      "file": "logo-dell.png",
+      "alt": "Dell"
+     },
+     {
+      "file": "logo-hp.png",
+      "alt": "HP"
+     },
+     {
+      "file": "logo-salesforce.png",
+      "alt": "Salesforce"
+     }
+    ],
+    "more": "+400 more..."
+   }
+  },
+  {
+   "type": "role-nav",
+   "label": "Portfolio by role",
+   "items": [
+    {
+     "id": "digital-marketing",
+     "label": "Digital Marketing"
+    },
+    {
+     "id": "product-design",
+     "label": "Product Design"
+    },
+    {
+     "id": "ux-ui-design",
+     "label": "UX/UI Design"
+    }
+   ]
+  },
+  {
+   "type": "cases",
+   "id": "digital-marketing",
+   "label": "Digital Marketing",
+   "h2": "Featured *work*",
+   "lead": "Senior Digital Marketing and Growth role: content, acquisition, product marketing and conversion.",
+   "apply": {
+    "subject": "Application — Digital Marketing and Growth role"
+   },
+   "items": [
+    {
+     "brand": "logo-viesigners.png",
+     "brandAlt": "Viesigners",
+     "tag": "Viesigners · Our own offer launch",
+     "h3": "Content & acquisition strategy",
+     "paras": [
+      "To support the launch of our new coaching offer, we needed to generate qualified opportunities without resorting to cold outreach. Rather than forcing sales, we put in place a targeted content and lead magnet strategy, combined with strict qualification processes and personalized conversations.",
+      "The main goal was to build a captive audience and structure an organic acquisition ecosystem capable of driving our revenue in a predictable way."
+     ],
+     "nums": [
+      {
+       "n": "+500%",
+       "t": "Revenue growth over 3 years"
+      },
+      {
+       "n": "4.5K+",
+       "t": "Qualified prospects in the community"
+      },
+      {
+       "n": "100%",
+       "t": "Organic acquisition"
+      }
+     ],
+     "role": "Content strategy, lead magnet creation, qualification processes, community building, social selling and marketing."
+    },
+    {
+     "brand": "portfolio/logo-dialog-insight.png",
+     "brandAlt": "Dialog Insight",
+     "tag": "Dialog Insight · Digital marketing SaaS",
+     "h3": "Product adoption & SaaS marketing",
+     "paras": [
+      "Dialog Insight, a digital marketing SaaS platform, was rolling out a brand-new information architecture. The challenge was to ensure a smooth transition for a base of expert, set-in-their-ways and demanding users. Working with members of the marketing team, I conducted dozens of customer interviews to refine the messaging, helped establish the communication rules and wrote strategic in-product communications (banners, modals, display rules, etc.).",
+      "The main goal was to coordinate cross-team efforts to make the value of the new features easy to grasp and ensure fast adoption, while easing the load on the support team."
+     ],
+     "nums": [
+      {
+       "n": "0",
+       "t": "Friction in adoption"
+      },
+      {
+       "n": "25+",
+       "t": "Customer interviews conducted"
+      },
+      {
+       "n": "Multichannel",
+       "t": "Content strategy",
+       "sm": true
+      },
+      {
+       "n": "Success confirmed!",
+       "t": "By the customer support team",
+       "sm": true
+      }
+     ],
+     "role": "SaaS product marketing, user research, copywriting, information architecture, B2B content strategy.",
+     "invert": true
+    }
+   ],
+   "seen": {
+    "label": "As seen in",
+    "items": [
+     {
+      "file": "press-coveo.png",
+      "alt": "Coveo"
+     },
+     {
+      "file": "press-socom.svg",
+      "alt": "SOCOM"
+     },
+     {
+      "file": "press-2gars-adwords.png",
+      "alt": "Les 2 gars d'Adwords"
+     },
+     {
+      "file": "press-o2web.png",
+      "alt": "O2 Web"
+     }
+    ]
+   }
+  },
+  {
+   "type": "result-cards",
+   "theme": "dark",
+   "label": "More results",
+   "h2": "Want *more?!*",
+   "roleLabel": "My role",
+   "items": [
+    {
+     "img": "portfolio/results-valuables.jpg",
+     "alt": "Landing page for a valuables-buying service",
+     "h3": "4.7× more inquiries received",
+     "p": "For this valuables-buying service, instant authority and trust had to be established. By rethinking the marketing message to tackle objections head-on and optimizing the page design, we multiplied inquiries without changing their offer or their ad budget.",
+     "roles": [
+      "Value proposition design coaching",
+      "Copywriting",
+      "Landing page design",
+      "Visual production",
+      "Google Ads strategy alignment"
+     ]
+    },
+    {
+     "img": "portfolio/results-niche-leads.jpg",
+     "alt": "Landing page for a niche-market offer",
+     "h3": "+3,500% leads generated",
+     "p": "The challenge was to propel acquisition in a very niche market. By completely overhauling the core offer and rethinking the messaging angles for Meta Ads, we turned a minimal budget into a true growth machine.",
+     "quote": {
+      "text": "A huge thank you to Charles-Erick for his remarkable work!",
+      "cite": "— Founder"
+     },
+     "roles": [
+      "Value proposition design coaching",
+      "Copywriting",
+      "Landing page design",
+      "Meta Ads strategy guidance and alignment",
+      "Full-funnel optimization (CRO)"
+     ]
+    },
+    {
+     "img": "portfolio/results-roofing.jpg",
+     "alt": "Landing page for a metal roofing company",
+     "h3": "3.15× more inquiries received",
+     "p": "This project required positioning a premium offer and quickly educating prospects to justify the investment in a metal roof (“40 years of peace of mind”). The new web architecture effectively filters and qualifies the clientele:",
+     "quote": {
+      "text": "I recommend him to any business that wants to turn its campaigns into real results!",
+      "cite": "— Owner"
+     },
+     "roles": [
+      "Value proposition design coaching",
+      "Copywriting",
+      "Landing page design",
+      "Google Ads strategy alignment"
+     ],
+     "logoBg": "#000"
+    },
+    {
+     "img": "portfolio/results-local-service.jpg",
+     "alt": "Landing page for a local service business",
+     "h3": "2.3× more clients generated",
+     "p": "The goal was to get the most out of local ad campaigns. By eliminating all friction in getting in touch and strategically integrating social proof, the page now instantly converts search queries into estimate requests.",
+     "quote": {
+      "text": "Charles-Erick, I want to launch a new service and I'd like us to repeat the same success. When are you available this week?",
+      "cite": "— Owner"
+     },
+     "roles": [
+      "Value proposition design coaching",
+      "Copywriting",
+      "Landing page design",
+      "Google Ads strategy alignment"
+     ]
+    }
+   ],
+   "awards": {
+    "label": "Projects recognized by",
+    "items": [
+     {
+      "file": "award-octas.png",
+      "alt": "OCTAS"
+     },
+     {
+      "file": "award-osentreprendre.png",
+      "alt": "Osentreprendre"
+     },
+     {
+      "file": "award-gartner.png",
+      "alt": "Gartner"
+     },
+     {
+      "file": "award-awwwards.png",
+      "alt": "Awwwards"
+     }
+    ]
+   }
+  },
+  {
+   "type": "portfolio",
+   "id": "product-design",
+   "theme": "light",
+   "label": "Product Design",
+   "h2": "Senior Product Designer for *SaaS and apps*",
+   "lead": "SaaS platforms and apps designed and optimized with Viesigners: from award-recognized launches to measurable conversion gains.",
+   "apply": {
+    "subject": "Application — Product Design role"
+   },
+   "skillsLabel": "What I bring",
+   "skills": [
+    "User journey optimization, in iterative phases that account for technical debt",
+    "Design systems",
+    "User research and benchmarking",
+    "UX writing",
+    "Seamless collaboration with internal teams"
+   ],
+   "proof": [
+    {
+     "n": "+48%",
+     "t": "conversions for the Pharmy clinical trial search platform"
+    },
+    {
+     "n": "$320M+",
+     "t": "in funding secured by an international scale-up we supported"
+    },
+    {
+     "n": "2",
+     "t": "award-recognized SaaS launches (OCTAS finalist, Osentreprendre winner)"
+    }
+   ],
+   "items": [
+    {
+     "img": "pharmy.png",
+     "alt": "Pharmy clinical trial search platform",
+     "title": "Pharmy",
+     "result": "+48% conversions",
+     "text": "Optimization of the clinical trial search platform."
+    },
+    {
+     "img": "musee-civilisation.jpg",
+     "alt": "Collections SaaS platform for the Musée de la civilisation",
+     "title": "“Collections” — Musée de la civilisation",
+     "result": "SaaS launch · OCTAS finalist",
+     "text": "Launch of the SaaS platform for the museum."
+    },
+    {
+     "img": "trouve-un-stage.jpg",
+     "alt": "Trouve un stage SaaS platform",
+     "title": "“Trouve un stage”",
+     "result": "SaaS launch · Osentreprendre prize winner",
+     "text": "Launch of the internship search SaaS platform."
+    }
+   ]
+  },
+  {
+   "type": "portfolio",
+   "id": "ux-ui-design",
+   "theme": "dark",
+   "label": "UX/UI Design",
+   "h2": "Senior UX/UI Designer for *websites, games and apps*",
+   "lead": "Interfaces and websites for global brands, recognized by Awwwards and designed to convert.",
+   "apply": {
+    "subject": "Application — UX/UI Design role"
+   },
+   "skillsLabel": "What I bring",
+   "skills": [
+    "Clear, intuitive site structure aligned with customer intentions",
+    "Graphic design and UX crafted with precision to boost credibility",
+    "Interface design for apps, games and online platforms",
+    "Fast pages adapted to mobile platforms"
+   ],
+   "proof": [
+    {
+     "n": "600+",
+     "t": "digital projects delivered for companies of all sizes"
+    },
+    {
+     "n": "Awwwards",
+     "t": "recognition for the quality of the sites"
+    },
+    {
+     "n": "Dell · Nerf · HP",
+     "t": "among the giants advised",
+     "sm": true
+    }
+   ],
+   "items": [
+    {
+     "img": "warner-bros.jpg",
+     "alt": "Video game interface designed for Warner Bros.",
+     "title": "Warner Bros.",
+     "result": "Video game interface",
+     "text": "Mobile game interface design."
+    },
+    {
+     "img": "marvel.jpg",
+     "alt": "Game interface designed for Marvel",
+     "title": "Marvel",
+     "result": "Game interface",
+     "text": "Mobile game interface design."
+    },
+    {
+     "img": "spin-master.jpg",
+     "alt": "App interface designed for Spin Master",
+     "title": "Spin Master",
+     "result": "App interface",
+     "text": "Companion app interface design."
+    },
+    {
+     "img": "assassins-creed.jpg",
+     "alt": "Online platform designed for Assassin's Creed Odyssey",
+     "title": "Assassin's Creed Odyssey",
+     "result": "Online platform — Ubisoft",
+     "text": "Online platform for the game launch."
+    },
+    {
+     "img": "wizards.jpg",
+     "alt": "Website designed for Wizards of the Coast",
+     "title": "Wizards of the Coast",
+     "result": "Website",
+     "text": "Brand website design."
+    }
+   ]
+  },
+  {
+   "type": "testimonials",
+   "theme": "light",
+   "h2": "What it feels like *to work with me*",
+   "items": [
+    {
+     "name": "Alex Elexis",
+     "role": "Commercial Growth Manager, Alkegen",
+     "date": "",
+     "lang": "en",
+     "stars": 5,
+     "title": "A fresh perspective on digital sales!",
+     "text": "[...] I'd like to take this opportunity to express our satisfaction with Charles-Erick's work. [...] The discussions we had with him opened new horizons regarding our approach and the presentation of our product range. They gave us a fresh perspective on digital sales.",
+     "note": "Translated from French"
+    },
+    {
+     "name": "Emilie Gosselin",
+     "role": "VP Growth & Transformation, O2 Web",
+     "date": "",
+     "lang": "en",
+     "stars": 5,
+     "title": "A key person on different mandates!",
+     "text": "Always bringing innovative and creative solutions while demonstrating real added value. Always looking for the best solution to meet users' needs, his thinking was in-depth, methodical and based on thorough research. It was a real pleasure to work and think with Charles-Erick on various strategic projects, for clients or to help the Agency evolve.",
+     "note": "Translated from French"
+    },
+    {
+     "name": "Tony Raymond",
+     "role": "Multimedia Coordinator, Graffartis",
+     "date": "",
+     "lang": "en",
+     "stars": 5,
+     "title": "Charles-Erick is a genuine idea machine!",
+     "text": "Inventive, structured and open-minded, he doesn't hesitate to question ideas, both his own and those of others, if it can improve results. His know-how is matched only by his people skills, and he has the qualities of a leader within a team. It was a pleasure to collaborate with him.",
+     "note": "Translated from French"
+    }
+   ],
+   "noslot": true
+  },
+  {
+   "type": "contact-links",
+   "theme": "dark",
+   "id": "contact",
+   "h2": "Ready to *dominate your market?*",
+   "p": "Two options to contact me:",
+   "phone": "Phone",
+   "email": "Email",
+   "rolesLabel": "Hiring for a specific role?",
+   "roles": [
+    {
+     "id": "digital-marketing",
+     "label": "Digital Marketing"
+    },
+    {
+     "id": "product-design",
+     "label": "Product Design"
+    },
+    {
+     "id": "ux-ui-design",
+     "label": "UX/UI Design"
+    }
+   ]
+  },
+  {
+   "type": "faq",
+   "h2": "Hiring *questions*",
+   "open": true
+  }
+ ],
+ "faq": [
+  {
+   "q": "Which roles is Charles-Erick BG open to?",
+   "a": [
+    "Senior roles in Digital Marketing and Growth, Product Design and UX/UI Design. Each has its own section on this page, with a direct link you can use in an application."
+   ]
+  },
+  {
+   "q": "Can I link directly to one role?",
+   "a": [
+    "Yes. Use #digital-marketing, #product-design or #ux-ui-design after the page address, or the “Copy link” button in each section."
+   ]
+  },
+  {
+   "q": "Where is he based and which languages does he work in?",
+   "a": [
+    "Québec, Canada. He works in French and English, in English- and French-speaking markets."
+   ]
+  },
+  {
+   "q": "How can I contact him?",
+   "a": [
+    "By phone at +1 581-502-1115 or by email at cebgagnon@gmail.com."
+   ]
+  }
+ ]
+}

@@ -10,7 +10,7 @@
     "facebook": "https://www.facebook.com/viesigners",
     "linkedin": "https://www.linkedin.com/company/viesigners",
     "toptal": "",
-    "toptalJF": "https://www.toptal.com/designers/resume/jean-francois-b-g"
+    "toptalJF": "https://www.toptal.com/designers/resume/jean-francois-b-g#XAEE74"
   },
   "legal": {
     "fr": {
@@ -23,10 +23,12 @@
     }
   },
   "hidden": [
-    "a-propos",
     "charles-erick",
     "jean-francois",
     "realisations",
     "actualites"
-  ]
+  ],
+  "person": {
+    "email": "cebgagnon@gmail.com"
+  }
 }

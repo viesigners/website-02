@@ -45,7 +45,7 @@
   {
    "type": "statement",
    "wide": true,
-   "text": "Occuper le terrain ne suffit pas : il faut *alimenter l'entonnoir.*",
+   "text": "Occuper le terrain ne suffit pas : il faut *alimenter l'entonnoir*",
    "prose": [
     "Beaucoup d'entreprises publient régulièrement sans voir de retombées, parce que leur contenu n'est relié ni à une offre claire ni à une page qui convertit.",
     "Nous partons de votre offre et de vos clients idéaux, puis nous bâtissons une présence cohérente : une voix reconnaissable, des sujets qui répondent aux vraies questions et un chemin clair vers la prise de contact."
@@ -146,7 +146,7 @@
   },
   {
    "type": "cta-final",
-   "h2": "Faites travailler *vos médias sociaux.*",
+   "h2": "Faites travailler *vos médias sociaux*",
    "p": "Dites-nous qui vous voulez joindre; nous bâtirons la présence qui y mène.",
    "cta": "Discuter d'un projet"
   }

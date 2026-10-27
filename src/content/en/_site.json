@@ -21,7 +21,8 @@
   "privacy": "Privacy policy",
   "terms": "Terms of use",
   "marque-blanche": "White-label partner",
-  "copywriting": "Copywriting"
+  "copywriting": "Copywriting",
+  "cebg": "Charles-Erick BG"
  },
  "navSub": {
   "sites-web": "Websites that build authority and convert",
@@ -101,7 +102,10 @@
   "bio": "Who we are",
   "people": "The team",
   "facts": "Key facts",
-  "testimonials": "Testimonials"
+  "testimonials": "Testimonials",
+  "cases": "Work",
+  "results": "Results",
+  "portfolio": "Portfolio"
  },
  "call": "Call",
  "close": "Close",
@@ -117,5 +121,9 @@
   "decline": "Decline",
   "policy": "Privacy policy"
  },
- "navAll": "View all services"
+ "navAll": "View all services",
+ "applyCta": "Contact me about this role",
+ "copyLink": "Copy link",
+ "copied": "Link copied",
+ "myRole": "My role"
 }

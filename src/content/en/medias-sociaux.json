@@ -45,7 +45,7 @@
   {
    "type": "statement",
    "wide": true,
-   "text": "Holding space isn't enough: you need to *feed the funnel.*",
+   "text": "Holding space isn't enough: you need to *feed the funnel*",
    "prose": [
     "Many companies post regularly without seeing results, because their content isn't tied to a clear offer or to a page that converts.",
     "We start from your offer and your ideal customers, then build a coherent presence: a recognizable voice, topics that answer real questions and a clear path to getting in touch."
@@ -146,7 +146,7 @@
   },
   {
    "type": "cta-final",
-   "h2": "Put your *social media to work.*",
+   "h2": "Put your *social media to work*",
    "p": "Tell us who you want to reach; we'll build the presence that gets there.",
    "cta": "Discuss a project"
   }

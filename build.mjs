@@ -60,6 +60,7 @@ function img(rel, alt, { cls = '', lazy = true, sizes, fetchpriority } = {}) {
 /* ----------------------------- routes ------------------------------------- */
 const ROUTES = {
   home: { fr: '', en: '' },
+  cebg: { fr: 'charles-erick-bg', en: 'charles-erick-bg' }, // personal portfolio / job-application page
   'sites-web': { fr: 'sites-web', en: 'websites' },
   'landing-pages': { fr: 'landing-pages', en: 'landing-pages' },
   'design-produit': { fr: 'design-de-produit', en: 'product-design' },
@@ -114,8 +115,7 @@ const sparks = (n = 3) => Array.from({ length: n }, () => ico('spark', 'spark'))
 /* ----------------------------- section renderers -------------------------- */
 const R = {};
 const rv = (d = 0) => ` class="rv" style="--d:${d}s"`;
-function secHead(s, c, type, { id = '', h2 = s.h2 } = {}) {
-  const label = c.T.labels?.[type];
+function secHead(s, c, type, { id = '', h2 = s.h2, label = c.T.labels?.[type] } = {}) {
   return `<div class="sec-head"><div class="sec-head__side">${label ? `<p class="label rv">${esc(label)}</p>` : ''}${s.lead ? `<p class="lead rv" style="--d:.08s">${fmt(s.lead, c.lang)}</p>` : ''}</div>${h2 ? `<h2${id ? ` id="${id}"` : ''} class="rv" style="--d:.04s">${fmt(h2, c.lang)}</h2>` : ''}</div>`;
 }
 const splitLabel = (c, type) => (c.T.labels?.[type] ? `<p class="label rv">${esc(c.T.labels[type])}</p>` : '');
@@ -160,9 +160,15 @@ R['page-hero'] = (s, c) => {
   </div></div></section>`;
 };
 
-R.statement = (s, c) => `<section class="section statement${s.wide ? ' statement--wide' : ''}"><div class="wrap">
+R.statement = (s, c) => `<section class="section statement${s.wide ? ' statement--wide' : ''}${s.checks ? ' statement--rich' : ''}"><div class="wrap">
   <p${rv()}>${fmt(s.text, c.lang)}</p>
-  ${s.prose ? `<div class="prose rv" style="--d:.1s">${s.prose.map((p) => `<p>${fmt(p, c.lang)}</p>`).join('')}</div>` : ''}
+  ${s.prose ? `<div class="statement__body">
+    <div class="statement__intro">
+      <div class="prose rv" style="--d:.1s">${s.prose.map((p) => `<p>${fmt(p, c.lang)}</p>`).join('')}</div>
+      ${s.after ? `<div class="prose statement__after rv">${s.after.map((p) => `<p>${fmt(p, c.lang)}</p>`).join('')}</div>` : ''}
+    </div>
+    ${s.checks ? `<ul class="checks">${s.checks.map((k) => `<li class="rv">${ico('check')}<span>${fmt(k, c.lang)}</span></li>`).join('')}</ul>` : ''}
+  </div>` : ''}
 </div></section>`;
 
 R.legal = (s, c) => `<section class="section legal"><div class="wrap">
@@ -210,12 +216,12 @@ R.founders = (s, c) => {
       <p class="founders__kicker rv">${fmt(s.kicker, lang)}</p>
       <h2 class="rv">${fmt(s.h2, lang)}</h2>
       <div class="prose rv" style="margin-top:1.4rem">${s.text.map((p) => `<p>${fmt(p, lang)}</p>`).join('')}</div>
-      <ul class="checks">${s.checks.map((k) => `<li class="rv">${ico('check')}<span>${fmt(k, lang)}</span></li>`).join('')}</ul>
+      ${s.checks ? `<ul class="checks">${s.checks.map((k) => `<li class="rv">${ico('check')}<span>${fmt(k, lang)}</span></li>`).join('')}</ul>` : ''}
       ${s.cta && !isHidden(s.cta.to) ? `<p style="margin-top:2rem"><a class="link-arrow" href="${url(s.cta.to, lang)}">${esc(s.cta.label)} ${ico('arrow')}</a></p>` : ''}
     </div>
     <div class="founders__photo rv">
       <div class="frame">${img('founders-1.jpg', s.photoAlt, { sizes: '(min-width:960px) 480px, 90vw' })}<p class="chip"><b>${esc(s.chip.b)}</b>${esc(s.chip.t)}</p></div>
-      ${s.sub ? (() => { const [who, ...rest] = s.sub.split(' — '); return `<div class="fcap"><div><b>${esc(who)}</b><span>${esc(rest.join(' — ').replace(/ (\([^)]*\))$/, '\u00a0$1'))}</span></div>${s.school ? img(s.school.file, s.school.alt) : ''}</div>`; })() : ''}
+      ${s.sub ? (() => { const [who, ...rest] = s.sub.split(' — '); return `<div class="fcap"><div><b>${fmt(who, lang)}</b><span>${esc(rest.join(' — ').replace(/ (\([^)]*\))$/, '\u00a0$1'))}</span></div>${s.school ? img(s.school.file, s.school.alt) : ''}</div>`; })() : ''}
     </div>
   </div>
   <div class="press rv"><span class="press__label">${esc(s.press.label)}</span>${s.press.items.map((p) => img(p.file, p.alt)).join('')}</div>
@@ -296,11 +302,11 @@ R.testimonials = (s, c) => {
   const fmtDate = (d) => (d.length === 7
     ? new Date(d + '-15').toLocaleDateString(loc, { year: 'numeric', month: 'long', timeZone: 'UTC' })
     : new Date(d).toLocaleDateString(loc, { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }));
-  const items = s.items.slice().sort((a, b) => b.date.localeCompare(a.date)); // newest first
+  const items = s.items.slice().sort((a, b) => (b.date || '').localeCompare(a.date || '')); // newest first
   return `<section class="section" id="temoignages"><div class="wrap">
   ${secHead({ h2: s.h2 }, c, 'testimonials')}
-  <div class="tgrid">${items.map((t, k) => `<figure class="tcard rv" style="--d:${(k % 3) * .06}s"><blockquote lang="${t.lang}">${t.title ? `<h3 class="tq">${esc(t.title)}</h3>` : ''}${t.text ? t.text.split(/\n\s*\n/).map((p) => `<p>${esc(p).replace(/\n/g, '<br>')}</p>`).join('') : ''}</blockquote>${t.translatedFrom ? `<p class="tnote">${esc(c.T.translatedFrom[t.translatedFrom])}</p>` : ''}<figcaption><span class="who"><b>${esc(t.name)}</b>${(t.role || t.company) ? `<span>${esc([t.role, t.company ? `${t.role ? (t.joiner || c.T.at) + (/[’']$/.test(t.joiner || '') ? '' : ' ') : ''}${t.company}` : ''].filter(Boolean).join(' '))}</span>` : ''}<time datetime="${t.date}">${esc(fmtDate(t.date))}</time></span>${t.logo ? img('testimonials/' + t.logo, t.company || t.name, { cls: 'tlogo' }) : ''}</figcaption></figure>`).join('')}
-    <a class="tcard tcard--slot rv" href="${url('contact', lang)}"><h3>${fmt(s.slot.h3, lang)}</h3><span class="slot-go" aria-hidden="true">${ico('arrow')}</span></a>
+  <div class="tgrid">${items.map((t, k) => `<figure class="tcard rv" style="--d:${(k % 3) * .06}s"><blockquote lang="${t.lang}">${t.stars ? `<div class="stars" role="img" aria-label="${t.stars} / 5">${'★'.repeat(t.stars)}</div>` : ''}${t.title ? `<h3 class="tq">${esc(t.title)}</h3>` : ''}${t.text ? t.text.split(/\n\s*\n/).map((p) => `<p>${esc(p).replace(/\n/g, '<br>')}</p>`).join('') : ''}</blockquote>${t.note ? `<p class="tnote">${esc(t.note)}</p>` : t.translatedFrom ? `<p class="tnote">${esc(c.T.translatedFrom[t.translatedFrom])}</p>` : ''}<figcaption><span class="who"><b>${esc(t.name)}</b>${(t.role || t.company) ? `<span>${esc([t.role, t.company ? `${t.role ? (t.joiner || c.T.at) + (/[’']$/.test(t.joiner || '') ? '' : ' ') : ''}${t.company}` : ''].filter(Boolean).join(' '))}</span>` : ''}${t.date ? `<time datetime="${t.date}">${esc(fmtDate(t.date))}</time>` : ''}</span>${t.logo ? img('testimonials/' + t.logo, t.company || t.name, { cls: 'tlogo' }) : ''}</figcaption></figure>`).join('')}
+    ${s.slot ? `<a class="tcard tcard--slot rv" href="${url('contact', lang)}"><h3>${fmt(s.slot.h3, lang)}</h3><span class="slot-go" aria-hidden="true">${ico('arrow')}</span></a>` : ''}
   </div>
 </div></section>`;
 };
@@ -372,12 +378,97 @@ R.related = (s, c) => `<section class="section section--tight"><div class="wrap"
 
 R.people = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'people')}
-  <div class="people">${s.items.map((p, k) => `<article class="person rv" style="--d:${k * .1}s"><div class="person__photo person__photo--${p.photo}">${img('founders-2.jpg', p.alt, { sizes: '(min-width:760px) 50vw, 100vw' })}</div><div class="person__body"><h3><a class="more" href="${url(p.to, c.lang)}" aria-label="${esc(p.name)}"></a>${esc(p.name)}</h3><p class="role">${esc(p.role)}</p><p class="prose">${fmt(p.text, c.lang)}</p><span class="link-arrow">${esc(p.cta)} ${ico('arrow')}</span></div></article>`).join('')}</div>
+  <div class="people">${s.items.map((p, k) => {
+    const ext = /^https?:/.test(p.to), href = ext ? p.to : url(p.to, c.lang);
+    return `<article class="person rv">
+    <div class="person__photo">${img(p.img, p.alt, { sizes: '(min-width:860px) 40vw, 100vw' })}</div>
+    <div class="person__body">
+      <p class="role">${esc(p.role)}</p>
+      <h3>${esc(p.name)}</h3>
+      <p class="person__claim">${fmt(p.claim, c.lang)}</p>
+      <p class="prose">${fmt(p.text, c.lang)}</p>
+      <ul class="person__tags">${p.tags.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>
+      <p class="person__proof">${ico('check')}<span>${fmt(p.proof, c.lang)}</span></p>
+      <p><a class="pill pill--ghost" href="${href}"${ext ? ' target="_blank" rel="noopener"' : ''}>${esc(p.cta)}</a></p>
+    </div>
+  </article>`; }).join('')}</div>
 </div></section>`;
 
 R.facts = (s, c) => `<section class="section"><div class="wrap"><div class="split">
   <div class="split__head">${splitLabel(c, 'facts')}<h2 class="rv">${fmt(s.h2, c.lang)}</h2>${s.lead ? `<p class="lead rv">${fmt(s.lead, c.lang)}</p>` : ''}</div>
   <dl class="facts">${s.items.map((i, k) => `<div class="rv" style="--d:${k * .04}s"><dt>${fmt(i.k, c.lang)}</dt><dd>${fmt(i.v, c.lang)}</dd></div>`).join('')}</dl>
+</div></div></section>`;
+
+/* ---- personal portfolio page (job-application ready) ---- */
+const mailto = (c, subject) => `mailto:${CFG.person?.email || ''}?subject=${encodeURIComponent(subject || '')}`;
+const roleCta = (s, c) => s.apply ? `<div class="rolecta"><a class="pill" href="${mailto(c, s.apply.subject)}">${esc(c.T.applyCta)}</a><button class="copylink" type="button" data-copy="#${esc(s.id)}" data-done="${esc(c.T.copied)}">${esc(c.T.copyLink)}</button></div>` : '';
+R['profile-hero'] = (s, c) => {
+  const { lang } = c;
+  return `<section class="hero profile" aria-labelledby="h1">
+  <div class="hero__art" aria-hidden="true"><div class="hero__dots"></div></div>
+  <div class="wrap">
+    <div class="portrait">${img('portfolio/portrait-charles-erick.jpg', s.portraitAlt, { lazy: false, fetchpriority: 'high', sizes: '220px' })}</div>
+    <p class="label">${esc(s.name)}</p>
+    <h1 id="h1">${fmt(s.h1, lang)}</h1>
+    <p class="hero__lead">${fmt(s.lead, lang)}</p>
+    <div class="hero__cta"><a class="pill" href="#contact">${esc(s.cta)}</a></div>
+    <dl class="glance">${s.glance.map((g) => `<div><dt>${esc(g.k)}</dt><dd>${esc(g.v)}</dd></div>`).join('')}</dl>
+    <div class="advised"><p class="label">${esc(s.advised.label)}</p><div class="advised__row">${s.advised.logos.map((l) => img(l.file, l.alt, { lazy: false })).join('')}<span class="more">${esc(s.advised.more)}</span></div></div>
+    ${s.seen ? `<div class="advised advised--seen"><p class="label">${esc(s.seen.label)}</p><div class="advised__row">${s.seen.items.map((l) => img(l.file, l.alt, { lazy: false })).join('')}</div></div>` : ''}
+  </div>
+</section>`;
+};
+R['role-nav'] = (s, c) => `<nav class="rolenav" aria-label="${esc(s.label)}"><span class="rolenav__t">${esc(s.label)}</span>${s.items.map((i) => `<a href="#${i.id}" data-spy="${i.id}">${esc(i.label)}</a>`).join('')}</nav>`;
+R.cases = (s, c) => {
+  const { lang } = c;
+  return `<section class="section" id="${s.id}" data-role-section><div class="wrap">
+  ${secHead(s, c, 'cases', { label: s.label })}
+  ${roleCta(s, c)}
+  <div class="cases">${s.items.map((k, i) => `<article class="case rv" style="--d:${i * .06}s">
+    <div class="case__main">
+      ${img(k.brand, k.brandAlt, { cls: 'case__brand' + (k.invert ? ' is-invert' : '') })}
+      <p class="case__tag">${esc(k.tag)}</p>
+      <h3>${fmt(k.h3, lang)}</h3>
+      ${k.paras.map((p) => `<p>${fmt(p, lang)}</p>`).join('')}
+    </div>
+    <div class="case__side">
+      <div class="nums">${k.nums.map((n) => `<div class="num"><b${n.sm ? ' class="sm"' : ''}>${esc(n.n)}</b><span>${esc(n.t)}</span></div>`).join('')}</div>
+      <div class="role"><h4>${esc(c.T.myRole)}</h4><p>${fmt(k.role, lang)}</p></div>
+      ${k.seen ? `<div class="seen"><p class="label">${esc(k.seen.label)}</p><div class="seen__row">${k.seen.items.map((l) => img(l.file, l.alt)).join('')}</div></div>` : ''}
+    </div>
+  </article>`).join('')}</div>
+  ${s.seen ? `<div class="press rv"><span class="press__label">${esc(s.seen.label)}</span>${s.seen.items.map((l) => img(l.file, l.alt)).join('')}</div>` : ''}
+</div></section>`;
+};
+R['result-cards'] = (s, c) => {
+  const { lang } = c;
+  return `<section class="section"><div class="wrap">
+  ${secHead(s, c, 'results', { label: s.label })}
+  <div class="rcards">${s.items.map((k, i) => `<article class="rcard rv" style="--d:${(i % 2) * .06}s">
+    <div class="rcard__logo"${k.logoBg ? ` style="background:${esc(k.logoBg)}"` : ''}>${img(k.img, k.alt, { sizes: '320px' })}</div>
+    <div class="rcard__body">
+      <h3>${esc(k.h3)}</h3>
+      <p>${fmt(k.p, lang)}</p>
+      ${k.quote ? `<blockquote class="rquote"><p>${esc(k.quote.text)}</p><cite>${esc(k.quote.cite)}</cite></blockquote>` : ''}
+      <div class="role"><h4>${esc(s.roleLabel)}</h4><ul class="rlist">${k.roles.map((r) => `<li>${esc(r)}</li>`).join('')}</ul></div>
+    </div>
+  </article>`).join('')}</div>
+  ${s.awards ? `<div class="awards rv"><span class="press__label">${esc(s.awards.label)}</span>${s.awards.items.map((p) => img(p.file, p.alt)).join('')}</div>` : ''}
+</div></section>`;
+};
+R.portfolio = (s, c) => `<section class="section" id="${s.id}" data-role-section><div class="wrap">
+  ${secHead(s, c, 'portfolio', { label: s.label })}
+  ${roleCta(s, c)}
+  <div class="pfacts">
+    <div class="pskills rv"><p class="label">${esc(s.skillsLabel)}</p><ul class="rlist">${s.skills.map((k) => `<li>${esc(k)}</li>`).join('')}</ul></div>
+    <div class="proof proof--stack rv" style="--d:.08s">${s.proof.map((i) => `<div class="proof__item"><b${i.sm ? ' class="sm"' : ''}>${esc(i.n)}</b><span>${esc(i.t)}</span></div>`).join('')}</div>
+  </div>
+  <div class="pgrid">${s.items.map((k, i) => `<figure class="pitem rv" style="--d:${(i % 3) * .06}s">${img(k.img.includes('/') ? k.img : 'work/' + k.img, k.alt, { sizes: '(min-width:960px) 33vw, 100vw' })}<figcaption><b>${esc(k.title)}</b><span class="pres">${esc(k.result)}</span><span class="ptxt">${esc(k.text)}</span></figcaption></figure>`).join('')}</div>
+</div></section>`;
+R['contact-links'] = (s, c) => `<section class="section" id="${s.id}"><div class="wrap"><div class="cta-final rv">
+  <h2 class="display">${fmt(s.h2, c.lang)}</h2>
+  <p>${esc(s.p)} <a class="biglink" href="tel:${CFG.phoneRaw}">${esc(s.phone)}</a> · <a class="biglink" href="mailto:${CFG.person?.email || ''}">${esc(s.email)}</a></p>
+  <p class="rolelinks"><span>${esc(s.rolesLabel)}</span>${s.roles.map((r) => `<a href="#${r.id}">${esc(r.label)}</a>`).join('')}</p>
 </div></div></section>`;
 
 R['cta-final'] = (s, c) => `<section class="section section--tight"><div class="wrap">
@@ -609,9 +700,9 @@ function toMd(page, c) {
       case 'page-hero': L.push(t(s.lead), '', s.brief ? `## ${T.brief}` : '', ...(s.brief || []).map((b) => `- ${b.b ? t(b.b) + ' ' : ''}${t(b.t)}`), ''); break;
       case 'legal': L.push(...s.blocks.flatMap((k) => [`## ${t(k.h)}`, '', ...(k.p || []).flatMap((p) => [t(p), '']), ...(k.ul || []).map((i) => `- ${t(i)}`), ''])); break;
       case 'bio': L.push(`## ${t(s.text)}`, '', ...(s.prose || []).flatMap((p) => [t(p), '']), ...(s.checks || []).map((k) => `- ${t(k)}`), '', `${s.names} — ${s.caption}`, ''); break;
-      case 'statement': L.push(t(s.text), '', ...(s.prose || []).flatMap((p) => [t(p), '']), ''); break;
+      case 'statement': L.push(t(s.text), '', ...(s.prose || []).flatMap((p) => [t(p), '']), ...(s.checks || []).map((k) => `- ${t(k)}`), ''); break;
       case 'friction': L.push(`## ${t(s.h2)}`, '', t(s.lead), '', ...s.pains.map((p) => `- ${t(p)}`), '', t(s.reveal.h3), '', ...s.reveal.p.flatMap((p) => [t(p), '']), t(s.reveal.cost), ''); break;
-      case 'founders': L.push(`## ${t(s.h2)}`, '', ...s.text.flatMap((p) => [t(p), '']), ...s.checks.map((k) => `- ${t(k)}`), ''); break;
+      case 'founders': L.push(`## ${t(s.h2)}`, '', ...s.text.flatMap((p) => [t(p), '']), ...(s.checks || []).map((k) => `- ${t(k)}`), ''); break;
       case 'partner': L.push(`## ${t(s.h)}`, '', t(s.p), '', `[${s.label}](${abs(url(s.to, lang))})`, ''); break;
       case 'hub': L.push(`## ${t(s.h2)}`, '', t(s.lead), '', ...s.items.flatMap((k) => [`### ${t(k.title)}`, t(k.desc), '']), ''); break;
       case 'services': L.push(`## ${t(s.h2)}`, '', t(s.lead), '', ...s.cards.flatMap((k) => [`### ${t(k.title)}`, t(k.desc), ...(k.items || []).map((i) => `- ${i.b ? t(i.b) + ' — ' : ''}${t(i.t)}`), '']), ''); break;
@@ -630,6 +721,11 @@ function toMd(page, c) {
       case 'article': L.push(...c.post.summary.map((i) => `- ${t(i)}`), '', ...c.post.body.flatMap((b) => b.h2 ? [`## ${t(b.h2)}`, ''] : b.h3 ? [`### ${t(b.h3)}`, ''] : b.p ? [t(b.p), ''] : b.ul ? [...b.ul.map((i) => `- ${t(i)}`), ''] : [])); break;
       case 'posts-list': L.push(...POSTS[lang].map((p) => `- [${p.title}](${abs(url('post:' + p.key, lang))}) — ${p.description}`), ''); break;
       case 'contact': L.push(t(s.lead), '', ...s.points.map((p) => `- ${t(p)}`), '', `${s.labels.phone}: ${CFG.phone}`, 'Québec, Canada · Vancouver, Canada', ''); break;
+      case 'profile-hero': L.push(t(s.h1), '', t(s.lead), '', ...s.glance.map((g) => `- ${g.k}: ${g.v}`), ''); break;
+      case 'cases': L.push(`## ${t(s.label)} — ${t(s.h2)}`, '', t(s.lead), '', ...s.items.flatMap((k) => [`### ${t(k.h3)}`, ...k.paras.map(t), ...k.nums.map((n) => `- **${n.n}** ${n.t}`), `${c.T.myRole}: ${t(k.role)}`, '']), ''); break;
+      case 'result-cards': L.push(`## ${t(s.label)}`, '', ...s.items.flatMap((k) => [`### ${k.h3}`, t(k.p), ...k.roles.map((r) => `- ${r}`), '']), ''); break;
+      case 'portfolio': L.push(`## ${t(s.label)} — ${t(s.h2)}`, '', t(s.lead), '', ...s.skills.map((k) => `- ${k}`), ...s.proof.map((i) => `- **${i.n}** ${i.t}`), '', ...s.items.map((k) => `- ${k.title} — ${k.result}`), ''); break;
+      case 'contact-links': L.push(`## ${t(s.h2)}`, '', `${s.p} ${CFG.phone} · ${CFG.person?.email || ''}`, ''); break;
       case 'testimonials': L.push(`## ${t(s.h2)}`, '', ...s.items.map((x) => `> ${x.text}\n> — ${x.name}${x.role ? ', ' + x.role : ''} (${x.date})`), ''); break;
       case 'cta-final': L.push(`## ${t(s.h2)}`, '', t(s.p), ''); break;
       case 'faq': if (page.faq?.length) L.push(`## ${t(s.h2 || T.faqTitle)}`, '', ...page.faq.flatMap((f) => [`### ${t(f.q)}`, '', ...f.a.flatMap((p) => [t(p), ''])])); break;
@@ -644,7 +740,7 @@ const THEME = {
   'hero-home': 'dark', 'page-hero': 'dark', 'cta-final': 'dark',
   friction: 'light', founders: 'dark', services: 'light', stats: 'dark', work: 'light', fit: 'dark', slot: 'light', testimonials: 'light', faq: 'light',
   statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', hub: 'light', partner: 'dark', related: 'light', bio: 'light', legal: 'light', people: 'dark', facts: 'light',
-  'posts-list': 'light', article: 'light', contact: 'light', 'rich-text': 'light',
+  'posts-list': 'light', article: 'light', 'profile-hero': 'dark', cases: 'light', 'result-cards': 'dark', portfolio: 'light', 'contact-links': 'dark', contact: 'light', 'rich-text': 'light',
 };
 const ASSET_HASH = {};
 const PAGES_OUT = []; // for sitemap + llms
@@ -675,6 +771,7 @@ function buildPage({ lang, key, page, post }) {
     if (!R[s.type]) throw new Error('No renderer for ' + s.type + ' in ' + key);
     const html = R[s.type](s, ctx);
     if (!html) return '';
+    if (s.type === 'role-nav') return html;
     const th = s.theme || THEME[s.type] || 'light';
     const cls = `theme theme--${th}${prevTheme === null ? ' theme--first' : ''}${prevTheme === th ? ' theme--join' : ''}`;
     prevTheme = th;
@@ -685,12 +782,13 @@ function buildPage({ lang, key, page, post }) {
   const graph = [...orgNodes(lang, T)];
   const pageId = canonical + '#webpage';
   const webpage = {
-    '@type': key === 'post' ? 'WebPage' : key === 'contact' ? 'ContactPage' : key === 'a-propos' ? 'AboutPage' : ['actualites', 'realisations', 'services'].includes(key) ? 'CollectionPage' : 'WebPage',
+    '@type': key === 'post' ? 'WebPage' : key === 'contact' ? 'ContactPage' : ['cebg', 'charles-erick', 'jean-francois'].includes(key) ? 'ProfilePage' : key === 'a-propos' ? 'AboutPage' : ['actualites', 'realisations', 'services'].includes(key) ? 'CollectionPage' : 'WebPage',
     '@id': pageId, url: canonical, name: page.meta.title, description: page.meta.description, inLanguage: lang, isPartOf: { '@id': abs('/#website') }, about: { '@id': abs('/#organization') },
     datePublished: page.published || CFG.published, dateModified: page.updated || BUILD_DATE, breadcrumb: { '@id': canonical + '#breadcrumb' },
     primaryImageOfPage: { '@type': 'ImageObject', url: abs('/assets/img/' + (page.image || `og-card-${lang}.jpg`)) },
   };
   if (page.speakable !== false) webpage.speakable = { '@type': 'SpeakableSpecification', cssSelector: ['h1', '.lead', '.brief li'] };
+  if (key === 'cebg') { const pn = graph.find((n) => n['@id'] === abs('/#charles-erick')); if (pn) { pn.jobTitle = page.personJobTitle || pn.jobTitle; pn.url = canonical; pn.email = 'mailto:' + (CFG.person?.email || ''); pn.telephone = CFG.phone; pn.image = abs('/assets/img/portfolio/portrait-charles-erick.jpg'); } webpage.mainEntity = { '@id': abs('/#charles-erick') }; }
   graph.push(webpage);
   graph.push({ '@type': 'BreadcrumbList', '@id': canonical + '#breadcrumb', itemListElement: crumbs.map((b, i) => ({ '@type': 'ListItem', position: i + 1, name: b.name, item: abs(b.url) })) });
   if ((SERVICE_KEYS.includes(key) || key === 'marque-blanche') && page.service) {
