@@ -1,15 +1,15 @@
 {
   "meta": {
-    "title": "About Viesigners | UX/UI & CRO Agency by The BG Twins",
-    "description": "Meet Charles-Erick and Jean-François BG, founders of Viesigners: 30+ combined years in UX/UI and conversion rate optimization, 600+ businesses advised, Toptal top 3%. Québec and Vancouver.",
+    "title": "About Viesigners: Meet the BG Twins, Founders",
+    "description": "Who is behind Viesigners? The BG Twins, Charles-Erick and Jean-François, lead every project themselves: background, key facts and recognition.",
     "h1": "About Viesigners"
   },
   "sections": [
     {
       "type": "page-hero",
-      "tag": "About Viesigners: UX/UI and CRO agency",
-      "h1": "Work directly with the two experts who *make your business grow*",
-      "lead": "Charles-Erick and Jean-François BG — The BG Twins — bring 30+ combined years in UX/UI and conversion rate optimization. We've advised more than 600 businesses, including giants like Disney, Marvel, Hasbro and Dell, and our work has been recognized by Awwwards.",
+      "tag": "About Viesigners: a founder-led UX/UI agency",
+      "h1": "Work directly with the two experts who make *growth feel almost unfair*",
+      "lead": "Viesigners is Charles-Erick and Jean-François BG, The BG Twins. They bring 30+ combined years in UX/UI and conversion rate optimization, and have advised more than 600 businesses, including giants like Disney, Marvel, Hasbro and Dell.",
       "ctas": [
         {
           "label": "Let's talk!",
@@ -24,19 +24,11 @@
         },
         {
           "b": "What you get:",
-          "t": "a direct line to the founders, a lean team and a network of vetted specialists."
-        },
-        {
-          "b": "Proof:",
-          "t": "30+ combined years; 600+ businesses advised; Toptal top 3%; recognized by Awwwards, OCTAS, Osentreprendre and Gartner."
+          "t": "direct access to the founders, with no middleman."
         },
         {
           "b": "Approach:",
           "t": "UX/UI and CRO — every decision aims at more inquiries, sales and loyalty."
-        },
-        {
-          "b": "Where:",
-          "t": "Québec and Vancouver, Canada — French- and English-speaking markets."
         }
       ],
       "tagH1": true
@@ -52,9 +44,9 @@
         "Surrounded by a network of select digital experts, as human as they are skilled, we act as business advisors, strategic consultants, senior freelancers and delivery partners in designing offers and digital experiences, in order to:"
       ],
       "checks": [
-        "**Improve landing pages and sales journeys** to increase inquiries, appointments and calls",
-        "**Clarify and craft compelling offers** that immediately prompt customers to act",
-        "**Simplify onboarding and the experience** of apps and services to increase loyalty and extend customer lifetime"
+        "**[Improve landing pages and sales journeys](@landing-pages)** to increase inquiries, appointments and calls",
+        "**[Clarify and craft compelling offers](@coaching)** that immediately prompt customers to act",
+        "**[Simplify onboarding and the experience](@design-produit)** of apps and services to increase loyalty and extend customer lifetime"
       ]
     },
     {
@@ -65,34 +57,34 @@
         {
           "to": "cebg",
           "name": "Charles-Erick BG",
-          "role": "Co-founder · Growth and digital marketing",
+          "role": "Co-founder · Latte art lover & father of one",
           "img": "charles-erick-bg.jpg",
           "alt": "Charles-Erick BG, co-founder of Viesigners",
           "text": "Hybrid expert in UX/UI and conversion rate optimization, Charles-Erick designs the strategy that connects your offer, your content and your digital experience to your business goals.",
-          "cta": "View my portfolio",
-          "claim": "Turns complex expertise into high-performing web ecosystems that engage, convert and shine.",
+          "cta": "More about CE",
+          "claim": "Interfaces and digital experiences that *free up teams and win over investors*.",
           "tags": [
-            "Digital marketing and growth",
+            "UX/UI design",
             "Product design",
-            "UX/UI design"
+            "Digital growth marketing"
           ],
-          "proof": "Has advised Dell, HP, Salesforce and 400+ more companies."
+          "proof": "Has advised Dell, HP, Salesforce and 400+ more companies; helped secure $320M+ in funding for an international scale-up."
         },
         {
           "to": "https://www.toptal.com/designers/resume/jean-francois-b-g#XAEE74",
           "name": "Jean-François BG",
-          "role": "Co-founder · Product design and UX/UI",
+          "role": "Co-founder · Vanlife enthusiast",
           "img": "jean-francois-bg.jpg",
           "alt": "Jean-François BG, co-founder of Viesigners",
-          "text": "Hybrid UX/UI expert, declared in the top 3% of the world's web experts by Toptal. He redesigns SaaS and app experiences so more users activate, convert and stay.",
+          "text": "A hybrid expert in UX/UI and conversion optimization, Jean-François designs every step of the journey, from the first click to long-term retention.",
           "cta": "View Toptal profile ↗",
-          "claim": "Interfaces and digital experiences that *free up teams* and win over investors.",
+          "claim": "Websites, funnels, SaaS and apps that get more users to *activate, convert and stay*.",
           "tags": [
             "UX/UI and CRO",
             "SaaS and app design",
             "Websites and landing pages"
           ],
-          "proof": "Top 3% of the world's web experts (Toptal); helped secure $320M+ in funding for an international scale-up."
+          "proof": "Top 3% of the world's web experts (Toptal)."
         }
       ]
     },
@@ -105,28 +97,20 @@
           "v": "Charles-Erick and Jean-François BG — Masters of web experience design (2009)."
         },
         {
-          "k": "Experience",
-          "v": "More than 30 years of combined experience and more than 600 digital projects delivered."
-        },
-        {
           "k": "Specialties",
-          "v": "UX/UI, conversion rate optimization (CRO), websites, landing pages, sales funnels, SaaS and app product design, business advisory."
-        },
-        {
-          "k": "Network",
-          "v": "Selected experts in digital advertising, social media and SEO/GEO."
+          "v": "[UX/UI and SaaS product design](@design-produit), [websites](@sites-web), [landing pages and sales funnels](@landing-pages), [copywriting](@copywriting), [web business advisory](@coaching) and conversion rate optimization (CRO)."
         },
         {
           "k": "Markets",
-          "v": "More than 30 business fields, in French and English, with clients in more than 6 countries."
+          "v": "More than 30 business fields, in French and English, with clients in more than 29 countries."
         },
         {
           "k": "Offices",
-          "v": "Québec and Vancouver, Canada."
+          "v": "Quebec and Vancouver, Canada."
         },
         {
           "k": "Recognition",
-          "v": "Toptal top 3%; projects recognized by Awwwards, OCTAS, Osentreprendre and Gartner."
+          "v": "Projects recognized by Awwwards, OCTAS, Osentreprendre and Gartner."
         }
       ]
     },
@@ -144,27 +128,15 @@
   ],
   "faq": [
     {
-      "q": "Who are The BG Twins?",
+      "q": "Who founded Viesigners?",
       "a": [
-        "Charles-Erick and Jean-François BG are the founders of Viesigners. They are hybrid experts in UX/UI and CRO, originally from Québec, with more than 30 years of combined experience."
+        "Viesigners was founded by [Charles-Erick](@cebg) and [Jean-François BG](https://www.toptal.com/designers/resume/jean-francois-b-g#XAEE74), also known as The BG Twins. They lead every project themselves."
       ]
     },
     {
-      "q": "Where is the agency located?",
+      "q": "Where can I see examples of the founders' work?",
       "a": [
-        "Viesigners has offices in Québec and Vancouver, Canada, and collaborates remotely with clients in more than 6 countries."
-      ]
-    },
-    {
-      "q": "Why work with a lean agency?",
-      "a": [
-        "Because you work directly with the experts, with no inexperienced go-between, and all the energy is focused on your return on investment."
-      ]
-    },
-    {
-      "q": "Who do you work with besides the founding team?",
-      "a": [
-        "A limited network of selected experts in digital advertising, social media and SEO/GEO, whom we bring into your project as needed."
+        "[Charles-Erick's profile](@cebg) presents his case studies and projects, and [Jean-François's Toptal profile](https://www.toptal.com/designers/resume/jean-francois-b-g#XAEE74) presents his."
       ]
     }
   ]

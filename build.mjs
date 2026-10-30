@@ -102,7 +102,8 @@ function fmt(s, lang) {
   if (s == null) return '';
   let h = esc(s);
   h = h.replace(/\[([^\]]+)\]\(@([\w:-]+)\)/g, (_, t, k) => (isHidden(k) ? t : `<a href="${url(k, lang)}">${t}</a>`));
-  h = h.replace(/\[([^\]]+)\]\(((?:https?:|mailto:)[^)]+)\)/g, '<a href="$2" rel="noopener">$1</a>');
+  h = h.replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>'); // external links open in a new tab
+  h = h.replace(/\[([^\]]+)\]\((mailto:[^)]+)\)/g, '<a href="$2">$1</a>');
   h = h.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
   h = h.replace(/\*([^*]+)\*/g, '<em class="acc">$1</em>');
   if (lang === 'fr') h = h.replace(/ ([:;!?»])/g, ' $1').replace(/« /g, '« ');
@@ -303,7 +304,7 @@ R.testimonials = (s, c) => {
     ? new Date(d + '-15').toLocaleDateString(loc, { year: 'numeric', month: 'long', timeZone: 'UTC' })
     : new Date(d).toLocaleDateString(loc, { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }));
   const items = s.items.slice().sort((a, b) => (b.date || '').localeCompare(a.date || '')); // newest first
-  return `<section class="section" id="temoignages"><div class="wrap">
+  return `<section class="section" id="temoignages"${s.tab ? ' data-role-section' : ''}><div class="wrap">
   ${secHead({ h2: s.h2 }, c, 'testimonials')}
   <div class="tgrid">${items.map((t, k) => `<figure class="tcard rv" style="--d:${(k % 3) * .06}s"><blockquote lang="${t.lang}">${t.stars ? `<div class="stars" role="img" aria-label="${t.stars} / 5">${'★'.repeat(t.stars)}</div>` : ''}${t.title ? `<h3 class="tq">${esc(t.title)}</h3>` : ''}${t.text ? t.text.split(/\n\s*\n/).map((p) => `<p>${esc(p).replace(/\n/g, '<br>')}</p>`).join('') : ''}</blockquote>${t.note ? `<p class="tnote">${esc(t.note)}</p>` : t.translatedFrom ? `<p class="tnote">${esc(c.T.translatedFrom[t.translatedFrom])}</p>` : ''}<figcaption><span class="who"><b>${esc(t.name)}</b>${(t.role || t.company) ? `<span>${esc([t.role, t.company ? `${t.role ? (t.joiner || c.T.at) + (/[’']$/.test(t.joiner || '') ? '' : ' ') : ''}${t.company}` : ''].filter(Boolean).join(' '))}</span>` : ''}${t.date ? `<time datetime="${t.date}">${esc(fmtDate(t.date))}</time>` : ''}</span>${t.logo ? img('testimonials/' + t.logo, t.company || t.name, { cls: 'tlogo' }) : ''}</figcaption></figure>`).join('')}
     ${s.slot ? `<a class="tcard tcard--slot rv" href="${url('contact', lang)}"><h3>${fmt(s.slot.h3, lang)}</h3><span class="slot-go" aria-hidden="true">${ico('arrow')}</span></a>` : ''}
@@ -399,26 +400,40 @@ R.facts = (s, c) => `<section class="section"><div class="wrap"><div class="spli
   <dl class="facts">${s.items.map((i, k) => `<div class="rv" style="--d:${k * .04}s"><dt>${fmt(i.k, c.lang)}</dt><dd>${fmt(i.v, c.lang)}</dd></div>`).join('')}</dl>
 </div></div></section>`;
 
+/* profile tabs: each role of the role-nav is its own page (own URL, title and link preview); the first role is the main URL */
+const tabUrl = (item, i, lang) => url('cebg', lang) + (i && item.path ? item.path + '/' : '');
+const sectionRole = (s) => s.tab || (['cases', 'portfolio'].includes(s.type) ? s.id : null); // `tab` ties a section to one role tab
+const cityQc = (lang) => (lang === 'en' ? 'Quebec' : 'Québec'); // English spelling drops the accent
+
 /* ---- personal portfolio page (job-application ready) ---- */
 const mailto = (c, subject) => `mailto:${CFG.person?.email || ''}?subject=${encodeURIComponent(subject || '')}`;
-const roleCta = (s, c) => s.apply ? `<div class="rolecta"><a class="pill" href="${mailto(c, s.apply.subject)}">${esc(c.T.applyCta)}</a><button class="copylink" type="button" data-copy="#${esc(s.id)}" data-done="${esc(c.T.copied)}">${esc(c.T.copyLink)}</button></div>` : '';
+const roleCta = (s, c) => s.apply ? `<div class="rolecta"><a class="pill" href="${mailto(c, s.apply.subject)}">${esc(c.T.applyCta)}</a></div>` : '';
 R['profile-hero'] = (s, c) => {
   const { lang } = c;
   return `<section class="hero profile" aria-labelledby="h1">
   <div class="hero__art" aria-hidden="true"><div class="hero__dots"></div></div>
   <div class="wrap">
-    <div class="portrait">${img('portfolio/portrait-charles-erick.jpg', s.portraitAlt, { lazy: false, fetchpriority: 'high', sizes: '220px' })}</div>
-    <p class="label">${esc(s.name)}</p>
-    <h1 id="h1">${fmt(s.h1, lang)}</h1>
-    <p class="hero__lead">${fmt(s.lead, lang)}</p>
-    <div class="hero__cta"><a class="pill" href="#contact">${esc(s.cta)}</a></div>
-    <dl class="glance">${s.glance.map((g) => `<div><dt>${esc(g.k)}</dt><dd>${esc(g.v)}</dd></div>`).join('')}</dl>
+    <div class="phero__grid profile__grid">
+      <div>
+      <p class="label">${esc(s.eyebrow)}</p>
+      <div class="portrait">${img('portfolio/portrait-charles-erick.jpg', s.portraitAlt, { lazy: false, fetchpriority: 'high', sizes: '220px' })}</div>
+      <h1 id="h1">${esc(s.name)}</h1>
+      <p class="profile__role">${fmt(s.role, lang)}</p>
+      <p class="hero__lead">${fmt(s.lead, lang)}</p>
+      <div class="hero__cta"><a class="pill" href="#contact">${esc(s.cta)}</a></div>
+      </div>
+      <aside class="brief" aria-labelledby="brief-t"><h2 id="brief-t">${esc(c.T.brief)}</h2><ul>${s.glance.map((g) => `<li>${ico('check')}<span><strong>${esc(g.k)}${lang === 'fr' ? '&nbsp;:' : ':'}</strong> ${esc(g.v)}</span></li>`).join('')}</ul></aside>
+    </div>
     <div class="advised"><p class="label">${esc(s.advised.label)}</p><div class="advised__row">${s.advised.logos.map((l) => img(l.file, l.alt, { lazy: false })).join('')}<span class="more">${esc(s.advised.more)}</span></div></div>
     ${s.seen ? `<div class="advised advised--seen"><p class="label">${esc(s.seen.label)}</p><div class="advised__row">${s.seen.items.map((l) => img(l.file, l.alt, { lazy: false })).join('')}</div></div>` : ''}
   </div>
 </section>`;
 };
-R['role-nav'] = (s, c) => `<nav class="rolenav" aria-label="${esc(s.label)}"><span class="rolenav__t">${esc(s.label)}</span>${s.items.map((i) => `<a href="#${i.id}" data-spy="${i.id}">${esc(i.label)}</a>`).join('')}</nav>`;
+/* "seen in" / "recognized by" logo bars: a section shows its own data, or the page-level `logoBars` when it opts in */
+const logoBar = (cls, d) => (d ? `<div class="${cls} rv"><span class="press__label">${esc(d.label)}</span>${d.items.map((p) => img(p.file, p.alt)).join('')}</div>` : '');
+const pressBar = (s, c) => logoBar('press', s.seen || (s.withPress && c.page.logoBars?.seen));
+const awardsBar = (s, c) => logoBar('awards', s.awards || (s.withAwards && c.page.logoBars?.awards));
+R['role-nav'] = (s, c) => `<nav class="rolenav" aria-label="${esc(s.label)}"><span class="rolenav__t">${esc(s.label)}</span>${s.items.map((i, n) => `<a href="${tabUrl(i, n, c.lang)}#${i.id}"${i.id === c.activeTab ? ' class="is-active" aria-current="page"' : ''}>${esc(i.label)}</a>`).join('')}</nav>`;
 R.cases = (s, c) => {
   const { lang } = c;
   return `<section class="section" id="${s.id}" data-role-section><div class="wrap">
@@ -437,7 +452,7 @@ R.cases = (s, c) => {
       ${k.seen ? `<div class="seen"><p class="label">${esc(k.seen.label)}</p><div class="seen__row">${k.seen.items.map((l) => img(l.file, l.alt)).join('')}</div></div>` : ''}
     </div>
   </article>`).join('')}</div>
-  ${s.seen ? `<div class="press rv"><span class="press__label">${esc(s.seen.label)}</span>${s.seen.items.map((l) => img(l.file, l.alt)).join('')}</div>` : ''}
+  ${pressBar(s, c)}
 </div></section>`;
 };
 R['result-cards'] = (s, c) => {
@@ -445,7 +460,7 @@ R['result-cards'] = (s, c) => {
   return `<section class="section"><div class="wrap">
   ${secHead(s, c, 'results', { label: s.label })}
   <div class="rcards">${s.items.map((k, i) => `<article class="rcard rv" style="--d:${(i % 2) * .06}s">
-    <div class="rcard__logo"${k.logoBg ? ` style="background:${esc(k.logoBg)}"` : ''}>${img(k.img, k.alt, { sizes: '320px' })}</div>
+    <div class="rcard__logo" style="--lr:${(([w, h]) => Math.sqrt(w / h).toFixed(3))(imgSize(k.img))}${k.logoBg ? `;background:${esc(k.logoBg)}` : ''}">${img(k.img, k.alt, { sizes: '320px' })}</div>
     <div class="rcard__body">
       <h3>${esc(k.h3)}</h3>
       <p>${fmt(k.p, lang)}</p>
@@ -453,9 +468,10 @@ R['result-cards'] = (s, c) => {
       <div class="role"><h4>${esc(s.roleLabel)}</h4><ul class="rlist">${k.roles.map((r) => `<li>${esc(r)}</li>`).join('')}</ul></div>
     </div>
   </article>`).join('')}</div>
-  ${s.awards ? `<div class="awards rv"><span class="press__label">${esc(s.awards.label)}</span>${s.awards.items.map((p) => img(p.file, p.alt)).join('')}</div>` : ''}
+  ${awardsBar(s, c)}
 </div></section>`;
 };
+const pgrid = (items, c) => `<div class="pgrid">${items.map((k, i) => `<figure class="pitem rv" style="--d:${(i % 3) * .06}s">${img(k.img.includes('/') ? k.img : 'work/' + k.img, k.alt, { sizes: '(min-width:960px) 33vw, 100vw' })}<figcaption><b>${esc(k.title)}</b><span class="pres">${esc(k.result)}</span><span class="ptxt">${esc(k.text)}</span>${k.url ? `<a class="plink" href="${esc(k.url)}" target="_blank" rel="noopener" aria-label="${esc(k.title)} — ${esc(c.T.viewBehance)}">${esc(c.T.viewBehance)} ↗</a>` : ''}</figcaption></figure>`).join('')}</div>`;
 R.portfolio = (s, c) => `<section class="section" id="${s.id}" data-role-section><div class="wrap">
   ${secHead(s, c, 'portfolio', { label: s.label })}
   ${roleCta(s, c)}
@@ -463,12 +479,18 @@ R.portfolio = (s, c) => `<section class="section" id="${s.id}" data-role-section
     <div class="pskills rv"><p class="label">${esc(s.skillsLabel)}</p><ul class="rlist">${s.skills.map((k) => `<li>${esc(k)}</li>`).join('')}</ul></div>
     <div class="proof proof--stack rv" style="--d:.08s">${s.proof.map((i) => `<div class="proof__item"><b${i.sm ? ' class="sm"' : ''}>${esc(i.n)}</b><span>${esc(i.t)}</span></div>`).join('')}</div>
   </div>
-  <div class="pgrid">${s.items.map((k, i) => `<figure class="pitem rv" style="--d:${(i % 3) * .06}s">${img(k.img.includes('/') ? k.img : 'work/' + k.img, k.alt, { sizes: '(min-width:960px) 33vw, 100vw' })}<figcaption><b>${esc(k.title)}</b><span class="pres">${esc(k.result)}</span><span class="ptxt">${esc(k.text)}</span></figcaption></figure>`).join('')}</div>
+  ${s.items?.length ? pgrid(s.items, c) : ''}
+  ${pressBar(s, c)}
+</div></section>`;
+R['portfolio-grid'] = (s, c) => `<section class="section"><div class="wrap">
+  ${secHead(s, c, 'portfolio', { label: s.label })}
+  ${pgrid(s.items, c)}
+  ${awardsBar(s, c)}
 </div></section>`;
 R['contact-links'] = (s, c) => `<section class="section" id="${s.id}"><div class="wrap"><div class="cta-final rv">
   <h2 class="display">${fmt(s.h2, c.lang)}</h2>
-  <p>${esc(s.p)} <a class="biglink" href="tel:${CFG.phoneRaw}">${esc(s.phone)}</a> · <a class="biglink" href="mailto:${CFG.person?.email || ''}">${esc(s.email)}</a></p>
-  <p class="rolelinks"><span>${esc(s.rolesLabel)}</span>${s.roles.map((r) => `<a href="#${r.id}">${esc(r.label)}</a>`).join('')}</p>
+  <p>${esc(s.p)} <a class="biglink" href="sms:${CFG.phoneRaw}">${esc(s.phone)}</a> · <a class="biglink" href="mailto:${CFG.person?.email || ''}">${esc(s.email)}</a></p>
+  <p class="rolelinks"><span>${esc(s.rolesLabel)}</span>${s.roles.map((r) => { const items = c.page.sections.find((x) => x.type === 'role-nav')?.items || []; const n = items.findIndex((x) => x.id === r.id); return `<a href="${n < 0 ? '#' + r.id : tabUrl(items[n], n, c.lang) + '#' + r.id}">${esc(r.label)}</a>`; }).join('')}</p>
 </div></div></section>`;
 
 R['cta-final'] = (s, c) => `<section class="section section--tight"><div class="wrap">
@@ -523,7 +545,7 @@ R.contact = (s, c) => {
     <ul class="checks rv">${s.points.map((p) => `<li>${ico('check')}<span>${fmt(p, lang)}</span></li>`).join('')}</ul>
     <dl class="contact__list rv">
       <div><dt>${esc(s.labels.phone)}</dt><dd><a href="tel:${CFG.phoneRaw}">${esc(CFG.phone)}</a></dd></div>
-      <div><dt>${esc(s.labels.where)}</dt><dd>Québec, Canada<br>Vancouver, Canada</dd></div>
+      <div><dt>${esc(s.labels.where)}</dt><dd>${cityQc(lang)}, Canada<br>Vancouver, Canada</dd></div>
       <div><dt>${esc(s.labels.hours)}</dt><dd>${esc(s.hours)}</dd></div>
     </dl>
   </div>
@@ -661,7 +683,7 @@ function footer(c) {
       <p style="margin-top:1.4rem"><a class="pill pill--sm" href="${url('contact', lang)}">${esc(T.footer.cta)}</a></p></div>
     <div><h2>${esc(T.nav.services)}</h2><ul>${MAIN_SERVICE_KEYS.filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.footer.nav?.[k] || T.nav[k])}</a></li>`).join('')}<li><a class="footer__all" href="${url('services', lang)}">${esc(T.navAll)} ${ico('arrow')}</a></li></ul></div>
     <div><h2>${esc(T.footer.company)}</h2><ul>${['a-propos', 'realisations', 'actualites', 'contact'].filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.nav[k])}</a></li>`).join('')}</ul></div>
-    <div><h2>${esc(T.nav.contact)}</h2><address><span>Québec, Canada</span><span>Vancouver, Canada</span><a href="tel:${CFG.phoneRaw}">${esc(CFG.phone)}</a></address>
+    <div><h2>${esc(T.nav.contact)}</h2><address><span>${cityQc(lang)}, Canada</span><span>Vancouver, Canada</span><a href="tel:${CFG.phoneRaw}">${esc(CFG.phone)}</a></address>
       <div class="footer__social"><a href="${CFG.social.facebook}" target="_blank" rel="noopener noreferrer me" aria-label="Facebook ${esc(T.newTab)}">${ico('fb')}</a><a href="${CFG.social.linkedin}" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn ${esc(T.newTab)}">${ico('in')}</a></div></div>
   </div>
   <div class="footer__base"><span>© ${new Date().getFullYear()} ${esc(T.footer.rights)}</span><span><a href="${url('privacy', lang)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(T.footer.privacy)} ${esc(T.newTab)}">${esc(T.footer.privacy)}</a> · <a href="${url('terms', lang)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(T.footer.terms)} ${esc(T.newTab)}">${esc(T.footer.terms)}</a>${CFG.clarityId ? ` · <button type="button" class="linklike" data-cookie-open>${esc(T.footer.cookies)}</button>` : ''}</span></div>
@@ -720,11 +742,12 @@ function toMd(page, c) {
       case 'facts': L.push(`## ${t(s.h2)}`, '', ...s.items.map((i) => `- **${t(i.k)}**: ${t(i.v)}`), ''); break;
       case 'article': L.push(...c.post.summary.map((i) => `- ${t(i)}`), '', ...c.post.body.flatMap((b) => b.h2 ? [`## ${t(b.h2)}`, ''] : b.h3 ? [`### ${t(b.h3)}`, ''] : b.p ? [t(b.p), ''] : b.ul ? [...b.ul.map((i) => `- ${t(i)}`), ''] : [])); break;
       case 'posts-list': L.push(...POSTS[lang].map((p) => `- [${p.title}](${abs(url('post:' + p.key, lang))}) — ${p.description}`), ''); break;
-      case 'contact': L.push(t(s.lead), '', ...s.points.map((p) => `- ${t(p)}`), '', `${s.labels.phone}: ${CFG.phone}`, 'Québec, Canada · Vancouver, Canada', ''); break;
-      case 'profile-hero': L.push(t(s.h1), '', t(s.lead), '', ...s.glance.map((g) => `- ${g.k}: ${g.v}`), ''); break;
+      case 'contact': L.push(t(s.lead), '', ...s.points.map((p) => `- ${t(p)}`), '', `${s.labels.phone}: ${CFG.phone}`, `${cityQc(lang)}, Canada · Vancouver, Canada`, ''); break;
+      case 'profile-hero': L.push(t(s.role), '', t(s.lead), '', ...s.glance.map((g) => `- ${g.k}: ${g.v}`), ''); break;
       case 'cases': L.push(`## ${t(s.label)} — ${t(s.h2)}`, '', t(s.lead), '', ...s.items.flatMap((k) => [`### ${t(k.h3)}`, ...k.paras.map(t), ...k.nums.map((n) => `- **${n.n}** ${n.t}`), `${c.T.myRole}: ${t(k.role)}`, '']), ''); break;
       case 'result-cards': L.push(`## ${t(s.label)}`, '', ...s.items.flatMap((k) => [`### ${k.h3}`, t(k.p), ...k.roles.map((r) => `- ${r}`), '']), ''); break;
-      case 'portfolio': L.push(`## ${t(s.label)} — ${t(s.h2)}`, '', t(s.lead), '', ...s.skills.map((k) => `- ${k}`), ...s.proof.map((i) => `- **${i.n}** ${i.t}`), '', ...s.items.map((k) => `- ${k.title} — ${k.result}`), ''); break;
+      case 'portfolio': L.push(`## ${t(s.label)} — ${t(s.h2)}`, '', t(s.lead), '', ...s.skills.map((k) => `- ${k}`), ...s.proof.map((i) => `- **${i.n}** ${i.t}`), '', ...(s.items || []).map((k) => `- ${k.title} — ${k.result}`), ''); break;
+      case 'portfolio-grid': L.push(`## ${t(s.h2)}`, '', ...s.items.map((k) => `- ${k.title} — ${k.result}`), ''); break;
       case 'contact-links': L.push(`## ${t(s.h2)}`, '', `${s.p} ${CFG.phone} · ${CFG.person?.email || ''}`, ''); break;
       case 'testimonials': L.push(`## ${t(s.h2)}`, '', ...s.items.map((x) => `> ${x.text}\n> — ${x.name}${x.role ? ', ' + x.role : ''} (${x.date})`), ''); break;
       case 'cta-final': L.push(`## ${t(s.h2)}`, '', t(s.p), ''); break;
@@ -745,14 +768,14 @@ const THEME = {
 const ASSET_HASH = {};
 const PAGES_OUT = []; // for sitemap + llms
 
-function buildPage({ lang, key, page, post }) {
+function buildPage({ lang, key, page, post, tab }) {
   const T = TR[lang];
-  const selfUrl = key === 'post' ? url('post:' + post.key, lang) : url(key, lang);
+  const selfUrl = tab ? tab.urls[lang] : key === 'post' ? url('post:' + post.key, lang) : url(key, lang);
   const canonical = abs(selfUrl);
   const altUrls = {};
   for (const l of LANGS) {
     if (key === 'post') { const s = CURRENT_POST_SLUGS[post.key]; altUrls[l] = s?.[l] ? url('post:' + post.key, l) : null; }
-    else altUrls[l] = url(key, l);
+    else altUrls[l] = tab ? tab.urls[l] : url(key, l);
   }
   const alternates = LANGS.filter((l) => altUrls[l]).map((l) => ({ hreflang: l, href: abs(altUrls[l]) }));
   alternates.push({ hreflang: 'x-default', href: abs('/') });
@@ -763,9 +786,10 @@ function buildPage({ lang, key, page, post }) {
   if (['charles-erick', 'jean-francois'].includes(key)) crumbs.push({ name: T.nav['a-propos'], url: url('a-propos', lang) });
   if (key === 'cas-saas') crumbs.push({ name: T.nav['design-produit'], url: url('design-produit', lang) });
   if (key === 'post') crumbs.push({ name: T.nav.actualites, url: url('actualites', lang) });
-  if (key !== 'home') crumbs.push({ name: key === 'post' ? post.title : T.nav[key], url: selfUrl });
+  if (key !== 'home') crumbs.push({ name: key === 'post' ? post.title : T.nav[key], url: tab ? url(key, lang) : selfUrl });
+  if (tab?.index) crumbs.push({ name: tab.label, url: selfUrl });
 
-  const ctx = { lang, T, key, page, post, crumbs, altUrls, selfUrl };
+  const ctx = { lang, T, key, page, post, crumbs, altUrls, selfUrl, activeTab: tab?.id };
   let prevTheme = null;
   const body = page.sections.map((s, i) => {
     if (!R[s.type]) throw new Error('No renderer for ' + s.type + ' in ' + key);
@@ -865,7 +889,17 @@ function build() {
   for (const l of LANGS) for (const k of Object.keys(ROUTES)) pages[`${l}:${k}`] = rd(path.join(SRC, 'content', l, `${k}.json`));
 
   for (const l of LANGS) {
-    for (const k of Object.keys(ROUTES)) buildPage({ lang: l, key: k, page: pages[`${l}:${k}`] });
+    for (const k of Object.keys(ROUTES)) {
+      const page = pages[`${l}:${k}`], nav = page.sections.find((s) => s.type === 'role-nav');
+      if (!nav) { buildPage({ lang: l, key: k, page }); continue; }
+      nav.items.forEach((item, i) => {
+        // keep shared sections (profile, testimonials, contact); show only this tab's role; FAQ lives on the main URL only
+        const sections = page.sections.filter((s) => (!sectionRole(s) || sectionRole(s) === item.id) && (i === 0 || s.type !== 'faq'));
+        const meta = item.title ? { ...page.meta, title: item.title, description: item.description } : page.meta; // the first tab (main URL) uses its own title too
+        const urls = Object.fromEntries(LANGS.map((x) => { const it = pages[`${x}:${k}`].sections.find((s) => s.type === 'role-nav').items[i]; return [x, tabUrl(it, i, x)]; }));
+        buildPage({ lang: l, key: k, page: { ...page, meta, sections, faq: i === 0 ? page.faq : [], ogImage: item.ogImage || page.meta.ogImage, ogAlt: meta.title }, tab: { id: item.id, index: i, label: item.label, urls } });
+      });
+    }
     for (const p of POSTS[l]) {
       const T = TR[l];
       buildPage({

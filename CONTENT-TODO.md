@@ -1,17 +1,23 @@
 # À valider / compléter
 
-1. **(Fait : freres.bg@viesigners.com via FormSubmit — activer à la 1re soumission, voir README)** ~~Courriel et formulaire~~ — `src/config.json` : `email` (repli mailto) et `formEndpoint` (Formspree, Netlify Forms, etc.). Sans ça, le formulaire ouvre un courriel pré-rempli seulement si `email` est défini, sinon affiche une erreur.
-2. **Logos de la bande de l'accueil** — le visuel de référence montrait Meccano, Monopoly, St-Hubert, Wizards, D&D, Bombardier, Transformers, Nerf. Le site actuel ne publie que Warner, Marvel, Salesforce, Disney, HP, Dell, Ubisoft. Ajouter les fichiers dans `src/assets/img/` (`logo-xxx.png`, blanc sur transparent) puis les ajouter à `logos` dans `home.json`.
-3. **Chiffres incohérents** — l'image de référence dit « 32+ années », le site actuel « 30 années »; « 600+ » vs « près de 500 » entreprises. Uniformiser.
-4. **Pages des fondateurs** — seuls les faits publics du site sont utilisés (aucune biographie inventée). Fournir : rôle précis de chacun, parcours, photo individuelle (la photo double est utilisée).
-5. **Textes nouveaux à relire** (rédigés selon les bonnes pratiques, aucune statistique inventée) : pages Publicité numérique, Médias sociaux, SEO/GEO; sections « Ce que votre site inclut », processus, comparatifs et FAQ des pages de services; 3 articles de blogue par langue.
-6. **Coaching d'affaires** — présent sur l'accueil (carte vers Contact) mais sans page dédiée, car absent de la liste de pages demandée.
-7. **Témoignages** — l'ancien site chargeait un widget (Senja). L'accueil affiche pour l'instant l'invitation « Insérez votre histoire à succès ici! ».
-8. **Typos corrigées vs le site actuel** : « que nous n'aurez jamais », « Résultats garanties », « aidé », « internationnale », « top 3% »…
-9. **Garanties** — le texte « garanti » vient du site actuel; les détails sont à préciser dans les FAQ.
-10. **Consentement aux témoins** — le site actuel utilise CookieYes; aucun suivi n'est installé ici. Ajouter analytics/pixels + bannière de consentement au besoin.
+## Ouvert
+1. **Carte « Insérez votre histoire à succès ici! »** — encore affichée à la fin des témoignages de l'accueil et de l'étude de cas SaaS (`slot` dans `home.json` et `cas-saas.json`, FR/EN). La retirer ou la garder comme appel à l'action.
+2. **Garanties** — « Résultats garantis! », « Satisfaction garantie! », « Augmentation de la performance garantie! » (coaching, design de produit, sites web) : conditions à préciser dans les FAQ, ou formulation à adoucir.
+3. **Toitures Dérek Fortier : trois chiffres** — 3,15× plus de demandes (carte de résultats du profil, mesure de départ), près de 4× le taux de conversion (témoignage de Dérek), 5× (témoignage de Molka sur l'accueil, périodes de pointe). Choisir une formulation commune.
+4. **Profil, onglet Design de produit** — 2 preuves chiffrées au lieu de 3. Piste : « 25+ entrevues clients » (refonte d'architecture d'une plateforme SaaS), déjà citée dans l'étude de cas Marketing.
+5. **Page de Jean-François** (`jean-francois.json`, masquée) — à compléter quand son profil sera prêt; remplacer alors les liens Toptal de la page À propos par sa page.
+6. **Textes à relire** (rédigés selon les bonnes pratiques, aucune statistique inventée) : pages Publicité numérique, Médias sociaux, SEO/GEO; sections processus, comparatifs et FAQ des pages de services; 3 articles de blogue par langue.
 
-## Page portfolio personnelle (/charles-erick-bg/)
-- Digital Marketing : texte, chiffres, citations et images repris tels quels de la page Carrd (traduits en FR). Le témoignage d'Alex Elexis est une traduction libre (l'original français n'était pas disponible).
-- Design de produit et Design UX/UI : sections **rédigées à partir des projets Viesigners** (Pharmy, Collections, Trouve un stage, Warner, Marvel, Spin Master, Assassin's Creed, Wizards of the Coast). Les titres de rôle (« Senior Product Designer… », « Senior UX/UI Designer… ») et les listes « Ce que j'apporte » sont des propositions à valider. Aucune liste « Mon rôle » inventée pour ces deux sections.
-- Courriel de contact : `person.email` dans `src/config.json`; téléphone = celui de Viesigners.
+## Fait
+- Formulaire de contact : freres.bg@viesigners.com via FormSubmit (activer le lien reçu à la 1re soumission, voir README).
+- Logos de la bande de l'accueil (dont Garneau, AbbVie et l'Union européenne).
+- Chiffres uniformisés : 30+ années combinées, 600+ entreprises (agence), 29+ pays.
+- Page Conseil d'affaires web (`coaching.json`).
+- Bannière de consentement aux témoins + Microsoft Clarity après consentement.
+- Page À propos : redondances retirées, intention « marque et confiance » (ne vise plus « agence UX/UI et CRO », réservé à l'accueil), liens internes vers les services.
+
+## Profil de Charles-Erick (/charles-erick-bg/)
+- Trois onglets, chacun avec sa propre adresse, son titre et sa carte d'aperçu (`og-cebg-*.jpg`) : Design UX/UI (adresse principale), Design de produit (`/design-de-produit/`, `/product-design/`), Marketing numérique (`/marketing-numerique/`, `/digital-marketing/`). Titres et descriptions dans `role-nav` de `cebg.json`.
+- Contenu aligné sur les 3 CV (faits seulement, sans noms d'employeurs dans les textes ajoutés). Positionnement consultant d'abord : aucun langage de recherche d'emploi.
+- Courriel de contact : freres.bg@viesigners.com (`person.email` dans `src/config.json`); contact par texto au numéro de Viesigners. Aucune coordonnée personnelle.
+- Pharmy est un nom fictif (client sous NDA).

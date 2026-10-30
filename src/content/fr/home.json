@@ -86,6 +86,11 @@
      "id": "nerf",
      "alt": "Nerf",
      "ext": "svg"
+    },
+    {
+     "id": "eu",
+     "alt": "Union européenne",
+     "ext": "svg"
     }
    ]
   },
@@ -228,7 +233,7 @@
     {
      "n": "6+",
      "h": "Notre portée internationale",
-     "p": "Des entrepreneurs et entreprises provenant de plus de 6 pays à travers le monde nous ont fait confiance."
+     "p": "Des entrepreneurs et entreprises provenant de plus de 29 pays à travers le monde nous ont fait confiance."
     }
    ]
   },
@@ -546,7 +551,7 @@
   {
    "q": "Dans quelles langues et dans quels marchés travaillez-vous?",
    "a": [
-    "Nous travaillons en français et en anglais, avec des clients au Québec, au Canada et dans plus de 6 pays. Nos bureaux sont à Québec et à Vancouver, et nous collaborons à distance avec des équipes partout dans le monde."
+    "Nous travaillons en français et en anglais, avec des clients au Québec, au Canada et dans plus de 29 pays. Nos bureaux sont à Québec et à Vancouver, et nous collaborons à distance avec des équipes partout dans le monde."
    ]
   }
  ]

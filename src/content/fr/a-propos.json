@@ -1,15 +1,15 @@
 {
   "meta": {
-    "title": "À propos de Viesigners | Agence UX/UI et CRO des Frères BG",
-    "description": "Rencontrez Charles-Erick et Jean-François BG, fondateurs de Viesigners : plus de 30 années combinées en UX/UI et optimisation du taux de conversion, 600+ entreprises conseillées, top 3% Toptal. Québec et Vancouver.",
+    "title": "À propos de Viesigners : Les Frères BG, fondateurs",
+    "description": "Qui est derrière Viesigners? Les Frères BG, Charles-Erick et Jean-François, dirigent eux-mêmes chaque mandat : parcours, faits clés et reconnaissances.",
     "h1": "À propos de Viesigners"
   },
   "sections": [
     {
       "type": "page-hero",
-      "tag": "À propos de Viesigners : agence UX/UI et CRO",
-      "h1": "Travaillez directement avec les deux experts qui *font croître votre entreprise*",
-      "lead": "Charles-Erick et Jean-François BG — Les Frères BG — cumulent plus de 30 années d'expérience en UX/UI et en optimisation du taux de conversion. Nous avons conseillé plus de 600 entreprises, dont des géants comme Disney, Marvel, Hasbro et Dell, et la qualité de notre travail a été reconnue par Awwwards.",
+      "tag": "À propos de Viesigners : une agence UX/UI dirigée par ses fondateurs",
+      "h1": "Travaillez directement avec les deux experts qui rendent votre croissance *presque injuste*",
+      "lead": "Viesigners, ce sont Charles-Erick et Jean-François BG, Les Frères BG. Ils cumulent plus de 30 années d'expérience en UX/UI et en optimisation du taux de conversion, et ont conseillé plus de 600 entreprises, dont des géants comme Disney, Marvel, Hasbro et Dell.",
       "ctas": [
         {
           "label": "Parlons-nous!",
@@ -24,19 +24,11 @@
         },
         {
           "b": "Ce que vous obtenez :",
-          "t": "un accès direct aux fondateurs, une équipe lean et un réseau de spécialistes sélectionnés."
-        },
-        {
-          "b": "Preuves :",
-          "t": "plus de 30 années combinées; 600+ entreprises conseillées; top 3% Toptal; reconnus par Awwwards, OCTAS, Osentreprendre et Gartner."
+          "t": "un accès direct aux fondateurs, sans intermédiaire."
         },
         {
           "b": "Approche :",
           "t": "UX/UI et CRO — chaque décision vise plus de demandes, de ventes et de fidélité."
-        },
-        {
-          "b": "Où :",
-          "t": "Québec et Vancouver, Canada — marchés francophones et anglophones."
         }
       ],
       "tagH1": true
@@ -52,9 +44,9 @@
         "Entourés d'un réseau d'experts sélects du domaine numérique, aussi humains que compétents, nous opérons comme conseillers d'affaires, consultants stratégiques, pigistes seniors et partenaires de réalisation en conception d'offres et d'expériences numériques, afin de :"
       ],
       "checks": [
-        "**Améliorer les pages de destination et les parcours de vente** pour augmenter les demandes, les rendez-vous et les appels",
-        "**Clarifier et formuler des offres percutantes** pour inciter immédiatement les clients à passer à l'action",
-        "**Simplifier l'onboarding et l'expérience** des applications et services pour fidéliser davantage et prolonger la durée de vie client"
+        "**[Améliorer les pages de destination et les parcours de vente](@landing-pages)** pour augmenter les demandes, les rendez-vous et les appels",
+        "**[Clarifier et formuler des offres percutantes](@coaching)** pour inciter immédiatement les clients à passer à l'action",
+        "**[Simplifier l'onboarding et l'expérience](@design-produit)** des applications et services pour fidéliser davantage et prolonger la durée de vie client"
       ]
     },
     {
@@ -65,34 +57,34 @@
         {
           "to": "cebg",
           "name": "Charles-Erick BG",
-          "role": "Cofondateur · Croissance et marketing numérique",
+          "role": "Cofondateur · Amateur de latte art et père de famille",
           "img": "charles-erick-bg.jpg",
           "alt": "Charles-Erick BG, cofondateur des Viesigners",
           "text": "Expert hybride en UX/UI et en optimisation du taux de conversion, Charles-Erick conçoit la stratégie qui relie votre offre, votre contenu et votre expérience numérique à vos objectifs d'affaires.",
-          "cta": "Voir mon portfolio",
-          "claim": "Transforme une expertise complexe en écosystèmes web performants qui engagent, convertissent et brillent.",
+          "cta": "En savoir plus sur CE",
+          "claim": "Des interfaces et des expériences numériques qui *libèrent les équipes et séduisent les investisseurs*.",
           "tags": [
-            "Marketing numérique et croissance",
+            "Design UX/UI",
             "Design de produit",
-            "Design UX/UI"
+            "Marketing numérique de croissance"
           ],
-          "proof": "A conseillé Dell, HP, Salesforce et plus de 400 autres entreprises."
+          "proof": "A conseillé Dell, HP, Salesforce et plus de 400 autres entreprises; a contribué à obtenir plus de 320 M$ de financement pour une scale-up internationale."
         },
         {
           "to": "https://www.toptal.com/designers/resume/jean-francois-b-g#XAEE74",
           "name": "Jean-François BG",
-          "role": "Cofondateur · Design de produit et UX/UI",
+          "role": "Cofondateur · Adepte de la vanlife",
           "img": "jean-francois-bg.jpg",
           "alt": "Jean-François BG, cofondateur des Viesigners",
-          "text": "Expert hybride en UX/UI, déclaré dans le top 3% des experts web mondiaux par Toptal. Il revoit l'expérience des SaaS et des applis pour que plus d'utilisateurs s'activent, convertissent et restent.",
+          "text": "Expert hybride en UX/UI et en optimisation des conversions, Jean-François conçoit chaque étape du parcours, du premier clic à la fidélisation.",
           "cta": "Voir le profil Toptal ↗",
-          "claim": "Des interfaces et des expériences numériques qui *libèrent les équipes* et séduisent les investisseurs.",
+          "claim": "Des sites web, des tunnels de vente, des SaaS et des applis qui font que plus d'utilisateurs *s'activent, convertissent et restent*.",
           "tags": [
             "UX/UI et CRO",
             "Design de SaaS et d'applis",
             "Sites web et landing pages"
           ],
-          "proof": "Top 3% des experts web mondiaux (Toptal); a contribué à obtenir plus de 320 M$ de financement pour une scale-up internationale."
+          "proof": "Top 3% des experts web mondiaux (Toptal)."
         }
       ]
     },
@@ -105,20 +97,12 @@
           "v": "Charles-Erick et Jean-François BG — Maîtres en conception d'expériences web (2009)."
         },
         {
-          "k": "Expérience",
-          "v": "Plus de 30 années d'expérience combinée et plus de 600 projets numériques livrés."
-        },
-        {
           "k": "Spécialités",
-          "v": "UX/UI, optimisation du taux de conversion (CRO), sites web, landing pages, tunnels de vente, design de produit SaaS et applis, conseil d'affaires web."
-        },
-        {
-          "k": "Réseau",
-          "v": "Experts sélectionnés en publicité numérique, médias sociaux et SEO/GEO."
+          "v": "[Design UX/UI et de produit SaaS](@design-produit), [sites web](@sites-web), [landing pages et tunnels de vente](@landing-pages), [copywriting](@copywriting), [conseil d'affaires web](@coaching) et optimisation du taux de conversion (CRO)."
         },
         {
           "k": "Marchés",
-          "v": "Plus de 30 domaines d'affaires, en français et en anglais, avec des clients dans plus de 6 pays."
+          "v": "Plus de 30 domaines d'affaires, en français et en anglais, avec des clients dans plus de 29 pays."
         },
         {
           "k": "Bureaux",
@@ -126,7 +110,7 @@
         },
         {
           "k": "Reconnaissances",
-          "v": "Top 3% Toptal; projets reconnus par Awwwards, OCTAS, Osentreprendre et Gartner."
+          "v": "Projets reconnus par Awwwards, OCTAS, Osentreprendre et Gartner."
         }
       ]
     },
@@ -144,27 +128,15 @@
   ],
   "faq": [
     {
-      "q": "Qui sont Les frères BG?",
+      "q": "Qui a fondé Viesigners?",
       "a": [
-        "Charles-Erick et Jean-François BG sont les fondateurs de Viesigners. Ils sont des experts hybrides en UX/UI et en CRO, originaires du Québec, avec plus de 30 années d'expérience combinée."
+        "Viesigners a été fondée par [Charles-Erick](@cebg) et [Jean-François BG](https://www.toptal.com/designers/resume/jean-francois-b-g#XAEE74), aussi connus sous le nom des Frères BG. Ce sont eux qui pilotent chaque mandat."
       ]
     },
     {
-      "q": "Où est située l'agence?",
+      "q": "Où voir des exemples du travail des fondateurs?",
       "a": [
-        "Viesigners a des bureaux à Québec et à Vancouver, au Canada, et collabore à distance avec des clients dans plus de 6 pays."
-      ]
-    },
-    {
-      "q": "Pourquoi travailler avec une agence lean?",
-      "a": [
-        "Parce que vous travaillez directement avec les experts, sans intermédiaire inexpérimenté, et que toute l'énergie est concentrée sur votre retour sur investissement."
-      ]
-    },
-    {
-      "q": "Avec qui travaillez-vous en plus de l'équipe fondatrice?",
-      "a": [
-        "Avec un réseau restreint d'experts sélectionnés en publicité numérique, médias sociaux et SEO/GEO, que nous intégrons à votre projet au besoin."
+        "Le [profil de Charles-Erick](@cebg) présente ses études de cas et ses projets, et le [profil Toptal de Jean-François](https://www.toptal.com/designers/resume/jean-francois-b-g#XAEE74) présente les siens."
       ]
     }
   ]

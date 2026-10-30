@@ -1,7 +1,7 @@
 {
  "meta": {
-  "title": "UX/UI & CRO Agency in Québec & Vancouver | Viesigners",
-  "description": "UX/UI and CRO agency in Québec and Vancouver: websites, landing pages, sales funnels and SaaS product design. Multiply your sales and revenue per customer.",
+  "title": "UX/UI & CRO Agency in Quebec & Vancouver | Viesigners",
+  "description": "UX/UI and CRO agency in Quebec and Vancouver: websites, landing pages, sales funnels and SaaS product design. Multiply your sales and revenue per customer.",
   "h1": "We help you make the Web your Unfair Advantage"
  },
  "sections": [
@@ -86,6 +86,11 @@
      "id": "nerf",
      "alt": "Nerf",
      "ext": "svg"
+    },
+    {
+     "id": "eu",
+     "alt": "European Union",
+     "ext": "svg"
     }
    ]
   },
@@ -119,7 +124,7 @@
    "h2": "Meet the founders: Canada's #1 lean UX/UI, web and marketing agency for *making your business profitable*",
    "sub": "Charles-Erick & Jean-François BG — Masters of web experience design (2009)",
    "text": [
-    "**Hi! This is The BG Twins.** Hybrid UX/UI and conversion rate optimization (CRO) experts from Québec, with more than 30 combined years helping companies of all sizes perform online, in English and French."
+    "**Hi! This is The BG Twins.** Hybrid UX/UI and conversion rate optimization (CRO) experts from Quebec, with more than 30 combined years helping companies of all sizes perform online, in English and French."
    ],
    "cta": {
     "label": "More about the BG Twins",
@@ -228,7 +233,7 @@
     {
      "n": "6+",
      "h": "Our international reach",
-     "p": "Entrepreneurs and companies from more than 6 countries around the world have trusted us."
+     "p": "Entrepreneurs and companies from more than 29 countries around the world have trusted us."
     }
    ]
   },
@@ -508,7 +513,7 @@
   {
    "q": "What is Viesigners?",
    "a": [
-    "Viesigners is a lean Canadian UX/UI, web and marketing agency based in Québec and Vancouver, founded by Charles-Erick and Jean-François BG. We specialize in UX/UI and conversion rate optimization (CRO): websites, landing pages, sales funnels, SaaS and mobile app product design, and business advisory.",
+    "Viesigners is a lean Canadian UX/UI, web and marketing agency based in Quebec and Vancouver, founded by Charles-Erick and Jean-François BG. We specialize in UX/UI and conversion rate optimization (CRO): websites, landing pages, sales funnels, SaaS and mobile app product design, and business advisory.",
     "With our network of experts, we also support clients in digital advertising, social media and SEO/GEO."
    ]
   },
@@ -542,7 +547,7 @@
   {
    "q": "Which languages and markets do you work in?",
    "a": [
-    "We work in French and English, with clients in Québec, across Canada and in more than 6 countries. Our offices are in Québec and Vancouver, and we collaborate remotely with teams around the world."
+    "We work in French and English, with clients in Quebec, across Canada and in more than 29 countries. Our offices are in Quebec and Vancouver, and we collaborate remotely with teams around the world."
    ]
   }
  ]

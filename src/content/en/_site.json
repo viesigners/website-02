@@ -51,7 +51,7 @@
  "footerTag": "The accelerator pedal for *growing businesses*",
  "footer": {
   "who": "Viesigners",
-  "blurb": "A lean UX/UI and conversion agency. Two senior founders and a network of trusted specialists, in Québec and Vancouver.",
+  "blurb": "A lean UX/UI and conversion agency. Two senior founders and a network of trusted specialists, in Quebec and Vancouver.",
   "cta": "Let's talk!",
   "company": "Company",
   "rights": "Les Viesigners. All rights reserved.",
@@ -59,7 +59,7 @@
   "terms": "Terms and conditions",
   "cookies": "Cookie settings"
  },
- "orgDescription": "Viesigners is a lean Canadian UX/UI, web and marketing agency (Québec and Vancouver) specialized in UX/UI and conversion rate optimization (CRO): websites, landing pages, sales funnels, SaaS and app product design, and business advisory. With a network of vetted experts, it also supports companies in digital advertising, SEO and GEO.",
+ "orgDescription": "Viesigners is a lean Canadian UX/UI, web and marketing agency (Quebec and Vancouver) specialized in UX/UI and conversion rate optimization (CRO): websites, landing pages, sales funnels, SaaS and app product design, and business advisory. With a network of vetted experts, it also supports companies in digital advertising, SEO and GEO.",
  "knowsAbout": [
   "UX/UI design",
   "Conversion rate optimization (CRO)",
@@ -122,8 +122,9 @@
   "policy": "Privacy policy"
  },
  "navAll": "View all services",
- "applyCta": "Contact me about this role",
+ "applyCta": "Discuss a project",
  "copyLink": "Copy link",
+ "viewBehance": "View on Behance",
  "copied": "Link copied",
  "myRole": "My role"
 }

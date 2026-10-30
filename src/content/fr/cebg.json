@@ -1,25 +1,27 @@
 {
  "meta": {
-  "title": "Charles-Erick BG — Stratège senior en marketing numérique et écosystèmes web de croissance | Portfolio",
-  "description": "Portfolio de Charles-Erick BG : marketing numérique et croissance, design de produit et design UX/UI. 4,7× plus de demandes, +3 500 % de prospects, +48 % de conversions. Basé à Québec, Canada.",
-  "h1": "Charles-Erick BG"
+  "title": "Charles-Erick BG — Stratège de croissance senior : UX/UI, design de produit, marketing et CRO | Profil",
+  "description": "Profil de Charles-Erick BG, stratège de croissance senior : contenu, acquisition, CRO et marketing de produit SaaS, jusqu'à l'adoption des fonctionnalités. +500 % de revenus en 3 ans, 4,7× plus de demandes.",
+  "h1": "Charles-Erick BG",
+  "ogImage": "og-cebg-fr.jpg"
  },
- "personJobTitle": "Stratège senior en marketing numérique et écosystèmes web de croissance",
+ "personJobTitle": "Stratège de croissance senior : UX/UI, design de produit, marketing et CRO",
  "apply": {
-  "email": "cebgagnon@gmail.com"
+  "email": "freres.bg@viesigners.com"
  },
  "sections": [
   {
    "type": "profile-hero",
+   "eyebrow": "Profil",
    "name": "Charles-Erick BG",
    "portraitAlt": "Portrait de Charles-Erick BG",
-   "h1": "Stratège senior en marketing numérique et *écosystèmes web de croissance*",
-   "lead": "Je transforme une expertise complexe en écosystèmes web performants. J'aide les entreprises à dominer leur marché grâce à un contenu qui engage, convertit et brille.",
-   "cta": "Ajoutez-moi à votre équipe",
+   "role": "Stratège de croissance senior : *UX/UI, design de produit, marketing et CRO*",
+   "lead": "J'aide les entreprises, les plateformes SaaS et les applications mobiles à vendre plus en alliant stratégie marketing, design UX/UI et optimisation des conversions.",
+   "cta": "Travaillons ensemble",
    "glance": [
     {
-     "k": "Rôles",
-     "v": "Marketing numérique et croissance · Design de produit · Design UX/UI"
+     "k": "Expertises phares",
+     "v": "Design UX/UI · Design de produit · Marketing numérique de croissance"
     },
     {
      "k": "Basé à",
@@ -31,7 +33,7 @@
     },
     {
      "k": "Expérience",
-     "v": "30+ années combinées avec Jean-François BG chez Viesigners"
+     "v": "16+ ans, 29+ pays, 30+ industries"
     }
    ],
    "advised": {
@@ -48,26 +50,50 @@
      {
       "file": "logo-salesforce.png",
       "alt": "Salesforce"
+     },
+     {
+      "file": "logo-abbvie.svg",
+      "alt": "AbbVie"
+     },
+     {
+      "file": "logo-garneau.png",
+      "alt": "Garneau"
+     },
+     {
+      "file": "logo-eu.svg",
+      "alt": "Union européenne"
      }
     ],
-    "more": "+400 autres..."
+    "more": "+400 autres marques"
    }
   },
   {
    "type": "role-nav",
-   "label": "Portfolio par rôle",
+   "label": "Expertises phares",
    "items": [
     {
-     "id": "digital-marketing",
-     "label": "Marketing numérique"
+     "id": "ux-ui-design",
+     "label": "Design UX/UI",
+     "path": "design-ux-ui",
+     "title": "Charles-Erick BG — Designer UX/UI senior | Profil",
+     "description": "Design UX/UI par Charles-Erick BG : 200+ sites et applications web, refonte e-commerce de Garneau, site de Richard & Levesque nommé aux Awwwards.",
+     "ogImage": "og-cebg-ux-ui-design-fr.jpg"
     },
     {
      "id": "product-design",
-     "label": "Design de produit"
+     "label": "Design de produit",
+     "path": "design-de-produit",
+     "title": "Charles-Erick BG — Designer de produit senior | Profil",
+     "description": "Design de produit SaaS et IA par Charles-Erick BG : recherche utilisateur, systèmes de design, lancements primés et contribution à une levée de 320 M$.",
+     "ogImage": "og-cebg-product-design-fr.jpg"
     },
     {
-     "id": "ux-ui-design",
-     "label": "Design UX/UI"
+     "id": "digital-marketing",
+     "label": "Marketing numérique",
+     "path": "marketing-numerique",
+     "title": "Charles-Erick BG — Marketing de croissance et CRO | Profil",
+     "ogImage": "og-cebg-digital-marketing-fr.jpg",
+     "description": "Profil de Charles-Erick BG : contenu, acquisition, CRO et marketing de produit SaaS. +500 % de revenus en 3 ans, 4,7× plus de demandes."
     }
    ]
   },
@@ -75,16 +101,16 @@
    "type": "cases",
    "id": "digital-marketing",
    "label": "Marketing numérique",
-   "h2": "Réalisations *phares*",
-   "lead": "Rôle de stratège senior en marketing numérique et croissance : contenu, acquisition, marketing de produit et conversion.",
+   "h2": "Marketing de croissance et *CRO*",
+   "lead": "Stratégie de contenu, copywriting, SEO/GEO, médias sociaux, acquisition, tunnels de vente et optimisation de la conversion (CRO) : des écosystèmes de croissance qui ont triplé les revenus d'entreprises clientes.",
    "apply": {
-    "subject": "Candidature — poste en marketing numérique et croissance"
+    "subject": "Demande — Marketing numérique et croissance"
    },
    "items": [
     {
      "brand": "logo-viesigners.png",
      "brandAlt": "Viesigners",
-     "tag": "Viesigners · Lancement de notre propre offre",
+     "tag": "Viesigners · Lancement de notre première offre de coaching en ligne",
      "h3": "Stratégie de contenu et d'acquisition",
      "paras": [
       "Pour soutenir le lancement de notre nouvelle offre d'accompagnement, nous devions générer des occasions qualifiées sans recourir à la prospection à froid. Plutôt que de forcer la vente, nous avons mis en place une stratégie de contenu et d'aimants à prospects ciblée, combinée à des processus de qualification stricts et à des conversations personnalisées.",
@@ -100,7 +126,7 @@
        "t": "Prospects qualifiés dans la communauté"
       },
       {
-       "n": "100 %",
+       "n": "99 %",
        "t": "Acquisition organique"
       }
      ],
@@ -139,27 +165,7 @@
      "invert": true
     }
    ],
-   "seen": {
-    "label": "Tel que vu dans",
-    "items": [
-     {
-      "file": "press-coveo.png",
-      "alt": "Coveo"
-     },
-     {
-      "file": "press-socom.svg",
-      "alt": "SOCOM"
-     },
-     {
-      "file": "press-2gars-adwords.png",
-      "alt": "Les 2 gars d'Adwords"
-     },
-     {
-      "file": "press-o2web.png",
-      "alt": "O2 Web"
-     }
-    ]
-   }
+   "withPress": true
   },
   {
    "type": "result-cards",
@@ -232,70 +238,50 @@
      ]
     }
    ],
-   "awards": {
-    "label": "Projets reconnus par",
-    "items": [
-     {
-      "file": "award-octas.png",
-      "alt": "OCTAS"
-     },
-     {
-      "file": "award-osentreprendre.png",
-      "alt": "Osentreprendre"
-     },
-     {
-      "file": "award-gartner.png",
-      "alt": "Gartner"
-     },
-     {
-      "file": "award-awwwards.png",
-      "alt": "Awwwards"
-     }
-    ]
-   }
+   "tab": "digital-marketing",
+   "withAwards": true
   },
   {
    "type": "portfolio",
    "id": "product-design",
    "theme": "light",
    "label": "Design de produit",
-   "h2": "Designer de produit senior pour *SaaS et applications*",
-   "lead": "Plateformes SaaS et applications conçues et optimisées avec Viesigners : de lancements primés à des gains de conversion mesurables.",
+   "h2": "Design de produit senior pour *SaaS et applications*",
+   "lead": "Plateformes SaaS, IA et applications : recherche utilisateur, systèmes de design et parcours qui accélèrent l'adoption, dont une plateforme d'IA reconnue Leader par Gartner.",
    "apply": {
-    "subject": "Candidature — poste en design de produit"
+    "subject": "Demande — Design de produit"
    },
    "skillsLabel": "Ce que j'apporte",
    "skills": [
-    "Optimisation de parcours usagers, en phases itératives qui tiennent compte de la dette technique",
-    "Systèmes de design",
-    "Recherches utilisateurs et comparatives",
-    "Rédaction UX",
-    "Collaboration impeccable avec les équipes internes"
+    "Recherche utilisateur, entrevues clients et tests d'utilisabilité",
+    "Systèmes de design et implantation de Figma",
+    "Architecture d'information et navigation de plateformes complexes",
+    "Tableaux de bord, modules d'automatisation et intégrations de données",
+    "Audits UX et justifications de design pour l'ingénierie et les parties prenantes",
+    "Accessibilité WCAG"
    ],
    "proof": [
     {
-     "n": "+48 %",
-     "t": "de conversions pour la plateforme de recherche d'études cliniques Pharmy"
-    },
-    {
      "n": "320 M$+",
-     "t": "de financement sécurisé par une scale-up internationale accompagnée"
+     "t": "de financement levés par une scale-up en IA (Leader Gartner), avec ma contribution à l'expérience produit"
     },
     {
      "n": "2",
      "t": "lancements SaaS primés (finaliste OCTAS, gagnant Osentreprendre)"
     }
    ],
+   "withPress": true
+  },
+  {
+   "type": "portfolio-grid",
+   "tab": "product-design",
+   "theme": "dark",
+   "label": "Réalisations",
+   "h2": "Projets *phares*",
    "items": [
     {
-     "img": "pharmy.png",
-     "alt": "Plateforme de recherche d'études cliniques Pharmy",
-     "title": "Pharmy",
-     "result": "+48 % de conversions",
-     "text": "Optimisation de la plateforme de recherche d'études cliniques."
-    },
-    {
      "img": "musee-civilisation.jpg",
+     "url": "https://www.behance.net/gallery/158595591/MCQ-Online-Collections-Launch-of-a-New-Web-App",
      "alt": "Plateforme SaaS « Collections » du Musée de la civilisation",
      "title": "« Collections » — Musée de la civilisation",
      "result": "Lancement SaaS · finaliste aux OCTAS",
@@ -303,101 +289,102 @@
     },
     {
      "img": "trouve-un-stage.jpg",
+     "url": "https://www.behance.net/gallery/158180737/Watson-Trouveunstagecom-New-Webapp-Launch",
      "alt": "Plateforme SaaS « Trouve un stage »",
      "title": "« Trouve un stage »",
      "result": "Lancement SaaS · gagnant du prix Osentreprendre",
      "text": "Lancement de la plateforme SaaS de recherche de stages."
     }
-   ]
+   ],
+   "withAwards": true
   },
   {
    "type": "portfolio",
    "id": "ux-ui-design",
-   "theme": "dark",
+   "theme": "light",
    "label": "Design UX/UI",
-   "h2": "Designer UX/UI senior pour *sites web, jeux et applications*",
-   "lead": "Interfaces et sites web pour de grandes marques mondiales, reconnus par Awwwards et conçus pour convertir.",
+   "h2": "Design UX/UI senior pour *sites web et applications*",
+   "lead": "Sites web et interfaces conçus pour convertir : +48 % de taux de conversion pour une plateforme de recherche d'études cliniques, et un projet nommé aux Awwwards.",
    "apply": {
-    "subject": "Candidature — poste en design UX/UI"
+    "subject": "Demande — Design UX/UI"
    },
    "skillsLabel": "Ce que j'apporte",
    "skills": [
-    "Structure de site claire et intuitive, alignée sur les intentions des clients",
-    "Design graphique et UX conçus avec précision pour booster la crédibilité",
-    "Conception d'interfaces pour applications, jeux et plateformes en ligne",
-    "Pages rapides, adaptées aux plateformes mobiles"
+    "Architecture d'information, wireframes et prototypes",
+    "Design d'interfaces web et mobiles responsives, du site vitrine à l'e-commerce",
+    "Audits heuristiques, tests utilisateurs et tests A/B",
+    "Rédaction UX orientée conversion",
+    "Accessibilité WCAG"
    ],
    "proof": [
     {
-     "n": "600+",
-     "t": "projets numériques livrés pour des entreprises de toutes tailles"
+     "n": "200+",
+     "t": "sites et applications web conçus ou optimisés, pour des startups, des PME, des OBNL et de grandes entreprises"
     },
     {
      "n": "Awwwards",
-     "t": "reconnaissance de la qualité des sites"
+     "t": "nomination pour le site web d'une entreprise de rénovation et de cuisines sur mesure"
     },
     {
-     "n": "Dell · Nerf · HP",
+     "n": "Dell · HP · Salesforce",
      "t": "parmi les géants conseillés",
      "sm": true
     }
    ],
+   "withPress": true
+  },
+  {
+   "type": "portfolio-grid",
+   "tab": "ux-ui-design",
+   "theme": "dark",
+   "label": "Réalisations",
+   "h2": "Projets *phares*",
    "items": [
     {
-     "img": "warner-bros.jpg",
-     "alt": "Interface de jeu vidéo conçue pour Warner Bros.",
-     "title": "Warner Bros.",
-     "result": "Interface de jeu vidéo",
-     "text": "Conception d'une interface de jeu mobile."
+     "img": "pharmy.png",
+     "url": "https://www.behance.net/gallery/155069623/Pharmy-Launch-of-a-New-Webapp",
+     "alt": "Plateforme de recherche d'études cliniques Pharmy",
+     "title": "Pharmy",
+     "result": "+48 % de conversions",
+     "text": "Optimisation de la plateforme de recherche d'études cliniques. Nom du client sous NDA."
     },
     {
-     "img": "marvel.jpg",
-     "alt": "Interface de jeu conçue pour Marvel",
-     "title": "Marvel",
-     "result": "Interface de jeu",
-     "text": "Conception d'une interface de jeu mobile."
+     "img": "garneau.jpg",
+     "url": "https://www.behance.net/gallery/164913257/Garneau-Complete-Ecommerce-Website-Redesign",
+     "alt": "Refonte du site de commerce électronique de Garneau, sur ordinateur et mobile",
+     "title": "Garneau",
+     "result": "Refonte de site e-commerce",
+     "text": "Refonte complète du site de commerce électronique de la marque."
     },
     {
-     "img": "spin-master.jpg",
-     "alt": "Interface d'application conçue pour Spin Master",
-     "title": "Spin Master",
-     "result": "Interface d'application",
-     "text": "Conception de l'interface d'une application compagnon."
-    },
-    {
-     "img": "assassins-creed.jpg",
-     "alt": "Plateforme en ligne conçue pour Assassin's Creed Odyssey",
-     "title": "Assassin's Creed Odyssey",
-     "result": "Plateforme en ligne — Ubisoft",
-     "text": "Plateforme en ligne pour le lancement du jeu."
-    },
-    {
-     "img": "wizards.jpg",
-     "alt": "Site web conçu pour Wizards of the Coast",
-     "title": "Wizards of the Coast",
-     "result": "Site web",
-     "text": "Conception du site web de la marque."
+     "img": "richard-levesque.jpg",
+     "alt": "Refonte du site web de Richard & Levesque, sur ordinateur et mobile",
+     "title": "Richard & Levesque",
+     "result": "Site web · Nommé aux Awwwards",
+     "text": "Refonte du site web d'un fleuron de la rénovation et des cuisines sur mesure au Québec."
     }
-   ]
+   ],
+   "withAwards": true
   },
   {
    "type": "testimonials",
    "theme": "light",
    "h2": "Ce qu'on ressent en *travaillant avec moi*",
+   "noslot": true,
+   "tab": "ux-ui-design",
    "items": [
     {
-     "name": "Alex Elexis",
-     "role": "Commercial Growth Manager, Alkegen",
-     "date": "",
+     "name": "Marie-Eve Gratton",
+     "role": "Experte en design UX/UI (freelance)",
+     "date": "2026-02-20",
      "lang": "fr",
-     "stars": 5,
-     "title": "Un regard neuf sur la vente numérique!",
-     "text": "[...] J'aimerais profiter de l'occasion pour exprimer notre satisfaction à l'égard du travail de Charles-Erick. [...] Les discussions que nous avons eues avec lui ont ouvert de nouveaux horizons quant à notre approche et à la présentation de notre gamme de produits. Elles nous ont donné un regard neuf sur la vente numérique.",
-     "note": "Traduction libre — original en français"
+     "title": "Une référence lorsqu’il est question de stratégie web et de design UX",
+     "text": "Que dire de Charles-Érick… un humain véritablement à part. Sa grande force est sa capacité à amener ses clients et ses collègues à un autre niveau grâce à sa réflexion stratégique et sa compréhension fine du UX. Charles-Érick est une référence lorsqu’il est question de stratégie web et de design UX. Son approche est toujours réfléchie, claire et structurée. C’est d’ailleurs un réel plaisir de collaborer avec lui et de donner vie visuellement aux idées que nous développons ensemble. Je le recommande sans hésitation !",
+     "company": ""
     },
     {
      "name": "Emilie Gosselin",
-     "role": "VP Croissance et transformation, O2 Web",
+     "role": "VP Croissance et transformation, Datmos",
      "date": "",
      "lang": "fr",
      "stars": 5,
@@ -413,8 +400,83 @@
      "title": "Charles-Erick est une authentique machine à idées!",
      "text": "Inventif, structuré et ouvert d'esprit, il n'hésite pas à remettre les idées en questions, tant les siennes que celles des autres si cela peut permettre d'améliorer les résultats. Son savoir-faire n'a d'égal que son savoir-être et il possède les qualités d'un leader au sein d'une équipe. Ce fut un plaisir de collaborer avec lui."
     }
-   ],
-   "noslot": true
+   ]
+  },
+  {
+   "type": "testimonials",
+   "theme": "light",
+   "h2": "Ce qu'on ressent en *travaillant avec moi*",
+   "noslot": true,
+   "tab": "product-design",
+   "items": [
+    {
+     "name": "Elodie Marcotte",
+     "role": "Fondatrice",
+     "date": "2026-02-18",
+     "lang": "fr",
+     "title": "L’accompagnement de Charles-Érick a largement dépassé mes attentes",
+     "text": "Dans le peu de mots que cet espace me permet, je peux dire que l’accompagnement de Charles-Érick a largement dépassé mes attentes. Créatif, vif d’esprit et super bien organisé, il va bien au-delà de la simple réflexion en expérience utilisateur. C’est quelqu’un de profondément humain, et ça se ressent directement dans son travail. Je le recommande les yeux fermés.",
+     "company": "I Am Alice",
+     "joiner": "d’"
+    },
+    {
+     "name": "François L.",
+     "role": "PDG",
+     "date": "2023-04-03",
+     "lang": "fr",
+     "title": "Il sait simplifier les idées pour qu’elles aient du sens",
+     "text": "Charles-Erick est un excellent designer UX. Très professionnel, il a une façon de simplifier les idées pour qu’elles aient du sens. Toujours enthousiaste à l’idée de collaborer avec lui sur différents projets qui demandent son œil aiguisé et sa démarche de design axée sur la valeur :)",
+     "translatedFrom": "en",
+     "company": "Feedbaak",
+     "joiner": "de"
+    },
+    {
+     "name": "Michael Roussel",
+     "role": "Cofondateur",
+     "date": "2026-08",
+     "lang": "fr",
+     "title": "Il est rare, de nos jours, de travailler avec une personne aussi professionnelle, compétente et bienveillante",
+     "text": "Il nous a accompagnés sur plusieurs projets, et nous avons notamment collaboré avec lui pour Flokon sur l’analyse de l’interface utilisateur, l’optimisation du parcours client et du funnel de vente du site web.\n\nC’est une personne humaine, multidisciplinaire, créative et capable de penser autrement. Il est extrêmement agréable de travailler avec lui, et il sait toujours s’adapter à nos besoins. [...]\n\nJe le recommande à 200%. Il est rare, de nos jours, de travailler avec une personne aussi professionnelle, compétente et bienveillante.",
+     "company": "Flokon",
+     "joiner": "de"
+    }
+   ]
+  },
+  {
+   "type": "testimonials",
+   "theme": "light",
+   "h2": "Ce qu'on ressent en *travaillant avec moi*",
+   "noslot": true,
+   "tab": "digital-marketing",
+   "items": [
+    {
+     "name": "Alex Elexis",
+     "role": "Commercial Growth Manager, Alkegen",
+     "date": "",
+     "lang": "fr",
+     "stars": 5,
+     "title": "Un regard neuf sur la vente numérique!",
+     "text": "[...] J'aimerais profiter de l'occasion pour exprimer notre satisfaction à l'égard du travail de Charles-Erick. [...] Les discussions que nous avons eues avec lui ont ouvert de nouveaux horizons quant à notre approche et à la présentation de notre gamme de produits. Elles nous ont donné un regard neuf sur la vente numérique."
+    },
+    {
+     "name": "Emilie Gosselin",
+     "role": "VP Croissance et transformation, Datmos",
+     "date": "",
+     "lang": "fr",
+     "stars": 5,
+     "title": "Une personne clé sur différents mandats!",
+     "text": "[…] apportant toujours des solutions innovantes, créatives tout en démontrant la valeur ajoutée. Toujours à la recherche de la meilleure solution pour répondre aux besoins utilisateurs, ses réflexions étaient toujours très poussées, méthodiques et basées sur des recherches exhaustives. […] Ce fut un réel plaisir de travailler, brainstormer avec Charles-Érick sur différents projets stratégiques pour les clients ou pour faire évoluer l'Agence."
+    },
+    {
+     "name": "Dérek Fortier",
+     "role": "Propriétaire, Toitures Dérek Fortier",
+     "date": "",
+     "lang": "fr",
+     "stars": 5,
+     "title": "Nous avons multiplié notre taux de conversion par près de 4",
+     "text": "Avant, notre site en ligne depuis un an générait quelques soumissions par mois, malgré une bonne gestion publicitaire. Avec la page de conversion, nous avons multiplié notre taux de conversion par près de 4. [...] Je le recommande à toute entreprise qui veut transformer ses campagnes en vrais résultats."
+    }
+   ]
   },
   {
    "type": "contact-links",
@@ -422,41 +484,35 @@
    "id": "contact",
    "h2": "Prêt à *dominer votre marché?*",
    "p": "Deux façons de me joindre :",
-   "phone": "Téléphone",
+   "phone": "Texto",
    "email": "Courriel",
-   "rolesLabel": "Vous recrutez pour un rôle précis?",
+   "rolesLabel": "Vous cherchez une expertise précise?",
    "roles": [
     {
-     "id": "digital-marketing",
-     "label": "Marketing numérique"
+     "id": "ux-ui-design",
+     "label": "Design UX/UI"
     },
     {
      "id": "product-design",
      "label": "Design de produit"
     },
     {
-     "id": "ux-ui-design",
-     "label": "Design UX/UI"
+     "id": "digital-marketing",
+     "label": "Marketing numérique"
     }
    ]
   },
   {
    "type": "faq",
-   "h2": "Questions *de recrutement*",
+   "h2": "Travailler *ensemble*",
    "open": true
   }
  ],
  "faq": [
   {
-   "q": "À quels types de rôles Charles-Erick BG est-il ouvert?",
+   "q": "Quels types de mandats Charles-Erick BG accepte-t-il?",
    "a": [
-    "Des rôles seniors en marketing numérique et croissance, en design de produit et en design UX/UI. Chacun a sa propre section sur cette page, avec un lien direct que vous pouvez utiliser dans une candidature."
-   ]
-  },
-  {
-   "q": "Puis-je renvoyer directement vers un seul rôle?",
-   "a": [
-    "Oui. Ajoutez #digital-marketing, #product-design ou #ux-ui-design après l'adresse de la page, ou utilisez le bouton « Copier le lien » de chaque section."
+    "Des mandats de consultation et de réalisation en marketing numérique et croissance, en design de produit et en design UX/UI, principalement pour des entreprises de services, des plateformes SaaS et des applications mobiles."
    ]
   },
   {
@@ -468,8 +524,52 @@
   {
    "q": "Comment le joindre?",
    "a": [
-    "Par téléphone au +1 581-502-1115 ou par courriel à cebgagnon@gmail.com."
+    "Par texto au +1 581-502-1115 ou par courriel à freres.bg@viesigners.com."
    ]
   }
- ]
+ ],
+ "logoBars": {
+  "seen": {
+   "label": "Tel que vu dans",
+   "items": [
+    {
+     "file": "press-coveo.png",
+     "alt": "Coveo"
+    },
+    {
+     "file": "press-socom.svg",
+     "alt": "SOCOM"
+    },
+    {
+     "file": "press-2gars-adwords.png",
+     "alt": "Les 2 gars d'Adwords"
+    },
+    {
+     "file": "press-o2web.png",
+     "alt": "O2 Web"
+    }
+   ]
+  },
+  "awards": {
+   "label": "Projets reconnus par",
+   "items": [
+    {
+     "file": "award-octas.png",
+     "alt": "OCTAS"
+    },
+    {
+     "file": "award-gartner.png",
+     "alt": "Gartner"
+    },
+    {
+     "file": "award-awwwards.png",
+     "alt": "Awwwards"
+    },
+    {
+     "file": "award-osentreprendre.png",
+     "alt": "Osentreprendre"
+    }
+   ]
+  }
+ }
 }

@@ -1,29 +1,31 @@
 {
  "meta": {
-  "title": "Charles-Erick BG — Senior Digital Marketing & Growth Web Ecosystems Strategist | Portfolio",
-  "description": "Portfolio of Charles-Erick BG: digital marketing and growth, product design and UX/UI design. 4.7× more inquiries, +3,500% leads, +48% conversions. Based in Québec, Canada.",
-  "h1": "Charles-Erick BG"
+  "title": "Charles-Erick BG — Senior Growth Strategist: UX/UI, Product Design, Marketing & CRO | Profile",
+  "description": "Profile of Charles-Erick BG, senior growth strategist: content, acquisition, CRO and SaaS product marketing, all the way to feature adoption. +500% revenue in 3 years, 4.7× more inquiries.",
+  "h1": "Charles-Erick BG",
+  "ogImage": "og-cebg-en.jpg"
  },
- "personJobTitle": "Senior Digital Marketing and Growth Web Ecosystems Strategist",
+ "personJobTitle": "Senior growth strategist: UX/UI, product design, marketing and CRO",
  "apply": {
-  "email": "cebgagnon@gmail.com"
+  "email": "freres.bg@viesigners.com"
  },
  "sections": [
   {
    "type": "profile-hero",
+   "eyebrow": "Profile",
    "name": "Charles-Erick BG",
    "portraitAlt": "Portrait of Charles-Erick BG",
-   "h1": "Senior Digital Marketing and *Growth Web Ecosystems* Strategist",
-   "lead": "I turn complex expertise into high-performing web ecosystems. I help businesses dominate their market with content that engages, converts and shines.",
-   "cta": "Add me to your team",
+   "role": "Senior growth strategist: *UX/UI, product design, marketing and CRO*",
+   "lead": "I help businesses, SaaS platforms and mobile apps sell more by combining marketing strategy, UX/UI design and conversion optimization.",
+   "cta": "Let's work together",
    "glance": [
     {
-     "k": "Roles",
-     "v": "Digital Marketing & Growth · Product Design · UX/UI Design"
+     "k": "Signature expertise",
+     "v": "UX/UI Design · Product Design · Digital Growth Marketing"
     },
     {
      "k": "Based in",
-     "v": "Québec, Canada"
+     "v": "Quebec, Canada"
     },
     {
      "k": "Languages",
@@ -31,7 +33,7 @@
     },
     {
      "k": "Experience",
-     "v": "30+ combined years with Jean-François BG at Viesigners"
+     "v": "16+ years, 29+ countries, 30+ industries"
     }
    ],
    "advised": {
@@ -48,26 +50,50 @@
      {
       "file": "logo-salesforce.png",
       "alt": "Salesforce"
+     },
+     {
+      "file": "logo-abbvie.svg",
+      "alt": "AbbVie"
+     },
+     {
+      "file": "logo-garneau.png",
+      "alt": "Garneau"
+     },
+     {
+      "file": "logo-eu.svg",
+      "alt": "European Union"
      }
     ],
-    "more": "+400 more..."
+    "more": "+400 more brands"
    }
   },
   {
    "type": "role-nav",
-   "label": "Portfolio by role",
+   "label": "Signature expertise",
    "items": [
     {
-     "id": "digital-marketing",
-     "label": "Digital Marketing"
+     "id": "ux-ui-design",
+     "label": "UX/UI Design",
+     "path": "ux-ui-design",
+     "title": "Charles-Erick BG — Senior UX/UI Designer | Profile",
+     "description": "UX/UI design by Charles-Erick BG: 200+ websites and web apps, Garneau e-commerce redesign, Awwwards-nominated Richard & Levesque website.",
+     "ogImage": "og-cebg-ux-ui-design-en.jpg"
     },
     {
      "id": "product-design",
-     "label": "Product Design"
+     "label": "Product Design",
+     "path": "product-design",
+     "title": "Charles-Erick BG — Senior Product Designer | Profile",
+     "description": "SaaS and AI product design by Charles-Erick BG: user research, design systems, award-recognized SaaS launches and a contribution to a $320M funding round.",
+     "ogImage": "og-cebg-product-design-en.jpg"
     },
     {
-     "id": "ux-ui-design",
-     "label": "UX/UI Design"
+     "id": "digital-marketing",
+     "label": "Digital Marketing",
+     "path": "digital-marketing",
+     "title": "Charles-Erick BG — Growth Marketing & CRO Strategist | Profile",
+     "ogImage": "og-cebg-digital-marketing-en.jpg",
+     "description": "Profile of Charles-Erick BG: content, acquisition, CRO and SaaS product marketing. +500% revenue in 3 years, 4.7× more inquiries."
     }
    ]
   },
@@ -75,16 +101,16 @@
    "type": "cases",
    "id": "digital-marketing",
    "label": "Digital Marketing",
-   "h2": "Featured *work*",
-   "lead": "Senior Digital Marketing and Growth role: content, acquisition, product marketing and conversion.",
+   "h2": "Growth marketing and *CRO*",
+   "lead": "Content strategy, copywriting, SEO/GEO, social media, acquisition, sales funnels and conversion rate optimization (CRO): growth ecosystems that tripled clients' revenue.",
    "apply": {
-    "subject": "Application — Digital Marketing and Growth role"
+    "subject": "Inquiry — Digital Marketing and Growth"
    },
    "items": [
     {
      "brand": "logo-viesigners.png",
      "brandAlt": "Viesigners",
-     "tag": "Viesigners · Our own offer launch",
+     "tag": "Viesigners · Launch of our first online coaching offer",
      "h3": "Content & acquisition strategy",
      "paras": [
       "To support the launch of our new coaching offer, we needed to generate qualified opportunities without resorting to cold outreach. Rather than forcing sales, we put in place a targeted content and lead magnet strategy, combined with strict qualification processes and personalized conversations.",
@@ -100,7 +126,7 @@
        "t": "Qualified prospects in the community"
       },
       {
-       "n": "100%",
+       "n": "99%",
        "t": "Organic acquisition"
       }
      ],
@@ -139,27 +165,7 @@
      "invert": true
     }
    ],
-   "seen": {
-    "label": "As seen in",
-    "items": [
-     {
-      "file": "press-coveo.png",
-      "alt": "Coveo"
-     },
-     {
-      "file": "press-socom.svg",
-      "alt": "SOCOM"
-     },
-     {
-      "file": "press-2gars-adwords.png",
-      "alt": "Les 2 gars d'Adwords"
-     },
-     {
-      "file": "press-o2web.png",
-      "alt": "O2 Web"
-     }
-    ]
-   }
+   "withPress": true
   },
   {
    "type": "result-cards",
@@ -232,70 +238,50 @@
      ]
     }
    ],
-   "awards": {
-    "label": "Projects recognized by",
-    "items": [
-     {
-      "file": "award-octas.png",
-      "alt": "OCTAS"
-     },
-     {
-      "file": "award-osentreprendre.png",
-      "alt": "Osentreprendre"
-     },
-     {
-      "file": "award-gartner.png",
-      "alt": "Gartner"
-     },
-     {
-      "file": "award-awwwards.png",
-      "alt": "Awwwards"
-     }
-    ]
-   }
+   "tab": "digital-marketing",
+   "withAwards": true
   },
   {
    "type": "portfolio",
    "id": "product-design",
    "theme": "light",
    "label": "Product Design",
-   "h2": "Senior Product Designer for *SaaS and apps*",
-   "lead": "SaaS platforms and apps designed and optimized with Viesigners: from award-recognized launches to measurable conversion gains.",
+   "h2": "Senior product design for *SaaS and apps*",
+   "lead": "SaaS, AI and app platforms: user research, design systems and journeys that speed up adoption, including an AI platform named a Leader by Gartner.",
    "apply": {
-    "subject": "Application — Product Design role"
+    "subject": "Inquiry — Product Design"
    },
    "skillsLabel": "What I bring",
    "skills": [
-    "User journey optimization, in iterative phases that account for technical debt",
-    "Design systems",
-    "User research and benchmarking",
-    "UX writing",
-    "Seamless collaboration with internal teams"
+    "User research, customer interviews and usability testing",
+    "Design systems and Figma rollout",
+    "Information architecture and navigation for complex platforms",
+    "Dashboards, automation modules and data integrations",
+    "UX audits and design rationales for engineering and stakeholders",
+    "WCAG accessibility"
    ],
    "proof": [
     {
-     "n": "+48%",
-     "t": "conversions for the Pharmy clinical trial search platform"
-    },
-    {
      "n": "$320M+",
-     "t": "in funding secured by an international scale-up we supported"
+     "t": "in funding raised by an AI scale-up (Gartner Leader), with my contribution to the product experience"
     },
     {
      "n": "2",
      "t": "award-recognized SaaS launches (OCTAS finalist, Osentreprendre winner)"
     }
    ],
+   "withPress": true
+  },
+  {
+   "type": "portfolio-grid",
+   "tab": "product-design",
+   "theme": "dark",
+   "label": "Work",
+   "h2": "Featured *projects*",
    "items": [
     {
-     "img": "pharmy.png",
-     "alt": "Pharmy clinical trial search platform",
-     "title": "Pharmy",
-     "result": "+48% conversions",
-     "text": "Optimization of the clinical trial search platform."
-    },
-    {
      "img": "musee-civilisation.jpg",
+     "url": "https://www.behance.net/gallery/158595591/MCQ-Online-Collections-Launch-of-a-New-Web-App",
      "alt": "Collections SaaS platform for the Musée de la civilisation",
      "title": "“Collections” — Musée de la civilisation",
      "result": "SaaS launch · OCTAS finalist",
@@ -303,101 +289,103 @@
     },
     {
      "img": "trouve-un-stage.jpg",
+     "url": "https://www.behance.net/gallery/158180737/Watson-Trouveunstagecom-New-Webapp-Launch",
      "alt": "Trouve un stage SaaS platform",
      "title": "“Trouve un stage”",
      "result": "SaaS launch · Osentreprendre prize winner",
      "text": "Launch of the internship search SaaS platform."
     }
-   ]
+   ],
+   "withAwards": true
   },
   {
    "type": "portfolio",
    "id": "ux-ui-design",
-   "theme": "dark",
+   "theme": "light",
    "label": "UX/UI Design",
-   "h2": "Senior UX/UI Designer for *websites, games and apps*",
-   "lead": "Interfaces and websites for global brands, recognized by Awwwards and designed to convert.",
+   "h2": "Senior UX/UI design for *websites and apps*",
+   "lead": "Websites and interfaces designed to convert: +48% conversion rate for a clinical trial search platform, and an Awwwards-nominated project.",
    "apply": {
-    "subject": "Application — UX/UI Design role"
+    "subject": "Inquiry — UX/UI Design"
    },
    "skillsLabel": "What I bring",
    "skills": [
-    "Clear, intuitive site structure aligned with customer intentions",
-    "Graphic design and UX crafted with precision to boost credibility",
-    "Interface design for apps, games and online platforms",
-    "Fast pages adapted to mobile platforms"
+    "Information architecture, wireframes and prototypes",
+    "Responsive web and mobile interface design, from brochure sites to e-commerce",
+    "Heuristic evaluations, user testing and A/B testing",
+    "Conversion-oriented UX writing",
+    "WCAG accessibility"
    ],
    "proof": [
     {
-     "n": "600+",
-     "t": "digital projects delivered for companies of all sizes"
+     "n": "200+",
+     "t": "websites and web apps designed or optimized for startups, SMEs, nonprofits and large companies"
     },
     {
      "n": "Awwwards",
-     "t": "recognition for the quality of the sites"
+     "t": "nomination for the website of a renovation and custom kitchen company"
     },
     {
-     "n": "Dell · Nerf · HP",
+     "n": "Dell · HP · Salesforce",
      "t": "among the giants advised",
      "sm": true
     }
    ],
+   "withPress": true
+  },
+  {
+   "type": "portfolio-grid",
+   "tab": "ux-ui-design",
+   "theme": "dark",
+   "label": "Work",
+   "h2": "Featured *projects*",
    "items": [
     {
-     "img": "warner-bros.jpg",
-     "alt": "Video game interface designed for Warner Bros.",
-     "title": "Warner Bros.",
-     "result": "Video game interface",
-     "text": "Mobile game interface design."
+     "img": "pharmy.png",
+     "url": "https://www.behance.net/gallery/155069623/Pharmy-Launch-of-a-New-Webapp",
+     "alt": "Pharmy clinical trial search platform",
+     "title": "Pharmy",
+     "result": "+48% conversions",
+     "text": "Optimization of the clinical trial search platform. Client name under NDA."
     },
     {
-     "img": "marvel.jpg",
-     "alt": "Game interface designed for Marvel",
-     "title": "Marvel",
-     "result": "Game interface",
-     "text": "Mobile game interface design."
+     "img": "garneau.jpg",
+     "url": "https://www.behance.net/gallery/164913257/Garneau-Complete-Ecommerce-Website-Redesign",
+     "alt": "Garneau e-commerce website redesign on desktop and mobile",
+     "title": "Garneau",
+     "result": "E-commerce website redesign",
+     "text": "Complete redesign of the brand's e-commerce website."
     },
     {
-     "img": "spin-master.jpg",
-     "alt": "App interface designed for Spin Master",
-     "title": "Spin Master",
-     "result": "App interface",
-     "text": "Companion app interface design."
-    },
-    {
-     "img": "assassins-creed.jpg",
-     "alt": "Online platform designed for Assassin's Creed Odyssey",
-     "title": "Assassin's Creed Odyssey",
-     "result": "Online platform — Ubisoft",
-     "text": "Online platform for the game launch."
-    },
-    {
-     "img": "wizards.jpg",
-     "alt": "Website designed for Wizards of the Coast",
-     "title": "Wizards of the Coast",
-     "result": "Website",
-     "text": "Brand website design."
+     "img": "richard-levesque.jpg",
+     "alt": "Richard & Levesque website redesign on desktop and mobile",
+     "title": "Richard & Levesque",
+     "result": "Website · Awwwards nominee",
+     "text": "Website redesign for one of Quebec's flagship renovation and custom kitchen companies."
     }
-   ]
+   ],
+   "withAwards": true
   },
   {
    "type": "testimonials",
    "theme": "light",
    "h2": "What it feels like *to work with me*",
+   "noslot": true,
+   "tab": "ux-ui-design",
    "items": [
     {
-     "name": "Alex Elexis",
-     "role": "Commercial Growth Manager, Alkegen",
-     "date": "",
+     "name": "Marie-Eve Gratton",
+     "role": "Freelance UX/UI Design Expert",
+     "date": "2026-02-20",
      "lang": "en",
-     "stars": 5,
-     "title": "A fresh perspective on digital sales!",
-     "text": "[...] I'd like to take this opportunity to express our satisfaction with Charles-Erick's work. [...] The discussions we had with him opened new horizons regarding our approach and the presentation of our product range. They gave us a fresh perspective on digital sales.",
-     "note": "Translated from French"
+     "title": "A true reference when it comes to web strategy and UX design",
+     "text": "What can I say about Charles-Érick… a truly one-of-a-kind human. His great strength is his ability to take his clients and colleagues to another level through his strategic thinking and his fine understanding of UX. Charles-Érick is a reference when it comes to web strategy and UX design. His approach is always thoughtful, clear and structured. It’s also a real pleasure to collaborate with him and to bring visually to life the ideas we develop together. I recommend him without hesitation!",
+     "translatedFrom": "fr",
+     "company": ""
     },
     {
      "name": "Emilie Gosselin",
-     "role": "VP Growth & Transformation, O2 Web",
+     "role": "VP Growth & Transformation, Datmos",
      "date": "",
      "lang": "en",
      "stars": 5,
@@ -415,8 +403,84 @@
      "text": "Inventive, structured and open-minded, he doesn't hesitate to question ideas, both his own and those of others, if it can improve results. His know-how is matched only by his people skills, and he has the qualities of a leader within a team. It was a pleasure to collaborate with him.",
      "note": "Translated from French"
     }
-   ],
-   "noslot": true
+   ]
+  },
+  {
+   "type": "testimonials",
+   "theme": "light",
+   "h2": "What it feels like *to work with me*",
+   "noslot": true,
+   "tab": "product-design",
+   "items": [
+    {
+     "name": "Elodie Marcotte",
+     "role": "Founder",
+     "date": "2026-02-18",
+     "lang": "en",
+     "title": "Charles-Érick’s support went far beyond my expectations",
+     "text": "In the few words this space allows me, I can say that Charles-Érick’s support went far beyond my expectations. Creative, quick-witted and incredibly well organized, he goes well beyond simple user experience thinking. He is a deeply human person, and it shows directly in his work. I recommend him with my eyes closed.",
+     "translatedFrom": "fr",
+     "company": "I Am Alice"
+    },
+    {
+     "name": "François L.",
+     "role": "CEO",
+     "date": "2023-04-03",
+     "lang": "en",
+     "title": "A way to simplify ideas so they make sense",
+     "text": "Charles-Erick is a great UX designer. Very profesionnal and has a way to simplify ideas in order for them to make sense. Always looking forward to collaborate with him on different projects which require his keen eye and value oriented design thought process :)",
+     "company": "Feedbaak"
+    },
+    {
+     "name": "Michael Roussel",
+     "role": "Co-founder",
+     "date": "2026-08",
+     "lang": "en",
+     "title": "It’s rare these days to work with someone so professional, competent and caring",
+     "text": "He supported us on several projects, and we notably collaborated with him on Flokon’s user interface analysis, customer journey optimization and website sales funnel optimization.\n\nHe is a humane, multidisciplinary, creative person who can think differently. He is extremely pleasant to work with and always knows how to adapt to our needs. [...]\n\nI recommend him 200%. It’s rare these days to work with someone so professional, competent and caring.",
+     "translatedFrom": "fr",
+     "company": "Flokon"
+    }
+   ]
+  },
+  {
+   "type": "testimonials",
+   "theme": "light",
+   "h2": "What it feels like *to work with me*",
+   "noslot": true,
+   "tab": "digital-marketing",
+   "items": [
+    {
+     "name": "Alex Elexis",
+     "role": "Commercial Growth Manager, Alkegen",
+     "date": "",
+     "lang": "en",
+     "stars": 5,
+     "title": "A fresh perspective on digital sales!",
+     "text": "[...] I'd like to take this opportunity to express our satisfaction with Charles-Erick's work. [...] The discussions we had with him opened new horizons regarding our approach and the presentation of our product range. They gave us a fresh perspective on digital sales.",
+     "note": "Translated from French"
+    },
+    {
+     "name": "Emilie Gosselin",
+     "role": "VP Growth & Transformation, Datmos",
+     "date": "",
+     "lang": "en",
+     "stars": 5,
+     "title": "A key person on different mandates!",
+     "text": "Always bringing innovative and creative solutions while demonstrating real added value. Always looking for the best solution to meet users' needs, his thinking was in-depth, methodical and based on thorough research. It was a real pleasure to work and think with Charles-Erick on various strategic projects, for clients or to help the Agency evolve.",
+     "note": "Translated from French"
+    },
+    {
+     "name": "Dérek Fortier",
+     "role": "Owner, Toitures Dérek Fortier",
+     "date": "",
+     "lang": "en",
+     "stars": 5,
+     "title": "We multiplied our conversion rate by nearly 4",
+     "text": "Before, our site, online for a year, generated a few quote requests a month, despite good ad management. With the conversion page, we multiplied our conversion rate by nearly 4. [...] I recommend him to any business that wants to turn its campaigns into real results.",
+     "note": "Translated from French"
+    }
+   ]
   },
   {
    "type": "contact-links",
@@ -424,54 +488,92 @@
    "id": "contact",
    "h2": "Ready to *dominate your market?*",
    "p": "Two options to contact me:",
-   "phone": "Phone",
+   "phone": "Text message",
    "email": "Email",
-   "rolesLabel": "Hiring for a specific role?",
+   "rolesLabel": "Looking for a specific expertise?",
    "roles": [
     {
-     "id": "digital-marketing",
-     "label": "Digital Marketing"
+     "id": "ux-ui-design",
+     "label": "UX/UI Design"
     },
     {
      "id": "product-design",
      "label": "Product Design"
     },
     {
-     "id": "ux-ui-design",
-     "label": "UX/UI Design"
+     "id": "digital-marketing",
+     "label": "Digital Marketing"
     }
    ]
   },
   {
    "type": "faq",
-   "h2": "Hiring *questions*",
+   "h2": "Working *together*",
    "open": true
   }
  ],
  "faq": [
   {
-   "q": "Which roles is Charles-Erick BG open to?",
+   "q": "What kinds of mandates does Charles-Erick BG take on?",
    "a": [
-    "Senior roles in Digital Marketing and Growth, Product Design and UX/UI Design. Each has its own section on this page, with a direct link you can use in an application."
-   ]
-  },
-  {
-   "q": "Can I link directly to one role?",
-   "a": [
-    "Yes. Use #digital-marketing, #product-design or #ux-ui-design after the page address, or the “Copy link” button in each section."
+    "Consulting and delivery mandates in digital marketing and growth, product design and UX/UI design, mainly for service businesses, SaaS platforms and mobile apps."
    ]
   },
   {
    "q": "Where is he based and which languages does he work in?",
    "a": [
-    "Québec, Canada. He works in French and English, in English- and French-speaking markets."
+    "Quebec, Canada. He works in French and English, in English- and French-speaking markets."
    ]
   },
   {
    "q": "How can I contact him?",
    "a": [
-    "By phone at +1 581-502-1115 or by email at cebgagnon@gmail.com."
+    "By text message at +1 581-502-1115 or by email at freres.bg@viesigners.com."
    ]
   }
- ]
+ ],
+ "logoBars": {
+  "seen": {
+   "label": "As seen in",
+   "items": [
+    {
+     "file": "press-coveo.png",
+     "alt": "Coveo"
+    },
+    {
+     "file": "press-socom.svg",
+     "alt": "SOCOM"
+    },
+    {
+     "file": "press-2gars-adwords.png",
+     "alt": "Les 2 gars d'Adwords"
+    },
+    {
+     "file": "press-o2web.png",
+     "alt": "O2 Web"
+    }
+   ]
+  },
+  "awards": {
+   "label": "Projects recognized by",
+   "items": [
+    {
+     "file": "award-octas.png",
+     "alt": "OCTAS"
+    },
+    {
+     "file": "award-gartner.png",
+     "alt": "Gartner"
+    },
+    {
+     "file": "award-awwwards.png",
+     "alt": "Awwwards"
+    },
+    {
+     "file": "award-osentreprendre.png",
+     "alt": "Osentreprendre"
+    }
+   ]
+  }
+ }
 }
