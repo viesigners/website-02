@@ -109,6 +109,23 @@
   const form = d.querySelector('form.form');
   if (form) {
     const status = form.querySelector('.status');
+    // "just wanted to say hi": only email + message are required; project fields are hidden (and left out of the submission)
+    const need = form.querySelector('#f-need');
+    const syncNeed = () => {
+      const hi = need && need.selectedOptions[0] && need.selectedOptions[0].dataset.key === 'hi';
+      form.classList.toggle('is-hi', !!hi);
+      form.querySelectorAll('[data-project], [data-hi-optional]').forEach(w => {
+        const project = w.hasAttribute('data-project');
+        if (project) w.hidden = !!hi;
+        w.querySelectorAll('input, select, textarea').forEach(i => {
+          if (i.dataset.req === undefined) i.dataset.req = i.required ? '1' : '0';
+          i.required = !hi && i.dataset.req === '1';
+          if (project) i.disabled = !!hi;
+          if (hi) { i.removeAttribute('aria-invalid'); const err = i.closest('.field')?.querySelector('.err'); if (err) err.textContent = ''; }
+        });
+      });
+    };
+    if (need) { need.addEventListener('change', syncNeed); syncNeed(); }
     const show = (msg, err) => { status.hidden = false; status.textContent = msg; status.classList.toggle('is-err', !!err); status.focus?.(); };
     form.addEventListener('submit', async e => {
       e.preventDefault();

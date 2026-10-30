@@ -551,19 +551,17 @@ R.contact = (s, c) => {
   </div>
   <form id="contact-form" class="form rv" data-clarity-mask="True" novalidate method="post" action="${CFG.formEndpoint || '#'}" data-endpoint="${esc(CFG.formEndpoint || '')}" data-thanks="${url('merci', lang)}" data-mailto="${esc(CFG.email || '')}" data-subject="${esc(f.subject)}" data-msg-ok="${esc(f.ok)}" data-msg-fail="${esc(f.fail)}" data-msg-required="${esc(f.required)}" data-msg-email="${esc(f.emailErr)}">
     <div class="row2">
-      <div class="field"><label for="f-first">${esc(f.firstName)} ${req}</label><input id="f-first" name="first_name" autocomplete="given-name" required>${err}</div>
-      <div class="field"><label for="f-last">${esc(f.lastName)} ${req}</label><input id="f-last" name="last_name" autocomplete="family-name" required>${err}</div>
+      <div class="field" data-hi-optional><label for="f-first">${esc(f.firstName)} ${req}</label><input id="f-first" name="first_name" autocomplete="given-name" required>${err}</div>
+      <div class="field" data-hi-optional><label for="f-last">${esc(f.lastName)} ${req}</label><input id="f-last" name="last_name" autocomplete="family-name" required>${err}</div>
     </div>
     <div class="field"><label for="f-email">${esc(f.email)} ${req}</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required>${err}</div>
-    <div class="field"><label for="f-phone">${esc(f.phone)} ${req}</label><div class="phone"><select name="dial" aria-label="${esc(f.dial)}" data-dial>${countries.map((k) => `<option value="${k.dial}" data-cc="${k.cc}"${k.cc === 'CA' ? ' selected' : ''}>${k.flag} ${k.dial}</option>`).join('')}</select><input id="f-phone" name="phone" type="tel" autocomplete="tel-national" inputmode="tel" required></div>${err}</div>
-    <div class="row2">
+    <div class="field"><label for="f-need">${esc(f.need)} ${req}</label><select id="f-need" name="need" required><option value="">${esc(f.choose)}</option>${f.needs.filter((t) => !(t.page && isHidden(t.page))).map((t) => `<option${t.key ? ` data-key="${esc(t.key)}"` : ''}>${esc(t.t)}</option>`).join('')}</select>${err}</div>
+    <div class="field" data-project><label for="f-phone">${esc(f.phone)} ${req}</label><div class="phone"><select name="dial" aria-label="${esc(f.dial)}" data-dial>${countries.map((k) => `<option value="${k.dial}" data-cc="${k.cc}"${k.cc === 'CA' ? ' selected' : ''}>${k.flag} ${k.dial}</option>`).join('')}</select><input id="f-phone" name="phone" type="tel" autocomplete="tel-national" inputmode="tel" required></div>${err}</div>
+    <div class="row2" data-project>
       <div class="field"><label for="f-site">${esc(f.website)} ${req}</label><input id="f-site" name="website" autocomplete="url" inputmode="url" required>${err}</div>
       <div class="field"><label for="f-budget">${esc(f.budget)} ${req}</label><input id="f-budget" name="budget" inputmode="text" placeholder="${esc(f.budgetPh)}" required>${err}</div>
     </div>
-    <div class="row2">
-      <div class="field"><label for="f-country">${esc(f.country)} ${req}</label><select id="f-country" name="country" autocomplete="country" required data-country>${countries.map((k) => `<option value="${k.cc}"${k.cc === 'CA' ? ' selected' : ''}>${k.flag} ${esc(k.name)}</option>`).join('')}</select>${err}</div>
-      <div class="field"><label for="f-need">${esc(f.need)} ${req}</label><select id="f-need" name="need" required><option value="">${esc(f.choose)}</option>${f.needs.filter((t) => !(t.page && isHidden(t.page))).map((t) => `<option${t.key ? ` data-key="${esc(t.key)}"` : ''}>${esc(t.t)}</option>`).join('')}</select>${err}</div>
-    </div>
+    <div class="field" data-project><label for="f-country">${esc(f.country)} ${req}</label><select id="f-country" name="country" autocomplete="country" required data-country>${countries.map((k) => `<option value="${k.cc}"${k.cc === 'CA' ? ' selected' : ''}>${k.flag} ${esc(k.name)}</option>`).join('')}</select>${err}</div>
     <div class="field"><label for="f-msg">${esc(f.message)} ${req}</label><textarea id="f-msg" name="message" required></textarea>${err}</div>
     <div class="hp" aria-hidden="true"><label>Website<input name="website_hp" tabindex="-1" autocomplete="off"></label></div>
     <p class="status" role="status" tabindex="-1" hidden></p>
