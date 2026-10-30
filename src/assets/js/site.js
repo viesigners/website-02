@@ -12,6 +12,12 @@
   const drawer = d.querySelector('.drawer'), menuBtn = d.querySelector('.hmenu');
   let lastY = scrollY, ticking = false;
   const roleNav = d.querySelector('.rolenav'), roleSecs = d.querySelectorAll('[data-role-section]'), lastRole = roleSecs[roleSecs.length - 1];
+  // profile tabs: the tab links end with #<role> so the page lands on the content; once there, drop the
+  // fragment so the address bar shows the clean tab URL (the one to copy into a resume)
+  const roleTarget = location.hash && d.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if (roleNav && roleTarget && roleTarget.hasAttribute('data-role-section')) {
+    addEventListener('load', () => setTimeout(() => history.replaceState(history.state, '', location.pathname + location.search), 0), { once: true });
+  }
   // profile tabs: on narrow screens the bar scrolls sideways — bring the active tab into view
   const activeTab = roleNav && roleNav.querySelector('.is-active');
   if (activeTab && roleNav.scrollWidth > roleNav.clientWidth) roleNav.scrollLeft = activeTab.offsetLeft - (roleNav.clientWidth - activeTab.offsetWidth) / 2;
