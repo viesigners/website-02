@@ -6,9 +6,6 @@
   "ogImage": "og-cebg-en.jpg"
  },
  "personJobTitle": "Senior growth strategist: UX/UI, product design, marketing and CRO",
- "apply": {
-  "email": "freres.bg@viesigners.com"
- },
  "sections": [
   {
    "type": "profile-hero",
@@ -104,7 +101,7 @@
    "h2": "Growth marketing and *CRO*",
    "lead": "Content strategy, copywriting, SEO/GEO, social media, acquisition, sales funnels and conversion rate optimization (CRO): growth ecosystems that tripled clients' revenue.",
    "apply": {
-    "subject": "Inquiry — Digital Marketing and Growth"
+    "need": "landing"
    },
    "items": [
     {
@@ -249,7 +246,7 @@
    "h2": "Senior product design for *SaaS and apps*",
    "lead": "SaaS, AI and app platforms: user research, design systems and journeys that speed up adoption, including an AI platform named a Leader by Gartner.",
    "apply": {
-    "subject": "Inquiry — Product Design"
+    "need": "product"
    },
    "skillsLabel": "What I bring",
    "skills": [
@@ -318,7 +315,7 @@
    "h2": "Senior UX/UI design for *websites and apps*",
    "lead": "Websites and interfaces designed to convert: +48% conversion rate for a clinical trial search platform, and an Awwwards-nominated project.",
    "apply": {
-    "subject": "Inquiry — UX/UI Design"
+    "need": "website"
    },
    "skillsLabel": "What I bring",
    "skills": [
@@ -501,7 +498,7 @@
    "h2": "Ready to *dominate your market?*",
    "p": "Two options to contact me:",
    "phone": "Text message",
-   "email": "Email",
+   "email": "Write to me",
    "rolesLabel": "Looking for a specific expertise?",
    "roles": [
     {
@@ -540,7 +537,7 @@
   {
    "q": "How can I contact him?",
    "a": [
-    "By text message at +1 581-502-1115 or by email at freres.bg@viesigners.com."
+    "By text message at +1 581-502-1115 or through the [contact form](@contact)."
    ]
   }
  ],

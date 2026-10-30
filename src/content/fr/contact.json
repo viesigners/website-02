@@ -32,7 +32,7 @@
     "email": "Courriel",
     "phone": "Téléphone",
     "choose": "Choisir…",
-    "message": "Parlez-nous de votre projet",
+    "message": "Que devrions-nous savoir?",
     "submit": "Envoyer ma demande",
     "note": "Nous utilisons vos renseignements uniquement pour répondre à votre demande.",
     "ok": "Merci! Votre message est envoyé. Nous vous répondons rapidement.",
@@ -50,22 +50,27 @@
     "needs": [
      {
       "t": "J'ai besoin d'un site web",
-      "page": "sites-web"
+      "page": "sites-web",
+      "key": "website"
      },
      {
       "t": "J'ai besoin d'une landing page ou d'un tunnel de vente",
-      "page": "landing-pages"
+      "page": "landing-pages",
+      "key": "landing"
      },
      {
       "t": "J'ai besoin d'aide pour mon SaaS ou mon application",
-      "page": "design-produit"
+      "page": "design-produit",
+      "key": "product"
      },
      {
       "t": "J'ai besoin de conseils d'affaires",
-      "page": "coaching"
+      "page": "coaching",
+      "key": "advice"
      },
      {
-      "t": "Je voulais simplement dire bonjour"
+      "t": "Je voulais simplement dire bonjour",
+      "key": "hi"
      }
     ]
    }

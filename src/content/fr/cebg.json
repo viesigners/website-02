@@ -6,9 +6,6 @@
   "ogImage": "og-cebg-fr.jpg"
  },
  "personJobTitle": "Stratège de croissance senior : UX/UI, design de produit, marketing et CRO",
- "apply": {
-  "email": "freres.bg@viesigners.com"
- },
  "sections": [
   {
    "type": "profile-hero",
@@ -104,7 +101,7 @@
    "h2": "Marketing de croissance et *CRO*",
    "lead": "Stratégie de contenu, copywriting, SEO/GEO, médias sociaux, acquisition, tunnels de vente et optimisation de la conversion (CRO) : des écosystèmes de croissance qui ont triplé les revenus d'entreprises clientes.",
    "apply": {
-    "subject": "Demande — Marketing numérique et croissance"
+    "need": "landing"
    },
    "items": [
     {
@@ -249,7 +246,7 @@
    "h2": "Design de produit senior pour *SaaS et applications*",
    "lead": "Plateformes SaaS, IA et applications : recherche utilisateur, systèmes de design et parcours qui accélèrent l'adoption, dont une plateforme d'IA reconnue Leader par Gartner.",
    "apply": {
-    "subject": "Demande — Design de produit"
+    "need": "product"
    },
    "skillsLabel": "Ce que j'apporte",
    "skills": [
@@ -318,7 +315,7 @@
    "h2": "Design UX/UI senior pour *sites web et applications*",
    "lead": "Sites web et interfaces conçus pour convertir : +48 % de taux de conversion pour une plateforme de recherche d'études cliniques, et un projet nommé aux Awwwards.",
    "apply": {
-    "subject": "Demande — Design UX/UI"
+    "need": "website"
    },
    "skillsLabel": "Ce que j'apporte",
    "skills": [
@@ -497,7 +494,7 @@
    "h2": "Prêt à *dominer votre marché?*",
    "p": "Deux façons de me joindre :",
    "phone": "Texto",
-   "email": "Courriel",
+   "email": "M'écrire",
    "rolesLabel": "Vous cherchez une expertise précise?",
    "roles": [
     {
@@ -536,7 +533,7 @@
   {
    "q": "Comment le joindre?",
    "a": [
-    "Par texto au +1 581-502-1115 ou par courriel à freres.bg@viesigners.com."
+    "Par texto au +1 581-502-1115 ou en m'écrivant par le [formulaire de contact](@contact)."
    ]
   }
  ],

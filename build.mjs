@@ -406,8 +406,8 @@ const sectionRole = (s) => s.tab || (['cases', 'portfolio'].includes(s.type) ? s
 const cityQc = (lang) => (lang === 'en' ? 'Quebec' : 'Québec'); // English spelling drops the accent
 
 /* ---- personal portfolio page (job-application ready) ---- */
-const mailto = (c, subject) => `mailto:${CFG.person?.email || ''}?subject=${encodeURIComponent(subject || '')}`;
-const roleCta = (s, c) => s.apply ? `<div class="rolecta"><a class="pill" href="${mailto(c, s.apply.subject)}">${esc(c.T.applyCta)}</a></div>` : '';
+const contactUrl = (c, need) => url('contact', c.lang) + (need ? '?need=' + need : '') + '#contact-form'; // the form pre-selects the matching need (site.js)
+const roleCta = (s, c) => s.apply ? `<div class="rolecta"><a class="pill" href="${contactUrl(c, s.apply.need)}">${esc(c.T.applyCta)}</a></div>` : '';
 R['profile-hero'] = (s, c) => {
   const { lang } = c;
   return `<section class="hero profile" aria-labelledby="h1">
@@ -489,7 +489,7 @@ R['portfolio-grid'] = (s, c) => `<section class="section"><div class="wrap">
 </div></section>`;
 R['contact-links'] = (s, c) => `<section class="section" id="${s.id}"><div class="wrap"><div class="cta-final rv">
   <h2 class="display">${fmt(s.h2, c.lang)}</h2>
-  <p>${esc(s.p)} <a class="biglink" href="sms:${CFG.phoneRaw}">${esc(s.phone)}</a> · <a class="biglink" href="mailto:${CFG.person?.email || ''}">${esc(s.email)}</a></p>
+  <p>${esc(s.p)} <a class="biglink" href="sms:${CFG.phoneRaw}">${esc(s.phone)}</a> · <a class="biglink" href="${contactUrl(c, 'hi')}">${esc(s.email)}</a></p>
   <p class="rolelinks"><span>${esc(s.rolesLabel)}</span>${s.roles.map((r) => { const items = c.page.sections.find((x) => x.type === 'role-nav')?.items || []; const n = items.findIndex((x) => x.id === r.id); return `<a href="${n < 0 ? '#' + r.id : tabUrl(items[n], n, c.lang) + '#' + r.id}">${esc(r.label)}</a>`; }).join('')}</p>
 </div></div></section>`;
 
@@ -549,7 +549,7 @@ R.contact = (s, c) => {
       <div><dt>${esc(s.labels.hours)}</dt><dd>${esc(s.hours)}</dd></div>
     </dl>
   </div>
-  <form class="form rv" data-clarity-mask="True" novalidate method="post" action="${CFG.formEndpoint || '#'}" data-endpoint="${esc(CFG.formEndpoint || '')}" data-thanks="${url('merci', lang)}" data-mailto="${esc(CFG.email || '')}" data-subject="${esc(f.subject)}" data-msg-ok="${esc(f.ok)}" data-msg-fail="${esc(f.fail)}" data-msg-required="${esc(f.required)}" data-msg-email="${esc(f.emailErr)}">
+  <form id="contact-form" class="form rv" data-clarity-mask="True" novalidate method="post" action="${CFG.formEndpoint || '#'}" data-endpoint="${esc(CFG.formEndpoint || '')}" data-thanks="${url('merci', lang)}" data-mailto="${esc(CFG.email || '')}" data-subject="${esc(f.subject)}" data-msg-ok="${esc(f.ok)}" data-msg-fail="${esc(f.fail)}" data-msg-required="${esc(f.required)}" data-msg-email="${esc(f.emailErr)}">
     <div class="row2">
       <div class="field"><label for="f-first">${esc(f.firstName)} ${req}</label><input id="f-first" name="first_name" autocomplete="given-name" required>${err}</div>
       <div class="field"><label for="f-last">${esc(f.lastName)} ${req}</label><input id="f-last" name="last_name" autocomplete="family-name" required>${err}</div>
@@ -562,7 +562,7 @@ R.contact = (s, c) => {
     </div>
     <div class="row2">
       <div class="field"><label for="f-country">${esc(f.country)} ${req}</label><select id="f-country" name="country" autocomplete="country" required data-country>${countries.map((k) => `<option value="${k.cc}"${k.cc === 'CA' ? ' selected' : ''}>${k.flag} ${esc(k.name)}</option>`).join('')}</select>${err}</div>
-      <div class="field"><label for="f-need">${esc(f.need)} ${req}</label><select id="f-need" name="need" required><option value="">${esc(f.choose)}</option>${f.needs.filter((t) => !(t.page && isHidden(t.page))).map((t) => `<option>${esc(t.t)}</option>`).join('')}</select>${err}</div>
+      <div class="field"><label for="f-need">${esc(f.need)} ${req}</label><select id="f-need" name="need" required><option value="">${esc(f.choose)}</option>${f.needs.filter((t) => !(t.page && isHidden(t.page))).map((t) => `<option${t.key ? ` data-key="${esc(t.key)}"` : ''}>${esc(t.t)}</option>`).join('')}</select>${err}</div>
     </div>
     <div class="field"><label for="f-msg">${esc(f.message)} ${req}</label><textarea id="f-msg" name="message" required></textarea>${err}</div>
     <div class="hp" aria-hidden="true"><label>Website<input name="website_hp" tabindex="-1" autocomplete="off"></label></div>
@@ -748,7 +748,7 @@ function toMd(page, c) {
       case 'result-cards': L.push(`## ${t(s.label)}`, '', ...s.items.flatMap((k) => [`### ${k.h3}`, t(k.p), ...k.roles.map((r) => `- ${r}`), '']), ''); break;
       case 'portfolio': L.push(`## ${t(s.label)} — ${t(s.h2)}`, '', t(s.lead), '', ...s.skills.map((k) => `- ${k}`), ...s.proof.map((i) => `- **${i.n}** ${i.t}`), '', ...(s.items || []).map((k) => `- ${k.title} — ${k.result}`), ''); break;
       case 'portfolio-grid': L.push(`## ${t(s.h2)}`, '', ...s.items.map((k) => `- ${k.title} — ${k.result}`), ''); break;
-      case 'contact-links': L.push(`## ${t(s.h2)}`, '', `${s.p} ${CFG.phone} · ${CFG.person?.email || ''}`, ''); break;
+      case 'contact-links': L.push(`## ${t(s.h2)}`, '', `${s.p} ${CFG.phone}`, ''); break;
       case 'testimonials': L.push(`## ${t(s.h2)}`, '', ...s.items.map((x) => `> ${x.text}\n> — ${x.name}${x.role ? ', ' + x.role : ''} (${x.date})`), ''); break;
       case 'cta-final': L.push(`## ${t(s.h2)}`, '', t(s.p), ''); break;
       case 'faq': if (page.faq?.length) L.push(`## ${t(s.h2 || T.faqTitle)}`, '', ...page.faq.flatMap((f) => [`### ${t(f.q)}`, '', ...f.a.flatMap((p) => [t(p), ''])])); break;
@@ -812,7 +812,7 @@ function buildPage({ lang, key, page, post, tab }) {
     primaryImageOfPage: { '@type': 'ImageObject', url: abs('/assets/img/' + (page.image || `og-card-${lang}.jpg`)) },
   };
   if (page.speakable !== false) webpage.speakable = { '@type': 'SpeakableSpecification', cssSelector: ['h1', '.lead', '.brief li'] };
-  if (key === 'cebg') { const pn = graph.find((n) => n['@id'] === abs('/#charles-erick')); if (pn) { pn.jobTitle = page.personJobTitle || pn.jobTitle; pn.url = canonical; pn.email = 'mailto:' + (CFG.person?.email || ''); pn.telephone = CFG.phone; pn.image = abs('/assets/img/portfolio/portrait-charles-erick.jpg'); } webpage.mainEntity = { '@id': abs('/#charles-erick') }; }
+  if (key === 'cebg') { const pn = graph.find((n) => n['@id'] === abs('/#charles-erick')); if (pn) { pn.jobTitle = page.personJobTitle || pn.jobTitle; pn.url = canonical; pn.telephone = CFG.phone; pn.image = abs('/assets/img/portfolio/portrait-charles-erick.jpg'); } webpage.mainEntity = { '@id': abs('/#charles-erick') }; }
   graph.push(webpage);
   graph.push({ '@type': 'BreadcrumbList', '@id': canonical + '#breadcrumb', itemListElement: crumbs.map((b, i) => ({ '@type': 'ListItem', position: i + 1, name: b.name, item: abs(b.url) })) });
   if ((SERVICE_KEYS.includes(key) || key === 'marque-blanche') && page.service) {

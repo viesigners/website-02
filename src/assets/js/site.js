@@ -69,6 +69,9 @@
     try { await navigator.clipboard.writeText(url); } catch (_) { return; }
     const t = b.textContent; b.textContent = b.dataset.done; setTimeout(() => { b.textContent = t; }, 1800);
   }));
+  // contact form: ?need=<key> (from the profile links) pre-selects the matching option
+  const needSel = d.getElementById('f-need'), needKey = new URLSearchParams(location.search).get('need');
+  if (needSel && needKey) { const o = needSel.querySelector(`option[data-key="${CSS.escape(needKey)}"]`); if (o) needSel.value = o.value; }
   const spy = d.querySelectorAll('[data-spy]'), secs = d.querySelectorAll('[data-role-section]');
   if (spy.length && secs.length && 'IntersectionObserver' in window) {
     const so = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) spy.forEach(a => a.classList.toggle('is-active', a.dataset.spy === e.target.id)); }), { rootMargin: '-35% 0px -55% 0px' });

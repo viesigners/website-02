@@ -32,7 +32,7 @@
     "email": "Email",
     "phone": "Phone",
     "choose": "Choose…",
-    "message": "Tell us about your project",
+    "message": "What should we know?",
     "submit": "Send my request",
     "note": "We use your information only to answer your request.",
     "ok": "Thank you! Your message has been sent. We'll reply shortly.",
@@ -50,22 +50,27 @@
     "needs": [
      {
       "t": "I need a website",
-      "page": "sites-web"
+      "page": "sites-web",
+      "key": "website"
      },
      {
       "t": "I need a landing page or sales funnel",
-      "page": "landing-pages"
+      "page": "landing-pages",
+      "key": "landing"
      },
      {
       "t": "I need help with my SaaS or app",
-      "page": "design-produit"
+      "page": "design-produit",
+      "key": "product"
      },
      {
       "t": "I need business advice",
-      "page": "coaching"
+      "page": "coaching",
+      "key": "advice"
      },
      {
-      "t": "Just wanted to say hi"
+      "t": "Just wanted to say hi",
+      "key": "hi"
      }
     ]
    }
