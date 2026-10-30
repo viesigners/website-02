@@ -12,6 +12,9 @@
   const drawer = d.querySelector('.drawer'), menuBtn = d.querySelector('.hmenu');
   let lastY = scrollY, ticking = false;
   const roleNav = d.querySelector('.rolenav'), roleSecs = d.querySelectorAll('[data-role-section]'), lastRole = roleSecs[roleSecs.length - 1];
+  // profile tabs: on narrow screens the bar scrolls sideways — bring the active tab into view
+  const activeTab = roleNav && roleNav.querySelector('.is-active');
+  if (activeTab && roleNav.scrollWidth > roleNav.clientWidth) roleNav.scrollLeft = activeTab.offsetLeft - (roleNav.clientWidth - activeTab.offsetWidth) / 2;
   const onScroll = () => {
     const y = Math.max(0, scrollY), dy = y - lastY;
     header && header.classList.toggle('is-stuck', y > 24);

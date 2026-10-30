@@ -207,7 +207,7 @@
     {
      "img": "portfolio/results-roofing.jpg",
      "alt": "Landing page d'une entreprise de toitures de métal",
-     "h3": "3,15× plus de demandes reçues",
+     "h3": "Près de 4× plus de demandes reçues",
      "p": "Ce projet exigeait de positionner une offre haut de gamme et d'éduquer rapidement les prospects pour justifier l'investissement dans un toit de métal (« 40 ans de tranquillité d'esprit »). La nouvelle architecture web filtre et qualifie efficacement la clientèle :",
      "quote": {
       "text": "Je le recommande à toute entreprise qui veut transformer ses campagnes en vrais résultats!",
@@ -268,6 +268,10 @@
     {
      "n": "2",
      "t": "lancements SaaS primés (finaliste OCTAS, gagnant Osentreprendre)"
+    },
+    {
+     "n": "25+",
+     "t": "entrevues clients menées pour refondre l'architecture d'information d'une plateforme SaaS"
     }
    ],
    "withPress": true
@@ -294,6 +298,14 @@
      "title": "« Trouve un stage »",
      "result": "Lancement SaaS · gagnant du prix Osentreprendre",
      "text": "Lancement de la plateforme SaaS de recherche de stages."
+    },
+    {
+     "img": "portfolio/logo-dialog-insight.png",
+     "logo": true,
+     "alt": "Logo de Dialog Insight",
+     "title": "Dialog Insight",
+     "result": "25+ entrevues clients",
+     "text": "Refonte de l'architecture d'information d'une plateforme SaaS de marketing numérique, appuyée par des entrevues clients."
     }
    ],
    "withAwards": true

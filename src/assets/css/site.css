@@ -860,6 +860,9 @@ html { scroll-padding-top: 7rem; }
 .pgrid > .pitem { flex: 0 0 100%; min-width: 0; }
 .pitem { margin: 0; background: var(--card); border-radius: var(--r-lg); overflow: hidden; display: flex; flex-direction: column; }
 .pitem img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center top; } /* mockups keep their white margin at the bottom */
+/* logo card (no interface can be shown): logo on a white tile, same footprint as the mockups */
+.pitem__logo { aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; background: #fff; }
+.pitem .pitem__logo img { width: auto; height: auto; max-width: 58%; max-height: 50%; aspect-ratio: auto; object-fit: contain; }
 .pitem figcaption { padding: 1.2rem 1.4rem 1.5rem; display: grid; gap: .3rem; }
 .pitem b { font-family: var(--f-display); font-weight: 400; font-size: 1.25rem; letter-spacing: -.02em; line-height: 1.2; }
 .pitem .pres { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: var(--accent-text); }

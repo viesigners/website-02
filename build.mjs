@@ -471,7 +471,7 @@ R['result-cards'] = (s, c) => {
   ${awardsBar(s, c)}
 </div></section>`;
 };
-const pgrid = (items, c) => `<div class="pgrid">${items.map((k, i) => `<figure class="pitem rv" style="--d:${(i % 3) * .06}s">${img(k.img.includes('/') ? k.img : 'work/' + k.img, k.alt, { sizes: '(min-width:960px) 33vw, 100vw' })}<figcaption><b>${esc(k.title)}</b><span class="pres">${esc(k.result)}</span><span class="ptxt">${esc(k.text)}</span>${k.url ? `<a class="plink" href="${esc(k.url)}" target="_blank" rel="noopener" aria-label="${esc(k.title)} — ${esc(c.T.viewBehance)}">${esc(c.T.viewBehance)} ↗</a>` : ''}</figcaption></figure>`).join('')}</div>`;
+const pgrid = (items, c) => `<div class="pgrid">${items.map((k, i) => `<figure class="pitem rv" style="--d:${(i % 3) * .06}s">${k.logo ? `<div class="pitem__logo">${img(k.img, k.alt, { sizes: '240px' })}</div>` : img(k.img.includes('/') ? k.img : 'work/' + k.img, k.alt, { sizes: '(min-width:960px) 33vw, 100vw' })}<figcaption><b>${esc(k.title)}</b><span class="pres">${esc(k.result)}</span><span class="ptxt">${esc(k.text)}</span>${k.url ? `<a class="plink" href="${esc(k.url)}" target="_blank" rel="noopener" aria-label="${esc(k.title)} — ${esc(c.T.viewBehance)}">${esc(c.T.viewBehance)} ↗</a>` : ''}</figcaption></figure>`).join('')}</div>`;
 R.portfolio = (s, c) => `<section class="section" id="${s.id}" data-role-section><div class="wrap">
   ${secHead(s, c, 'portfolio', { label: s.label })}
   ${roleCta(s, c)}
