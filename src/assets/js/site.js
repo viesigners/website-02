@@ -109,18 +109,20 @@
   const form = d.querySelector('form.form');
   if (form) {
     const status = form.querySelector('.status');
-    // "just wanted to say hi": project fields are hidden (and left out of the submission); names, email and message stay required
+    // project fields (phone, website, budget, country) only appear once a project need is chosen:
+    // hidden — and left out of the submission — while the need is still "Choose…" or "just wanted to say hi"
     const need = form.querySelector('#f-need');
     const syncNeed = () => {
-      const hi = need && need.selectedOptions[0] && need.selectedOptions[0].dataset.key === 'hi';
-      form.classList.toggle('is-hi', !!hi);
+      const opt = need && need.selectedOptions[0];
+      const short = !!opt && (!need.value || opt.dataset.key === 'hi');
+      form.classList.toggle('is-short', short);
       form.querySelectorAll('[data-project]').forEach(w => {
-        w.hidden = !!hi;
+        w.hidden = short;
         w.querySelectorAll('input, select, textarea').forEach(i => {
           if (i.dataset.req === undefined) i.dataset.req = i.required ? '1' : '0';
-          i.required = !hi && i.dataset.req === '1';
-          i.disabled = !!hi;
-          if (hi) { i.removeAttribute('aria-invalid'); const err = i.closest('.field')?.querySelector('.err'); if (err) err.textContent = ''; }
+          i.required = !short && i.dataset.req === '1';
+          i.disabled = short;
+          if (short) { i.removeAttribute('aria-invalid'); const err = i.closest('.field')?.querySelector('.err'); if (err) err.textContent = ''; }
         });
       });
     };
