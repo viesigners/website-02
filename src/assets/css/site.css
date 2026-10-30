@@ -900,6 +900,4 @@ html { scroll-padding-top: 7rem; }
 
 .rolenav { transition: top .5s var(--ease), opacity .35s ease, transform .35s ease, visibility 0s; }
 .rolenav.is-done { opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-10px); transition: top .5s var(--ease), opacity .35s ease, transform .35s ease, visibility 0s .35s; }
-/* contact form, "just wanted to say hi": names become optional */
-.form.is-hi [data-hi-optional] .req { display: none; }
 .form [data-project][hidden] { display: none; }

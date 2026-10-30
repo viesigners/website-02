@@ -71,7 +71,7 @@
   }));
   // contact form: ?need=<key> (from the profile links) pre-selects the matching option
   const needSel = d.getElementById('f-need'), needKey = new URLSearchParams(location.search).get('need');
-  if (needSel && needKey) { const o = needSel.querySelector(`option[data-key="${CSS.escape(needKey)}"]`); if (o) needSel.value = o.value; }
+  if (needSel) { const o = needKey && needSel.querySelector(`option[data-key="${CSS.escape(needKey)}"]`); needSel.value = o ? o.value : ''; }
   const spy = d.querySelectorAll('[data-spy]'), secs = d.querySelectorAll('[data-role-section]');
   if (spy.length && secs.length && 'IntersectionObserver' in window) {
     const so = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) spy.forEach(a => a.classList.toggle('is-active', a.dataset.spy === e.target.id)); }), { rootMargin: '-35% 0px -55% 0px' });
@@ -109,18 +109,17 @@
   const form = d.querySelector('form.form');
   if (form) {
     const status = form.querySelector('.status');
-    // "just wanted to say hi": only email + message are required; project fields are hidden (and left out of the submission)
+    // "just wanted to say hi": project fields are hidden (and left out of the submission); names, email and message stay required
     const need = form.querySelector('#f-need');
     const syncNeed = () => {
       const hi = need && need.selectedOptions[0] && need.selectedOptions[0].dataset.key === 'hi';
       form.classList.toggle('is-hi', !!hi);
-      form.querySelectorAll('[data-project], [data-hi-optional]').forEach(w => {
-        const project = w.hasAttribute('data-project');
-        if (project) w.hidden = !!hi;
+      form.querySelectorAll('[data-project]').forEach(w => {
+        w.hidden = !!hi;
         w.querySelectorAll('input, select, textarea').forEach(i => {
           if (i.dataset.req === undefined) i.dataset.req = i.required ? '1' : '0';
           i.required = !hi && i.dataset.req === '1';
-          if (project) i.disabled = !!hi;
+          i.disabled = !!hi;
           if (hi) { i.removeAttribute('aria-invalid'); const err = i.closest('.field')?.querySelector('.err'); if (err) err.textContent = ''; }
         });
       });
