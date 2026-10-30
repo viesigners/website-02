@@ -15,7 +15,7 @@
 - Page À propos : redondances retirées, intention « marque et confiance » (ne vise plus « agence UX/UI et CRO », réservé à l'accueil), liens internes vers les services.
 
 ## Profil de Charles-Erick (/charles-erick-bg/)
-- Trois onglets, chacun avec sa propre adresse, son titre et sa carte d'aperçu (`og-cebg-*.jpg`) : Design UX/UI (adresse principale), Design de produit (`/design-de-produit/`, `/product-design/`), Marketing numérique (`/marketing-numerique/`, `/digital-marketing/`). Titres et descriptions dans `role-nav` de `cebg.json`.
+- Trois onglets, chacun avec sa propre adresse, son titre et sa carte d'aperçu (`og-cebg-*.jpg`) : Design UX/UI (`/design-ux-ui/`, `/ux-ui-design/`), Design de produit (`/design-de-produit/`, `/product-design/`), Marketing numérique (`/marketing-numerique/`, `/digital-marketing/`). L'adresse de base `/charles-erick-bg/` redirige vers le premier onglet (non indexée). Titres et descriptions dans `role-nav` de `cebg.json`.
 - Contenu aligné sur les 3 CV (faits seulement, sans noms d'employeurs dans les textes ajoutés). Positionnement consultant d'abord : aucun langage de recherche d'emploi.
 - Courriel de contact : freres.bg@viesigners.com (`person.email` dans `src/config.json`); contact par texto au numéro de Viesigners. Aucune coordonnée personnelle.
 - Pharmy est un nom fictif (client sous NDA). Dialog Insight : nom et projet publiables, interfaces non (carte avec logo seulement).

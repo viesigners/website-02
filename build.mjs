@@ -90,10 +90,11 @@ const SERVICE_KEYS = ['sites-web', 'landing-pages', 'design-produit', 'coaching'
 const MAIN_SERVICE_KEYS = ['sites-web', 'landing-pages', 'design-produit', 'coaching']; // menu and footer stay short: the rest lives on the services hub
 const POSTS = { fr: [], en: [] };            // filled at load
 let CURRENT_POST_SLUGS = {};                 // key -> {fr,en}
+let PROFILE_FIRST = {};                      // lang -> path of the first profile tab (internal links skip the forwarding page)
 const url = (key, lang) => {
   if (key.startsWith('post:')) { const s = CURRENT_POST_SLUGS[key.slice(5)]; return s?.[lang] ? `${BASE}/${lang}/${ROUTES.actualites[lang]}/${s[lang]}/` : `${BASE}/${lang}/${ROUTES.actualites[lang]}/`; }
   const r = ROUTES[key]; if (!r) throw new Error('Unknown route ' + key);
-  return `${BASE}/${lang}/${r[lang]}${r[lang] ? '/' : ''}`;
+  return `${BASE}/${lang}/${r[lang]}${r[lang] ? '/' : ''}` + (key === 'cebg' && PROFILE_FIRST[lang] ? PROFILE_FIRST[lang] + '/' : '');
 };
 const abs = (u) => ORIGIN + (BASE && !(u === BASE || u.startsWith(BASE + '/')) ? BASE : '') + u;
 
@@ -400,8 +401,9 @@ R.facts = (s, c) => `<section class="section"><div class="wrap"><div class="spli
   <dl class="facts">${s.items.map((i, k) => `<div class="rv" style="--d:${k * .04}s"><dt>${fmt(i.k, c.lang)}</dt><dd>${fmt(i.v, c.lang)}</dd></div>`).join('')}</dl>
 </div></div></section>`;
 
-/* profile tabs: each role of the role-nav is its own page (own URL, title and link preview); the first role is the main URL */
-const tabUrl = (item, i, lang) => url('cebg', lang) + (i && item.path ? item.path + '/' : '');
+/* profile tabs: each role of the role-nav is its own page (own URL, title and link preview); the bare profile URL forwards to the first tab */
+const profileBase = (lang) => `${BASE}/${lang}/${ROUTES.cebg[lang]}/`;
+const tabUrl = (item, i, lang) => profileBase(lang) + (item.path ? item.path + '/' : '');
 const sectionRole = (s) => s.tab || (['cases', 'portfolio'].includes(s.type) ? s.id : null); // `tab` ties a section to one role tab
 const cityQc = (lang) => (lang === 'en' ? 'Quebec' : 'Québec'); // English spelling drops the accent
 
@@ -785,7 +787,7 @@ function buildPage({ lang, key, page, post, tab }) {
   if (key === 'cas-saas') crumbs.push({ name: T.nav['design-produit'], url: url('design-produit', lang) });
   if (key === 'post') crumbs.push({ name: T.nav.actualites, url: url('actualites', lang) });
   if (key !== 'home') crumbs.push({ name: key === 'post' ? post.title : T.nav[key], url: tab ? url(key, lang) : selfUrl });
-  if (tab?.index) crumbs.push({ name: tab.label, url: selfUrl });
+  if (tab) crumbs.push({ name: tab.label, url: selfUrl });
 
   const ctx = { lang, T, key, page, post, crumbs, altUrls, selfUrl, activeTab: tab?.id };
   let prevTheme = null;
@@ -885,18 +887,25 @@ function build() {
   }
   const pages = {};
   for (const l of LANGS) for (const k of Object.keys(ROUTES)) pages[`${l}:${k}`] = rd(path.join(SRC, 'content', l, `${k}.json`));
+  PROFILE_FIRST = Object.fromEntries(LANGS.map((l) => [l, pages[`${l}:cebg`].sections.find((s) => s.type === 'role-nav')?.items[0]?.path]));
 
   for (const l of LANGS) {
     for (const k of Object.keys(ROUTES)) {
       const page = pages[`${l}:${k}`], nav = page.sections.find((s) => s.type === 'role-nav');
       if (!nav) { buildPage({ lang: l, key: k, page }); continue; }
       nav.items.forEach((item, i) => {
-        // keep shared sections (profile, testimonials, contact); show only this tab's role; FAQ lives on the main URL only
+        // keep shared sections (profile, testimonials, contact); show only this tab's role; FAQ lives on the first tab only
         const sections = page.sections.filter((s) => (!sectionRole(s) || sectionRole(s) === item.id) && (i === 0 || s.type !== 'faq'));
-        const meta = item.title ? { ...page.meta, title: item.title, description: item.description } : page.meta; // the first tab (main URL) uses its own title too
+        const meta = item.title ? { ...page.meta, title: item.title, description: item.description } : page.meta;
         const urls = Object.fromEntries(LANGS.map((x) => { const it = pages[`${x}:${k}`].sections.find((s) => s.type === 'role-nav').items[i]; return [x, tabUrl(it, i, x)]; }));
         buildPage({ lang: l, key: k, page: { ...page, meta, sections, faq: i === 0 ? page.faq : [], ogImage: item.ogImage || page.meta.ogImage, ogAlt: meta.title }, tab: { id: item.id, index: i, label: item.label, urls } });
       });
+      // the bare profile URL is not a page of its own: it forwards to the first tab (keeps older links and the About page working)
+      const first = tabUrl(nav.items[0], 0, l);
+      write(path.join(DIST, profileBase(l).slice(BASE.length), 'index.html'), `<!doctype html>
+<html lang="${l}"><head><meta charset="utf-8"><meta name="robots" content="noindex"><link rel="canonical" href="${abs(first)}"><meta http-equiv="refresh" content="0; url=${first}"><title>${esc(page.meta.h1 || '')}</title></head>
+<body><script>location.replace(${JSON.stringify(first)} + location.hash)</script><p><a href="${first}">${esc(nav.items[0].label)}</a></p></body></html>
+`);
     }
     for (const p of POSTS[l]) {
       const T = TR[l];
