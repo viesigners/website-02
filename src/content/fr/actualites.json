@@ -1,13 +1,13 @@
 {
  "meta": {
-  "title": "Actualités — UX/UI, CRO, SEO et GEO | Viesigners",
+  "title": "Blogue — UX/UI, CRO, SEO et GEO | Viesigners",
   "description": "Articles pratiques sur l'optimisation du taux de conversion, les landing pages, le design de produit, le SEO et le GEO, par les fondateurs de Viesigners.",
-  "h1": "Actualités"
+  "h1": "Blogue"
  },
  "sections": [
   {
    "type": "page-hero",
-   "tag": "Actualités",
+   "tag": "Blogue",
    "h1": "Idées pour faire du web *votre avantage déloyal*",
    "lead": "Des articles concrets sur la conversion, l'expérience utilisateur, le SEO et le GEO.",
    "ctas": []

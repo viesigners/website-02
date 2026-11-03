@@ -80,7 +80,7 @@ const ROUTES = {
   privacy: { fr: 'politique-de-confidentialite', en: 'privacy-policy' },
   terms: { fr: 'conditions-generales', en: 'terms-of-use' },
   merci: { fr: 'merci', en: 'thank-you' }, // shown after a form submission: noindex, never linked
-  actualites: { fr: 'actualites', en: 'news' },
+  actualites: { fr: 'blogue', en: 'blog' },
 };
 /* pages temporarily hidden: still built, but removed from menu, footer, links, sitemap and llms.txt, and marked noindex.
    Edit "hidden" in src/config.json to bring them back (empty list = everything visible). */

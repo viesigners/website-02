@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "News — UX/UI, CRO, SEO and GEO | Viesigners",
+    "title": "Blog — UX/UI, CRO, SEO and GEO | Viesigners",
     "description": "Practical articles on conversion rate optimization, landing pages, product design, SEO and GEO, by the founders of Viesigners.",
-    "h1": "News"
+    "h1": "Blog"
   },
   "sections": [
     {
       "type": "page-hero",
-      "tag": "News",
+      "tag": "Blog",
       "h1": "Ideas to make the web *your unfair advantage*",
       "lead": "Concrete articles on conversion, user experience, SEO and GEO.",
       "ctas": []
