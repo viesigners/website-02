@@ -1,0 +1,207 @@
+{
+ "meta": {
+  "title": "Pharmy Case Study: Clinical Trial Hub | Viesigners",
+  "description": "How Charles-Erick BG redesigned a clinical trial application flow, A/B tested it and shaped a hub for finding nearby trials.",
+  "h1": "Pharmy case study"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tag": "Case study · Healthcare",
+   "h1": "Helping people find a clinical trial *without losing them on the way*",
+   "lead": "A global company ran separate clinical trial microsites and wanted more qualification forms from potential participants. I redesigned the form flow, A/B tested it and shaped one hub to learn, find a nearby trial and apply.",
+   "byline": "By Charles-Erick BG",
+   "brief": [
+    {
+     "b": "Client:",
+     "t": "a company of about 30,000 employees focused on difficult-to-cure diseases. Pharmy is a fictional name; the real one is under NDA."
+    },
+    {
+     "b": "My role:",
+     "t": "UX designer, working with the client’s strategy team and O2Web."
+    },
+    {
+     "b": "Scope:",
+     "t": "A/B test methodology, form redesign, information architecture and UI for the hub."
+    },
+    {
+     "b": "Year:",
+     "t": "[À FOURNIR : project year and duration]"
+    }
+   ]
+  },
+  {
+   "type": "cd-image",
+   "theme": "light",
+   "img": "work/pharmy-hub.jpg",
+   "alt": "Clinical trial search interface with results listed beside a map",
+   "caption": "The hub: search by condition and location, with results on a map. [À FOURNIR : replace with the original full-size screens]"
+  },
+  {
+   "type": "cd-text",
+   "label": "The problem",
+   "h2": "Interested people *weren’t reaching the form*",
+   "prose": [
+    "Clinical trials ask a lot of people, often at a difficult time in their health. They need to understand the disease and the process, then find a trial nearby, before they’ll share personal details.",
+    "The leadership team wanted more qualification forms from potential participants. The content was spread across separate microsites, so there were two jobs to do."
+   ],
+   "steps": [
+    {
+     "h": "Improve the existing flow",
+     "p": "Split the application form in two steps, redesign the microsites and measure the change with an A/B test."
+    },
+    {
+     "h": "Bring the microsites together",
+     "p": "Combine them in one hub where people gain knowledge and find the closest trials for their condition."
+    }
+   ]
+  },
+  {
+   "type": "cd-decisions",
+   "label": "Key decisions",
+   "h2": "What I decided, *and why*",
+   "items": [
+    {
+     "h": "Prescreen first, ask for personal details later",
+     "p": "The form moved from one flow to two steps: a prescreener, then personal information.",
+     "notes": [
+      {
+       "k": "Why",
+       "v": "[À FOURNIR : what evidence showed the original form was the problem?]"
+      },
+      {
+       "k": "Trade-off",
+       "v": "[À FOURNIR : what did you give up, or what did the team push back on?]"
+      }
+     ]
+    },
+    {
+     "h": "Give unqualified people somewhere to go",
+     "p": "Instead of ending at a rejection, the prescreener sent qualified candidates to a contact form and everyone else to a community form.",
+     "notes": [
+      {
+       "k": "Why",
+       "v": "[À FOURNIR : why keep them, and what did the client do with this community?]"
+      },
+      {
+       "k": "Trade-off",
+       "v": "[À FOURNIR : did this add work or risk for the client?]"
+      }
+     ]
+    },
+    {
+     "h": "Build the journey around three questions",
+     "p": "The hub follows what people need in order: learn about the disease and the process, find nearby trials, then apply.",
+     "notes": [
+      {
+       "k": "Why",
+       "v": "[À FOURNIR : what research or user profiles led to this order?]"
+      },
+      {
+       "k": "Alternative rejected",
+       "v": "[À FOURNIR : which other structures did you test or discard?]"
+      }
+     ]
+    },
+    {
+     "h": "Make location the core of the search",
+     "p": "A map-based search interface lets people find the best options for their condition and location.",
+     "notes": [
+      {
+       "k": "Why",
+       "v": "[À FOURNIR : why a map rather than a filtered list?]"
+      },
+      {
+       "k": "Constraint",
+       "v": "[À FOURNIR : what technical or regulatory limit shaped this?]"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cd-test",
+   "label": "The test",
+   "h2": "What the A/B test *showed, and what it didn’t*",
+   "results": [
+    {
+     "n": "+48%",
+     "t": "higher share of visitors reached the qualification form, from 5.6% to 8.3%"
+    },
+    {
+     "n": "15 vs 15",
+     "t": "completed forms on 770 and 640 visits, from 1.95% to 2.34%"
+    },
+    {
+     "n": "7 of 15",
+     "t": "version B completions were prequalified candidates"
+    }
+   ],
+   "caption": "Funnel by version",
+   "head": [
+    "Stage",
+    "Version A",
+    "Version B"
+   ],
+   "rows": [
+    [
+     "Home page visits",
+     "770",
+     "640"
+    ],
+    [
+     "Reached the form",
+     "43 (5.6%)",
+     "53 (8.3%)"
+    ],
+    [
+     "Finished after reaching it",
+     "15 (34.9%)",
+     "15 (28.3%)"
+    ],
+    [
+     "Completed, overall",
+     "15 (1.95%)",
+     "15 (2.34%)"
+    ],
+    [
+     "Prequalified candidates",
+     "Not separated",
+     "7"
+    ],
+    [
+     "Sent to the community form",
+     "Not applicable",
+     "8"
+    ]
+   ],
+   "reads": [
+    {
+     "h": "What I can stand behind",
+     "p": "Version B moved more visitors to the form, a borderline result on this sample (p≈0.045). It also separated qualified candidates from everyone else, which version A couldn’t do."
+    },
+    {
+     "h": "What this test can’t prove",
+     "p": "With 15 completions on each side, the overall lift isn’t conclusive (p≈0.61). Confirming it would take about 22,000 visits per version. A smaller share of the people who reached the form finished it, so the next step would have been to study that drop."
+    }
+   ]
+  },
+  {
+   "type": "cd-text",
+   "label": "Outcome",
+   "h2": "What shipped, *and what I’d change*",
+   "prose": [
+    "[À FOURNIR : did the hub launch? When? What happened after launch: traffic, applications, enrolled participants, client feedback?]",
+    "[À FOURNIR : what would you do differently today? For example: define the sample size before launching the test, or compare only qualified applications.]"
+   ]
+  },
+  {
+   "type": "cta-final",
+   "h2": "Is your funnel losing people *at the form?*",
+   "p": "Let’s review your flow together and find where people drop off.",
+   "cta": "Book a free 15-minute teardown",
+   "href": "https://cal.com/viesigners/user-journey-teardown-call"
+  }
+ ],
+ "faq": []
+}

@@ -1,0 +1,207 @@
+{
+ "meta": {
+  "title": "Étude de cas Pharmy : plateforme d’essais cliniques | Viesigners",
+  "description": "Comment Charles-Erick BG a repensé un parcours d’inscription à des essais cliniques, l’a testé en A/B et a conçu une plateforme pour trouver un essai près de chez soi.",
+  "h1": "Étude de cas Pharmy"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tag": "Étude de cas · Santé",
+   "h1": "Aider les gens à trouver un essai clinique *sans les perdre en chemin*",
+   "lead": "Une entreprise mondiale gérait des microsites d’essais cliniques séparés et voulait recevoir plus de formulaires de qualification. J’ai repensé le formulaire, je l’ai testé en A/B et j’ai conçu une plateforme unique pour s’informer, trouver un essai à proximité et s’inscrire.",
+   "byline": "Par Charles-Erick BG",
+   "brief": [
+    {
+     "b": "Client :",
+     "t": "une entreprise d’environ 30 000 employés, spécialisée dans les maladies difficiles à guérir. Pharmy est un nom fictif; le vrai nom est sous NDA."
+    },
+    {
+     "b": "Mon rôle :",
+     "t": "designer UX, avec l’équipe stratégie du client et O2Web."
+    },
+    {
+     "b": "Portée :",
+     "t": "méthodologie de test A/B, refonte du formulaire, architecture de l’information et interface de la plateforme."
+    },
+    {
+     "b": "Année :",
+     "t": "[À FOURNIR : année et durée du projet]"
+    }
+   ]
+  },
+  {
+   "type": "cd-image",
+   "theme": "light",
+   "img": "work/pharmy-hub.jpg",
+   "alt": "Interface de recherche d’essais cliniques avec résultats à côté d’une carte",
+   "caption": "La plateforme : recherche par condition et par lieu, avec résultats sur une carte. [À FOURNIR : remplacer par les écrans originaux en pleine résolution]"
+  },
+  {
+   "type": "cd-text",
+   "label": "Le problème",
+   "h2": "Les personnes intéressées *n’arrivaient pas au formulaire*",
+   "prose": [
+    "Un essai clinique demande beaucoup aux gens, souvent à un moment difficile pour leur santé. Ils doivent comprendre la maladie et le processus, puis trouver un essai à proximité, avant de donner leurs renseignements personnels.",
+    "L’équipe de direction voulait recevoir plus de formulaires de qualification. Le contenu était réparti entre des microsites séparés, ce qui donnait deux chantiers."
+   ],
+   "steps": [
+    {
+     "h": "Améliorer le parcours existant",
+     "p": "Séparer le formulaire en deux étapes, repenser les microsites et mesurer le changement par un test A/B."
+    },
+    {
+     "h": "Réunir les microsites",
+     "p": "Les regrouper dans une plateforme où les gens s’informent et trouvent les essais les plus proches pour leur condition."
+    }
+   ]
+  },
+  {
+   "type": "cd-decisions",
+   "label": "Décisions clés",
+   "h2": "Ce que j’ai décidé, *et pourquoi*",
+   "items": [
+    {
+     "h": "Présélectionner d’abord, demander les renseignements personnels ensuite",
+     "p": "Le formulaire est passé à deux étapes : une présélection, puis les renseignements personnels.",
+     "notes": [
+      {
+       "k": "Pourquoi",
+       "v": "[À FOURNIR : quelles données montraient que le formulaire original était le problème?]"
+      },
+      {
+       "k": "Compromis",
+       "v": "[À FOURNIR : qu’avez-vous sacrifié, ou sur quoi l’équipe a-t-elle résisté?]"
+      }
+     ]
+    },
+    {
+     "h": "Offrir une suite aux personnes non admissibles",
+     "p": "Au lieu d’un refus, la présélection dirigeait les candidats qualifiés vers un formulaire de contact et les autres vers un formulaire de communauté.",
+     "notes": [
+      {
+       "k": "Pourquoi",
+       "v": "[À FOURNIR : pourquoi les garder, et que faisait le client de cette communauté?]"
+      },
+      {
+       "k": "Compromis",
+       "v": "[À FOURNIR : est-ce que ça ajoutait du travail ou un risque pour le client?]"
+      }
+     ]
+    },
+    {
+     "h": "Bâtir le parcours autour de trois questions",
+     "p": "La plateforme suit l’ordre des besoins : s’informer sur la maladie et le processus, trouver un essai à proximité, puis s’inscrire.",
+     "notes": [
+      {
+       "k": "Pourquoi",
+       "v": "[À FOURNIR : quelle recherche ou quels profils ont mené à cet ordre?]"
+      },
+      {
+       "k": "Option écartée",
+       "v": "[À FOURNIR : quelles autres structures avez-vous testées ou rejetées?]"
+      }
+     ]
+    },
+    {
+     "h": "Placer le lieu au cœur de la recherche",
+     "p": "Une recherche par carte permet de trouver les meilleures options selon la condition et le lieu.",
+     "notes": [
+      {
+       "k": "Pourquoi",
+       "v": "[À FOURNIR : pourquoi une carte plutôt qu’une liste filtrée?]"
+      },
+      {
+       "k": "Contrainte",
+       "v": "[À FOURNIR : quelle limite technique ou réglementaire a influencé ce choix?]"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cd-test",
+   "label": "Le test",
+   "h2": "Ce que le test A/B *a montré, et ce qu’il n’a pas montré*",
+   "results": [
+    {
+     "n": "+48 %",
+     "t": "de hausse de la part des visiteurs rendus au formulaire, de 5,6 % à 8,3 %"
+    },
+    {
+     "n": "15 c. 15",
+     "t": "formulaires remplis sur 770 et 640 visites, de 1,95 % à 2,34 %"
+    },
+    {
+     "n": "7 sur 15",
+     "t": "des formulaires remplis de la version B venaient de candidats qualifiés"
+    }
+   ],
+   "caption": "Entonnoir par version",
+   "head": [
+    "Étape",
+    "Version A",
+    "Version B"
+   ],
+   "rows": [
+    [
+     "Visites de la page d’accueil",
+     "770",
+     "640"
+    ],
+    [
+     "Se sont rendus au formulaire",
+     "43 (5,6 %)",
+     "53 (8,3 %)"
+    ],
+    [
+     "Ont terminé après s’y être rendus",
+     "15 (34,9 %)",
+     "15 (28,3 %)"
+    ],
+    [
+     "Formulaires remplis, au total",
+     "15 (1,95 %)",
+     "15 (2,34 %)"
+    ],
+    [
+     "Candidats qualifiés",
+     "Non séparé",
+     "7"
+    ],
+    [
+     "Dirigés vers la communauté",
+     "Sans objet",
+     "8"
+    ]
+   ],
+   "reads": [
+    {
+     "h": "Ce que je peux affirmer",
+     "p": "La version B a amené plus de visiteurs au formulaire, un résultat limite sur cet échantillon (p≈0,045). Elle a aussi séparé les candidats qualifiés des autres, ce que la version A ne pouvait pas faire."
+    },
+    {
+     "h": "Ce que ce test ne prouve pas",
+     "p": "Avec 15 formulaires de chaque côté, la hausse globale n’est pas concluante (p≈0,61). Il faudrait environ 22 000 visites par version pour la confirmer. Une plus faible part des gens arrivés au formulaire l’ont terminé : c’est ce décrochage qu’il aurait fallu étudier ensuite."
+    }
+   ]
+  },
+  {
+   "type": "cd-text",
+   "label": "Résultat",
+   "h2": "Ce qui a été lancé, *et ce que je changerais*",
+   "prose": [
+    "[À FOURNIR : la plateforme a-t-elle été lancée? Quand? Que s’est-il passé ensuite : trafic, inscriptions, participants recrutés, commentaires du client?]",
+    "[À FOURNIR : que feriez-vous autrement aujourd’hui? Par exemple : fixer la taille de l’échantillon avant le test, ou comparer seulement les candidatures qualifiées.]"
+   ]
+  },
+  {
+   "type": "cta-final",
+   "h2": "Votre entonnoir perd des gens *au formulaire?*",
+   "p": "Regardons votre parcours ensemble et trouvons où les gens décrochent.",
+   "cta": "Réservez un teardown gratuit de 15 minutes",
+   "href": "https://cal.com/viesigners/user-journey-teardown-call"
+  }
+ ],
+ "faq": []
+}

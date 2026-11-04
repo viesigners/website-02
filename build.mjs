@@ -66,6 +66,7 @@ const ROUTES = {
   'design-produit': { fr: 'design-de-produit', en: 'product-design' },
   coaching: { fr: 'conseil-affaires-web', en: 'business-advisory' },
   'cas-saas': { fr: 'design-de-produit/etude-de-cas-saas-b2b-ia', en: 'product-design/b2b-ai-saas-case-study' },
+  'cas-pharmy': { fr: 'realisations/pharmy', en: 'work/pharmy' },
   publicite: { fr: 'publicite-numerique', en: 'digital-advertising' },
   'medias-sociaux': { fr: 'medias-sociaux', en: 'social-media' },
   'seo-geo': { fr: 'seo-geo', en: 'seo-geo' },
@@ -145,7 +146,7 @@ R['page-hero'] = (s, c) => {
   const { lang, T, page } = c;
   const crumbs = c.crumbs.map((b, i) => i === c.crumbs.length - 1 ? `<li><span aria-current="page">${esc(b.name)}</span></li>` : `<li><a href="${b.url}">${esc(b.name)}</a></li>`).join('');
   const ctas = (s.ctas || []).filter((b) => !(b.to.startsWith('@') && isHidden(b.to.slice(1)))).map((b) => `<a class="pill ${b.style === 'ghost' ? 'pill--ghost' : b.style === 'violet' ? 'pill--violet' : ''}" href="${b.to.startsWith('@') ? url(b.to.slice(1), lang) : b.to}"${/^https?:/.test(b.to) ? ' target="_blank" rel="noopener"' : ''}>${esc(b.label)}</a>`).join('');
-  const brief = s.brief ? `<aside class="brief rv" aria-labelledby="brief-t" style="--d:.15s"><h2 id="brief-t">${esc(T.brief)}</h2><ul>${s.brief.map((i) => `<li>${ico('check')}<span>${i.b ? `<strong>${fmt(i.b, lang)}</strong> ` : ''}${fmt(i.t, lang)}</span></li>`).join('')}</ul><p class="upd">${esc(T.updated)} <time datetime="${page.updated || BUILD_DATE}">${new Date(page.updated || BUILD_DATE).toLocaleDateString(lang === 'fr' ? 'fr-CA' : 'en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time></p></aside>` : '';
+  const brief = s.brief ? `<aside class="brief rv" aria-labelledby="brief-t" style="--d:.15s"><h2 id="brief-t">${esc(T.brief)}</h2><ul>${s.brief.map((i) => `<li>${ico('check')}<span>${i.b ? `<strong>${fmt(i.b, lang)}</strong> ` : ''}${fmtT(i.t, lang)}</span></li>`).join('')}</ul><p class="upd">${esc(T.updated)} <time datetime="${page.updated || BUILD_DATE}">${new Date(page.updated || BUILD_DATE).toLocaleDateString(lang === 'fr' ? 'fr-CA' : 'en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time></p></aside>` : '';
   return `<section class="phero${s.compact ? ' phero--compact' : ''}" aria-labelledby="h1"><div class="wrap">
   ${c.crumbs.length > 2 ? `<nav aria-label="${esc(T.breadcrumb)}"><ol class="crumbs">${crumbs}</ol></nav>` : ''}
   <div class="phero__grid">
@@ -364,6 +365,27 @@ R.casestudy = (s, c) => `<section class="section"><div class="wrap">
   <figure class="tcard cs__quote rv"><blockquote>${s.quote.title ? `<h3 class="tq">${esc(s.quote.title)}</h3>` : ''}<p>${fmt(s.quote.text, c.lang)}</p></blockquote><figcaption><span class="who"><b>${esc(s.quote.name)}</b><span>${esc(s.quote.role)}</span></span></figcaption></figure>
   <p class="cs__note rv">${fmt(s.note, c.lang)}</p>
   <p class="cs__cta rv"><a class="pill" href="${s.ctaHref || url('contact', c.lang)}"${s.ctaHref ? ' target="_blank" rel="noopener"' : ''}>${esc(s.cta)}</a> <span>${esc(s.ctaNote)}</span></p>
+</div></section>`;
+
+/* project case studies: prose, decisions, measured test. [À FOURNIR …] stays visible as a highlighted marker until the content is supplied */
+const fmtT = (s, lang) => fmt(s, lang).replace(/\[À FOURNIR[^\]]*\]/g, (m) => `<span class="tbd">${m}</span>`);
+R['cd-text'] = (s, c) => `<section class="section"><div class="wrap">
+  ${secHead(s, c, 'cd-text', { label: s.label })}
+  <div class="cd-text">
+    <div class="prose rv">${s.prose.map((p) => `<p>${fmtT(p, c.lang)}</p>`).join('')}</div>
+    ${s.steps ? `<ol class="cd-steps">${s.steps.map((i, k) => `<li class="rv" style="--d:${k * .06}s"><b>${esc(i.h)}</b><span>${fmtT(i.p, c.lang)}</span></li>`).join('')}</ol>` : ''}
+  </div>
+</div></section>`;
+R['cd-image'] = (s, c) => `<section class="section section--tight"><div class="wrap"><figure class="cd-figure rv">${img(s.img, s.alt, { sizes: '(min-width:1320px) 1224px, 100vw' })}${s.caption ? `<figcaption>${fmtT(s.caption, c.lang)}</figcaption>` : ''}</figure></div></section>`;
+R['cd-decisions'] = (s, c) => `<section class="section"><div class="wrap">
+  ${secHead(s, c, 'cd-decisions', { label: s.label })}
+  <ol class="cd-decisions">${s.items.map((i, k) => `<li class="rv"><span class="cd-n">${String(k + 1).padStart(2, '0')}</span><div><h3>${esc(i.h)}</h3><p>${fmtT(i.p, c.lang)}</p><dl>${i.notes.map((n) => `<div><dt>${esc(n.k)}</dt><dd>${fmtT(n.v, c.lang)}</dd></div>`).join('')}</dl></div></li>`).join('')}</ol>
+</div></section>`;
+R['cd-test'] = (s, c) => `<section class="section"><div class="wrap">
+  ${secHead(s, c, 'cd-test', { label: s.label })}
+  <div class="proof">${s.results.map((i, k) => `<div class="proof__item rv" style="--d:${k * .08}s"><b>${esc(i.n)}</b><span>${fmtT(i.t, c.lang)}</span></div>`).join('')}</div>
+  <div class="cd-table rv"><table><caption>${esc(s.caption)}</caption><thead><tr>${s.head.map((h, i) => `<th scope="col"${i ? ' class="num"' : ''}>${esc(h)}</th>`).join('')}</tr></thead><tbody>${s.rows.map((r) => `<tr><th scope="row">${esc(r[0])}</th>${r.slice(1).map((v) => `<td class="num">${esc(v)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+  <div class="cd-read">${s.reads.map((i, k) => `<div class="rv" style="--d:${k * .08}s"><h3>${esc(i.h)}</h3><p>${fmtT(i.p, c.lang)}</p></div>`).join('')}</div>
 </div></section>`;
 
 R.casecard = (s, c) => `<section class="section section--tight"><div class="wrap">
@@ -749,6 +771,9 @@ function toMd(page, c) {
       case 'compare': L.push(`## ${t(s.h2)}`, '', `### ${t(s.before.h)}`, ...s.before.items.map((i) => `- ${t(i)}`), '', `### ${t(s.after.h)}`, ...s.after.items.map((i) => `- ${t(i)}`), ''); break;
       case 'related': L.push(`## ${t(s.h2)}`, '', ...s.items.filter((k) => !isHidden(k)).map((k) => `- [${T.nav[k]}](${abs(url(k, lang))}): ${T.navSub[k]}`), ''); break;
       case 'casecard': L.push(`## ${t(s.h)}`, '', `- **${s.n}** ${t(s.nt)}`, `- [${t(s.h)}](${abs(url(s.to, lang))})`, ''); break;
+      case 'cd-text': L.push(`## ${t(s.h2)}`, '', ...s.prose.map((p) => t(p) + '\n'), ...(s.steps || []).map((i, n) => `${n + 1}. **${t(i.h)}** — ${t(i.p)}`), ''); break;
+      case 'cd-decisions': L.push(`## ${t(s.h2)}`, '', ...s.items.flatMap((i) => [`### ${t(i.h)}`, '', t(i.p), '', ...i.notes.map((n) => `- ${t(n.k)}: ${t(n.v)}`), '']), ''); break;
+      case 'cd-test': L.push(`## ${t(s.h2)}`, '', ...s.results.map((i) => `- **${i.n}** ${t(i.t)}`), '', ...s.rows.map((r) => `- ${r.join(' | ')}`), '', ...s.reads.flatMap((i) => [`### ${t(i.h)}`, '', t(i.p), '']), ''); break;
       case 'casestudy': L.push(`## ${t(s.h2)}`, '', ...(s.client ? [t(s.client), ''] : []), ...s.results.map((i) => `- **${i.n}** ${t(i.t)}`), '', `### ${t(s.problem.h)}`, '', t(s.problem.lead), '', ...s.problem.items.map((i) => `- ${t(i)}`), '', `### ${t(s.did.h)}`, '', ...s.did.steps.map((p, i) => `${i + 1}. **${t(p.h)}** — ${t(p.p)}`), '', `> ${t(s.quote.text)}`, `> — ${s.quote.by}`, '', t(s.note), ''); break;
       case 'proof': L.push(...s.items.map((i) => `- **${i.n}** ${t(i.t)}`), ''); break;
       case 'people': L.push(`## ${t(s.h2)}`, '', ...s.items.map((p) => `- **${p.name}** (${p.role}) — ${t(p.text)}`), ''); break;
@@ -777,7 +802,7 @@ const THEME = {
   'hero-home': 'dark', 'page-hero': 'dark', 'cta-final': 'dark',
   friction: 'light', founders: 'dark', services: 'light', stats: 'dark', work: 'light', fit: 'dark', slot: 'light', testimonials: 'light', faq: 'light',
   statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', hub: 'light', partner: 'dark', related: 'light', bio: 'light', legal: 'light', people: 'dark', facts: 'light',
-  'posts-list': 'light', article: 'light', 'profile-hero': 'dark', cases: 'light', 'result-cards': 'dark', portfolio: 'light', 'contact-links': 'dark', contact: 'light', 'rich-text': 'light',
+  'cd-text': 'light', 'cd-image': 'light', 'cd-decisions': 'dark', 'cd-test': 'light', 'posts-list': 'light', article: 'light', 'profile-hero': 'dark', cases: 'light', 'result-cards': 'dark', portfolio: 'light', 'contact-links': 'dark', contact: 'light', 'rich-text': 'light',
 };
 const ASSET_HASH = {};
 const PAGES_OUT = []; // for sitemap + llms
