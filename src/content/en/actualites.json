@@ -9,7 +9,7 @@
       "type": "page-hero",
       "tag": "Blog",
       "h1": "Ideas to make the web *your unfair advantage*",
-      "lead": "Practical insights and case studies on conversion, user experience, SEO and GEO.",
+      "lead": "Practical insights, case studies and news from Viesigners on conversion, user experience, SEO and GEO.",
       "ctas": []
     },
     {
@@ -44,7 +44,9 @@
           "h1": "News from *Viesigners*",
           "lead": "Our news and announcements."
         }
-      ]
+      ],
+      "allTitle": "Everything we *publish*",
+      "allLead": "Our insights, case studies and news, newest first."
     },
     {
       "type": "faq",

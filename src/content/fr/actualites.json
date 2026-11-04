@@ -8,8 +8,8 @@
   {
    "type": "page-hero",
    "tag": "Blogue",
-   "h1": "Idées pour faire du web *votre avantage déloyal*",
-   "lead": "Des conseils concrets et des études de cas sur la conversion, l'expérience utilisateur, le SEO et le GEO.",
+   "h1": "Des idées pour faire du web *son avantage déloyal*",
+   "lead": "Des conseils concrets, des études de cas et les nouvelles de Viesigners sur la conversion, l'expérience utilisateur, le SEO et le GEO.",
    "ctas": []
   },
   {
@@ -44,7 +44,9 @@
      "h1": "Actualités de *Viesigners*",
      "lead": "Nos nouvelles et annonces."
     }
-   ]
+   ],
+   "allTitle": "Tout ce que nous *publions*",
+   "allLead": "Nos conseils, nos études de cas et nos nouvelles, du plus récent au plus ancien."
   },
   {
    "type": "faq",

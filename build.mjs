@@ -519,7 +519,9 @@ R['posts-list'] = (s, c) => {
   const all = RES[c.lang], list = c.activeTab ? all.filter((p) => p.cat === c.activeTab) : all;
   const cats = (s.categories || []).filter((k) => all.some((p) => p.cat === k.key)); // a category with no item stays hidden
   const filters = cats.length > 1 ? `<nav class="filters rv" aria-label="${esc(s.filterLabel)}"><a href="${url('actualites', c.lang)}"${c.activeTab ? '' : ' aria-current="page"'}>${esc(s.all)}</a>${cats.map((k) => `<a href="${catUrl(k, c.lang)}"${c.activeTab === k.key ? ' aria-current="page"' : ''}>${esc(k.label)}</a>`).join('')}</nav>` : '';
-  return `<section class="section"><div class="wrap">${filters}<div class="posts">${list.map((p, k) => `<article class="post-card rv" style="--d:${(k % 2) * .08}s"><span class="tag">${esc(p.tag)}</span><h3><a class="more" href="${p.href}" aria-label="${esc(p.title)}"></a>${esc(p.title)}</h3><p>${esc(p.description)}</p><div class="meta">${p.date ? `<time datetime="${p.date}">${new Date(p.date).toLocaleDateString(c.lang === 'fr' ? 'fr-CA' : 'en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time>` : ''}${p.read ? `<span>${esc(p.read)}</span>` : ''}</div></article>`).join('')}</div></div></section>`;
+  const cur = c.activeTab ? cats.find((k) => k.key === c.activeTab) : { h1: s.allTitle, lead: s.allLead };
+  const head = cur?.h1 ? `<div class="posts-head rv"><h2>${fmt(cur.h1, c.lang)}</h2>${cur.lead ? `<p>${fmt(cur.lead, c.lang)}</p>` : ''}</div>` : '';
+  return `<section class="section"><div class="wrap">${filters}${head}<div class="posts">${list.map((p, k) => `<article class="post-card rv" style="--d:${(k % 2) * .08}s"><span class="tag">${esc(p.tag)}</span><h3><a class="more" href="${p.href}" aria-label="${esc(p.title)}"></a>${esc(p.title)}</h3><p>${esc(p.description)}</p><div class="meta">${p.date ? `<time datetime="${p.date}">${new Date(p.date).toLocaleDateString(c.lang === 'fr' ? 'fr-CA' : 'en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time>` : ''}${p.read ? `<span>${esc(p.read)}</span>` : ''}</div></article>`).join('')}</div></div></section>`;
 };
 
 R.article = (s, c) => {
@@ -924,7 +926,7 @@ function build() {
         if (k === 'actualites') RES_CATS[l].forEach((cat, i) => {
           if (!RES[l].some((p) => p.cat === cat.key)) return;
           const urls = Object.fromEntries(LANGS.map((x) => [x, catUrl(RES_CATS[x][i], x)]));
-          const sections = page.sections.filter((s) => s.type !== 'faq').map((s) => (s.type === 'page-hero' ? { ...s, h1: cat.h1, lead: cat.lead } : s));
+          const sections = page.sections.filter((s) => s.type !== 'faq'); // same hero on every filter page: only the list and its subtitle change
           buildPage({ lang: l, key: k, page: { ...page, meta: { ...page.meta, title: cat.title, description: cat.description, h1: cat.label }, sections, faq: [] }, tab: { id: cat.key, index: i, label: cat.label, urls } });
         });
         continue;
