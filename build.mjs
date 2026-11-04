@@ -515,6 +515,9 @@ R.article = (s, c) => {
     if (b.h3) return `<h3>${fmt(b.h3, lang)}</h3>`;
     if (b.p) return `<p>${fmt(b.p, lang)}</p>`;
     if (b.ul) return `<ul>${b.ul.map((i) => `<li>${fmt(i, lang)}</li>`).join('')}</ul>`;
+    if (b.ol) return `<ol>${b.ol.map((i) => `<li>${fmt(i, lang)}</li>`).join('')}</ol>`;
+    if (b.check) return `<ul class="checklist">${b.check.map((i) => `<li>${fmt(i, lang)}</li>`).join('')}</ul>`;
+    if (b.table) return `<div class="table-scroll"><table><thead><tr>${b.table.head.map((h) => `<th scope="col">${fmt(h, lang)}</th>`).join('')}</tr></thead><tbody>${b.table.rows.map((r) => `<tr>${r.map((d, i) => i ? `<td>${fmt(d, lang)}</td>` : `<th scope="row">${fmt(d, lang)}</th>`).join('')}</tr>`).join('')}</tbody></table></div>`;
     return '';
   }).join('\n');
   return `<section class="section"><div class="wrap"><article class="article" itemscope itemtype="https://schema.org/BlogPosting">
@@ -740,7 +743,7 @@ function toMd(page, c) {
       case 'proof': L.push(...s.items.map((i) => `- **${i.n}** ${t(i.t)}`), ''); break;
       case 'people': L.push(`## ${t(s.h2)}`, '', ...s.items.map((p) => `- **${p.name}** (${p.role}) — ${t(p.text)}`), ''); break;
       case 'facts': L.push(`## ${t(s.h2)}`, '', ...s.items.map((i) => `- **${t(i.k)}**: ${t(i.v)}`), ''); break;
-      case 'article': L.push(...c.post.summary.map((i) => `- ${t(i)}`), '', ...c.post.body.flatMap((b) => b.h2 ? [`## ${t(b.h2)}`, ''] : b.h3 ? [`### ${t(b.h3)}`, ''] : b.p ? [t(b.p), ''] : b.ul ? [...b.ul.map((i) => `- ${t(i)}`), ''] : [])); break;
+      case 'article': L.push(...c.post.summary.map((i) => `- ${t(i)}`), '', ...c.post.body.flatMap((b) => b.h2 ? [`## ${t(b.h2)}`, ''] : b.h3 ? [`### ${t(b.h3)}`, ''] : b.p ? [t(b.p), ''] : b.ul ? [...b.ul.map((i) => `- ${t(i)}`), ''] : b.ol ? [...b.ol.map((i, n) => `${n + 1}. ${t(i)}`), ''] : b.check ? [...b.check.map((i) => `- [ ] ${t(i)}`), ''] : b.table ? [`| ${b.table.head.map(t).join(' | ')} |`, `|${b.table.head.map(() => ' --- |').join('')}`, ...b.table.rows.map((r) => `| ${r.map(t).join(' | ')} |`), ''] : [])); break;
       case 'posts-list': L.push(...POSTS[lang].map((p) => `- [${p.title}](${abs(url('post:' + p.key, lang))}) — ${p.description}`), ''); break;
       case 'contact': L.push(t(s.lead), '', ...s.points.map((p) => `- ${t(p)}`), '', `${s.labels.phone}: ${CFG.phone}`, `${cityQc(lang)}, Canada · Vancouver, Canada`, ''); break;
       case 'profile-hero': L.push(t(s.role), '', t(s.lead), '', ...s.glance.map((g) => `- ${g.k}: ${g.v}`), ''); break;
@@ -824,7 +827,7 @@ function buildPage({ lang, key, page, post, tab }) {
   }
   if (key === 'charles-erick' || key === 'jean-francois') webpage.mainEntity = { '@id': abs('/#' + key) };
   if (key === 'post') {
-    graph.push({ '@type': 'BlogPosting', '@id': canonical + '#article', headline: post.title, description: post.description, inLanguage: lang, datePublished: post.date, dateModified: post.modified || post.date, mainEntityOfPage: { '@id': pageId }, author: [{ '@id': abs('/#charles-erick') }, { '@id': abs('/#jean-francois') }], publisher: { '@id': abs('/#organization') }, image: abs(`/assets/img/og-card-${lang}.jpg`), keywords: post.keywords, wordCount: post.body.map((b) => b.h2 || b.h3 || b.p || (b.ul || []).join(' ')).join(' ').split(/\s+/).length });
+    graph.push({ '@type': 'BlogPosting', '@id': canonical + '#article', headline: post.title, description: post.description, inLanguage: lang, datePublished: post.date, dateModified: post.modified || post.date, mainEntityOfPage: { '@id': pageId }, author: [{ '@id': abs('/#charles-erick') }, { '@id': abs('/#jean-francois') }], publisher: { '@id': abs('/#organization') }, image: abs(`/assets/img/og-card-${lang}.jpg`), keywords: post.keywords, wordCount: post.body.map((b) => b.h2 || b.h3 || b.p || (b.ul || b.ol || b.check || []).join(' ') || (b.table ? [b.table.head, ...b.table.rows].flat().join(' ') : '')).join(' ').split(/\s+/).length });
   }
   if (page.article) graph.push({ '@type': 'Article', '@id': canonical + '#article', headline: plain(page.meta.h1), description: page.meta.description, inLanguage: lang, datePublished: page.published, dateModified: page.updated || BUILD_DATE, mainEntityOfPage: { '@id': pageId }, author: [{ '@id': abs('/#jean-francois') }], publisher: { '@id': abs('/#organization') }, image: abs(`/assets/img/og-card-${lang}.jpg`), about: ['UX/UI design', 'Conversion rate optimization (CRO)', 'B2B SaaS'], isPartOf: { '@id': pageId } });
   const bio = page.sections.find((s) => s.type === 'bio');
