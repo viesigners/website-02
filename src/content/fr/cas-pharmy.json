@@ -9,7 +9,7 @@
    "type": "page-hero",
    "tag": "Étude de cas · Santé",
    "h1": "Aider les gens à trouver un essai clinique *sans les perdre en chemin*",
-   "lead": "Une entreprise mondiale gérait des microsites d’essais cliniques séparés et voulait recevoir plus de formulaires de qualification. J’ai repensé le formulaire, je l’ai testé en A/B et j’ai conçu une plateforme unique pour s’informer, trouver un essai à proximité et s’inscrire.",
+   "lead": "Une entreprise mondiale gérait des microsites d’essais cliniques séparés et voulait recevoir plus de formulaires de qualification. J’ai aidé à repenser le formulaire, j’ai bâti le test A/B autour de lui et j’ai guidé l’équipe vers une plateforme unique pour s’informer, trouver un essai à proximité et s’inscrire.",
    "byline": "Par Charles-Erick BG",
    "brief": [
     {
@@ -21,8 +21,12 @@
      "t": "designer UX, avec l’équipe stratégie du client et O2Web."
     },
     {
+     "b": "Qui décidait :",
+     "t": "[À FOURNIR : qui a pris les décisions finales, par rôle : vous, l’équipe stratégie du client ou O2Web?]"
+    },
+    {
      "b": "Portée :",
-     "t": "méthodologie de test A/B, refonte du formulaire, architecture de l’information et interface de la plateforme."
+     "t": "Méthodologie de test A/B, plan de mesure et UX du formulaire et de la plateforme. L’interface était un travail d’équipe."
     },
     {
      "b": "Année :",
@@ -40,10 +44,10 @@
   {
    "type": "cd-text",
    "label": "Le problème",
-   "h2": "Les personnes intéressées *n’arrivaient pas au formulaire*",
+   "h2": "La plupart des visiteurs *n’arrivaient jamais au formulaire*",
    "prose": [
-    "Un essai clinique demande beaucoup aux gens, souvent à un moment difficile pour leur santé. Ils doivent comprendre la maladie et le processus, puis trouver un essai à proximité, avant de donner leurs renseignements personnels.",
-    "L’équipe de direction voulait recevoir plus de formulaires de qualification. Le contenu était réparti entre des microsites séparés, ce qui donnait deux chantiers."
+    "Dans la version d’origine, 94,4 % des visiteurs partaient avant d’atteindre le formulaire de qualification. L’équipe de direction voulait recevoir plus de formulaires.",
+    "Les gens devaient s’informer sur la maladie et le processus, trouver un essai à proximité, puis s’inscrire. Ce contenu était réparti entre des microsites séparés, ce qui donnait deux chantiers."
    ],
    "steps": [
     {
@@ -57,6 +61,17 @@
    ]
   },
   {
+   "type": "cd-text",
+   "label": "Approche",
+   "h2": "Comment nous avons *enquêté et mesuré*",
+   "theme": "light",
+   "prose": [
+    "J’ai travaillé de près avec l’équipe stratégie du client pour définir les profils cibles et les indicateurs importants, puis j’ai rédigé la méthodologie du test A/B et le plan de mesure. Je me suis aussi assuré que les outils de mesure étaient en place.",
+    "J’ai guidé l’équipe de projet à travers l’inspiration, l’idéation, le prototypage et la validation technique, avec des wireframes dans Axure et des données de Google Analytics et Hotjar."
+   ],
+   "wide": true
+  },
+  {
    "type": "cd-decisions",
    "label": "Décisions clés",
    "h2": "Ce que j’ai décidé, *et pourquoi*",
@@ -66,12 +81,16 @@
      "p": "Le formulaire est passé à deux étapes : une présélection, puis les renseignements personnels.",
      "notes": [
       {
-       "k": "Pourquoi",
-       "v": "[À FOURNIR : quelles données montraient que le formulaire original était le problème?]"
+       "k": "Mes options",
+       "v": "[À FOURNIR : qu’avez-vous envisagé : un long formulaire, un plus court, autre chose?]"
       },
       {
-       "k": "Compromis",
-       "v": "[À FOURNIR : qu’avez-vous sacrifié, ou sur quoi l’équipe a-t-elle résisté?]"
+       "k": "Pourquoi ce choix",
+       "v": "[À FOURNIR : pourquoi pas le formulaire unique ou une version allégée?]"
+      },
+      {
+       "k": "Ce qu’il sacrifiait",
+       "v": "[À FOURNIR : quel était le coût : étapes de plus, formulaires perdus?]"
       }
      ]
     },
@@ -80,11 +99,15 @@
      "p": "Au lieu d’un refus, la présélection dirigeait les candidats qualifiés vers un formulaire de contact et les autres vers un formulaire de communauté.",
      "notes": [
       {
-       "k": "Pourquoi",
-       "v": "[À FOURNIR : pourquoi les garder, et que faisait le client de cette communauté?]"
+       "k": "Mes options",
+       "v": "[À FOURNIR : un message de refus, une redirection, autre chose?]"
       },
       {
-       "k": "Compromis",
+       "k": "Pourquoi ce choix",
+       "v": "[À FOURNIR : pourquoi garder ces personnes, et que faisait le client de cette communauté?]"
+      },
+      {
+       "k": "Ce qu’il sacrifiait",
        "v": "[À FOURNIR : est-ce que ça ajoutait du travail ou un risque pour le client?]"
       }
      ]
@@ -94,12 +117,16 @@
      "p": "La plateforme suit l’ordre des besoins : s’informer sur la maladie et le processus, trouver un essai à proximité, puis s’inscrire.",
      "notes": [
       {
-       "k": "Pourquoi",
+       "k": "Mes options",
+       "v": "[À FOURNIR : quelles autres structures avez-vous envisagées?]"
+      },
+      {
+       "k": "Pourquoi ce choix",
        "v": "[À FOURNIR : quelle recherche ou quels profils ont mené à cet ordre?]"
       },
       {
-       "k": "Option écartée",
-       "v": "[À FOURNIR : quelles autres structures avez-vous testées ou rejetées?]"
+       "k": "Ce qu’il sacrifiait",
+       "v": "[À FOURNIR : qu’est-ce qui a eu moins de place ou a été reporté?]"
       }
      ]
     },
@@ -108,12 +135,16 @@
      "p": "Une recherche par carte permet de trouver les meilleures options selon la condition et le lieu.",
      "notes": [
       {
-       "k": "Pourquoi",
-       "v": "[À FOURNIR : pourquoi une carte plutôt qu’une liste filtrée?]"
+       "k": "Mes options",
+       "v": "[À FOURNIR : une liste filtrée, un répertoire de conditions, autre chose?]"
       },
       {
-       "k": "Contrainte",
-       "v": "[À FOURNIR : quelle limite technique ou réglementaire a influencé ce choix?]"
+       "k": "Pourquoi ce choix",
+       "v": "[À FOURNIR : pourquoi une carte?]"
+      },
+      {
+       "k": "Ce qu’il sacrifiait",
+       "v": "[À FOURNIR : qu’est-ce qui était plus difficile : le mobile, l’accessibilité, une limite technique?]"
       }
      ]
     }
@@ -121,7 +152,7 @@
   },
   {
    "type": "cd-test",
-   "label": "Le test",
+   "label": "Ce que les gens ont fait",
    "h2": "Ce que le test A/B *a montré, et ce qu’il n’a pas montré*",
    "results": [
     {
@@ -183,6 +214,14 @@
     {
      "h": "Ce que ce test ne prouve pas",
      "p": "Avec 15 formulaires de chaque côté, la hausse globale n’est pas concluante (p≈0,61). Il faudrait environ 22 000 visites par version pour la confirmer. Une plus faible part des gens arrivés au formulaire l’ont terminé : c’est ce décrochage qu’il aurait fallu étudier ensuite."
+    },
+    {
+     "h": "Ce qui pourrait aussi l’expliquer",
+     "p": "La version B changeait le formulaire et le design en même temps : ce test ne peut donc attribuer le résultat à un seul des deux. Le trafic était aussi inégal, avec 770 et 640 visites. [À FOURNIR : dates du test, source des données et tout autre changement pendant cette période]"
+    },
+    {
+     "h": "Séances avec des personnes",
+     "p": "[À FOURNIR : avez-vous mené des séances modérées? Si oui, donnez les résultats « n sur N » tirés de vos notes. Sinon, cette ligne indique : « Non testé en séances modérées. »]"
     }
    ]
   },

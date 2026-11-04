@@ -9,7 +9,7 @@
    "type": "page-hero",
    "tag": "Case study · Healthcare",
    "h1": "Helping people find a clinical trial *without losing them on the way*",
-   "lead": "A global company ran separate clinical trial microsites and wanted more qualification forms from potential participants. I redesigned the form flow, A/B tested it and shaped one hub to learn, find a nearby trial and apply.",
+   "lead": "A global company ran separate clinical trial microsites and wanted more qualification forms from potential participants. I helped redesign the form flow, built the A/B test around it and guided the team toward one hub to learn, find a nearby trial and apply.",
    "byline": "By Charles-Erick BG",
    "brief": [
     {
@@ -21,8 +21,12 @@
      "t": "UX designer, working with the client’s strategy team and O2Web."
     },
     {
+     "b": "Who decided:",
+     "t": "[À FOURNIR : who made the final calls, by role: you, the client’s strategy team or O2Web?]"
+    },
+    {
      "b": "Scope:",
-     "t": "A/B test methodology, form redesign, information architecture and UI for the hub."
+     "t": "A/B test methodology, measurement plan and UX for the form and the hub. The UI was a team effort."
     },
     {
      "b": "Year:",
@@ -40,10 +44,10 @@
   {
    "type": "cd-text",
    "label": "The problem",
-   "h2": "Interested people *weren’t reaching the form*",
+   "h2": "Most visitors *never reached the form*",
    "prose": [
-    "Clinical trials ask a lot of people, often at a difficult time in their health. They need to understand the disease and the process, then find a trial nearby, before they’ll share personal details.",
-    "The leadership team wanted more qualification forms from potential participants. The content was spread across separate microsites, so there were two jobs to do."
+    "In the original version, 94.4% of visitors left before reaching the qualification form. The leadership team wanted more forms from potential participants.",
+    "People needed to learn about the disease and the trial process, find a nearby trial, then apply. That content was spread across separate microsites, so there were two jobs to do."
    ],
    "steps": [
     {
@@ -57,6 +61,17 @@
    ]
   },
   {
+   "type": "cd-text",
+   "label": "Approach",
+   "h2": "How we *investigated and measured*",
+   "theme": "light",
+   "prose": [
+    "I worked closely with the client’s strategy team to define target user profiles and the indicators that mattered, then wrote the A/B test methodology and measurement plan. I also made sure the measuring tools were in place.",
+    "I guided the project team through inspiration, ideation, prototyping and technical validation, with wireframes in Axure and analytics from Google Analytics and Hotjar."
+   ],
+   "wide": true
+  },
+  {
    "type": "cd-decisions",
    "label": "Key decisions",
    "h2": "What I decided, *and why*",
@@ -66,12 +81,16 @@
      "p": "The form moved from one flow to two steps: a prescreener, then personal information.",
      "notes": [
       {
-       "k": "Why",
-       "v": "[À FOURNIR : what evidence showed the original form was the problem?]"
+       "k": "Options I had",
+       "v": "[À FOURNIR : what else did you consider: one long form, a shorter form, something else?]"
       },
       {
-       "k": "Trade-off",
-       "v": "[À FOURNIR : what did you give up, or what did the team push back on?]"
+       "k": "Why I chose this",
+       "v": "[À FOURNIR : why not the single form or a lighter one?]"
+      },
+      {
+       "k": "What it gave up",
+       "v": "[À FOURNIR : what was the cost: extra steps, lost completions?]"
       }
      ]
     },
@@ -80,12 +99,16 @@
      "p": "Instead of ending at a rejection, the prescreener sent qualified candidates to a contact form and everyone else to a community form.",
      "notes": [
       {
-       "k": "Why",
-       "v": "[À FOURNIR : why keep them, and what did the client do with this community?]"
+       "k": "Options I had",
+       "v": "[À FOURNIR : a rejection message, a redirect, something else?]"
       },
       {
-       "k": "Trade-off",
-       "v": "[À FOURNIR : did this add work or risk for the client?]"
+       "k": "Why I chose this",
+       "v": "[À FOURNIR : why keep these people, and what did the client do with this community?]"
+      },
+      {
+       "k": "What it gave up",
+       "v": "[À FOURNIR : did it add work or risk for the client?]"
       }
      ]
     },
@@ -94,12 +117,16 @@
      "p": "The hub follows what people need in order: learn about the disease and the process, find nearby trials, then apply.",
      "notes": [
       {
-       "k": "Why",
+       "k": "Options I had",
+       "v": "[À FOURNIR : which other structures did you consider?]"
+      },
+      {
+       "k": "Why I chose this",
        "v": "[À FOURNIR : what research or user profiles led to this order?]"
       },
       {
-       "k": "Alternative rejected",
-       "v": "[À FOURNIR : which other structures did you test or discard?]"
+       "k": "What it gave up",
+       "v": "[À FOURNIR : what got less room or came later?]"
       }
      ]
     },
@@ -108,12 +135,16 @@
      "p": "A map-based search interface lets people find the best options for their condition and location.",
      "notes": [
       {
-       "k": "Why",
-       "v": "[À FOURNIR : why a map rather than a filtered list?]"
+       "k": "Options I had",
+       "v": "[À FOURNIR : a filtered list, a condition directory, something else?]"
       },
       {
-       "k": "Constraint",
-       "v": "[À FOURNIR : what technical or regulatory limit shaped this?]"
+       "k": "Why I chose this",
+       "v": "[À FOURNIR : why a map?]"
+      },
+      {
+       "k": "What it gave up",
+       "v": "[À FOURNIR : what was harder: mobile use, accessibility, a technical limit?]"
       }
      ]
     }
@@ -121,7 +152,7 @@
   },
   {
    "type": "cd-test",
-   "label": "The test",
+   "label": "What real users did",
    "h2": "What the A/B test *showed, and what it didn’t*",
    "results": [
     {
@@ -183,6 +214,14 @@
     {
      "h": "What this test can’t prove",
      "p": "With 15 completions on each side, the overall lift isn’t conclusive (p≈0.61). Confirming it would take about 22,000 visits per version. A smaller share of the people who reached the form finished it, so the next step would have been to study that drop."
+    },
+    {
+     "h": "What else could explain it",
+     "p": "Version B changed the form and the design at the same time, so this test can’t credit either one alone. Traffic was also uneven, with 770 and 640 visits. [À FOURNIR : test dates, analytics source and anything else that changed in that period]"
+    },
+    {
+     "h": "Sessions with people",
+     "p": "[À FOURNIR : did you run moderated sessions? If so, give “n of N” results from your notes. If not, this line reads: “Not tested in moderated sessions.”]"
     }
    ]
   },
