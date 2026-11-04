@@ -1,0 +1,134 @@
+{
+  "key": "not-converting", "slug": "site-web-ne-convertit-pas", "date": "2026-11-03", "modified": "2026-11-03",
+  "tag": "CRO", "read": "12 min de lecture",
+  "title": "Votre site web ne convertit pas ses visiteurs? Voici ce qui cloche",
+  "metaTitle": "Site web qui ne convertit pas? 10 raisons et quoi faire | Viesigners",
+  "description": "Votre site web ne convertit pas ses visiteurs? Découvrez les 10 problèmes de message, d'UX et de confiance les plus courants, et une liste gratuite pour auditer votre site.",
+  "keywords": ["site web qui ne convertit pas", "optimisation du taux de conversion", "CRO", "taux de conversion site web", "liste de vérification conversion"],
+  "summary": [
+    "Quand le trafic ne se transforme pas en demandes, la cause est presque toujours la **friction** : un message qui ne passe pas, un parcours trop difficile ou trop peu de preuves.",
+    "Les 10 problèmes les plus courants se regroupent en trois familles : **message, expérience et confiance**.",
+    "Utilisez la liste de vérification ci-dessous pour auditer votre page la plus visitée en une heure, puis corrigez d'abord ce qui est le plus près de l'argent."
+  ],
+  "body": [
+    { "p": "Des gens arrivent sur votre site. Vos statistiques le prouvent. Et pourtant, le téléphone ne sonne pas." },
+    { "p": "Quand un site web ne convertit pas ses visiteurs, la cause est rarement le trafic ou la qualité de votre offre. C'est la friction : un message qui ne passe pas, un parcours plus difficile qu'il ne devrait l'être ou trop peu de preuves pour justifier le risque. Et pendant ce temps, l'argent reste dans les poches de vos clients." },
+    { "p": "Après avoir conseillé plus de 600 entreprises, des jeunes pousses jusqu'à des marques comme Disney et Dell, nous retrouvons toujours les mêmes schémas. Voici les 10 plus courants, suivis d'une liste de vérification pour auditer votre propre site cette semaine." },
+
+    { "h2": "D'abord, confirmez que vous avez un problème de conversion" },
+    { "p": "Un taux de conversion ne veut rien dire sans le bon point de comparaison, et bien des chiffres qui circulent en ligne sont les mauvais. Le fameux « taux de conversion moyen des sites web » de 2,35 % [provient en fait d'une étude de 2014 sur des comptes Google Ads](https://www.digitalapplied.com/blog/conversion-rate-benchmarks-2026-industry-channel), pas sur des sites web." },
+    { "p": "Ces repères sont un meilleur point de départ :" },
+    { "table": {
+      "head": ["Repère", "Taux", "Ce qui est mesuré"],
+      "rows": [
+        ["Tous les sites web", "2,3 %", "Visites avec un achat ou un formulaire envoyé (Contentsquare, T4 2025)"],
+        ["Ordinateur ou mobile", "3,4 % ou 2,0 %", "Même mesure, selon l'appareil"],
+        ["Visiteurs récurrents ou nouveaux", "2,9 % ou 1,7 %", "Même mesure, selon le type de visiteur"],
+        ["Landing pages dédiées", "6,6 %", "Conversions par visiteur, médiane (Unbounce, 2024)"],
+        ["Landing pages SaaS", "3,8 %", "Conversions par visiteur, médiane (Unbounce, 2024)"]
+      ]
+    } },
+    { "p": "Ne vous arrêtez pas à votre taux global. Séparez-le par source de trafic et par appareil avant de tirer des conclusions. Dans les mêmes données, les visites issues de la recherche payante convertissaient à 2,8 % et celles des réseaux sociaux organiques à 0,7 % : un simple changement dans la provenance de votre trafic peut donner l'impression que votre site est brisé." },
+    { "p": "Si vous êtes sous le repère qui correspond à votre trafic, ou si vous savez simplement que chaque demande vaut plus que ce que vous en tirez, poursuivez votre lecture." },
+
+    { "h2": "Problèmes de message : les visiteurs ne comprennent pas" },
+    { "p": "Le message est généralement ce qui coûte le moins cher à corriger et le plus cher à ignorer. Un visiteur qui ne comprend pas votre offre ne se rendra jamais jusqu'à votre beau design ou à votre tunnel ingénieux." },
+    { "h3": "1. Les visiteurs ne savent pas ce que vous faites" },
+    { "p": "Selon le Nielsen Norman Group, les utilisateurs [accordent généralement une dizaine de secondes à une page](https://www.nngroup.com/articles/powers-of-10-time-scales-in-ux/) avant de décider si elle vaut leur temps. Si votre section d'accueil dit « Des solutions innovantes pour votre entreprise », vous avez gaspillé ces secondes." },
+    { "p": "**La solution :** votre titre doit répondre à trois questions : qu'offrez-vous, à qui, et quel résultat obtiennent-ils? « Remplacement de toiture à Québec, avec soumission ferme en 48 heures » bat n'importe quel slogan." },
+    { "h3": "2. Votre site parle de vous, pas d'eux" },
+    { "p": "Comptez combien de phrases de votre page d'accueil commencent par « nous » ou « notre ». La plupart des sites vitrines se lisent comme une biographie d'entreprise, alors que les visiteurs arrivent avec un problème et veulent savoir si vous le réglez." },
+    { "p": "**La solution :** réécrivez votre premier écran autour de la situation du client. Déplacez votre historique et vos valeurs plus bas, ou dans la page À propos." },
+    { "h3": "3. La page ne tient pas la promesse qui les a amenés" },
+    { "p": "Quelqu'un clique sur une publicité pour un « plombier d'urgence » et atterrit sur une page d'accueil générique. Il doit maintenant chercher ce qu'il vous a déjà dit vouloir, et beaucoup ne s'en donneront pas la peine." },
+    { "p": "**La solution :** associez chaque publicité, courriel ou intention de recherche importante à une page qui reprend la même promesse, avec les mêmes mots. Les campagnes à forte intention méritent généralement une [landing page dédiée](@landing-pages)." },
+    { "h3": "4. Vous décrivez des fonctionnalités plutôt que de la valeur" },
+    { "p": "« Plateforme infonuagique avec plus de 40 intégrations » dit aux gens ce que c'est. Ça ne leur dit pas pourquoi ils devraient s'en soucier. Les entreprises SaaS y sont particulièrement vulnérables, parce que l'équipe est très proche de son produit." },
+    { "p": "**La solution :** après chaque fonctionnalité, demandez-vous « et puis? » jusqu'à arriver à un résultat d'affaires. Mettez ensuite ce résultat de l'avant et servez-vous de la fonctionnalité comme preuve." },
+
+    { "h2": "Problèmes d'UX : les visiteurs comprennent, mais agir est difficile" },
+    { "p": "Une bonne expérience coule comme une glissade d'eau. Chaque décision de trop, chaque délai et chaque cul-de-sac est un endroit où les gens débarquent." },
+    { "h3": "5. Il n'y a pas de prochaine étape évidente" },
+    { "p": "Une page où « En savoir plus », « Obtenir une démo », « Infolettre » et « Nous joindre » se disputent l'attention force les visiteurs à choisir. Beaucoup ne choisiront rien." },
+    { "p": "**La solution :** donnez à chaque page une seule action principale, et faites-en l'élément le plus visible. Remplacez les libellés vagues par ce qui se passe ensuite, comme « Obtenir ma soumission gratuite »." },
+    { "h3": "6. Votre menu reflète votre organigramme" },
+    { "p": "Un menu construit selon la structure de votre entreprise a du sens pour vous et pour presque personne d'autre. Les visiteurs pensent à leur problème, pas à vos départements." },
+    { "p": "**La solution :** organisez vos pages selon ce que vos clients idéaux cherchent à accomplir. Utilisez leurs mots, gardez le menu principal court et assurez-vous que les pages clés sont à un clic de partout." },
+    { "h3": "7. Le site est lent ou malcommode sur téléphone" },
+    { "p": "Le mobile représentait 69,9 % du trafic dans [le repère de Contentsquare](https://www.digitalapplied.com/blog/conversion-rate-benchmarks-2026-industry-channel), et pourtant bien des sites sont encore révisés sur un grand écran d'ordinateur. Une recherche de Google datant de 2017 a révélé que [53 % des visiteurs mobiles quittent une page qui prend plus de trois secondes à charger](https://www.ampproject.org/latest/blog/new-industry-benchmarks-for-mobile-page-speed/). Le chiffre exact a vieilli, mais la leçon, non." },
+    { "p": "**La solution :** testez vos pages clés sur votre propre téléphone, en données cellulaires. Compressez les images, retirez les scripts et les fenêtres surgissantes inutiles, et assurez-vous que les boutons sont faciles à toucher." },
+    { "h3": "8. Vos formulaires en demandent trop, trop tôt" },
+    { "p": "Chaque champ est une petite demande. Exiger un budget, la taille de l'entreprise et un numéro de téléphone avant d'avoir gagné la moindre confiance, c'est comme demander quelqu'un en mariage au premier rendez-vous. Même le commerce en ligne a ce problème : [le repère de Baymard](https://www.digitalapplied.com/blog/conversion-rate-benchmarks-2026-industry-channel) établit le processus de paiement moyen à 11,3 champs, alors que la plupart des sites n'en ont besoin que de 8." },
+    { "p": "**La solution :** retirez tout champ dont vous n'avez pas besoin pour la toute prochaine étape. Dites ce qui se passe après l'envoi, et dans quel délai vous répondrez." },
+
+    { "h2": "Problèmes de confiance : les visiteurs comprennent, mais n'y croient pas" },
+    { "p": "Vos visiteurs prennent un risque avec une entreprise qu'ils ont peut-être découverte il y a cinq minutes. Les signaux de confiance servent à réduire ce risque, et ils ne fonctionnent que si les gens les voient avant que vous leur demandiez quelque chose." },
+    { "h3": "9. Vos preuves sont génériques ou cachées" },
+    { "p": "Un témoignage qui dit « Excellent service! », signé « Jean D. », prouve bien peu de choses. Un mur de logos enfoui dans le pied de page non plus. Ce sont les résultats précis de vraies personnes, nommées, qui font le gros du travail." },
+    { "p": "**La solution :** placez des témoignages nommés, avec des résultats concrets, juste à côté de vos appels à l'action. Montrez le nom de la personne, son rôle, son entreprise et, idéalement, une photo." },
+    { "h3": "10. Vous laissez les questions délicates sans réponse" },
+    { "p": "Combien ça coûte? Combien de temps ça prend? Et si ça ne fonctionne pas? Avec qui vais-je vraiment faire affaire? Quand un site esquive ces questions, les visiteurs imaginent le pire ou vont voir un concurrent qui y répond." },
+    { "p": "**La solution :** répondez directement aux objections avec un processus clair, une fourchette de prix ou un prix de départ, votre garantie et de vraies photos de votre équipe. Une FAQ ciblée près du moment de la décision aide aussi." },
+
+    { "h2": "La liste de vérification de la conversion : auditez votre site en une heure" },
+    { "p": "Cette liste repose sur les schémas que nous avons observés dans plus de 600 entreprises. Ouvrez votre page la plus visitée sur votre téléphone et soyez honnête pour chaque point. Si un élément vous gênerait devant un client, ne le cochez pas." },
+    { "h3": "Message" },
+    { "check": [
+      "Un inconnu peut dire ce que nous faisons, et pour qui, après 5 secondes sur la page",
+      "Notre titre annonce un résultat concret, pas un slogan",
+      "Le premier écran parle davantage du problème du client que de notre entreprise",
+      "Chaque publicité et recherche clé mène à une page qui reprend la même promesse",
+      "Les fonctionnalités sont toujours liées à un résultat d'affaires",
+      "Nos textes utilisent les mots qu'emploient réellement nos clients"
+    ] },
+    { "h3": "Expérience" },
+    { "check": [
+      "Chaque page a une seule action principale, visible sans faire défiler",
+      "Les boutons disent ce qui se passe ensuite",
+      "Le menu est organisé selon les besoins des clients, pas selon notre organigramme",
+      "Les pages clés chargent en moins de trois secondes sur téléphone, en données cellulaires",
+      "Le texte est lisible et les boutons sont faciles à toucher sur mobile",
+      "Les formulaires ne demandent que ce qu'il faut pour la prochaine étape",
+      "Les visiteurs savent ce qui se passe après l'envoi"
+    ] },
+    { "h3": "Confiance" },
+    { "check": [
+      "Des témoignages nommés, avec des résultats précis, apparaissent près de nos appels à l'action",
+      "Logos de clients, prix ou certifications sont visibles avant la première demande",
+      "Notre site montre les vraies personnes derrière l'entreprise",
+      "Les visiteurs trouvent notre processus, nos délais et une indication de prix",
+      "Nous répondons à la principale objection, idéalement avec une garantie",
+      "Nos coordonnées sont faciles à trouver et le contenu est à jour"
+    ] },
+    { "h3": "Mesure" },
+    { "check": [
+      "Les formulaires envoyés, les appels et les achats sont suivis comme conversions",
+      "Nous analysons les résultats par source de trafic et par appareil, pas seulement en un chiffre global"
+    ] },
+    { "p": "**Comment lire vos résultats :** comptez les cases non cochées dans chaque groupe, puis commencez par celui qui en a le plus. En cas d'égalité, suivez cet ordre : mesure, message, expérience, confiance. Inutile de peaufiner un bouton si personne ne comprend l'offre, et vous ne pourrez pas prouver ce qui a fonctionné sans suivi." },
+
+    { "h2": "Quoi corriger en premier (indice : pas tout)" },
+    { "p": "Ne commencez pas par une refonte complète. Corrigez les lacunes les plus près de l'argent, puis mesurez l'effet avant de passer à la suite." },
+    { "ol": [
+      "**Assurez-vous que votre suivi fonctionne.** Sans lui, chaque décision est un pari.",
+      "**Trouvez la plus grosse fuite.** Cherchez les pages qui ont beaucoup de trafic et peu de conversions, surtout sur mobile.",
+      "**Corrigez le message de ces pages.** Commencez par le titre, le premier écran et l'appel à l'action.",
+      "**Retirez la friction.** Simplifiez le parcours, accélérez la page et raccourcissez le formulaire.",
+      "**Ajoutez des preuves là où la décision se prend.** Placez vos meilleures preuves à côté de la demande.",
+      "**Mesurez, puis recommencez.** Comparez les mêmes sources de trafic et les mêmes appareils avant et après chaque changement."
+    ] },
+    { "p": "Attendez-vous à ce que certaines de vos idées soient mauvaises. Sur [173 000 expériences menées avec Optimizely](https://www.digitalapplied.com/blog/conversion-rate-benchmarks-2026-industry-channel), seulement 12 % ont produit une amélioration statistiquement significative de leur indicateur principal. C'est pourquoi nous formulons une hypothèse, la testons et laissons les données trancher, plutôt que de nous fier aux opinions exprimées en réunion." },
+    { "p": "Pas assez de trafic pour faire des tests A/B? Regardez cinq personnes de votre marché cible essayer d'utiliser votre site et demandez-leur de penser à voix haute. Vous en apprendrez beaucoup." },
+
+    { "h2": "Quand le problème va plus loin que quelques ajustements" },
+    { "p": "Parfois, une liste de vérification suffit. D'autres fois, les cases non cochées révèlent un site conçu comme une brochure, jamais pensé pour vendre." },
+    { "p": "C'est le travail que nous faisons chez Viesigners. Nous [concevons des sites web](@sites-web) comme de véritables actifs d'affaires : une structure qui suit les intentions de vos clients, des textes persuasifs, un design crédible et des pages rapides sur mobile, avec le suivi des conversions en place dès le lancement. Nos pages et sites optimisés ont atteint jusqu'à 5× leur performance initiale, et Pharmy a obtenu 48 % plus de conversions après l'optimisation de sa plateforme de recherche d'essais cliniques." },
+    { "p": "Si vous êtes une entreprise de services, une entreprise SaaS ou un créateur d'applications qui veut des résultats plutôt qu'un joli site, [parlons-en](@contact). Nous vous aiderons à trouver où votre site peut gagner en clarté et en conversions." }
+  ],
+  "faq": [
+    { "q": "Pourquoi mon site web a-t-il du trafic, mais pas de ventes?", "a": ["Les causes les plus fréquentes sont un message confus, de la friction dans le parcours client et trop peu de preuves. Un trafic mal ciblé peut aussi être en cause : vérifiez vos résultats par source avant de modifier le site."] },
+    { "q": "Qu'est-ce qu'un bon taux de conversion pour un site web?", "a": ["Ça dépend de votre secteur, de la source du trafic et de ce que vous comptez comme conversion. À titre de repère, Contentsquare a mesuré 2,3 % de visites converties, tous secteurs confondus, et Unbounce a observé une médiane de 6,6 % pour les landing pages. Votre meilleur point de comparaison reste votre propre taux, qui s'améliore avec le temps."] },
+    { "q": "Ai-je besoin d'un nouveau site pour améliorer mes conversions?", "a": ["Pas toujours. Un message plus clair, un appel à l'action plus fort et des preuves mieux placées peuvent souvent être testés sur votre site actuel. Une refonte a plus de sens quand la structure, la technologie ou l'expérience mobile freine ces améliorations."] },
+    { "q": "Quelle est la différence entre un site web et une landing page?", "a": ["Un site web présente l'ensemble de votre entreprise et répond à plusieurs intentions. Une landing page est une page unique conçue pour une seule action, comme demander une soumission ou réserver un appel. Les deux fonctionnent mieux ensemble."] }
+  ]
+}
