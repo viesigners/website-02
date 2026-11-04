@@ -1,13 +1,13 @@
 {
  "meta": {
-  "title": "Ressources — Conseils et études de cas UX/UI, CRO, SEO et GEO | Viesigners",
+  "title": "Blogue — Conseils et études de cas UX/UI, CRO, SEO et GEO | Viesigners",
   "description": "Conseils pratiques et études de cas sur l'optimisation du taux de conversion, les landing pages, le design de produit, le SEO et le GEO, par les fondateurs de Viesigners.",
-  "h1": "Ressources"
+  "h1": "Blogue"
  },
  "sections": [
   {
    "type": "page-hero",
-   "tag": "Ressources",
+   "tag": "Blogue",
    "h1": "Idées pour faire du web *votre avantage déloyal*",
    "lead": "Des conseils concrets et des études de cas sur la conversion, l'expérience utilisateur, le SEO et le GEO.",
    "ctas": []

@@ -58,6 +58,8 @@ function img(rel, alt, { cls = '', lazy = true, sizes, fetchpriority } = {}) {
 }
 
 /* ----------------------------- routes ------------------------------------- */
+/* the blog's address, set once: the section, its category pages, articles and case studies all live under it */
+const BLOG = { fr: 'blogue', en: 'blog' };
 const ROUTES = {
   home: { fr: '', en: '' },
   cebg: { fr: 'charles-erick-bg', en: 'charles-erick-bg' }, // personal portfolio / job-application page
@@ -65,7 +67,7 @@ const ROUTES = {
   'landing-pages': { fr: 'landing-pages', en: 'landing-pages' },
   'design-produit': { fr: 'design-de-produit', en: 'product-design' },
   coaching: { fr: 'conseil-affaires-web', en: 'business-advisory' },
-  'cas-saas': { fr: 'ressources/etude-de-cas-saas-b2b-ia', en: 'resources/b2b-ai-saas-case-study' }, // listed under Resources > Case studies
+  'cas-saas': { fr: `${BLOG.fr}/etude-de-cas-saas-b2b-ia`, en: `${BLOG.en}/b2b-ai-saas-case-study` }, // listed under Blog > Case studies
   publicite: { fr: 'publicite-numerique', en: 'digital-advertising' },
   'medias-sociaux': { fr: 'medias-sociaux', en: 'social-media' },
   'seo-geo': { fr: 'seo-geo', en: 'seo-geo' },
@@ -80,7 +82,7 @@ const ROUTES = {
   privacy: { fr: 'politique-de-confidentialite', en: 'privacy-policy' },
   terms: { fr: 'conditions-generales', en: 'terms-of-use' },
   merci: { fr: 'merci', en: 'thank-you' }, // shown after a form submission: noindex, never linked
-  actualites: { fr: 'ressources', en: 'resources' }, // Resources hub: articles + case studies, one filter page per category
+  actualites: BLOG, // blog: articles + case studies, one filter page per category (the key stays neutral; the name lives in _site.json nav)
 };
 const CASE_KEYS = ['cas-saas']; // rich case-study pages (casestudy format) listed under Resources > Case studies
 /* old public addresses that now forward to their new page (same model as the profile redirect) */
@@ -89,7 +91,7 @@ const MOVED = [
   { from: { fr: 'actualites', en: 'news' }, to: 'actualites' },
   ...['friction', 'geo', 'landing'].map((k) => ({ from: { fr: 'actualites', en: 'news' }, post: k })), // + the post's own slug
 ];
-const RES = { fr: [], en: [] };              // Resources cards (posts + case studies), filled at load
+const RES = { fr: [], en: [] };              // blog cards (posts + case studies), filled at load
 let RES_CATS = {};                           // lang -> categories from actualites.json
 const catUrl = (cat, lang) => url('actualites', lang) + cat.slug + '/';
 /* pages temporarily hidden: still built, but removed from menu, footer, links, sitemap and llms.txt, and marked noindex.
@@ -797,7 +799,7 @@ function buildPage({ lang, key, page, post, tab }) {
 
   /* breadcrumbs */
   const crumbs = [{ name: T.nav.home, url: url('home', lang) }];
-  const resCrumbs = !isHidden('actualites') && (key === 'post' || CASE_KEYS.includes(key)); // Home > Resources > Category > Page
+  const resCrumbs = !isHidden('actualites') && (key === 'post' || CASE_KEYS.includes(key)); // Home > Blog > Category > Page
   if (SERVICE_KEYS.includes(key) || (CASE_KEYS.includes(key) && !resCrumbs)) crumbs.push({ name: T.nav.services, url: url('services', lang) }); // Home > Services > Service
   if (['charles-erick', 'jean-francois'].includes(key)) crumbs.push({ name: T.nav['a-propos'], url: url('a-propos', lang) });
   if (key === 'cas-saas' && !resCrumbs) crumbs.push({ name: T.nav['design-produit'], url: url('design-produit', lang) });
@@ -918,7 +920,7 @@ function build() {
       const page = pages[`${l}:${k}`], nav = page.sections.find((s) => s.type === 'role-nav');
       if (!nav) {
         buildPage({ lang: l, key: k, page });
-        // Resources: one indexable page per category that has items (FAQ stays on the main page)
+        // blog: one indexable page per category that has items (FAQ stays on the main page)
         if (k === 'actualites') RES_CATS[l].forEach((cat, i) => {
           if (!RES[l].some((p) => p.cat === cat.key)) return;
           const urls = Object.fromEntries(LANGS.map((x) => [x, catUrl(RES_CATS[x][i], x)]));

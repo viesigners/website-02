@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Resources — UX/UI, CRO, SEO and GEO insights and case studies | Viesigners",
+    "title": "Blog — UX/UI, CRO, SEO and GEO insights and case studies | Viesigners",
     "description": "Practical insights and case studies on conversion rate optimization, landing pages, product design, SEO and GEO, by the founders of Viesigners.",
-    "h1": "Resources"
+    "h1": "Blog"
   },
   "sections": [
     {
       "type": "page-hero",
-      "tag": "Resources",
+      "tag": "Blog",
       "h1": "Ideas to make the web *your unfair advantage*",
       "lead": "Practical insights and case studies on conversion, user experience, SEO and GEO.",
       "ctas": []
