@@ -492,6 +492,21 @@
    ]
   },
   {
+   "type": "more-skills",
+   "theme": "light",
+   "id": "more-skills",
+   "label": "Other expertise",
+   "h2": "My signature expertise, *and everything around it*",
+   "lead": "UX/UI design, product design and digital marketing are my signature expertise. I can also help with copywriting, SEO and GEO, social media and web business advisory.",
+   "cta": "See the service",
+   "items": [
+    "copywriting",
+    "seo-geo",
+    "medias-sociaux",
+    "coaching"
+   ]
+  },
+  {
    "type": "contact-links",
    "theme": "dark",
    "id": "contact",

@@ -901,3 +901,8 @@ html { scroll-padding-top: 7rem; }
 .rolenav { transition: top .5s var(--ease), opacity .35s ease, transform .35s ease, visibility 0s; }
 .rolenav.is-done { opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-10px); transition: top .5s var(--ease), opacity .35s ease, transform .35s ease, visibility 0s .35s; }
 .form [data-project][hidden] { display: none; }
+
+/* profile: other expertise (links to service pages) */
+.moreskills { display: grid; gap: clamp(.8rem, .5rem + 1vw, 1.25rem); grid-template-columns: 1fr; }
+@media (min-width: 640px) { .moreskills { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .moreskills { grid-template-columns: repeat(4, 1fr); } }

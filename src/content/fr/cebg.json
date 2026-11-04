@@ -488,6 +488,21 @@
    ]
   },
   {
+   "type": "more-skills",
+   "theme": "light",
+   "id": "more-skills",
+   "label": "Autres expertises",
+   "h2": "Mes expertises phares, *et tout ce qui les entoure*",
+   "lead": "Le design UX/UI, le design de produit et le marketing numérique sont mes expertises phares. Je peux aussi vous aider en copywriting, en SEO et GEO, en médias sociaux et en conseil d'affaires web.",
+   "cta": "Voir le service",
+   "items": [
+    "copywriting",
+    "seo-geo",
+    "medias-sociaux",
+    "coaching"
+   ]
+  },
+  {
    "type": "contact-links",
    "theme": "dark",
    "id": "contact",

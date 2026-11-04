@@ -489,6 +489,19 @@ R['portfolio-grid'] = (s, c) => `<section class="section"><div class="wrap">
   ${pgrid(s.items, c)}
   ${awardsBar(s, c)}
 </div></section>`;
+/* "other expertise": links to service pages, in the order given; descriptions reuse the menu subtitles */
+R['more-skills'] = (s, c) => {
+  const { lang, T } = c;
+  const cards = s.items.filter((k) => !isHidden(k)).map((k, i) => `<article class="card card--mini rv" style="--d:${(i % 4) * .06}s">
+    <h3><a class="more" href="${url(k, lang)}" aria-label="${esc(T.nav[k])}"></a>${esc(T.nav[k])}</h3>
+    <p>${esc(T.navSub[k])}</p>
+    <div class="card__foot"><span class="link-arrow">${esc(s.cta)} ${ico('arrow')}</span></div>
+  </article>`).join('');
+  return `<section class="section" id="${s.id || 'more-skills'}"><div class="wrap">
+  ${secHead(s, c, 'more-skills', { label: s.label })}
+  <div class="moreskills">${cards}</div>
+</div></section>`;
+};
 R['contact-links'] = (s, c) => `<section class="section" id="${s.id}"><div class="wrap"><div class="cta-final rv">
   <h2 class="display">${fmt(s.h2, c.lang)}</h2>
   <p>${esc(s.p)} <a class="biglink" href="sms:${CFG.phoneRaw}">${esc(s.phone)}</a> · <a class="biglink" href="${contactUrl(c, 'hi')}">${esc(s.email)}</a></p>
@@ -747,6 +760,7 @@ function toMd(page, c) {
       case 'cases': L.push(`## ${t(s.label)} — ${t(s.h2)}`, '', t(s.lead), '', ...s.items.flatMap((k) => [`### ${t(k.h3)}`, ...k.paras.map(t), ...k.nums.map((n) => `- **${n.n}** ${n.t}`), `${c.T.myRole}: ${t(k.role)}`, '']), ''); break;
       case 'result-cards': L.push(`## ${t(s.label)}`, '', ...s.items.flatMap((k) => [`### ${k.h3}`, t(k.p), ...k.roles.map((r) => `- ${r}`), '']), ''); break;
       case 'portfolio': L.push(`## ${t(s.label)} — ${t(s.h2)}`, '', t(s.lead), '', ...s.skills.map((k) => `- ${k}`), ...s.proof.map((i) => `- **${i.n}** ${i.t}`), '', ...(s.items || []).map((k) => `- ${k.title} — ${k.result}`), ''); break;
+      case 'more-skills': L.push(`## ${t(s.h2)}`, '', t(s.lead), '', ...s.items.filter((k) => !isHidden(k)).map((k) => `- [${T.nav[k]}](${abs(url(k, lang))}) — ${T.navSub[k]}`), ''); break;
       case 'portfolio-grid': L.push(`## ${t(s.h2)}`, '', ...s.items.map((k) => `- ${k.title} — ${k.result}`), ''); break;
       case 'contact-links': L.push(`## ${t(s.h2)}`, '', `${s.p} ${CFG.phone}`, ''); break;
       case 'testimonials': L.push(`## ${t(s.h2)}`, '', ...s.items.map((x) => `> ${x.text}\n> — ${x.name}${x.role ? ', ' + x.role : ''} (${x.date})`), ''); break;
