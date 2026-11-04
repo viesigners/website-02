@@ -1,19 +1,50 @@
 {
  "meta": {
-  "title": "Blogue — UX/UI, CRO, SEO et GEO | Viesigners",
-  "description": "Articles pratiques sur l'optimisation du taux de conversion, les landing pages, le design de produit, le SEO et le GEO, par les fondateurs de Viesigners.",
-  "h1": "Blogue"
+  "title": "Ressources — Conseils et études de cas UX/UI, CRO, SEO et GEO | Viesigners",
+  "description": "Conseils pratiques et études de cas sur l'optimisation du taux de conversion, les landing pages, le design de produit, le SEO et le GEO, par les fondateurs de Viesigners.",
+  "h1": "Ressources"
  },
  "sections": [
   {
    "type": "page-hero",
-   "tag": "Blogue",
+   "tag": "Ressources",
    "h1": "Idées pour faire du web *votre avantage déloyal*",
-   "lead": "Des articles concrets sur la conversion, l'expérience utilisateur, le SEO et le GEO.",
+   "lead": "Des conseils concrets et des études de cas sur la conversion, l'expérience utilisateur, le SEO et le GEO.",
    "ctas": []
   },
   {
-   "type": "posts-list"
+   "type": "posts-list",
+   "filterLabel": "Catégories",
+   "all": "Tout",
+   "categories": [
+    {
+     "key": "insights",
+     "slug": "conseils",
+     "label": "Conseils",
+     "title": "Conseils UX/UI, CRO, SEO et GEO | Viesigners",
+     "description": "Conseils pratiques sur la conversion, les landing pages, l'expérience utilisateur, le SEO et le GEO, par les fondateurs de Viesigners.",
+     "h1": "Conseils pour faire du web *votre avantage déloyal*",
+     "lead": "Des articles concrets sur la conversion, l'expérience utilisateur, le SEO et le GEO."
+    },
+    {
+     "key": "case-studies",
+     "slug": "etudes-de-cas",
+     "label": "Études de cas",
+     "title": "Études de cas UX/UI et CRO | Viesigners",
+     "description": "Études de cas de Viesigners : le problème, ce que nous avons fait et les résultats mesurés.",
+     "h1": "Études de cas : *le problème, la démarche, les résultats*",
+     "lead": "Comment nous avons aidé nos clients, étape par étape."
+    },
+    {
+     "key": "news",
+     "slug": "actualites",
+     "label": "Actualités",
+     "title": "Actualités | Viesigners",
+     "description": "Les nouvelles de Viesigners.",
+     "h1": "Actualités de *Viesigners*",
+     "lead": "Nos nouvelles et annonces."
+    }
+   ]
   },
   {
    "type": "faq",

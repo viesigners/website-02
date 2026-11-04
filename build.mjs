@@ -65,7 +65,7 @@ const ROUTES = {
   'landing-pages': { fr: 'landing-pages', en: 'landing-pages' },
   'design-produit': { fr: 'design-de-produit', en: 'product-design' },
   coaching: { fr: 'conseil-affaires-web', en: 'business-advisory' },
-  'cas-saas': { fr: 'design-de-produit/etude-de-cas-saas-b2b-ia', en: 'product-design/b2b-ai-saas-case-study' },
+  'cas-saas': { fr: 'ressources/etude-de-cas-saas-b2b-ia', en: 'resources/b2b-ai-saas-case-study' }, // listed under Resources > Case studies
   publicite: { fr: 'publicite-numerique', en: 'digital-advertising' },
   'medias-sociaux': { fr: 'medias-sociaux', en: 'social-media' },
   'seo-geo': { fr: 'seo-geo', en: 'seo-geo' },
@@ -80,8 +80,18 @@ const ROUTES = {
   privacy: { fr: 'politique-de-confidentialite', en: 'privacy-policy' },
   terms: { fr: 'conditions-generales', en: 'terms-of-use' },
   merci: { fr: 'merci', en: 'thank-you' }, // shown after a form submission: noindex, never linked
-  actualites: { fr: 'blogue', en: 'blog' },
+  actualites: { fr: 'ressources', en: 'resources' }, // Resources hub: articles + case studies, one filter page per category
 };
+const CASE_KEYS = ['cas-saas']; // rich case-study pages (casestudy format) listed under Resources > Case studies
+/* old public addresses that now forward to their new page (same model as the profile redirect) */
+const MOVED = [
+  { from: { fr: 'design-de-produit/etude-de-cas-saas-b2b-ia', en: 'product-design/b2b-ai-saas-case-study' }, to: 'cas-saas' },
+  { from: { fr: 'actualites', en: 'news' }, to: 'actualites' },
+  ...['friction', 'geo', 'landing'].map((k) => ({ from: { fr: 'actualites', en: 'news' }, post: k })), // + the post's own slug
+];
+const RES = { fr: [], en: [] };              // Resources cards (posts + case studies), filled at load
+let RES_CATS = {};                           // lang -> categories from actualites.json
+const catUrl = (cat, lang) => url('actualites', lang) + cat.slug + '/';
 /* pages temporarily hidden: still built, but removed from menu, footer, links, sitemap and llms.txt, and marked noindex.
    Edit "hidden" in src/config.json to bring them back (empty list = everything visible). */
 const HIDDEN = new Set(CFG.hidden || []);
@@ -504,8 +514,10 @@ R['cta-final'] = (s, c) => `<section class="section section--tight"><div class="
 </div></section>`;
 
 R['posts-list'] = (s, c) => {
-  const list = POSTS[c.lang].slice().sort((a, b) => b.date.localeCompare(a.date));
-  return `<section class="section"><div class="wrap"><div class="posts">${list.map((p, k) => `<article class="post-card rv" style="--d:${(k % 2) * .08}s"><span class="tag">${esc(p.tag)}</span><h3><a class="more" href="${url('post:' + p.key, c.lang)}" aria-label="${esc(p.title)}"></a>${esc(p.title)}</h3><p>${esc(p.description)}</p><div class="meta"><time datetime="${p.date}">${new Date(p.date).toLocaleDateString(c.lang === 'fr' ? 'fr-CA' : 'en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time><span>${esc(p.read)}</span></div></article>`).join('')}</div></div></section>`;
+  const all = RES[c.lang], list = c.activeTab ? all.filter((p) => p.cat === c.activeTab) : all;
+  const cats = (s.categories || []).filter((k) => all.some((p) => p.cat === k.key)); // a category with no item stays hidden
+  const filters = cats.length > 1 ? `<nav class="filters rv" aria-label="${esc(s.filterLabel)}"><a href="${url('actualites', c.lang)}"${c.activeTab ? '' : ' aria-current="page"'}>${esc(s.all)}</a>${cats.map((k) => `<a href="${catUrl(k, c.lang)}"${c.activeTab === k.key ? ' aria-current="page"' : ''}>${esc(k.label)}</a>`).join('')}</nav>` : '';
+  return `<section class="section"><div class="wrap">${filters}<div class="posts">${list.map((p, k) => `<article class="post-card rv" style="--d:${(k % 2) * .08}s"><span class="tag">${esc(p.tag)}</span><h3><a class="more" href="${p.href}" aria-label="${esc(p.title)}"></a>${esc(p.title)}</h3><p>${esc(p.description)}</p><div class="meta">${p.date ? `<time datetime="${p.date}">${new Date(p.date).toLocaleDateString(c.lang === 'fr' ? 'fr-CA' : 'en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time>` : ''}${p.read ? `<span>${esc(p.read)}</span>` : ''}</div></article>`).join('')}</div></div></section>`;
 };
 
 R.article = (s, c) => {
@@ -655,7 +667,7 @@ function header(c) {
   const cur = (k, extra = []) => (key === k || extra.includes(key) ? ' aria-current="page"' : '');
   const main = [['home', 'home'], ['a-propos', 'a-propos'], ['realisations', 'realisations'], ['actualites', 'actualites'], ['contact', 'contact']]
       .filter(([k]) => !isHidden(k))
-    .map(([k, label]) => `<a href="${url(k, lang)}"${cur(k, k === 'a-propos' ? ['charles-erick', 'jean-francois'] : k === 'actualites' ? ['post'] : [])}>${esc(T.nav[label])}</a>`).join('');
+    .map(([k, label]) => `<a href="${url(k, lang)}"${cur(k, k === 'a-propos' ? ['charles-erick', 'jean-francois'] : k === 'actualites' ? ['post', ...CASE_KEYS] : [])}>${esc(T.nav[label])}</a>`).join('');
   const services = MAIN_SERVICE_KEYS.filter((k) => !isHidden(k)).map((k) => `<a href="${url(k, lang)}"${cur(k)}>${esc(T.nav[k])}<small>${esc(T.navSub[k])}</small></a>`).join('') + `<a class="drawer__all" href="${url('services', lang)}"${cur('services')}>${esc(T.navAll)} ${ico('arrow')}</a>`;
   return `<a class="skip" href="#main">${esc(T.skip)}</a>
 <header class="header" id="top">
@@ -744,7 +756,7 @@ function toMd(page, c) {
       case 'people': L.push(`## ${t(s.h2)}`, '', ...s.items.map((p) => `- **${p.name}** (${p.role}) — ${t(p.text)}`), ''); break;
       case 'facts': L.push(`## ${t(s.h2)}`, '', ...s.items.map((i) => `- **${t(i.k)}**: ${t(i.v)}`), ''); break;
       case 'article': L.push(...c.post.summary.map((i) => `- ${t(i)}`), '', ...c.post.body.flatMap((b) => b.h2 ? [`## ${t(b.h2)}`, ''] : b.h3 ? [`### ${t(b.h3)}`, ''] : b.p ? [t(b.p), ''] : b.ul ? [...b.ul.map((i) => `- ${t(i)}`), ''] : b.ol ? [...b.ol.map((i, n) => `${n + 1}. ${t(i)}`), ''] : b.check ? [...b.check.map((i) => `- [ ] ${t(i)}`), ''] : b.table ? [`| ${b.table.head.map(t).join(' | ')} |`, `|${b.table.head.map(() => ' --- |').join('')}`, ...b.table.rows.map((r) => `| ${r.map(t).join(' | ')} |`), ''] : [])); break;
-      case 'posts-list': L.push(...POSTS[lang].map((p) => `- [${p.title}](${abs(url('post:' + p.key, lang))}) — ${p.description}`), ''); break;
+      case 'posts-list': L.push(...RES[lang].filter((p) => !c.activeTab || p.cat === c.activeTab).map((p) => `- [${p.title}](${abs(p.href)}) — ${p.description}`), ''); break;
       case 'contact': L.push(t(s.lead), '', ...s.points.map((p) => `- ${t(p)}`), '', `${s.labels.phone}: ${CFG.phone}`, `${cityQc(lang)}, Canada · Vancouver, Canada`, ''); break;
       case 'profile-hero': L.push(t(s.role), '', t(s.lead), '', ...s.glance.map((g) => `- ${g.k}: ${g.v}`), ''); break;
       case 'cases': L.push(`## ${t(s.label)} — ${t(s.h2)}`, '', t(s.lead), '', ...s.items.flatMap((k) => [`### ${t(k.h3)}`, ...k.paras.map(t), ...k.nums.map((n) => `- **${n.n}** ${n.t}`), `${c.T.myRole}: ${t(k.role)}`, '']), ''); break;
@@ -785,10 +797,11 @@ function buildPage({ lang, key, page, post, tab }) {
 
   /* breadcrumbs */
   const crumbs = [{ name: T.nav.home, url: url('home', lang) }];
-  if (SERVICE_KEYS.includes(key) || key === 'cas-saas') crumbs.push({ name: T.nav.services, url: url('services', lang) }); // Home > Services > Service
+  const resCrumbs = !isHidden('actualites') && (key === 'post' || CASE_KEYS.includes(key)); // Home > Resources > Category > Page
+  if (SERVICE_KEYS.includes(key) || (CASE_KEYS.includes(key) && !resCrumbs)) crumbs.push({ name: T.nav.services, url: url('services', lang) }); // Home > Services > Service
   if (['charles-erick', 'jean-francois'].includes(key)) crumbs.push({ name: T.nav['a-propos'], url: url('a-propos', lang) });
-  if (key === 'cas-saas') crumbs.push({ name: T.nav['design-produit'], url: url('design-produit', lang) });
-  if (key === 'post') crumbs.push({ name: T.nav.actualites, url: url('actualites', lang) });
+  if (key === 'cas-saas' && !resCrumbs) crumbs.push({ name: T.nav['design-produit'], url: url('design-produit', lang) });
+  if (key === 'post' || resCrumbs) { crumbs.push({ name: T.nav.actualites, url: url('actualites', lang) }); const cat = RES_CATS[lang]?.find((k) => k.key === (key === 'post' ? post.category || 'insights' : 'case-studies')); if (cat && resCrumbs) crumbs.push({ name: cat.label, url: catUrl(cat, lang) }); }
   if (key !== 'home') crumbs.push({ name: key === 'post' ? post.title : T.nav[key], url: tab ? url(key, lang) : selfUrl });
   if (tab) crumbs.push({ name: tab.label, url: selfUrl });
 
@@ -890,12 +903,30 @@ function build() {
   }
   const pages = {};
   for (const l of LANGS) for (const k of Object.keys(ROUTES)) pages[`${l}:${k}`] = rd(path.join(SRC, 'content', l, `${k}.json`));
+  for (const l of LANGS) {
+    const sec = pages[`${l}:actualites`].sections.find((s) => s.type === 'posts-list');
+    RES_CATS[l] = sec.categories || [];
+    RES[l] = [
+      ...POSTS[l].map((p) => ({ cat: p.category || 'insights', tag: p.tag, title: p.title, description: p.description, date: p.date, read: p.read, href: url('post:' + p.key, l) })),
+      ...CASE_KEYS.map((k) => { const pg = pages[`${l}:${k}`]; return { cat: 'case-studies', tag: pg.sections[0].tag, title: pg.meta.h1, description: pg.meta.description, date: pg.published, href: url(k, l) }; }),
+    ].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+  }
   PROFILE_FIRST = Object.fromEntries(LANGS.map((l) => [l, pages[`${l}:cebg`].sections.find((s) => s.type === 'role-nav')?.items[0]?.path]));
 
   for (const l of LANGS) {
     for (const k of Object.keys(ROUTES)) {
       const page = pages[`${l}:${k}`], nav = page.sections.find((s) => s.type === 'role-nav');
-      if (!nav) { buildPage({ lang: l, key: k, page }); continue; }
+      if (!nav) {
+        buildPage({ lang: l, key: k, page });
+        // Resources: one indexable page per category that has items (FAQ stays on the main page)
+        if (k === 'actualites') RES_CATS[l].forEach((cat, i) => {
+          if (!RES[l].some((p) => p.cat === cat.key)) return;
+          const urls = Object.fromEntries(LANGS.map((x) => [x, catUrl(RES_CATS[x][i], x)]));
+          const sections = page.sections.filter((s) => s.type !== 'faq').map((s) => (s.type === 'page-hero' ? { ...s, h1: cat.h1, lead: cat.lead } : s));
+          buildPage({ lang: l, key: k, page: { ...page, meta: { ...page.meta, title: cat.title, description: cat.description, h1: cat.label }, sections, faq: [] }, tab: { id: cat.key, index: i, label: cat.label, urls } });
+        });
+        continue;
+      }
       nav.items.forEach((item, i) => {
         // keep shared sections (profile, testimonials, contact); show only this tab's role; FAQ lives on the first tab only
         const sections = page.sections.filter((s) => (!sectionRole(s) || sectionRole(s) === item.id) && (i === 0 || s.type !== 'faq'));
@@ -908,6 +939,13 @@ function build() {
       write(path.join(DIST, profileBase(l).slice(BASE.length), 'index.html'), `<!doctype html>
 <html lang="${l}"><head><meta charset="utf-8"><meta name="robots" content="noindex"><link rel="canonical" href="${abs(first)}"><meta http-equiv="refresh" content="0; url=${first}"><title>${esc(page.meta.h1 || '')}</title></head>
 <body><script>location.replace(${JSON.stringify(first)} + location.hash)</script><p><a href="${first}">${esc(nav.items[0].label)}</a></p></body></html>
+`);
+    }
+    for (const m of MOVED) {
+      const to = m.post ? url('post:' + m.post, l) : url(m.to, l);
+      write(path.join(DIST, l, m.from[l], m.post ? CURRENT_POST_SLUGS[m.post][l] : '', 'index.html'), `<!doctype html>
+<html lang="${l}"><head><meta charset="utf-8"><meta name="robots" content="noindex"><link rel="canonical" href="${abs(to)}"><meta http-equiv="refresh" content="0; url=${to}"><title>Viesigners</title></head>
+<body><script>location.replace(${JSON.stringify(to)} + location.hash)</script><p><a href="${to}">${to}</a></p></body></html>
 `);
     }
     for (const p of POSTS[l]) {
