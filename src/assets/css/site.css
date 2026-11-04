@@ -174,7 +174,7 @@ em.acc, .acc {
 @media (max-width: 639.98px) { .hmenu__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; } .hmenu, .hphone { width: 3rem; padding-inline: 0; justify-content: center; } .hphone svg { width: 1.4rem; height: 1.4rem; } }
 
 .drawer { position: fixed; inset: 0; z-index: var(--z-menu); background: var(--charcoal); padding: 6.5rem 0 2rem; overflow-y: auto; transform: translateY(-100%); visibility: hidden; transition: transform .6s var(--ease), visibility 0s .6s; }
-.drawer::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(55% 60% at 90% 100%, rgba(255, 72, 139, .42), rgba(255, 72, 139, 0) 70%), radial-gradient(40% 45% at 100% 6%, rgba(227, 58, 219, .3), rgba(227, 58, 219, 0) 70%), radial-gradient(35% 45% at 0% 100%, rgba(255, 107, 156, .2), rgba(255, 107, 156, 0) 70%), radial-gradient(30% 40% at 50% 0%, rgba(190, 70, 235, .18), rgba(190, 70, 235, 0) 70%); }
+.drawer::before { content: ""; position: fixed; inset: 0; pointer-events: none; background: radial-gradient(55% 60% at 90% 100%, rgba(255, 72, 139, .42), rgba(255, 72, 139, 0) 70%), radial-gradient(40% 45% at 100% 6%, rgba(227, 58, 219, .3), rgba(227, 58, 219, 0) 70%), radial-gradient(35% 45% at 0% 100%, rgba(255, 107, 156, .2), rgba(255, 107, 156, 0) 70%), radial-gradient(30% 40% at 50% 0%, rgba(190, 70, 235, .18), rgba(190, 70, 235, 0) 70%); }
 .drawer.no-anim { transition: none !important; }
 /* first paint right after a language switch: show the menu already open (no flash of the page behind it) */
 .menu-restore body { overflow: hidden; }
@@ -188,7 +188,7 @@ em.acc, .acc {
 .menu-restore .hmenu__i i:nth-child(2) { opacity: 0; }
 .menu-restore .hmenu__i i:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 .drawer.is-open { transform: none; visibility: visible; transition: transform .6s var(--ease); }
-.drawer::after { content: ""; position: absolute; inset: 0; pointer-events: none; background-image: radial-gradient(rgba(219, 229, 237, .55) 1.2px, transparent 1.7px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(60% 65% at 92% 100%, #000, transparent 76%); mask-image: radial-gradient(60% 65% at 92% 100%, #000, transparent 76%); opacity: .5; }
+.drawer::after { content: ""; position: fixed; inset: 0; pointer-events: none; background-image: radial-gradient(rgba(219, 229, 237, .55) 1.2px, transparent 1.7px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(60% 65% at 92% 100%, #000, transparent 76%); mask-image: radial-gradient(60% 65% at 92% 100%, #000, transparent 76%); opacity: .5; }
 .drawer__in { z-index: 1; position: relative; display: grid; gap: 2.5rem 4rem; }
 .drawer__main { display: grid; gap: .1rem; align-content: start; }
 .drawer__main a { font-family: var(--f-display); font-weight: 300; letter-spacing: -.03em; font-size: clamp(2.2rem, 1rem + 4.4vw, 4.2rem); line-height: 1.12; padding: .1rem 0; transition: color .25s, padding-left .4s var(--ease); }
