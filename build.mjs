@@ -959,7 +959,7 @@ function build() {
         page: {
           meta: { title: p.metaTitle || `${p.title} | Viesigners`, description: p.description, h1: p.title }, updated: p.modified || p.date, published: p.date, faq: p.faq, speakable: true,
           sections: [
-            { type: 'page-hero', tag: p.tag, h1: p.title, lead: p.description, ctas: [] },
+            { type: 'page-hero', tag: p.tag, h1: p.h1 || p.title, /* h1 may carry *accent* markup; title stays plain for meta, cards and schema */ lead: p.description, ctas: [] },
             { type: 'article' },
             { type: 'faq', h2: T.faqTitle },
             { type: 'cta-final', ...T.postCta },
