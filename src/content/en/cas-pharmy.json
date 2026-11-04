@@ -1,36 +1,32 @@
 {
  "meta": {
-  "title": "Pharmy Case Study: Clinical Trial Hub | Viesigners",
-  "description": "How Charles-Erick BG redesigned a clinical trial application flow, A/B tested it and shaped a hub for finding nearby trials.",
+  "title": "Pharmy Case Study: One Searchable Clinical Trial Platform | Viesigners",
+  "description": "How Charles-Erick BG led the UX of one searchable clinical trial platform and tested a two-step form on real traffic.",
   "h1": "Pharmy case study"
  },
  "sections": [
   {
    "type": "page-hero",
    "tag": "Case study · Healthcare",
-   "h1": "Helping people find a clinical trial *without losing them on the way*",
-   "lead": "A global company ran separate clinical trial microsites and wanted more qualification forms from potential participants. I helped redesign the form flow, built the A/B test around it and guided the team toward one hub to learn, find a nearby trial and apply.",
+   "h1": "Turning scattered trial pages into *one searchable platform*",
+   "lead": "I led the UX on this project as a UX consultant at O2Web. We brought each study’s landing page into one platform, like Airbnb for clinical trials, built around what focus groups said people needed to trust the process.",
    "byline": "By Charles-Erick BG",
    "brief": [
     {
      "b": "Client:",
-     "t": "a company of about 30,000 employees focused on difficult-to-cure diseases. Pharmy is a fictional name; the real one is under NDA."
+     "t": "a large global pharmaceutical company. Pharmy is a fictional name; the real one is under NDA."
     },
     {
      "b": "My role:",
-     "t": "UX designer, working with the client’s strategy team and O2Web."
+     "t": "UX consultant at O2Web, leading the UX."
     },
     {
      "b": "Who decided:",
-     "t": "[À FOURNIR : who made the final calls, by role: you, the client’s strategy team or O2Web?]"
+     "t": "I worked mainly with a consultant hired by the client. He approved the work, and the client made the final decisions."
     },
     {
      "b": "Scope:",
-     "t": "A/B test methodology, measurement plan and UX for the form and the hub. The UI was a team effort."
-    },
-    {
-     "b": "Year:",
-     "t": "[À FOURNIR : project year and duration]"
+     "t": "A/B test methodology, measurement plan and UX for the platform and the form. The UI was a team effort."
     }
    ]
   },
@@ -44,19 +40,19 @@
   {
    "type": "cd-text",
    "label": "The problem",
-   "h2": "Most visitors *never reached the form*",
+   "h2": "People needed to *trust the process* before searching for a trial",
    "prose": [
-    "In the original version, 94.4% of visitors left before reaching the qualification form. The leadership team wanted more forms from potential participants.",
-    "People needed to learn about the disease and the trial process, find a nearby trial, then apply. That content was spread across separate microsites, so there were two jobs to do."
+    "The client’s focus groups started this project. They showed that people were missing the information they needed to trust the platform and the process, and to decide to join a trial.",
+    "They also showed that distance mattered: people had to go on site, so they needed a clinic close enough to reach. Each study had its own landing page, so there were two jobs to do."
    ],
    "steps": [
     {
-     "h": "Improve the existing flow",
-     "p": "Split the application form in two steps, redesign the microsites and measure the change with an A/B test."
+     "h": "Bring the studies together",
+     "p": "Merge each study’s landing page into one searchable platform, like Airbnb for clinical trials."
     },
     {
-     "h": "Bring the microsites together",
-     "p": "Combine them in one hub where people gain knowledge and find the closest trials for their condition."
+     "h": "Test the form on real traffic",
+     "p": "Compare a one-step form with a two-step form on the same design."
     }
    ]
   },
@@ -66,8 +62,8 @@
    "h2": "How we *investigated and measured*",
    "theme": "light",
    "prose": [
-    "I worked closely with the client’s strategy team to define target user profiles and the indicators that mattered, then wrote the A/B test methodology and measurement plan. I also made sure the measuring tools were in place.",
-    "I guided the project team through inspiration, ideation, prototyping and technical validation, with wireframes in Axure and analytics from Google Analytics and Hotjar."
+    "I worked closely with the client’s team to define target user profiles and the indicators that mattered, then wrote the A/B test methodology and measurement plan. I also made sure the measuring tools were in place.",
+    "I guided the project team through inspiration, ideation, prototyping and technical validation. The focus groups were run by the client before the project; I built on their findings."
    ],
    "wide": true
   },
@@ -77,74 +73,70 @@
    "h2": "What I decided, *and why*",
    "items": [
     {
-     "h": "Prescreen first, ask for personal details later",
-     "p": "The form moved from one flow to two steps: a prescreener, then personal information.",
+     "h": "Split a long form in two steps to capture leads sooner",
+     "p": "The first step collected contact details, so the client could get a lead even if the person didn’t finish.",
      "notes": [
       {
        "k": "Options I had",
-       "v": "[À FOURNIR : what else did you consider: one long form, a shorter form, something else?]"
+       "v": "Keep one step, which could have reduced friction a little."
       },
       {
        "k": "Why I chose this",
-       "v": "[À FOURNIR : why not the single form or a lighter one?]"
+       "v": "The form was long, and I wanted the client to get leads as soon as possible, even from people who didn’t finish."
       },
       {
        "k": "What it gave up",
-       "v": "[À FOURNIR : what was the cost: extra steps, lost completions?]"
+       "v": "More build work, such as the UI to go back a step, and a lower finish rate: 28% instead of 35%."
       }
      ]
     },
     {
-     "h": "Give unqualified people somewhere to go",
-     "p": "Instead of ending at a rejection, the prescreener sent qualified candidates to a contact form and everyone else to a community form.",
+     "h": "Give people who don’t qualify a reason to stay",
+     "p": "People who didn’t qualify could join a community through the newsletter.",
      "notes": [
       {
-       "k": "Options I had",
-       "v": "[À FOURNIR : a rejection message, a redirect, something else?]"
-      },
-      {
        "k": "Why I chose this",
-       "v": "[À FOURNIR : why keep these people, and what did the client do with this community?]"
+       "v": "The newsletter kept them in the loop, so the client could reach them again and convert them later."
       },
       {
        "k": "What it gave up",
-       "v": "[À FOURNIR : did it add work or risk for the client?]"
+       "v": "No downside noted for the client."
       }
      ]
     },
     {
-     "h": "Build the journey around three questions",
-     "p": "The hub follows what people need in order: learn about the disease and the process, find nearby trials, then apply.",
+     "h": "Answer objections before asking people to search",
+     "p": "The homepage explains the project first, and a button then leads to the search.",
      "notes": [
       {
        "k": "Options I had",
-       "v": "[À FOURNIR : which other structures did you consider?]"
+       "v": "Put the trial search first."
       },
       {
        "k": "Why I chose this",
-       "v": "[À FOURNIR : what research or user profiles led to this order?]"
+       "v": "If people have objections, they won’t act. The focus groups showed what was missing, so the right information had to come first."
       },
       {
        "k": "What it gave up",
-       "v": "[À FOURNIR : what got less room or came later?]"
+       "v": "Everyone lands on an informational page before searching. To limit that, the search stayed the most prominent item in the main menu."
       }
      ]
     },
     {
-     "h": "Make location the core of the search",
-     "p": "A map-based search interface lets people find the best options for their condition and location.",
+     "h": "Make distance visible with a map",
+     "p": "People search by condition and location, and see the trials on a map.",
      "notes": [
       {
        "k": "Options I had",
-       "v": "[À FOURNIR : a filtered list, a condition directory, something else?]"
+       "v": "A filtered list."
       },
       {
        "k": "Why I chose this",
-       "v": "[À FOURNIR : why a map?]"
+       "v": "The focus groups showed people needed to be close to the clinic because they had to go on site. How far they would travel depended on the disease."
       },
       {
        "k": "What it gave up",
-       "v": "[À FOURNIR : what was harder: mobile use, accessibility, a technical limit?]"
+       "v": "It was much harder to design and build: clusters when zooming out, whether a click zooms or lists the trials, and a list that stays clear on mobile."
       }
      ]
     }
@@ -157,71 +149,66 @@
    "results": [
     {
      "n": "+48%",
-     "t": "higher share of visitors reached the qualification form, from 5.6% to 8.3%"
+     "t": "more leads captured by the two-step form, counting first-step submissions: 5.6% to 8.3% of visits. [À FOURNIR : confirm in your final report, see the note in Claude’s reply]"
     },
     {
-     "n": "15 vs 15",
-     "t": "completed forms on 770 and 640 visits, from 1.95% to 2.34%"
+     "n": "+20%",
+     "t": "completion rate per visit, 1.95% to 2.34%. Small sample, not statistically significant."
     },
     {
-     "n": "7 of 15",
-     "t": "version B completions were prequalified candidates"
+     "n": "47%",
+     "t": "of version B completions were prequalified candidates. The others joined the community."
     }
    ],
    "caption": "Funnel by version",
    "head": [
     "Stage",
-    "Version A",
-    "Version B"
+    "One-step form",
+    "Two-step form"
    ],
    "rows": [
     [
-     "Home page visits",
-     "770",
-     "640"
+     "First step of the form, share of visits",
+     "5.6%",
+     "8.3%"
     ],
     [
-     "Reached the form",
-     "43 (5.6%)",
-     "53 (8.3%)"
+     "Finished after that step",
+     "34.9%",
+     "28.3%"
     ],
     [
-     "Finished after reaching it",
-     "15 (34.9%)",
-     "15 (28.3%)"
+     "Completed the whole form, share of visits",
+     "1.95%",
+     "2.34%"
     ],
     [
-     "Completed, overall",
-     "15 (1.95%)",
-     "15 (2.34%)"
-    ],
-    [
-     "Prequalified candidates",
+     "Prequalified share of completions",
      "Not separated",
-     "7"
+     "47%"
     ],
     [
-     "Sent to the community form",
+     "Joined the community instead",
      "Not applicable",
-     "8"
+     "53%"
     ]
    ],
    "reads": [
     {
      "h": "What I can stand behind",
-     "p": "Version B moved more visitors to the form, a borderline result on this sample (p≈0.045). It also separated qualified candidates from everyone else, which version A couldn’t do."
+     "p": "The two-step form captured more leads, a borderline significant result on this sample. It also separated prequalified candidates from people who joined the community."
     },
     {
      "h": "What this test can’t prove",
-     "p": "With 15 completions on each side, the overall lift isn’t conclusive (p≈0.61). Confirming it would take about 22,000 visits per version. A smaller share of the people who reached the form finished it, so the next step would have been to study that drop."
+     "p": "On this small sample, the +20% completion rate isn’t statistically significant. I flagged the sample size at the time, and the project moved forward. A smaller share of people finished after the first step, which is the next thing I’d study."
     },
     {
-     "h": "What else could explain it",
-     "p": "Version B changed the form and the design at the same time, so this test can’t credit either one alone. Traffic was also uneven, with 770 and 640 visits. [À FOURNIR : test dates, analytics source and anything else that changed in that period]"
+     "h": "One change at a time",
+     "p": "Both versions used the same design, and only the form changed, so the test isolates the form. The numbers come from Google Analytics. I used Hotjar to plan the next iterations in my final report."
     },
     {
      "h": "Sessions with people",
-     "p": "[À FOURNIR : did you run moderated sessions? If so, give “n of N” results from your notes. If not, this line reads: “Not tested in moderated sessions.”]"
+     "p": "The client’s focus groups shaped the project before design started. The design itself wasn’t tested in moderated sessions."
     }
    ]
   },
@@ -230,8 +217,8 @@
    "label": "Outcome",
    "h2": "What shipped, *and what I’d change*",
    "prose": [
-    "[À FOURNIR : did the hub launch? When? What happened after launch: traffic, applications, enrolled participants, client feedback?]",
-    "[À FOURNIR : what would you do differently today? For example: define the sample size before launching the test, or compare only qualified applications.]"
+    "The platform went live, and the A/B test ran on real traffic. It was a test for the client, and I don’t know whether they kept it.",
+    "Today I’d push for a longer test. It wasn’t possible at the time, but it would have given us enough visits to confirm the completion result."
    ]
   },
   {

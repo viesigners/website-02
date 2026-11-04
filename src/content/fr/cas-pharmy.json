@@ -1,36 +1,32 @@
 {
  "meta": {
-  "title": "Étude de cas Pharmy : plateforme d’essais cliniques | Viesigners",
-  "description": "Comment Charles-Erick BG a repensé un parcours d’inscription à des essais cliniques, l’a testé en A/B et a conçu une plateforme pour trouver un essai près de chez soi.",
+  "title": "Étude de cas Pharmy : une plateforme d’essais cliniques | Viesigners",
+  "description": "Comment Charles-Erick BG a dirigé l’UX d’une plateforme de recherche d’essais cliniques et testé un formulaire en deux étapes avec du vrai trafic.",
   "h1": "Étude de cas Pharmy"
  },
  "sections": [
   {
    "type": "page-hero",
    "tag": "Étude de cas · Santé",
-   "h1": "Aider les gens à trouver un essai clinique *sans les perdre en chemin*",
-   "lead": "Une entreprise mondiale gérait des microsites d’essais cliniques séparés et voulait recevoir plus de formulaires de qualification. J’ai aidé à repenser le formulaire, j’ai bâti le test A/B autour de lui et j’ai guidé l’équipe vers une plateforme unique pour s’informer, trouver un essai à proximité et s’inscrire.",
+   "h1": "Réunir des pages d’essais dispersées en *une seule plateforme de recherche*",
+   "lead": "J’ai dirigé l’UX de ce projet comme consultant UX chez O2Web. Nous avons réuni la page de chaque étude dans une seule plateforme, comme un Airbnb des essais cliniques, bâtie sur ce que les groupes de discussion disaient du besoin de faire confiance au processus.",
    "byline": "Par Charles-Erick BG",
    "brief": [
     {
      "b": "Client :",
-     "t": "une entreprise d’environ 30 000 employés, spécialisée dans les maladies difficiles à guérir. Pharmy est un nom fictif; le vrai nom est sous NDA."
+     "t": "une grande société pharmaceutique mondiale. Pharmy est un nom fictif; le vrai nom est sous NDA."
     },
     {
      "b": "Mon rôle :",
-     "t": "designer UX, avec l’équipe stratégie du client et O2Web."
+     "t": "consultant UX chez O2Web, responsable de l’UX."
     },
     {
      "b": "Qui décidait :",
-     "t": "[À FOURNIR : qui a pris les décisions finales, par rôle : vous, l’équipe stratégie du client ou O2Web?]"
+     "t": "j’ai surtout travaillé avec un consultant embauché par le client. Il approuvait le travail, et le client prenait les décisions finales."
     },
     {
      "b": "Portée :",
-     "t": "Méthodologie de test A/B, plan de mesure et UX du formulaire et de la plateforme. L’interface était un travail d’équipe."
-    },
-    {
-     "b": "Année :",
-     "t": "[À FOURNIR : année et durée du projet]"
+     "t": "méthodologie de test A/B, plan de mesure et UX de la plateforme et du formulaire. L’interface était un travail d’équipe."
     }
    ]
   },
@@ -44,19 +40,19 @@
   {
    "type": "cd-text",
    "label": "Le problème",
-   "h2": "La plupart des visiteurs *n’arrivaient jamais au formulaire*",
+   "h2": "Les gens devaient *faire confiance au processus* avant de chercher un essai",
    "prose": [
-    "Dans la version d’origine, 94,4 % des visiteurs partaient avant d’atteindre le formulaire de qualification. L’équipe de direction voulait recevoir plus de formulaires.",
-    "Les gens devaient s’informer sur la maladie et le processus, trouver un essai à proximité, puis s’inscrire. Ce contenu était réparti entre des microsites séparés, ce qui donnait deux chantiers."
+    "Les groupes de discussion du client sont à l’origine du projet. Ils montraient qu’il manquait aux gens l’information nécessaire pour faire confiance à la plateforme et au processus, et pour décider de participer à un essai.",
+    "Ils montraient aussi que la distance comptait : les gens devaient se rendre sur place, donc avoir une clinique assez proche. Chaque étude avait sa propre page, ce qui donnait deux chantiers."
    ],
    "steps": [
     {
-     "h": "Améliorer le parcours existant",
-     "p": "Séparer le formulaire en deux étapes, repenser les microsites et mesurer le changement par un test A/B."
+     "h": "Réunir les études",
+     "p": "Fusionner la page de chaque étude dans une seule plateforme de recherche, comme un Airbnb des essais cliniques."
     },
     {
-     "h": "Réunir les microsites",
-     "p": "Les regrouper dans une plateforme où les gens s’informent et trouvent les essais les plus proches pour leur condition."
+     "h": "Tester le formulaire avec du vrai trafic",
+     "p": "Comparer un formulaire en une étape à un formulaire en deux étapes, sur le même design."
     }
    ]
   },
@@ -66,8 +62,8 @@
    "h2": "Comment nous avons *enquêté et mesuré*",
    "theme": "light",
    "prose": [
-    "J’ai travaillé de près avec l’équipe stratégie du client pour définir les profils cibles et les indicateurs importants, puis j’ai rédigé la méthodologie du test A/B et le plan de mesure. Je me suis aussi assuré que les outils de mesure étaient en place.",
-    "J’ai guidé l’équipe de projet à travers l’inspiration, l’idéation, le prototypage et la validation technique, avec des wireframes dans Axure et des données de Google Analytics et Hotjar."
+    "J’ai travaillé de près avec l’équipe du client pour définir les profils cibles et les indicateurs importants, puis j’ai rédigé la méthodologie du test A/B et le plan de mesure. Je me suis aussi assuré que les outils de mesure étaient en place.",
+    "J’ai guidé l’équipe de projet à travers l’inspiration, l’idéation, le prototypage et la validation technique. Les groupes de discussion ont été menés par le client avant le projet; je me suis appuyé sur leurs conclusions."
    ],
    "wide": true
   },
@@ -77,74 +73,70 @@
    "h2": "Ce que j’ai décidé, *et pourquoi*",
    "items": [
     {
-     "h": "Présélectionner d’abord, demander les renseignements personnels ensuite",
-     "p": "Le formulaire est passé à deux étapes : une présélection, puis les renseignements personnels.",
+     "h": "Séparer un long formulaire en deux étapes pour capter les leads plus tôt",
+     "p": "La première étape recueillait les coordonnées, pour que le client obtienne un lead même si la personne n’allait pas au bout.",
      "notes": [
       {
        "k": "Mes options",
-       "v": "[À FOURNIR : qu’avez-vous envisagé : un long formulaire, un plus court, autre chose?]"
+       "v": "Garder une seule étape, ce qui aurait pu réduire un peu la friction."
       },
       {
        "k": "Pourquoi ce choix",
-       "v": "[À FOURNIR : pourquoi pas le formulaire unique ou une version allégée?]"
+       "v": "Le formulaire était long et je voulais que le client obtienne des leads le plus vite possible, même auprès des gens qui n’allaient pas au bout."
       },
       {
        "k": "Ce qu’il sacrifiait",
-       "v": "[À FOURNIR : quel était le coût : étapes de plus, formulaires perdus?]"
+       "v": "Plus de travail de développement, comme l’interface pour revenir en arrière, et un taux de fin plus bas : 28 % au lieu de 35 %."
       }
      ]
     },
     {
-     "h": "Offrir une suite aux personnes non admissibles",
-     "p": "Au lieu d’un refus, la présélection dirigeait les candidats qualifiés vers un formulaire de contact et les autres vers un formulaire de communauté.",
+     "h": "Donner une raison de rester aux personnes non admissibles",
+     "p": "Les personnes non admissibles pouvaient rejoindre une communauté par l’infolettre.",
      "notes": [
       {
-       "k": "Mes options",
-       "v": "[À FOURNIR : un message de refus, une redirection, autre chose?]"
-      },
-      {
        "k": "Pourquoi ce choix",
-       "v": "[À FOURNIR : pourquoi garder ces personnes, et que faisait le client de cette communauté?]"
+       "v": "L’infolettre les tenait au courant, pour que le client puisse les rejoindre et les convertir plus tard."
       },
       {
        "k": "Ce qu’il sacrifiait",
-       "v": "[À FOURNIR : est-ce que ça ajoutait du travail ou un risque pour le client?]"
+       "v": "Aucun inconvénient noté pour le client."
       }
      ]
     },
     {
-     "h": "Bâtir le parcours autour de trois questions",
-     "p": "La plateforme suit l’ordre des besoins : s’informer sur la maladie et le processus, trouver un essai à proximité, puis s’inscrire.",
+     "h": "Répondre aux objections avant de demander de chercher",
+     "p": "La page d’accueil présente d’abord le projet, puis un bouton mène à la recherche.",
      "notes": [
       {
        "k": "Mes options",
-       "v": "[À FOURNIR : quelles autres structures avez-vous envisagées?]"
+       "v": "Mettre la recherche d’essais en premier."
       },
       {
        "k": "Pourquoi ce choix",
-       "v": "[À FOURNIR : quelle recherche ou quels profils ont mené à cet ordre?]"
+       "v": "Si les gens ont des objections, ils ne passent pas à l’action. Les groupes de discussion montraient ce qui manquait : la bonne information devait donc venir en premier."
       },
       {
        "k": "Ce qu’il sacrifiait",
-       "v": "[À FOURNIR : qu’est-ce qui a eu moins de place ou a été reporté?]"
+       "v": "Tout le monde passe par une page d’information avant de chercher. Pour limiter cet effet, la recherche restait l’élément le plus visible du menu principal."
       }
      ]
     },
     {
-     "h": "Placer le lieu au cœur de la recherche",
-     "p": "Une recherche par carte permet de trouver les meilleures options selon la condition et le lieu.",
+     "h": "Rendre la distance visible avec une carte",
+     "p": "Les gens cherchent par condition et par lieu, et voient les essais sur une carte.",
      "notes": [
       {
        "k": "Mes options",
-       "v": "[À FOURNIR : une liste filtrée, un répertoire de conditions, autre chose?]"
+       "v": "Une liste filtrée."
       },
       {
        "k": "Pourquoi ce choix",
-       "v": "[À FOURNIR : pourquoi une carte?]"
+       "v": "Les groupes de discussion montraient que les gens devaient être près de la clinique, puisqu’ils devaient se rendre sur place. La distance acceptable variait selon la maladie."
       },
       {
        "k": "Ce qu’il sacrifiait",
-       "v": "[À FOURNIR : qu’est-ce qui était plus difficile : le mobile, l’accessibilité, une limite technique?]"
+       "v": "Beaucoup plus difficile à concevoir et à bâtir : grappes au dézoom, clic qui zoome ou affiche la liste des essais, et une liste qui reste claire sur mobile."
       }
      ]
     }
@@ -157,71 +149,66 @@
    "results": [
     {
      "n": "+48 %",
-     "t": "de hausse de la part des visiteurs rendus au formulaire, de 5,6 % à 8,3 %"
+     "t": "de leads captés par le formulaire en deux étapes, en comptant les premières étapes envoyées : de 5,6 % à 8,3 % des visites. [À FOURNIR : à confirmer dans ton rapport final, voir la note dans la réponse de Claude]"
     },
     {
-     "n": "15 c. 15",
-     "t": "formulaires remplis sur 770 et 640 visites, de 1,95 % à 2,34 %"
+     "n": "+20 %",
+     "t": "de taux de fin par visite, de 1,95 % à 2,34 %. Petit échantillon, résultat non significatif sur le plan statistique."
     },
     {
-     "n": "7 sur 15",
-     "t": "des formulaires remplis de la version B venaient de candidats qualifiés"
+     "n": "47 %",
+     "t": "des formulaires remplis en deux étapes venaient de candidats présélectionnés. Les autres ont rejoint la communauté."
     }
    ],
    "caption": "Entonnoir par version",
    "head": [
     "Étape",
-    "Version A",
-    "Version B"
+    "Une étape",
+    "Deux étapes"
    ],
    "rows": [
     [
-     "Visites de la page d’accueil",
-     "770",
-     "640"
+     "Première étape, part des visites",
+     "5,6 %",
+     "8,3 %"
     ],
     [
-     "Se sont rendus au formulaire",
-     "43 (5,6 %)",
-     "53 (8,3 %)"
+     "Ont terminé après cette étape",
+     "34,9 %",
+     "28,3 %"
     ],
     [
-     "Ont terminé après s’y être rendus",
-     "15 (34,9 %)",
-     "15 (28,3 %)"
+     "Formulaire complet, part des visites",
+     "1,95 %",
+     "2,34 %"
     ],
     [
-     "Formulaires remplis, au total",
-     "15 (1,95 %)",
-     "15 (2,34 %)"
-    ],
-    [
-     "Candidats qualifiés",
+     "Part des candidats présélectionnés",
      "Non séparé",
-     "7"
+     "47 %"
     ],
     [
-     "Dirigés vers la communauté",
+     "Ont plutôt rejoint la communauté",
      "Sans objet",
-     "8"
+     "53 %"
     ]
    ],
    "reads": [
     {
      "h": "Ce que je peux affirmer",
-     "p": "La version B a amené plus de visiteurs au formulaire, un résultat limite sur cet échantillon (p≈0,045). Elle a aussi séparé les candidats qualifiés des autres, ce que la version A ne pouvait pas faire."
+     "p": "Le formulaire en deux étapes a capté plus de leads, un résultat à la limite de la signification sur cet échantillon. Il a aussi séparé les candidats présélectionnés des gens qui ont rejoint la communauté."
     },
     {
      "h": "Ce que ce test ne prouve pas",
-     "p": "Avec 15 formulaires de chaque côté, la hausse globale n’est pas concluante (p≈0,61). Il faudrait environ 22 000 visites par version pour la confirmer. Une plus faible part des gens arrivés au formulaire l’ont terminé : c’est ce décrochage qu’il aurait fallu étudier ensuite."
+     "p": "Sur ce petit échantillon, la hausse de 20 % du taux de fin n’est pas significative sur le plan statistique. J’ai signalé la taille de l’échantillon à l’époque, et le projet a avancé. Une plus faible part des gens ont terminé après la première étape : c’est ce que j’étudierais ensuite."
     },
     {
-     "h": "Ce qui pourrait aussi l’expliquer",
-     "p": "La version B changeait le formulaire et le design en même temps : ce test ne peut donc attribuer le résultat à un seul des deux. Le trafic était aussi inégal, avec 770 et 640 visites. [À FOURNIR : dates du test, source des données et tout autre changement pendant cette période]"
+     "h": "Un seul changement à la fois",
+     "p": "Les deux versions avaient le même design et seul le formulaire changeait : le test isole donc le formulaire. Les chiffres viennent de Google Analytics. Hotjar m’a servi à planifier les prochaines itérations dans mon rapport final."
     },
     {
      "h": "Séances avec des personnes",
-     "p": "[À FOURNIR : avez-vous mené des séances modérées? Si oui, donnez les résultats « n sur N » tirés de vos notes. Sinon, cette ligne indique : « Non testé en séances modérées. »]"
+     "p": "Les groupes de discussion du client ont orienté le projet avant le design. Le design lui-même n’a pas été testé en séances modérées."
     }
    ]
   },
@@ -230,8 +217,8 @@
    "label": "Résultat",
    "h2": "Ce qui a été lancé, *et ce que je changerais*",
    "prose": [
-    "[À FOURNIR : la plateforme a-t-elle été lancée? Quand? Que s’est-il passé ensuite : trafic, inscriptions, participants recrutés, commentaires du client?]",
-    "[À FOURNIR : que feriez-vous autrement aujourd’hui? Par exemple : fixer la taille de l’échantillon avant le test, ou comparer seulement les candidatures qualifiées.]"
+    "La plateforme a été mise en ligne et le test A/B a roulé avec du vrai trafic. C’était un test pour le client, et je ne sais pas s’il l’a conservée.",
+    "Aujourd’hui, je pousserais pour un test plus long. Ce n’était pas possible à l’époque, mais on aurait eu assez de visites pour confirmer le résultat sur le taux de fin."
    ]
   },
   {
