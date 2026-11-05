@@ -15,7 +15,7 @@
   {
    "type": "cd-facts",
    "caption": "La plateforme : recherche par condition et par lieu, avec résultats sur une carte. Visuels actualisés par moi en 2025.",
-   "lead": "J’ai dirigé l’UX et le CRO de ce projet avec l’équipe d’O2Web. Nous avons réuni le microsite de chaque étude dans une seule plateforme, comme un Airbnb des essais cliniques, bâtie sur ce que les groupes de discussion disaient du besoin de faire confiance au processus.",
+   "lead": "Avec l’équipe d’O2Web, j’ai dirigé l’UX et le CRO d’une plateforme d’essais cliniques, de l’analyse à la version gagnante : 48 % plus de visiteurs se sont rendus au formulaire, les demandes de contact venaient de personnes présélectionnées, et le client a obtenu une feuille de route fondée sur les données.",
    "byline": "Par Charles-Erick BG",
    "items": [
     {
@@ -36,7 +36,25 @@
     },
     {
      "b": "Portée",
-     "t": "Méthodologie de test A/B, plan de mesure, UX et wireframes de la plateforme et du formulaire. Un graphiste a réalisé l’interface finale, restée très proche de mes wireframes."
+     "t": "Analyse, hypothèse, méthodologie A/B, mesure, architecture de l’information et recommandations d’interface par wireframes. J’ai aussi conseillé la designer graphique, qui a réalisé l’interface finale."
+    }
+   ]
+  },
+  {
+   "type": "cd-impact",
+   "items": [
+    {
+     "n": "+48 %",
+     "t": "de visiteurs se sont rendus au formulaire de qualification : de 5,6 % à 8,3 % des visites."
+    },
+    {
+     "n": "+20 %",
+     "t": "de formulaires de qualification envoyés par visite : de 1,95 % à 2,34 %.",
+     "note": "Note : petit échantillon, résultat non significatif sur le plan statistique."
+    },
+    {
+     "n": "3",
+     "t": "prochains tests fondés sur les données pour le client, tirés des analyses et des enregistrements."
     }
    ]
   },
@@ -46,7 +64,7 @@
    "h2": "Deux problèmes empêchaient les gens *de rejoindre un essai*",
    "prose": [
     "**Les gens devaient faire confiance au processus avant de chercher un essai.** Les groupes de discussion du client sont à l’origine du projet. Ils montraient qu’il manquait aux gens l’information nécessaire pour faire confiance à la plateforme et au processus, et pour décider de participer. La distance comptait aussi : les gens devaient se rendre sur place, donc avoir une clinique assez proche. Pourtant, chaque étude avait son propre microsite : la même information générale se répétait partout et était plus difficile à tenir à jour.",
-    "**Le formulaire de qualification semblait très long.** Mon audit du formulaire a révélé le deuxième problème : les gens ne le remplissaient pas et partaient, et le client dépendait seulement de ceux qui le terminaient."
+    "**Le formulaire de qualification semblait très long.** Mon audit du formulaire a révélé le deuxième problème : les gens ne le remplissaient pas et partaient, et le client dépendait seulement de ceux qui le terminaient. L’équipe du client perdait aussi du temps à gérer des leads non qualifiés."
    ],
    "steps": [
     {
@@ -65,8 +83,8 @@
    "h2": "Comment nous avons *enquêté et mesuré*",
    "theme": "light",
    "prose": [
-    "J’ai travaillé de près avec l’équipe du client pour définir les profils cibles et les indicateurs importants, puis j’ai rédigé la méthodologie du test A/B et le plan de mesure. Je me suis aussi assuré que les outils de mesure étaient en place.",
-    "J’ai guidé l’équipe de projet à travers l’inspiration, l’idéation, le prototypage et la validation technique. Les groupes de discussion ont été menés par le client avant le projet; je me suis appuyé sur leurs conclusions."
+    "Je suis parti des données de Google Analytics et de Hotjar, puis j’ai formulé l’hypothèse du test, rédigé la méthodologie A/B et établi les indicateurs et le plan de mesure avec l’équipe du client.",
+    "J’ai guidé l’équipe de projet à travers l’inspiration, l’idéation, le prototypage et la validation technique, et j’ai produit l’architecture de l’information et les wireframes. Les groupes de discussion ont été menés par le client avant le projet; je me suis appuyé sur leurs conclusions."
    ],
    "wide": true,
    "shots": [
@@ -194,24 +212,6 @@
        "label": "Liste des essais"
       }
      ]
-    },
-    {
-     "h": "Faire cohabiter deux navigations dans une plateforme",
-     "p": "Chaque microsite avait sa navigation, et la plateforme de recherche avait la sienne. Le menu devait rester attrayant, aéré et intuitif malgré tout.",
-     "notes": [
-      {
-       "k": "Mes options",
-       "v": "Empiler les deux menus et les masquer au défilement, ou passer au menu du microsite avec un bouton de retour clair vers la plateforme."
-      },
-      {
-       "k": "Pourquoi ce choix",
-       "v": "[À FOURNIR : quelle option a été lancée, et pourquoi?]"
-      },
-      {
-       "k": "Ce qu’il sacrifiait",
-       "v": "Deux menus empilés sont plus difficiles à gérer sur mobile et ajoutent de la charge cognitive. Changer de menu est plus mobile first, mais demande un retour intuitif."
-      }
-     ]
     }
    ]
   },
@@ -242,29 +242,24 @@
    ]
   },
   {
+   "type": "cd-text",
+   "theme": "dark",
+   "label": "Défi de design",
+   "h2": "Deux navigations *dans une seule plateforme*",
+   "prose": [
+    "Chaque microsite avait sa navigation, et la plateforme de recherche avait la sienne. Le menu devait rester attrayant, aéré et intuitif malgré tout.",
+    "J’ai exploré deux options : empiler les menus et les masquer au défilement, ou passer au menu du microsite avec un bouton de retour clair. Deux menus empilés sont plus difficiles à gérer sur mobile et ajoutent de la charge cognitive. Changer de menu est plus mobile first, mais demande un retour intuitif. [À FOURNIR : quelle option a été lancée?]"
+   ],
+   "wide": true
+  },
+  {
    "type": "cd-test",
    "label": "Ce que les gens ont fait",
    "h2": "Ce que le test A/B *a montré, et ce qu’il n’a pas montré*",
-   "results": [
-    {
-     "n": "+48 %",
-     "t": "de visiteurs se sont rendus au formulaire de qualification : de 5,6 % à 8,3 % des visites.",
-     "note": "Note : cette hausse vient de la page d’étude et du menu, puisqu’elle survient avant le formulaire."
-    },
-    {
-     "n": "+20 %",
-     "t": "de formulaires de qualification envoyés par visite : de 1,95 % à 2,34 %.",
-     "note": "Note : petit échantillon, résultat non significatif sur le plan statistique."
-    },
-    {
-     "n": "47 %",
-     "t": "des envois de la version B venaient de candidats présélectionnés. Les autres pouvaient rejoindre la communauté."
-    }
-   ],
    "reads": [
     {
      "h": "Ce que je peux affirmer",
-     "p": "La version B a mieux convaincu les gens de vérifier leur admissibilité, un résultat à la limite de la signification sur cet échantillon. Elle a aussi séparé les candidats présélectionnés des gens qui pouvaient rejoindre la communauté."
+     "p": "La version B a mieux convaincu les gens de vérifier leur admissibilité, un résultat à la limite de la signification sur cet échantillon. Elle a aussi trié les gens : 47 % de ses envois venaient de candidats présélectionnés, qui envoyaient ensuite leurs coordonnées, alors que les autres pouvaient rejoindre la communauté."
     },
     {
      "h": "Ce que ce test ne prouve pas",
@@ -335,7 +330,7 @@
    "label": "Résultat",
    "h2": "Ce qui a été lancé, *et ce que je changerais*",
    "prose": [
-    "La plateforme a été mise en ligne et le test A/B a roulé avec du vrai trafic. C’était un test pour le client, et je ne sais pas s’il l’a conservée.",
+    "La plateforme a été mise en ligne et le test A/B a roulé avec du vrai trafic. Mon rapport recommandait de conserver la version B. C’était un test pour le client, et je ne sais pas s’il l’a conservée.",
     "Mon rapport final proposait les prochains tests : moins d’appels à l’action sur la page d’étude, des champs de présélection plus simples, et une page « non qualifié » plus courte avec le formulaire de communauté en haut.",
     "Aujourd’hui, je pousserais pour plus de trafic ou un test plus long. Il a duré trois mois, mais trop peu de gens se sont rendus aux formulaires pour confirmer le résultat sur les envois.",
     "Je transformerais aussi le formulaire en assistant à plusieurs étapes. L’étape des coordonnées serait envoyée dès le passage à l’étape 2, et les questions de qualification seraient découpées en petits blocs, pour que le formulaire semble plus léger et moins intimidant.",

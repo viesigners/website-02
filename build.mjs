@@ -394,6 +394,9 @@ R['cd-facts'] = (s, c) => `<section class="section cd-factsec"><div class="wrap"
     <dl class="cd-facts rv">${s.items.map((i) => `<div><dt>${fmt(i.b, c.lang)}</dt><dd>${fmtT(i.t, c.lang)}</dd></div>`).join('')}</dl>
   </div>
 </div></section>`;
+R['cd-impact'] = (s, c) => `<section class="section section--tight"><div class="wrap">
+  <div class="proof">${s.items.map((i, k) => `<div class="proof__item rv" style="--d:${k * .08}s"><b>${esc(i.n)}</b><span>${fmtT(i.t, c.lang)}</span>${i.note ? `<small class="cd-note">${fmtT(i.note, c.lang)}</small>` : ''}</div>`).join('')}</div>
+</div></section>`;
 R['cd-image'] = (s, c) => `<section class="section section--tight"><div class="wrap"><figure class="cd-figure rv">${img(s.img, s.alt, { sizes: '(min-width:1320px) 1224px, 100vw' })}${s.caption ? `<figcaption>${fmtT(s.caption, c.lang)}</figcaption>` : ''}</figure></div></section>`;
 R['cd-decisions'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-decisions', { label: s.label })}
@@ -401,7 +404,7 @@ R['cd-decisions'] = (s, c) => `<section class="section"><div class="wrap">
 </div></section>`;
 R['cd-test'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-test', { label: s.label })}
-  <div class="proof">${s.results.map((i, k) => `<div class="proof__item rv" style="--d:${k * .08}s"><b>${esc(i.n)}</b><span>${fmtT(i.t, c.lang)}</span>${i.note ? `<small class="cd-note">${fmtT(i.note, c.lang)}</small>` : ''}</div>`).join('')}</div>
+  
   ${s.tablesIntro ? `<p class="cd-tintro rv">${fmtT(s.tablesIntro, c.lang)}</p>` : ''}
   ${s.tables.map((t) => `<div class="cd-table rv"><table><caption>${esc(t.caption)}</caption><thead><tr>${t.head.map((h, i) => `<th scope="col"${i ? ' class="num"' : ''}>${esc(h)}</th>`).join('')}</tr></thead><tbody>${t.rows.map((r) => `<tr><th scope="row">${esc(r[0])}</th>${r.slice(1).map((v) => `<td class="num">${fmtT(v, c.lang)}</td>`).join('')}</tr>`).join('')}</tbody></table>${t.note ? `<p class="cd-note">${fmtT(t.note, c.lang)}</p>` : ''}</div>`).join('')}
   <div class="cd-read">${s.reads.map((i, k) => `<div class="rv" style="--d:${k * .08}s"><h3>${esc(i.h)}</h3><p>${fmtT(i.p, c.lang)}</p></div>`).join('')}</div>
@@ -790,11 +793,12 @@ function toMd(page, c) {
       case 'compare': L.push(`## ${t(s.h2)}`, '', `### ${t(s.before.h)}`, ...s.before.items.map((i) => `- ${t(i)}`), '', `### ${t(s.after.h)}`, ...s.after.items.map((i) => `- ${t(i)}`), ''); break;
       case 'related': L.push(`## ${t(s.h2)}`, '', ...s.items.filter((k) => !isHidden(k)).map((k) => `- [${T.nav[k]}](${abs(url(k, lang))}): ${T.navSub[k]}`), ''); break;
       case 'casecard': L.push(`## ${t(s.h)}`, '', `- **${s.n}** ${t(s.nt)}`, `- [${t(s.h)}](${abs(url(s.to, lang))})`, ''); break;
+      case 'cd-impact': L.push(...s.items.map((i) => `- **${i.n}** ${t(i.t)}${i.note ? ' ' + t(i.note) : ''}`), ''); break;
       case 'cd-hero': L.push(`# ${t(s.h1)}`, ''); break;
       case 'cd-facts': L.push(t(s.lead), '', ...s.items.map((i) => `- ${t(i.b)} ${t(i.t)}`), ''); break;
       case 'cd-text': L.push(`## ${t(s.h2)}`, '', ...s.prose.map((p) => t(p) + '\n'), ...(s.steps || []).map((i, n) => `${n + 1}. **${t(i.h)}** — ${t(i.p)}`), ''); break;
       case 'cd-decisions': L.push(`## ${t(s.h2)}`, '', ...s.items.flatMap((i) => [`### ${t(i.h)}`, '', t(i.p), '', ...i.notes.map((n) => `- ${t(n.k)}: ${t(n.v)}`), '']), ''); break;
-      case 'cd-test': L.push(`## ${t(s.h2)}`, '', ...s.results.map((i) => `- **${i.n}** ${t(i.t)}`), '', ...s.tables.flatMap((x) => x.rows).map((r) => `- ${r.join(' | ')}`), '', ...s.reads.flatMap((i) => [`### ${t(i.h)}`, '', t(i.p), '']), ''); break;
+      case 'cd-test': L.push(`## ${t(s.h2)}`, '', ...s.tables.flatMap((x) => x.rows).map((r) => `- ${r.join(' | ')}`), '', ...s.reads.flatMap((i) => [`### ${t(i.h)}`, '', t(i.p), '']), ''); break;
       case 'casestudy': L.push(`## ${t(s.h2)}`, '', ...(s.client ? [t(s.client), ''] : []), ...s.results.map((i) => `- **${i.n}** ${t(i.t)}`), '', `### ${t(s.problem.h)}`, '', t(s.problem.lead), '', ...s.problem.items.map((i) => `- ${t(i)}`), '', `### ${t(s.did.h)}`, '', ...s.did.steps.map((p, i) => `${i + 1}. **${t(p.h)}** — ${t(p.p)}`), '', `> ${t(s.quote.text)}`, `> — ${s.quote.by}`, '', t(s.note), ''); break;
       case 'proof': L.push(...s.items.map((i) => `- **${i.n}** ${t(i.t)}`), ''); break;
       case 'people': L.push(`## ${t(s.h2)}`, '', ...s.items.map((p) => `- **${p.name}** (${p.role}) — ${t(p.text)}`), ''); break;
@@ -823,7 +827,7 @@ const THEME = {
   'hero-home': 'dark', 'page-hero': 'dark', 'cta-final': 'dark',
   friction: 'light', founders: 'dark', services: 'light', stats: 'dark', work: 'light', fit: 'dark', slot: 'light', testimonials: 'light', faq: 'light',
   statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', hub: 'light', partner: 'dark', related: 'light', bio: 'light', legal: 'light', people: 'dark', facts: 'light',
-  'cd-hero': 'dark', 'cd-facts': 'light', 'cd-gallery': 'dark', 'cd-text': 'light', 'cd-image': 'light', 'cd-decisions': 'dark', 'cd-test': 'light', 'posts-list': 'light', article: 'light', 'profile-hero': 'dark', cases: 'light', 'result-cards': 'dark', portfolio: 'light', 'contact-links': 'dark', contact: 'light', 'rich-text': 'light',
+  'cd-hero': 'dark', 'cd-facts': 'light', 'cd-impact': 'light', 'cd-gallery': 'dark', 'cd-text': 'light', 'cd-image': 'light', 'cd-decisions': 'dark', 'cd-test': 'light', 'posts-list': 'light', article: 'light', 'profile-hero': 'dark', cases: 'light', 'result-cards': 'dark', portfolio: 'light', 'contact-links': 'dark', contact: 'light', 'rich-text': 'light',
 };
 const ASSET_HASH = {};
 const PAGES_OUT = []; // for sitemap + llms

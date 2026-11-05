@@ -15,7 +15,7 @@
   {
    "type": "cd-facts",
    "caption": "The hub: search by condition and location, with results on a map. Visuals refreshed by me in 2025.",
-   "lead": "I led the UX and CRO on this project with the O2Web team. We brought each study’s microsite into one platform, like Airbnb for clinical trials, built around what focus groups said people needed to trust the process.",
+   "lead": "With the O2Web team, I led the UX and CRO of a clinical trial platform, from analysis to the winning version: 48% more visitors reached the form, contact requests came from prequalified people, and the client got a data-driven roadmap.",
    "byline": "By Charles-Erick BG",
    "items": [
     {
@@ -36,7 +36,25 @@
     },
     {
      "b": "Scope",
-     "t": "A/B test methodology, measurement plan, UX and wireframes for the platform and the form. A graphic designer created the final UI, which stayed very close to my wireframes."
+     "t": "Analysis, hypothesis, A/B methodology, measurement, information architecture and interface recommendations through wireframes. I also advised the graphic designer, who created the final UI."
+    }
+   ]
+  },
+  {
+   "type": "cd-impact",
+   "items": [
+    {
+     "n": "+48%",
+     "t": "more visitors reached the qualification form: 5.6% to 8.3% of visits."
+    },
+    {
+     "n": "+20%",
+     "t": "more qualification forms sent per visit: 1.95% to 2.34%.",
+     "note": "Note: small sample, not statistically significant."
+    },
+    {
+     "n": "3",
+     "t": "data-driven next tests for the client, drawn from analytics and session recordings."
     }
    ]
   },
@@ -46,7 +64,7 @@
    "h2": "Two problems kept people *from joining a trial*",
    "prose": [
     "**People needed to trust the process before searching for a trial.** The client’s focus groups started this project. They showed that people were missing the information they needed to trust the platform and the process, and to decide to join. Distance mattered too: people had to go on site, so they needed a clinic close enough to reach. Yet each study had its own microsite, so the same general information was repeated on each one and harder to maintain.",
-    "**The qualification form felt very long.** My audit of the form showed the second problem: people didn’t fill it in and left, and the client relied only on those who finished it."
+    "**The qualification form felt very long.** My audit of the form showed the second problem: people didn’t fill it in and left, and the client relied only on those who finished it. The client’s team also lost time managing unqualified leads."
    ],
    "steps": [
     {
@@ -65,8 +83,8 @@
    "h2": "How we *investigated and measured*",
    "theme": "light",
    "prose": [
-    "I worked closely with the client’s team to define target user profiles and the indicators that mattered, then wrote the A/B test methodology and measurement plan. I also made sure the measuring tools were in place.",
-    "I guided the project team through inspiration, ideation, prototyping and technical validation. The focus groups were run by the client before the project; I built on their findings."
+    "I started from the Google Analytics and Hotjar data, then framed the test hypothesis, wrote the A/B methodology and set the indicators and measurement plan with the client’s team.",
+    "I guided the project team through inspiration, ideation, prototyping and technical validation, and produced the information architecture and wireframes. The focus groups were run by the client before the project; I built on their findings."
    ],
    "wide": true,
    "shots": [
@@ -194,24 +212,6 @@
        "label": "Trial list"
       }
      ]
-    },
-    {
-     "h": "Fit two navigation systems into one platform",
-     "p": "Each microsite had its own navigation, and so did the search platform. The menu had to stay appealing, uncluttered and intuitive, even with both.",
-     "notes": [
-      {
-       "k": "Options I had",
-       "v": "Stack the two menus and hide them on scroll, or swap to the microsite menu with a clear back button to the platform."
-      },
-      {
-       "k": "Why I chose this",
-       "v": "[À FOURNIR : which option shipped, and why?]"
-      },
-      {
-       "k": "What it gave up",
-       "v": "Stacked menus are harder to manage on mobile and add cognitive load. Swapping menus is more mobile-first, but needs an intuitive way back."
-      }
-     ]
     }
    ]
   },
@@ -242,29 +242,24 @@
    ]
   },
   {
+   "type": "cd-text",
+   "theme": "dark",
+   "label": "Design challenge",
+   "h2": "Two navigation systems *in one platform*",
+   "prose": [
+    "Each microsite had its own navigation, and so did the search platform. The menu had to stay appealing, uncluttered and intuitive, even with both.",
+    "I explored two options: stacking the menus and hiding them on scroll, or swapping to the microsite menu with a clear back button. Stacked menus are harder on mobile and add cognitive load. Swapping is more mobile-first, but needs an intuitive way back. [À FOURNIR : which option shipped?]"
+   ],
+   "wide": true
+  },
+  {
    "type": "cd-test",
    "label": "What real users did",
    "h2": "What the A/B test *showed, and what it didn’t*",
-   "results": [
-    {
-     "n": "+48%",
-     "t": "more visitors reached the qualification form: 5.6% to 8.3% of visits.",
-     "note": "Note: this lift points to the study page and menu, since it happens before the form."
-    },
-    {
-     "n": "+20%",
-     "t": "more qualification forms sent per visit: 1.95% to 2.34%.",
-     "note": "Note: small sample, not statistically significant."
-    },
-    {
-     "n": "47%",
-     "t": "of version B submissions came from prequalified candidates. The others could join the community."
-    }
-   ],
    "reads": [
     {
      "h": "What I can stand behind",
-     "p": "Version B did better at convincing people to check their eligibility, a borderline significant result on this sample. It also separated prequalified candidates from people who could join the community."
+     "p": "Version B did better at convincing people to check their eligibility, a borderline significant result on this sample. It also sorted people: 47% of its submissions came from prequalified candidates, who then shared contact details, while the others could join the community."
     },
     {
      "h": "What this test can’t prove",
@@ -335,7 +330,7 @@
    "label": "Outcome",
    "h2": "What shipped, *and what I’d change*",
    "prose": [
-    "The platform went live, and the A/B test ran on real traffic. It was a test for the client, and I don’t know whether they kept it.",
+    "The platform went live, and the A/B test ran on real traffic. My report recommended keeping version B. It was a test for the client, and I don’t know whether they kept it.",
     "My final report proposed the next tests: fewer calls to action on the study page, simpler prescreener fields, and a shorter not-qualified page with the community form at the top.",
     "Today I’d push for more traffic or a longer test. It ran for three months, but too few people reached the forms to confirm the completion result.",
     "I’d also turn the form into a multi-step wizard. The contact step would be sent as soon as people moved to step 2, and the qualification questions would be split into smaller chunks, so the form feels lighter and less intimidating.",
