@@ -59,21 +59,45 @@
    ]
   },
   {
-   "type": "cd-text",
+   "type": "cd-cards",
+   "theme": "light",
    "label": "Les frictions",
-   "h2": "Deux problèmes empêchaient les gens *de rejoindre un essai*",
-   "prose": [
-    "**Les gens devaient faire confiance au processus avant de chercher un essai.** Les groupes de discussion du client sont à l’origine du projet. Ils montraient qu’il manquait aux gens l’information nécessaire pour faire confiance à la plateforme et au processus, et pour décider de participer. La distance comptait aussi : les gens devaient se rendre sur place, donc avoir une clinique assez proche. Pourtant, chaque étude avait son propre microsite : la même information générale se répétait partout et était plus difficile à tenir à jour.",
-    "**Le formulaire de qualification semblait très long.** Mon audit du formulaire a révélé le deuxième problème : les gens ne le remplissaient pas et partaient, et le client dépendait seulement de ceux qui le terminaient. L’équipe du client perdait aussi du temps à gérer des leads non qualifiés."
-   ],
-   "steps": [
+   "h2": "Quatre problèmes empêchaient les gens *de rejoindre un essai*",
+   "groups": [
     {
-     "h": "Réunir les études",
-     "p": "Regrouper les microsites dans une seule plateforme de recherche, comme un Airbnb des essais cliniques, avec l’information générale au même endroit. Les mises à jour seraient aussi plus simples pour l’équipe du client."
+     "h": "",
+     "items": [
+      {
+       "h": "Un manque de confiance",
+       "p": "Les groupes de discussion du client sont à l’origine du projet. Il manquait aux gens l’information nécessaire pour faire confiance à la plateforme et au processus, et ils avaient besoin d’une clinique assez proche."
+      },
+      {
+       "h": "Un formulaire qui semblait trop long",
+       "p": "Mon audit a montré que les gens ne remplissaient pas le formulaire de qualification et partaient : le client dépendait seulement de ceux qui le terminaient."
+      },
+      {
+       "h": "Du temps perdu sur des formulaires non qualifiés",
+       "p": "L’équipe du client recevait des formulaires de personnes non qualifiées et perdait du temps à faire les suivis."
+      },
+      {
+       "h": "Une information répétée à maintenir",
+       "p": "Chaque étude avait son propre microsite : la même information générale se répétait partout et était plus difficile à tenir à jour."
+      }
+     ]
     },
     {
-     "h": "Tester la page et le formulaire avec du vrai trafic",
-     "p": "Mon audit du formulaire de qualification m’a mené à proposer une version en deux étapes. Nous l’avons testée avec une page d’étude qui regroupait le contenu clé autour des principaux freins, contre la version existante."
+     "h": "Deux chantiers",
+     "steps": true,
+     "items": [
+      {
+       "h": "Réunir les études",
+       "p": "Regrouper les microsites dans une seule plateforme de recherche, comme un Airbnb des essais cliniques, avec l’information générale au même endroit. Les mises à jour seraient aussi plus simples pour l’équipe du client."
+      },
+      {
+       "h": "Tester la page et le formulaire avec du vrai trafic",
+       "p": "Mon audit du formulaire de qualification m’a mené à proposer une version en deux étapes. Nous l’avons testée avec une page d’étude qui regroupait le contenu clé autour des principaux freins, contre la version existante."
+      }
+     ]
     }
    ]
   },

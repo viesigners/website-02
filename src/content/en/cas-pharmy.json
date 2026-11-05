@@ -59,21 +59,45 @@
    ]
   },
   {
-   "type": "cd-text",
+   "type": "cd-cards",
+   "theme": "light",
    "label": "The friction",
-   "h2": "Two problems kept people *from joining a trial*",
-   "prose": [
-    "**People needed to trust the process before searching for a trial.** The client’s focus groups started this project. They showed that people were missing the information they needed to trust the platform and the process, and to decide to join. Distance mattered too: people had to go on site, so they needed a clinic close enough to reach. Yet each study had its own microsite, so the same general information was repeated on each one and harder to maintain.",
-    "**The qualification form felt very long.** My audit of the form showed the second problem: people didn’t fill it in and left, and the client relied only on those who finished it. The client’s team also lost time managing unqualified leads."
-   ],
-   "steps": [
+   "h2": "Four problems kept people *from joining a trial*",
+   "groups": [
     {
-     "h": "Bring the studies together",
-     "p": "Group the microsites in one searchable platform, like Airbnb for clinical trials, with the general information people needed in one place. That would also make updates easier for the client’s team."
+     "h": "",
+     "items": [
+      {
+       "h": "A trust gap",
+       "p": "The client’s focus groups started this project. People were missing the information they needed to trust the platform and the process, and they needed a clinic close enough to reach."
+      },
+      {
+       "h": "A form that felt too long",
+       "p": "My audit showed that people didn’t fill in the qualification form and left, so the client relied only on those who finished it."
+      },
+      {
+       "h": "Time lost on unqualified forms",
+       "p": "The client’s team received forms from unqualified people and lost time following up on them."
+      },
+      {
+       "h": "Repeated information to maintain",
+       "p": "Each study had its own microsite, so the same general information was repeated on each one and harder to keep up to date."
+      }
+     ]
     },
     {
-     "h": "Test the page and the form on real traffic",
-     "p": "My audit of the qualification form led me to suggest a two-step version. We tested it with a study page that regrouped the key content around people’s main objections, against the existing version."
+     "h": "Two jobs to do",
+     "steps": true,
+     "items": [
+      {
+       "h": "Bring the studies together",
+       "p": "Group the microsites in one searchable platform, like Airbnb for clinical trials, with the general information people needed in one place. That would also make updates easier for the client’s team."
+      },
+      {
+       "h": "Test the page and the form on real traffic",
+       "p": "My audit of the qualification form led me to suggest a two-step version. We tested it with a study page that regrouped the key content around people’s main objections, against the existing version."
+      }
+     ]
     }
    ]
   },
