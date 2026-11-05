@@ -1009,5 +1009,3 @@ html { scroll-padding-top: 7rem; }
 @media (min-width: 760px) { .cd-cards--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .cd-facts dd strong { font-weight: 600; }
 .cd-impact { margin-bottom: clamp(4rem, 3rem + 4vw, 7rem); }
-.theme > .section.cd-pb { padding-bottom: clamp(1.5rem, 1rem + 1.5vw, 2.5rem); }
-.theme > .section.cd-pt { padding-top: clamp(1.5rem, 1rem + 1.5vw, 2.5rem); }
