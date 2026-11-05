@@ -97,7 +97,7 @@
       },
       {
        "k": "What it gave up",
-       "v": "More build work, such as the UI to go back a step, and a lower finish rate: 28% instead of 35%."
+       "v": "More build work: a way to go back a step, and saving the data after step 1 instead of sending everything at once. The finish rate was also lower: 28% instead of 35%."
       }
      ],
      "shots": [
