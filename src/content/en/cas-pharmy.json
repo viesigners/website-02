@@ -258,7 +258,7 @@
    "prose": [
     "Merging the study microsites into one platform meant two navigation systems on the same pages, and the menu still had to feel uncluttered and intuitive.",
     "**I explored two options:** stacking the menus, or swapping to the microsite menu with a back button. Stacking adds cognitive load, especially on mobile. Swapping is lighter, but a plain Back button means nothing to people who land directly on a microsite.",
-    "I went with stacked menus, as short as possible while keeping touch targets at a comfortable size, and hidden on scroll, so the platform menu kept people oriented. On mobile, the hamburger menu handled the way back to save screen space."
+    "I went with stacked menus, as slim as possible while keeping touch targets at a comfortable size, and hidden on scroll, so the platform menu kept people oriented. On mobile, the hamburger menu handled the way back to save screen space."
    ]
   },
   {
