@@ -376,6 +376,18 @@ R['cd-text'] = (s, c) => `<section class="section"><div class="wrap">
     ${s.steps ? `<ol class="cd-steps">${s.steps.map((i, k) => `<li class="rv" style="--d:${k * .06}s"><b>${esc(i.h)}</b><span>${fmtT(i.p, c.lang)}</span></li>`).join('')}</ol>` : ''}
   </div>
 </div></section>`;
+R['cd-hero'] = (s, c) => `<section class="section cd-hero" aria-labelledby="h1"><div class="wrap">
+  <p class="eyebrow-tag">${fmt(s.tag, c.lang)}</p>
+  <h1 id="h1" class="display phero__title">${fmt(s.h1, c.lang)}</h1>
+  <figure class="cd-hero__img">${img(s.img, s.alt, { lazy: false, sizes: '(min-width:1320px) 1224px, 100vw' })}</figure>
+</div></section>`;
+R['cd-facts'] = (s, c) => `<section class="section cd-factsec"><div class="wrap">
+  ${s.caption ? `<p class="cd-cap rv">${fmtT(s.caption, c.lang)}</p>` : ''}
+  <div class="cd-intro">
+    <div><p class="lead rv">${fmt(s.lead, c.lang)}</p><p class="byline rv">${esc(s.byline)}</p></div>
+    <dl class="cd-facts rv">${s.items.map((i) => `<div><dt>${fmt(i.b, c.lang)}</dt><dd>${fmtT(i.t, c.lang)}</dd></div>`).join('')}</dl>
+  </div>
+</div></section>`;
 R['cd-image'] = (s, c) => `<section class="section section--tight"><div class="wrap"><figure class="cd-figure rv">${img(s.img, s.alt, { sizes: '(min-width:1320px) 1224px, 100vw' })}${s.caption ? `<figcaption>${fmtT(s.caption, c.lang)}</figcaption>` : ''}</figure></div></section>`;
 R['cd-decisions'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-decisions', { label: s.label })}
@@ -771,6 +783,8 @@ function toMd(page, c) {
       case 'compare': L.push(`## ${t(s.h2)}`, '', `### ${t(s.before.h)}`, ...s.before.items.map((i) => `- ${t(i)}`), '', `### ${t(s.after.h)}`, ...s.after.items.map((i) => `- ${t(i)}`), ''); break;
       case 'related': L.push(`## ${t(s.h2)}`, '', ...s.items.filter((k) => !isHidden(k)).map((k) => `- [${T.nav[k]}](${abs(url(k, lang))}): ${T.navSub[k]}`), ''); break;
       case 'casecard': L.push(`## ${t(s.h)}`, '', `- **${s.n}** ${t(s.nt)}`, `- [${t(s.h)}](${abs(url(s.to, lang))})`, ''); break;
+      case 'cd-hero': L.push(`# ${t(s.h1)}`, ''); break;
+      case 'cd-facts': L.push(t(s.lead), '', ...s.items.map((i) => `- ${t(i.b)} ${t(i.t)}`), ''); break;
       case 'cd-text': L.push(`## ${t(s.h2)}`, '', ...s.prose.map((p) => t(p) + '\n'), ...(s.steps || []).map((i, n) => `${n + 1}. **${t(i.h)}** — ${t(i.p)}`), ''); break;
       case 'cd-decisions': L.push(`## ${t(s.h2)}`, '', ...s.items.flatMap((i) => [`### ${t(i.h)}`, '', t(i.p), '', ...i.notes.map((n) => `- ${t(n.k)}: ${t(n.v)}`), '']), ''); break;
       case 'cd-test': L.push(`## ${t(s.h2)}`, '', ...s.results.map((i) => `- **${i.n}** ${t(i.t)}`), '', ...s.rows.map((r) => `- ${r.join(' | ')}`), '', ...s.reads.flatMap((i) => [`### ${t(i.h)}`, '', t(i.p), '']), ''); break;
@@ -802,7 +816,7 @@ const THEME = {
   'hero-home': 'dark', 'page-hero': 'dark', 'cta-final': 'dark',
   friction: 'light', founders: 'dark', services: 'light', stats: 'dark', work: 'light', fit: 'dark', slot: 'light', testimonials: 'light', faq: 'light',
   statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', hub: 'light', partner: 'dark', related: 'light', bio: 'light', legal: 'light', people: 'dark', facts: 'light',
-  'cd-text': 'light', 'cd-image': 'light', 'cd-decisions': 'dark', 'cd-test': 'light', 'posts-list': 'light', article: 'light', 'profile-hero': 'dark', cases: 'light', 'result-cards': 'dark', portfolio: 'light', 'contact-links': 'dark', contact: 'light', 'rich-text': 'light',
+  'cd-hero': 'dark', 'cd-facts': 'light', 'cd-text': 'light', 'cd-image': 'light', 'cd-decisions': 'dark', 'cd-test': 'light', 'posts-list': 'light', article: 'light', 'profile-hero': 'dark', cases: 'light', 'result-cards': 'dark', portfolio: 'light', 'contact-links': 'dark', contact: 'light', 'rich-text': 'light',
 };
 const ASSET_HASH = {};
 const PAGES_OUT = []; // for sitemap + llms

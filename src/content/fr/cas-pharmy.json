@@ -6,36 +6,35 @@
  },
  "sections": [
   {
-   "type": "page-hero",
+   "type": "cd-hero",
    "tag": "Étude de cas · Santé",
    "h1": "Réunir des pages d’essais dispersées en *une seule plateforme de recherche*",
-   "lead": "J’ai dirigé l’UX de ce projet comme consultant UX chez O2Web. Nous avons réuni la page de chaque étude dans une seule plateforme, comme un Airbnb des essais cliniques, bâtie sur ce que les groupes de discussion disaient du besoin de faire confiance au processus.",
-   "byline": "Par Charles-Erick BG",
-   "brief": [
-    {
-     "b": "Client :",
-     "t": "une grande société pharmaceutique mondiale. Pharmy est un nom fictif; le vrai nom est sous NDA."
-    },
-    {
-     "b": "Mon rôle :",
-     "t": "consultant UX chez O2Web, responsable de l’UX."
-    },
-    {
-     "b": "Qui décidait :",
-     "t": "j’ai surtout travaillé avec un consultant embauché par le client. Il approuvait le travail, et le client prenait les décisions finales."
-    },
-    {
-     "b": "Portée :",
-     "t": "méthodologie de test A/B, plan de mesure et UX de la plateforme et du formulaire. L’interface était un travail d’équipe."
-    }
-   ]
+   "img": "work/pharmy-hub.jpg",
+   "alt": "Interface de recherche d’essais cliniques avec résultats à côté d’une carte"
   },
   {
-   "type": "cd-image",
-   "theme": "light",
-   "img": "work/pharmy-hub.jpg",
-   "alt": "Interface de recherche d’essais cliniques avec résultats à côté d’une carte",
-   "caption": "La plateforme : recherche par condition et par lieu, avec résultats sur une carte. [À FOURNIR : remplacer par les écrans originaux en pleine résolution]"
+   "type": "cd-facts",
+   "caption": "La plateforme : recherche par condition et par lieu, avec résultats sur une carte. [À FOURNIR : remplacer par les écrans originaux en pleine résolution]",
+   "lead": "J’ai dirigé l’UX de ce projet comme consultant UX chez O2Web. Nous avons réuni la page de chaque étude dans une seule plateforme, comme un Airbnb des essais cliniques, bâtie sur ce que les groupes de discussion disaient du besoin de faire confiance au processus.",
+   "byline": "Par Charles-Erick BG",
+   "items": [
+    {
+     "b": "Client",
+     "t": "Une grande société pharmaceutique mondiale. Pharmy est un nom fictif; le vrai nom est sous NDA."
+    },
+    {
+     "b": "Mon rôle",
+     "t": "Consultant UX chez O2Web, responsable de l’UX."
+    },
+    {
+     "b": "Qui décidait",
+     "t": "J’ai surtout travaillé avec un consultant embauché par le client. Il approuvait le travail, et le client prenait les décisions finales."
+    },
+    {
+     "b": "Portée",
+     "t": "Méthodologie de test A/B, plan de mesure et UX de la plateforme et du formulaire. L’interface était un travail d’équipe."
+    }
+   ]
   },
   {
    "type": "cd-text",

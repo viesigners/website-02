@@ -6,36 +6,35 @@
  },
  "sections": [
   {
-   "type": "page-hero",
+   "type": "cd-hero",
    "tag": "Case study · Healthcare",
    "h1": "Turning scattered trial pages into *one searchable platform*",
+   "img": "work/pharmy-hub.jpg",
+   "alt": "Clinical trial search interface with results listed beside a map"
+  },
+  {
+   "type": "cd-facts",
+   "caption": "The hub: search by condition and location, with results on a map. [À FOURNIR : replace with the original full-size screens]",
    "lead": "I led the UX on this project as a UX consultant at O2Web. We brought each study’s landing page into one platform, like Airbnb for clinical trials, built around what focus groups said people needed to trust the process.",
    "byline": "By Charles-Erick BG",
-   "brief": [
+   "items": [
     {
-     "b": "Client:",
-     "t": "a large global pharmaceutical company. Pharmy is a fictional name; the real one is under NDA."
+     "b": "Client",
+     "t": "A large global pharmaceutical company. Pharmy is a fictional name; the real one is under NDA."
     },
     {
-     "b": "My role:",
+     "b": "My role",
      "t": "UX consultant at O2Web, leading the UX."
     },
     {
-     "b": "Who decided:",
+     "b": "Who decided",
      "t": "I worked mainly with a consultant hired by the client. He approved the work, and the client made the final decisions."
     },
     {
-     "b": "Scope:",
+     "b": "Scope",
      "t": "A/B test methodology, measurement plan and UX for the platform and the form. The UI was a team effort."
     }
    ]
-  },
-  {
-   "type": "cd-image",
-   "theme": "light",
-   "img": "work/pharmy-hub.jpg",
-   "alt": "Clinical trial search interface with results listed beside a map",
-   "caption": "The hub: search by condition and location, with results on a map. [À FOURNIR : replace with the original full-size screens]"
   },
   {
    "type": "cd-text",
