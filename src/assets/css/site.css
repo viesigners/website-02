@@ -945,12 +945,12 @@ html { scroll-padding-top: 7rem; }
 }
 
 /* case study hero: the title leads straight into the work, which overlaps the next sheet */
-.cd-hero { --overlap: clamp(5rem, 2rem + 13vw, 15rem); padding-bottom: 0; }
+.cd-hero { --overlap: clamp(3.5rem, 1rem + 7vw, 9rem); padding-bottom: 0; }
 .theme > .cd-hero { padding-top: clamp(7rem, 5rem + 6vw, 10rem); }
 .cd-hero .phero__title { max-width: 26ch; margin-bottom: clamp(1.8rem, 1rem + 3vw, 3.5rem); }
 .cd-hero__img { position: relative; z-index: 3; margin: 0 0 calc(var(--overlap) * -1); }
 .cd-hero__img img { display: block; width: 100%; height: auto; border-radius: var(--r-lg); box-shadow: 0 0 0 1px var(--line-2); }
-.theme > .section.cd-factsec { padding-top: calc(clamp(5rem, 2rem + 13vw, 15rem) + .9rem + var(--r-xl)); }
+.theme > .section.cd-factsec { padding-top: calc(clamp(3.5rem, 1rem + 7vw, 9rem) + .9rem + var(--r-xl)); }
 .cd-cap { margin: 0 0 clamp(2.5rem, 1.5rem + 3vw, 4.5rem); font-size: .9rem; color: var(--text-3); }
 .cd-intro { display: grid; gap: clamp(2rem, 1rem + 3vw, 4rem); }
 .cd-intro .lead { color: var(--text-2); max-width: 34em; }
@@ -1030,6 +1030,7 @@ html { scroll-padding-top: 7rem; }
 .cd-brief .cd-note { display: block; margin-top: .35rem; font-size: .8rem; }
 .cd-brief li { font-size: .94rem; }
 .cd-impact.cd-impact--after { margin-top: clamp(3rem, 2rem + 4vw, 6rem); margin-bottom: 0; }
-.cd-hero { position: relative; isolation: isolate; }
-.cd-hero::before { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: -1; background: radial-gradient(55% 80% at 90% 0%, rgba(255, 72, 139, .4), rgba(255, 72, 139, 0) 70%), radial-gradient(40% 60% at 100% 85%, rgba(227, 58, 219, .28), rgba(227, 58, 219, 0) 70%), radial-gradient(36% 55% at 0% 100%, rgba(255, 107, 156, .2), rgba(255, 107, 156, 0) 70%), radial-gradient(30% 45% at 48% 0%, rgba(190, 70, 235, .2), rgba(190, 70, 235, 0) 70%), radial-gradient(26% 40% at 62% 100%, rgba(255, 72, 139, .16), rgba(255, 72, 139, 0) 70%); }
-.cd-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background-image: radial-gradient(rgba(219, 229, 237, .55) 1.2px, transparent 1.7px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(70% 90% at 86% 18%, #000, transparent 76%); mask-image: radial-gradient(70% 90% at 86% 18%, #000, transparent 76%); opacity: .55; }
+.cd-hero { position: relative; }
+.cd-hero > .wrap { position: relative; z-index: 3; }
+.cd-hero::before { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0; background: radial-gradient(55% 80% at 90% 0%, rgba(255, 72, 139, .4), rgba(255, 72, 139, 0) 70%), radial-gradient(40% 60% at 100% 85%, rgba(227, 58, 219, .28), rgba(227, 58, 219, 0) 70%), radial-gradient(36% 55% at 0% 100%, rgba(255, 107, 156, .2), rgba(255, 107, 156, 0) 70%), radial-gradient(30% 45% at 48% 0%, rgba(190, 70, 235, .2), rgba(190, 70, 235, 0) 70%), radial-gradient(26% 40% at 62% 100%, rgba(255, 72, 139, .16), rgba(255, 72, 139, 0) 70%); }
+.cd-hero::after { content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none; background-image: radial-gradient(rgba(219, 229, 237, .55) 1.2px, transparent 1.7px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(70% 90% at 86% 18%, #000, transparent 76%); mask-image: radial-gradient(70% 90% at 86% 18%, #000, transparent 76%); opacity: .55; }
