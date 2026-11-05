@@ -13,6 +13,10 @@
    "alt": "Clinical trial search interface with results listed beside a map",
    "glance": [
     {
+     "k": "Who",
+     "v": "Charles-Erick BG"
+    },
+    {
      "k": "Role",
      "v": "UX and CRO expert."
     },
