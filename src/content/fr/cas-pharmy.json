@@ -309,19 +309,18 @@
        "+20 %"
       ],
       [
-       "Coordonnées reçues",
+       "Coordonnées qualifiées et non qualifiées reçues",
        "1,95 %",
-       "1,09 %",
-       "−44 %"
+       "ND",
+       "ND"
       ],
       [
-       "Non qualifiés, arrivés au formulaire de communauté",
+       "Coordonnées qualifiées reçues",
        "ND",
-       "1,25 %",
+       "1,09 %",
        "ND"
       ]
-     ],
-     "note": "Note : le 1,95 % de la version A couvre tous les formulaires complets reçus, qualifiés ou non, alors que le 1,09 % de la version B ne couvre que les personnes qualifiées. Le −44 % n’est pas une baisse des candidats qualifiés."
+     ]
     }
    ]
   },

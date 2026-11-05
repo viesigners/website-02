@@ -309,19 +309,18 @@
        "+20%"
       ],
       [
-       "Contact details received",
+       "Qualified and unqualified contact details received",
        "1.95%",
-       "1.09%",
-       "−44%"
+       "NA",
+       "NA"
       ],
       [
-       "Not qualified, reached the community form",
+       "Qualified contact details received",
        "NA",
-       "1.25%",
+       "1.09%",
        "NA"
       ]
-     ],
-     "note": "Note: version A’s 1.95% covers every full form received, qualified or not, while version B’s 1.09% covers qualified people only. The −44% is not a drop in qualified candidates."
+     ]
     }
    ]
   },
