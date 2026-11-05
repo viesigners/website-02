@@ -353,7 +353,7 @@
       },
       {
        "h": "A multi-step wizard",
-       "p": "The contact step would be sent as soon as people moved to step 2, and the qualification questions would come in smaller chunks, so the form feels lighter."
+       "p": "The contact step would be sent as soon as people moved to step 2, and the qualification questions would come in smaller chunks, so the form feels lighter. People who stopped after the contact step would receive an email sequence inviting them to finish, so the client’s team wouldn’t spend time on incomplete forms."
       },
       {
        "h": "An empathy section",

@@ -353,7 +353,7 @@
       },
       {
        "h": "Un assistant à plusieurs étapes",
-       "p": "L’étape des coordonnées serait envoyée dès le passage à l’étape 2, et les questions de qualification arriveraient en petits blocs, pour un formulaire plus léger."
+       "p": "L’étape des coordonnées serait envoyée dès le passage à l’étape 2, et les questions de qualification arriveraient en petits blocs, pour un formulaire plus léger. Les gens qui s’arrêtaient après cette étape recevraient une séquence de courriels les invitant à terminer, pour que l’équipe du client ne perde pas de temps sur des formulaires incomplets."
       },
       {
        "h": "Une section d’empathie",
