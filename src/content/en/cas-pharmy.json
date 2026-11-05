@@ -252,7 +252,10 @@
        "label": "Map with clusters"
       },
       {
-       "label": "After clicking a cluster"
+       "label": "Wireframe: marker clicked on mobile",
+       "alt": "Mobile wireframe of a map marker clicked: the clinic and its trials open above the pin",
+       "img": "work/pharmy-wf-map-en.jpg",
+       "phone": true
       },
       {
        "label": "Trial list"
