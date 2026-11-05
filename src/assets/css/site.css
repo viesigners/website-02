@@ -1049,6 +1049,6 @@ html { scroll-padding-top: 7rem; }
 .cd-figs { display: grid; gap: clamp(.8rem, .5rem + 1vw, 1.25rem); }
 @media (min-width: 960px) { .cd-figs { grid-column: 1 / -1; grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .cd-fig { margin: 0; }
-.cd-fig__art { padding: clamp(.8rem, .5rem + 1vw, 1.4rem); border-radius: var(--r-md); background: #f4f5f7; }
+.cd-fig__art { padding: clamp(.4rem, .2rem + .6vw, .8rem) 0; }
 .cd-fig__art svg { display: block; width: 100%; height: auto; overflow: visible; }
 .cd-fig figcaption { margin-top: .7rem; font-family: var(--f-mono); font-size: .74rem; color: var(--text-2); text-align: center; }
