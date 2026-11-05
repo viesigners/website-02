@@ -1052,5 +1052,4 @@ html { scroll-padding-top: 7rem; }
 .cd-fig__art { padding: clamp(.4rem, .2rem + .6vw, .8rem) 0; }
 .cd-fig__art svg { display: block; width: 100%; height: auto; overflow: visible; }
 .cd-fig figcaption { margin-top: .7rem; font-family: var(--f-mono); font-size: .74rem; color: var(--text-2); text-align: center; }
-.cd-decisions dl > div:only-child { grid-column: 1 / -1; }
-.cd-decisions dl > div:only-child dd { max-width: 70ch; }
+@media (min-width: 860px) { .cd-decisions dl > div:only-child { grid-column: span 2; } }
