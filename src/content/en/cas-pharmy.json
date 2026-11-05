@@ -130,7 +130,7 @@
     },
     {
      "h": "Answer objections before asking people to search",
-     "p": "The homepage explains the project first, and a button then leads to the search.",
+     "p": "The homepage was designed to convince, not just inform. It made people feel part of a growing community and not alone, so they’d want to participate. A button then led to the search.",
      "notes": [
       {
        "k": "Options I had",
@@ -142,7 +142,7 @@
       },
       {
        "k": "What it gave up",
-       "v": "Everyone lands on an informational page before searching. To limit that, the search stayed the most prominent item in the main menu."
+       "v": "Everyone passes through the homepage before searching. To limit that, the search stayed the most prominent item in the main menu."
       }
      ],
      "shots": [

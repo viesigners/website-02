@@ -130,7 +130,7 @@
     },
     {
      "h": "Répondre aux objections avant de demander de chercher",
-     "p": "La page d’accueil présente d’abord le projet, puis un bouton mène à la recherche.",
+     "p": "La page d’accueil était conçue pour convaincre, pas seulement pour informer. Elle donnait aux gens le sentiment de faire partie d’une communauté grandissante et de ne pas être seuls, pour leur donner envie de participer. Un bouton menait ensuite à la recherche.",
      "notes": [
       {
        "k": "Mes options",
@@ -142,7 +142,7 @@
       },
       {
        "k": "Ce qu’il sacrifiait",
-       "v": "Tout le monde passe par une page d’information avant de chercher. Pour limiter cet effet, la recherche restait l’élément le plus visible du menu principal."
+       "v": "Tout le monde passe par la page d’accueil avant de chercher. Pour limiter cet effet, la recherche restait l’élément le plus visible du menu principal."
       }
      ],
      "shots": [
