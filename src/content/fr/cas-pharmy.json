@@ -370,10 +370,10 @@
        "ND"
       ]
      ],
-     "captionSub": "Une étape ou deux",
-     "note": "Source : Google Analytics, test de trois mois."
+     "captionSub": "Une étape ou deux"
     }
-   ]
+   ],
+   "source": "Source : Google Analytics, test de trois mois."
   },
   {
    "type": "cd-cards",

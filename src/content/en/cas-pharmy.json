@@ -370,10 +370,10 @@
        "NA"
       ]
      ],
-     "captionSub": "One step or two",
-     "note": "Source: Google Analytics, three-month test."
+     "captionSub": "One step or two"
     }
-   ]
+   ],
+   "source": "Source: Google Analytics, three-month test."
   },
   {
    "type": "cd-cards",
