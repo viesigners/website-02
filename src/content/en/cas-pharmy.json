@@ -318,7 +318,8 @@
    "prose": [
     "The platform went live, and the A/B test ran on real traffic. It was a test for the client, and I don’t know whether they kept it.",
     "Today I’d push for a longer test. It wasn’t possible at the time, but it would have given us enough visits to confirm the completion result.",
-    "I’d also turn the form into a multi-step wizard. The contact step would be sent as soon as people moved to step 2, and the qualification questions would be split into smaller chunks, so the form feels lighter and less intimidating."
+    "I’d also turn the form into a multi-step wizard. The contact step would be sent as soon as people moved to step 2, and the qualification questions would be split into smaller chunks, so the form feels lighter and less intimidating.",
+    "On the homepage, I’d add a section right under the banner that builds empathy with people living with these conditions. It would show that we understand their situation before talking about the solution: joining the community of study participants."
    ]
   },
   {

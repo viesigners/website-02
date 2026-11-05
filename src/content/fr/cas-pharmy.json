@@ -318,7 +318,8 @@
    "prose": [
     "La plateforme a été mise en ligne et le test A/B a roulé avec du vrai trafic. C’était un test pour le client, et je ne sais pas s’il l’a conservée.",
     "Aujourd’hui, je pousserais pour un test plus long. Ce n’était pas possible à l’époque, mais on aurait eu assez de visites pour confirmer le résultat sur le taux de fin.",
-    "Je transformerais aussi le formulaire en assistant à plusieurs étapes. L’étape des coordonnées serait envoyée dès le passage à l’étape 2, et les questions de qualification seraient découpées en petits blocs, pour que le formulaire semble plus léger et moins intimidant."
+    "Je transformerais aussi le formulaire en assistant à plusieurs étapes. L’étape des coordonnées serait envoyée dès le passage à l’étape 2, et les questions de qualification seraient découpées en petits blocs, pour que le formulaire semble plus léger et moins intimidant.",
+    "Sur la page d’accueil, j’ajouterais, juste sous la bannière, une section qui crée de l’empathie avec les personnes atteintes de ces conditions. Elle montrerait que nous comprenons leur situation avant de parler de la solution : rejoindre la communauté de participants aux études."
    ]
   },
   {
