@@ -996,3 +996,4 @@ html { scroll-padding-top: 7rem; }
 .cd-table tbody td:last-child { font-family: var(--f-display); font-size: 1.25em; font-weight: 400; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 @media (max-width: 639px) { .cd-table { padding: 1.1rem .9rem; } .cd-tintro { font-size: 1.05rem; } }
 .cd-table tbody td.cd-na { background: none; color: var(--text-3); font-family: inherit; font-size: inherit; }
+.cd-sub { display: block; margin-top: .15rem; font-size: .82em; color: var(--text-3); }
