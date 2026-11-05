@@ -391,11 +391,11 @@ R['cd-hero'] = (s, c) => `<section class="section cd-hero" aria-labelledby="h1">
 </div></section>`;
 R['cd-facts'] = (s, c) => `<section class="section cd-factsec"><div class="wrap">
   ${s.caption ? `<p class="cd-cap rv">${fmtT(s.caption, c.lang)}</p>` : ''}
-  ${s.impact ? `<div class="proof cd-impact">${s.impact.map((i, k) => `<div class="proof__item rv" style="--d:${k * .08}s"><b>${esc(i.n)}</b><span>${fmtT(i.t, c.lang)}</span>${i.note ? `<small class="cd-note">${fmtT(i.note, c.lang)}</small>` : ''}</div>`).join('')}</div>` : ''}
   <div class="cd-intro">
     <div><p class="lead rv">${fmt(s.lead, c.lang)}</p><p class="byline rv">${esc(s.byline)}</p></div>
     <dl class="cd-facts rv">${s.items.map((i) => `<div><dt>${fmt(i.b, c.lang)}</dt><dd>${fmtT(i.t, c.lang)}</dd></div>`).join('')}</dl>
   </div>
+  ${s.impact ? `<div class="proof cd-impact cd-impact--after">${s.impact.map((i, k) => `<div class="proof__item rv" style="--d:${k * .08}s"><b>${esc(i.n)}</b><span>${fmtT(i.t, c.lang)}</span>${i.note ? `<small class="cd-note">${fmtT(i.note, c.lang)}</small>` : ''}</div>`).join('')}</div>` : ''}
 </div></section>`;
 R['cd-impact'] = (s, c) => `<section class="section section--tight"><div class="wrap">
   <div class="proof">${s.items.map((i, k) => `<div class="proof__item rv" style="--d:${k * .08}s"><b>${esc(i.n)}</b><span>${fmtT(i.t, c.lang)}</span>${i.note ? `<small class="cd-note">${fmtT(i.note, c.lang)}</small>` : ''}</div>`).join('')}</div>

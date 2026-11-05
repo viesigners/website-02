@@ -1030,3 +1030,4 @@ html { scroll-padding-top: 7rem; }
 .cd-hero__top.phero__grid .phero__title { margin-bottom: 0; }
 .cd-brief .cd-note { display: block; margin-top: .35rem; font-size: .8rem; }
 .cd-brief li { font-size: .94rem; }
+.cd-impact.cd-impact--after { margin-top: clamp(3rem, 2rem + 4vw, 6rem); margin-bottom: 0; }
