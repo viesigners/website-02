@@ -1053,3 +1053,4 @@ html { scroll-padding-top: 7rem; }
 .cd-fig__art svg { display: block; width: 100%; height: auto; overflow: visible; }
 .cd-fig figcaption { margin-top: .7rem; font-family: var(--f-mono); font-size: .74rem; color: var(--text-2); text-align: center; }
 @media (min-width: 860px) { .cd-decisions dl > div:only-child { grid-column: span 2; } }
+.cd-stat__row b { order: 2; }
