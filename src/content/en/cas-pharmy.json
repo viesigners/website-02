@@ -128,19 +128,14 @@
     "**I started from the Google Analytics and Hotjar data.** I then framed the test hypothesis, wrote the A/B methodology and set the indicators and measurement plan with the client’s team.",
     "I guided the project team through inspiration, ideation, prototyping and technical validation, and produced the information architecture and wireframes. The focus groups were run by the client before the project; I built on their findings."
    ],
-   "wide": true,
    "shots": [
     {
      "label": "Wireframe: Why participate section",
      "alt": "Why participate wireframe with four numbered reasons",
      "img": "work/pharmy-wf-why-en.jpg"
-    },
-    {
-     "label": "A/B test methodology",
-     "alt": "Cover of the A/B testing methodology document by Charles-Erick BG",
-     "img": "work/pharmy-methodology.jpg"
     }
-   ]
+   ],
+   "split": true
   },
   {
    "type": "cd-decisions",

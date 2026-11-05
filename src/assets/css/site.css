@@ -1010,3 +1010,5 @@ html { scroll-padding-top: 7rem; }
 .cd-facts dd strong { font-weight: 600; }
 .cd-impact { margin-bottom: clamp(4rem, 3rem + 4vw, 7rem); }
 .cd-source { margin: clamp(1.25rem, 1rem + .8vw, 1.75rem) 0 0; font-size: .82rem; line-height: 1.4; color: var(--text-3); text-align: center; }
+.cd-text--split .cd-shots { margin-top: 0; max-width: none; }
+@media (min-width: 860px) { .cd-text--split { align-items: center; } .cd-text--split .cd-shots { order: -1; } }

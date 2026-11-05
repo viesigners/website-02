@@ -128,19 +128,14 @@
     "**Je suis parti des données de Google Analytics et de Hotjar.** J’ai ensuite formulé l’hypothèse du test, rédigé la méthodologie A/B et établi les indicateurs et le plan de mesure avec l’équipe du client.",
     "J’ai guidé l’équipe de projet à travers l’inspiration, l’idéation, le prototypage et la validation technique, et j’ai produit l’architecture de l’information et les wireframes. Les groupes de discussion ont été menés par le client avant le projet; je me suis appuyé sur leurs conclusions."
    ],
-   "wide": true,
    "shots": [
     {
      "label": "Wireframe : section Pourquoi participer",
      "alt": "Wireframe de la section Pourquoi participer avec quatre raisons numérotées",
      "img": "work/pharmy-wf-why-fr.jpg"
-    },
-    {
-     "label": "Méthodologie du test A/B",
-     "alt": "Couverture du document de méthodologie de test A/B par Charles-Érick BG",
-     "img": "work/pharmy-methodology.jpg"
     }
-   ]
+   ],
+   "split": true
   },
   {
    "type": "cd-decisions",

@@ -372,11 +372,12 @@ const fmtT = (s, lang) => fmt(s, lang).replace(/\[À FOURNIR[^\]]*\]/g, (m) => `
 const shots = (list, cls = '') => (list?.length ? `<div class="cd-shots cd-shots--${list.length} ${cls} rv">${list.map((i) => `<figure class="cd-shot${i.phone ? ' cd-shot--phone' : ''}">${i.img ? `${img(i.img, i.alt, { sizes: '(min-width:640px) 16rem, 62vw' })}<figcaption>${esc(i.label)}</figcaption>` : `<div class="cd-slot"><span>${esc(i.label)}</span></div>`}</figure>`).join('')}</div>` : '');
 R['cd-text'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-text', { label: s.label })}
-  <div class="cd-text${s.wide ? ' cd-text--wide' : ''}">
+  <div class="cd-text${s.wide ? ' cd-text--wide' : ''}${s.split ? ' cd-text--split' : ''}">
     <div class="prose rv">${s.prose.map((p) => `<p>${fmtT(p, c.lang)}</p>`).join('')}</div>
+    ${s.split ? shots(s.shots) : ''}
     ${s.steps ? `<ol class="cd-steps">${s.steps.map((i, k) => `<li class="rv" style="--d:${k * .06}s"><b>${esc(i.h)}</b><span>${fmtT(i.p, c.lang)}</span></li>`).join('')}</ol>` : ''}
   </div>
-  ${shots(s.shots)}
+  ${s.split ? '' : shots(s.shots)}
 </div></section>`;
 R['cd-gallery'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-gallery', { label: s.label })}
