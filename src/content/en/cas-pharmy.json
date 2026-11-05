@@ -51,7 +51,7 @@
     },
     {
      "h": "Test the form on real traffic",
-     "p": "Compare a one-step form with a two-step form on the same design."
+     "p": "My audit of the qualification form led me to suggest a two-step version, which we compared with the one-step form on the same design."
     }
    ]
   },
@@ -81,7 +81,7 @@
    "items": [
     {
      "h": "Split a long form in two steps to capture leads sooner",
-     "p": "The first step collected contact details, so the client could get a lead even if the person didn’t finish.",
+     "p": "The first step collected contact details, so the client could call people, answer their questions and suggest trials by phone, even if they never finished the form.",
      "notes": [
       {
        "k": "Options I had",
@@ -89,7 +89,7 @@
       },
       {
        "k": "Why I chose this",
-       "v": "The form was long, and I wanted the client to get leads as soon as possible, even from people who didn’t finish."
+       "v": "My audit pointed to a long form. I suggested two steps so the client could get leads sooner and wouldn’t rely only on people filling in the whole form."
       },
       {
        "k": "What it gave up",

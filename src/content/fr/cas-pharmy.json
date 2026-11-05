@@ -51,7 +51,7 @@
     },
     {
      "h": "Tester le formulaire avec du vrai trafic",
-     "p": "Comparer un formulaire en une étape à un formulaire en deux étapes, sur le même design."
+     "p": "Mon audit du formulaire de qualification m’a mené à proposer une version en deux étapes, que nous avons comparée au formulaire en une étape, sur le même design."
     }
    ]
   },
@@ -81,7 +81,7 @@
    "items": [
     {
      "h": "Séparer un long formulaire en deux étapes pour capter les leads plus tôt",
-     "p": "La première étape recueillait les coordonnées, pour que le client obtienne un lead même si la personne n’allait pas au bout.",
+     "p": "La première étape recueillait les coordonnées, pour que le client puisse appeler les gens, répondre à leurs questions et suggérer des essais par téléphone, même s’ils ne terminaient pas le formulaire.",
      "notes": [
       {
        "k": "Mes options",
@@ -89,7 +89,7 @@
       },
       {
        "k": "Pourquoi ce choix",
-       "v": "Le formulaire était long et je voulais que le client obtienne des leads le plus vite possible, même auprès des gens qui n’allaient pas au bout."
+       "v": "Mon audit pointait vers un formulaire long. J’ai proposé deux étapes pour que le client obtienne des leads plus tôt et ne dépende pas seulement des gens qui remplissaient tout le formulaire."
       },
       {
        "k": "Ce qu’il sacrifiait",
