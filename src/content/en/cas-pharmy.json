@@ -230,15 +230,15 @@
      "notes": [
       {
        "k": "Options I had",
-       "v": "A filtered list."
+       "v": "A filtered list, or a map with one marker per condition, which would have been very cluttered since one clinic could have several studies."
       },
       {
        "k": "Why I chose this",
-       "v": "The focus groups showed people needed to be close to the clinic because they had to go on site. How far they would travel depended on the condition."
+       "v": "The focus groups showed people needed to be close to the clinic because they had to go on site. How far they would travel depended on the condition. So I suggested grouping trials by clinic, with the studies shown when a clinic marker is clicked. For that panel, I drew on Airbnb and real estate apps optimized for map navigation."
       },
       {
        "k": "What it gave up",
-       "v": "It was much harder to design and build: clusters when zooming out, whether a click zooms or lists the trials, and a list that stays clear on mobile."
+       "v": "It was much harder to design and build: clusters when zooming out, whether a click zooms or lists the trials, and a list that stays clear on mobile. I worked with the developer to make the interactions easier to implement: clustering was part of the map library, so it performed better and was simpler to build."
       }
      ],
      "shots": [

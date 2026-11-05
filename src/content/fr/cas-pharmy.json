@@ -230,15 +230,15 @@
      "notes": [
       {
        "k": "Mes options",
-       "v": "Une liste filtrée."
+       "v": "Une liste filtrée, ou une carte avec un marqueur par condition, ce qui aurait été très chargé puisqu’une clinique pouvait avoir plusieurs études."
       },
       {
        "k": "Pourquoi ce choix",
-       "v": "Les groupes de discussion montraient que les gens devaient être près de la clinique, puisqu’ils devaient se rendre sur place. La distance acceptable variait selon la condition."
+       "v": "Les groupes de discussion montraient que les gens devaient être près de la clinique, puisqu’ils devaient se rendre sur place. La distance acceptable variait selon la condition. J’ai donc suggéré de regrouper les essais par clinique, et d’afficher les études au clic sur le marqueur d’une clinique. Pour ce panneau, je me suis inspiré d’Airbnb et d’applications immobilières optimisées pour la navigation sur carte."
       },
       {
        "k": "Ce qu’il sacrifiait",
-       "v": "Beaucoup plus difficile à concevoir et à bâtir : grappes au dézoom, clic qui zoome ou affiche la liste des essais, et une liste qui reste claire sur mobile."
+       "v": "Beaucoup plus difficile à concevoir et à bâtir : grappes au dézoom, clic qui zoome ou affiche la liste des essais, et une liste qui reste claire sur mobile. J’ai travaillé avec le développeur pour faciliter l’implantation des interactions : le regroupement des marqueurs faisait partie de la bibliothèque de carte, ce qui offrait de meilleures performances et simplifiait le développement."
       }
      ],
      "shots": [
