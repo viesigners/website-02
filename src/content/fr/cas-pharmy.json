@@ -384,12 +384,12 @@
      "h": "Ce qui a été lancé",
      "items": [
       {
-       "h": "La version B recommandée",
-       "p": "La plateforme a été mise en ligne et le test A/B a roulé avec du vrai trafic. Mon rapport recommandait de conserver la version B."
+       "h": "Une recommandation claire pour la version B",
+       "p": "J’ai recommandé de conserver la version B parce qu’elle amenait 48 % plus de visiteurs au formulaire, tout en étant franc sur ce que l’échantillon ne pouvait pas confirmer. Le client avait ainsi une décision en laquelle il pouvait avoir confiance."
       },
       {
-       "h": "Une feuille de route de tests",
-       "p": "Moins d’appels à l’action sur la page d’étude, des champs de présélection plus simples, et une page « non qualifié » plus courte avec le formulaire de communauté en haut."
+       "h": "Des enregistrements aux prochains tests",
+       "p": "J’ai transformé les difficultés observées en feuille de route. Les gens accrochaient sur des champs de présélection, alors j’en ai proposé de plus simples. Les visiteurs non qualifiés lisaient le titre et partaient, alors j’ai placé le formulaire de communauté en haut d’une page plus courte. J’ai aussi proposé moins d’appels à l’action sur la page d’étude."
       }
      ]
     },

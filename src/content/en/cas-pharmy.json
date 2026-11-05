@@ -384,12 +384,12 @@
      "h": "What shipped",
      "items": [
       {
-       "h": "Version B recommended",
-       "p": "The platform went live, and the A/B test ran on real traffic. My report recommended keeping version B."
+       "h": "A clear call on version B",
+       "p": "I recommended keeping version B because it brought 48% more visitors to the form, and I was upfront about what the sample couldn’t confirm. That gave the client a decision it could trust."
       },
       {
-       "h": "A roadmap of next tests",
-       "p": "Fewer calls to action on the study page, simpler prescreener fields, and a shorter not-qualified page with the community form at the top."
+       "h": "Recordings became the next tests",
+       "p": "I turned what people struggled with into a roadmap. They hit friction on prescreener fields, so I proposed simpler ones. Not-qualified visitors read the title and left, so I moved the community form to the top of a shorter page. I also proposed fewer calls to action on the study page."
       }
      ]
     },
