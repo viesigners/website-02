@@ -210,15 +210,21 @@
    "h2": "Le même parcours *sur téléphone*",
    "shots": [
     {
-     "label": "Recherche sur mobile",
+     "label": "Dernières études",
+     "alt": "Liste mobile des dernières études",
+     "img": "work/pharmy-m-studies.jpg",
      "phone": true
     },
     {
-     "label": "Carte sur mobile",
+     "label": "Conditions de A à Z",
+     "alt": "Navigation mobile des conditions de A à Z",
+     "img": "work/pharmy-m-conditions.jpg",
      "phone": true
     },
     {
-     "label": "Liste des essais sur mobile",
+     "label": "Glossaire",
+     "alt": "Page glossaire sur mobile",
+     "img": "work/pharmy-m-glossary.jpg",
      "phone": true
     }
    ]

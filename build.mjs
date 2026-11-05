@@ -369,7 +369,7 @@ R.casestudy = (s, c) => `<section class="section"><div class="wrap">
 
 /* project case studies: prose, decisions, measured test. [À FOURNIR …] stays visible as a highlighted marker until the content is supplied */
 const fmtT = (s, lang) => fmt(s, lang).replace(/\[À FOURNIR[^\]]*\]/g, (m) => `<span class="tbd">${m}</span>`);
-const shots = (list, cls = '') => (list?.length ? `<div class="cd-shots cd-shots--${list.length} ${cls} rv">${list.map((i) => `<figure class="cd-shot${i.phone ? ' cd-shot--phone' : ''}"><div class="cd-slot"><span>${esc(i.label)}</span></div></figure>`).join('')}</div>` : '');
+const shots = (list, cls = '') => (list?.length ? `<div class="cd-shots cd-shots--${list.length} ${cls} rv">${list.map((i) => `<figure class="cd-shot${i.phone ? ' cd-shot--phone' : ''}">${i.img ? `${img(i.img, i.alt, { sizes: '(min-width:640px) 16rem, 62vw' })}<figcaption>${esc(i.label)}</figcaption>` : `<div class="cd-slot"><span>${esc(i.label)}</span></div>`}</figure>`).join('')}</div>` : '');
 R['cd-text'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-text', { label: s.label })}
   <div class="cd-text${s.wide ? ' cd-text--wide' : ''}">

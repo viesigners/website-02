@@ -210,15 +210,21 @@
    "h2": "The same journey *on a phone*",
    "shots": [
     {
-     "label": "Mobile search",
+     "label": "Latest studies",
+     "alt": "Mobile list of the latest clinical studies",
+     "img": "work/pharmy-m-studies.jpg",
      "phone": true
     },
     {
-     "label": "Mobile map",
+     "label": "Conditions, A to Z",
+     "alt": "Mobile A to Z navigation of conditions",
+     "img": "work/pharmy-m-conditions.jpg",
      "phone": true
     },
     {
-     "label": "Mobile trial list",
+     "label": "Glossary",
+     "alt": "Mobile glossary page",
+     "img": "work/pharmy-m-glossary.jpg",
      "phone": true
     }
    ]
