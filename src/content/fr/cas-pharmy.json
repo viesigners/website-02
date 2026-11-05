@@ -401,10 +401,9 @@
   },
   {
    "type": "cta-final",
-   "h2": "Votre entonnoir perd des gens *au formulaire?*",
-   "p": "Regardons votre parcours ensemble et trouvons où les gens décrochent.",
-   "cta": "Réservez un teardown gratuit de 15 minutes",
-   "href": "https://cal.com/viesigners/user-journey-teardown-call"
+   "h2": "Besoin d’un coup de main pour optimiser votre expérience utilisateur *et obtenir des demandes mieux qualifiées?*",
+   "p": "Parlez-moi de votre produit et de l’endroit où les gens décrochent.",
+   "cta": "Me contacter"
   }
  ],
  "faq": []
