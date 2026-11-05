@@ -38,11 +38,8 @@
      "b": "Portée",
      "t": "Analyse, hypothèse, méthodologie A/B, mesure, architecture de l’information et recommandations d’interface par wireframes. J’ai aussi conseillé la designer graphique, qui a réalisé l’interface finale."
     }
-   ]
-  },
-  {
-   "type": "cd-impact",
-   "items": [
+   ],
+   "impact": [
     {
      "n": "+48 %",
      "t": "de visiteurs se sont rendus au formulaire de qualification : de 5,6 % à 8,3 % des visites."

@@ -38,11 +38,8 @@
      "b": "Scope",
      "t": "Analysis, hypothesis, A/B methodology, measurement, information architecture and interface recommendations through wireframes. I also advised the graphic designer, who created the final UI."
     }
-   ]
-  },
-  {
-   "type": "cd-impact",
-   "items": [
+   ],
+   "impact": [
     {
      "n": "+48%",
      "t": "more visitors reached the qualification form: 5.6% to 8.3% of visits."

@@ -389,6 +389,7 @@ R['cd-hero'] = (s, c) => `<section class="section cd-hero" aria-labelledby="h1">
 </div></section>`;
 R['cd-facts'] = (s, c) => `<section class="section cd-factsec"><div class="wrap">
   ${s.caption ? `<p class="cd-cap rv">${fmtT(s.caption, c.lang)}</p>` : ''}
+  ${s.impact ? `<div class="proof cd-impact">${s.impact.map((i, k) => `<div class="proof__item rv" style="--d:${k * .08}s"><b>${esc(i.n)}</b><span>${fmtT(i.t, c.lang)}</span>${i.note ? `<small class="cd-note">${fmtT(i.note, c.lang)}</small>` : ''}</div>`).join('')}</div>` : ''}
   <div class="cd-intro">
     <div><p class="lead rv">${fmt(s.lead, c.lang)}</p><p class="byline rv">${esc(s.byline)}</p></div>
     <dl class="cd-facts rv">${s.items.map((i) => `<div><dt>${fmt(i.b, c.lang)}</dt><dd>${fmtT(i.t, c.lang)}</dd></div>`).join('')}</dl>
@@ -800,7 +801,7 @@ function toMd(page, c) {
       case 'cd-impact': L.push(...s.items.map((i) => `- **${i.n}** ${t(i.t)}${i.note ? ' ' + t(i.note) : ''}`), ''); break;
       case 'cd-cards': L.push(`## ${t(s.h2)}`, '', ...s.groups.flatMap((g) => [`### ${t(g.h)}`, '', ...g.items.map((i) => `- **${t(i.h)}** ${t(i.p)}`), '']), ''); break;
       case 'cd-hero': L.push(`# ${t(s.h1)}`, ''); break;
-      case 'cd-facts': L.push(t(s.lead), '', ...s.items.map((i) => `- ${t(i.b)} ${t(i.t)}`), ''); break;
+      case 'cd-facts': L.push(...(s.impact || []).map((i) => `- **${i.n}** ${t(i.t)}${i.note ? ' ' + t(i.note) : ''}`), '', t(s.lead), '', ...s.items.map((i) => `- ${t(i.b)} ${t(i.t)}`), ''); break;
       case 'cd-text': L.push(`## ${t(s.h2)}`, '', ...s.prose.map((p) => t(p) + '\n'), ...(s.steps || []).map((i, n) => `${n + 1}. **${t(i.h)}** — ${t(i.p)}`), ''); break;
       case 'cd-decisions': L.push(`## ${t(s.h2)}`, '', ...s.items.flatMap((i) => [`### ${t(i.h)}`, '', t(i.p), '', ...i.notes.map((n) => `- ${t(n.k)}: ${t(n.v)}`), '']), ''); break;
       case 'cd-test': L.push(`## ${t(s.h2)}`, '', ...s.tables.flatMap((x) => x.rows).map((r) => `- ${r.join(' | ').replace(/\|(?=[^ ])/, ' — ')}`), '', ...s.reads.flatMap((i) => [`### ${t(i.h)}`, '', t(i.p), '']), ''); break;
