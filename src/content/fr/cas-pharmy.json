@@ -260,37 +260,32 @@
      "t": "des formulaires remplis en deux étapes venaient de candidats présélectionnés. Les autres ont rejoint la communauté."
     }
    ],
-   "caption": "Entonnoir par version",
+   "caption": "Entonnoir par version, en part des visites",
    "head": [
     "Étape",
-    "Une étape",
-    "Deux étapes"
+    "A : une étape",
+    "B : deux étapes"
    ],
    "rows": [
     [
-     "Première étape, part des visites",
+     "1. Se sont rendus au formulaire",
      "5,6 %",
      "8,3 %"
     ],
     [
-     "Ont terminé après cette étape",
-     "34,9 %",
-     "28,3 %"
+     "2. Ont envoyé leurs renseignements (A : formulaire complet; B : étape 1)",
+     "1,95 %",
+     "[À FOURNIR : taux de l’étape 1]"
     ],
     [
-     "Formulaire complet, part des visites",
+     "3. Ont terminé le formulaire (A : formulaire complet; B : étape 2 ou communauté)",
      "1,95 %",
      "2,34 %"
     ],
     [
-     "Part des candidats présélectionnés",
-     "Non séparé",
-     "47 %"
-    ],
-    [
-     "Ont plutôt rejoint la communauté",
+     "4. Parmi eux, ont rejoint la communauté (non admissibles)",
      "Sans objet",
-     "53 %"
+     "1,25 %"
     ]
    ],
    "reads": [

@@ -260,37 +260,32 @@
      "t": "of version B completions were prequalified candidates. The others joined the community."
     }
    ],
-   "caption": "Funnel by version",
+   "caption": "Funnel by version, as a share of visits",
    "head": [
     "Stage",
-    "One-step form",
-    "Two-step form"
+    "A: one-step form",
+    "B: two-step form"
    ],
    "rows": [
     [
-     "First step of the form, share of visits",
+     "1. Reached the form",
      "5.6%",
      "8.3%"
     ],
     [
-     "Finished after that step",
-     "34.9%",
-     "28.3%"
+     "2. Sent personal info (A: full form; B: step 1)",
+     "1.95%",
+     "[À FOURNIR : step 1 rate]"
     ],
     [
-     "Completed the whole form, share of visits",
+     "3. Completed the form (A: full form; B: step 2 or community form)",
      "1.95%",
      "2.34%"
     ],
     [
-     "Prequalified share of completions",
-     "Not separated",
-     "47%"
-    ],
-    [
-     "Joined the community instead",
+     "4. Of those, joined the community (unqualified)",
      "Not applicable",
-     "53%"
+     "1.25%"
     ]
    ],
    "reads": [

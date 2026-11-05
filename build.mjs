@@ -402,7 +402,7 @@ R['cd-decisions'] = (s, c) => `<section class="section"><div class="wrap">
 R['cd-test'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-test', { label: s.label })}
   <div class="proof">${s.results.map((i, k) => `<div class="proof__item rv" style="--d:${k * .08}s"><b>${esc(i.n)}</b><span>${fmtT(i.t, c.lang)}</span>${i.note ? `<small class="cd-note">${fmtT(i.note, c.lang)}</small>` : ''}</div>`).join('')}</div>
-  <div class="cd-table rv"><table><caption>${esc(s.caption)}</caption><thead><tr>${s.head.map((h, i) => `<th scope="col"${i ? ' class="num"' : ''}>${esc(h)}</th>`).join('')}</tr></thead><tbody>${s.rows.map((r) => `<tr><th scope="row">${esc(r[0])}</th>${r.slice(1).map((v) => `<td class="num">${esc(v)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+  <div class="cd-table rv"><table><caption>${esc(s.caption)}</caption><thead><tr>${s.head.map((h, i) => `<th scope="col"${i ? ' class="num"' : ''}>${esc(h)}</th>`).join('')}</tr></thead><tbody>${s.rows.map((r) => `<tr><th scope="row">${esc(r[0])}</th>${r.slice(1).map((v) => `<td class="num">${fmtT(v, c.lang)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
   <div class="cd-read">${s.reads.map((i, k) => `<div class="rv" style="--d:${k * .08}s"><h3>${esc(i.h)}</h3><p>${fmtT(i.p, c.lang)}</p></div>`).join('')}</div>
 </div></section>`;
 
