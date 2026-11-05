@@ -1008,4 +1008,4 @@ html { scroll-padding-top: 7rem; }
 @media (min-width: 960px) { .cd-steps--row { grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: clamp(1.5rem, 1rem + 2vw, 3rem); align-items: start; } }
 @media (min-width: 760px) { .cd-cards--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .cd-facts dd strong { font-weight: 600; }
-.cd-impact { margin-bottom: clamp(2.5rem, 1.5rem + 3vw, 4.5rem); }
+.cd-impact { margin-bottom: clamp(4rem, 3rem + 4vw, 7rem); }
