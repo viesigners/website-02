@@ -297,7 +297,7 @@
    "h2": "Two navigation systems *in one platform*",
    "prose": [
     "Each microsite had its own navigation, and so did the search platform. The menu had to stay appealing, uncluttered and intuitive, even with both.",
-    "I explored two options: stacking the menus and hiding them on scroll, or swapping to the microsite menu with a clear back button. Stacked menus are harder on mobile and add cognitive load. Swapping is more mobile-first, but needs an intuitive way back. [À FOURNIR : which option shipped?]"
+    "**I explored two options:** stacking the menus and hiding them on scroll, or swapping to the microsite menu with a clear back button. Stacked menus are harder on mobile and add cognitive load. Swapping is more mobile-first, but needs an intuitive way back. [À FOURNIR : which option shipped?]"
    ],
    "wide": true
   },

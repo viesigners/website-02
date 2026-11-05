@@ -297,7 +297,7 @@
    "h2": "Deux navigations *dans une seule plateforme*",
    "prose": [
     "Chaque microsite avait sa navigation, et la plateforme de recherche avait la sienne. Le menu devait rester attrayant, aéré et intuitif malgré tout.",
-    "J’ai exploré deux options : empiler les menus et les masquer au défilement, ou passer au menu du microsite avec un bouton de retour clair. Deux menus empilés sont plus difficiles à gérer sur mobile et ajoutent de la charge cognitive. Changer de menu est plus mobile first, mais demande un retour intuitif. [À FOURNIR : quelle option a été lancée?]"
+    "**J’ai exploré deux options :** empiler les menus et les masquer au défilement, ou passer au menu du microsite avec un bouton de retour clair. Deux menus empilés sont plus difficiles à gérer sur mobile et ajoutent de la charge cognitive. Changer de menu est plus mobile first, mais demande un retour intuitif. [À FOURNIR : quelle option a été lancée?]"
    ],
    "wide": true
   },
