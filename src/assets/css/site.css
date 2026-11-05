@@ -1034,3 +1034,15 @@ html { scroll-padding-top: 7rem; }
 .cd-hero > .wrap { position: relative; z-index: 3; }
 .cd-hero::before { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0; background: radial-gradient(55% 80% at 90% 0%, rgba(255, 72, 139, .4), rgba(255, 72, 139, 0) 70%), radial-gradient(40% 60% at 100% 85%, rgba(227, 58, 219, .28), rgba(227, 58, 219, 0) 70%), radial-gradient(36% 55% at 0% 100%, rgba(255, 107, 156, .2), rgba(255, 107, 156, 0) 70%), radial-gradient(30% 45% at 48% 0%, rgba(190, 70, 235, .2), rgba(190, 70, 235, 0) 70%), radial-gradient(26% 40% at 62% 100%, rgba(255, 72, 139, .16), rgba(255, 72, 139, 0) 70%); }
 .cd-hero::after { content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none; background-image: radial-gradient(rgba(219, 229, 237, .55) 1.2px, transparent 1.7px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(70% 90% at 86% 18%, #000, transparent 76%); mask-image: radial-gradient(70% 90% at 86% 18%, #000, transparent 76%); opacity: .55; }
+.cd-stats { display: grid; gap: clamp(.8rem, .5rem + 1vw, 1.25rem); }
+@media (min-width: 860px) { .cd-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.cd-stat { display: flex; flex-direction: column; padding: clamp(1.4rem, 1rem + 1.6vw, 2.4rem); border-radius: var(--r-lg); background: #fff; box-shadow: 0 0 0 1px var(--line); }
+.cd-stat__cap { margin: 0 0 1rem; font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: var(--text-3); }
+.cd-stat h3 { margin: 0; font-family: var(--f-display); font-weight: 400; font-size: var(--t-h3); line-height: 1.25; color: var(--text); }
+.cd-stat__sub { margin: .4rem 0 0; font-size: .86rem; color: var(--text-3); }
+.cd-stat__row { display: flex; align-items: flex-end; justify-content: space-between; gap: 1.5rem; margin-top: auto; padding-top: clamp(1.4rem, 1rem + 1.4vw, 2.2rem); }
+.cd-stat__row b { font-family: var(--f-display); font-weight: 300; font-size: clamp(2.8rem, 2rem + 3vw, 4.4rem); line-height: 1; letter-spacing: -.03em; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.cd-stat__row dl { display: flex; gap: 1.4rem; margin: 0; }
+.cd-stat__row dt { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em; color: var(--text-3); }
+.cd-stat__row dd { margin: .2rem 0 0; font-size: 1.15rem; color: var(--text-2); font-variant-numeric: tabular-nums; }
+.cd-stat .cd-note { margin-top: .4rem; }

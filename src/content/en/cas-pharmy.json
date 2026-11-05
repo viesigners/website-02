@@ -336,57 +336,42 @@
      "p": "Hotjar recordings suggested friction on some prescreener fields, while qualified people filled in the contact form easily. On the not-qualified page, people mostly read the title and left."
     }
    ],
-   "tables": [
+   "source": "Source: Google Analytics, three-month test.",
+   "stats": [
     {
-     "caption": "Towards the form",
-     "head": [
-      "Stage",
-      "A: content on two pages",
-      "B: content on one page",
-      "Delta"
+     "cap": "Towards the form",
+     "h": "Reached the qualification form",
+     "sub": "A: content on two pages · B: content on one page",
+     "vals": [
+      {
+       "k": "A",
+       "v": "5.6%"
+      },
+      {
+       "k": "B",
+       "v": "8.3%"
+      }
      ],
-     "rows": [
-      [
-       "Reached the qualification form",
-       "5.6%",
-       "8.3%",
-       "+48%"
-      ]
-     ],
-     "captionSub": "Version B put the study content on one page, reorganized the menu and added buttons to the form."
+     "d": "+48%"
     },
     {
-     "caption": "Inside the form",
-     "head": [
-      "Stage",
-      "A: one step",
-      "B: two steps",
-      "Delta"
+     "cap": "Inside the form",
+     "h": "Prescreener forms received",
+     "sub": "A: full form · B: prescreener only",
+     "vals": [
+      {
+       "k": "A",
+       "v": "1.95%"
+      },
+      {
+       "k": "B",
+       "v": "2.34%"
+      }
      ],
-     "rows": [
-      [
-       "Prescreener forms received|A: full form; B: prescreener only",
-       "1.95%",
-       "2.34%",
-       "+20%"
-      ],
-      [
-       "Qualified and unqualified contact details received|Version A only, since the one-step form collected contact details before qualifying people",
-       "1.95%",
-       "NA",
-       "NA"
-      ],
-      [
-       "Qualified contact details received|Version B only, since the prescreener automatically qualified people before asking for contact details",
-       "NA",
-       "1.09%",
-       "NA"
-      ]
-     ],
-     "captionSub": "One step or two"
+     "d": "+20%",
+     "note": "Small sample, not statistically significant."
     }
-   ],
-   "source": "Source: Google Analytics, three-month test."
+   ]
   },
   {
    "type": "cd-cards",

@@ -336,57 +336,42 @@
      "p": "Les enregistrements Hotjar suggéraient une friction sur certains champs de la présélection, alors que les personnes qualifiées remplissaient facilement le formulaire de contact. Sur la page « non qualifié », les gens lisaient surtout le titre, puis partaient."
     }
    ],
-   "tables": [
+   "source": "Source : Google Analytics, test de trois mois.",
+   "stats": [
     {
-     "caption": "Vers le formulaire",
-     "head": [
-      "Étape",
-      "A : contenu sur deux pages",
-      "B : contenu sur une page",
-      "Delta"
+     "cap": "Vers le formulaire",
+     "h": "Se sont rendus au formulaire de qualification",
+     "sub": "A : contenu sur deux pages · B : contenu sur une page",
+     "vals": [
+      {
+       "k": "A",
+       "v": "5,6 %"
+      },
+      {
+       "k": "B",
+       "v": "8,3 %"
+      }
      ],
-     "rows": [
-      [
-       "Se sont rendus au formulaire de qualification",
-       "5,6 %",
-       "8,3 %",
-       "+48 %"
-      ]
-     ],
-     "captionSub": "La version B regroupait le contenu de l’étude sur une page, réorganisait le menu et ajoutait des boutons vers le formulaire."
+     "d": "+48 %"
     },
     {
-     "caption": "Dans le formulaire",
-     "head": [
-      "Étape",
-      "A : une étape",
-      "B : deux étapes",
-      "Delta"
+     "cap": "Dans le formulaire",
+     "h": "Formulaires de présélection reçus",
+     "sub": "A : formulaire complet · B : présélection seulement",
+     "vals": [
+      {
+       "k": "A",
+       "v": "1,95 %"
+      },
+      {
+       "k": "B",
+       "v": "2,34 %"
+      }
      ],
-     "rows": [
-      [
-       "Formulaires de présélection reçus|A : complet; B : présélection seulement",
-       "1,95 %",
-       "2,34 %",
-       "+20 %"
-      ],
-      [
-       "Coordonnées qualifiées et non qualifiées reçues|Version A seulement, car le formulaire en une étape recueillait les coordonnées avant de qualifier les gens",
-       "1,95 %",
-       "ND",
-       "ND"
-      ],
-      [
-       "Coordonnées qualifiées reçues|Version B seulement, car la présélection qualifiait automatiquement les gens avant de demander les coordonnées",
-       "ND",
-       "1,09 %",
-       "ND"
-      ]
-     ],
-     "captionSub": "Une étape ou deux"
+     "d": "+20 %",
+     "note": "Petit échantillon, résultat non significatif sur le plan statistique."
     }
-   ],
-   "source": "Source : Google Analytics, test de trois mois."
+   ]
   },
   {
    "type": "cd-cards",
