@@ -263,7 +263,7 @@
     },
     {
      "h": "What this test can’t prove",
-     "p": "On this small sample, the +20% isn’t statistically significant. Clicks on the form buttons also trended the other way, so some people may have reached the form directly. The report also flags test visits and configuration bugs. I flagged the sample size at the time, and the project moved forward."
+     "p": "On this small sample, the +20% isn’t statistically significant. Clicks on the form buttons also trended the other way, so some people may have reached the form directly. The report also flags test visits and configuration bugs. I flagged the sample size at the time, and the client decided to move forward anyway."
     },
     {
      "h": "Two changes at once",
