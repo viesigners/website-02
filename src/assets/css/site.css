@@ -959,3 +959,14 @@ html { scroll-padding-top: 7rem; }
 .cd-facts dd { margin: 0; color: var(--text); font-size: .98rem; line-height: 1.5; }
 .cd-facts > div { padding-top: 1rem; border-top: 1px solid var(--line); }
 @media (min-width: 960px) { .cd-intro { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); } }
+
+/* case study image slots: dashed until the real screen is supplied */
+.cd-shots { display: grid; gap: clamp(.8rem, .5rem + 1vw, 1.25rem); margin-top: clamp(1.6rem, 1rem + 2vw, 2.6rem); }
+.cd-shot { margin: 0; min-width: 0; }
+.cd-slot { display: grid; place-items: center; aspect-ratio: 16 / 10; padding: 1rem; border: 1px dashed var(--line-2); border-radius: var(--r-md); background: var(--card); text-align: center; }
+.cd-slot span { font-family: var(--f-mono); font-size: .75rem; letter-spacing: .02em; line-height: 1.4; color: var(--text-2); }
+.cd-shot--phone .cd-slot { aspect-ratio: 9 / 16; }
+.cd-shots--1 { max-width: 34rem; }
+@media (min-width: 640px) { .cd-shots--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } .cd-shots--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 639px) { .cd-shots:has(.cd-shot--phone) { grid-template-columns: repeat(3, minmax(0, 1fr)); } .cd-shot--phone .cd-slot { padding: .4rem; } .cd-shot--phone .cd-slot span { font-size: .62rem; } }
+.cd-shots:has(.cd-shot--phone) { max-width: 48rem; margin-inline: auto; }

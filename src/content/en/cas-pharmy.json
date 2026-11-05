@@ -64,7 +64,15 @@
     "I worked closely with the client’s team to define target user profiles and the indicators that mattered, then wrote the A/B test methodology and measurement plan. I also made sure the measuring tools were in place.",
     "I guided the project team through inspiration, ideation, prototyping and technical validation. The focus groups were run by the client before the project; I built on their findings."
    ],
-   "wide": true
+   "wide": true,
+   "shots": [
+    {
+     "label": "Wireframe: homepage"
+    },
+    {
+     "label": "Wireframe: search results"
+    }
+   ]
   },
   {
    "type": "cd-decisions",
@@ -87,6 +95,14 @@
        "k": "What it gave up",
        "v": "More build work, such as the UI to go back a step, and a lower finish rate: 28% instead of 35%."
       }
+     ],
+     "shots": [
+      {
+       "label": "Form, step 1"
+      },
+      {
+       "label": "Form, step 2 with back button"
+      }
      ]
     },
     {
@@ -100,6 +116,11 @@
       {
        "k": "What it gave up",
        "v": "No downside noted for the client."
+      }
+     ],
+     "shots": [
+      {
+       "label": "Community signup"
       }
      ]
     },
@@ -119,6 +140,14 @@
        "k": "What it gave up",
        "v": "Everyone lands on an informational page before searching. To limit that, the search stayed the most prominent item in the main menu."
       }
+     ],
+     "shots": [
+      {
+       "label": "Homepage"
+      },
+      {
+       "label": "How it works or Conditions page"
+      }
      ]
     },
     {
@@ -137,7 +166,38 @@
        "k": "What it gave up",
        "v": "It was much harder to design and build: clusters when zooming out, whether a click zooms or lists the trials, and a list that stays clear on mobile."
       }
+     ],
+     "shots": [
+      {
+       "label": "Map with clusters"
+      },
+      {
+       "label": "After clicking a cluster"
+      },
+      {
+       "label": "Trial list"
+      }
      ]
+    }
+   ]
+  },
+  {
+   "type": "cd-gallery",
+   "theme": "dark",
+   "label": "Mobile",
+   "h2": "The same journey *on a phone*",
+   "shots": [
+    {
+     "label": "Mobile search",
+     "phone": true
+    },
+    {
+     "label": "Mobile map",
+     "phone": true
+    },
+    {
+     "label": "Mobile trial list",
+     "phone": true
     }
    ]
   },

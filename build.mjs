@@ -369,12 +369,18 @@ R.casestudy = (s, c) => `<section class="section"><div class="wrap">
 
 /* project case studies: prose, decisions, measured test. [À FOURNIR …] stays visible as a highlighted marker until the content is supplied */
 const fmtT = (s, lang) => fmt(s, lang).replace(/\[À FOURNIR[^\]]*\]/g, (m) => `<span class="tbd">${m}</span>`);
+const shots = (list, cls = '') => (list?.length ? `<div class="cd-shots cd-shots--${list.length} ${cls} rv">${list.map((i) => `<figure class="cd-shot${i.phone ? ' cd-shot--phone' : ''}"><div class="cd-slot"><span>${esc(i.label)}</span></div></figure>`).join('')}</div>` : '');
 R['cd-text'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-text', { label: s.label })}
   <div class="cd-text${s.wide ? ' cd-text--wide' : ''}">
     <div class="prose rv">${s.prose.map((p) => `<p>${fmtT(p, c.lang)}</p>`).join('')}</div>
     ${s.steps ? `<ol class="cd-steps">${s.steps.map((i, k) => `<li class="rv" style="--d:${k * .06}s"><b>${esc(i.h)}</b><span>${fmtT(i.p, c.lang)}</span></li>`).join('')}</ol>` : ''}
   </div>
+  ${shots(s.shots)}
+</div></section>`;
+R['cd-gallery'] = (s, c) => `<section class="section"><div class="wrap">
+  ${secHead(s, c, 'cd-gallery', { label: s.label })}
+  ${shots(s.shots)}
 </div></section>`;
 R['cd-hero'] = (s, c) => `<section class="section cd-hero" aria-labelledby="h1"><div class="wrap">
   <p class="eyebrow-tag">${fmt(s.tag, c.lang)}</p>
@@ -391,7 +397,7 @@ R['cd-facts'] = (s, c) => `<section class="section cd-factsec"><div class="wrap"
 R['cd-image'] = (s, c) => `<section class="section section--tight"><div class="wrap"><figure class="cd-figure rv">${img(s.img, s.alt, { sizes: '(min-width:1320px) 1224px, 100vw' })}${s.caption ? `<figcaption>${fmtT(s.caption, c.lang)}</figcaption>` : ''}</figure></div></section>`;
 R['cd-decisions'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-decisions', { label: s.label })}
-  <ol class="cd-decisions">${s.items.map((i, k) => `<li class="rv"><span class="cd-n">${String(k + 1).padStart(2, '0')}</span><div><h3>${esc(i.h)}</h3><p>${fmtT(i.p, c.lang)}</p><dl>${i.notes.map((n) => `<div><dt>${esc(n.k)}</dt><dd>${fmtT(n.v, c.lang)}</dd></div>`).join('')}</dl></div></li>`).join('')}</ol>
+  <ol class="cd-decisions">${s.items.map((i, k) => `<li class="rv"><span class="cd-n">${String(k + 1).padStart(2, '0')}</span><div><h3>${esc(i.h)}</h3><p>${fmtT(i.p, c.lang)}</p><dl>${i.notes.map((n) => `<div><dt>${esc(n.k)}</dt><dd>${fmtT(n.v, c.lang)}</dd></div>`).join('')}</dl>${shots(i.shots)}</div></li>`).join('')}</ol>
 </div></section>`;
 R['cd-test'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-test', { label: s.label })}
@@ -816,7 +822,7 @@ const THEME = {
   'hero-home': 'dark', 'page-hero': 'dark', 'cta-final': 'dark',
   friction: 'light', founders: 'dark', services: 'light', stats: 'dark', work: 'light', fit: 'dark', slot: 'light', testimonials: 'light', faq: 'light',
   statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', hub: 'light', partner: 'dark', related: 'light', bio: 'light', legal: 'light', people: 'dark', facts: 'light',
-  'cd-hero': 'dark', 'cd-facts': 'light', 'cd-text': 'light', 'cd-image': 'light', 'cd-decisions': 'dark', 'cd-test': 'light', 'posts-list': 'light', article: 'light', 'profile-hero': 'dark', cases: 'light', 'result-cards': 'dark', portfolio: 'light', 'contact-links': 'dark', contact: 'light', 'rich-text': 'light',
+  'cd-hero': 'dark', 'cd-facts': 'light', 'cd-gallery': 'dark', 'cd-text': 'light', 'cd-image': 'light', 'cd-decisions': 'dark', 'cd-test': 'light', 'posts-list': 'light', article: 'light', 'profile-hero': 'dark', cases: 'light', 'result-cards': 'dark', portfolio: 'light', 'contact-links': 'dark', contact: 'light', 'rich-text': 'light',
 };
 const ASSET_HASH = {};
 const PAGES_OUT = []; // for sitemap + llms

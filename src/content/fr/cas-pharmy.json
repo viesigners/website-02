@@ -64,7 +64,15 @@
     "J’ai travaillé de près avec l’équipe du client pour définir les profils cibles et les indicateurs importants, puis j’ai rédigé la méthodologie du test A/B et le plan de mesure. Je me suis aussi assuré que les outils de mesure étaient en place.",
     "J’ai guidé l’équipe de projet à travers l’inspiration, l’idéation, le prototypage et la validation technique. Les groupes de discussion ont été menés par le client avant le projet; je me suis appuyé sur leurs conclusions."
    ],
-   "wide": true
+   "wide": true,
+   "shots": [
+    {
+     "label": "Wireframe : accueil"
+    },
+    {
+     "label": "Wireframe : résultats de recherche"
+    }
+   ]
   },
   {
    "type": "cd-decisions",
@@ -87,6 +95,14 @@
        "k": "Ce qu’il sacrifiait",
        "v": "Plus de travail de développement, comme l’interface pour revenir en arrière, et un taux de fin plus bas : 28 % au lieu de 35 %."
       }
+     ],
+     "shots": [
+      {
+       "label": "Formulaire, étape 1"
+      },
+      {
+       "label": "Formulaire, étape 2 avec bouton retour"
+      }
      ]
     },
     {
@@ -100,6 +116,11 @@
       {
        "k": "Ce qu’il sacrifiait",
        "v": "Aucun inconvénient noté pour le client."
+      }
+     ],
+     "shots": [
+      {
+       "label": "Inscription à la communauté"
       }
      ]
     },
@@ -119,6 +140,14 @@
        "k": "Ce qu’il sacrifiait",
        "v": "Tout le monde passe par une page d’information avant de chercher. Pour limiter cet effet, la recherche restait l’élément le plus visible du menu principal."
       }
+     ],
+     "shots": [
+      {
+       "label": "Page d’accueil"
+      },
+      {
+       "label": "Page Comment ça marche ou Conditions"
+      }
      ]
     },
     {
@@ -137,7 +166,38 @@
        "k": "Ce qu’il sacrifiait",
        "v": "Beaucoup plus difficile à concevoir et à bâtir : grappes au dézoom, clic qui zoome ou affiche la liste des essais, et une liste qui reste claire sur mobile."
       }
+     ],
+     "shots": [
+      {
+       "label": "Carte avec grappes"
+      },
+      {
+       "label": "Après un clic sur une grappe"
+      },
+      {
+       "label": "Liste des essais"
+      }
      ]
+    }
+   ]
+  },
+  {
+   "type": "cd-gallery",
+   "theme": "dark",
+   "label": "Mobile",
+   "h2": "Le même parcours *sur téléphone*",
+   "shots": [
+    {
+     "label": "Recherche sur mobile",
+     "phone": true
+    },
+    {
+     "label": "Carte sur mobile",
+     "phone": true
+    },
+    {
+     "label": "Liste des essais sur mobile",
+     "phone": true
     }
    ]
   },
