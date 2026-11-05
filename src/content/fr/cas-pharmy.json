@@ -329,19 +329,15 @@
    "reads": [
     {
      "h": "Ce que je peux affirmer",
-     "p": "La version B a mieux convaincu les gens de vérifier leur admissibilité, un résultat qui reste significatif sur le plan statistique sur cet échantillon, mais de justesse. Elle a aussi trié les gens : 47 % de ses envois venaient de candidats présélectionnés, qui envoyaient ensuite leurs coordonnées, alors que les autres pouvaient rejoindre la communauté."
+     "p": "La version B a amené plus de gens à vérifier leur admissibilité, un résultat significatif de justesse. Et 47 % de ses envois venaient de candidats présélectionnés."
     },
     {
      "h": "Ce que ce test ne prouve pas",
-     "p": "Sur ce petit échantillon, la hausse de 20 % n’est pas significative sur le plan statistique. Les clics sur les boutons menant au formulaire suivaient aussi la tendance inverse : certaines personnes sont peut-être arrivées directement au formulaire. Le rapport signale aussi des visites de test et des bogues de configuration. J’ai signalé la taille de l’échantillon à l’époque, et le client a tout de même décidé d’aller de l’avant."
-    },
-    {
-     "h": "Deux changements en même temps",
-     "p": "La version B changeait la page d’étude et le formulaire ensemble : le test ne peut donc attribuer le résultat à un seul des deux."
+     "p": "Le +20 % n’est pas significatif sur cet échantillon, et la version B changeait la page et le formulaire en même temps. J’ai signalé la taille de l’échantillon; le client a choisi d’aller de l’avant."
     },
     {
      "h": "Ce que les enregistrements ont montré",
-     "p": "Les enregistrements Hotjar suggéraient une friction sur certains champs de la présélection, alors que les personnes qualifiées remplissaient facilement le formulaire de contact. Sur la page « non qualifié », les gens lisaient surtout le titre, puis partaient."
+     "p": "Certains champs de la présélection causaient de la friction, alors que les personnes qualifiées remplissaient facilement leurs coordonnées. Sur la page « non qualifié », la plupart lisaient le titre, puis partaient."
     }
    ],
    "source": "Source : Google Analytics, test de trois mois.",

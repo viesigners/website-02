@@ -329,19 +329,15 @@
    "reads": [
     {
      "h": "What I can stand behind",
-     "p": "Version B did better at convincing people to check their eligibility, a result that stays statistically significant on this sample, though narrowly. It also sorted people: 47% of its submissions came from prequalified candidates, who then shared contact details, while the others could join the community."
+     "p": "Version B got more people to check their eligibility, a narrowly significant result. And 47% of its submissions came from prequalified candidates."
     },
     {
      "h": "What this test can’t prove",
-     "p": "On this small sample, the +20% isn’t statistically significant. Clicks on the form buttons also trended the other way, so some people may have reached the form directly. The report also flags test visits and configuration bugs. I flagged the sample size at the time, and the client decided to move forward anyway."
-    },
-    {
-     "h": "Two changes at once",
-     "p": "Version B changed the study page and the form together, so the test can’t credit either one alone."
+     "p": "The +20% isn’t significant on this sample, and version B changed the page and the form together. I flagged the sample size; the client chose to move forward."
     },
     {
      "h": "What the recordings showed",
-     "p": "Hotjar recordings suggested friction on some prescreener fields, while qualified people filled in the contact form easily. On the not-qualified page, people mostly read the title and left."
+     "p": "Some prescreener fields caused friction, while qualified people filled in their contact details easily. On the not-qualified page, most people read the title and left."
     }
    ],
    "source": "Source: Google Analytics, three-month test.",

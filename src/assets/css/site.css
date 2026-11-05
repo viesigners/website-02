@@ -1054,3 +1054,4 @@ html { scroll-padding-top: 7rem; }
 .cd-fig figcaption { margin-top: .7rem; font-family: var(--f-mono); font-size: .74rem; color: var(--text-2); text-align: center; }
 @media (min-width: 860px) { .cd-decisions dl > div:only-child { grid-column: span 2; } }
 .cd-stat__row b { order: 2; }
+@media (min-width: 1100px) { .cd-read:has(> :nth-child(3):last-child) { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
