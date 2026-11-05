@@ -60,7 +60,7 @@
   },
   {
    "type": "cd-text",
-   "label": "The problem",
+   "label": "The friction",
    "h2": "Two problems kept people *from joining a trial*",
    "prose": [
     "**People needed to trust the process before searching for a trial.** The client’s focus groups started this project. They showed that people were missing the information they needed to trust the platform and the process, and to decide to join. Distance mattered too: people had to go on site, so they needed a clinic close enough to reach. Yet each study had its own microsite, so the same general information was repeated on each one and harder to maintain.",
