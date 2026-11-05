@@ -104,8 +104,8 @@
        "p": "Group the microsites in one searchable platform, like Airbnb for clinical trials, with the general information people needed in one place. That would also make updates easier for the client’s team."
       },
       {
-       "h": "Test the page and the form on real traffic",
-       "p": "My audit of the qualification form led me to suggest a two-step version. We tested it with a study page that regrouped the key content around people’s main objections, against the existing version."
+       "h": "Test a new version on real traffic",
+       "p": "From my Google Analytics, Hotjar and form audit findings, we hypothesized that two changes would get more people to send their information: one study page built around their main objections, and a form split in two steps."
       }
      ]
     }

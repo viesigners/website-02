@@ -104,8 +104,8 @@
        "p": "Regrouper les microsites dans une seule plateforme de recherche, comme un Airbnb des essais cliniques, avec l’information générale au même endroit. Les mises à jour seraient aussi plus simples pour l’équipe du client."
       },
       {
-       "h": "Tester la page et le formulaire avec du vrai trafic",
-       "p": "Mon audit du formulaire de qualification m’a mené à proposer une version en deux étapes. Nous l’avons testée avec une page d’étude qui regroupait le contenu clé autour des principaux freins, contre la version existante."
+       "h": "Tester une nouvelle version avec du vrai trafic",
+       "p": "À partir de Google Analytics, de Hotjar et de mon audit du formulaire, nous avons posé l’hypothèse que deux changements amèneraient plus de gens à envoyer leurs renseignements : une seule page d’étude bâtie autour de leurs principaux freins, et un formulaire en deux étapes."
       }
      ]
     }
