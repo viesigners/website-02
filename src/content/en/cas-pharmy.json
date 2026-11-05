@@ -359,7 +359,8 @@
        "h": "An empathy section",
        "p": "Right under the homepage banner, a section would show we understand people’s situation before talking about joining the community of participants."
       }
-     ]
+     ],
+     "steps": true
     }
    ]
   },

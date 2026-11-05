@@ -399,7 +399,7 @@ R['cd-impact'] = (s, c) => `<section class="section section--tight"><div class="
 </div></section>`;
 R['cd-cards'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-cards', { label: s.label })}
-  ${s.groups.map((g) => `<div class="cd-group"><h3 class="rv">${esc(g.h)}</h3><div class="cd-cards cd-cards--${g.items.length}">${g.items.map((i, k) => `<article class="rv" style="--d:${k * .06}s"><h4>${esc(i.h)}</h4><p>${fmtT(i.p, c.lang)}</p></article>`).join('')}</div></div>`).join('')}
+  ${s.groups.map((g) => `<div class="cd-group"><h3 class="rv">${esc(g.h)}</h3>${g.steps ? `<ol class="cd-steps cd-steps--row">${g.items.map((i, k) => `<li class="rv" style="--d:${k * .06}s"><b>${esc(i.h)}</b><span>${fmtT(i.p, c.lang)}</span></li>`).join('')}</ol>` : `<div class="cd-cards cd-cards--${g.items.length}">${g.items.map((i, k) => `<article class="rv" style="--d:${k * .06}s"><h4>${esc(i.h)}</h4><p>${fmtT(i.p, c.lang)}</p></article>`).join('')}</div>`}</div>`).join('')}
 </div></section>`;
 R['cd-image'] = (s, c) => `<section class="section section--tight"><div class="wrap"><figure class="cd-figure rv">${img(s.img, s.alt, { sizes: '(min-width:1320px) 1224px, 100vw' })}${s.caption ? `<figcaption>${fmtT(s.caption, c.lang)}</figcaption>` : ''}</figure></div></section>`;
 R['cd-decisions'] = (s, c) => `<section class="section"><div class="wrap">
