@@ -74,7 +74,8 @@
       }
      ]
     }
-   ]
+   ],
+   "cls": "cd-pb"
   },
   {
    "type": "cd-cards",
@@ -94,9 +95,18 @@
        "p": "Each study had its own microsite, so the same general information was repeated on each one and harder to keep up to date."
       }
      ]
-    },
+    }
+   ],
+   "cls": "cd-pt"
+  },
+  {
+   "type": "cd-cards",
+   "theme": "light",
+   "label": "The plan",
+   "h2": "Two jobs *to do*",
+   "groups": [
     {
-     "h": "Two jobs to do",
+     "h": "",
      "steps": true,
      "items": [
       {

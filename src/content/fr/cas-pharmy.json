@@ -74,7 +74,8 @@
       }
      ]
     }
-   ]
+   ],
+   "cls": "cd-pb"
   },
   {
    "type": "cd-cards",
@@ -94,9 +95,18 @@
        "p": "Chaque étude avait son propre microsite : la même information générale se répétait partout et était plus difficile à tenir à jour."
       }
      ]
-    },
+    }
+   ],
+   "cls": "cd-pt"
+  },
+  {
+   "type": "cd-cards",
+   "theme": "light",
+   "label": "Le plan",
+   "h2": "Deux chantiers *à mener*",
+   "groups": [
     {
-     "h": "Deux chantiers",
+     "h": "",
      "steps": true,
      "items": [
       {

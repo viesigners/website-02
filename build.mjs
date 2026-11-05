@@ -398,7 +398,7 @@ R['cd-facts'] = (s, c) => `<section class="section cd-factsec"><div class="wrap"
 R['cd-impact'] = (s, c) => `<section class="section section--tight"><div class="wrap">
   <div class="proof">${s.items.map((i, k) => `<div class="proof__item rv" style="--d:${k * .08}s"><b>${esc(i.n)}</b><span>${fmtT(i.t, c.lang)}</span>${i.note ? `<small class="cd-note">${fmtT(i.note, c.lang)}</small>` : ''}</div>`).join('')}</div>
 </div></section>`;
-R['cd-cards'] = (s, c) => `<section class="section"><div class="wrap">
+R['cd-cards'] = (s, c) => `<section class="section${s.cls ? ' ' + s.cls : ''}"><div class="wrap">
   ${secHead(s, c, 'cd-cards', { label: s.label })}
   ${s.groups.map((g) => `<div class="cd-group">${g.h ? `<h3 class="rv">${esc(g.h)}</h3>` : ''}${g.steps ? `<ol class="cd-steps cd-steps--row">${g.items.map((i, k) => `<li class="rv" style="--d:${k * .06}s"><b>${esc(i.h)}</b><span>${fmtT(i.p, c.lang)}</span></li>`).join('')}</ol>` : `<div class="cd-cards cd-cards--${g.items.length}">${g.items.map((i, k) => `<article class="rv" style="--d:${k * .06}s"><h4>${esc(i.h)}</h4><p>${fmtT(i.p, c.lang)}</p></article>`).join('')}</div>`}</div>`).join('')}
 </div></section>`;
