@@ -127,14 +127,7 @@
    "prose": [
     "**I started from the Google Analytics and Hotjar data.** The focus groups the client ran before the project backed up what I found. I then framed the test hypothesis, wrote the A/B methodology and set the indicators and measurement plan with the client’s team."
    ],
-   "shots": [
-    {
-     "label": "Wireframe: Why participate section",
-     "alt": "Why participate wireframe with four numbered reasons",
-     "img": "work/pharmy-wf-why-en.jpg"
-    }
-   ],
-   "split": true
+   "end": true
   },
   {
    "type": "cd-decisions",
@@ -212,6 +205,11 @@
        "img": "work/pharmy-home.jpg"
       },
       {
+       "label": "Wireframe: Why participate section",
+       "alt": "Why participate wireframe with four numbered reasons",
+       "img": "work/pharmy-wf-why-en.jpg"
+      },
+      {
        "label": "How it works",
        "alt": "How clinical studies work page",
        "img": "work/pharmy-how.jpg"
@@ -222,7 +220,7 @@
        "img": "work/pharmy-conditions.jpg"
       }
      ],
-     "shotsCls": "cd-shots--stack"
+     "shotsCls": "cd-shots--stack cd-shots--stack3"
     },
     {
      "h": "Make distance visible with a map",

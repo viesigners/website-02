@@ -127,14 +127,7 @@
    "prose": [
     "**Je suis parti des données de Google Analytics et de Hotjar.** Les groupes de discussion menés par le client avant le projet ont appuyé ce que j’avais trouvé. J’ai ensuite formulé l’hypothèse du test, rédigé la méthodologie A/B et établi les indicateurs et le plan de mesure avec l’équipe du client."
    ],
-   "shots": [
-    {
-     "label": "Wireframe : section Pourquoi participer",
-     "alt": "Wireframe de la section Pourquoi participer avec quatre raisons numérotées",
-     "img": "work/pharmy-wf-why-fr.jpg"
-    }
-   ],
-   "split": true
+   "end": true
   },
   {
    "type": "cd-decisions",
@@ -212,6 +205,11 @@
        "img": "work/pharmy-home.jpg"
       },
       {
+       "label": "Wireframe : section Pourquoi participer",
+       "alt": "Wireframe de la section Pourquoi participer avec quatre raisons numérotées",
+       "img": "work/pharmy-wf-why-fr.jpg"
+      },
+      {
        "label": "Comment ça marche",
        "alt": "Page expliquant le fonctionnement des études cliniques",
        "img": "work/pharmy-how.jpg"
@@ -222,7 +220,7 @@
        "img": "work/pharmy-conditions.jpg"
       }
      ],
-     "shotsCls": "cd-shots--stack"
+     "shotsCls": "cd-shots--stack cd-shots--stack3"
     },
     {
      "h": "Rendre la distance visible avec une carte",
