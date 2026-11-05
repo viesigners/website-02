@@ -256,9 +256,9 @@
    "label": "A design challenge that arose",
    "h2": "Two navigation systems *in one platform*",
    "prose": [
-    "Bringing the study microsites into one platform created a new problem: each microsite kept its own navigation, and so did the search platform. The menu had to stay appealing, uncluttered and intuitive, even with both.",
-    "**I explored two options:** stacking the menus and hiding them on scroll, or swapping to the microsite menu with a clear back button. Stacked menus are harder on mobile and add cognitive load. Swapping is more mobile-first, but needs an intuitive way back, especially for people who land directly on a trial microsite. A plain Back button wouldn’t cut it, since they don’t know where “back” leads.",
-    "I went with stacked menus, hidden on scroll: the platform menu stayed in view, so people who landed on a microsite could still see where they were. On mobile, the main menu behind the hamburger button handled the way back to the platform, to save space on phone screens."
+    "Merging the study microsites into one platform meant two navigation systems on the same pages, and the menu still had to feel uncluttered and intuitive.",
+    "**I explored two options:** stacking the menus, or swapping to the microsite menu with a back button. Stacking adds cognitive load, especially on mobile. Swapping is lighter, but a plain Back button means nothing to people who land directly on a microsite.",
+    "I went with stacked menus, hidden on scroll, so the platform menu kept people oriented. On mobile, the hamburger menu handled the way back to save screen space."
    ]
   },
   {
