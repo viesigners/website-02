@@ -43,10 +43,10 @@
   {
    "type": "cd-text",
    "label": "The problem",
-   "h2": "People needed to *trust the process* before searching for a trial",
+   "h2": "Two problems kept people *from joining a trial*",
    "prose": [
-    "The client’s focus groups started this project. They showed that people were missing the information they needed to trust the platform and the process, and to decide to join a trial.",
-    "They also showed that distance mattered: people had to go on site, so they needed a clinic close enough to reach. Each study still had its own landing page, and my audit of the qualification form pointed to a long form that relied on people finishing it. That left two jobs to do."
+    "**People needed to trust the process before searching for a trial.** The client’s focus groups started this project. They showed that people were missing the information they needed to trust the platform and the process, and to decide to join. Distance mattered too: people had to go on site, so they needed a clinic close enough to reach. Yet each study still had its own landing page.",
+    "**The qualification form felt very long.** My audit of the form showed the second problem: people didn’t fill it in and left, and the client relied only on those who finished it."
    ],
    "steps": [
     {

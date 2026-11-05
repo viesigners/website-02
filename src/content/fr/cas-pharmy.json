@@ -43,10 +43,10 @@
   {
    "type": "cd-text",
    "label": "Le problème",
-   "h2": "Les gens devaient *faire confiance au processus* avant de chercher un essai",
+   "h2": "Deux problèmes empêchaient les gens *de rejoindre un essai*",
    "prose": [
-    "Les groupes de discussion du client sont à l’origine du projet. Ils montraient qu’il manquait aux gens l’information nécessaire pour faire confiance à la plateforme et au processus, et pour décider de participer à un essai.",
-    "Ils montraient aussi que la distance comptait : les gens devaient se rendre sur place, donc avoir une clinique assez proche. Chaque étude avait encore sa propre page, et mon audit du formulaire de qualification pointait vers un long formulaire qui dépendait des gens qui le terminaient. Ça donnait deux chantiers."
+    "**Les gens devaient faire confiance au processus avant de chercher un essai.** Les groupes de discussion du client sont à l’origine du projet. Ils montraient qu’il manquait aux gens l’information nécessaire pour faire confiance à la plateforme et au processus, et pour décider de participer. La distance comptait aussi : les gens devaient se rendre sur place, donc avoir une clinique assez proche. Pourtant, chaque étude avait encore sa propre page.",
+    "**Le formulaire de qualification semblait très long.** Mon audit du formulaire a révélé le deuxième problème : les gens ne le remplissaient pas et partaient, et le client dépendait seulement de ceux qui le terminaient."
    ],
    "steps": [
     {
