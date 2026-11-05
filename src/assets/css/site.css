@@ -985,3 +985,14 @@ html { scroll-padding-top: 7rem; }
 .cd-tintro + .cd-table { margin-top: 1.5rem; }
 .cd-table + .cd-table { margin-top: clamp(1.8rem, 1rem + 2vw, 3rem); }
 @media (max-width: 639px) { .cd-table thead .num { white-space: normal; font-size: .62rem; letter-spacing: 0; } .cd-table th, .cd-table td { padding-right: .4rem; } .cd-table td.num { padding-left: .3rem; } }
+/* case study test tables: one card per stage of the test */
+.cd-tintro { font-size: var(--t-lead); max-width: 40ch; color: var(--text); }
+.cd-table { padding: clamp(1.2rem, .8rem + 2vw, 2.4rem); border-radius: var(--r-lg); background: #fff; box-shadow: 0 0 0 1px var(--line); }
+.cd-table + .cd-table { margin-top: clamp(.8rem, .5rem + 1vw, 1.25rem); }
+.cd-table caption { padding-bottom: clamp(1rem, .8rem + 1vw, 1.6rem); font-family: var(--f-display); font-size: clamp(1.35rem, 1.1rem + 1vw, 1.9rem); font-weight: 300; letter-spacing: -.02em; line-height: 1.15; text-transform: none; color: var(--text); }
+.cd-table thead th { border-top: 0; padding-top: 0; }
+.cd-table tbody th { color: var(--text); }
+.cd-table tbody td { color: var(--text-2); }
+.cd-table tbody td:last-child { font-family: var(--f-display); font-size: 1.25em; font-weight: 400; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+@media (max-width: 639px) { .cd-table { padding: 1.1rem .9rem; } .cd-tintro { font-size: 1.05rem; } }
+.cd-table tbody td.cd-na { background: none; color: var(--text-3); font-family: inherit; font-size: inherit; }
