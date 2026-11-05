@@ -947,7 +947,7 @@ html { scroll-padding-top: 7rem; }
 /* case study hero: the title leads straight into the work, which overlaps the next sheet */
 .cd-hero { --overlap: clamp(5rem, 2rem + 13vw, 15rem); padding-bottom: 0; }
 .theme > .cd-hero { padding-top: clamp(7rem, 5rem + 6vw, 10rem); }
-.cd-hero .phero__title { max-width: 19ch; margin-bottom: clamp(1.8rem, 1rem + 3vw, 3.5rem); }
+.cd-hero .phero__title { max-width: 26ch; margin-bottom: clamp(1.8rem, 1rem + 3vw, 3.5rem); }
 .cd-hero__img { position: relative; z-index: 3; margin: 0 0 calc(var(--overlap) * -1); }
 .cd-hero__img img { display: block; width: 100%; height: auto; border-radius: var(--r-lg); box-shadow: 0 0 0 1px var(--line-2), 0 40px 100px -40px rgba(255, 72, 139, .55); }
 .theme > .section.cd-factsec { padding-top: calc(clamp(5rem, 2rem + 13vw, 15rem) + clamp(1.5rem, 1rem + 2vw, 3rem) + var(--r-xl)); }
