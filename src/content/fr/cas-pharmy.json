@@ -36,7 +36,7 @@
     },
     {
      "b": "Portée",
-     "t": "Analyse, hypothèse, méthodologie A/B, mesure, architecture de l’information et recommandations d’interface par wireframes. J’ai aussi conseillé la designer graphique, qui a réalisé l’interface finale."
+     "t": "Analyse, hypothèse, méthodologie A/B, mesure, architecture de l’information et recommandations d’interface par wireframes. J’ai aussi guidé l’équipe de projet de l’idéation à la validation technique et conseillé la designer graphique, qui a réalisé l’interface finale."
     }
    ],
    "impact": [
@@ -125,8 +125,7 @@
    "h2": "Comment nous avons *enquêté et mesuré*",
    "theme": "light",
    "prose": [
-    "**Je suis parti des données de Google Analytics et de Hotjar.** Les groupes de discussion menés par le client avant le projet ont appuyé ce que j’avais trouvé. J’ai ensuite formulé l’hypothèse du test, rédigé la méthodologie A/B et établi les indicateurs et le plan de mesure avec l’équipe du client.",
-    "J’ai guidé l’équipe de projet à travers l’inspiration, l’idéation, le prototypage et la validation technique, et j’ai produit l’architecture de l’information et les wireframes."
+    "**Je suis parti des données de Google Analytics et de Hotjar.** Les groupes de discussion menés par le client avant le projet ont appuyé ce que j’avais trouvé. J’ai ensuite formulé l’hypothèse du test, rédigé la méthodologie A/B et établi les indicateurs et le plan de mesure avec l’équipe du client."
    ],
    "shots": [
     {
