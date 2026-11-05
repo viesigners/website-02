@@ -421,7 +421,8 @@ R['cd-test'] = (s, c) => `<section class="section"><div class="wrap">
 
 R['cd-card'] = (s, c) => `<section class="section section--tight"><div class="wrap">
   <article class="casecard cd-card rv"><div class="casecard__n"><p class="eyebrow-tag">${esc(s.label)}</p><h2>${fmt(s.h2, c.lang)}</h2></div>
-    <div class="casecard__body">${s.prose.map((p) => `<p>${fmtT(p, c.lang)}</p>`).join('')}</div></article>
+    <div class="casecard__body">${s.prose.map((p) => `<p>${fmtT(p, c.lang)}</p>`).join('')}</div>
+    ${s.figs ? `<div class="cd-figs">${s.figs.map((f) => `<figure class="cd-fig"><div class="cd-fig__art" role="img" aria-label="${esc(f.alt)}">${fs.readFileSync(path.join(SRC, 'assets/img', f.svg), 'utf8').replace(/ role="img"/, ' aria-hidden="true"')}</div><figcaption>${esc(f.label)}</figcaption></figure>`).join('')}</div>` : ''}</article>
 </div></section>`;
 R.casecard = (s, c) => `<section class="section section--tight"><div class="wrap">
   <article class="casecard rv"><a class="more" href="${url(s.to, c.lang)}" aria-label="${esc(s.h)}"></a>

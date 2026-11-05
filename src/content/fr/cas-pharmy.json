@@ -286,6 +286,18 @@
     "Réunir les microsites dans une seule plateforme voulait dire deux systèmes de navigation sur les mêmes pages.",
     "**J’ai exploré deux options :** empiler les menus, ou passer au menu du microsite avec un bouton de retour. Empiler ajoute de la charge cognitive. Changer de menu est plus léger, mais « Retour » ne veut rien dire pour les gens qui arrivent directement sur un microsite.",
     "J’ai empilé des menus minces, masqués au défilement, avec des zones tactiles confortables. Sur mobile, le menu hamburger gérait le retour."
+   ],
+   "figs": [
+    {
+     "svg": "work/pharmy-nav-desktop.svg",
+     "label": "Ordinateur : les menus se retirent au défilement",
+     "alt": "Deux menus minces empilés en haut d’une page; au défilement, ils glissent hors de vue"
+    },
+    {
+     "svg": "work/pharmy-nav-mobile.svg",
+     "label": "Mobile : le retour est dans le menu",
+     "alt": "Un téléphone avec une icône hamburger; un toucher ouvre un menu dont le premier élément ramène à la plateforme"
+    }
    ]
   },
   {

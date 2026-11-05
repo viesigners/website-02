@@ -286,6 +286,18 @@
     "Merging the microsites into one platform meant two navigation systems on the same pages.",
     "**I explored two options:** stacking the menus, or swapping to the microsite menu with a back button. Stacking adds cognitive load. Swapping is lighter, but “Back” means nothing to people who land directly on a microsite.",
     "I stacked slim menus that hide on scroll, with comfortable touch targets. On mobile, the hamburger menu handled the way back."
+   ],
+   "figs": [
+    {
+     "svg": "work/pharmy-nav-desktop.svg",
+     "label": "Desktop: menus slide away on scroll",
+     "alt": "Two stacked slim menus at the top of a page; on scroll, both slide up out of view"
+    },
+    {
+     "svg": "work/pharmy-nav-mobile.svg",
+     "label": "Mobile: the way back lives in the menu",
+     "alt": "A phone with a hamburger icon; tapping it opens a menu whose first item leads back to the platform"
+    }
    ]
   },
   {

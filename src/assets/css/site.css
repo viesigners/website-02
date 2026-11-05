@@ -1046,3 +1046,9 @@ html { scroll-padding-top: 7rem; }
 .cd-stat__row dt { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em; color: var(--text-3); }
 .cd-stat__row dd { margin: .2rem 0 0; font-size: 1.15rem; color: var(--text-2); font-variant-numeric: tabular-nums; }
 .cd-stat .cd-note { margin-top: .4rem; }
+.cd-figs { display: grid; gap: clamp(.8rem, .5rem + 1vw, 1.25rem); }
+@media (min-width: 960px) { .cd-figs { grid-column: 1 / -1; grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.cd-fig { margin: 0; }
+.cd-fig__art { padding: clamp(.8rem, .5rem + 1vw, 1.4rem); border-radius: var(--r-md); background: #f4f5f7; }
+.cd-fig__art svg { display: block; width: 100%; height: auto; overflow: visible; }
+.cd-fig figcaption { margin-top: .7rem; font-family: var(--f-mono); font-size: .74rem; color: var(--text-2); text-align: center; }
