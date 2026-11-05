@@ -236,7 +236,10 @@
      ],
      "shots": [
       {
-       "label": "Map with clusters"
+       "label": "Map with clusters",
+       "alt": "Map of North America with trial clusters showing 23, 12 and 6 trials",
+       "img": "work/pharmy-map-clusters.jpg",
+       "phone": true
       },
       {
        "label": "Wireframe: marker clicked on mobile",
