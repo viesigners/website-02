@@ -131,7 +131,9 @@
    "wide": true,
    "shots": [
     {
-     "label": "Concepts de wireframes"
+     "label": "Wireframe : Pourquoi participer",
+     "alt": "Wireframe de la section Pourquoi participer avec quatre raisons numérotées",
+     "img": "work/pharmy-wireframe.jpg"
     },
     {
      "label": "Méthodologie du test A/B"
