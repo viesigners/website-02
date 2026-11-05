@@ -10,7 +10,30 @@
    "tag": "Étude de cas · Santé",
    "h1": "Réunir des microsites d’études dispersés en *une plateforme de recherche conçue pour recruter plus de participants*",
    "img": "work/pharmy-hub.jpg",
-   "alt": "Interface de recherche d’essais cliniques avec résultats à côté d’une carte"
+   "alt": "Interface de recherche d’essais cliniques avec résultats à côté d’une carte",
+   "glance": [
+    {
+     "k": "Rôle",
+     "v": "Expert UX et CRO."
+    },
+    {
+     "k": "Problème",
+     "v": "Les gens abandonnaient le long formulaire de qualification, et l’équipe du client perdait du temps sur des demandes non qualifiées."
+    },
+    {
+     "k": "Résultats",
+     "v": "+48 % de visiteurs se sont rendus au formulaire, et un gain potentiel de +20 % de formulaires envoyés.",
+     "note": "Le +20 % vient d’un petit échantillon et n’est pas statistiquement significatif."
+    },
+    {
+     "k": "Méthode",
+     "v": "Test A/B de trois mois sur du vrai trafic, avec Google Analytics, Hotjar et Sketch."
+    },
+    {
+     "k": "Équipe",
+     "v": "Un consultant embauché par le client, une designer graphique et un développeur."
+    }
+   ]
   },
   {
    "type": "cd-facts",
@@ -46,7 +69,7 @@
     },
     {
      "n": "+20 %",
-     "t": "de formulaires de qualification envoyés par visite : de 1,95 % à 2,34 %.",
+     "t": "de gain potentiel en formulaires de qualification envoyés par visite : de 1,95 % à 2,34 %.",
      "note": "Note : petit échantillon, résultat non significatif sur le plan statistique."
     },
     {

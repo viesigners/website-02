@@ -1026,3 +1026,7 @@ html { scroll-padding-top: 7rem; }
 .cd-card .casecard__body strong { color: var(--text); font-weight: 600; }
 @media (min-width: 960px) { .cd-card { align-items: center; } }
 .cd-card .casecard__body p { max-width: 60ch; }
+.cd-hero__top.phero__grid { align-items: end; margin-bottom: clamp(1.8rem, 1rem + 3vw, 3.5rem); }
+.cd-hero__top.phero__grid .phero__title { margin-bottom: 0; }
+.cd-brief .cd-note { display: block; margin-top: .35rem; font-size: .8rem; }
+.cd-brief li { font-size: .94rem; }

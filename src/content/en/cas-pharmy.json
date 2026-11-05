@@ -10,7 +10,30 @@
    "tag": "Case study · Healthcare",
    "h1": "Turning scattered trial microsites into *a searchable platform built to recruit more participants*",
    "img": "work/pharmy-hub.jpg",
-   "alt": "Clinical trial search interface with results listed beside a map"
+   "alt": "Clinical trial search interface with results listed beside a map",
+   "glance": [
+    {
+     "k": "Role",
+     "v": "UX and CRO expert."
+    },
+    {
+     "k": "Problem",
+     "v": "People left the long qualification form, and the client’s team lost time on unqualified requests."
+    },
+    {
+     "k": "Results",
+     "v": "+48% more visitors reached the form, and a potential +20% in forms sent.",
+     "note": "The +20% comes from a small sample and isn’t statistically significant."
+    },
+    {
+     "k": "Method",
+     "v": "Three-month A/B test on real traffic, with Google Analytics, Hotjar and Sketch."
+    },
+    {
+     "k": "Team",
+     "v": "A consultant hired by the client, a graphic designer and a developer."
+    }
+   ]
   },
   {
    "type": "cd-facts",
@@ -46,7 +69,7 @@
     },
     {
      "n": "+20%",
-     "t": "more qualification forms sent per visit: 1.95% to 2.34%.",
+     "t": "potential gain in qualification forms sent per visit: 1.95% to 2.34%.",
      "note": "Note: small sample, not statistically significant."
     },
     {
