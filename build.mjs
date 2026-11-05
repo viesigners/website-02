@@ -397,6 +397,10 @@ R['cd-facts'] = (s, c) => `<section class="section cd-factsec"><div class="wrap"
 R['cd-impact'] = (s, c) => `<section class="section section--tight"><div class="wrap">
   <div class="proof">${s.items.map((i, k) => `<div class="proof__item rv" style="--d:${k * .08}s"><b>${esc(i.n)}</b><span>${fmtT(i.t, c.lang)}</span>${i.note ? `<small class="cd-note">${fmtT(i.note, c.lang)}</small>` : ''}</div>`).join('')}</div>
 </div></section>`;
+R['cd-cards'] = (s, c) => `<section class="section"><div class="wrap">
+  ${secHead(s, c, 'cd-cards', { label: s.label })}
+  ${s.groups.map((g) => `<div class="cd-group"><h3 class="rv">${esc(g.h)}</h3><div class="cd-cards cd-cards--${g.items.length}">${g.items.map((i, k) => `<article class="rv" style="--d:${k * .06}s"><h4>${esc(i.h)}</h4><p>${fmtT(i.p, c.lang)}</p></article>`).join('')}</div></div>`).join('')}
+</div></section>`;
 R['cd-image'] = (s, c) => `<section class="section section--tight"><div class="wrap"><figure class="cd-figure rv">${img(s.img, s.alt, { sizes: '(min-width:1320px) 1224px, 100vw' })}${s.caption ? `<figcaption>${fmtT(s.caption, c.lang)}</figcaption>` : ''}</figure></div></section>`;
 R['cd-decisions'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-decisions', { label: s.label })}
@@ -794,6 +798,7 @@ function toMd(page, c) {
       case 'related': L.push(`## ${t(s.h2)}`, '', ...s.items.filter((k) => !isHidden(k)).map((k) => `- [${T.nav[k]}](${abs(url(k, lang))}): ${T.navSub[k]}`), ''); break;
       case 'casecard': L.push(`## ${t(s.h)}`, '', `- **${s.n}** ${t(s.nt)}`, `- [${t(s.h)}](${abs(url(s.to, lang))})`, ''); break;
       case 'cd-impact': L.push(...s.items.map((i) => `- **${i.n}** ${t(i.t)}${i.note ? ' ' + t(i.note) : ''}`), ''); break;
+      case 'cd-cards': L.push(`## ${t(s.h2)}`, '', ...s.groups.flatMap((g) => [`### ${t(g.h)}`, '', ...g.items.map((i) => `- **${t(i.h)}** ${t(i.p)}`), '']), ''); break;
       case 'cd-hero': L.push(`# ${t(s.h1)}`, ''); break;
       case 'cd-facts': L.push(t(s.lead), '', ...s.items.map((i) => `- ${t(i.b)} ${t(i.t)}`), ''); break;
       case 'cd-text': L.push(`## ${t(s.h2)}`, '', ...s.prose.map((p) => t(p) + '\n'), ...(s.steps || []).map((i, n) => `${n + 1}. **${t(i.h)}** — ${t(i.p)}`), ''); break;
@@ -827,7 +832,7 @@ const THEME = {
   'hero-home': 'dark', 'page-hero': 'dark', 'cta-final': 'dark',
   friction: 'light', founders: 'dark', services: 'light', stats: 'dark', work: 'light', fit: 'dark', slot: 'light', testimonials: 'light', faq: 'light',
   statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', hub: 'light', partner: 'dark', related: 'light', bio: 'light', legal: 'light', people: 'dark', facts: 'light',
-  'cd-hero': 'dark', 'cd-facts': 'light', 'cd-impact': 'light', 'cd-gallery': 'dark', 'cd-text': 'light', 'cd-image': 'light', 'cd-decisions': 'dark', 'cd-test': 'light', 'posts-list': 'light', article: 'light', 'profile-hero': 'dark', cases: 'light', 'result-cards': 'dark', portfolio: 'light', 'contact-links': 'dark', contact: 'light', 'rich-text': 'light',
+  'cd-hero': 'dark', 'cd-facts': 'light', 'cd-impact': 'light', 'cd-cards': 'light', 'cd-gallery': 'dark', 'cd-text': 'light', 'cd-image': 'light', 'cd-decisions': 'dark', 'cd-test': 'light', 'posts-list': 'light', article: 'light', 'profile-hero': 'dark', cases: 'light', 'result-cards': 'dark', portfolio: 'light', 'contact-links': 'dark', contact: 'light', 'rich-text': 'light',
 };
 const ASSET_HASH = {};
 const PAGES_OUT = []; // for sitemap + llms

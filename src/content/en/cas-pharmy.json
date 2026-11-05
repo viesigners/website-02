@@ -327,15 +327,40 @@
    ]
   },
   {
-   "type": "cd-text",
+   "type": "cd-cards",
    "label": "Outcome",
    "h2": "What shipped, *and what I’d change*",
-   "prose": [
-    "The platform went live, and the A/B test ran on real traffic. My report recommended keeping version B.",
-    "My final report proposed the next tests: fewer calls to action on the study page, simpler prescreener fields, and a shorter not-qualified page with the community form at the top.",
-    "Today I’d push for more traffic or a longer test. It ran for three months, but too few people reached the forms to confirm the completion result.",
-    "I’d also turn the form into a multi-step wizard. The contact step would be sent as soon as people moved to step 2, and the qualification questions would be split into smaller chunks, so the form feels lighter and less intimidating.",
-    "On the homepage, I’d add a section right under the banner that builds empathy with people living with these conditions. It would show that we understand their situation before talking about the solution: joining the community of study participants."
+   "groups": [
+    {
+     "h": "What shipped",
+     "items": [
+      {
+       "h": "Version B recommended",
+       "p": "The platform went live, and the A/B test ran on real traffic. My report recommended keeping version B."
+      },
+      {
+       "h": "A roadmap of next tests",
+       "p": "Fewer calls to action on the study page, simpler prescreener fields, and a shorter not-qualified page with the community form at the top."
+      }
+     ]
+    },
+    {
+     "h": "What I’d change today",
+     "items": [
+      {
+       "h": "A stronger test",
+       "p": "I’d push for more traffic or a longer test. It ran for three months, but too few people reached the forms to confirm the submission result."
+      },
+      {
+       "h": "A multi-step wizard",
+       "p": "The contact step would be sent as soon as people moved to step 2, and the qualification questions would come in smaller chunks, so the form feels lighter."
+      },
+      {
+       "h": "An empathy section",
+       "p": "Right under the homepage banner, a section would show we understand people’s situation before talking about joining the community of participants."
+      }
+     ]
+    }
    ]
   },
   {
