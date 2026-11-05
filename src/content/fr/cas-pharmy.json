@@ -267,7 +267,7 @@
     },
     {
      "h": "Deux changements en même temps",
-     "p": "La version B changeait la page d’étude et le formulaire ensemble : le test ne peut donc attribuer le résultat à un seul des deux. Il a duré trois mois. Les chiffres viennent de Google Analytics."
+     "p": "La version B changeait la page d’étude et le formulaire ensemble : le test ne peut donc attribuer le résultat à un seul des deux."
     },
     {
      "h": "Ce que les enregistrements ont montré",
@@ -321,7 +321,8 @@
        "ND"
       ]
      ],
-     "captionSub": "Une étape ou deux"
+     "captionSub": "Une étape ou deux",
+     "note": "Source : Google Analytics, test de trois mois."
     }
    ]
   },

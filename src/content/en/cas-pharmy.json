@@ -267,7 +267,7 @@
     },
     {
      "h": "Two changes at once",
-     "p": "Version B changed the study page and the form together, so the test can’t credit either one alone. It ran for three months. The numbers come from Google Analytics."
+     "p": "Version B changed the study page and the form together, so the test can’t credit either one alone."
     },
     {
      "h": "What the recordings showed",
@@ -321,7 +321,8 @@
        "NA"
       ]
      ],
-     "captionSub": "One step or two"
+     "captionSub": "One step or two",
+     "note": "Source: Google Analytics, three-month test."
     }
    ]
   },
