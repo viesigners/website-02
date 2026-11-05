@@ -205,11 +205,6 @@
        "img": "work/pharmy-home.jpg"
       },
       {
-       "label": "Wireframe: Why participate section",
-       "alt": "Why participate wireframe with four numbered reasons",
-       "img": "work/pharmy-wf-why-en.jpg"
-      },
-      {
        "label": "How it works",
        "alt": "How clinical studies work page",
        "img": "work/pharmy-how.jpg"
@@ -220,7 +215,7 @@
        "img": "work/pharmy-conditions.jpg"
       }
      ],
-     "shotsCls": "cd-shots--stack cd-shots--stack3"
+     "shotsCls": "cd-shots--stack"
     },
     {
      "h": "Make distance visible with a map",

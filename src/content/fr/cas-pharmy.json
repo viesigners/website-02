@@ -205,11 +205,6 @@
        "img": "work/pharmy-home.jpg"
       },
       {
-       "label": "Wireframe : section Pourquoi participer",
-       "alt": "Wireframe de la section Pourquoi participer avec quatre raisons numérotées",
-       "img": "work/pharmy-wf-why-fr.jpg"
-      },
-      {
        "label": "Comment ça marche",
        "alt": "Page expliquant le fonctionnement des études cliniques",
        "img": "work/pharmy-how.jpg"
@@ -220,7 +215,7 @@
        "img": "work/pharmy-conditions.jpg"
       }
      ],
-     "shotsCls": "cd-shots--stack cd-shots--stack3"
+     "shotsCls": "cd-shots--stack"
     },
     {
      "h": "Rendre la distance visible avec une carte",
