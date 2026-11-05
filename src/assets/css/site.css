@@ -973,3 +973,9 @@ html { scroll-padding-top: 7rem; }
 .cd-shot img { display: block; width: 100%; height: auto; border-radius: var(--r-lg); box-shadow: 0 0 0 1px var(--line-2); }
 .cd-shot figcaption { margin-top: .7rem; font-family: var(--f-mono); font-size: .74rem; color: var(--text-2); text-align: center; }
 @media (max-width: 639px) { .cd-shots:has(.cd-shot--phone img) { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: .5rem; } .cd-shot--phone:has(img) { flex: 0 0 62%; scroll-snap-align: start; } }
+.cd-shots--1:has(img) { max-width: 46rem; }
+@media (min-width: 640px) {
+  .cd-shots--stack { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto auto; }
+  .cd-shots--stack .cd-shot:first-child { grid-row: span 2; display: grid; grid-template-rows: minmax(0, 1fr) auto; }
+  .cd-shots--stack .cd-shot:first-child img { height: 100%; object-fit: cover; object-position: top; }
+}

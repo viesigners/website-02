@@ -397,7 +397,7 @@ R['cd-facts'] = (s, c) => `<section class="section cd-factsec"><div class="wrap"
 R['cd-image'] = (s, c) => `<section class="section section--tight"><div class="wrap"><figure class="cd-figure rv">${img(s.img, s.alt, { sizes: '(min-width:1320px) 1224px, 100vw' })}${s.caption ? `<figcaption>${fmtT(s.caption, c.lang)}</figcaption>` : ''}</figure></div></section>`;
 R['cd-decisions'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-decisions', { label: s.label })}
-  <ol class="cd-decisions">${s.items.map((i, k) => `<li class="rv"><span class="cd-n">${String(k + 1).padStart(2, '0')}</span><div><h3>${esc(i.h)}</h3><p>${fmtT(i.p, c.lang)}</p><dl>${i.notes.map((n) => `<div><dt>${esc(n.k)}</dt><dd>${fmtT(n.v, c.lang)}</dd></div>`).join('')}</dl>${shots(i.shots)}</div></li>`).join('')}</ol>
+  <ol class="cd-decisions">${s.items.map((i, k) => `<li class="rv"><span class="cd-n">${String(k + 1).padStart(2, '0')}</span><div><h3>${esc(i.h)}</h3><p>${fmtT(i.p, c.lang)}</p><dl>${i.notes.map((n) => `<div><dt>${esc(n.k)}</dt><dd>${fmtT(n.v, c.lang)}</dd></div>`).join('')}</dl>${shots(i.shots, i.shotsCls)}</div></li>`).join('')}</ol>
 </div></section>`;
 R['cd-test'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-test', { label: s.label })}

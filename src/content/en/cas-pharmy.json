@@ -124,7 +124,9 @@
      ],
      "shots": [
       {
-       "label": "Community signup"
+       "label": "Community invitation",
+       "alt": "Invitation to join the community",
+       "img": "work/pharmy-community.jpg"
       }
      ]
     },
@@ -147,12 +149,22 @@
      ],
      "shots": [
       {
-       "label": "Homepage"
+       "label": "Homepage",
+       "alt": "Clinical trial platform homepage with reasons to participate",
+       "img": "work/pharmy-home.jpg"
       },
       {
-       "label": "How it works or Conditions page"
+       "label": "How it works",
+       "alt": "How clinical studies work page",
+       "img": "work/pharmy-how.jpg"
+      },
+      {
+       "label": "Conditions",
+       "alt": "Conditions page with A to Z navigation",
+       "img": "work/pharmy-conditions.jpg"
       }
-     ]
+     ],
+     "shotsCls": "cd-shots--stack"
     },
     {
      "h": "Make distance visible with a map",

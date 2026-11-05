@@ -124,7 +124,9 @@
      ],
      "shots": [
       {
-       "label": "Inscription à la communauté"
+       "label": "Invitation à la communauté",
+       "alt": "Invitation à rejoindre la communauté",
+       "img": "work/pharmy-community.jpg"
       }
      ]
     },
@@ -147,12 +149,22 @@
      ],
      "shots": [
       {
-       "label": "Page d’accueil"
+       "label": "Page d’accueil",
+       "alt": "Page d’accueil de la plateforme avec les raisons de participer",
+       "img": "work/pharmy-home.jpg"
       },
       {
-       "label": "Page Comment ça marche ou Conditions"
+       "label": "Comment ça marche",
+       "alt": "Page expliquant le fonctionnement des études cliniques",
+       "img": "work/pharmy-how.jpg"
+      },
+      {
+       "label": "Conditions",
+       "alt": "Page Conditions avec navigation de A à Z",
+       "img": "work/pharmy-conditions.jpg"
       }
-     ]
+     ],
+     "shotsCls": "cd-shots--stack"
     },
     {
      "h": "Rendre la distance visible avec une carte",
