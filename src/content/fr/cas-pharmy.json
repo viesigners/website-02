@@ -54,8 +54,8 @@
      "p": "Regrouper les microsites dans une seule plateforme de recherche, comme un Airbnb des essais cliniques, avec l’information générale au même endroit. Les mises à jour seraient aussi plus simples pour l’équipe du client."
     },
     {
-     "h": "Tester le formulaire avec du vrai trafic",
-     "p": "Mon audit du formulaire de qualification m’a mené à proposer une version en deux étapes, que nous avons comparée au formulaire en une étape, sur le même design."
+     "h": "Tester la page et le formulaire avec du vrai trafic",
+     "p": "Mon audit du formulaire de qualification m’a mené à proposer une version en deux étapes. Nous l’avons testée avec une page d’étude qui regroupait le contenu clé autour des principaux freins, contre la version existante."
     }
    ]
   },
@@ -84,20 +84,20 @@
    "h2": "Ce que j’ai décidé, *et pourquoi*",
    "items": [
     {
-     "h": "Séparer un long formulaire en deux étapes pour capter les leads plus tôt",
-     "p": "La première étape recueillait les coordonnées, pour que le client puisse appeler les gens, répondre à leurs questions et suggérer des essais par téléphone, même s’ils ne terminaient pas le formulaire.",
+     "h": "Séparer un long formulaire en deux étapes pour garder les gens dans le tunnel",
+     "p": "Le formulaire est devenu une présélection, puis les coordonnées pour les personnes qualifiées.",
      "notes": [
       {
        "k": "Ce que nous avons comparé",
-       "v": "Le formulaire existant en une étape, qui aurait pu garder un peu moins de friction, et la version en deux étapes que j’ai proposée."
+       "v": "La version existante avec son formulaire en une étape, et la version avec la page d’étude regroupée et le formulaire en deux étapes que j’ai proposé."
       },
       {
        "k": "Pourquoi je l’ai proposé",
-       "v": "Mon audit pointait vers un formulaire long. J’ai proposé deux étapes pour que le client obtienne des leads plus tôt et ne dépende pas seulement des gens qui remplissaient tout le formulaire."
+       "v": "Mon audit pointait vers un long formulaire que les gens quittaient avant la fin. Une première étape sans renseignements personnels demandait moins d’emblée et gardait les gens dans le tunnel."
       },
       {
        "k": "Ce qu’il sacrifiait",
-       "v": "Plus de travail de développement : un moyen de revenir en arrière, et l’enregistrement des données après l’étape 1 plutôt qu’un envoi complet à la fin. Parmi les gens arrivés à cette première étape, une plus faible part a terminé : 28 % au lieu de 35 %. Sur l’ensemble des visites, le taux de fin a quand même augmenté."
+       "v": "Plus de travail de développement : un moyen de revenir en arrière, et l’enregistrement des données après l’étape 1 plutôt qu’un envoi complet à la fin. Parmi les gens arrivés au formulaire, une plus faible part l’a envoyé : 28 % au lieu de 35 %. Sur l’ensemble des visites, les envois ont quand même augmenté."
       }
      ],
      "shots": [
@@ -248,42 +248,43 @@
    "results": [
     {
      "n": "+48 %",
-     "t": "de leads captés par le formulaire en deux étapes, en comptant les premières étapes envoyées : de 5,6 % à 8,3 % des visites. [À FOURNIR : à confirmer dans ton rapport final, voir la note dans la réponse de Claude]"
+     "t": "de visiteurs se sont rendus au formulaire de qualification : de 5,6 % à 8,3 % des visites.",
+     "note": "Note : cette hausse vient de la page d’étude et du menu, puisqu’elle survient avant le formulaire."
     },
     {
      "n": "+20 %",
-     "t": "de taux de fin par visite, de 1,95 % à 2,34 %.",
+     "t": "de formulaires de qualification envoyés par visite : de 1,95 % à 2,34 %.",
      "note": "Note : petit échantillon, résultat non significatif sur le plan statistique."
     },
     {
      "n": "47 %",
-     "t": "des formulaires remplis en deux étapes venaient de candidats présélectionnés. Les autres ont rejoint la communauté."
+     "t": "des envois de la version B venaient de candidats présélectionnés. Les autres pouvaient rejoindre la communauté."
     }
    ],
    "caption": "Entonnoir par version, en part des visites",
    "head": [
     "Étape",
-    "A : une étape",
-    "B : deux étapes"
+    "A : version existante",
+    "B : nouvelle version"
    ],
    "rows": [
     [
-     "1. Se sont rendus au formulaire",
+     "1. Se sont rendus au formulaire de qualification",
      "5,6 %",
      "8,3 %"
     ],
     [
-     "2. Ont envoyé leurs renseignements (A : formulaire complet; B : étape 1)",
-     "1,95 %",
-     "[À FOURNIR : taux de l’étape 1]"
-    ],
-    [
-     "3. Ont terminé le formulaire (A : formulaire complet; B : étape 2 ou communauté)",
+     "2. Ont envoyé le formulaire (A : complet; B : présélection)",
      "1,95 %",
      "2,34 %"
     ],
     [
-     "4. Parmi eux, ont rejoint la communauté (non admissibles)",
+     "3. Qualifiés, ont envoyé leurs coordonnées (B : étape 2)",
+     "Non séparé",
+     "1,09 %"
+    ],
+    [
+     "4. Non qualifiés, arrivés au formulaire de communauté (B : étape 2)",
      "Sans objet",
      "1,25 %"
     ]
@@ -291,19 +292,19 @@
    "reads": [
     {
      "h": "Ce que je peux affirmer",
-     "p": "Le formulaire en deux étapes a capté plus de leads, un résultat à la limite de la signification sur cet échantillon. Il a aussi séparé les candidats présélectionnés des gens qui ont rejoint la communauté."
+     "p": "La version B a mieux convaincu les gens de vérifier leur admissibilité, un résultat à la limite de la signification sur cet échantillon. Elle a aussi séparé les candidats présélectionnés des gens qui pouvaient rejoindre la communauté."
     },
     {
      "h": "Ce que ce test ne prouve pas",
-     "p": "Sur ce petit échantillon, la hausse de 20 % du taux de fin n’est pas significative sur le plan statistique. J’ai signalé la taille de l’échantillon à l’époque, et le projet a avancé. Une plus faible part des gens ont terminé après la première étape : c’est ce que j’étudierais ensuite."
+     "p": "Sur ce petit échantillon, la hausse de 20 % n’est pas significative sur le plan statistique. Les clics sur les boutons menant au formulaire suivaient aussi la tendance inverse : certaines personnes sont peut-être arrivées directement au formulaire. Le rapport signale aussi des visites de test et des bogues de configuration. J’ai signalé la taille de l’échantillon à l’époque, et le projet a avancé."
     },
     {
-     "h": "Un seul changement à la fois",
-     "p": "Les deux versions avaient le même design et seul le formulaire changeait : le test isole donc le formulaire. Les chiffres viennent de Google Analytics. Hotjar m’a servi à planifier les prochaines itérations dans mon rapport final."
+     "h": "Deux changements en même temps",
+     "p": "La version B changeait la page d’étude et le formulaire ensemble : le test ne peut donc attribuer le résultat à un seul des deux. Il a duré trois mois. Les chiffres viennent de Google Analytics."
     },
     {
-     "h": "Séances avec des personnes",
-     "p": "Les groupes de discussion du client ont orienté le projet avant le design. Le design lui-même n’a pas été testé en séances modérées."
+     "h": "Ce que les enregistrements ont montré",
+     "p": "Les enregistrements Hotjar suggéraient une friction sur certains champs de la présélection, alors que les personnes qualifiées remplissaient facilement le formulaire de contact. Sur la page « non qualifié », les gens lisaient surtout le titre, puis partaient. Les groupes de discussion du client ont orienté le projet, mais le design lui-même n’a pas été testé en séances modérées."
     }
    ]
   },
@@ -313,7 +314,8 @@
    "h2": "Ce qui a été lancé, *et ce que je changerais*",
    "prose": [
     "La plateforme a été mise en ligne et le test A/B a roulé avec du vrai trafic. C’était un test pour le client, et je ne sais pas s’il l’a conservée.",
-    "Aujourd’hui, je pousserais pour un test plus long. Ce n’était pas possible à l’époque, mais on aurait eu assez de visites pour confirmer le résultat sur le taux de fin.",
+    "Mon rapport final proposait les prochains tests : moins d’appels à l’action sur la page d’étude, des champs de présélection plus simples, et une page « non qualifié » plus courte avec le formulaire de communauté en haut.",
+    "Aujourd’hui, je pousserais pour plus de trafic ou un test plus long. Il a duré trois mois, mais trop peu de gens se sont rendus aux formulaires pour confirmer le résultat sur les envois.",
     "Je transformerais aussi le formulaire en assistant à plusieurs étapes. L’étape des coordonnées serait envoyée dès le passage à l’étape 2, et les questions de qualification seraient découpées en petits blocs, pour que le formulaire semble plus léger et moins intimidant.",
     "Sur la page d’accueil, j’ajouterais, juste sous la bannière, une section qui crée de l’empathie avec les personnes atteintes de ces conditions. Elle montrerait que nous comprenons leur situation avant de parler de la solution : rejoindre la communauté de participants aux études."
    ]

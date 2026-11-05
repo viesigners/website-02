@@ -54,8 +54,8 @@
      "p": "Group the microsites in one searchable platform, like Airbnb for clinical trials, with the general information people needed in one place. That would also make updates easier for the client’s team."
     },
     {
-     "h": "Test the form on real traffic",
-     "p": "My audit of the qualification form led me to suggest a two-step version, which we compared with the one-step form on the same design."
+     "h": "Test the page and the form on real traffic",
+     "p": "My audit of the qualification form led me to suggest a two-step version. We tested it with a study page that regrouped the key content around people’s main objections, against the existing version."
     }
    ]
   },
@@ -84,20 +84,20 @@
    "h2": "What I decided, *and why*",
    "items": [
     {
-     "h": "Split a long form in two steps to capture leads sooner",
-     "p": "The first step collected contact details, so the client could call people, answer their questions and suggest trials by phone, even if they never finished the form.",
+     "h": "Split a long form in two steps to keep people in the funnel",
+     "p": "The form became a prescreener first, then contact details for people who qualified.",
      "notes": [
       {
        "k": "What we compared",
-       "v": "The existing one-step form, which could have kept friction a little lower, against the two-step version I proposed."
+       "v": "The existing version with its one-step form, against the version with the regrouped study page and the two-step form I proposed."
       },
       {
        "k": "Why I proposed this",
-       "v": "My audit pointed to a long form. I suggested two steps so the client could get leads sooner and wouldn’t rely only on people filling in the whole form."
+       "v": "My audit pointed to a long form that people left before finishing. A first step without personal details would ask less up front, and keep people in the funnel."
       },
       {
        "k": "What it gave up",
-       "v": "More build work: a way to go back a step, and saving the data after step 1 instead of sending everything at once. Of the people who reached that first step, a smaller share finished: 28% instead of 35%. Across all visits, the completion rate still rose."
+       "v": "More build work: a way to go back a step, and saving the data after step 1 instead of sending everything at once. Of the people who reached the form, a smaller share sent it: 28% instead of 35%. Across all visits, submissions still rose."
       }
      ],
      "shots": [
@@ -248,42 +248,43 @@
    "results": [
     {
      "n": "+48%",
-     "t": "more leads captured by the two-step form, counting first-step submissions: 5.6% to 8.3% of visits. [À FOURNIR : confirm in your final report, see the note in Claude’s reply]"
+     "t": "more visitors reached the qualification form: 5.6% to 8.3% of visits.",
+     "note": "Note: this lift points to the study page and menu, since it happens before the form."
     },
     {
      "n": "+20%",
-     "t": "completion rate per visit, 1.95% to 2.34%.",
+     "t": "more qualification forms sent per visit: 1.95% to 2.34%.",
      "note": "Note: small sample, not statistically significant."
     },
     {
      "n": "47%",
-     "t": "of version B completions were prequalified candidates. The others joined the community."
+     "t": "of version B submissions came from prequalified candidates. The others could join the community."
     }
    ],
    "caption": "Funnel by version, as a share of visits",
    "head": [
     "Stage",
-    "A: one-step form",
-    "B: two-step form"
+    "A: existing version",
+    "B: new version"
    ],
    "rows": [
     [
-     "1. Reached the form",
+     "1. Reached the qualification form",
      "5.6%",
      "8.3%"
     ],
     [
-     "2. Sent personal info (A: full form; B: step 1)",
-     "1.95%",
-     "[À FOURNIR : step 1 rate]"
-    ],
-    [
-     "3. Completed the form (A: full form; B: step 2 or community form)",
+     "2. Sent the form (A: full form; B: prescreener)",
      "1.95%",
      "2.34%"
     ],
     [
-     "4. Of those, joined the community (unqualified)",
+     "3. Qualified, sent contact details (B: step 2)",
+     "Not separated",
+     "1.09%"
+    ],
+    [
+     "4. Not qualified, reached the community form (B: step 2)",
      "Not applicable",
      "1.25%"
     ]
@@ -291,19 +292,19 @@
    "reads": [
     {
      "h": "What I can stand behind",
-     "p": "The two-step form captured more leads, a borderline significant result on this sample. It also separated prequalified candidates from people who joined the community."
+     "p": "Version B did better at convincing people to check their eligibility, a borderline significant result on this sample. It also separated prequalified candidates from people who could join the community."
     },
     {
      "h": "What this test can’t prove",
-     "p": "On this small sample, the +20% completion rate isn’t statistically significant. I flagged the sample size at the time, and the project moved forward. A smaller share of people finished after the first step, which is the next thing I’d study."
+     "p": "On this small sample, the +20% isn’t statistically significant. Clicks on the form buttons also trended the other way, so some people may have reached the form directly. The report also flags test visits and configuration bugs. I flagged the sample size at the time, and the project moved forward."
     },
     {
-     "h": "One change at a time",
-     "p": "Both versions used the same design, and only the form changed, so the test isolates the form. The numbers come from Google Analytics. I used Hotjar to plan the next iterations in my final report."
+     "h": "Two changes at once",
+     "p": "Version B changed the study page and the form together, so the test can’t credit either one alone. It ran for three months. The numbers come from Google Analytics."
     },
     {
-     "h": "Sessions with people",
-     "p": "The client’s focus groups shaped the project before design started. The design itself wasn’t tested in moderated sessions."
+     "h": "What the recordings showed",
+     "p": "Hotjar recordings suggested friction on some prescreener fields, while qualified people filled in the contact form easily. On the not-qualified page, people mostly read the title and left. The client’s focus groups shaped the project, but the design itself wasn’t tested in moderated sessions."
     }
    ]
   },
@@ -313,7 +314,8 @@
    "h2": "What shipped, *and what I’d change*",
    "prose": [
     "The platform went live, and the A/B test ran on real traffic. It was a test for the client, and I don’t know whether they kept it.",
-    "Today I’d push for a longer test. It wasn’t possible at the time, but it would have given us enough visits to confirm the completion result.",
+    "My final report proposed the next tests: fewer calls to action on the study page, simpler prescreener fields, and a shorter not-qualified page with the community form at the top.",
+    "Today I’d push for more traffic or a longer test. It ran for three months, but too few people reached the forms to confirm the completion result.",
     "I’d also turn the form into a multi-step wizard. The contact step would be sent as soon as people moved to step 2, and the qualification questions would be split into smaller chunks, so the form feels lighter and less intimidating.",
     "On the homepage, I’d add a section right under the banner that builds empathy with people living with these conditions. It would show that we understand their situation before talking about the solution: joining the community of study participants."
    ]
