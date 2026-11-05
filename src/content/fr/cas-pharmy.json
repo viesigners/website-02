@@ -8,14 +8,14 @@
   {
    "type": "cd-hero",
    "tag": "Étude de cas · Santé",
-   "h1": "Réunir des pages d’essais dispersées en *une seule plateforme de recherche*",
+   "h1": "Réunir des microsites d’essais dispersés en *une seule plateforme de recherche*",
    "img": "work/pharmy-hub.jpg",
    "alt": "Interface de recherche d’essais cliniques avec résultats à côté d’une carte"
   },
   {
    "type": "cd-facts",
    "caption": "La plateforme : recherche par condition et par lieu, avec résultats sur une carte. Visuels actualisés par moi en 2025.",
-   "lead": "J’ai dirigé l’UX et le CRO de ce projet avec l’équipe d’O2Web. Nous avons réuni la page de chaque étude dans une seule plateforme, comme un Airbnb des essais cliniques, bâtie sur ce que les groupes de discussion disaient du besoin de faire confiance au processus.",
+   "lead": "J’ai dirigé l’UX et le CRO de ce projet avec l’équipe d’O2Web. Nous avons réuni le microsite de chaque étude dans une seule plateforme, comme un Airbnb des essais cliniques, bâtie sur ce que les groupes de discussion disaient du besoin de faire confiance au processus.",
    "byline": "Par Charles-Erick BG",
    "items": [
     {
@@ -45,13 +45,13 @@
    "label": "Le problème",
    "h2": "Deux problèmes empêchaient les gens *de rejoindre un essai*",
    "prose": [
-    "**Les gens devaient faire confiance au processus avant de chercher un essai.** Les groupes de discussion du client sont à l’origine du projet. Ils montraient qu’il manquait aux gens l’information nécessaire pour faire confiance à la plateforme et au processus, et pour décider de participer. La distance comptait aussi : les gens devaient se rendre sur place, donc avoir une clinique assez proche. Pourtant, chaque étude avait encore sa propre page.",
+    "**Les gens devaient faire confiance au processus avant de chercher un essai.** Les groupes de discussion du client sont à l’origine du projet. Ils montraient qu’il manquait aux gens l’information nécessaire pour faire confiance à la plateforme et au processus, et pour décider de participer. La distance comptait aussi : les gens devaient se rendre sur place, donc avoir une clinique assez proche. Pourtant, chaque étude avait son propre microsite : la même information générale se répétait partout et était plus difficile à tenir à jour.",
     "**Le formulaire de qualification semblait très long.** Mon audit du formulaire a révélé le deuxième problème : les gens ne le remplissaient pas et partaient, et le client dépendait seulement de ceux qui le terminaient."
    ],
    "steps": [
     {
      "h": "Réunir les études",
-     "p": "Fusionner la page de chaque étude dans une seule plateforme de recherche, comme un Airbnb des essais cliniques."
+     "p": "Regrouper les microsites dans une seule plateforme de recherche, comme un Airbnb des essais cliniques, avec l’information générale au même endroit. Les mises à jour seraient aussi plus simples pour l’équipe du client."
     },
     {
      "h": "Tester le formulaire avec du vrai trafic",
@@ -180,6 +180,24 @@
       },
       {
        "label": "Liste des essais"
+      }
+     ]
+    },
+    {
+     "h": "Faire cohabiter deux navigations dans une plateforme",
+     "p": "Chaque microsite avait sa navigation, et la plateforme de recherche avait la sienne. Le menu devait rester attrayant, aéré et intuitif malgré tout.",
+     "notes": [
+      {
+       "k": "Mes options",
+       "v": "Empiler les deux menus et les masquer au défilement, ou passer au menu du microsite avec un bouton de retour clair vers la plateforme."
+      },
+      {
+       "k": "Pourquoi ce choix",
+       "v": "[À FOURNIR : quelle option a été lancée, et pourquoi?]"
+      },
+      {
+       "k": "Ce qu’il sacrifiait",
+       "v": "Deux menus empilés sont plus difficiles à gérer sur mobile et ajoutent de la charge cognitive. Changer de menu est plus mobile first, mais demande un retour intuitif."
       }
      ]
     }
