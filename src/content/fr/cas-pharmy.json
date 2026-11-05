@@ -59,7 +59,7 @@
    "type": "cd-cards",
    "theme": "light",
    "label": "Les frictions",
-   "h2": "Quatre problèmes empêchaient les gens *de rejoindre un essai*",
+   "h2": "Deux problèmes empêchaient les gens *de rejoindre un essai*",
    "groups": [
     {
      "h": "",
@@ -71,7 +71,20 @@
       {
        "h": "Un formulaire qui semblait trop long",
        "p": "Mon audit a montré que les gens ne remplissaient pas le formulaire de qualification et partaient : le client dépendait seulement de ceux qui le terminaient."
-      },
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cd-cards",
+   "theme": "light",
+   "label": "Le coût pour le client",
+   "h2": "Deux problèmes *faisaient perdre du temps au client*",
+   "groups": [
+    {
+     "h": "",
+     "items": [
       {
        "h": "Du temps perdu sur des formulaires non qualifiés",
        "p": "L’équipe du client recevait des formulaires de personnes non qualifiées et perdait du temps à faire les suivis."

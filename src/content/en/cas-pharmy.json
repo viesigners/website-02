@@ -59,7 +59,7 @@
    "type": "cd-cards",
    "theme": "light",
    "label": "The friction",
-   "h2": "Four problems kept people *from joining a trial*",
+   "h2": "Two problems kept people *from joining a trial*",
    "groups": [
     {
      "h": "",
@@ -71,7 +71,20 @@
       {
        "h": "A form that felt too long",
        "p": "My audit showed that people didn’t fill in the qualification form and left, so the client relied only on those who finished it."
-      },
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cd-cards",
+   "theme": "light",
+   "label": "The client cost",
+   "h2": "Two problems *cost the client time*",
+   "groups": [
+    {
+     "h": "",
+     "items": [
       {
        "h": "Time lost on unqualified forms",
        "p": "The client’s team received forms from unqualified people and lost time following up on them."
