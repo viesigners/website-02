@@ -125,7 +125,7 @@
    "h2": "Comment nous avons *enquêté et mesuré*",
    "theme": "light",
    "prose": [
-    "Je suis parti des données de Google Analytics et de Hotjar, puis j’ai formulé l’hypothèse du test, rédigé la méthodologie A/B et établi les indicateurs et le plan de mesure avec l’équipe du client.",
+    "**Je suis parti des données de Google Analytics et de Hotjar.** J’ai ensuite formulé l’hypothèse du test, rédigé la méthodologie A/B et établi les indicateurs et le plan de mesure avec l’équipe du client.",
     "J’ai guidé l’équipe de projet à travers l’inspiration, l’idéation, le prototypage et la validation technique, et j’ai produit l’architecture de l’information et les wireframes. Les groupes de discussion ont été menés par le client avant le projet; je me suis appuyé sur leurs conclusions."
    ],
    "wide": true,
