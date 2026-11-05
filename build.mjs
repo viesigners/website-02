@@ -406,7 +406,7 @@ R['cd-test'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-test', { label: s.label })}
   
   ${s.tablesIntro ? `<p class="cd-tintro rv">${fmtT(s.tablesIntro, c.lang)}</p>` : ''}
-  ${s.tables.map((t) => `<div class="cd-table rv"><table><caption>${esc(t.caption)}</caption><thead><tr>${t.head.map((h, i) => `<th scope="col"${i ? ' class="num"' : ''}>${esc(h)}</th>`).join('')}</tr></thead><tbody>${t.rows.map((r) => `<tr><th scope="row">${esc(r[0].split('|')[0])}${r[0].includes('|') ? `<small class="cd-sub">${esc(r[0].split('|')[1])}</small>` : ''}</th>${r.slice(1).map((v) => `<td class="num${/^(ND|NA)$/.test(v) ? ' cd-na' : ''}">${fmtT(v, c.lang)}</td>`).join('')}</tr>`).join('')}</tbody></table>${t.note ? `<p class="cd-note">${fmtT(t.note, c.lang)}</p>` : ''}</div>`).join('')}
+  ${s.tables.map((t) => `<div class="cd-table rv"><table><caption>${esc(t.caption)}${t.captionSub ? `<small class="cd-capsub">${esc(t.captionSub)}</small>` : ''}</caption><thead><tr>${t.head.map((h, i) => `<th scope="col"${i ? ' class="num"' : ''}>${esc(h)}</th>`).join('')}</tr></thead><tbody>${t.rows.map((r) => `<tr><th scope="row">${esc(r[0].split('|')[0])}${r[0].includes('|') ? `<small class="cd-sub">${esc(r[0].split('|')[1])}</small>` : ''}</th>${r.slice(1).map((v) => `<td class="num${/^(ND|NA)$/.test(v) ? ' cd-na' : ''}">${fmtT(v, c.lang)}</td>`).join('')}</tr>`).join('')}</tbody></table>${t.note ? `<p class="cd-note">${fmtT(t.note, c.lang)}</p>` : ''}</div>`).join('')}
   <div class="cd-read">${s.reads.map((i, k) => `<div class="rv" style="--d:${k * .08}s"><h3>${esc(i.h)}</h3><p>${fmtT(i.p, c.lang)}</p></div>`).join('')}</div>
 </div></section>`;
 

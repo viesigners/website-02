@@ -276,7 +276,7 @@
    ],
    "tables": [
     {
-     "caption": "Avant le formulaire : la page d’étude",
+     "caption": "Vers le formulaire",
      "head": [
       "Étape",
       "A : contenu sur deux pages",
@@ -290,10 +290,11 @@
        "8,3 %",
        "+48 %"
       ]
-     ]
+     ],
+     "captionSub": "Contenu de l’étude regroupé, menu et boutons"
     },
     {
-     "caption": "Dans le formulaire : une étape ou deux",
+     "caption": "Dans le formulaire",
      "head": [
       "Étape",
       "A : une étape",
@@ -319,7 +320,8 @@
        "1,09 %",
        "ND"
       ]
-     ]
+     ],
+     "captionSub": "Une étape ou deux"
     }
    ]
   },

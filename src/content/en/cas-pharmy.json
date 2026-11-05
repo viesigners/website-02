@@ -276,7 +276,7 @@
    ],
    "tables": [
     {
-     "caption": "Before the form: the study page",
+     "caption": "Towards the form",
      "head": [
       "Stage",
       "A: content on two pages",
@@ -290,10 +290,11 @@
        "8.3%",
        "+48%"
       ]
-     ]
+     ],
+     "captionSub": "Regrouped study content, menu and buttons"
     },
     {
-     "caption": "In the form: one step or two",
+     "caption": "Inside the form",
      "head": [
       "Stage",
       "A: one step",
@@ -319,7 +320,8 @@
        "1.09%",
        "NA"
       ]
-     ]
+     ],
+     "captionSub": "One step or two"
     }
    ]
   },
