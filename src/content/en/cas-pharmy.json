@@ -153,10 +153,10 @@
      ],
      "shots": [
       {
-       "label": "Form, step 1"
-      },
-      {
-       "label": "Form, step 2 with back button"
+       "label": "Wireframe: form step 1 on mobile",
+       "alt": "Mobile wireframe of the first form step: a two-step stepper, eligibility questions and a See if you qualify button",
+       "img": "work/pharmy-wf-form-en.jpg",
+       "phone": true
       }
      ]
     },

@@ -153,10 +153,10 @@
      ],
      "shots": [
       {
-       "label": "Formulaire, étape 1"
-      },
-      {
-       "label": "Formulaire, étape 2 avec bouton retour"
+       "label": "Wireframe : étape 1 du formulaire, mobile",
+       "alt": "Wireframe mobile de la première étape du formulaire : un indicateur en deux étapes, des questions d’admissibilité et un bouton Voir si je suis admissible",
+       "img": "work/pharmy-wf-form-fr.jpg",
+       "phone": true
       }
      ]
     },
