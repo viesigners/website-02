@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" fill="none" stroke="#c9cfdb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" role="img"><defs><linearGradient id="gm" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#ff488b"/><stop offset="1" stop-color="#e33adb"/></linearGradient></defs>
 <g>
 <rect x="90" y="14" width="140" height="272" rx="20"/><path d="M140 26h40"/>
-<path d="M90 76h140"/><path d="M106 48h22M106 56h22M106 64h22" stroke="url(#gm)"/><path d="M150 56h64" stroke-width="2.5"/>
+<path d="M90 76h140"/><path d="M192 48h22M192 56h22M192 64h22" stroke="url(#gm)"/><path d="M106 56h64" stroke-width="2.5"/>
 <path d="M106 96h100M106 112h80M106 128h110" stroke-width="2.5"/><rect x="106" y="146" width="108" height="70" rx="6"/><path d="M106 234h90M106 250h70" stroke-width="2.5"/>
-<circle cx="117" cy="56" r="20" stroke-width="2" stroke="#ff488b" opacity=".7"/><circle cx="117" cy="56" r="29" stroke-width="2" stroke="#ff488b" opacity=".35"/>
+<circle cx="203" cy="56" r="20" stroke-width="2" stroke="#ff488b" opacity=".7"/><circle cx="203" cy="56" r="29" stroke-width="2" stroke="#ff488b" opacity=".35"/>
 </g>
 <g><path d="M258 150h40" stroke-width="4"/><path d="M288 140l12 10-12 10" stroke-width="4"/></g>
 <g>
