@@ -1021,3 +1021,7 @@ html { scroll-padding-top: 7rem; }
 @media (min-width: 640px) { .cd-shots--stack { grid-template-columns: minmax(0, .8fr) minmax(0, 1fr); } .cd-shots--stack .cd-shot:first-child { display: flex; flex-direction: column; } .cd-shots--stack .cd-shot:first-child img { flex: 1 1 0; height: 0; min-height: 0; } }
 .cd-shots--2:has(.cd-shot--phone) { max-width: 36rem; }
 .cd-shots--1:has(.cd-shot--phone) { max-width: 17rem; margin-inline: 0; }
+.cd-card .casecard__n h2 { margin: 0; font-size: clamp(1.9rem, 1.2rem + 2vw, 3rem); max-width: 14ch; }
+.cd-card .casecard__body p + p { margin-top: 1rem; }
+.cd-card .casecard__body strong { color: var(--text); font-weight: 600; }
+@media (min-width: 960px) { .cd-card { align-items: start; } }

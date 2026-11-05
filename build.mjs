@@ -417,6 +417,10 @@ R['cd-test'] = (s, c) => `<section class="section"><div class="wrap">
   <div class="cd-read">${s.reads.map((i, k) => `<div class="rv" style="--d:${k * .08}s"><h3>${esc(i.h)}</h3><p>${fmtT(i.p, c.lang)}</p></div>`).join('')}</div>
 </div></section>`;
 
+R['cd-card'] = (s, c) => `<section class="section section--tight"><div class="wrap">
+  <article class="casecard cd-card rv"><div class="casecard__n"><p class="eyebrow-tag">${esc(s.label)}</p><h2>${fmt(s.h2, c.lang)}</h2></div>
+    <div class="casecard__body">${s.prose.map((p) => `<p>${fmtT(p, c.lang)}</p>`).join('')}</div></article>
+</div></section>`;
 R.casecard = (s, c) => `<section class="section section--tight"><div class="wrap">
   <article class="casecard rv"><a class="more" href="${url(s.to, c.lang)}" aria-label="${esc(s.h)}"></a>
     <div class="casecard__n"><p class="eyebrow-tag">${esc(s.tag)}</p><b>${esc(s.n)}</b><span>${fmt(s.nt, c.lang)}</span></div>
@@ -799,6 +803,7 @@ function toMd(page, c) {
       case 'process': L.push(`## ${t(s.h2)}`, '', ...s.steps.map((p, i) => `${i + 1}. **${t(p.h)}** — ${t(p.p)}`), ''); break;
       case 'compare': L.push(`## ${t(s.h2)}`, '', `### ${t(s.before.h)}`, ...s.before.items.map((i) => `- ${t(i)}`), '', `### ${t(s.after.h)}`, ...s.after.items.map((i) => `- ${t(i)}`), ''); break;
       case 'related': L.push(`## ${t(s.h2)}`, '', ...s.items.filter((k) => !isHidden(k)).map((k) => `- [${T.nav[k]}](${abs(url(k, lang))}): ${T.navSub[k]}`), ''); break;
+      case 'cd-card': L.push(`## ${t(s.h2)}`, '', ...s.prose.map((p) => t(p)), ''); break;
       case 'casecard': L.push(`## ${t(s.h)}`, '', `- **${s.n}** ${t(s.nt)}`, `- [${t(s.h)}](${abs(url(s.to, lang))})`, ''); break;
       case 'cd-impact': L.push(...s.items.map((i) => `- **${i.n}** ${t(i.t)}${i.note ? ' ' + t(i.note) : ''}`), ''); break;
       case 'cd-cards': L.push(`## ${t(s.h2)}`, '', ...s.groups.flatMap((g) => [`### ${t(g.h)}`, '', ...g.items.map((i) => `- **${t(i.h)}** ${t(i.p)}`), '']), ''); break;
@@ -835,7 +840,7 @@ const THEME = {
   'hero-home': 'dark', 'page-hero': 'dark', 'cta-final': 'dark',
   friction: 'light', founders: 'dark', services: 'light', stats: 'dark', work: 'light', fit: 'dark', slot: 'light', testimonials: 'light', faq: 'light',
   statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', hub: 'light', partner: 'dark', related: 'light', bio: 'light', legal: 'light', people: 'dark', facts: 'light',
-  'cd-hero': 'dark', 'cd-facts': 'light', 'cd-impact': 'light', 'cd-cards': 'light', 'cd-gallery': 'dark', 'cd-text': 'light', 'cd-image': 'light', 'cd-decisions': 'dark', 'cd-test': 'light', 'posts-list': 'light', article: 'light', 'profile-hero': 'dark', cases: 'light', 'result-cards': 'dark', portfolio: 'light', 'contact-links': 'dark', contact: 'light', 'rich-text': 'light',
+  'cd-hero': 'dark', 'cd-facts': 'light', 'cd-impact': 'light', 'cd-cards': 'light', 'cd-gallery': 'dark', 'cd-text': 'light', 'cd-card': 'dark', 'cd-image': 'light', 'cd-decisions': 'dark', 'cd-test': 'light', 'posts-list': 'light', article: 'light', 'profile-hero': 'dark', cases: 'light', 'result-cards': 'dark', portfolio: 'light', 'contact-links': 'dark', contact: 'light', 'rich-text': 'light',
 };
 const ASSET_HASH = {};
 const PAGES_OUT = []; // for sitemap + llms
