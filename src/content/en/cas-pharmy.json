@@ -261,34 +261,6 @@
      "t": "of version B submissions came from prequalified candidates. The others could join the community."
     }
    ],
-   "caption": "Funnel by version, as a share of visits",
-   "head": [
-    "Stage",
-    "A: existing version",
-    "B: new version"
-   ],
-   "rows": [
-    [
-     "1. Reached the qualification form",
-     "5.6%",
-     "8.3%"
-    ],
-    [
-     "2. Sent the form (A: full form; B: prescreener)",
-     "1.95%",
-     "2.34%"
-    ],
-    [
-     "3. Qualified, sent contact details (B: step 2)",
-     "Not separated",
-     "1.09%"
-    ],
-    [
-     "4. Not qualified, reached the community form (B: step 2)",
-     "Not applicable",
-     "1.25%"
-    ]
-   ],
    "reads": [
     {
      "h": "What I can stand behind",
@@ -305,6 +277,56 @@
     {
      "h": "What the recordings showed",
      "p": "Hotjar recordings suggested friction on some prescreener fields, while qualified people filled in the contact form easily. On the not-qualified page, people mostly read the title and left. The client’s focus groups shaped the project, but the design itself wasn’t tested in moderated sessions."
+    }
+   ],
+   "tablesIntro": "This was one test: each version combined its page and its form.",
+   "tables": [
+    {
+     "caption": "Before the form: the study page",
+     "head": [
+      "Stage",
+      "A: content on two pages",
+      "B: content on one page",
+      "Delta"
+     ],
+     "rows": [
+      [
+       "Reached the qualification form",
+       "5.6%",
+       "8.3%",
+       "+48%"
+      ]
+     ]
+    },
+    {
+     "caption": "In the form: one step or two",
+     "head": [
+      "Stage",
+      "A: one step",
+      "B: two steps",
+      "Delta"
+     ],
+     "rows": [
+      [
+       "Qualification forms sent (A: full form; B: prescreener)",
+       "1.95%",
+       "2.34%",
+       "+20%"
+      ],
+      [
+       "Contact details received",
+       "1.95%",
+       "1.09%",
+       "−44%"
+      ],
+      [
+       "Not qualified, reached the community form",
+       "NA",
+       "1.25%",
+       "NA"
+      ]
+     ],
+     "note": "Note: version A’s 1.95% covers every full form received, qualified or not, while version B’s 1.09% covers qualified people only. The −44% is not a drop in qualified candidates."
     }
    ]
   },

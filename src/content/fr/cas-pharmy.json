@@ -261,34 +261,6 @@
      "t": "des envois de la version B venaient de candidats présélectionnés. Les autres pouvaient rejoindre la communauté."
     }
    ],
-   "caption": "Entonnoir par version, en part des visites",
-   "head": [
-    "Étape",
-    "A : version existante",
-    "B : nouvelle version"
-   ],
-   "rows": [
-    [
-     "1. Se sont rendus au formulaire de qualification",
-     "5,6 %",
-     "8,3 %"
-    ],
-    [
-     "2. Ont envoyé le formulaire (A : complet; B : présélection)",
-     "1,95 %",
-     "2,34 %"
-    ],
-    [
-     "3. Qualifiés, ont envoyé leurs coordonnées (B : étape 2)",
-     "Non séparé",
-     "1,09 %"
-    ],
-    [
-     "4. Non qualifiés, arrivés au formulaire de communauté (B : étape 2)",
-     "Sans objet",
-     "1,25 %"
-    ]
-   ],
    "reads": [
     {
      "h": "Ce que je peux affirmer",
@@ -305,6 +277,56 @@
     {
      "h": "Ce que les enregistrements ont montré",
      "p": "Les enregistrements Hotjar suggéraient une friction sur certains champs de la présélection, alors que les personnes qualifiées remplissaient facilement le formulaire de contact. Sur la page « non qualifié », les gens lisaient surtout le titre, puis partaient. Les groupes de discussion du client ont orienté le projet, mais le design lui-même n’a pas été testé en séances modérées."
+    }
+   ],
+   "tablesIntro": "C’était un seul test : chaque version combinait sa page et son formulaire.",
+   "tables": [
+    {
+     "caption": "Avant le formulaire : la page d’étude",
+     "head": [
+      "Étape",
+      "A : contenu sur deux pages",
+      "B : contenu sur une page",
+      "Delta"
+     ],
+     "rows": [
+      [
+       "Se sont rendus au formulaire de qualification",
+       "5,6 %",
+       "8,3 %",
+       "+48 %"
+      ]
+     ]
+    },
+    {
+     "caption": "Dans le formulaire : une étape ou deux",
+     "head": [
+      "Étape",
+      "A : une étape",
+      "B : deux étapes",
+      "Delta"
+     ],
+     "rows": [
+      [
+       "Formulaires de qualification envoyés (A : complet; B : présélection)",
+       "1,95 %",
+       "2,34 %",
+       "+20 %"
+      ],
+      [
+       "Coordonnées reçues",
+       "1,95 %",
+       "1,09 %",
+       "−44 %"
+      ],
+      [
+       "Non qualifiés, arrivés au formulaire de communauté",
+       "ND",
+       "1,25 %",
+       "ND"
+      ]
+     ],
+     "note": "Note : le 1,95 % de la version A couvre tous les formulaires complets reçus, qualifiés ou non, alors que le 1,09 % de la version B ne couvre que les personnes qualifiées. Le −44 % n’est pas une baisse des candidats qualifiés."
     }
    ]
   },

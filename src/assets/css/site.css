@@ -981,3 +981,7 @@ html { scroll-padding-top: 7rem; }
 }
 .cd-note { display: block; margin-top: .6rem; font-size: .82rem; line-height: 1.4; color: var(--text-3); }
 .cd-table td .tbd { white-space: normal; }
+.cd-tintro { margin: clamp(2rem, 1rem + 3vw, 3.5rem) 0 0; color: var(--text-2); }
+.cd-tintro + .cd-table { margin-top: 1.5rem; }
+.cd-table + .cd-table { margin-top: clamp(1.8rem, 1rem + 2vw, 3rem); }
+@media (max-width: 639px) { .cd-table thead .num { white-space: normal; font-size: .62rem; letter-spacing: 0; } .cd-table th, .cd-table td { padding-right: .4rem; } .cd-table td.num { padding-left: .3rem; } }
