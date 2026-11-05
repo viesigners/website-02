@@ -253,7 +253,7 @@
   },
   {
    "type": "cd-text",
-   "theme": "dark",
+   "theme": "light",
    "label": "A design challenge that arose",
    "h2": "Two navigation systems *in one platform*",
    "prose": [

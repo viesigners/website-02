@@ -253,7 +253,7 @@
   },
   {
    "type": "cd-text",
-   "theme": "dark",
+   "theme": "light",
    "label": "Un défi de design qui est apparu",
    "h2": "Deux navigations *dans une seule plateforme*",
    "prose": [
