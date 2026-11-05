@@ -331,7 +331,7 @@
    "label": "Résultat",
    "h2": "Ce qui a été lancé, *et ce que je changerais*",
    "prose": [
-    "La plateforme a été mise en ligne et le test A/B a roulé avec du vrai trafic. Mon rapport recommandait de conserver la version B. C’était un test pour le client, et je ne sais pas s’il l’a conservée.",
+    "La plateforme a été mise en ligne et le test A/B a roulé avec du vrai trafic. Mon rapport recommandait de conserver la version B.",
     "Mon rapport final proposait les prochains tests : moins d’appels à l’action sur la page d’étude, des champs de présélection plus simples, et une page « non qualifié » plus courte avec le formulaire de communauté en haut.",
     "Aujourd’hui, je pousserais pour plus de trafic ou un test plus long. Il a duré trois mois, mais trop peu de gens se sont rendus aux formulaires pour confirmer le résultat sur les envois.",
     "Je transformerais aussi le formulaire en assistant à plusieurs étapes. L’étape des coordonnées serait envoyée dès le passage à l’étape 2, et les questions de qualification seraient découpées en petits blocs, pour que le formulaire semble plus léger et moins intimidant.",
