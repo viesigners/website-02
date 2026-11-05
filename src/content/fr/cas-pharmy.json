@@ -246,9 +246,6 @@
        "alt": "Wireframe mobile d’un clic sur un marqueur : la clinique et ses essais s’ouvrent au-dessus du repère",
        "img": "work/pharmy-wf-map-fr.jpg",
        "phone": true
-      },
-      {
-       "label": "Liste des essais"
       }
      ]
     }
