@@ -193,8 +193,11 @@
      "p": "A *prescreener came first*, then contact details for people who qualified.",
      "notes": [
       {
-       "k": "Alternative",
-       "v": "The existing one-step form, tested against my two-step version."
+       "k": "Options",
+       "list": [
+        "One-step form (existing).",
+        "Two-step form (version B of the test)."
+       ]
       },
       {
        "k": "Why",

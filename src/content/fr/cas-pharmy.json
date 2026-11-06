@@ -193,8 +193,11 @@
      "p": "Une *présélection venait d’abord*, puis les coordonnées pour les personnes qualifiées.",
      "notes": [
       {
-       "k": "Alternative",
-       "v": "Le formulaire existant en une étape, testé contre ma version en deux étapes."
+       "k": "Options",
+       "list": [
+        "Formulaire en une étape (existant).",
+        "Formulaire en deux étapes (version B du test)."
+       ]
       },
       {
        "k": "Pourquoi",
