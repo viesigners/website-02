@@ -1073,5 +1073,5 @@ html { scroll-padding-top: 7rem; }
 .cd-steps .cd-olist li { grid-template-columns: 1.1rem 1fr; }
 .cd-steps .cd-olist li::before { content: ""; width: .38rem; height: .38rem; border-radius: 50%; background: var(--pink); align-self: start; margin-top: .6em; padding: 0; grid-row: auto; }
 .cd-steps .cd-olist { gap: .5rem; margin-top: .9rem; }
-.cd-steps .cd-olist li { display: block; padding: .75rem .95rem; border: 1px solid var(--line-2); border-radius: var(--r-md); color: var(--text); line-height: 1.45; }
-.cd-steps .cd-olist li::before { content: none; }
+.cd-steps .cd-olist li { display: grid; grid-template-columns: 1.1rem 1fr; padding: .85rem 1rem; border: 0; border-radius: var(--r-lg); background: #fff; box-shadow: 0 0 0 1px var(--line); color: var(--text); line-height: 1.45; }
+.cd-steps .cd-olist li::before { content: ""; width: .4rem; height: .4rem; margin-top: .55em; border-radius: 50%; background: var(--pink); padding: 0; grid-row: auto; }
