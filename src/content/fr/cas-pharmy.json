@@ -73,20 +73,20 @@
      ]
     },
     {
+     "b": "Outils",
+     "tags": [
+      "Google Analytics",
+      "Hotjar",
+      "Sketch"
+     ]
+    },
+    {
      "b": "Avec qui",
      "bullets": [
       "Consultant du client (approbation)",
       "Responsable du projet chez le client",
       "Designer graphique",
       "Développeur"
-     ]
-    },
-    {
-     "b": "Outils",
-     "tags": [
-      "Google Analytics",
-      "Hotjar",
-      "Sketch"
      ]
     }
    ],
