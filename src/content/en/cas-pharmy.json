@@ -166,7 +166,7 @@
        "h": "Test a new version on real traffic",
        "p": "From the client’s focus groups and my Google Analytics, Hotjar and form audit findings, we hypothesized that two changes would get more people to send their information:",
        "list": [
-        "One study page built around their main objections",
+        "Each study’s content on one page instead of two, with a reorganized menu and buttons leading to the form",
         "A form split in two steps, to qualify people before they send their contact details"
        ]
       }

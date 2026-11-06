@@ -166,7 +166,7 @@
        "h": "Tester une nouvelle version avec du vrai trafic",
        "p": "À partir des groupes de discussion du client, de Google Analytics, de Hotjar et de mon audit du formulaire, nous avons posé l’hypothèse que deux changements amèneraient plus de gens à envoyer leurs renseignements :",
        "list": [
-        "Une seule page d’étude bâtie autour de leurs principaux freins",
+        "Le contenu de chaque étude sur une seule page au lieu de deux, avec un menu réorganisé et des boutons vers le formulaire",
         "Un formulaire en deux étapes, pour qualifier les gens avant l’envoi de leurs coordonnées"
        ]
       }
