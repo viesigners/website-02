@@ -68,7 +68,7 @@ const ROUTES = {
   'landing-pages': { fr: 'landing-pages', en: 'landing-pages' },
   'design-produit': { fr: 'design-de-produit', en: 'product-design' },
   coaching: { fr: 'conseil-affaires-web', en: 'business-advisory' },
-  'cas-saas': { fr: `${BLOG.fr}/etude-de-cas-saas-b2b-ia`, en: `${BLOG.en}/b2b-ai-saas-case-study` }, // listed under Blog > Case studies
+  'cas-saas': { fr: 'etudes-de-cas/saas-b2b-ia', en: 'case-studies/b2b-ai-saas' }, // lives under its type (Case studies), not under /blog/
   publicite: { fr: 'publicite-numerique', en: 'digital-advertising' },
   'medias-sociaux': { fr: 'medias-sociaux', en: 'social-media' },
   'seo-geo': { fr: 'seo-geo', en: 'seo-geo' },
@@ -94,7 +94,8 @@ const MOVED = [
 ];
 const RES = { fr: [], en: [] };              // blog cards (posts + case studies), filled at load
 let RES_CATS = {};                           // lang -> categories from actualites.json
-const catUrl = (cat, lang) => url('actualites', lang) + cat.slug + '/';
+const catUrl = (cat, lang) => `${BASE}/${lang}/${cat.slug}/`; // each type is a top-level address: the blog pre-filtered on it, and the parent of its articles
+const catSlug = (key, lang) => RES_CATS[lang]?.find((k) => k.key === key)?.slug || ROUTES.actualites[lang];
 /* pages temporarily hidden: still built, but removed from menu, footer, links, sitemap and llms.txt, and marked noindex.
    Edit "hidden" in src/config.json to bring them back (empty list = everything visible). */
 const HIDDEN = new Set(CFG.hidden || []);
@@ -103,9 +104,10 @@ const SERVICE_KEYS = ['sites-web', 'landing-pages', 'design-produit', 'coaching'
 const MAIN_SERVICE_KEYS = ['sites-web', 'landing-pages', 'design-produit', 'coaching']; // menu and footer stay short: the rest lives on the services hub
 const POSTS = { fr: [], en: [] };            // filled at load
 let CURRENT_POST_SLUGS = {};                 // key -> {fr,en}
+let POST_CATS = {};                          // key -> category key (an article's address starts with its type)
 let PROFILE_FIRST = {};                      // lang -> path of the first profile tab (internal links skip the forwarding page)
 const url = (key, lang) => {
-  if (key.startsWith('post:')) { const s = CURRENT_POST_SLUGS[key.slice(5)]; return s?.[lang] ? `${BASE}/${lang}/${ROUTES.actualites[lang]}/${s[lang]}/` : `${BASE}/${lang}/${ROUTES.actualites[lang]}/`; }
+  if (key.startsWith('post:')) { const s = CURRENT_POST_SLUGS[key.slice(5)]; return s?.[lang] ? `${BASE}/${lang}/${catSlug(POST_CATS[key.slice(5)] || 'insights', lang)}/${s[lang]}/` : `${BASE}/${lang}/${ROUTES.actualites[lang]}/`; }
   const r = ROUTES[key]; if (!r) throw new Error('Unknown route ' + key);
   return `${BASE}/${lang}/${r[lang]}${r[lang] ? '/' : ''}` + (key === 'cebg' && PROFILE_FIRST[lang] ? PROFILE_FIRST[lang] + '/' : '');
 };
@@ -803,11 +805,11 @@ function buildPage({ lang, key, page, post, tab }) {
 
   /* breadcrumbs */
   const crumbs = [{ name: T.nav.home, url: url('home', lang) }];
-  const resCrumbs = !isHidden('actualites') && (key === 'post' || CASE_KEYS.includes(key)); // Home > Blog > Category > Page
+  const resCrumbs = !isHidden('actualites') && (key === 'post' || CASE_KEYS.includes(key)); // Home > Type > Page (the type links to the blog pre-filtered on it)
   if (SERVICE_KEYS.includes(key) || (CASE_KEYS.includes(key) && !resCrumbs)) crumbs.push({ name: T.nav.services, url: url('services', lang) }); // Home > Services > Service
   if (['charles-erick', 'jean-francois'].includes(key)) crumbs.push({ name: T.nav['a-propos'], url: url('a-propos', lang) });
   if (key === 'cas-saas' && !resCrumbs) crumbs.push({ name: T.nav['design-produit'], url: url('design-produit', lang) });
-  if (key === 'post' || resCrumbs) { crumbs.push({ name: T.nav.actualites, url: url('actualites', lang) }); const cat = RES_CATS[lang]?.find((k) => k.key === (key === 'post' ? post.category || 'insights' : 'case-studies')); if (cat && resCrumbs) crumbs.push({ name: cat.label, url: catUrl(cat, lang) }); }
+  if (key === 'post' || resCrumbs) { const cat = resCrumbs && RES_CATS[lang]?.find((k) => k.key === (key === 'post' ? post.category || 'insights' : 'case-studies')); crumbs.push(cat ? { name: cat.label, url: catUrl(cat, lang) } : { name: T.nav.actualites, url: url('actualites', lang) }); }
   if (key !== 'home') crumbs.push({ name: key === 'post' ? post.title : T.nav[key], url: tab ? url(key, lang) : selfUrl });
   if (tab) crumbs.push({ name: tab.label, url: selfUrl });
 
@@ -897,21 +899,20 @@ function build() {
   PAGES_OUT.length = 0;
 
   /* load content */
-  CURRENT_POST_SLUGS = {};
+  CURRENT_POST_SLUGS = {}; POST_CATS = {};
   for (const l of LANGS) {
     TR[l] = rd(path.join(SRC, 'content', l, '_site.json'));
     POSTS[l] = [];
     const dir = path.join(SRC, 'content', l, 'posts');
     if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.json'))) {
       const p = rd(path.join(dir, f)); POSTS[l].push(p);
-      (CURRENT_POST_SLUGS[p.key] ||= {})[l] = p.slug;
+      (CURRENT_POST_SLUGS[p.key] ||= {})[l] = p.slug; POST_CATS[p.key] = p.category || 'insights';
     }
   }
   const pages = {};
   for (const l of LANGS) for (const k of Object.keys(ROUTES)) pages[`${l}:${k}`] = rd(path.join(SRC, 'content', l, `${k}.json`));
+  for (const l of LANGS) RES_CATS[l] = pages[`${l}:actualites`].sections.find((s) => s.type === 'posts-list').categories || [];
   for (const l of LANGS) {
-    const sec = pages[`${l}:actualites`].sections.find((s) => s.type === 'posts-list');
-    RES_CATS[l] = sec.categories || [];
     RES[l] = [
       ...POSTS[l].map((p) => ({ cat: p.category || 'insights', tag: p.tag, title: p.title, description: p.description, date: p.date, read: p.read, href: url('post:' + p.key, l) })),
       ...CASE_KEYS.map((k) => { const pg = pages[`${l}:${k}`]; return { cat: 'case-studies', tag: pg.sections[0].tag, title: pg.meta.h1, description: pg.meta.description, date: pg.published, href: url(k, l) }; }),
@@ -948,6 +949,7 @@ function build() {
 `);
     }
     for (const m of MOVED) {
+      if (!m.post && RES_CATS[l].some((cat) => cat.slug === m.from[l] && RES[l].some((p) => p.cat === cat.key))) continue;
       const to = m.post ? url('post:' + m.post, l) : url(m.to, l);
       write(path.join(DIST, l, m.from[l], m.post ? CURRENT_POST_SLUGS[m.post][l] : '', 'index.html'), `<!doctype html>
 <html lang="${l}"><head><meta charset="utf-8"><meta name="robots" content="noindex"><link rel="canonical" href="${abs(to)}"><meta http-equiv="refresh" content="0; url=${to}"><title>Viesigners</title></head>
