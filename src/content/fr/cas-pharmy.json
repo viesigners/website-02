@@ -287,7 +287,10 @@
        "k": "Alternatives",
        "list": [
         "Une liste filtrée.",
-        "Une recherche sur carte filtrée."
+        {
+         "t": "Une recherche sur carte filtrée.",
+         "pill": "Ma recommandation"
+        }
        ]
       },
       {

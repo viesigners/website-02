@@ -287,7 +287,10 @@
        "k": "Alternatives",
        "list": [
         "A filtered list.",
-        "A filtered map search."
+        {
+         "t": "A filtered map search.",
+         "pill": "My recommendation"
+        }
        ]
       },
       {
