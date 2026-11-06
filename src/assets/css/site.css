@@ -1102,3 +1102,24 @@ html { scroll-padding-top: 7rem; }
 .cd-blist li::before { content: ""; width: .38rem; height: .38rem; border-radius: 50%; background: var(--pink); align-self: start; margin-top: .55em; }
 .cd-hero__cta { margin-top: clamp(1.4rem, 1rem + 1vw, 2rem); }
 @media (min-width: 960px) { .cd-steps--row:has(> li:nth-child(5)) { grid-auto-flow: row; grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: clamp(1.6rem, 1rem + 1.5vw, 2.4rem); } }
+
+/* Case study screenshots: zoom button + lightbox */
+.cd-shot--zoom { position: relative; }
+.cd-shot--zoom img { cursor: zoom-in; }
+.cd-zoom { position: absolute; top: .6rem; right: .6rem; display: grid; place-items: center; width: 2.5rem; height: 2.5rem; padding: 0; border: 0; border-radius: 50%; background: rgba(16, 20, 33, .5); color: #fff; -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); opacity: .75; cursor: pointer; transition: opacity .2s, background-color .2s; }
+.cd-shot--zoom:hover .cd-zoom, .cd-zoom:focus-visible { opacity: 1; background: var(--pink); }
+.cd-zoom:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.lightbox { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: clamp(1rem, 3vw, 3rem); border: 0; background: transparent; }
+.lightbox[open] { display: grid; place-items: center; }
+.lightbox::backdrop { background: rgba(10, 12, 20, .9); }
+.lightbox figure { margin: 0; display: grid; gap: .8rem; justify-items: center; cursor: zoom-out; }
+.lightbox img { display: block; max-width: min(100%, 1400px); max-height: calc(100dvh - 7rem); width: auto; height: auto; border-radius: var(--r-lg); }
+.lightbox figcaption { color: #dbe5ed; font: .78rem/1.4 var(--f-mono); text-align: center; }
+.lightbox__close { position: fixed; top: 1rem; right: 1rem; display: grid; place-items: center; width: 2.75rem; height: 2.75rem; padding: 0; border: 0; border-radius: 50%; background: rgba(255, 255, 255, .14); color: #fff; cursor: pointer; }
+.lightbox__close:hover, .lightbox__close:focus-visible { background: var(--pink); }
+.lightbox__close:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+@media (prefers-reduced-motion: no-preference) { .lightbox[open] img { animation: lb-in .2s ease-out; } @keyframes lb-in { from { opacity: 0; transform: scale(.97); } } }
+.lightbox::backdrop { background: rgba(10, 12, 20, .94); }
+.lightbox--tall { overflow-y: auto; overscroll-behavior: contain; }
+.lightbox--tall[open] { place-items: start center; }
+.lightbox--tall img { max-width: min(100%, 64rem); max-height: none; }

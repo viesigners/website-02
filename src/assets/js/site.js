@@ -199,3 +199,53 @@
     else requestAnimationFrame(show);
   }
 })();
+
+/* lightbox:start — case study screenshots open in a modal */
+(() => {
+  const d = document;
+  const imgs = d.querySelectorAll('.cd-shot img');
+  if (!imgs.length || typeof HTMLDialogElement !== 'function') return;
+  const isFr = (el) => (el.closest('[lang]')?.getAttribute('lang') || d.documentElement.lang || 'en').startsWith('fr');
+  const svg = (p) => `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
+  const dlg = d.createElement('dialog');
+  dlg.className = 'lightbox';
+  dlg.innerHTML = `<button class="lightbox__close" type="button">${svg('<path d="M6 6l12 12M18 6L6 18"/>')}</button><figure><img alt=""><figcaption></figcaption></figure>`;
+  d.body.append(dlg);
+  const big = dlg.querySelector('img');
+  const cap = dlg.querySelector('figcaption');
+  const close = dlg.querySelector('.lightbox__close');
+  let opener;
+  const best = (img) => {
+    const set = img.getAttribute('srcset');
+    if (!set) return img.currentSrc || img.src;
+    const c = set.split(',').map((x) => x.trim().split(/\s+/));
+    return c[c.length - 1][0];
+  };
+  imgs.forEach((img) => {
+    const fig = img.closest('.cd-shot');
+    const fr = isFr(img);
+    const b = d.createElement('button');
+    b.type = 'button';
+    b.className = 'cd-zoom';
+    b.setAttribute('aria-label', fr ? 'Agrandir l\u2019image' : 'Enlarge image');
+    b.innerHTML = svg('<path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>');
+    img.after(b);
+    fig.classList.add('cd-shot--zoom');
+    const open = () => {
+      opener = b;
+      big.src = best(img);
+      big.alt = img.alt;
+      cap.textContent = fig.querySelector('figcaption')?.textContent || '';
+      close.setAttribute('aria-label', fr ? 'Fermer' : 'Close');
+      dlg.classList.toggle('lightbox--tall', !fig.classList.contains('cd-shot--phone') && img.naturalHeight > img.naturalWidth * 1.2);
+      dlg.showModal();
+      dlg.scrollTop = 0;
+    };
+    b.addEventListener('click', open);
+    img.addEventListener('click', open);
+  });
+  close.addEventListener('click', () => dlg.close());
+  dlg.addEventListener('click', (e) => { if (e.target !== close && !close.contains(e.target)) dlg.close(); });
+  dlg.addEventListener('close', () => opener?.focus());
+})();
+/* lightbox:end */
