@@ -1065,3 +1065,6 @@ html { scroll-padding-top: 7rem; }
 .cd-olist { margin: .35rem 0 0; padding: 0; list-style: none; counter-reset: g; display: grid; gap: .45rem; }
 .cd-olist li { counter-increment: g; display: grid; grid-template-columns: 1.6rem 1fr; align-items: baseline; }
 .cd-olist li::before { content: counter(g, decimal-leading-zero); font-family: var(--f-mono); font-size: .74rem; color: var(--pink-600); }
+.cd-steps .cd-olist { margin-top: .6rem; }
+.cd-steps .cd-olist li { padding: 0; border: 0; margin: 0; grid-template-columns: 1.6rem 1fr; gap: 0; }
+.cd-steps .cd-olist li::after { content: none; }

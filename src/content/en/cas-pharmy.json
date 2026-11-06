@@ -164,7 +164,11 @@
       },
       {
        "h": "Test a new version on real traffic",
-       "p": "From the client’s focus groups and my Google Analytics, Hotjar and form audit findings, we hypothesized that two changes would get more people to send their information: one study page built around their main objections, and a form split in two steps."
+       "p": "From the client’s focus groups and my Google Analytics, Hotjar and form audit findings, we hypothesized that two changes would get more people to send their information:",
+       "list": [
+        "One study page built around their main objections",
+        "A form split in two steps"
+       ]
       }
      ]
     }
