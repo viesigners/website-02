@@ -1023,7 +1023,7 @@ html { scroll-padding-top: 7rem; }
 .cd-card .casecard__n h2 { margin: 0; font-size: clamp(1.9rem, 1.2rem + 2vw, 3rem); max-width: 14ch; }
 .cd-card .casecard__body p + p { margin-top: 1rem; }
 .cd-card .casecard__body strong { color: var(--text); font-weight: 600; }
-@media (min-width: 960px) { .cd-card { align-items: center; } }
+@media (min-width: 960px) { .cd-card { align-items: start; } }
 .cd-card .casecard__body p { max-width: 60ch; }
 .cd-hero__top.phero__grid { align-items: end; margin-bottom: clamp(1.8rem, 1rem + 3vw, 3.5rem); }
 .cd-hero__top.phero__grid .phero__title { margin-bottom: 0; }
