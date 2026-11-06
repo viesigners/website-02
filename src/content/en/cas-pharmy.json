@@ -225,6 +225,16 @@
      "p": "People who didn’t qualify could join a community through a *newsletter signup, placed on the thank-you screen* after the prescreener.",
      "notes": [
       {
+       "k": "Alternatives",
+       "list": [
+        "Existing thank-you page, without community signup.",
+        {
+         "t": "Add the community signup to the final step for people who don’t qualify.",
+         "pill": "My recommendation"
+        }
+       ]
+      },
+      {
        "k": "Why",
        "v": "The newsletter kept them in the loop, so the client could reach them again later and propose new trials better suited to them, without more effort from the client’s team."
       }

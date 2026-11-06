@@ -225,6 +225,16 @@
      "p": "Les personnes non admissibles pouvaient rejoindre une communauté grâce à une *inscription à l’infolettre, placée sur l’écran de remerciement* après la présélection.",
      "notes": [
       {
+       "k": "Alternatives",
+       "list": [
+        "Page de remerciement existante, sans inscription à la communauté.",
+        {
+         "t": "Ajouter l’inscription à la communauté à la dernière étape pour les personnes non admissibles.",
+         "pill": "Ma recommandation"
+        }
+       ]
+      },
+      {
        "k": "Pourquoi",
        "v": "L’infolettre les tenait au courant, pour que le client puisse les rejoindre plus tard et leur proposer de nouveaux essais mieux adaptés, sans effort supplémentaire pour l’équipe du client."
       }
