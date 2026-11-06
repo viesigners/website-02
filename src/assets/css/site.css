@@ -1075,3 +1075,5 @@ html { scroll-padding-top: 7rem; }
 .cd-steps .cd-olist { gap: .5rem; margin-top: .9rem; }
 .cd-steps .cd-olist li { display: grid; grid-template-columns: 1.1rem 1fr; padding: .85rem 1rem; border: 0; border-radius: var(--r-lg); background: #fff; box-shadow: 0 0 0 1px var(--line); color: var(--text); line-height: 1.45; }
 .cd-steps .cd-olist li::before { content: ""; width: .4rem; height: .4rem; margin-top: .55em; border-radius: 50%; background: var(--pink); padding: 0; grid-row: auto; }
+.cd-decisions dd .cd-olist { margin-top: 0; }
+.cd-decisions .cd-olist li::before { color: var(--pink-300); }

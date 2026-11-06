@@ -236,7 +236,7 @@
      "p": "A strategic homepage sequence answered objections and showed people they weren’t alone. Version B of the A/B test also reduced the number of information pages.",
      "notes": [
       {
-       "k": "Alternatives",
+       "k": "Alternative",
        "v": "Land people on the map search, with explanations behind links."
       },
       {
@@ -273,7 +273,10 @@
      "notes": [
       {
        "k": "Alternatives",
-       "v": "A filtered list, or one marker per condition, which would have been too cluttered since a clinic could run several studies."
+       "list": [
+        "A filtered list.",
+        "One marker per condition, which would have been too cluttered since a clinic could run several studies."
+       ]
       },
       {
        "k": "Why",

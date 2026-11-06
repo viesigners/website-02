@@ -236,7 +236,7 @@
      "p": "Une séquence stratégique sur la page d’accueil répondait aux objections et montrait aux gens qu’ils n’étaient pas seuls. La version B du test A/B réduisait aussi le nombre de pages d’information.",
      "notes": [
       {
-       "k": "Alternatives",
+       "k": "Alternative",
        "v": "Faire arriver les gens sur la recherche par carte, avec les explications derrière des liens."
       },
       {
@@ -273,7 +273,10 @@
      "notes": [
       {
        "k": "Alternatives",
-       "v": "Une liste filtrée, ou un marqueur par condition, ce qui aurait été trop chargé puisqu’une clinique pouvait mener plusieurs études."
+       "list": [
+        "Une liste filtrée.",
+        "Un marqueur par condition, ce qui aurait été trop chargé puisqu’une clinique pouvait mener plusieurs études."
+       ]
       },
       {
        "k": "Pourquoi",
