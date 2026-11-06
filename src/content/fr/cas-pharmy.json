@@ -379,10 +379,6 @@
     {
      "h": "Ce que ce test ne prouve pas",
      "p": "Le +20 % n’est pas significatif sur cet échantillon, et la version B changeait la page et le formulaire en même temps. J’ai signalé la taille de l’échantillon; le client a choisi d’aller de l’avant."
-    },
-    {
-     "h": "Ce que les enregistrements ont montré",
-     "p": "Certains champs de la présélection causaient de la friction, alors que les personnes qualifiées remplissaient facilement leurs coordonnées. Sur la page « non qualifié », la plupart lisaient le titre, puis partaient."
     }
    ],
    "source": "Source : Google Analytics, test de trois mois.",

@@ -379,10 +379,6 @@
     {
      "h": "What this test can’t prove",
      "p": "The +20% isn’t significant on this sample, and version B changed the page and the form together. I flagged the sample size; the client chose to move forward."
-    },
-    {
-     "h": "What the recordings showed",
-     "p": "Some prescreener fields caused friction, while qualified people filled in their contact details easily. On the not-qualified page, most people read the title and left."
     }
    ],
    "source": "Source: Google Analytics, three-month test.",
