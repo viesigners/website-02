@@ -27,6 +27,11 @@
     {
      "k": "Résultat",
      "v": "*+48 %* de visiteurs se sont rendus au formulaire de qualification."
+    },
+    {
+     "k": "Potentiel",
+     "v": "*+20 %* de formulaires de qualification envoyés par visite.",
+     "note": "Petit échantillon, résultat non significatif sur le plan statistique."
     }
    ]
   },
