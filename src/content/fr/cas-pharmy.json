@@ -233,7 +233,7 @@
     },
     {
      "h": "Répondre aux objections avant de demander de chercher",
-     "p": "Une séquence stratégique sur la page d’accueil répondait aux objections et montrait aux gens qu’ils n’étaient pas seuls. La version B du test A/B changeait aussi la page d’étude.",
+     "p": "Une séquence stratégique sur la page d’accueil répondait aux objections et montrait aux gens qu’ils n’étaient pas seuls. La version B du test A/B réduisait aussi le nombre de pages d’information.",
      "notes": [
       {
        "k": "Alternatives",
