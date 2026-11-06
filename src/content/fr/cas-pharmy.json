@@ -370,7 +370,7 @@
   {
    "type": "cd-test",
    "label": "Ce que les gens ont fait",
-   "h2": "Ce que le test A/B *a montré, et ce qu’il n’a pas montré*",
+   "h2": "Les *résultats*",
    "reads": [
     {
      "h": "Ce que je peux affirmer",
