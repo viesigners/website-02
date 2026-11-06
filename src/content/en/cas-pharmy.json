@@ -242,10 +242,13 @@
      "p": "A *strategic homepage sequence* answered objections and showed people they weren’t alone. Version B of the A/B test also *reduced the number of information pages*.",
      "notes": [
       {
-       "k": "Options",
+       "k": "Alternatives",
        "list": [
         "Land people directly on the map search.",
-        "Land people on a reassuring homepage before the search."
+        {
+         "t": "Land people on a reassuring homepage before the search.",
+         "pill": "My recommendation"
+        }
        ]
       },
       {

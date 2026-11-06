@@ -242,10 +242,13 @@
      "p": "Une *séquence stratégique sur la page d’accueil* répondait aux objections et montrait aux gens qu’ils n’étaient pas seuls. La version B du test A/B réduisait aussi *le nombre de pages d’information*.",
      "notes": [
       {
-       "k": "Options",
+       "k": "Alternatives",
        "list": [
         "Faire arriver les gens directement sur la recherche par carte.",
-        "Faire arriver les gens sur une page d’accueil rassurante avant la recherche."
+        {
+         "t": "Faire arriver les gens sur une page d’accueil rassurante avant la recherche.",
+         "pill": "Ma recommandation"
+        }
        ]
       },
       {
