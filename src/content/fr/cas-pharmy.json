@@ -429,28 +429,22 @@
      "d": "+20 %",
      "note": "Petit échantillon, résultat non significatif sur le plan statistique."
     }
-   ]
+   ],
+   "shipped": {
+    "h": "Ce qui a été lancé",
+    "list": [
+     "J’ai recommandé de garder la version B pour son *+48 %*, en étant clair sur ce que l’échantillon ne pouvait pas confirmer.",
+     "Les enregistrements sont devenus les prochains tests : des champs de présélection plus simples, l’inscription à la communauté en haut d’une page « non admissible » plus courte, et moins d’appels à l’action."
+    ]
+   }
   },
   {
    "type": "cd-cards",
-   "label": "Résultat",
-   "h2": "Ce qui a été lancé, *et ce que je changerais*",
+   "label": "Avec du recul",
+   "h2": "Ce que je *changerais aujourd’hui*",
    "groups": [
     {
-     "h": "Ce qui a été lancé",
-     "items": [
-      {
-       "h": "Une recommandation claire pour la version B",
-       "p": "J’ai recommandé de garder la version B pour son *+48 %*, en étant clair sur ce que l’échantillon ne pouvait pas confirmer."
-      },
-      {
-       "h": "Des enregistrements aux prochains tests",
-       "p": "Des champs de présélection plus simples, l’inscription à la communauté en haut d’une page « non admissible » plus courte, et moins d’appels à l’action."
-      }
-     ]
-    },
-    {
-     "h": "Ce que je changerais aujourd’hui",
+     "h": "",
      "items": [
       {
        "h": "Un test plus solide",

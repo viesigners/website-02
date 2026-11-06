@@ -1083,3 +1083,11 @@ html { scroll-padding-top: 7rem; }
 .cd-inline { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem 0; margin: .35rem 0 0; padding: 0; list-style: none; line-height: 1.45; }
 .cd-inline li:not(:last-child)::after { content: ""; display: inline-block; width: 6px; height: 6px; margin: 0 .6rem; border-radius: 50%; background: var(--pink); }
 .cd-read p + p { margin-top: .7em; }
+
+/* Results: what shipped list (same cards as the plan steps) */
+.cd-shipped { margin-top: clamp(1.6rem, 1rem + 2vw, 2.6rem); }
+.cd-shipped h3 { font-family: var(--f-display); font-weight: 400; font-size: var(--t-h3); margin: 0; }
+.cd-shipped .cd-olist { gap: .5rem; margin-top: .9rem; }
+.cd-shipped .cd-olist li { display: grid; grid-template-columns: 1.1rem 1fr; padding: .85rem 1rem; border: 0; border-radius: var(--r-lg); background: #fff; box-shadow: 0 0 0 1px var(--line); color: var(--text); line-height: 1.45; }
+.cd-shipped .cd-olist li::before { content: ""; width: .4rem; height: .4rem; margin-top: .55em; border-radius: 50%; background: var(--pink); padding: 0; grid-row: auto; }
+.cd-shipped .cd-olist li::after { content: none; }

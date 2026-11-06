@@ -429,28 +429,22 @@
      "d": "+20%",
      "note": "Small sample, not statistically significant."
     }
-   ]
+   ],
+   "shipped": {
+    "h": "What shipped",
+    "list": [
+     "I recommended keeping version B for its *+48%*, and was clear about what the sample couldn’t confirm.",
+     "The recordings became the next tests: simpler prescreener fields, the community signup at the top of a shorter not-qualified page, and fewer calls to action."
+    ]
+   }
   },
   {
    "type": "cd-cards",
-   "label": "Outcome",
-   "h2": "What shipped, *and what I’d change*",
+   "label": "Looking back",
+   "h2": "What I’d *change today*",
    "groups": [
     {
-     "h": "What shipped",
-     "items": [
-      {
-       "h": "A clear call on version B",
-       "p": "I recommended keeping version B for its *+48%*, and was clear about what the sample couldn’t confirm."
-      },
-      {
-       "h": "Recordings became the next tests",
-       "p": "Simpler prescreener fields, the community signup at the top of a shorter not-qualified page, and fewer calls to action."
-      }
-     ]
-    },
-    {
-     "h": "What I’d change today",
+     "h": "",
      "items": [
       {
        "h": "A stronger test",
