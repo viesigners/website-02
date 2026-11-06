@@ -1078,3 +1078,7 @@ html { scroll-padding-top: 7rem; }
 .cd-decisions dd .cd-olist { margin-top: 0; }
 .cd-decisions .cd-olist li::before { color: var(--pink-300); }
 .cd-pill { display: inline-block; margin-right: .35rem; padding: .12rem .55rem; border-radius: 999px; background: var(--grad); color: #fff; font-family: var(--f-mono); font-size: .66rem; font-weight: 500; letter-spacing: .03em; text-transform: uppercase; vertical-align: .12em; white-space: nowrap; }
+
+/* Inline list with pink dot separators */
+.cd-inline { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem 0; margin: .35rem 0 0; padding: 0; list-style: none; line-height: 1.45; }
+.cd-inline li:not(:last-child)::after { content: ""; display: inline-block; width: 6px; height: 6px; margin: 0 .6rem; border-radius: 50%; background: var(--pink); }
