@@ -7,7 +7,7 @@
  "sections": [
   {
    "type": "page-hero",
-   "tag": "Let's talk!",
+   "tag": "Contact", "tagH1": true,
    "h1": "Let's see how to *grow your business*",
    "lead": "Describe your situation in a few lines. We'll come back with a clear answer on how we can help — or on why now isn't the right time.",
    "ctas": []
