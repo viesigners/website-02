@@ -26,7 +26,7 @@
     },
     {
      "k": "Activités",
-     "v": "Audit UX, analytique, test A/B, architecture de l’information, wireframes, conception de formulaire et direction de design."
+     "v": "Audit UX, synthèse d’insights, analytique, test A/B, architecture de l’information, wireframes, conception de formulaire et direction de design."
     },
     {
      "k": "Résultat",
@@ -69,6 +69,7 @@
      "wide": true,
      "tags": [
       "Audit UX",
+      "Synthèse d’insights",
       "Analytique",
       "Formulation d’hypothèses",
       "Tests A/B",
@@ -109,7 +110,7 @@
      "note": "Note : petit échantillon, résultat non significatif sur le plan statistique."
     },
     {
-     "n": "4",
+     "n": "5",
      "t": "prochains tests fondés sur les données pour le client, tirés des analyses et des enregistrements."
     }
    ]
@@ -181,7 +182,7 @@
       },
       {
        "h": "Tester une nouvelle version avec du vrai trafic",
-       "p": "À partir des groupes de discussion du client, de Google Analytics, de Hotjar et de mon audit du formulaire, nous avons posé l’hypothèse que deux changements amèneraient plus de gens à envoyer leurs renseignements, en les qualifiant d’abord :",
+       "p": "J’ai analysé les retours des groupes de discussion du client pour *en extraire de vraies frictions*, puis je les ai recoupés avec Google Analytics, les enregistrements Hotjar et un audit du formulaire. Cette synthèse est devenue deux hypothèses de design pour amener plus de gens à envoyer leurs renseignements, en les qualifiant d’abord :",
        "list": [
         "Une seule page d’étude regroupant les deux précédentes, structurée autour des principaux freins, avec juste assez d’information pour attiser l’intérêt",
         "Un formulaire en deux étapes, pour qualifier les gens avant l’envoi de leurs coordonnées"
@@ -466,6 +467,10 @@
       {
        "h": "Une section d’empathie",
        "p": "Une section sous la bannière de la page d’accueil montrant qu’on comprend la situation des gens avant de présenter la communauté."
+      },
+      {
+       "h": "Une accessibilité renforcée",
+       "p": "Une base était en place, mais j’irais plus loin, par exemple avec un meilleur contraste pour les liens du menu principal."
       }
      ],
      "steps": true

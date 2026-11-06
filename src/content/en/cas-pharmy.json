@@ -26,7 +26,7 @@
     },
     {
      "k": "Activities",
-     "v": "UX audit, analytics, A/B testing, information architecture, wireframing, form design and design direction."
+     "v": "UX audit, insight synthesis, analytics, A/B testing, information architecture, wireframing, form design and design direction."
     },
     {
      "k": "Result",
@@ -69,6 +69,7 @@
      "wide": true,
      "tags": [
       "UX audit",
+      "Insight synthesis",
       "Analytics",
       "Hypothesis framing",
       "A/B testing",
@@ -109,7 +110,7 @@
      "note": "Note: small sample, not statistically significant."
     },
     {
-     "n": "4",
+     "n": "5",
      "t": "data-driven next tests for the client, drawn from analytics and session recordings."
     }
    ]
@@ -181,7 +182,7 @@
       },
       {
        "h": "Test a new version on real traffic",
-       "p": "From the client’s focus groups and my Google Analytics, Hotjar and form audit findings, we hypothesized that two changes would get more people to send their information, and qualify them first:",
+       "p": "I analyzed the client’s focus group feedback to *extract real friction points*, then cross-checked them with Google Analytics, Hotjar recordings and a form audit. That synthesis became two design hypotheses to get more people to send their information, and qualify them first:",
        "list": [
         "One study page merging the previous two, structured around the main objections, with just enough information to spark interest",
         "A form split in two steps, to qualify people before they send their contact details"
@@ -466,6 +467,10 @@
       {
        "h": "An empathy section",
        "p": "A section under the homepage banner showing we understand people’s situation before presenting the community."
+      },
+      {
+       "h": "Stronger accessibility",
+       "p": "A baseline was in place, but I’d push it further, for example with better contrast on the main menu links."
       }
      ],
      "steps": true
