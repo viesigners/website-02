@@ -460,7 +460,8 @@
      ],
      "steps": true
     }
-   ]
+   ],
+   "sub": "Selon mon analyse des résultats du test A/B et des enregistrements Hotjar, voici ce que j’essaierais ensuite."
   },
   {
    "type": "cta-final",

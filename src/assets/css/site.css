@@ -1091,3 +1091,6 @@ html { scroll-padding-top: 7rem; }
 .cd-shipped .cd-olist li { display: grid; grid-template-columns: 1.1rem 1fr; padding: .85rem 1rem; border: 0; border-radius: var(--r-lg); background: #fff; box-shadow: 0 0 0 1px var(--line); color: var(--text); line-height: 1.45; }
 .cd-shipped .cd-olist li::before { content: ""; width: .4rem; height: .4rem; margin-top: .55em; border-radius: 50%; background: var(--pink); padding: 0; grid-row: auto; }
 .cd-shipped .cd-olist li::after { content: none; }
+
+.sec-head__main { display: grid; gap: 1rem; }
+.sec-head__sub { margin: 0; max-width: 52ch; color: var(--text-2); font-size: 1.05rem; }

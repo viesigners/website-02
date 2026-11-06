@@ -460,7 +460,8 @@
      ],
      "steps": true
     }
-   ]
+   ],
+   "sub": "Based on my analysis of the A/B test results and the Hotjar recordings, these are the next things I would try."
   },
   {
    "type": "cta-final",

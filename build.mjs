@@ -125,7 +125,7 @@ const sparks = (n = 3) => Array.from({ length: n }, () => ico('spark', 'spark'))
 const R = {};
 const rv = (d = 0) => ` class="rv" style="--d:${d}s"`;
 function secHead(s, c, type, { id = '', h2 = s.h2, label = c.T.labels?.[type] } = {}) {
-  return `<div class="sec-head"><div class="sec-head__side">${label ? `<p class="label rv">${esc(label)}</p>` : ''}${s.lead ? `<p class="lead rv" style="--d:.08s">${fmt(s.lead, c.lang)}</p>` : ''}</div>${h2 ? `<h2${id ? ` id="${id}"` : ''} class="rv" style="--d:.04s">${fmt(h2, c.lang)}</h2>` : ''}</div>`;
+  return `<div class="sec-head"><div class="sec-head__side">${label ? `<p class="label rv">${esc(label)}</p>` : ''}${s.lead ? `<p class="lead rv" style="--d:.08s">${fmt(s.lead, c.lang)}</p>` : ''}</div>${((h) => (s.sub ? `<div class="sec-head__main">${h}<p class="sec-head__sub rv" style="--d:.08s">${fmtT(s.sub, c.lang)}</p></div>` : h))(h2 ? `<h2${id ? ` id="${id}"` : ''} class="rv" style="--d:.04s">${fmt(h2, c.lang)}</h2>` : '')}</div>`;
 }
 const splitLabel = (c, type) => (c.T.labels?.[type] ? `<p class="label rv">${esc(c.T.labels[type])}</p>` : '');
 
@@ -815,7 +815,7 @@ function toMd(page, c) {
       case 'cd-card': L.push(`## ${t(s.h2)}`, '', ...s.prose.map((p) => t(p)), ''); break;
       case 'casecard': L.push(`## ${t(s.h)}`, '', `- **${s.n}** ${t(s.nt)}`, `- [${t(s.h)}](${abs(url(s.to, lang))})`, ''); break;
       case 'cd-impact': L.push(...s.items.map((i) => `- **${i.n}** ${t(i.t)}${i.note ? ' ' + t(i.note) : ''}`), ''); break;
-      case 'cd-cards': L.push(`## ${t(s.h2)}`, '', ...s.groups.flatMap((g) => [`### ${t(g.h)}`, '', ...g.items.map((i) => `- **${t(i.h)}** ${t(i.p)}`), '']), ''); break;
+      case 'cd-cards': L.push(`## ${t(s.h2)}`, '', ...(s.sub ? [t(s.sub), ''] : []), ...s.groups.flatMap((g) => [`### ${t(g.h)}`, '', ...g.items.map((i) => `- **${t(i.h)}** ${t(i.p)}`), '']), ''); break;
       case 'cd-hero': L.push(`# ${t(s.h1)}`, ''); break;
       case 'cd-facts': L.push(...(s.impact || []).map((i) => `- **${i.n}** ${t(i.t)}${i.note ? ' ' + t(i.note) : ''}`), '', t(s.lead), '', ...s.items.map((i) => `- ${t(i.b)} ${t(i.t)}`), ''); break;
       case 'cd-text': L.push(`## ${t(s.h2)}`, '', ...s.prose.map((p) => t(p) + '\n'), ...(s.steps || []).map((i, n) => `${n + 1}. **${t(i.h)}** — ${t(i.p)}`), ''); break;
