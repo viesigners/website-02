@@ -1077,3 +1077,4 @@ html { scroll-padding-top: 7rem; }
 .cd-steps .cd-olist li::before { content: ""; width: .4rem; height: .4rem; margin-top: .55em; border-radius: 50%; background: var(--pink); padding: 0; grid-row: auto; }
 .cd-decisions dd .cd-olist { margin-top: 0; }
 .cd-decisions .cd-olist li::before { color: var(--pink-300); }
+.cd-pill { display: inline-block; margin-left: .35rem; padding: .12rem .55rem; border-radius: 999px; background: var(--grad); color: #fff; font-family: var(--f-mono); font-size: .66rem; font-weight: 500; letter-spacing: .03em; text-transform: uppercase; vertical-align: .12em; white-space: nowrap; }

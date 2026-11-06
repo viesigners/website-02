@@ -196,7 +196,10 @@
        "k": "Alternatives",
        "list": [
         "One-step form (existing).",
-        "Two-step form (version B of the test)."
+        {
+         "t": "Two-step form (version B of the test).",
+         "pill": "My recommendation"
+        }
        ]
       },
       {

@@ -196,7 +196,10 @@
        "k": "Alternatives",
        "list": [
         "Formulaire en une étape (existant).",
-        "Formulaire en deux étapes (version B du test)."
+        {
+         "t": "Formulaire en deux étapes (version B du test).",
+         "pill": "Ma recommandation"
+        }
        ]
       },
       {
