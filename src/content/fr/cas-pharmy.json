@@ -64,6 +64,7 @@
       "Analytique",
       "Formulation d’hypothèses",
       "Tests A/B",
+      "Plan de mesure",
       "Optimisation de la conversion",
       "Architecture de l’information",
       "Wireframes",
@@ -173,16 +174,6 @@
      ]
     }
    ]
-  },
-  {
-   "type": "cd-text",
-   "label": "Approche",
-   "h2": "Comment nous avons *enquêté et mesuré*",
-   "theme": "light",
-   "prose": [
-    "**Je suis parti des données de Google Analytics et de Hotjar.** Les groupes de discussion menés par le client avant le projet ont appuyé ce que j’avais trouvé. J’ai ensuite formulé l’hypothèse du test, rédigé la méthodologie A/B et établi les indicateurs et le plan de mesure avec l’équipe du client."
-   ],
-   "end": true
   },
   {
    "type": "cd-decisions",

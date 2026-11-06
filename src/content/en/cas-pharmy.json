@@ -64,6 +64,7 @@
       "Analytics",
       "Hypothesis framing",
       "A/B testing",
+      "Measurement plan",
       "Conversion optimization",
       "Information architecture",
       "Wireframing",
@@ -173,16 +174,6 @@
      ]
     }
    ]
-  },
-  {
-   "type": "cd-text",
-   "label": "Approach",
-   "h2": "How we *investigated and measured*",
-   "theme": "light",
-   "prose": [
-    "**I started from the Google Analytics and Hotjar data.** The focus groups the client ran before the project backed up what I found. I then framed the test hypothesis, wrote the A/B methodology and set the indicators and measurement plan with the client’s team."
-   ],
-   "end": true
   },
   {
    "type": "cd-decisions",
