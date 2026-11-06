@@ -351,11 +351,11 @@
    "items": [
     {
      "img": "pharmy.png",
-     "url": "https://www.behance.net/gallery/155069623/Pharmy-Launch-of-a-New-Webapp",
      "alt": "Plateforme de recherche d'études cliniques Pharmy",
      "title": "Pharmy",
      "result": "+48 % de conversions",
-     "text": "Optimisation de la plateforme de recherche d'études cliniques. Nom du client sous NDA."
+     "text": "Optimisation de la plateforme de recherche d'études cliniques. Nom du client sous NDA.",
+     "to": "cas-pharmy"
     },
     {
      "img": "garneau.jpg",

@@ -351,11 +351,11 @@
    "items": [
     {
      "img": "pharmy.png",
-     "url": "https://www.behance.net/gallery/155069623/Pharmy-Launch-of-a-New-Webapp",
      "alt": "Pharmy clinical trial search platform",
      "title": "Pharmy",
      "result": "+48% conversions",
-     "text": "Optimization of the clinical trial search platform. Client name under NDA."
+     "text": "Optimization of the clinical trial search platform. Client name under NDA.",
+     "to": "cas-pharmy"
     },
     {
      "img": "garneau.jpg",
