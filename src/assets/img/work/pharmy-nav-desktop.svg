@@ -13,7 +13,7 @@
 <g>
 <rect x="330" y="30" width="210" height="240" rx="10"/>
 <path d="M330 52h210"/><circle cx="346" cy="41" r="2.5" fill="#c9cfdb"/><circle cx="356" cy="41" r="2.5" fill="#c9cfdb"/><circle cx="366" cy="41" r="2.5" fill="#c9cfdb"/>
-<g opacity=".7" stroke-dasharray="4 6" stroke="url(#gd)"><rect x="342" y="-2" width="160" height="18" rx="4"/></g><path d="M520 22V0M513 7l7-7 7 7" stroke="#ff488b"/>
+<g opacity=".7" stroke-dasharray="4 6" stroke="url(#gd)"><rect x="342" y="-2" width="186" height="18" rx="4"/></g><path d="M551 22V2M545 8l6-6 6 6" stroke="#ff488b"/>
 <rect x="342" y="62" width="186" height="14" rx="4" stroke-dasharray="1 7" stroke="url(#gd)"/><path d="M354 69h18M442 69h12M462 69h12M482 69h12M502 69h14"/>
 <path d="M342 94h150M342 110h100" stroke-width="2.5"/><rect x="342" y="126" width="186" height="74" rx="6"/><path d="M342 216h170M342 232h130M342 248h150" stroke-width="2.5"/>
 </g>
