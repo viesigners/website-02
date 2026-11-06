@@ -1094,3 +1094,6 @@ html { scroll-padding-top: 7rem; }
 
 .sec-head__main { display: grid; gap: 1rem; }
 .sec-head__sub { margin: 0; max-width: 52ch; color: var(--text-2); font-size: 1.05rem; }
+.cd-inline { display: block; }
+.cd-inline li { display: inline; }
+.cd-inline li:not(:last-child)::after { margin: 0 .55rem; vertical-align: .18em; transform: none; }
