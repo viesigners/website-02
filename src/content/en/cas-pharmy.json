@@ -33,7 +33,10 @@
      "v": "*+48%* more visitors reached the qualification form, and a potential *+20%* more qualification forms were sent.",
      "note": "The +20% comes from a small sample and isn’t statistically significant."
     }
-   ]
+   ],
+   "cta": {
+    "label": "Contact me"
+   }
   },
   {
    "type": "cd-facts",

@@ -391,7 +391,7 @@ R['cd-gallery'] = (s, c) => `<section class="section"><div class="wrap">
 </div></section>`;
 R['cd-hero'] = (s, c) => `<section class="section cd-hero" aria-labelledby="h1"><div class="wrap">
   <div class="cd-hero__top${s.glance ? ' phero__grid' : ''}"><div><p class="eyebrow-tag">${fmt(s.tag, c.lang)}</p>
-  <h1 id="h1" class="display phero__title">${fmt(s.h1, c.lang)}</h1></div>
+  <h1 id="h1" class="display phero__title">${fmt(s.h1, c.lang)}</h1>${s.cta ? `<div class="actions cd-hero__cta"><a class="pill" href="${url(s.cta.to || 'contact', c.lang)}">${fmt(s.cta.label, c.lang)}</a></div>` : ''}</div>
   ${s.glance ? `<aside class="brief cd-brief" aria-labelledby="brief-t"><h2 id="brief-t">${esc(c.T.brief)}</h2><ul>${s.glance.map((g) => `<li>${ico('check')}<span><strong>${esc(g.k)}${c.lang === 'fr' ? '&nbsp;:' : ':'}</strong> ${fmt(g.v, c.lang)}${g.note ? `<small class="cd-note">${esc(g.note)}</small>` : ''}</span></li>`).join('')}</ul></aside>` : ''}</div>
   <figure class="cd-hero__img">${img(s.img, s.alt, { lazy: false, sizes: '(min-width:1320px) 1224px, 100vw' })}</figure>
 </div></section>`;

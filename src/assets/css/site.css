@@ -1100,3 +1100,4 @@ html { scroll-padding-top: 7rem; }
 
 .cd-blist li { grid-template-columns: 1.1rem 1fr; }
 .cd-blist li::before { content: ""; width: .38rem; height: .38rem; border-radius: 50%; background: var(--pink); align-self: start; margin-top: .55em; }
+.cd-hero__cta { margin-top: clamp(1.4rem, 1rem + 1vw, 2rem); }
