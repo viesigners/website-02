@@ -74,7 +74,7 @@
     },
     {
      "b": "Avec qui",
-     "inline": [
+     "bullets": [
       "Consultant du client (approbation)",
       "Responsable du projet chez le client",
       "Designer graphique",

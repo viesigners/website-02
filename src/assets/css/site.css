@@ -1097,3 +1097,6 @@ html { scroll-padding-top: 7rem; }
 .cd-inline { display: block; }
 .cd-inline li { display: inline; }
 .cd-inline li:not(:last-child)::after { margin: 0 .55rem; vertical-align: .18em; transform: none; }
+
+.cd-blist li { grid-template-columns: 1.1rem 1fr; }
+.cd-blist li::before { content: ""; width: .38rem; height: .38rem; border-radius: 50%; background: var(--pink); align-self: start; margin-top: .55em; }
