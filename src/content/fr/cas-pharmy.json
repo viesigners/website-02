@@ -118,11 +118,13 @@
      "items": [
       {
        "h": "Un manque de confiance",
-       "p": "Les groupes de discussion du client sont à l’origine du projet. Il manquait aux gens l’information nécessaire pour faire confiance à la plateforme et au processus, et ils avaient besoin d’une clinique assez proche."
+       "p": "Les groupes de discussion du client sont à l’origine du projet. Il manquait aux gens l’information nécessaire pour faire confiance à la plateforme et au processus, et ils avaient besoin d’une clinique assez proche.",
+       "icon": "trust"
       },
       {
        "h": "Un formulaire qui semblait trop long",
-       "p": "Mon audit a révélé de la friction dans le formulaire de qualification, et les gens le quittaient avant la fin."
+       "p": "Mon audit a révélé de la friction dans le formulaire de qualification, et les gens le quittaient avant la fin.",
+       "icon": "form"
       }
      ]
     }
@@ -139,11 +141,13 @@
      "items": [
       {
        "h": "Du temps perdu sur des formulaires non qualifiés",
-       "p": "L’équipe du client recevait des formulaires de personnes non qualifiées et perdait du temps à faire les suivis."
+       "p": "L’équipe du client recevait des formulaires de personnes non qualifiées et perdait du temps à faire les suivis.",
+       "icon": "time"
       },
       {
        "h": "Une information répétée à maintenir",
-       "p": "Chaque étude avait son propre microsite : la même information générale se répétait partout et était plus difficile à tenir à jour."
+       "p": "Chaque étude avait son propre microsite : la même information générale se répétait partout et était plus difficile à tenir à jour.",
+       "icon": "copies"
       }
      ]
     }

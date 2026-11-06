@@ -112,6 +112,12 @@ function fmt(s, lang) {
   return h;
 }
 const plain = (s = '') => String(s).replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*\*?([^*]+)\*\*?/g, '$1');
+const CDICO = {
+  trust: '<svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.4-3 8.3-7 10-4-1.7-7-5.6-7-10V6z"/><path d="M9.8 9.6a2.3 2.3 0 1 1 3.4 2c-.7.4-1.2.9-1.2 1.7"/><path d="M12 16.2h.01"/></svg>',
+  form: '<svg viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="2"/><path d="M8.5 7h7M8.5 10.5h7M8.5 14h7M8.5 17.5h4"/></svg>',
+  time: '<svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.6 2.2M9.5 2.5h5"/></svg>',
+  copies: '<svg viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h2"/><path d="M11 12.5h6M11 16h4"/></svg>',
+};
 const ico = (n, cls = '') => `<svg aria-hidden="true" focusable="false"${cls ? ` class="${cls}"` : ''}><use href="#i-${n}"/></svg>`;
 const sparks = (n = 3) => Array.from({ length: n }, () => ico('spark', 'spark')).join('');
 
@@ -402,7 +408,7 @@ R['cd-impact'] = (s, c) => `<section class="section section--tight"><div class="
 </div></section>`;
 R['cd-cards'] = (s, c) => `<section class="section${s.cls ? ' ' + s.cls : ''}"><div class="wrap">
   ${secHead(s, c, 'cd-cards', { label: s.label })}
-  ${s.groups.map((g) => `<div class="cd-group">${g.h ? `<h3 class="rv">${esc(g.h)}</h3>` : ''}${g.steps ? `<ol class="cd-steps cd-steps--row">${g.items.map((i, k) => `<li class="rv" style="--d:${k * .06}s"><b>${esc(i.h)}</b><span>${fmtT(i.p, c.lang)}${i.list ? `<ol class="cd-olist">${i.list.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>` : ''}</span></li>`).join('')}</ol>` : `<div class="cd-cards cd-cards--${g.items.length}">${g.items.map((i, k) => `<article class="rv" style="--d:${k * .06}s"><h4>${esc(i.h)}</h4><p>${fmtT(i.p, c.lang)}</p></article>`).join('')}</div>`}</div>`).join('')}
+  ${s.groups.map((g) => `<div class="cd-group">${g.h ? `<h3 class="rv">${esc(g.h)}</h3>` : ''}${g.steps ? `<ol class="cd-steps cd-steps--row">${g.items.map((i, k) => `<li class="rv" style="--d:${k * .06}s"><b>${esc(i.h)}</b><span>${fmtT(i.p, c.lang)}${i.list ? `<ol class="cd-olist">${i.list.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>` : ''}</span></li>`).join('')}</ol>` : `<div class="cd-cards cd-cards--${g.items.length}">${g.items.map((i, k) => `<article class="rv" style="--d:${k * .06}s">${i.icon ? `<span class="cd-ico" aria-hidden="true">${CDICO[i.icon]}</span>` : ''}<h4>${esc(i.h)}</h4><p>${fmtT(i.p, c.lang)}</p></article>`).join('')}</div>`}</div>`).join('')}
 </div></section>`;
 R['cd-image'] = (s, c) => `<section class="section section--tight"><div class="wrap"><figure class="cd-figure rv">${img(s.img, s.alt, { sizes: '(min-width:1320px) 1224px, 100vw' })}${s.caption ? `<figcaption>${fmtT(s.caption, c.lang)}</figcaption>` : ''}</figure></div></section>`;
 R['cd-decisions'] = (s, c) => `<section class="section"><div class="wrap">

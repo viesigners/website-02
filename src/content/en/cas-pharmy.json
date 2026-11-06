@@ -118,11 +118,13 @@
      "items": [
       {
        "h": "A trust gap",
-       "p": "The client’s focus groups started this project. People were missing the information they needed to trust the platform and the process, and they needed a clinic close enough to reach."
+       "p": "The client’s focus groups started this project. People were missing the information they needed to trust the platform and the process, and they needed a clinic close enough to reach.",
+       "icon": "trust"
       },
       {
        "h": "A form that felt too long",
-       "p": "My audit revealed friction in the qualification form, and people left before finishing it."
+       "p": "My audit revealed friction in the qualification form, and people left before finishing it.",
+       "icon": "form"
       }
      ]
     }
@@ -139,11 +141,13 @@
      "items": [
       {
        "h": "Time lost on unqualified forms",
-       "p": "The client’s team received forms from unqualified people and lost time following up on them."
+       "p": "The client’s team received forms from unqualified people and lost time following up on them.",
+       "icon": "time"
       },
       {
        "h": "Repeated information to maintain",
-       "p": "Each study had its own microsite, so the same general information was repeated on each one and harder to keep up to date."
+       "p": "Each study had its own microsite, so the same general information was repeated on each one and harder to keep up to date.",
+       "icon": "copies"
       }
      ]
     }
