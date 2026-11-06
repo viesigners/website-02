@@ -1058,3 +1058,7 @@ html { scroll-padding-top: 7rem; }
 .cd-brief em { font-style: normal; font-weight: 600; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .theme > .cd-hero { padding-top: clamp(6rem, 4.5rem + 3vw, 8rem); }
 .cd-hero__top.phero__grid { margin-bottom: clamp(1.5rem, 1rem + 1.5vw, 2.5rem); align-items: center; }
+.cd-facts > div.cd-facts__wide { grid-column: 1 / -1; }
+.cd-tags { display: flex; flex-wrap: wrap; gap: .45rem; margin: .35rem 0 0; padding: 0; list-style: none; }
+.cd-tags li { padding: .32rem .7rem; border-radius: 999px; background: #fff; box-shadow: 0 0 0 1px var(--line-2); font-size: .86rem; line-height: 1.3; color: var(--text); }
+.cd-facts .cd-note { display: block; margin-top: .55rem; }

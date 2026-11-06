@@ -41,20 +41,49 @@
      "t": "Spécialiste UX et CRO"
     },
     {
-     "b": "Client",
-     "t": "Une société pharmaceutique. Pharmy est un nom fictif; le vrai nom est sous NDA."
+     "b": "Industrie",
+     "tags": [
+      "Pharma",
+      "Santé",
+      "Essais cliniques"
+     ],
+     "note": "Pharmy est un nom fictif; le client est sous NDA."
     },
     {
-     "b": "Objectif du client",
-     "t": "Encourager les participants potentiels à envoyer leurs renseignements personnels par le formulaire de qualification, pour que l’équipe du client se concentre sur les candidats qualifiés."
+     "b": "Objectif",
+     "t": "Plus de candidats qualifiés, et moins de temps perdu sur les autres."
     },
     {
-     "b": "Qui décidait",
-     "t": "J’ai travaillé de près avec un consultant embauché par le client : je conseillais et il approuvait. Nous avions aussi des suivis réguliers avec la personne responsable du projet chez le client pour la validation finale."
+     "b": "Ce que j’ai fait",
+     "wide": true,
+     "tags": [
+      "Audit UX",
+      "Analytique",
+      "Formulation d’hypothèses",
+      "Tests A/B",
+      "Optimisation de la conversion",
+      "Architecture de l’information",
+      "Wireframes",
+      "Conception de formulaires",
+      "UX de carte",
+      "Direction de design"
+     ]
     },
     {
-     "b": "Portée",
-     "t": "Analyse, hypothèse, méthodologie A/B, mesure, architecture de l’information et recommandations d’interface par wireframes. J’ai aussi guidé l’équipe de projet de l’idéation à la validation technique et conseillé la designer graphique, qui a réalisé l’interface finale."
+     "b": "Avec qui",
+     "tags": [
+      "Consultant du client (approbation)",
+      "Responsable du projet chez le client",
+      "Designer graphique",
+      "Développeur"
+     ]
+    },
+    {
+     "b": "Outils",
+     "tags": [
+      "Google Analytics",
+      "Hotjar"
+     ]
     }
    ],
    "impact": [

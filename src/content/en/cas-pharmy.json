@@ -41,20 +41,49 @@
      "t": "UX and CRO specialist"
     },
     {
-     "b": "Client",
-     "t": "A pharmaceutical company. Pharmy is a fictional name; the real one is under NDA."
+     "b": "Industry",
+     "tags": [
+      "Pharma",
+      "Healthcare",
+      "Clinical trials"
+     ],
+     "note": "Pharmy is a fictional name; the client is under NDA."
     },
     {
-     "b": "Client goal",
-     "t": "Encourage potential participants to send their personal information through the qualification form, so the client’s team could focus on qualified candidates."
+     "b": "Goal",
+     "t": "More qualified participant leads, and less time lost on unqualified ones."
     },
     {
-     "b": "Who decided",
-     "t": "I worked closely with a consultant hired by the client: I advised and he approved. We also had regular touch points with the client’s project lead for final validation."
+     "b": "What I did",
+     "wide": true,
+     "tags": [
+      "UX audit",
+      "Analytics",
+      "Hypothesis framing",
+      "A/B testing",
+      "Conversion optimization",
+      "Information architecture",
+      "Wireframing",
+      "Form design",
+      "Map UX",
+      "Design direction"
+     ]
     },
     {
-     "b": "Scope",
-     "t": "Analysis, hypothesis, A/B methodology, measurement, information architecture and interface recommendations through wireframes. I also guided the project team from ideation to technical validation and advised the graphic designer, who created the final UI."
+     "b": "Worked with",
+     "tags": [
+      "Client’s consultant (approver)",
+      "Client project lead",
+      "Graphic designer",
+      "Developer"
+     ]
+    },
+    {
+     "b": "Tools",
+     "tags": [
+      "Google Analytics",
+      "Hotjar"
+     ]
     }
    ],
    "impact": [
