@@ -1,16 +1,16 @@
 {
  "meta": {
   "title": "Étude de cas Pharmy : une plateforme d’essais cliniques | Viesigners",
-  "description": "Comment Charles-Erick BG a dirigé l’UX d’une plateforme de recherche d’essais cliniques et testé un formulaire en deux étapes avec du vrai trafic.",
+  "description": "Comment Charles-Erick BG a dirigé l’UX d’une plateforme de recherche d’essais cliniques et testé un formulaire en deux étapes auprès de vrais visiteurs.",
   "h1": "Étude de cas Pharmy"
  },
  "sections": [
   {
    "type": "cd-hero",
    "tag": "Étude de cas · Santé",
-   "h1": "Réunir des microsites d’études dispersés en une plateforme de recherche *conçue pour recruter plus de participants*",
+   "h1": "Transformer des microsites d’études éparpillés en une plateforme de recherche *pensée pour recruter plus de participants*",
    "img": "work/pharmy-hub.jpg",
-   "alt": "Interface de recherche d’essais cliniques avec résultats à côté d’une carte",
+   "alt": "Interface de recherche d’essais cliniques, avec les résultats à côté d’une carte",
    "glance": [
     {
      "k": "Expert",
@@ -22,16 +22,16 @@
     },
     {
      "k": "Problème",
-     "v": "Trop peu de gens se rendaient au formulaire de qualification, plusieurs l’abandonnaient, et l’équipe du client perdait du temps sur des demandes non qualifiées."
+     "v": "Trop peu de gens atteignaient le formulaire de qualification, plusieurs l’abandonnaient en cours de route, et l’équipe du client perdait du temps avec des demandes non qualifiées."
     },
     {
      "k": "Activités",
-     "v": "Audit UX, synthèse d’insights, analytique, test A/B, architecture de l’information, wireframes, conception de formulaire et direction de design."
+     "v": "Audit UX, synthèse des constats, analyse de données, test A/B, architecture de l’information, wireframes, conception de formulaire et direction artistique."
     },
     {
      "k": "Résultat",
-     "v": "*+48 %* de visiteurs se sont rendus au formulaire de qualification, et un potentiel de *+20 %* de formulaires de qualification envoyés.",
-     "note": "Le +20 % vient d’un petit échantillon et n’est pas significatif sur le plan statistique."
+     "v": "*+48 %* de visiteurs ont atteint le formulaire de qualification, et un gain potentiel de *+20 %* en formulaires de qualification envoyés.",
+     "note": "Le +20 % provient d’un petit échantillon et n’est pas statistiquement significatif."
     }
    ],
    "cta": {
@@ -40,8 +40,8 @@
   },
   {
    "type": "cd-facts",
-   "caption": "La plateforme : recherche par condition et par lieu, avec résultats sur une carte. Visuels actualisés par moi.",
-   "lead": "Avec l’équipe de projet, j’ai dirigé l’UX et le CRO d’une plateforme d’essais cliniques, de l’analyse à la version gagnante : *48 % plus de visiteurs se sont rendus au formulaire*, les demandes de contact venaient de personnes présélectionnées, et le client a obtenu une feuille de route fondée sur les données.",
+   "caption": "La plateforme : recherche par maladie et par lieu, avec les résultats sur une carte. Visuels mis à jour par mes soins.",
+   "lead": "Avec l’équipe de projet, j’ai piloté l’UX et l’optimisation de la conversion (CRO) d’une plateforme d’essais cliniques, de l’analyse jusqu’à la version gagnante : *48 % plus de visiteurs ont atteint le formulaire*, les demandes de contact venaient de personnes présélectionnées, et le client a obtenu une feuille de route appuyée sur les données.",
    "byline": "Par Charles-Erick BG",
    "items": [
     {
@@ -55,13 +55,13 @@
       "Santé",
       "Essais cliniques"
      ],
-     "note": "Pharmy est un nom fictif; le client est sous NDA."
+     "note": "Pharmy est un nom fictif; le client est protégé par une entente de confidentialité."
     },
     {
      "b": "Objectifs",
      "list": [
       "Plus de candidats qualifiés",
-      "Moins de temps perdu sur les autres"
+      "Moins de temps perdu avec les autres"
      ]
     },
     {
@@ -69,8 +69,8 @@
      "wide": true,
      "tags": [
       "Audit UX",
-      "Synthèse d’insights",
-      "Analytique",
+      "Synthèse des constats",
+      "Analyse de données",
       "Formulation d’hypothèses",
       "Tests A/B",
       "Plan de mesure",
@@ -78,7 +78,7 @@
       "Architecture de l’information",
       "Wireframes",
       "Conception de formulaires",
-      "Direction de design"
+      "Direction artistique"
      ]
     },
     {
@@ -90,11 +90,11 @@
      ]
     },
     {
-     "b": "Avec qui",
+     "b": "Collaborateurs",
      "bullets": [
-      "Consultant du client (approbation)",
-      "Responsable du projet chez le client",
-      "Designer graphique",
+      "Consultant du client (approbateur)",
+      "Chargé de projet du client",
+      "Graphiste",
       "Développeur"
      ]
     }
@@ -102,16 +102,16 @@
    "impact": [
     {
      "n": "+48 %",
-     "t": "de visiteurs se sont rendus au formulaire de qualification : de 5,6 % à 8,3 % des visites."
+     "t": "de visiteurs ont atteint le formulaire de qualification : de 5,6 % à 8,3 % des visites."
     },
     {
      "n": "+20 %",
-     "t": "de gain potentiel en formulaires de qualification envoyés par visite : de 1,95 % à 2,34 %.",
-     "note": "Note : petit échantillon, résultat non significatif sur le plan statistique."
+     "t": "de formulaires de qualification envoyés par visite (gain potentiel) : de 1,95 % à 2,34 %.",
+     "note": "Petit échantillon : résultat non significatif sur le plan statistique."
     },
     {
      "n": "5",
-     "t": "prochains tests fondés sur les données pour le client, tirés des analyses et des enregistrements."
+     "t": "prochains tests proposés au client, appuyés sur les analyses et les enregistrements de sessions."
     }
    ]
   },
@@ -119,19 +119,19 @@
    "type": "cd-cards",
    "theme": "light",
    "label": "Les frictions",
-   "h2": "Deux problèmes empêchaient les gens *de rejoindre un essai*",
+   "h2": "Deux obstacles freinaient *l’inscription aux essais*",
    "groups": [
     {
      "h": "",
      "items": [
       {
        "h": "Un manque de confiance",
-       "p": "Les groupes de discussion du client sont à l’origine du projet. Il manquait aux gens l’information nécessaire pour faire confiance à la plateforme et au processus, et ils avaient besoin d’une clinique assez proche.",
+       "p": "Le projet est né des groupes de discussion du client. Les gens n’avaient pas assez d’information pour faire confiance à la plateforme et au processus, et ils avaient besoin d’une clinique assez proche de chez eux.",
        "icon": "trust"
       },
       {
        "h": "Un formulaire qui semblait trop long",
-       "p": "Mon audit a révélé de la friction dans le formulaire de qualification, et les gens le quittaient avant la fin.",
+       "p": "Mon audit a révélé des frictions dans le formulaire de qualification : les gens l’abandonnaient avant la fin.",
        "icon": "form"
       }
      ]
@@ -142,19 +142,19 @@
    "type": "cd-cards",
    "theme": "light",
    "label": "Le coût pour le client",
-   "h2": "Deux problèmes *faisaient perdre du temps au client*",
+   "h2": "Deux irritants *coûtaient du temps au client*",
    "groups": [
     {
      "h": "",
      "items": [
       {
-       "h": "Du temps perdu sur des formulaires non qualifiés",
-       "p": "L’équipe du client recevait des formulaires de personnes non qualifiées et perdait du temps à faire les suivis.",
+       "h": "Du temps perdu sur des demandes non qualifiées",
+       "p": "L’équipe du client recevait des formulaires de personnes non admissibles et perdait du temps à en assurer le suivi.",
        "icon": "time"
       },
       {
-       "h": "Une information répétée à maintenir",
-       "p": "Chaque étude avait son propre microsite : la même information générale se répétait partout et était plus difficile à tenir à jour.",
+       "h": "Du contenu en double à maintenir",
+       "p": "Chaque étude avait son propre microsite : la même information générale s’y répétait, ce qui compliquait les mises à jour.",
        "icon": "copies"
       }
      ]
@@ -173,19 +173,19 @@
      "items": [
       {
        "h": "Réunir les études",
-       "p": "Une seule plateforme de recherche pour toutes les études, au lieu d’un microsite chacune :",
+       "p": "Une seule plateforme de recherche pour toutes les études, plutôt qu’un microsite par étude :",
        "list": [
-        "Recherche par condition et par lieu, comme un Airbnb des essais cliniques",
-        "L’information commune au même endroit",
-        "Des mises à jour plus simples pour l’équipe du client"
+        "Une recherche par maladie et par lieu, comme un Airbnb des essais cliniques",
+        "L’information commune réunie au même endroit",
+        "Des mises à jour simplifiées pour l’équipe du client"
        ]
       },
       {
-       "h": "Tester une nouvelle version avec du vrai trafic",
-       "p": "J’ai analysé les retours des groupes de discussion du client pour *en extraire de vraies frictions*, puis je les ai recoupés avec Google Analytics, les enregistrements Hotjar et un audit du formulaire. Cette synthèse est devenue deux hypothèses de design pour amener plus de gens à envoyer leurs renseignements, en les qualifiant d’abord :",
+       "h": "Tester une nouvelle version auprès de vrais visiteurs",
+       "p": "J’ai analysé les retours des groupes de discussion du client pour *en dégager les vraies frictions*, puis je les ai recoupés avec Google Analytics, les enregistrements Hotjar et un audit du formulaire. De cette synthèse sont nées deux hypothèses de design, pour inciter plus de gens à envoyer leurs renseignements tout en les qualifiant d’abord :",
        "list": [
-        "Une seule page d’étude regroupant les deux précédentes, structurée autour des principaux freins, avec juste assez d’information pour attiser l’intérêt",
-        "Un formulaire en deux étapes, pour qualifier les gens avant l’envoi de leurs coordonnées"
+        "Une page d’étude unique qui fusionne les deux précédentes, structurée autour des principales objections, avec juste assez d’information pour susciter l’intérêt",
+        "Un formulaire en deux étapes, pour qualifier les gens avant qu’ils transmettent leurs coordonnées"
        ]
       }
      ]
@@ -198,8 +198,8 @@
    "h2": "Ce que j’ai décidé, *et pourquoi*",
    "items": [
     {
-     "h": "Séparer le formulaire en deux étapes pour ne recevoir que des formulaires qualifiés",
-     "p": "Une *présélection venait d’abord*, puis les coordonnées pour les personnes qualifiées.",
+     "h": "Scinder le formulaire en deux étapes pour ne recevoir que des demandes qualifiées",
+     "p": "La *présélection venait en premier*; seules les personnes qualifiées laissaient ensuite leurs coordonnées.",
      "notes": [
       {
        "k": "Alternatives",
@@ -213,90 +213,90 @@
       },
       {
        "k": "Pourquoi",
-       "v": "Mon audit montrait que les gens quittaient le long formulaire avant la fin. L’étape 1 qualifie les gens sans demander de renseignements personnels; l’étape 2 recueille les coordonnées."
+       "v": "Mon audit montrait que les gens abandonnaient le long formulaire avant la fin. L’étape 1 qualifie sans demander de renseignements personnels; l’étape 2 recueille les coordonnées."
       },
       {
        "k": "Compromis",
-       "v": "Le formulaire en 2 étapes demandait plus de développement, dont un bouton de retour entre les étapes."
+       "v": "Le formulaire en deux étapes demandait plus de développement, notamment un bouton de retour entre les étapes."
       }
      ],
      "shots": [
       {
-       "label": "Wireframe : étape 1 du formulaire, mobile",
-       "alt": "Wireframe mobile de la première étape du formulaire : un indicateur en deux étapes, des questions d’admissibilité et un bouton Voir si je suis admissible",
+       "label": "Wireframe mobile : étape 1 du formulaire",
+       "alt": "Wireframe mobile de la première étape du formulaire : un indicateur d’étapes, des questions d’admissibilité et un bouton Voir si je suis admissible",
        "img": "work/pharmy-wf-form-fr.jpg",
        "phone": true
       }
      ]
     },
     {
-     "h": "Donner une raison de rester aux personnes non admissibles",
-     "p": "Les personnes non admissibles pouvaient rejoindre une communauté grâce à une *inscription à l’infolettre, placée sur l’écran de remerciement* après la présélection.",
+     "h": "Donner aux personnes non admissibles une raison de rester",
+     "p": "Les personnes non admissibles pouvaient se joindre à une communauté grâce à une *inscription à l’infolettre, offerte sur l’écran de remerciement* après la présélection.",
      "notes": [
       {
        "k": "Alternatives",
        "list": [
         "Page de remerciement existante, sans inscription à la communauté.",
         {
-         "t": "Ajouter l’inscription à la communauté à la dernière étape pour les personnes non admissibles.",
+         "t": "Ajouter l’inscription à la communauté à la dernière étape, pour les personnes non admissibles.",
          "pill": "Ma recommandation"
         }
        ]
       },
       {
        "k": "Pourquoi",
-       "v": "L’infolettre les tenait au courant, pour que le client puisse les rejoindre plus tard et leur proposer de nouveaux essais mieux adaptés, sans effort supplémentaire pour l’équipe du client."
+       "v": "L’infolettre gardait le contact : le client pouvait les joindre plus tard pour leur proposer des essais mieux adaptés, sans effort supplémentaire pour son équipe."
       },
       {
        "k": "Compromis",
-       "v": "Ajouter l’inscription à la communauté à la page de remerciement demandait un effort minimal de design et de développement."
+       "v": "Ajouter l’inscription à la page de remerciement demandait très peu d’efforts de design et de développement."
       }
      ],
      "shots": [
       {
        "label": "Invitation à la communauté",
-       "alt": "Invitation à rejoindre la communauté",
+       "alt": "Invitation à se joindre à la communauté",
        "img": "work/pharmy-community.jpg"
       }
      ]
     },
     {
-     "h": "Répondre aux objections avant de demander de chercher",
+     "h": "Répondre aux objections avant d’inviter à chercher",
      "p": "Une *séquence stratégique sur la page d’accueil* répondait aux objections et montrait aux gens qu’ils n’étaient pas seuls. La version B du test A/B réduisait aussi *le nombre de pages d’information*.",
      "notes": [
       {
        "k": "Alternatives",
        "list": [
-        "Faire arriver les gens directement sur la recherche par carte.",
+        "Mener les gens directement à la recherche sur carte.",
         {
-         "t": "Faire arriver les gens sur une page d’accueil rassurante avant la recherche.",
+         "t": "Accueillir les gens sur une page d’accueil rassurante avant la recherche.",
          "pill": "Ma recommandation"
         }
        ]
       },
       {
        "k": "Pourquoi",
-       "v": "Les objections sans réponse empêchent d’agir, comme l’ont montré les groupes de discussion. Une barre de recherche placée juste sous la bannière du haut envoyait quand même directement à la recherche les gens prêts à chercher."
+       "v": "Comme l’ont montré les groupes de discussion, des objections sans réponse freinent le passage à l’action. Une barre de recherche, juste sous la bannière du haut, permettait quand même aux gens déjà décidés de chercher tout de suite."
       },
       {
        "k": "Compromis",
-       "v": "Répondre aux objections d’abord ajoutait une étape avant la recherche."
+       "v": "Répondre d’abord aux objections ajoutait une étape avant la recherche."
       }
      ],
      "shots": [
       {
        "label": "Page d’accueil",
-       "alt": "Page d’accueil de la plateforme avec les raisons de participer",
+       "alt": "Page d’accueil de la plateforme, avec les raisons de participer",
        "img": "work/pharmy-home.jpg"
       },
       {
-       "label": "Comment ça marche",
-       "alt": "Page expliquant le fonctionnement des études cliniques",
+       "label": "Comment ça fonctionne",
+       "alt": "Page qui explique le déroulement des études cliniques",
        "img": "work/pharmy-how.jpg"
       },
       {
-       "label": "Conditions",
-       "alt": "Page Conditions avec navigation de A à Z",
+       "label": "Maladies",
+       "alt": "Page des maladies, avec une navigation de A à Z",
        "img": "work/pharmy-conditions.jpg"
       }
      ],
@@ -304,37 +304,37 @@
     },
     {
      "h": "Rendre la distance visible avec une carte",
-     "p": "Les gens cherchent par condition et par lieu, et *voient les cliniques et les essais sur une carte*.",
+     "p": "Les gens cherchent par maladie et par lieu, et *voient les cliniques et les essais sur une carte*.",
      "notes": [
       {
        "k": "Alternatives",
        "list": [
         "Une liste filtrée.",
         {
-         "t": "Une recherche sur carte filtrée.",
+         "t": "Une recherche filtrée sur carte.",
          "pill": "Ma recommandation"
         }
        ]
       },
       {
        "k": "Pourquoi",
-       "v": "Les groupes de discussion montraient que la distance pesait lourd dans l’envoi du formulaire. Une recherche sur carte, inspirée d’Airbnb et d’applications immobilières, la rendait visible, avec les essais regroupés par clinique pour éviter l’encombrement."
+       "v": "Les groupes de discussion montraient que la distance pesait lourd dans la décision d’envoyer le formulaire. Une recherche sur carte, inspirée d’Airbnb et des applications immobilières, la rendait visible; regrouper les essais par clinique évitait d’encombrer la carte."
       },
       {
        "k": "Compromis",
-       "v": "La version sur carte était beaucoup plus difficile à concevoir et à bâtir qu’une simple liste. Le développeur et moi avons travaillé ensemble pour utiliser les options de regroupement intégrées à la bibliothèque de carte, plus performantes et plus simples à implanter."
+       "v": "Une carte était beaucoup plus complexe à concevoir et à développer qu’une simple liste. Avec le développeur, nous avons misé sur les options de regroupement intégrées à la bibliothèque cartographique, plus performantes et plus simples à implanter."
       }
      ],
      "shots": [
       {
-       "label": "Carte avec grappes",
-       "alt": "Carte du Canada et des États-Unis avec des grappes de 23, 12 et 6 essais",
+       "label": "Carte avec regroupements",
+       "alt": "Carte du Canada et des États-Unis avec des regroupements de 23, 12 et 6 essais",
        "img": "work/pharmy-map-clusters.jpg",
        "phone": true
       },
       {
-       "label": "Wireframe : clic sur un marqueur, mobile",
-       "alt": "Wireframe mobile d’un clic sur un marqueur : la clinique et ses essais s’ouvrent au-dessus du repère",
+       "label": "Wireframe mobile : clic sur un marqueur",
+       "alt": "Wireframe mobile d’un clic sur un marqueur : la clinique et ses essais s’affichent au-dessus du repère",
        "img": "work/pharmy-wf-map-fr.jpg",
        "phone": true
       }
@@ -344,22 +344,22 @@
   },
   {
    "type": "cd-card",
-   "label": "Un défi de design qui est apparu",
+   "label": "Un défi de design imprévu",
    "h2": "Deux navigations *dans une seule plateforme*",
    "prose": [
-    "Chaque microsite d’essai avait besoin de sa propre navigation pour présenter l’essai en détail, et tout rebâtir aurait mangé le budget. La plateforme devait donc porter deux systèmes de navigation sur les mêmes pages.",
-    "**J’ai exploré deux options :** empiler les deux menus, ou passer au menu du microsite avec un bouton de retour. Empiler ajoute de la charge cognitive; « Retour » ne veut rien dire pour les gens qui arrivent directement sur un microsite.",
-    "J’ai choisi un *empilement stratégique des menus* : des menus minces avec des zones tactiles confortables. Au défilement, le menu de la plateforme se retire jusqu’à ce qu’on remonte, et le menu du microsite reste. Sur mobile, le menu hamburger gère le retour."
+    "Chaque microsite d’essai avait besoin de sa propre navigation pour présenter l’essai en détail, et tout refaire aurait englouti le budget. La plateforme devait donc composer avec deux systèmes de navigation sur les mêmes pages.",
+    "**J’ai exploré deux options :** empiler les deux menus, ou basculer vers le menu du microsite avec un bouton de retour. L’empilement alourdit la charge cognitive; un bouton « Retour » ne veut rien dire pour qui arrive directement sur un microsite.",
+    "J’ai choisi un *empilement stratégique des menus* : des menus minces, avec des zones tactiles confortables. Au défilement, le menu de la plateforme s’efface jusqu’à ce qu’on remonte, tandis que celui du microsite reste visible. Sur mobile, le menu hamburger permet de revenir à la plateforme."
    ],
    "figs": [
     {
      "svg": "work/pharmy-nav-desktop.svg",
-     "label": "Ordinateur : le menu de la plateforme se retire au défilement",
-     "alt": "Deux menus minces empilés en haut d’une page; au défilement, le menu de la plateforme glisse hors de vue et le menu du microsite reste"
+     "label": "Ordinateur : le menu de la plateforme s’efface au défilement",
+     "alt": "Deux menus minces empilés en haut d’une page; au défilement, le menu de la plateforme disparaît et celui du microsite reste"
     },
     {
      "svg": "work/pharmy-nav-mobile.svg",
-     "label": "Mobile : le retour est dans le menu",
+     "label": "Mobile : le retour passe par le menu",
      "alt": "Un téléphone avec une icône hamburger; un toucher ouvre un menu dont le premier élément ramène à la plateforme"
     }
    ]
@@ -377,14 +377,14 @@
      "phone": true
     },
     {
-     "label": "Conditions de A à Z",
-     "alt": "Navigation mobile des conditions de A à Z",
+     "label": "Maladies de A à Z",
+     "alt": "Navigation mobile des maladies de A à Z",
      "img": "work/pharmy-m-conditions.jpg",
      "phone": true
     },
     {
      "label": "Glossaire",
-     "alt": "Page glossaire sur mobile",
+     "alt": "Page du glossaire sur mobile",
      "img": "work/pharmy-m-glossary.jpg",
      "phone": true
     }
@@ -392,26 +392,26 @@
   },
   {
    "type": "cd-test",
-   "label": "Ce que les gens ont fait",
+   "label": "Ce que les visiteurs ont fait",
    "h2": "Les *résultats*",
    "reads": [
     {
      "h": "Ce que je peux affirmer",
      "p": [
-      "*Objectif 1, plus de candidats qualifiés :* la version B a amené 48 % plus de gens à vérifier leur admissibilité, un résultat significatif de justesse.",
-      "*Objectif 2, moins de temps perdu :* seuls les candidats présélectionnés se rendaient à l’équipe du client (47 % des envois); les autres rejoignaient plutôt la communauté."
+      "*Objectif 1, plus de candidats qualifiés :* la version B a amené 48 % plus de gens à vérifier leur admissibilité, un résultat tout juste significatif.",
+      "*Objectif 2, moins de temps perdu :* seuls des candidats présélectionnés parvenaient à l’équipe du client (47 % des envois); les autres se joignaient plutôt à la communauté."
      ]
     },
     {
-     "h": "D’autres bénéfices potentiels",
-     "p": "La version B a aussi reçu *20 % plus de formulaires de présélection*, un signal prometteur, même si l’échantillon était trop petit pour être significatif sur le plan statistique."
+     "h": "D’autres gains potentiels",
+     "p": "La version B a aussi reçu *20 % plus de formulaires de présélection*, un signal encourageant, même si l’échantillon était trop petit pour que le résultat soit statistiquement significatif."
     }
    ],
    "source": "Source : Google Analytics, test de trois mois.",
    "stats": [
     {
      "cap": "Vers le formulaire",
-     "h": "Se sont rendus au formulaire de qualification",
+     "h": "Ont atteint le formulaire de qualification",
      "sub": "A : contenu sur deux pages · B : contenu sur une page",
      "vals": [
       {
@@ -440,7 +440,7 @@
       }
      ],
      "d": "+20 %",
-     "note": "Petit échantillon, résultat non significatif sur le plan statistique."
+     "note": "Petit échantillon : résultat non significatif sur le plan statistique."
     }
    ]
   },
@@ -453,30 +453,30 @@
      "h": "",
      "items": [
       {
-       "h": "Un test plus solide",
+       "h": "Un test plus robuste",
        "p": "Plus de trafic ou un test plus long, pour confirmer le résultat sur les envois."
       },
       {
-       "h": "Un assistant à plusieurs étapes",
-       "p": "Des questions en plus petits blocs, avec les coordonnées sauvegardées tôt."
+       "h": "Un formulaire par étapes",
+       "p": "Des questions regroupées en petits blocs, et des coordonnées enregistrées dès le début."
       },
       {
        "h": "Des courriels de relance",
-       "p": "Une séquence de courriels pour aider les gens à terminer les formulaires incomplets."
+       "p": "Une séquence de courriels pour inciter les gens à terminer leur formulaire."
       },
       {
-       "h": "Une section d’empathie",
-       "p": "Une section sous la bannière de la page d’accueil montrant qu’on comprend la situation des gens avant de présenter la communauté."
+       "h": "Une section empathique",
+       "p": "Sous la bannière de la page d’accueil, une section qui montre qu’on comprend la situation des gens, avant de leur présenter la communauté."
       },
       {
        "h": "Une accessibilité renforcée",
-       "p": "Une base était en place, mais j’irais plus loin, par exemple avec un meilleur contraste pour les liens du menu principal et les bannières en haut des pages."
+       "p": "Une base était en place, mais j’irais plus loin, par exemple en améliorant le contraste des liens du menu principal et des bannières en haut de page."
       }
      ],
      "steps": true
     }
    ],
-   "sub": "Ces idées viennent de mon analyse des résultats du test A/B et des enregistrements Hotjar."
+   "sub": "Ces pistes découlent de mon analyse des résultats du test A/B et des enregistrements Hotjar."
   },
   {
    "type": "cta-final",
