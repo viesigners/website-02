@@ -406,6 +406,7 @@
     {
      "cap": "Inside the form",
      "h": "Prescreener forms received",
+     "sub": "A: full form · B: prescreener only",
      "vals": [
       {
        "k": "A",
