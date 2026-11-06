@@ -433,8 +433,8 @@
   },
   {
    "type": "cd-cards",
-   "label": "Avec du recul",
-   "h2": "Ce que je *changerais aujourd’hui*",
+   "label": "Prochaines étapes",
+   "h2": "Ce que j’*essaierais ensuite*",
    "groups": [
     {
      "h": "",
@@ -459,7 +459,7 @@
      "steps": true
     }
    ],
-   "sub": "Selon mon analyse des résultats du test A/B et des enregistrements Hotjar, voici ce que j’essaierais ensuite."
+   "sub": "Ces idées viennent de mon analyse des résultats du test A/B et des enregistrements Hotjar."
   },
   {
    "type": "cta-final",
