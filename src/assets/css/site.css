@@ -1123,3 +1123,8 @@ html { scroll-padding-top: 7rem; }
 .lightbox--tall { overflow-y: auto; overscroll-behavior: contain; }
 .lightbox--tall[open] { place-items: start center; }
 .lightbox--tall img { max-width: min(100%, 64rem); max-height: none; }
+/* Zoom button: bottom-right of the image, lighter glass that stays legible on light and dark screens */
+.cd-zoom { top: auto; bottom: calc(var(--cap, 0px) + .6rem); opacity: 1; background: rgba(16, 20, 33, .32); box-shadow: 0 0 0 1px rgba(255, 255, 255, .7), 0 1px 6px rgba(0, 0, 0, .25); }
+.cd-zoom svg { filter: drop-shadow(0 0 1.5px rgba(0, 0, 0, .8)); }
+.cd-shot--zoom:hover .cd-zoom, .cd-zoom:focus-visible { box-shadow: none; }
+.cd-shot--zoom:hover .cd-zoom svg, .cd-zoom:focus-visible svg { filter: none; }

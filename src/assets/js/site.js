@@ -231,6 +231,11 @@
     b.innerHTML = svg('<path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>');
     img.after(b);
     fig.classList.add('cd-shot--zoom');
+    // Keep the button on the image's bottom-right corner, above any caption
+    const place = () => fig.style.setProperty('--cap', `${Math.max(0, fig.getBoundingClientRect().bottom - img.getBoundingClientRect().bottom)}px`);
+    place();
+    if ('ResizeObserver' in window) new ResizeObserver(place).observe(fig);
+    img.addEventListener('load', place);
     const open = () => {
       opener = b;
       big.src = best(img);
