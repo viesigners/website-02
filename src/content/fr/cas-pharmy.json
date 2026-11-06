@@ -451,7 +451,11 @@
       },
       {
        "h": "Un assistant à plusieurs étapes",
-       "p": "Des questions en plus petits blocs, les coordonnées sauvegardées tôt, et une séquence de courriels pour terminer les formulaires incomplets."
+       "p": "Des questions en plus petits blocs, avec les coordonnées sauvegardées tôt."
+      },
+      {
+       "h": "Des courriels de relance",
+       "p": "Une séquence de courriels pour aider les gens à terminer les formulaires incomplets."
       },
       {
        "h": "Une section d’empathie",

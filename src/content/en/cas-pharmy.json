@@ -451,7 +451,11 @@
       },
       {
        "h": "A multi-step wizard",
-       "p": "Smaller question chunks, contact details saved early, and an email sequence to finish incomplete forms."
+       "p": "Smaller question chunks, with contact details saved early."
+      },
+      {
+       "h": "Follow-up emails",
+       "p": "An email sequence to help people finish incomplete forms."
       },
       {
        "h": "An empathy section",
