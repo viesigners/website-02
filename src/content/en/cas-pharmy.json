@@ -334,9 +334,9 @@
    "label": "A design challenge that arose",
    "h2": "Two navigation systems *in one platform*",
    "prose": [
-    "Each trial microsite had its own navigation, needed to present the trial in enough detail. Integrating them into the search platform meant two navigation systems on the same pages.",
-    "**I explored two options:** stacking the menus, or swapping to the microsite menu with a back button. Stacking adds cognitive load. Swapping is lighter, but “Back” means nothing to people who land directly on a microsite.",
-    "I chose a *strategic menu stacking pattern*, with slim menus and comfortable touch targets. On scroll, the platform menu slides away to free up space while the microsite menu stays; scrolling back to the top brings it back. On mobile, the hamburger menu handled the way back."
+    "Each trial microsite needed its own navigation to present the trial in detail, and rebuilding them all would have eaten the budget. So the platform had to carry two navigation systems on the same pages.",
+    "**I explored two options:** stacking both menus, or swapping to the microsite menu with a back button. Stacking adds cognitive load; “Back” means nothing to people who land directly on a microsite.",
+    "I chose a *strategic menu stacking pattern*: slim menus with comfortable touch targets. On scroll, the platform menu slides away until you scroll back up, while the microsite menu stays. On mobile, the hamburger menu handles the way back."
    ],
    "figs": [
     {
