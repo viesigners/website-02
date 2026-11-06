@@ -287,12 +287,12 @@
        "k": "Alternatives",
        "list": [
         "A filtered list.",
-        "One marker per condition, which would have been too cluttered since a clinic could run several studies."
+        "A filtered map search."
        ]
       },
       {
        "k": "Why",
-       "v": "The focus groups showed people had to travel to the clinic, and acceptable distance varied by condition. I grouped trials by clinic, inspired by Airbnb and real estate map apps."
+       "v": "The focus groups showed people had to travel to the clinic, and acceptable distance varied by condition. One marker per condition would have been too cluttered, since a clinic could run several studies. So I grouped trials by clinic, inspired by Airbnb and real estate map apps."
       },
       {
        "k": "Trade-off",

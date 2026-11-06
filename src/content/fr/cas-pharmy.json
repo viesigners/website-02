@@ -287,12 +287,12 @@
        "k": "Alternatives",
        "list": [
         "Une liste filtrée.",
-        "Un marqueur par condition, ce qui aurait été trop chargé puisqu’une clinique pouvait mener plusieurs études."
+        "Une recherche sur carte filtrée."
        ]
       },
       {
        "k": "Pourquoi",
-       "v": "Les groupes de discussion montraient que les gens devaient se rendre à la clinique, et la distance acceptable variait selon la condition. J’ai regroupé les essais par clinique, en m’inspirant d’Airbnb et d’applications immobilières sur carte."
+       "v": "Les groupes de discussion montraient que les gens devaient se rendre à la clinique, et la distance acceptable variait selon la condition. Un marqueur par condition aurait été trop chargé, puisqu’une clinique pouvait mener plusieurs études. J’ai donc regroupé les essais par clinique, en m’inspirant d’Airbnb et d’applications immobilières sur carte."
       },
       {
        "k": "Compromis",
