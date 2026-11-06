@@ -441,11 +441,11 @@
      "items": [
       {
        "h": "A clear call on version B",
-       "p": "I recommended keeping version B because it brought 48% more visitors to the form, and I was upfront about what the sample couldn’t confirm. That gave the client a decision it could trust."
+       "p": "I recommended keeping version B for its *+48%*, and was clear about what the sample couldn’t confirm."
       },
       {
        "h": "Recordings became the next tests",
-       "p": "I turned what people struggled with into a roadmap. They hit friction on prescreener fields, so I proposed simpler ones. Not-qualified visitors read the title and left, so I moved the community form to the top of a shorter page. I also proposed fewer calls to action on the study page."
+       "p": "Simpler prescreener fields, the community signup at the top of a shorter not-qualified page, and fewer calls to action."
       }
      ]
     },
@@ -454,15 +454,15 @@
      "items": [
       {
        "h": "A stronger test",
-       "p": "I’d push for more traffic or a longer test. It ran for three months, but too few people reached the forms to confirm the submission result."
+       "p": "More traffic or a longer run, to confirm the submission result."
       },
       {
        "h": "A multi-step wizard",
-       "p": "The contact step would be sent as soon as people moved to step 2, and the qualification questions would come in smaller chunks, so the form feels lighter. People who stopped after the contact step would receive an email sequence inviting them to finish, so the client’s team wouldn’t spend time on incomplete forms."
+       "p": "Smaller question chunks, contact details saved early, and an email sequence to finish incomplete forms."
       },
       {
        "h": "An empathy section",
-       "p": "Right under the homepage banner, a section would show we understand people’s situation before talking about our solution (joining the trial participants community)."
+       "p": "A section under the homepage banner showing we understand people’s situation before presenting the community."
       }
      ],
      "steps": true

@@ -441,11 +441,11 @@
      "items": [
       {
        "h": "Une recommandation claire pour la version B",
-       "p": "J’ai recommandé de conserver la version B parce qu’elle amenait 48 % plus de visiteurs au formulaire, tout en étant franc sur ce que l’échantillon ne pouvait pas confirmer. Le client avait ainsi une décision en laquelle il pouvait avoir confiance."
+       "p": "J’ai recommandé de garder la version B pour son *+48 %*, en étant clair sur ce que l’échantillon ne pouvait pas confirmer."
       },
       {
        "h": "Des enregistrements aux prochains tests",
-       "p": "J’ai transformé les difficultés observées en feuille de route. Les gens accrochaient sur des champs de présélection, alors j’en ai proposé de plus simples. Les visiteurs non qualifiés lisaient le titre et partaient, alors j’ai placé le formulaire de communauté en haut d’une page plus courte. J’ai aussi proposé moins d’appels à l’action sur la page d’étude."
+       "p": "Des champs de présélection plus simples, l’inscription à la communauté en haut d’une page « non admissible » plus courte, et moins d’appels à l’action."
       }
      ]
     },
@@ -454,15 +454,15 @@
      "items": [
       {
        "h": "Un test plus solide",
-       "p": "Je pousserais pour plus de trafic ou un test plus long. Il a duré trois mois, mais trop peu de gens se sont rendus aux formulaires pour confirmer le résultat sur les envois."
+       "p": "Plus de trafic ou un test plus long, pour confirmer le résultat sur les envois."
       },
       {
        "h": "Un assistant à plusieurs étapes",
-       "p": "L’étape des coordonnées serait envoyée dès le passage à l’étape 2, et les questions de qualification arriveraient en petits blocs, pour un formulaire plus léger. Les gens qui s’arrêtaient après cette étape recevraient une séquence de courriels les invitant à terminer, pour que l’équipe du client ne perde pas de temps sur des formulaires incomplets."
+       "p": "Des questions en plus petits blocs, les coordonnées sauvegardées tôt, et une séquence de courriels pour terminer les formulaires incomplets."
       },
       {
        "h": "Une section d’empathie",
-       "p": "Juste sous la bannière d’accueil, une section montrerait que nous comprenons la situation des gens avant de parler de notre solution (rejoindre la communauté de participants aux essais)."
+       "p": "Une section sous la bannière de la page d’accueil montrant qu’on comprend la situation des gens avant de présenter la communauté."
       }
      ],
      "steps": true
