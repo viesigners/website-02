@@ -299,7 +299,7 @@
       },
       {
        "k": "Trade-off",
-       "v": "The map version was much harder to design and build. The developer and I worked together to use the map library’s built-in clustering options, which performed better and were simpler to implement."
+       "v": "The map version was much harder to design and build than a simple list. The developer and I worked together to use the map library’s built-in clustering options, which performed better and were simpler to implement."
       }
      ],
      "shots": [
