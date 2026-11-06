@@ -1062,3 +1062,6 @@ html { scroll-padding-top: 7rem; }
 .cd-tags { display: flex; flex-wrap: wrap; gap: .45rem; margin: .35rem 0 0; padding: 0; list-style: none; }
 .cd-tags li { padding: .32rem .7rem; border-radius: 999px; background: #fff; box-shadow: 0 0 0 1px var(--line-2); font-size: .86rem; line-height: 1.3; color: var(--text); }
 .cd-facts .cd-note { display: block; margin-top: .55rem; }
+.cd-olist { margin: .35rem 0 0; padding: 0; list-style: none; counter-reset: g; display: grid; gap: .45rem; }
+.cd-olist li { counter-increment: g; display: grid; grid-template-columns: 1.6rem 1fr; align-items: baseline; }
+.cd-olist li::before { content: counter(g, decimal-leading-zero); font-family: var(--f-mono); font-size: .74rem; color: var(--pink-600); }

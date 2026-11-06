@@ -51,7 +51,10 @@
     },
     {
      "b": "Goal",
-     "t": "More qualified participant leads, and less time lost on unqualified ones."
+     "list": [
+      "More qualified participant leads",
+      "Less time lost on unqualified ones"
+     ]
     },
     {
      "b": "What I did",
