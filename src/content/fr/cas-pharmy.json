@@ -384,7 +384,10 @@
    "reads": [
     {
      "h": "Ce que je peux affirmer",
-     "p": "*Objectif 1, plus de candidats qualifiés :* la version B a amené 48 % plus de gens à vérifier leur admissibilité, un résultat significatif de justesse. *Objectif 2, moins de temps perdu :* seuls les candidats présélectionnés se rendaient à l’équipe du client (47 % des envois); les autres rejoignaient plutôt la communauté."
+     "p": [
+      "*Objectif 1, plus de candidats qualifiés :* la version B a amené 48 % plus de gens à vérifier leur admissibilité, un résultat significatif de justesse.",
+      "*Objectif 2, moins de temps perdu :* seuls les candidats présélectionnés se rendaient à l’équipe du client (47 % des envois); les autres rejoignaient plutôt la communauté."
+     ]
     },
     {
      "h": "Ce que ce test ne prouve pas",

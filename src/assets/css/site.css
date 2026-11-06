@@ -1082,3 +1082,4 @@ html { scroll-padding-top: 7rem; }
 /* Inline list with pink dot separators */
 .cd-inline { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem 0; margin: .35rem 0 0; padding: 0; list-style: none; line-height: 1.45; }
 .cd-inline li:not(:last-child)::after { content: ""; display: inline-block; width: 6px; height: 6px; margin: 0 .6rem; border-radius: 50%; background: var(--pink); }
+.cd-read p + p { margin-top: .7em; }

@@ -384,7 +384,10 @@
    "reads": [
     {
      "h": "What I can stand behind",
-     "p": "*Goal 1, more qualified leads:* version B got 48% more people to check their eligibility, a narrowly significant result. *Goal 2, less time lost:* only prequalified candidates reached the client’s team (47% of submissions); the others joined the community instead."
+     "p": [
+      "*Goal 1, more qualified leads:* version B got 48% more people to check their eligibility, a narrowly significant result.",
+      "*Goal 2, less time lost:* only prequalified candidates reached the client’s team (47% of submissions); the others joined the community instead."
+     ]
     },
     {
      "h": "What this test can’t prove",
