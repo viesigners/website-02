@@ -245,10 +245,13 @@ em.acc, .acc {
 .phero .wrap > .phero__grid:first-child { margin-top: 0; }
 .phero .lead { margin-bottom: 2rem; }
 .phero__actions { display: flex; flex-wrap: wrap; gap: .8rem; align-items: center; }
-.crumbs { display: flex; flex-wrap: wrap; gap: .4rem .6rem; font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: var(--text-3); margin-bottom: 1.6rem; }
-.crumbs li + li::before { content: "/"; margin-right: .6rem; opacity: .5; }
-.crumbs a:hover { color: #fff; }
-.crumbs [aria-current] { color: var(--text-2); }
+/* eyebrow + breadcrumb in one line: • Services / Copywriting de conversion */
+.trail { flex-wrap: wrap; row-gap: .4rem; }
+.trail ol { display: flex; flex-wrap: wrap; gap: .4rem .6rem; }
+.trail li + li::before, .trail nav + *::before { content: "/"; margin-right: .6rem; opacity: .5; }
+.trail a { color: var(--text-3); transition: color .2s; }
+.trail a:hover { color: var(--text); }
+.trail h1, .trail p { font: inherit; letter-spacing: inherit; text-transform: inherit; color: inherit; margin: 0; }
 .brief { border-radius: var(--r-lg); padding: clamp(1.4rem, 1rem + 1.2vw, 2.2rem); background: rgba(23, 28, 46, .7); backdrop-filter: blur(14px); box-shadow: 0 0 0 1px var(--line-2); }
 .brief h2 { font-family: var(--f-mono); font-size: .75rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; line-height: 1.2; color: #fff; margin-bottom: 1.2rem; display: flex; align-items: center; gap: .6rem; }
 .brief h2::before { content: ""; width: .42rem; height: .42rem; border-radius: 50%; background: var(--pink); }

@@ -159,16 +159,21 @@ R['hero-home'] = (s, c) => {
 
 R['page-hero'] = (s, c) => {
   const { lang, T, page } = c;
-  const crumbs = c.crumbs.map((b, i) => i === c.crumbs.length - 1 ? `<li><span aria-current="page">${esc(b.name)}</span></li>` : `<li><a href="${b.url}">${esc(b.name)}</a></li>`).join('');
+  /* eyebrow = breadcrumb: one pink-dot line. Parents are links (Home is left to the logo, a blog filter is left to the filter bar);
+     the last step is the page's own eyebrow text, which stays the H1 where the page asks for it (tagH1). Articles end on their type:
+     their title is already the H1 right below. The full trail stays in the BreadcrumbList schema. */
+  const isArticle = c.key === 'post' || CASE_KEYS.includes(c.key);
+  const parents = c.crumbs.slice(1, c.activeTab ? -2 : -1);
+  if (isArticle && !parents.length) parents.push(c.crumbs[c.crumbs.length - 2]);
+  const last = isArticle ? '' : s.tag ? (s.tagH1 ? `<h1 id="h1">${fmt(s.tag, lang)}</h1>` : `<p>${fmt(s.tag, lang)}</p>`) : '';
+  const trail = parents.length || last ? `<div class="eyebrow-tag trail">${parents.length ? `<nav aria-label="${esc(T.breadcrumb)}"><ol>${parents.map((b) => `<li><a href="${b.url}">${esc(b.name)}</a></li>`).join('')}</ol></nav>` : ''}${last}</div>` : '';
   const ctas = (s.ctas || []).filter((b) => !(b.to.startsWith('@') && isHidden(b.to.slice(1)))).map((b) => `<a class="pill ${b.style === 'ghost' ? 'pill--ghost' : b.style === 'violet' ? 'pill--violet' : ''}" href="${b.to.startsWith('@') ? url(b.to.slice(1), lang) : b.to}"${/^https?:/.test(b.to) ? ' target="_blank" rel="noopener"' : ''}>${esc(b.label)}</a>`).join('');
   const brief = s.brief ? `<aside class="brief rv" aria-labelledby="brief-t" style="--d:.15s"><h2 id="brief-t">${esc(T.brief)}</h2><ul>${s.brief.map((i) => `<li>${ico('check')}<span>${i.b ? `<strong>${fmt(i.b, lang)}</strong> ` : ''}${fmt(i.t, lang)}</span></li>`).join('')}</ul><p class="upd">${esc(T.updated)} <time datetime="${page.updated || BUILD_DATE}">${new Date(page.updated || BUILD_DATE).toLocaleDateString(lang === 'fr' ? 'fr-CA' : 'en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time></p></aside>` : '';
   return `<section class="phero${s.compact ? ' phero--compact' : ''}" aria-labelledby="h1"><div class="wrap">
-  ${c.crumbs.length > 2 ? `<nav aria-label="${esc(T.breadcrumb)}"><ol class="crumbs">${crumbs}</ol></nav>` : ''}
   <div class="phero__grid">
     <div>
-      ${s.tagH1 && s.tag ? `<h1 id="h1" class="eyebrow-tag">${fmt(s.tag, lang)}</h1>
-      <h2 class="display phero__title">${fmt(s.h1, lang)}</h2>` : `${s.tag ? `<p class="eyebrow-tag">${fmt(s.tag, lang)}</p>` : ''}
-      <h1 id="h1" class="display phero__title">${fmt(s.h1, lang)}</h1>`}
+      ${trail}
+      ${s.tagH1 && s.tag && !isArticle ? `<h2 class="display phero__title">${fmt(s.h1, lang)}</h2>` : `<h1 id="h1" class="display phero__title">${fmt(s.h1, lang)}</h1>`}
       <p class="lead">${fmt(s.lead, lang)}</p>
       ${s.byline ? `<p class="byline">${esc(s.byline)}</p>` : ''}
       ${s.guarantee ? `<p class="guar" style="margin-bottom:1.6rem">${ico('shield')}${esc(s.guarantee)}</p><br>` : ''}
