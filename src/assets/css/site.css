@@ -798,7 +798,7 @@ em.acc, .acc {
 html { scroll-padding-top: 7rem; }
 .profile .portrait { width: clamp(120px, 15vw, 180px); aspect-ratio: 1; border-radius: var(--r-xl); overflow: hidden; margin-bottom: clamp(1.6rem, 1rem + 2vw, 2.6rem); box-shadow: 0 0 0 1px var(--line-2), 0 30px 80px -30px rgba(255, 72, 139, .5); }
 .profile .portrait img { width: 100%; height: 100%; object-fit: cover; }
-.profile__grid > div > .label { display: flex; margin-bottom: clamp(1rem, .7rem + 1vw, 1.6rem); }
+.profile__grid > div > .trail { display: flex; margin-bottom: clamp(1rem, .7rem + 1vw, 1.6rem); }
 .profile__grid { align-items: end; } /* key facts sit in the right-hand panel, like the "In short" panel of the other pages */
 .profile .advised { margin-top: clamp(2.4rem, 1.6rem + 3vw, 4.2rem); }
 .profile__role { margin-top: clamp(.8rem, .5rem + 1vw, 1.4rem); max-width: 30ch; font-family: var(--f-display); font-size: clamp(1.5rem, 1rem + 1.7vw, 2.4rem); font-weight: 300; letter-spacing: -0.02em; line-height: 1.15; text-wrap: balance; }
