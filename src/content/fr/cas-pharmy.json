@@ -281,7 +281,7 @@
     },
     {
      "h": "Rendre la distance visible avec une carte",
-     "p": "Les gens cherchent par condition et par lieu, et voient les cliniques et les essais sur une carte.",
+     "p": "Les gens cherchent par condition et par lieu, et *voient les cliniques et les essais sur une carte*.",
      "notes": [
       {
        "k": "Alternatives",
