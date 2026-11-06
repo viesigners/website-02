@@ -160,11 +160,10 @@ R['hero-home'] = (s, c) => {
 R['page-hero'] = (s, c) => {
   const { lang, T, page } = c;
   /* eyebrow = breadcrumb: one pink-dot line. Parents are links (Home is left to the logo, a blog filter is left to the filter bar);
-     the last step is the page's own eyebrow text, which stays the H1 where the page asks for it (tagH1). Articles end on their type:
+     the last step is the page's own eyebrow text, which stays the H1 where the page asks for it (tagH1). Articles end on Blog / Type:
      their title is already the H1 right below. The full trail stays in the BreadcrumbList schema. */
   const isArticle = c.key === 'post' || CASE_KEYS.includes(c.key);
   const parents = c.crumbs.slice(1, c.activeTab ? -2 : -1);
-  if (isArticle && !parents.length) parents.push(c.crumbs[c.crumbs.length - 2]);
   const last = isArticle ? '' : s.tag ? (s.tagH1 ? `<h1 id="h1">${fmt(s.tag, lang)}</h1>` : `<p>${fmt(s.tag, lang)}</p>`) : '';
   const trail = parents.length || last ? `<div class="eyebrow-tag trail">${parents.length ? `<nav aria-label="${esc(T.breadcrumb)}"><ol>${parents.map((b) => `<li><a href="${b.url}">${esc(b.name)}</a></li>`).join('')}</ol></nav>` : ''}${last}</div>` : '';
   const ctas = (s.ctas || []).filter((b) => !(b.to.startsWith('@') && isHidden(b.to.slice(1)))).map((b) => `<a class="pill ${b.style === 'ghost' ? 'pill--ghost' : b.style === 'violet' ? 'pill--violet' : ''}" href="${b.to.startsWith('@') ? url(b.to.slice(1), lang) : b.to}"${/^https?:/.test(b.to) ? ' target="_blank" rel="noopener"' : ''}>${esc(b.label)}</a>`).join('');
@@ -810,11 +809,11 @@ function buildPage({ lang, key, page, post, tab }) {
 
   /* breadcrumbs */
   const crumbs = [{ name: T.nav.home, url: url('home', lang) }];
-  const resCrumbs = !isHidden('actualites') && (key === 'post' || CASE_KEYS.includes(key)); // Home > Type > Page (the type links to the blog pre-filtered on it)
+  const resCrumbs = !isHidden('actualites') && (key === 'post' || CASE_KEYS.includes(key)); // Home > Blog > Type > Page (the address skips /blog/: /fr/conseils/…; the type links to the blog pre-filtered on it)
   if (SERVICE_KEYS.includes(key) || (CASE_KEYS.includes(key) && !resCrumbs)) crumbs.push({ name: T.nav.services, url: url('services', lang) }); // Home > Services > Service
   if (['charles-erick', 'jean-francois'].includes(key)) crumbs.push({ name: T.nav['a-propos'], url: url('a-propos', lang) });
   if (key === 'cas-saas' && !resCrumbs) crumbs.push({ name: T.nav['design-produit'], url: url('design-produit', lang) });
-  if (key === 'post' || resCrumbs) { const cat = resCrumbs && RES_CATS[lang]?.find((k) => k.key === (key === 'post' ? post.category || 'insights' : 'case-studies')); crumbs.push(cat ? { name: cat.label, url: catUrl(cat, lang) } : { name: T.nav.actualites, url: url('actualites', lang) }); }
+  if (key === 'post' || resCrumbs) { const cat = resCrumbs && RES_CATS[lang]?.find((k) => k.key === (key === 'post' ? post.category || 'insights' : 'case-studies')); crumbs.push({ name: T.nav.actualites, url: url('actualites', lang) }); if (cat) crumbs.push({ name: cat.label, url: catUrl(cat, lang) }); }
   if (key !== 'home') crumbs.push({ name: key === 'post' ? post.title : T.nav[key], url: tab ? url(key, lang) : selfUrl });
   if (tab) crumbs.push({ name: tab.label, url: selfUrl });
 
