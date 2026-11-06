@@ -25,17 +25,8 @@
      "v": "People left the long qualification form, and the client’s team lost time on unqualified requests."
     },
     {
-     "k": "Results",
-     "v": "+48% more visitors reached the form, and a potential +20% in forms sent.",
-     "note": "The +20% comes from a small sample and isn’t statistically significant."
-    },
-    {
-     "k": "Method",
-     "v": "Three-month A/B test on real traffic, with Google Analytics, Hotjar and Sketch."
-    },
-    {
-     "k": "Team",
-     "v": "A consultant hired by the client, a graphic designer and a developer."
+     "k": "Result",
+     "v": "*+48%* more visitors reached the qualification form."
     }
    ]
   },

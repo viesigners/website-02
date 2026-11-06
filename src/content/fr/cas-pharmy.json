@@ -25,17 +25,8 @@
      "v": "Les gens abandonnaient le long formulaire de qualification, et l’équipe du client perdait du temps sur des demandes non qualifiées."
     },
     {
-     "k": "Résultats",
-     "v": "+48 % de visiteurs se sont rendus au formulaire, et un gain potentiel de +20 % de formulaires envoyés.",
-     "note": "Le +20 % vient d’un petit échantillon et n’est pas statistiquement significatif."
-    },
-    {
-     "k": "Méthode",
-     "v": "Test A/B de trois mois sur du vrai trafic, avec Google Analytics, Hotjar et Sketch."
-    },
-    {
-     "k": "Équipe",
-     "v": "Un consultant embauché par le client, une designer graphique et un développeur."
+     "k": "Résultat",
+     "v": "*+48 %* de visiteurs se sont rendus au formulaire de qualification."
     }
    ]
   },

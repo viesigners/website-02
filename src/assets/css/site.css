@@ -1055,3 +1055,6 @@ html { scroll-padding-top: 7rem; }
 @media (min-width: 860px) { .cd-decisions dl > div:only-child { grid-column: span 2; } }
 .cd-stat__row b { order: 2; }
 @media (min-width: 1100px) { .cd-read:has(> :nth-child(3):last-child) { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.cd-brief em { font-style: normal; font-weight: 600; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.theme > .cd-hero { padding-top: clamp(6rem, 4.5rem + 3vw, 8rem); }
+.cd-hero__top.phero__grid { margin-bottom: clamp(1.5rem, 1rem + 1.5vw, 2.5rem); align-items: center; }
