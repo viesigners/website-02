@@ -245,6 +245,10 @@
       {
        "k": "Why",
        "v": "The newsletter kept them in the loop, so the client could reach them again later and propose new trials better suited to them, without more effort from the client’s team."
+      },
+      {
+       "k": "Trade-off",
+       "v": "Adding the community signup to the thank-you page required minimal design and development effort."
       }
      ],
      "shots": [

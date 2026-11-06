@@ -245,6 +245,10 @@
       {
        "k": "Pourquoi",
        "v": "L’infolettre les tenait au courant, pour que le client puisse les rejoindre plus tard et leur proposer de nouveaux essais mieux adaptés, sans effort supplémentaire pour l’équipe du client."
+      },
+      {
+       "k": "Compromis",
+       "v": "Ajouter l’inscription à la communauté à la page de remerciement demandait un effort minimal de design et de développement."
       }
      ],
      "shots": [
