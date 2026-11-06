@@ -164,7 +164,12 @@
      "items": [
       {
        "h": "Bring the studies together",
-       "p": "One searchable platform for all the studies, like Airbnb for clinical trials, with shared information in one place and easier updates."
+       "p": "One searchable platform for all the studies, instead of one microsite each:",
+       "list": [
+        "Search by condition and location, like Airbnb for clinical trials",
+        "Shared information in one place",
+        "Easier updates for the client’s team"
+       ]
       },
       {
        "h": "Test a new version on real traffic",

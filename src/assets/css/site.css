@@ -1072,3 +1072,6 @@ html { scroll-padding-top: 7rem; }
 .cd-ico svg { width: 1.4rem; height: 1.4rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .cd-steps .cd-olist li { grid-template-columns: 1.1rem 1fr; }
 .cd-steps .cd-olist li::before { content: ""; width: .38rem; height: .38rem; border-radius: 50%; background: var(--pink); align-self: start; margin-top: .6em; padding: 0; grid-row: auto; }
+.cd-steps--row { gap: clamp(.8rem, .5rem + 1vw, 1.25rem); }
+.cd-steps--row > li { padding: clamp(1.2rem, .9rem + 1.2vw, 1.9rem); border: 0; border-radius: var(--r-lg); background: #fff; box-shadow: 0 0 0 1px var(--line); align-content: start; }
+@media (min-width: 960px) { .cd-steps--row { align-items: stretch; gap: clamp(.8rem, .5rem + 1vw, 1.25rem); } }

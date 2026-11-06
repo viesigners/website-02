@@ -164,7 +164,12 @@
      "items": [
       {
        "h": "Réunir les études",
-       "p": "Une seule plateforme de recherche pour toutes les études, comme un Airbnb des essais cliniques, avec l’information commune au même endroit et des mises à jour plus simples."
+       "p": "Une seule plateforme de recherche pour toutes les études, au lieu d’un microsite chacune :",
+       "list": [
+        "Recherche par condition et par lieu, comme un Airbnb des essais cliniques",
+        "L’information commune au même endroit",
+        "Des mises à jour plus simples pour l’équipe du client"
+       ]
       },
       {
        "h": "Tester une nouvelle version avec du vrai trafic",
