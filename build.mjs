@@ -66,7 +66,7 @@ const ROUTES = {
   'design-produit': { fr: 'design-de-produit', en: 'product-design' },
   coaching: { fr: 'conseil-affaires-web', en: 'business-advisory' },
   'cas-saas': { fr: 'design-de-produit/etude-de-cas-saas-b2b-ia', en: 'product-design/b2b-ai-saas-case-study' },
-  'cas-pharmy': { fr: 'realisations/pharmy', en: 'work/pharmy' },
+  'cas-pharmy': { fr: 'actualites/etude-de-cas-pharmy', en: 'news/pharmy-case-study' },
   publicite: { fr: 'publicite-numerique', en: 'digital-advertising' },
   'medias-sociaux': { fr: 'medias-sociaux', en: 'social-media' },
   'seo-geo': { fr: 'seo-geo', en: 'seo-geo' },
@@ -871,7 +871,7 @@ function buildPage({ lang, key, page, post, tab }) {
   if (SERVICE_KEYS.includes(key) || key === 'cas-saas') crumbs.push({ name: T.nav.services, url: url('services', lang) }); // Home > Services > Service
   if (['charles-erick', 'jean-francois'].includes(key)) crumbs.push({ name: T.nav['a-propos'], url: url('a-propos', lang) });
   if (key === 'cas-saas') crumbs.push({ name: T.nav['design-produit'], url: url('design-produit', lang) });
-  if (key === 'post') crumbs.push({ name: T.nav.actualites, url: url('actualites', lang) });
+  if (key === 'post' || key === 'cas-pharmy') crumbs.push({ name: T.nav.actualites, url: url('actualites', lang) });
   if (key !== 'home') crumbs.push({ name: key === 'post' ? post.title : T.nav[key], url: tab ? url(key, lang) : selfUrl });
   if (tab) crumbs.push({ name: tab.label, url: selfUrl });
 
