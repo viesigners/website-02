@@ -30,12 +30,8 @@
     },
     {
      "k": "Result",
-     "v": "*+48%* more visitors reached the qualification form."
-    },
-    {
-     "k": "Potential",
-     "v": "*+20%* more qualification forms sent.",
-     "note": "Small sample, not statistically significant."
+     "v": "*+48%* more visitors reached the qualification form, and a potential *+20%* more qualification forms were sent.",
+     "note": "The +20% comes from a small sample and isn’t statistically significant."
     }
    ]
   },
