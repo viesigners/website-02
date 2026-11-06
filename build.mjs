@@ -20,6 +20,7 @@ const DIST = path.join(ROOT, 'dist');
 const CFG = JSON.parse(fs.readFileSync(path.join(SRC, 'config.json'), 'utf8'));
 const LANGS = ['fr', 'en'];
 const BUILD_DATE = new Date().toISOString().slice(0, 10);
+const YEAR = BUILD_DATE.slice(0, 4);
 const ORIGIN = (process.env.SITE_ORIGIN || CFG.origin).replace(/\/$/, '');
 /* Sub-folder hosting (e.g. GitHub Pages project site at /website-02). Empty for a domain root. */
 const BASE = (process.env.SITE_BASE || CFG.basePath || '').replace(/\/$/, '');
@@ -114,6 +115,7 @@ const abs = (u) => ORIGIN + (BASE && !(u === BASE || u.startsWith(BASE + '/')) ?
 function fmt(s, lang) {
   if (s == null) return '';
   let h = esc(s);
+  h = h.replace(/\{year\}/g, `<span data-year>${YEAR}</span>`); // {year}: build year, refreshed in the browser by site.js
   h = h.replace(/\[([^\]]+)\]\(@([\w:-]+)\)/g, (_, t, k) => (isHidden(k) ? t : `<a href="${url(k, lang)}">${t}</a>`));
   h = h.replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>'); // external links open in a new tab
   h = h.replace(/\[([^\]]+)\]\((mailto:[^)]+)\)/g, '<a href="$2">$1</a>');
@@ -122,7 +124,7 @@ function fmt(s, lang) {
   if (lang === 'fr') h = h.replace(/ ([:;!?»])/g, ' $1').replace(/« /g, '« ');
   return h;
 }
-const plain = (s = '') => String(s).replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*\*?([^*]+)\*\*?/g, '$1');
+const plain = (s = '') => String(s).replace(/\{year\}/g, YEAR).replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*\*?([^*]+)\*\*?/g, '$1');
 const ico = (n, cls = '') => `<svg aria-hidden="true" focusable="false"${cls ? ` class="${cls}"` : ''}><use href="#i-${n}"/></svg>`;
 const sparks = (n = 3) => Array.from({ length: n }, () => ico('spark', 'spark')).join('');
 
