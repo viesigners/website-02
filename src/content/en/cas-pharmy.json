@@ -429,13 +429,7 @@
      "d": "+20%",
      "note": "Small sample, not statistically significant."
     }
-   ],
-   "shipped": {
-    "h": "What shipped",
-    "list": [
-     "The recordings became the next tests: simpler prescreener fields, the community signup at the top of a shorter not-qualified page, and fewer calls to action."
-    ]
-   }
+   ]
   },
   {
    "type": "cd-cards",

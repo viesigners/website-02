@@ -429,13 +429,7 @@
      "d": "+20 %",
      "note": "Petit échantillon, résultat non significatif sur le plan statistique."
     }
-   ],
-   "shipped": {
-    "h": "Ce qui a été lancé",
-    "list": [
-     "Les enregistrements sont devenus les prochains tests : des champs de présélection plus simples, l’inscription à la communauté en haut d’une page « non admissible » plus courte, et moins d’appels à l’action."
-    ]
-   }
+   ]
   },
   {
    "type": "cd-cards",
