@@ -193,15 +193,15 @@
      "p": "A prescreener came first, then contact details for people who qualified.",
      "notes": [
       {
-       "k": "What we compared",
-       "v": "The existing form against the two-step form I proposed."
+       "k": "Alternative",
+       "v": "The existing one-step form, tested against my two-step version."
       },
       {
-       "k": "Why I proposed this",
+       "k": "Why",
        "v": "My audit showed people left the long form before finishing. A first step without personal details asks less up front and keeps people in the funnel."
       },
       {
-       "k": "What it gave up",
+       "k": "Trade-off",
        "v": "More build work, including a back button between the steps. Of the people who reached the form, fewer sent it in version B (28% vs 35%). But since more people reached it, submissions still rose overall."
       }
      ],
@@ -219,7 +219,7 @@
      "p": "People who didn’t qualify could join a community through the newsletter.",
      "notes": [
       {
-       "k": "Why I chose this",
+       "k": "Why",
        "v": "The newsletter kept them in the loop, so the client could reach them again later and propose new trials better suited to them."
       }
      ],
@@ -236,15 +236,15 @@
      "p": "A strategic homepage sequence answered objections and showed people they weren’t alone. Version B of the A/B test also changed the study page.",
      "notes": [
       {
-       "k": "Options I had",
+       "k": "Alternatives",
        "v": "Land people on the map search, with explanations behind links."
       },
       {
-       "k": "Why I chose this",
+       "k": "Why",
        "v": "Unanswered objections stop people from acting, as the focus groups showed. Simple pages on conditions, terms and trials were also easier to maintain."
       },
       {
-       "k": "What it gave up",
+       "k": "Trade-off",
        "v": "Search came almost first on the homepage, but stayed first in the menu for people ready to act."
       }
      ],
@@ -272,15 +272,15 @@
      "p": "People search by condition and location, and see the trials on a map.",
      "notes": [
       {
-       "k": "Options I had",
+       "k": "Alternatives",
        "v": "A filtered list, or one marker per condition, which would have been too cluttered since a clinic could run several studies."
       },
       {
-       "k": "Why I chose this",
+       "k": "Why",
        "v": "The focus groups showed people had to travel to the clinic, and acceptable distance varied by condition. I grouped trials by clinic, inspired by Airbnb and real estate map apps."
       },
       {
-       "k": "What it gave up",
+       "k": "Trade-off",
        "v": "It was much harder to design and build. With the developer, I used the map library’s built-in clustering, which performed better and was simpler."
       }
      ],

@@ -193,15 +193,15 @@
      "p": "Une présélection venait d’abord, puis les coordonnées pour les personnes qualifiées.",
      "notes": [
       {
-       "k": "Ce que nous avons comparé",
-       "v": "Le formulaire existant et le formulaire en deux étapes que j’ai proposé."
+       "k": "Alternative",
+       "v": "Le formulaire existant en une étape, testé contre ma version en deux étapes."
       },
       {
-       "k": "Pourquoi je l’ai proposé",
+       "k": "Pourquoi",
        "v": "Mon audit montrait que les gens quittaient le long formulaire avant la fin. Une première étape sans renseignements personnels demande moins d’emblée et garde les gens dans le tunnel."
       },
       {
-       "k": "Ce qu’il sacrifiait",
+       "k": "Compromis",
        "v": "Plus de développement, dont un bouton de retour entre les étapes. Parmi les gens arrivés au formulaire, moins l’ont envoyé dans la version B (28 % contre 35 %). Mais comme plus de gens s’y rendaient, les envois ont quand même augmenté au total."
       }
      ],
@@ -219,7 +219,7 @@
      "p": "Les personnes non admissibles pouvaient rejoindre une communauté par l’infolettre.",
      "notes": [
       {
-       "k": "Pourquoi ce choix",
+       "k": "Pourquoi",
        "v": "L’infolettre les tenait au courant, pour que le client puisse les rejoindre plus tard et leur proposer de nouveaux essais mieux adaptés."
       }
      ],
@@ -236,15 +236,15 @@
      "p": "Une séquence stratégique sur la page d’accueil répondait aux objections et montrait aux gens qu’ils n’étaient pas seuls. La version B du test A/B changeait aussi la page d’étude.",
      "notes": [
       {
-       "k": "Mes options",
+       "k": "Alternatives",
        "v": "Faire arriver les gens sur la recherche par carte, avec les explications derrière des liens."
       },
       {
-       "k": "Pourquoi ce choix",
+       "k": "Pourquoi",
        "v": "Les objections sans réponse empêchent d’agir, comme l’ont montré les groupes de discussion. Des pages simples sur les conditions, les termes et les essais étaient aussi plus faciles à maintenir."
       },
       {
-       "k": "Ce qu’il sacrifiait",
+       "k": "Compromis",
        "v": "La recherche arrivait presque en premier sur la page d’accueil, mais restait première dans le menu pour les gens prêts à agir."
       }
      ],
@@ -272,15 +272,15 @@
      "p": "Les gens cherchent par condition et par lieu, et voient les essais sur une carte.",
      "notes": [
       {
-       "k": "Mes options",
+       "k": "Alternatives",
        "v": "Une liste filtrée, ou un marqueur par condition, ce qui aurait été trop chargé puisqu’une clinique pouvait mener plusieurs études."
       },
       {
-       "k": "Pourquoi ce choix",
+       "k": "Pourquoi",
        "v": "Les groupes de discussion montraient que les gens devaient se rendre à la clinique, et la distance acceptable variait selon la condition. J’ai regroupé les essais par clinique, en m’inspirant d’Airbnb et d’applications immobilières sur carte."
       },
       {
-       "k": "Ce qu’il sacrifiait",
+       "k": "Compromis",
        "v": "Beaucoup plus difficile à concevoir et à bâtir. Avec le développeur, j’ai utilisé le regroupement intégré à la bibliothèque de carte, plus performant et plus simple."
       }
      ],
