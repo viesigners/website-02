@@ -254,3 +254,15 @@
   dlg.addEventListener('close', () => opener?.focus());
 })();
 /* lightbox:end */
+
+/* Glance "+N" chip: smooth scroll to the full activity list */
+document.addEventListener('click', (e) => {
+  const a = e.target.closest('.cd-more');
+  if (!a) return;
+  const t = document.getElementById(a.getAttribute('href').slice(1));
+  if (!t) return;
+  e.preventDefault();
+  t.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+  t.setAttribute('tabindex', '-1');
+  t.focus({ preventScroll: true });
+});

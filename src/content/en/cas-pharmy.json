@@ -26,7 +26,12 @@
     },
     {
      "k": "Activities",
-     "v": "UX audit, insight synthesis, analytics, A/B testing, information architecture, wireframing, form design and design direction."
+     "v": "UX audit, insight synthesis, A/B testing, information architecture, form design",
+     "more": {
+      "n": 6,
+      "to": "what-i-did",
+      "label": "See all activities"
+     }
     },
     {
      "k": "Result",
@@ -79,7 +84,8 @@
       "Wireframing",
       "Form design",
       "Design direction"
-     ]
+     ],
+     "id": "what-i-did"
     },
     {
      "b": "Tools",

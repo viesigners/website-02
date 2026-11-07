@@ -26,7 +26,12 @@
     },
     {
      "k": "Activités",
-     "v": "Audit UX, synthèse des constats, analyse de données, test A/B, architecture de l’information, wireframes, conception de formulaire et direction artistique."
+     "v": "Audit UX, synthèse des constats, test A/B, architecture de l’information, conception de formulaire",
+     "more": {
+      "n": 6,
+      "to": "ce-que-jai-fait",
+      "label": "Voir toutes les activités"
+     }
     },
     {
      "k": "Résultat",
@@ -79,7 +84,8 @@
       "Wireframes",
       "Conception de formulaires",
       "Direction artistique"
-     ]
+     ],
+     "id": "ce-que-jai-fait"
     },
     {
      "b": "Outils",
