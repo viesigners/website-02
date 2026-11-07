@@ -1006,7 +1006,7 @@ function build() {
   for (const l of LANGS) {
     RES[l] = [
       ...POSTS[l].map((p) => ({ cat: p.category || 'insights', tag: p.tag, title: p.title, description: p.description, date: p.date, read: p.read, href: url('post:' + p.key, l) })),
-      ...CASE_KEYS.map((k) => { const pg = pages[`${l}:${k}`]; return { cat: 'case-studies', tag: pg.sections[0].tag, title: pg.meta.h1, description: pg.meta.description, date: pg.published, href: url(k, l) }; }),
+      ...CASE_KEYS.map((k) => { const pg = pages[`${l}:${k}`]; return { cat: 'case-studies', tag: pg.sections[0].tag, title: plain(pg.sections[0].h1 || pg.meta.h1), /* the card shows the page's own headline */ description: pg.meta.description, date: pg.published, href: url(k, l) }; }),
     ].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
   }
   PROFILE_FIRST = Object.fromEntries(LANGS.map((l) => [l, pages[`${l}:cebg`].sections.find((s) => s.type === 'role-nav')?.items[0]?.path]));
