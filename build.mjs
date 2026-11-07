@@ -20,6 +20,7 @@ const DIST = path.join(ROOT, 'dist');
 const CFG = JSON.parse(fs.readFileSync(path.join(SRC, 'config.json'), 'utf8'));
 const LANGS = ['fr', 'en'];
 const BUILD_DATE = new Date().toISOString().slice(0, 10);
+const YEAR = BUILD_DATE.slice(0, 4);
 const ORIGIN = (process.env.SITE_ORIGIN || CFG.origin).replace(/\/$/, '');
 /* Sub-folder hosting (e.g. GitHub Pages project site at /website-02). Empty for a domain root. */
 const BASE = (process.env.SITE_BASE || CFG.basePath || '').replace(/\/$/, '');
@@ -58,6 +59,8 @@ function img(rel, alt, { cls = '', lazy = true, sizes, fetchpriority } = {}) {
 }
 
 /* ----------------------------- routes ------------------------------------- */
+/* the blog's address, set once: the section, its category pages, articles and case studies all live under it */
+const BLOG = { fr: 'blogue', en: 'blog' };
 const ROUTES = {
   home: { fr: '', en: '' },
   cebg: { fr: 'charles-erick-bg', en: 'charles-erick-bg' }, // personal portfolio / job-application page
@@ -65,8 +68,8 @@ const ROUTES = {
   'landing-pages': { fr: 'landing-pages', en: 'landing-pages' },
   'design-produit': { fr: 'design-de-produit', en: 'product-design' },
   coaching: { fr: 'conseil-affaires-web', en: 'business-advisory' },
-  'cas-saas': { fr: 'design-de-produit/etude-de-cas-saas-b2b-ia', en: 'product-design/b2b-ai-saas-case-study' },
-  'cas-pharmy': { fr: 'actualites/etude-de-cas-pharmy', en: 'news/pharmy-case-study' },
+  'cas-saas': { fr: 'etudes-de-cas/saas-b2b-ia', en: 'case-studies/b2b-ai-saas' }, // lives under its type (Case studies), not under /blog/
+  'cas-pharmy': { fr: 'etudes-de-cas/pharmy', en: 'case-studies/pharmy' }, // lives under its type (Case studies)
   publicite: { fr: 'publicite-numerique', en: 'digital-advertising' },
   'medias-sociaux': { fr: 'medias-sociaux', en: 'social-media' },
   'seo-geo': { fr: 'seo-geo', en: 'seo-geo' },
@@ -81,8 +84,19 @@ const ROUTES = {
   privacy: { fr: 'politique-de-confidentialite', en: 'privacy-policy' },
   terms: { fr: 'conditions-generales', en: 'terms-of-use' },
   merci: { fr: 'merci', en: 'thank-you' }, // shown after a form submission: noindex, never linked
-  actualites: { fr: 'actualites', en: 'news' },
+  actualites: BLOG, // blog: articles + case studies, one filter page per category (the key stays neutral; the name lives in _site.json nav)
 };
+const CASE_KEYS = ['cas-saas', 'cas-pharmy']; // rich case-study pages (casestudy format) listed under Resources > Case studies
+/* old public addresses that now forward to their new page (same model as the profile redirect) */
+const MOVED = [
+  { from: { fr: 'design-de-produit/etude-de-cas-saas-b2b-ia', en: 'product-design/b2b-ai-saas-case-study' }, to: 'cas-saas' },
+  { from: { fr: 'actualites', en: 'news' }, to: 'actualites' },
+  ...['friction', 'geo', 'landing'].map((k) => ({ from: { fr: 'actualites', en: 'news' }, post: k })), // + the post's own slug
+];
+const RES = { fr: [], en: [] };              // blog cards (posts + case studies), filled at load
+let RES_CATS = {};                           // lang -> categories from actualites.json
+const catUrl = (cat, lang) => `${BASE}/${lang}/${cat.slug}/`; // each type is a top-level address: the blog pre-filtered on it, and the parent of its articles
+const catSlug = (key, lang) => RES_CATS[lang]?.find((k) => k.key === key)?.slug || ROUTES.actualites[lang];
 /* pages temporarily hidden: still built, but removed from menu, footer, links, sitemap and llms.txt, and marked noindex.
    Edit "hidden" in src/config.json to bring them back (empty list = everything visible). */
 const HIDDEN = new Set(CFG.hidden || []);
@@ -91,9 +105,10 @@ const SERVICE_KEYS = ['sites-web', 'landing-pages', 'design-produit', 'coaching'
 const MAIN_SERVICE_KEYS = ['sites-web', 'landing-pages', 'design-produit', 'coaching']; // menu and footer stay short: the rest lives on the services hub
 const POSTS = { fr: [], en: [] };            // filled at load
 let CURRENT_POST_SLUGS = {};                 // key -> {fr,en}
+let POST_CATS = {};                          // key -> category key (an article's address starts with its type)
 let PROFILE_FIRST = {};                      // lang -> path of the first profile tab (internal links skip the forwarding page)
 const url = (key, lang) => {
-  if (key.startsWith('post:')) { const s = CURRENT_POST_SLUGS[key.slice(5)]; return s?.[lang] ? `${BASE}/${lang}/${ROUTES.actualites[lang]}/${s[lang]}/` : `${BASE}/${lang}/${ROUTES.actualites[lang]}/`; }
+  if (key.startsWith('post:')) { const s = CURRENT_POST_SLUGS[key.slice(5)]; return s?.[lang] ? `${BASE}/${lang}/${catSlug(POST_CATS[key.slice(5)] || 'insights', lang)}/${s[lang]}/` : `${BASE}/${lang}/${ROUTES.actualites[lang]}/`; }
   const r = ROUTES[key]; if (!r) throw new Error('Unknown route ' + key);
   return `${BASE}/${lang}/${r[lang]}${r[lang] ? '/' : ''}` + (key === 'cebg' && PROFILE_FIRST[lang] ? PROFILE_FIRST[lang] + '/' : '');
 };
@@ -103,6 +118,7 @@ const abs = (u) => ORIGIN + (BASE && !(u === BASE || u.startsWith(BASE + '/')) ?
 function fmt(s, lang) {
   if (s == null) return '';
   let h = esc(s);
+  h = h.replace(/\{year\}/g, `<span data-year>${YEAR}</span>`); // {year}: build year, refreshed in the browser by site.js
   h = h.replace(/\[([^\]]+)\]\(@([\w:-]+)\)/g, (_, t, k) => (isHidden(k) ? t : `<a href="${url(k, lang)}">${t}</a>`));
   h = h.replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>'); // external links open in a new tab
   h = h.replace(/\[([^\]]+)\]\((mailto:[^)]+)\)/g, '<a href="$2">$1</a>');
@@ -111,7 +127,7 @@ function fmt(s, lang) {
   if (lang === 'fr') h = h.replace(/ ([:;!?»])/g, ' $1').replace(/« /g, '« ');
   return h;
 }
-const plain = (s = '') => String(s).replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*\*?([^*]+)\*\*?/g, '$1');
+const plain = (s = '') => String(s).replace(/\{year\}/g, YEAR).replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*\*?([^*]+)\*\*?/g, '$1');
 const CDICO = {
   trust: '<svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.4-3 8.3-7 10-4-1.7-7-5.6-7-10V6z"/><path d="M9.8 9.6a2.3 2.3 0 1 1 3.4 2c-.7.4-1.2.9-1.2 1.7"/><path d="M12 16.2h.01"/></svg>',
   form: '<svg viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="2"/><path d="M8.5 7h7M8.5 10.5h7M8.5 14h7M8.5 17.5h4"/></svg>',
@@ -148,18 +164,23 @@ R['hero-home'] = (s, c) => {
 </section>`;
 };
 
+const trailHtml = (c, parents, last) => (parents.length || last ? `<div class="eyebrow-tag trail">${parents.length ? `<nav aria-label="${esc(c.T.breadcrumb)}"><ol>${parents.map((b) => `<li><a href="${b.url}">${esc(b.name)}</a></li>`).join('')}</ol></nav>` : ''}${last}</div>` : '');
 R['page-hero'] = (s, c) => {
   const { lang, T, page } = c;
-  const crumbs = c.crumbs.map((b, i) => i === c.crumbs.length - 1 ? `<li><span aria-current="page">${esc(b.name)}</span></li>` : `<li><a href="${b.url}">${esc(b.name)}</a></li>`).join('');
+  /* eyebrow = breadcrumb: one pink-dot line. Parents are links (Home is left to the logo, a blog filter is left to the filter bar);
+     the last step is the page's own eyebrow text, which stays the H1 where the page asks for it (tagH1). Articles end on Blog / Type:
+     their title is already the H1 right below. The full trail stays in the BreadcrumbList schema. */
+  const isArticle = c.key === 'post' || CASE_KEYS.includes(c.key);
+  const parents = c.crumbs.slice(1, c.activeTab ? -2 : -1);
+  const last = isArticle ? '' : s.tag ? (s.tagH1 ? `<h1 id="h1">${fmt(s.tag, lang)}</h1>` : `<p>${fmt(s.tag, lang)}</p>`) : '';
+  const trail = trailHtml(c, parents, last);
   const ctas = (s.ctas || []).filter((b) => !(b.to.startsWith('@') && isHidden(b.to.slice(1)))).map((b) => `<a class="pill ${b.style === 'ghost' ? 'pill--ghost' : b.style === 'violet' ? 'pill--violet' : ''}" href="${b.to.startsWith('@') ? url(b.to.slice(1), lang) : b.to}"${/^https?:/.test(b.to) ? ' target="_blank" rel="noopener"' : ''}>${esc(b.label)}</a>`).join('');
   const brief = s.brief ? `<aside class="brief rv" aria-labelledby="brief-t" style="--d:.15s"><h2 id="brief-t">${esc(T.brief)}</h2><ul>${s.brief.map((i) => `<li>${ico('check')}<span>${i.b ? `<strong>${fmt(i.b, lang)}</strong> ` : ''}${fmtT(i.t, lang)}</span></li>`).join('')}</ul><p class="upd">${esc(T.updated)} <time datetime="${page.updated || BUILD_DATE}">${new Date(page.updated || BUILD_DATE).toLocaleDateString(lang === 'fr' ? 'fr-CA' : 'en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time></p></aside>` : '';
   return `<section class="phero${s.compact ? ' phero--compact' : ''}" aria-labelledby="h1"><div class="wrap">
-  ${c.crumbs.length > 2 ? `<nav aria-label="${esc(T.breadcrumb)}"><ol class="crumbs">${crumbs}</ol></nav>` : ''}
   <div class="phero__grid">
     <div>
-      ${s.tagH1 && s.tag ? `<h1 id="h1" class="eyebrow-tag">${fmt(s.tag, lang)}</h1>
-      <h2 class="display phero__title">${fmt(s.h1, lang)}</h2>` : `${s.tag ? `<p class="eyebrow-tag">${fmt(s.tag, lang)}</p>` : ''}
-      <h1 id="h1" class="display phero__title">${fmt(s.h1, lang)}</h1>`}
+      ${trail}
+      ${s.tagH1 && s.tag && !isArticle ? `<h2 class="display phero__title">${fmt(s.h1, lang)}</h2>` : `<h1 id="h1" class="display phero__title">${fmt(s.h1, lang)}</h1>`}
       <p class="lead">${fmt(s.lead, lang)}</p>
       ${s.byline ? `<p class="byline">${esc(s.byline)}</p>` : ''}
       ${s.guarantee ? `<p class="guar" style="margin-bottom:1.6rem">${ico('shield')}${esc(s.guarantee)}</p><br>` : ''}
@@ -390,7 +411,7 @@ R['cd-gallery'] = (s, c) => `<section class="section"><div class="wrap">
   ${shots(s.shots)}
 </div></section>`;
 R['cd-hero'] = (s, c) => `<section class="section cd-hero" aria-labelledby="h1"><div class="wrap">
-  <div class="cd-hero__top${s.glance ? ' phero__grid' : ''}"><div><p class="eyebrow-tag">${fmt(s.tag, c.lang)}</p>
+  <div class="cd-hero__top${s.glance ? ' phero__grid' : ''}"><div>${trailHtml(c, c.crumbs.slice(1, -1), c.crumbs.length > 2 ? '' : `<p>${fmt(s.tag, c.lang)}</p>`)}
   <h1 id="h1" class="display phero__title">${fmt(s.h1, c.lang)}</h1>${s.cta ? `<div class="actions cd-hero__cta"><a class="pill" href="${url(s.cta.to || 'contact', c.lang)}">${fmt(s.cta.label, c.lang)}</a></div>` : ''}</div>
   ${s.glance ? `<aside class="brief cd-brief" aria-labelledby="brief-t"><h2 id="brief-t">${esc(c.T.brief)}</h2><ul>${s.glance.map((g) => `<li>${ico('check')}<span><strong>${esc(g.k)}${c.lang === 'fr' ? '&nbsp;:' : ':'}</strong> ${fmt(g.v, c.lang)}${g.more ? ` <a class="cd-more" href="#${g.more.to}" target="_self" aria-label="${esc(g.more.label)}">+${g.more.n}</a>` : ''}${g.note ? `<small class="cd-note">${esc(g.note)}</small>` : ''}</span></li>`).join('')}</ul></aside>` : ''}</div>
   <figure class="cd-hero__img">${img(s.img, s.alt, { lazy: false, sizes: '(min-width:1320px) 1224px, 100vw' })}</figure>
@@ -481,7 +502,7 @@ R['profile-hero'] = (s, c) => {
   <div class="wrap">
     <div class="phero__grid profile__grid">
       <div>
-      <p class="label">${esc(s.eyebrow)}</p>
+      ${trailHtml(c, c.crumbs.slice(1, c.activeTab ? -2 : -1), `<p>${esc(s.eyebrow)}</p>`)}
       <div class="portrait">${img('portfolio/portrait-charles-erick.jpg', s.portraitAlt, { lazy: false, fetchpriority: 'high', sizes: '220px' })}</div>
       <h1 id="h1">${esc(s.name)}</h1>
       <p class="profile__role">${fmt(s.role, lang)}</p>
@@ -581,8 +602,12 @@ R['cta-final'] = (s, c) => `<section class="section section--tight"><div class="
 </div></section>`;
 
 R['posts-list'] = (s, c) => {
-  const list = POSTS[c.lang].slice().sort((a, b) => b.date.localeCompare(a.date));
-  return `<section class="section"><div class="wrap"><div class="posts">${list.map((p, k) => `<article class="post-card rv" style="--d:${(k % 2) * .08}s"><span class="tag">${esc(p.tag)}</span><h3><a class="more" href="${url('post:' + p.key, c.lang)}" aria-label="${esc(p.title)}"></a>${esc(p.title)}</h3><p>${esc(p.description)}</p><div class="meta"><time datetime="${p.date}">${new Date(p.date).toLocaleDateString(c.lang === 'fr' ? 'fr-CA' : 'en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time><span>${esc(p.read)}</span></div></article>`).join('')}</div></div></section>`;
+  const all = RES[c.lang], list = c.activeTab ? all.filter((p) => p.cat === c.activeTab) : all;
+  const cats = (s.categories || []).filter((k) => all.some((p) => p.cat === k.key)); // a category with no item stays hidden
+  const filters = cats.length > 1 ? `<nav class="filters rv" aria-label="${esc(s.filterLabel)}"><a href="${url('actualites', c.lang)}"${c.activeTab ? '' : ' aria-current="page"'}>${esc(s.all)}</a>${cats.map((k) => `<a href="${catUrl(k, c.lang)}"${c.activeTab === k.key ? ' aria-current="page"' : ''}>${esc(k.label)}</a>`).join('')}</nav>` : '';
+  const cur = c.activeTab ? cats.find((k) => k.key === c.activeTab) : { h1: s.allTitle, lead: s.allLead };
+  const head = cur?.h1 ? `<div class="posts-head rv"><h2>${fmt(cur.h1, c.lang)}</h2>${cur.lead ? `<p>${fmt(cur.lead, c.lang)}</p>` : ''}</div>` : '';
+  return `<section class="section"><div class="wrap">${filters}${head}<div class="posts">${list.map((p, k) => `<article class="post-card rv" style="--d:${(k % 2) * .08}s"><span class="tag">${esc(p.tag)}</span><h3><a class="more" href="${p.href}" aria-label="${esc(p.title)}"></a>${esc(p.title)}</h3><p>${esc(p.description)}</p><div class="meta">${p.date ? `<time datetime="${p.date}">${new Date(p.date).toLocaleDateString(c.lang === 'fr' ? 'fr-CA' : 'en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time>` : ''}${p.read ? `<span>${esc(p.read)}</span>` : ''}</div></article>`).join('')}</div></div></section>`;
 };
 
 R.article = (s, c) => {
@@ -592,6 +617,9 @@ R.article = (s, c) => {
     if (b.h3) return `<h3>${fmt(b.h3, lang)}</h3>`;
     if (b.p) return `<p>${fmt(b.p, lang)}</p>`;
     if (b.ul) return `<ul>${b.ul.map((i) => `<li>${fmt(i, lang)}</li>`).join('')}</ul>`;
+    if (b.ol) return `<ol>${b.ol.map((i) => `<li>${fmt(i, lang)}</li>`).join('')}</ol>`;
+    if (b.check) return `<ul class="checklist">${b.check.map((i) => `<li>${fmt(i, lang)}</li>`).join('')}</ul>`;
+    if (b.table) return `<div class="table-scroll"><table><thead><tr>${b.table.head.map((h) => `<th scope="col">${fmt(h, lang)}</th>`).join('')}</tr></thead><tbody>${b.table.rows.map((r) => `<tr>${r.map((d, i) => i ? `<td>${fmt(d, lang)}</td>` : `<th scope="row">${fmt(d, lang)}</th>`).join('')}</tr>`).join('')}</tbody></table></div>`;
     return '';
   }).join('\n');
   return `<section class="section"><div class="wrap"><article class="article" itemscope itemtype="https://schema.org/BlogPosting">
@@ -729,7 +757,7 @@ function header(c) {
   const cur = (k, extra = []) => (key === k || extra.includes(key) ? ' aria-current="page"' : '');
   const main = [['home', 'home'], ['a-propos', 'a-propos'], ['realisations', 'realisations'], ['actualites', 'actualites'], ['contact', 'contact']]
       .filter(([k]) => !isHidden(k))
-    .map(([k, label]) => `<a href="${url(k, lang)}"${cur(k, k === 'a-propos' ? ['charles-erick', 'jean-francois'] : k === 'actualites' ? ['post'] : [])}>${esc(T.nav[label])}</a>`).join('');
+    .map(([k, label]) => `<a href="${url(k, lang)}"${cur(k, k === 'a-propos' ? ['charles-erick', 'jean-francois'] : k === 'actualites' ? ['post', ...CASE_KEYS] : [])}>${esc(T.nav[label])}</a>`).join('');
   const services = MAIN_SERVICE_KEYS.filter((k) => !isHidden(k)).map((k) => `<a href="${url(k, lang)}"${cur(k)}>${esc(T.nav[k])}<small>${esc(T.navSub[k])}</small></a>`).join('') + `<a class="drawer__all" href="${url('services', lang)}"${cur('services')}>${esc(T.navAll)} ${ico('arrow')}</a>`;
   return `<a class="skip" href="#main">${esc(T.skip)}</a>
 <header class="header" id="top">
@@ -825,8 +853,8 @@ function toMd(page, c) {
       case 'proof': L.push(...s.items.map((i) => `- **${i.n}** ${t(i.t)}`), ''); break;
       case 'people': L.push(`## ${t(s.h2)}`, '', ...s.items.map((p) => `- **${p.name}** (${p.role}) — ${t(p.text)}`), ''); break;
       case 'facts': L.push(`## ${t(s.h2)}`, '', ...s.items.map((i) => `- **${t(i.k)}**: ${t(i.v)}`), ''); break;
-      case 'article': L.push(...c.post.summary.map((i) => `- ${t(i)}`), '', ...c.post.body.flatMap((b) => b.h2 ? [`## ${t(b.h2)}`, ''] : b.h3 ? [`### ${t(b.h3)}`, ''] : b.p ? [t(b.p), ''] : b.ul ? [...b.ul.map((i) => `- ${t(i)}`), ''] : [])); break;
-      case 'posts-list': L.push(...POSTS[lang].map((p) => `- [${p.title}](${abs(url('post:' + p.key, lang))}) — ${p.description}`), ''); break;
+      case 'article': L.push(...c.post.summary.map((i) => `- ${t(i)}`), '', ...c.post.body.flatMap((b) => b.h2 ? [`## ${t(b.h2)}`, ''] : b.h3 ? [`### ${t(b.h3)}`, ''] : b.p ? [t(b.p), ''] : b.ul ? [...b.ul.map((i) => `- ${t(i)}`), ''] : b.ol ? [...b.ol.map((i, n) => `${n + 1}. ${t(i)}`), ''] : b.check ? [...b.check.map((i) => `- [ ] ${t(i)}`), ''] : b.table ? [`| ${b.table.head.map(t).join(' | ')} |`, `|${b.table.head.map(() => ' --- |').join('')}`, ...b.table.rows.map((r) => `| ${r.map(t).join(' | ')} |`), ''] : [])); break;
+      case 'posts-list': L.push(...RES[lang].filter((p) => !c.activeTab || p.cat === c.activeTab).map((p) => `- [${p.title}](${abs(p.href)}) — ${p.description}`), ''); break;
       case 'contact': L.push(t(s.lead), '', ...s.points.map((p) => `- ${t(p)}`), '', `${s.labels.phone}: ${CFG.phone}`, `${cityQc(lang)}, Canada · Vancouver, Canada`, ''); break;
       case 'profile-hero': L.push(t(s.role), '', t(s.lead), '', ...s.glance.map((g) => `- ${g.k}: ${g.v}`), ''); break;
       case 'cases': L.push(`## ${t(s.label)} — ${t(s.h2)}`, '', t(s.lead), '', ...s.items.flatMap((k) => [`### ${t(k.h3)}`, ...k.paras.map(t), ...k.nums.map((n) => `- **${n.n}** ${n.t}`), `${c.T.myRole}: ${t(k.role)}`, '']), ''); break;
@@ -868,10 +896,11 @@ function buildPage({ lang, key, page, post, tab }) {
 
   /* breadcrumbs */
   const crumbs = [{ name: T.nav.home, url: url('home', lang) }];
-  if (SERVICE_KEYS.includes(key) || key === 'cas-saas') crumbs.push({ name: T.nav.services, url: url('services', lang) }); // Home > Services > Service
-  if (['charles-erick', 'jean-francois'].includes(key)) crumbs.push({ name: T.nav['a-propos'], url: url('a-propos', lang) });
-  if (key === 'cas-saas') crumbs.push({ name: T.nav['design-produit'], url: url('design-produit', lang) });
-  if (key === 'post' || key === 'cas-pharmy') crumbs.push({ name: T.nav.actualites, url: url('actualites', lang) });
+  const resCrumbs = !isHidden('actualites') && (key === 'post' || CASE_KEYS.includes(key)); // Home > Blog > Type > Page (the address skips /blog/: /fr/conseils/…; the type links to the blog pre-filtered on it)
+  if (SERVICE_KEYS.includes(key) || (CASE_KEYS.includes(key) && !resCrumbs)) crumbs.push({ name: T.nav.services, url: url('services', lang) }); // Home > Services > Service
+  if (['charles-erick', 'jean-francois', 'cebg'].includes(key)) crumbs.push({ name: T.nav['a-propos'], url: url('a-propos', lang) });
+  if (key === 'cas-saas' && !resCrumbs) crumbs.push({ name: T.nav['design-produit'], url: url('design-produit', lang) });
+  if (key === 'post' || resCrumbs) { const cat = resCrumbs && RES_CATS[lang]?.find((k) => k.key === (key === 'post' ? post.category || 'insights' : 'case-studies')); crumbs.push({ name: T.nav.actualites, url: url('actualites', lang) }); if (cat) crumbs.push({ name: cat.label, url: catUrl(cat, lang) }); }
   if (key !== 'home') crumbs.push({ name: key === 'post' ? post.title : T.nav[key], url: tab ? url(key, lang) : selfUrl });
   if (tab) crumbs.push({ name: tab.label, url: selfUrl });
 
@@ -910,7 +939,7 @@ function buildPage({ lang, key, page, post, tab }) {
   }
   if (key === 'charles-erick' || key === 'jean-francois') webpage.mainEntity = { '@id': abs('/#' + key) };
   if (key === 'post') {
-    graph.push({ '@type': 'BlogPosting', '@id': canonical + '#article', headline: post.title, description: post.description, inLanguage: lang, datePublished: post.date, dateModified: post.modified || post.date, mainEntityOfPage: { '@id': pageId }, author: [{ '@id': abs('/#charles-erick') }, { '@id': abs('/#jean-francois') }], publisher: { '@id': abs('/#organization') }, image: abs(`/assets/img/og-card-${lang}.jpg`), keywords: post.keywords, wordCount: post.body.map((b) => b.h2 || b.h3 || b.p || (b.ul || []).join(' ')).join(' ').split(/\s+/).length });
+    graph.push({ '@type': 'BlogPosting', '@id': canonical + '#article', headline: post.title, description: post.description, inLanguage: lang, datePublished: post.date, dateModified: post.modified || post.date, mainEntityOfPage: { '@id': pageId }, author: [{ '@id': abs('/#charles-erick') }, { '@id': abs('/#jean-francois') }], publisher: { '@id': abs('/#organization') }, image: abs(`/assets/img/og-card-${lang}.jpg`), keywords: post.keywords, wordCount: post.body.map((b) => b.h2 || b.h3 || b.p || (b.ul || b.ol || b.check || []).join(' ') || (b.table ? [b.table.head, ...b.table.rows].flat().join(' ') : '')).join(' ').split(/\s+/).length });
   }
   if (page.article) graph.push({ '@type': 'Article', '@id': canonical + '#article', headline: plain(page.meta.h1), description: page.meta.description, inLanguage: lang, datePublished: page.published, dateModified: page.updated || BUILD_DATE, mainEntityOfPage: { '@id': pageId }, author: [{ '@id': abs('/#jean-francois') }], publisher: { '@id': abs('/#organization') }, image: abs(`/assets/img/og-card-${lang}.jpg`), about: ['UX/UI design', 'Conversion rate optimization (CRO)', 'B2B SaaS'], isPartOf: { '@id': pageId } });
   const bio = page.sections.find((s) => s.type === 'bio');
@@ -961,24 +990,41 @@ function build() {
   PAGES_OUT.length = 0;
 
   /* load content */
-  CURRENT_POST_SLUGS = {};
+  CURRENT_POST_SLUGS = {}; POST_CATS = {};
   for (const l of LANGS) {
     TR[l] = rd(path.join(SRC, 'content', l, '_site.json'));
     POSTS[l] = [];
     const dir = path.join(SRC, 'content', l, 'posts');
     if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.json'))) {
       const p = rd(path.join(dir, f)); POSTS[l].push(p);
-      (CURRENT_POST_SLUGS[p.key] ||= {})[l] = p.slug;
+      (CURRENT_POST_SLUGS[p.key] ||= {})[l] = p.slug; POST_CATS[p.key] = p.category || 'insights';
     }
   }
   const pages = {};
   for (const l of LANGS) for (const k of Object.keys(ROUTES)) pages[`${l}:${k}`] = rd(path.join(SRC, 'content', l, `${k}.json`));
+  for (const l of LANGS) RES_CATS[l] = pages[`${l}:actualites`].sections.find((s) => s.type === 'posts-list').categories || [];
+  for (const l of LANGS) {
+    RES[l] = [
+      ...POSTS[l].map((p) => ({ cat: p.category || 'insights', tag: p.tag, title: p.title, description: p.description, date: p.date, read: p.read, href: url('post:' + p.key, l) })),
+      ...CASE_KEYS.map((k) => { const pg = pages[`${l}:${k}`]; return { cat: 'case-studies', tag: pg.sections[0].tag, title: pg.meta.h1, description: pg.meta.description, date: pg.published, href: url(k, l) }; }),
+    ].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+  }
   PROFILE_FIRST = Object.fromEntries(LANGS.map((l) => [l, pages[`${l}:cebg`].sections.find((s) => s.type === 'role-nav')?.items[0]?.path]));
 
   for (const l of LANGS) {
     for (const k of Object.keys(ROUTES)) {
       const page = pages[`${l}:${k}`], nav = page.sections.find((s) => s.type === 'role-nav');
-      if (!nav) { buildPage({ lang: l, key: k, page }); continue; }
+      if (!nav) {
+        buildPage({ lang: l, key: k, page });
+        // blog: one indexable page per category that has items (FAQ stays on the main page)
+        if (k === 'actualites') RES_CATS[l].forEach((cat, i) => {
+          if (!RES[l].some((p) => p.cat === cat.key)) return;
+          const urls = Object.fromEntries(LANGS.map((x) => [x, catUrl(RES_CATS[x][i], x)]));
+          const sections = page.sections.filter((s) => s.type !== 'faq'); // same hero on every filter page: only the list and its subtitle change
+          buildPage({ lang: l, key: k, page: { ...page, meta: { ...page.meta, title: cat.title, description: cat.description, h1: cat.label }, sections, faq: [] }, tab: { id: cat.key, index: i, label: cat.label, urls } });
+        });
+        continue;
+      }
       nav.items.forEach((item, i) => {
         // keep shared sections (profile, testimonials, contact); show only this tab's role; FAQ lives on the first tab only
         const sections = page.sections.filter((s) => (!sectionRole(s) || sectionRole(s) === item.id) && (i === 0 || s.type !== 'faq'));
@@ -993,6 +1039,14 @@ function build() {
 <body><script>location.replace(${JSON.stringify(first)} + location.hash)</script><p><a href="${first}">${esc(nav.items[0].label)}</a></p></body></html>
 `);
     }
+    for (const m of MOVED) {
+      if (!m.post && RES_CATS[l].some((cat) => cat.slug === m.from[l] && RES[l].some((p) => p.cat === cat.key))) continue;
+      const to = m.post ? url('post:' + m.post, l) : url(m.to, l);
+      write(path.join(DIST, l, m.from[l], m.post ? CURRENT_POST_SLUGS[m.post][l] : '', 'index.html'), `<!doctype html>
+<html lang="${l}"><head><meta charset="utf-8"><meta name="robots" content="noindex"><link rel="canonical" href="${abs(to)}"><meta http-equiv="refresh" content="0; url=${to}"><title>Viesigners</title></head>
+<body><script>location.replace(${JSON.stringify(to)} + location.hash)</script><p><a href="${to}">${to}</a></p></body></html>
+`);
+    }
     for (const p of POSTS[l]) {
       const T = TR[l];
       buildPage({
@@ -1000,7 +1054,7 @@ function build() {
         page: {
           meta: { title: p.metaTitle || `${p.title} | Viesigners`, description: p.description, h1: p.title }, updated: p.modified || p.date, published: p.date, faq: p.faq, speakable: true,
           sections: [
-            { type: 'page-hero', tag: p.tag, h1: p.title, lead: p.description, ctas: [] },
+            { type: 'page-hero', tag: p.tag, h1: p.h1 || p.title, /* h1 may carry *accent* markup; title stays plain for meta, cards and schema */ lead: p.description, ctas: [] },
             { type: 'article' },
             { type: 'faq', h2: T.faqTitle },
             { type: 'cta-final', ...T.postCta },

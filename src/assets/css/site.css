@@ -174,7 +174,7 @@ em.acc, .acc {
 @media (max-width: 639.98px) { .hmenu__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; } .hmenu, .hphone { width: 3rem; padding-inline: 0; justify-content: center; } .hphone svg { width: 1.4rem; height: 1.4rem; } }
 
 .drawer { position: fixed; inset: 0; z-index: var(--z-menu); background: var(--charcoal); padding: 6.5rem 0 2rem; overflow-y: auto; transform: translateY(-100%); visibility: hidden; transition: transform .6s var(--ease), visibility 0s .6s; }
-.drawer::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(55% 60% at 90% 100%, rgba(255, 72, 139, .42), rgba(255, 72, 139, 0) 70%), radial-gradient(40% 45% at 100% 6%, rgba(227, 58, 219, .3), rgba(227, 58, 219, 0) 70%), radial-gradient(35% 45% at 0% 100%, rgba(255, 107, 156, .2), rgba(255, 107, 156, 0) 70%), radial-gradient(30% 40% at 50% 0%, rgba(190, 70, 235, .18), rgba(190, 70, 235, 0) 70%); }
+.drawer::before { content: ""; position: fixed; inset: 0; pointer-events: none; background: radial-gradient(55% 60% at 90% 100%, rgba(255, 72, 139, .42), rgba(255, 72, 139, 0) 70%), radial-gradient(40% 45% at 100% 6%, rgba(227, 58, 219, .3), rgba(227, 58, 219, 0) 70%), radial-gradient(35% 45% at 0% 100%, rgba(255, 107, 156, .2), rgba(255, 107, 156, 0) 70%), radial-gradient(30% 40% at 50% 0%, rgba(190, 70, 235, .18), rgba(190, 70, 235, 0) 70%); }
 .drawer.no-anim { transition: none !important; }
 /* first paint right after a language switch: show the menu already open (no flash of the page behind it) */
 .menu-restore body { overflow: hidden; }
@@ -188,7 +188,7 @@ em.acc, .acc {
 .menu-restore .hmenu__i i:nth-child(2) { opacity: 0; }
 .menu-restore .hmenu__i i:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 .drawer.is-open { transform: none; visibility: visible; transition: transform .6s var(--ease); }
-.drawer::after { content: ""; position: absolute; inset: 0; pointer-events: none; background-image: radial-gradient(rgba(219, 229, 237, .55) 1.2px, transparent 1.7px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(60% 65% at 92% 100%, #000, transparent 76%); mask-image: radial-gradient(60% 65% at 92% 100%, #000, transparent 76%); opacity: .5; }
+.drawer::after { content: ""; position: fixed; inset: 0; pointer-events: none; background-image: radial-gradient(rgba(219, 229, 237, .55) 1.2px, transparent 1.7px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(60% 65% at 92% 100%, #000, transparent 76%); mask-image: radial-gradient(60% 65% at 92% 100%, #000, transparent 76%); opacity: .5; }
 .drawer__in { z-index: 1; position: relative; display: grid; gap: 2.5rem 4rem; }
 .drawer__main { display: grid; gap: .1rem; align-content: start; }
 .drawer__main a { font-family: var(--f-display); font-weight: 300; letter-spacing: -.03em; font-size: clamp(2.2rem, 1rem + 4.4vw, 4.2rem); line-height: 1.12; padding: .1rem 0; transition: color .25s, padding-left .4s var(--ease); }
@@ -245,10 +245,13 @@ em.acc, .acc {
 .phero .wrap > .phero__grid:first-child { margin-top: 0; }
 .phero .lead { margin-bottom: 2rem; }
 .phero__actions { display: flex; flex-wrap: wrap; gap: .8rem; align-items: center; }
-.crumbs { display: flex; flex-wrap: wrap; gap: .4rem .6rem; font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: var(--text-3); margin-bottom: 1.6rem; }
-.crumbs li + li::before { content: "/"; margin-right: .6rem; opacity: .5; }
-.crumbs a:hover { color: #fff; }
-.crumbs [aria-current] { color: var(--text-2); }
+/* eyebrow + breadcrumb in one line: • Services / Copywriting de conversion */
+.trail { flex-wrap: wrap; row-gap: .4rem; }
+.trail ol { display: flex; flex-wrap: wrap; gap: .4rem .6rem; }
+.trail li + li::before, .trail nav + *::before { content: "/"; margin-right: .6rem; opacity: .5; }
+.trail a { color: var(--text-3); transition: color .2s; }
+.trail a:hover { color: var(--text); }
+.trail h1, .trail p { font: inherit; letter-spacing: inherit; text-transform: inherit; color: inherit; margin: 0; }
 .brief { border-radius: var(--r-lg); padding: clamp(1.4rem, 1rem + 1.2vw, 2.2rem); background: rgba(23, 28, 46, .7); backdrop-filter: blur(14px); box-shadow: 0 0 0 1px var(--line-2); }
 .brief h2 { font-family: var(--f-mono); font-size: .75rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; line-height: 1.2; color: #fff; margin-bottom: 1.2rem; display: flex; align-items: center; gap: .6rem; }
 .brief h2::before { content: ""; width: .42rem; height: .42rem; border-radius: 50%; background: var(--pink); }
@@ -589,6 +592,13 @@ em.acc, .acc {
 @media (min-width: 760px) { .facts div { grid-template-columns: 14rem 1fr; } }
 
 /* ---------- blog ---------- */
+.filters { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: clamp(1.2rem, .8rem + 1vw, 2rem); }
+.filters a { padding: .55rem 1rem; border-radius: 999px; border: 1px solid var(--line-2); font-family: var(--f-mono); font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; color: var(--text-2); transition: background .25s, color .25s, border-color .25s; }
+.filters a:hover { color: var(--text); border-color: var(--text-3); }
+.filters a[aria-current="page"] { background: var(--text); border-color: var(--text); color: var(--bg); }
+.posts-head { margin-bottom: clamp(1.2rem, .8rem + 1vw, 2rem); max-width: 46rem; }
+.posts-head h2 { font-size: clamp(1.8rem, 1.3rem + 1.6vw, 2.6rem); font-weight: 300; letter-spacing: -.028em; line-height: 1.1; }
+.posts-head p { margin-top: .7rem; color: var(--text-2); }
 .posts { display: grid; gap: clamp(.8rem, .5rem + 1vw, 1.25rem); }
 .post-card { position: relative; display: flex; flex-direction: column; gap: 1rem; padding: clamp(1.5rem, 1rem + 1.4vw, 2.4rem); border-radius: var(--r-lg); background: var(--card); transition: background .3s, transform .5s var(--ease); min-height: 17rem; }
 .post-card:hover { background: var(--card-2); transform: translateY(-3px); }
@@ -607,6 +617,16 @@ em.acc, .acc {
 .article ul { list-style: none; margin-top: 1.1em; display: grid; gap: .6rem; }
 .article ul li { padding-left: 1.6rem; position: relative; }
 .article ul li::before { content: ""; position: absolute; left: 0; top: .8em; width: .45rem; height: .45rem; border-radius: 50%; background: var(--pink); }
+.article ol { margin-top: 1.1em; padding-left: 1.6rem; display: grid; gap: .6rem; }
+.article ol li::marker { color: var(--pink); font-weight: 600; }
+.article .checklist li { padding-left: 1.9rem; }
+.article .checklist li::before { top: .35em; width: 1rem; height: 1rem; border-radius: .25rem; background: none; border: 2px solid var(--pink); }
+.article .table-scroll { overflow-x: auto; margin-top: 1.4em; }
+.article table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.article th, .article td { text-align: left; vertical-align: top; padding: .7rem .9rem; border-bottom: 1px solid var(--line); color: var(--text-2); }
+.article thead th { color: var(--text); font-family: var(--f-mono); font-size: .72rem; letter-spacing: .03em; text-transform: uppercase; }
+.article tbody th { color: var(--text); font-weight: 600; }
+.article td:nth-child(2) { white-space: nowrap; }
 .article strong { color: var(--text); font-weight: 600; }
 .article a { color: var(--accent-text); border-bottom: 1px solid currentColor; }
 .keypoints { margin-block: 2rem; padding: 1.6rem 1.8rem; border-radius: var(--r-lg); background: var(--card); }
@@ -778,7 +798,7 @@ em.acc, .acc {
 html { scroll-padding-top: 7rem; }
 .profile .portrait { width: clamp(120px, 15vw, 180px); aspect-ratio: 1; border-radius: var(--r-xl); overflow: hidden; margin-bottom: clamp(1.6rem, 1rem + 2vw, 2.6rem); box-shadow: 0 0 0 1px var(--line-2), 0 30px 80px -30px rgba(255, 72, 139, .5); }
 .profile .portrait img { width: 100%; height: 100%; object-fit: cover; }
-.profile__grid > div > .label { display: flex; margin-bottom: clamp(1rem, .7rem + 1vw, 1.6rem); }
+.profile__grid > div > .trail { display: flex; margin-bottom: clamp(1rem, .7rem + 1vw, 1.6rem); }
 .profile__grid { align-items: end; } /* key facts sit in the right-hand panel, like the "In short" panel of the other pages */
 .profile .advised { margin-top: clamp(2.4rem, 1.6rem + 3vw, 4.2rem); }
 .profile__role { margin-top: clamp(.8rem, .5rem + 1vw, 1.4rem); max-width: 30ch; font-family: var(--f-display); font-size: clamp(1.5rem, 1rem + 1.7vw, 2.4rem); font-weight: 300; letter-spacing: -0.02em; line-height: 1.15; text-wrap: balance; }

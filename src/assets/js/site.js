@@ -2,6 +2,7 @@
 (() => {
   const d = document, root = d.documentElement;
   root.classList.add('js');
+  d.querySelectorAll('[data-year]').forEach((e) => { e.textContent = new Date().getFullYear(); }); // {year} in content stays current between builds
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* remember the visitor's language so "/" sends them back to it next time */

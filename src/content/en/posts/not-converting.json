@@ -1,0 +1,135 @@
+{
+  "key": "not-converting", "slug": "website-not-converting-visitors", "date": "2026-11-03", "modified": "2026-11-03",
+  "category": "insights", "tag": "CRO", "read": "11 min read",
+  "h1": "Website Not Converting Visitors? *Here's What's Wrong*",
+  "title": "Website Not Converting Visitors? Here's What's Wrong",
+  "metaTitle": "Website Not Converting Visitors? 10 Reasons Why | Viesigners",
+  "description": "Website not converting visitors? Find the 10 most common messaging, UX and trust problems, plus a free checklist to audit your site.",
+  "keywords": ["website not converting", "conversion rate optimization", "CRO", "website conversion rate", "conversion checklist"],
+  "summary": [
+    "When traffic doesn't turn into leads, the cause is usually **friction**: a message that doesn't land, a path that's too hard, or too little proof.",
+    "The 10 most common problems fall into three groups: **messaging, experience and trust**.",
+    "Use the checklist below to audit your most-visited page in an hour, then fix the gaps closest to the money first."
+  ],
+  "body": [
+    { "p": "People are landing on your site. Your analytics prove it. And yet the phone stays quiet." },
+    { "p": "When a website isn't converting visitors, the cause is rarely the traffic or the quality of your offer. It's friction: a message that doesn't land, a path that's harder than it should be, or too little proof to justify the risk. And when that happens, the money stays in your customers' pockets." },
+    { "p": "After advising more than 600 businesses, from startups to brands like Disney and Dell, we keep finding the same patterns. Here are the 10 most common ones, followed by a checklist you can use to audit your own site this week." },
+
+    { "h2": "First, confirm you have a conversion problem" },
+    { "p": "A conversion rate only means something next to the right benchmark, and many of the numbers online are the wrong one. The 2.35% \"average website conversion rate\" you'll see everywhere actually [comes from a 2014 study of Google Ads accounts](https://www.digitalapplied.com/blog/conversion-rate-benchmarks-2026-industry-channel), not websites." },
+    { "p": "These figures are a better starting point:" },
+    { "table": {
+      "head": ["Benchmark", "Rate", "What it counts"],
+      "rows": [
+        ["All websites", "2.3%", "Visits with a purchase or form submission (Contentsquare, Q4 2025)"],
+        ["Desktop vs mobile", "3.4% vs 2.0%", "Same measure, split by device"],
+        ["Returning vs new visitors", "2.9% vs 1.7%", "Same measure, split by visitor type"],
+        ["Dedicated landing pages", "6.6%", "Conversions per visitor, median (Unbounce, 2024)"],
+        ["SaaS landing pages", "3.8%", "Conversions per visitor, median (Unbounce, 2024)"]
+      ]
+    } },
+    { "p": "Don't stop at your blended rate. Split it by traffic source and device before you draw any conclusions. In the same dataset, paid search visits converted at 2.8% and organic social at 0.7%, so a change in your traffic mix can look like a broken website." },
+    { "p": "If you're below the benchmark for your own traffic, or you simply know each lead is worth more than you're getting, keep reading." },
+
+    { "h2": "Messaging problems: visitors don't get it" },
+    { "p": "Messaging is usually the cheapest thing to fix and the most expensive thing to ignore. A visitor who doesn't understand your offer won't reach your beautiful design or your clever funnel." },
+    { "h3": "1. Visitors can't tell what you do" },
+    { "p": "Nielsen Norman Group found that users [typically give a page about 10 seconds](https://www.nngroup.com/articles/powers-of-10-time-scales-in-ux/) before deciding whether it's worth their time. If your hero section says \"Innovative solutions for your business,\" you've spent those seconds on nothing." },
+    { "p": "**The fix:** Your headline should answer three questions: what do you offer, who is it for, and what result do they get? \"Roof replacements in Quebec City, with a firm quote in 48 hours\" beats any slogan." },
+    { "h3": "2. Your site talks about you, not them" },
+    { "p": "Count how many sentences on your homepage start with \"we\" or \"our.\" Most brochure sites read like a company biography, but visitors arrive with a problem and want to know if you solve it." },
+    { "p": "**The fix:** Rewrite your first screen around the customer's situation. Move your history and values lower, or to the About page." },
+    { "h3": "3. The page doesn't match the promise that brought them there" },
+    { "p": "Someone clicks an ad for \"emergency plumbing\" and lands on a generic homepage. Now they have to search for the thing they already told you they wanted, and many won't bother." },
+    { "p": "**The fix:** Match each major ad, email or search intent to a page that repeats the same promise in the same words. High-intent campaigns usually deserve a [dedicated landing page](@landing-pages)." },
+    { "h3": "4. You describe features instead of value" },
+    { "p": "\"Cloud-based platform with 40+ integrations\" tells people what it is. It doesn't tell them why they should care. This one hits SaaS companies especially hard, because the team is so close to the product." },
+    { "p": "**The fix:** After every feature, ask \"so what?\" until you reach a business outcome. Then lead with the outcome and use the feature as proof." },
+
+    { "h2": "UX problems: visitors get it, but it's hard to act" },
+    { "p": "A good experience flows like a water slide. Every extra decision, delay or dead end is a place where people get off." },
+    { "h3": "5. There's no obvious next step" },
+    { "p": "A page with \"Learn more,\" \"Get a demo,\" \"Newsletter\" and \"Contact us\" all competing for attention forces visitors to choose. Many will choose nothing." },
+    { "p": "**The fix:** Give each page one primary action, and make it the most visible element. Replace vague labels with what happens next, like \"Get my free quote.\"" },
+    { "h3": "6. Your navigation mirrors your org chart" },
+    { "p": "Menus built around how your company is structured make sense to you and almost nobody else. Visitors think in terms of their problem, not your departments." },
+    { "p": "**The fix:** Organize pages around what your ideal customers are trying to do. Use their words, keep the main menu short, and make sure key pages are one click from anywhere." },
+    { "h3": "7. The site is slow or clumsy on a phone" },
+    { "p": "Mobile made up 69.9% of traffic in [Contentsquare's benchmark](https://www.digitalapplied.com/blog/conversion-rate-benchmarks-2026-industry-channel), yet many sites are still reviewed on a big desktop monitor. Google's 2017 research found [53% of mobile visitors leave a page that takes more than three seconds to load](https://www.ampproject.org/latest/blog/new-industry-benchmarks-for-mobile-page-speed/). The exact figure has aged, but the lesson hasn't." },
+    { "p": "**The fix:** Test your key pages on your own phone, on cellular data. Compress images, remove unused scripts and pop-ups, and make sure buttons are easy to tap." },
+    { "h3": "8. Your forms ask for too much, too soon" },
+    { "p": "Every field is a small request. Asking for a budget, company size and phone number before you've earned any trust is like proposing on a first date. Even e-commerce has this problem: [Baymard's benchmark](https://www.digitalapplied.com/blog/conversion-rate-benchmarks-2026-industry-channel) puts the average checkout at 11.3 fields, when most sites only need 8." },
+    { "p": "**The fix:** Remove any field you don't need for the very next step. Say what happens after people submit, and how quickly you'll respond." },
+
+    { "h2": "Trust problems: visitors get it, but don't believe it" },
+    { "p": "Your visitors are taking a risk on a company they may have discovered five minutes ago. Trust signals are how you lower that risk, and they only work if people see them before you ask for something." },
+    { "h3": "9. Your proof is generic, or hidden" },
+    { "p": "A testimonial saying \"Great service!\" from \"John D.\" proves very little. Neither does a logo wall buried in the footer. Specific results from real, named people do the heavy lifting." },
+    { "p": "**The fix:** Put named testimonials with concrete outcomes right beside your calls to action. Show the person's name, role, company and, ideally, a photo." },
+    { "h3": "10. You leave the risky questions unanswered" },
+    { "p": "What does it cost? How long does it take? What if it doesn't work? Who will I actually be dealing with? When a site dodges these questions, visitors assume the worst or go find a competitor who answers them." },
+    { "p": "**The fix:** Address objections directly with a clear process, a price range or starting point, your guarantee and real photos of your team. A focused FAQ near the decision point helps too." },
+
+    { "h2": "The website conversion checklist: audit your site in an hour" },
+    { "p": "This checklist is built from the patterns we've identified across 600+ businesses. Open your most-visited page on your phone and be honest with each item. If it would embarrass you in front of a customer, leave it unchecked." },
+    { "h3": "Message" },
+    { "check": [
+      "A stranger can say what we do, and for whom, after 5 seconds on the page",
+      "Our headline states a concrete result, not a slogan",
+      "The first screen talks about the customer's problem more than our company",
+      "Each ad and key search leads to a page that repeats the same promise",
+      "Features are always tied to a business outcome",
+      "Our copy uses the words customers actually use"
+    ] },
+    { "h3": "Experience" },
+    { "check": [
+      "Each page has one primary action, visible without scrolling",
+      "Buttons say what happens next",
+      "The menu is organized around customer needs, not our org chart",
+      "Key pages load in under three seconds on a phone, on cellular data",
+      "Text is readable and buttons are easy to tap on mobile",
+      "Forms only ask for what we need for the next step",
+      "Visitors know what happens after they submit"
+    ] },
+    { "h3": "Trust" },
+    { "check": [
+      "Named testimonials with specific results appear near our calls to action",
+      "Client logos, awards or certifications are visible before the first ask",
+      "Our site shows the real people behind the business",
+      "Visitors can find our process, timeline and a price indication",
+      "We address the main objection, ideally with a guarantee",
+      "Our contact details are easy to find, and the content is up to date"
+    ] },
+    { "h3": "Measurement" },
+    { "check": [
+      "Form submissions, calls and purchases are tracked as conversions",
+      "We review results by traffic source and device, not just as one blended number"
+    ] },
+    { "p": "**How to read your results:** Count the unchecked boxes in each group, then start with the group that has the most. If it's a tie, work in this order: measurement, message, experience, trust. There's no point in polishing a button if nobody understands the offer, and you can't prove what worked without tracking." },
+
+    { "h2": "What to fix first (hint: not everything)" },
+    { "p": "Don't start with a full redesign. Fix the gaps that sit closest to the money, then measure the effect before moving on." },
+    { "ol": [
+      "**Make sure your tracking works.** Without it, every decision is a guess.",
+      "**Find the biggest leak.** Look for pages with plenty of traffic and few conversions, especially on mobile.",
+      "**Fix the message on those pages.** Start with the headline, first screen and call to action.",
+      "**Remove friction.** Simplify the path, speed up the page and shorten the form.",
+      "**Add proof where the decision happens.** Move your best evidence beside the ask.",
+      "**Measure, then repeat.** Compare the same traffic sources and devices before and after each change."
+    ] },
+    { "p": "Expect some of your ideas to be wrong. Across [173,000 experiments run on Optimizely](https://www.digitalapplied.com/blog/conversion-rate-benchmarks-2026-industry-channel), only 12% produced a statistically significant improvement on their main metric. That's why we form a hypothesis, test it and let the data decide, rather than rely on opinions in a meeting room." },
+    { "p": "Don't have enough traffic for A/B testing? Watch five people from your target market try to use your site and ask them to think out loud. You'll learn plenty." },
+
+    { "h2": "When the problem goes deeper than a few tweaks" },
+    { "p": "Sometimes a checklist is enough. Other times, the unchecked boxes point to a site that was built as a brochure and never designed to sell." },
+    { "p": "That's the work we do at Viesigners. We [build websites](@sites-web) as business assets, with a structure that follows your customers' intentions, persuasive copy, a credible design and fast mobile pages, with conversion tracking in place at launch. Our optimized pages and sites have reached up to 5× their initial performance, and Pharmy saw 48% more conversions after we optimized its clinical trial search platform." },
+    { "p": "If you're a service business, SaaS company or app maker that wants results rather than a pretty website, [let's talk](@contact). We'll help you find where your site can gain clarity and conversions." }
+  ],
+  "faq": [
+    { "q": "Why am I getting website traffic but no sales?", "a": ["The most common causes are a confusing message, friction in the customer journey and too little proof. Poorly targeted traffic can also be the issue, so check your results by source before changing the site."] },
+    { "q": "What is a good website conversion rate?", "a": ["It depends on your industry, traffic source and what counts as a conversion. As a reference point, Contentsquare measured 2.3% of visits converting across all industries, and Unbounce found a 6.6% median for landing pages. Your best benchmark is your own rate, improving over time."] },
+    { "q": "Do I need a new website to improve conversions?", "a": ["Not always. Clearer messaging, a stronger call to action and better-placed proof can often be tested on your current site. A rebuild makes more sense when the structure, technology or mobile experience keeps holding those fixes back."] },
+    { "q": "What's the difference between a website and a landing page?", "a": ["A website presents your whole business and answers many intentions. A landing page is a single page designed for one action, like requesting a quote or booking a call. They work best together."] }
+  ]
+}

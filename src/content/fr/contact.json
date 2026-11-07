@@ -7,7 +7,7 @@
  "sections": [
   {
    "type": "page-hero",
-   "tag": "Parlons-nous!",
+   "tag": "Contact", "tagH1": true,
    "h1": "Voyons comment faire *croître ton entreprise*",
    "lead": "Décrivez-nous votre situation en quelques lignes. Nous revenons vers vous avec une réponse claire sur la façon dont nous pouvons vous aider — ou sur le fait que ce n'est pas le bon moment.",
    "ctas": []
