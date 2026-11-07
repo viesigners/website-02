@@ -91,7 +91,8 @@ const CASE_KEYS = ['cas-saas', 'cas-pharmy']; // rich case-study pages (casestud
 const MOVED = [
   { from: { fr: 'design-de-produit/etude-de-cas-saas-b2b-ia', en: 'product-design/b2b-ai-saas-case-study' }, to: 'cas-saas' },
   { from: { fr: 'actualites', en: 'news' }, to: 'actualites' },
-  ...['friction', 'geo', 'landing'].map((k) => ({ from: { fr: 'actualites', en: 'news' }, post: k })), // + the post's own slug
+  ...['geo', 'landing'].map((k) => ({ from: { fr: 'actualites', en: 'news' }, post: k })), // + the post's own slug
+  { from: { fr: 'actualites/pourquoi-visiteurs-repartent', en: 'news/why-visitors-leave' }, to: 'actualites' }, // removed article: its old address lands on the blog
 ];
 const RES = { fr: [], en: [] };              // blog cards (posts + case studies), filled at load
 let RES_CATS = {};                           // lang -> categories from actualites.json
