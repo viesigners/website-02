@@ -641,6 +641,7 @@ em.acc, .acc {
 .article .callout { display: flex; gap: 1rem; align-items: flex-start; margin-block: 2rem; padding: 1.4rem 1.6rem; border-radius: var(--r-lg); background: var(--card); }
 .article .callout p { margin: 0; color: var(--text); }
 .callout__icon { font-size: 1.5rem; line-height: 1.4; }
+.article .callout__ico { flex: none; margin-bottom: 0; }
 .article .figure { margin: 2rem 0; }
 .article .figure img, .article .compare img { width: 100%; height: auto; border-radius: var(--r-md); }
 .article .figure--sm { max-width: 20rem; }
