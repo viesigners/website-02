@@ -1,0 +1,419 @@
+{
+ "key": "pme-pages-conversion",
+ "slug": "pme-quebecoises-page-de-conversion",
+ "date": "2026-11-08",
+ "modified": "2026-11-08",
+ "category": "case-studies",
+ "author": "charles-erick",
+ "tag": "Étude de cas · PME",
+ "read": "11 min de lecture",
+ "h1": "Comment les PME québécoises obtiennent *2 à 5 fois plus de clients* avec une simple page web de conversion",
+ "title": "Comment les PME québécoises obtiennent 2 à 5 fois plus de clients avec une simple page web de conversion",
+ "metaTitle": "Comment les PME québécoises obtiennent 2 à 5 fois plus de clients | Viesigners",
+ "lead": "Sans augmenter leur budget publicitaire, en suivant une nouvelle formule au succès garanti",
+ "description": "Sans augmenter leur budget publicitaire, en suivant une nouvelle formule au succès garanti.",
+ "keywords": [
+  "page de conversion",
+  "landing page",
+  "PME québécoises",
+  "taux de conversion",
+  "Google Ads"
+ ],
+ "body": [
+  {
+   "img": "work/pme-couverture.jpg",
+   "alt": "Pièce en rénovation avec un escabeau et des pots de peinture"
+  },
+  {
+   "callout": "**Contrairement aux pratiques courantes en marketing web, les résultats que je présente dans cette étude de cas ne sont PAS atypiques. Ils correspondent à des résultats ORDINAIRES, obtenus avec l’approche décrite, pour des entreprises dont le service est apprécié par leurs clients.**",
+   "icon": "💡"
+  },
+  {
+   "h2": "Attention : Lisez ceci en premier!"
+  },
+  {
+   "p": "Télécharger ce document pourrait être la décision la plus intelligente que vous ayez prise depuis longtemps."
+  },
+  {
+   "p": "Toutes les stratégies qui y sont mentionnées fonctionnent et ont démontré leur efficacité semaines après semaines dans des entreprises de service de toutes sortes. Les principes que j’y révèle ont déjà généré des tonnes de clients et de revenus pour moi-même ainsi que pour mes clients. Ils ont été le multiplicateur de revenu de chefs d’entreprise, comme vous."
+  },
+  {
+   "p": "Ce que vous découvrirez ici est un système ultra performant pour 4 raisons fondamentales :"
+  },
+  {
+   "p": "**1. Il est rapide**"
+  },
+  {
+   "p": "En quelques semaines, votre nouvelle page peut être mise en place et commencer à rapporter immédiatement et de manière mesurable."
+  },
+  {
+   "p": "**2. Il est peu coûteux**"
+  },
+  {
+   "p": "L’investissement pour le mettre en place est généralement remboursé en quelques semaines seulement, tout en conservant le même budget de publicité."
+  },
+  {
+   "p": "**3. Il perdure dans le temps**"
+  },
+  {
+   "p": "Ce système ne s’appuie pas sur des tendances, des modes ou des _hacks_. Il est basé sur des principes qui marchent depuis des décennies et qui continueront à fonctionner encore longtemps."
+  },
+  {
+   "p": "**4. Il grandit avec votre entreprise**"
+  },
+  {
+   "p": "Des stratégies de plus en plus poussées et performantes peuvent s’indexer à votre page de conversion, à travers le temps, pour soutenir votre croissance. Ou bien, vous pouvez tout simplement continuer à obtenir vos clients de manière régulière sans rien changer. Le choix est à vous."
+  },
+  {
+   "p": "Les principes de base ne sont pas le fruit du hasard. Ils découlent de mon expérience des 15 dernières années, à appliquer les pratiques clés d’expérience utilisateur et d’optimisation de la conversion à plus de 300 projets numériques, dans tous les secteurs possibles et imaginables (B2B, B2C, B2B2C, E-commerce, E-learning, Culturel, Gouvernemental, Startups, PME, Corporations internationales, _name it_!). J’ai prodigué des conseils similaires à des entreprises comme DELL, autant qu’à des startups Américaines et petites PME Québécoises."
+  },
+  {
+   "p": "Et ce document n’est que la pointe l’iceberg des possibilités qu’une page Web spécialement conçue pour transformer vos visiteurs en clients peut vous apporter."
+  },
+  {
+   "p": "Vous êtes prêt? Allons-y!"
+  },
+  {
+   "h2": "Le matin où tout a changé"
+  },
+  {
+   "p": "C’était un lundi matin, 8h15. J’ouvrais mon ordinateur, café à la main, et je me rappelle avoir pensé que cette semaine serait importante pour les deux entreprises avec lesquelles je commençais à collaborer, mais je n’avais aucune idée à quel point."
+  },
+  {
+   "img": "work/pme-charles-erick-cafe.jpg",
+   "alt": "Charles-Erick BG, souriant, une tasse de café à la main",
+   "size": "sm"
+  },
+  {
+   "p": "Ces deux PME — une entreprise familiale d’installation de gouttières et un couple à la tête d’une compagnie d’installation de toitures métalliques — investissaient déjà dans de la publicité Google Ads. Chaque clic coûtait cher. Pourtant, trop peu de prospects passaient à l’action. Chaque demande de soumission non envoyée signifiait des revenus perdus… et du stress pour les propriétaires et leurs familles."
+  },
+  {
+   "p": "Je me souviens du propriétaire de l'entreprise d'installation de gouttières, hésitant au téléphone :"
+  },
+  {
+   "quote": "**_« Pourquoi ne travailles-tu pas sur mon site plutôt que de créer une page “sur le côté”? Est-ce que ça va vraiment changer quelque chose? »_**"
+  },
+  {
+   "p": "Il faut dire que c'était la première fois que j'appliquais mon expertise Web à ces deux domaines."
+  },
+  {
+   "p": "Or, dans ma tête, ça n'avait pas vraiment d'importance. J’avais une certitude : si nous construisions le bon message, la bonne structure et que nous appliquons les meilleures pratiques en conception de pages de vente sur le Web, les résultats viendraient inévitablement. Les 300+ projets Web qu'on m'avait confiés, ainsi que les reconnaissances reçues (Gartner Leader, Awwwrads, Octas, Osentreprendre), dans les 15 dernières années, ne pouvaient pas mentir."
+  },
+  {
+   "p": "Du moins, j'allais bientôt le découvrir."
+  },
+  {
+   "h2": "Pourquoi ces PME étaient idéales pour mon approche"
+  },
+  {
+   "p": "En observant leurs sites et en parlant avec eux, je voyais tout de suite que ces deux entreprises avaient tout pour bénéficier rapidement de mon approche."
+  },
+  {
+   "p": "**PME A : Installation de gouttières**"
+  },
+  {
+   "p": "Pour l’entreprise familiale de gouttières, les clics payés en Google Ads représentaient un espoir qu'il fallait réussir à transformer en plus de conversations de vente. Je sentais que si nous pouvions convertir ne serait-ce qu’une partie de ce trafic en clients, ça allait avoir des impacts majeurs dans leur quotidien, leur permettre de respirer et surtout de poursuivre l'expansion de leurs services."
+  },
+  {
+   "p": "**PME B : Installation de toitures métalliques**"
+  },
+  {
+   "p": "Chez le couple des toitures métalliques, la perte de prospects sur leur site se traduisait non seulement par des revenus manquants, mais aussi par une pression accrue sur leur temps familial et leur tranquillité d'esprit, d'autant plus qu'ils jonglaient avec des chantiers et une famille grandissante. Il va sans dire que la famille comptait sur le succès de l’entreprise et les performances de faisaient attendre depuis la création de leur site Web, il y a un peu plus d’un an."
+  },
+  {
+   "p": "Dans les deux cas, quelques points me sautaient aux yeux :"
+  },
+  {
+   "ul": [
+    "**Elles avaient un service apprécié par leurs clients**",
+    "**Elles investissaient déjà dans la publicité de manière rentable, mais les résultats demeuraient limités**",
+    "**Le trafic était là, mais trop peu de visiteurs passaient à l’action**",
+    "**Ils ne savaient pas quoi prioriser pour avoir un impact rapide sur leur taux de transformation de visiteurs en clients**",
+    "**Ils avaient besoin d’un plan efficace pour diminuer leur coût d’acquisition (_CPA_) sans y passer tout leur profit**"
+   ]
+  },
+  {
+   "p": "En clair : elles avaient déjà la matière première, mais pas le processus pour la transformer en revenu. Et c’est exactement le type de situation où ma méthode peut créer un impact rapide et mesurable."
+  },
+  {
+   "h2": "Le problème caché des PME"
+  },
+  {
+   "p": "Lors de l'une des premières rencontres avec le couple à la tête de l'entreprise de toitures métalliques, je me rappelle leur avoir demandé :"
+  },
+  {
+   "quote": "**_« Si rien ne change, que se passera-t-il à la fin de la saison? »_**"
+  },
+  {
+   "p": "Le silence a répondu pour eux, révélant le stress et l’incertitude qui planaient. Pour ces entreprises, comme pour tant d’autres PME que j’ai vu, le problème caché n’était pas le manque d’effort ou de budget, mais **une fuite invisible de prospects dans le parcours Web**, une lacune coûteuse qui a inévitablement des impacts sur le plan humain."
+  },
+  {
+   "h2": "Comment on a transformé leur trafic en clients"
+  },
+  {
+   "p": "La publicité n’étant pas le problème, il manquait donc un point de chute conçu pour transformer ces clics en clients."
+  },
+  {
+   "p": "Plutôt que de refaire entièrement leurs sites existants — trop facile de perdre des visiteurs, trop de chemin différents à considérer, trop coûteux à optimiser — j’ai proposé une approche beaucoup plus ciblée : créer une page unique, pensée comme une véritable machine à prospects."
+  },
+  {
+   "p": "On allait leur créer une **page de conversion**."
+  },
+  {
+   "p": "Bâtir une telle page ne consiste pas simplement à appliquer un « beau design ». C'est beaucoup plus de créer un parcours psychologique et visuel, où chaque phrase, chaque image et chaque bouton est calibré pour guider le prospect, répondre à ses doutes, le rassurer et inspirer l’action."
+  },
+  {
+   "p": "Et je savais exactement comment y arriver. Il restait seulement à le mettre en application pour leur entreprise."
+  },
+  {
+   "h3": "1. Le Protocole de démarquage de marque — articuler le pivot qui fait vendre"
+  },
+  {
+   "p": "J’ai commencé par appliquer ce que j’appelle le **Protocole de démarquage de marque** : une entrevue de 60 à 90 minutes stratégiquement conçue pour révéler le caractère unique de l’entreprise et de ses services."
+  },
+  {
+   "p": "L’entrevue a fait ressortir les caractéristiques uniques de leurs offres ainsi que les axes marketing qui seront au coeur de notre « pitch » sur leurs pages de conversion."
+  },
+  {
+   "p": "Pour les gouttières, au bout de 40 minutes, l’axe qu’on devait utiliser est devenu clair : l’entreprise avait été lancée pour combler des failles de l’industrie. Ce récit est devenu le cœur de la page et leur approche unique pour combler ces failles devenait leurs différenciateurs."
+  },
+  {
+   "p": "Pour les toitures, la conversation a révélé que leurs toitures étaient quatre fois plus durables que le bardeau classique, et revenaient moins chères sur 40 ans. Cette révélation a inversé l’objection majeure du prix et a transformé notre message en argument irrésistible."
+  },
+  {
+   "h3": "2. Les 7 catalyseurs de conversion — enflammer les visiteurs froids"
+  },
+  {
+   "p": "Ensuite, j'ai appliqué les **7 catalyseurs de conversion** pour booster la confiance des visiteurs et leur donner envie de passer à l’action."
+  },
+  {
+   "p": "Ces catalyseurs sont des éléments que j’aime placer stratégiquement dans la page de conversion. Ils rendent l’offre présentée beaucoup plus difficile à dire « Non » et créent une vague de confiance dès l’arrivée du prospect froid."
+  },
+  {
+   "p": "Ils forment l’acronyme **PERSUAD** :"
+  },
+  {
+   "lines": [
+    "**P-reuves sociales solides**",
+    "**E-xpertise démontrée**",
+    "**R-areté ressentie**",
+    "**S-tyle graphique crédible**",
+    "**U-rgence perçue**",
+    "**A-rchitecture persuasive**",
+    "**D-iscours clair**"
+   ]
+  },
+  {
+   "p": "Voilà les 7 pièces de _puzzle_ indispensable d'une page de conversion."
+  },
+  {
+   "p": "Je les dispose minutieusement à travers une **architecture de parcours émotionnel** : Douleur → Problème → Solution → Preuve → Action. Une fois qu'ils sont en place, j'ajoute des appels à l'action (_CTA_) aux moments où l’émotion est la plus forte, de manière à stimuler l’action."
+  },
+  {
+   "p": "Pour les gouttières, le style graphique a été revu, tandis que pour les toitures, le pitch a été renforcé pour être clair, crédible et irrésistible, tout en l'adaptant à l’identité visuelle existante."
+  },
+  {
+   "h3": "3. La Technique du mentaliste — déconstruire les objections"
+  },
+  {
+   "p": "J’ai finalement testé la page auprès de clients potentiels, en appliquant la **Technique du mentaliste** : guider la conversation pour faire émerger les objections invisibles et trouver comment les diffuser."
+  },
+  {
+   "p": "Chaque offre a ses visiteurs types et chaque visiteur type a ses freins, visibles ou non."
+  },
+  {
+   "p": "Pour les toitures, la principale objection était le prix. J’ai donc créé un tableau clair et simple, optimisé pour ordinateur comme pour téléphone mobile, qui ventilait les coûts sur 40 ans. Ce dernier montrait que le métal revenait moins cher que le bardeau."
+  },
+  {
+   "p": "Pour les gouttières, cette technique a permis d'identifier les objections implicites. Nous avons alors pu concevoir la page pour répondre naturellement à chacune d'elles. Chaque section, chaque mot, chaque bouton guidait le prospect vers l’action sans qu’il se sente poussé."
+  },
+  {
+   "h2": "Les résultats : un « Après » sans retour en arrière"
+  },
+  {
+   "p": "**Je me souviens du premier vendredi, après la mise en ligne de la page des gouttières, où j’ai ouvert le tableau de bord pour voir les performances de la page.**"
+  },
+  {
+   "p": "J’étais devant mon écran, café en main, le cœur battant d'excitation comme un gamin qui s'apprête à ouvrir un cadeau d'anniversaire."
+  },
+  {
+   "p": "Le chiffre m’a frappé :"
+  },
+  {
+   "p": "**19,08 % de demandes de soumission, contre 8,60 % avant (2.22x).**"
+  },
+  {
+   "compare": [
+    {
+     "label": "Avant",
+     "img": "work/pme-gouttieres-avant.jpg",
+     "alt": "Graphique du taux de conversion de l’entreprise de gouttières avant : 8,60 %"
+    },
+    {
+     "label": "Après",
+     "img": "work/pme-gouttieres-apres.jpg",
+     "alt": "Graphique du taux de conversion de l’entreprise de gouttières après : 19,08 %"
+    }
+   ]
+  },
+  {
+   "p": "Dans les semaines suivantes, j’ai continué à vérifier les chiffres, fasciné (et fier, je l'avoue). Les conversions se maintenaient, **avec des pics au-dessus de 20 %**."
+  },
+  {
+   "p": "Pour le couple de toitures métalliques, la scène se répétait :"
+  },
+  {
+   "p": "**On avait passé de 2,76 % à 8,70 % (3,15x), stable et régulier, et on vivait même des semaines à 9.1%.**"
+  },
+  {
+   "compare": [
+    {
+     "label": "Avant",
+     "img": "work/pme-toitures-avant.jpg",
+     "alt": "Graphique du taux de conversion de l’entreprise de toitures avant : 2,76 %"
+    },
+    {
+     "label": "Après",
+     "img": "work/pme-toitures-apres.jpg",
+     "alt": "Graphique du taux de conversion de l’entreprise de toitures après : 8,70 %"
+    }
+   ]
+  },
+  {
+   "p": "J’ai laissé échapper un petit sourire et j’ai immédiatement écrit au gestionnaire de publicités :"
+  },
+  {
+   "quote": "**_« Ça va bien avec la page des toitures. On a littéralement triplé les demandes de devis! »_**"
+  },
+  {
+   "p": "Il m’a répondu presque aussitôt, excité :"
+  },
+  {
+   "quote": "**_« Je ne suis pas surpris. Le client m'a déjà écrit pour me dire qu'il avait reçu plusieurs demandes de soumission! »_**"
+  },
+  {
+   "p": "En moins de 90 jours de travail et seulement 30 jours après la mise en ligne de leur page :"
+  },
+  {
+   "ul": [
+    "**Ils avaient quasi triplé leurs demandes de devis**",
+    "**Les résultats s’étaient stabilisés à un niveau jamais atteint auparavant**",
+    "**Et le meilleur, c'est qu’ils obtenaient beaucoup plus de clients sans dépenser un sou de plus en publicité**"
+   ]
+  },
+  {
+   "p": "Avec ces performances, je savais qu'ils allaient rembourser le prix de leurs pages de conversion en quelques semaines seulement, l'excédent allant directement dans leurs poches par la suite."
+  },
+  {
+   "p": "Cette idée m'emballait."
+  },
+  {
+   "h2": "L’impact humain : le vrai changement"
+  },
+  {
+   "p": "**Ce n’était pas juste des chiffres sur un tableau : je voyais ce que ça signifiait pour leur quotidien également.**"
+  },
+  {
+   "p": "Pour l’entreprise familiale de gouttières, multiplier leurs clients a été une bouffée d’air frais. Le propriétaire pouvait enfin envisager de nouveaux services, planifier ses projets familiaux sans stress et passer au prochain niveau dans son entreprise."
+  },
+  {
+   "p": "Je me souviens du feu dans ses yeux environ 1 mois après la mise en ligne :"
+  },
+  {
+   "quote": "**_« Charles-Erick, je veux lancer un nouveau service et j’aimerais que tu me fasses une page de conversion comme la première. Quand es-tu disponible cette semaine? »_**"
+  },
+  {
+   "p": "Chez le couple de toitures métalliques, j’ai senti un poids s’alléger à chaque appel entrant qualifié. Les demandes régulières leur ont permis de se concentrer sur ce qu’ils aimaient vraiment : installer leurs toitures et passer du temps avec leurs enfants. Les discussions autour de la facturation ou des prospects perdus ont disparu."
+  },
+  {
+   "p": "Au final, c’est exactement ce que je cherchais à créer : la tranquillité d’esprit et la certitude que chaque clic payé travaillait enfin pour eux."
+  },
+  {
+   "p": "Voici le témoignage que l’un d’eux m’a écrit :"
+  },
+  {
+   "quote": "**_« Avant, notre site en ligne depuis un an générait quelques soumissions par mois, malgré une bonne gestion publicitaire. Avec la nouvelle landing page, nous avons multiplié notre taux de conversion par près de 4. Nous avons adoré le premier contact avec l'équipe. On sentait qu'ils étaient vraiment à l'écoute de nos besoins. Le processus était clair, professionnel et efficace. Ils ont su nous accompagner et nous guider tout au long de la mise en place de notre nouvelle page web de conversion. Nous avons établi une belle confiance avec eux! Je le recommande à toute entreprise qui veut transformer ses campagnes en vrais résultats. »_**",
+   "cite": "_DF - Propriétaire de l’entreprise de toitures_"
+  },
+  {
+   "h2": "Et si c’était vous?"
+  },
+  {
+   "p": "En regardant ces deux entreprises, je me suis rappelé une vérité simple : la seule différence entre elles et tant d’autres PME, c’est qu’elles ont décidé de ne plus tolérer un site qui perdait leurs clients."
+  },
+  {
+   "p": "Elles ont choisi d’agir. Et c’est là que la _« game »_ a changé pour elles."
+  },
+  {
+   "h3": "Résultats 100% garantis!"
+  },
+  {
+   "p": "Encore ce matin, je regardais les résultats de deux pages de conversion que j’ai lancé récemment : l’une dans le domaine de l’achat et vente d’objets de valeur et l’autre une startup qui vend des assurances pour animaux."
+  },
+  {
+   "p": "Et devinez quoi?"
+  },
+  {
+   "p": "**Même résultat :**"
+  },
+  {
+   "ul": [
+    "**Achat et vente d’objets de valeur :** on est passée **de 1.66% à 7.81%** de prise de rendez-vous en **1 semaine (4,7x)**"
+   ]
+  },
+  {
+   "compare": [
+    {
+     "label": "Avant",
+     "img": "work/pme-objets-valeur-avant.jpg",
+     "alt": "Graphique du taux de conversion de l’entreprise d’objets de valeur avant : 1,66 %"
+    },
+    {
+     "label": "Après",
+     "img": "work/pme-objets-valeur-apres.jpg",
+     "alt": "Graphique du taux de conversion de l’entreprise d’objets de valeur après : 7,81 %"
+    }
+   ]
+  },
+  {
+   "ul": [
+    "**Assurances pour animaux :** **+3 500% d’augmentation des demandes de soumission** et **performance 2x plus élevée** que la norme de son domaine (avec seulement 92,61$ en budget publicitaire)"
+   ]
+  },
+  {
+   "img": "work/pme-assurances-animaux-rapport.png",
+   "alt": "Rapport de la campagne publicitaire : 273 vues de la landing page, 13 302 personnes atteintes, 92,61 $ dépensés, CPC de 0,245 $ et CTR de 2 %"
+  },
+  {
+   "p": "Son témoignage :"
+  },
+  {
+   "img": "work/pme-assurances-animaux-temoignage.png",
+   "alt": "Avis 5 étoiles : « Un immense merci à Charles-Érick pour son travail remarquable. Dès le début, il a su me mettre en confiance, a été pleinement à l’écoute de mes besoins et a réussi à transformer mes idées en une page de conversion efficace et professionnelle. »"
+  },
+  {
+   "p": "**Prêt à tripler vos clients dans les 90 prochains jours?**"
+  },
+  {
+   "p": "Je sais que ma méthode fonctionne, parce que je l’ai testée, mesurée, ajustée… et validée avec des entreprises comme la vôtre."
+  },
+  {
+   "p": "C'est pourquoi je suis prêt à prendre le risque à votre place :"
+  },
+  {
+   "p": "**Si vos demandes de soumission n’augmentent pas dans les 30 jours suivant la mise en ligne de votre nouvelle page de conversion, je travaillerai gratuitement avec vous jusqu’à ce qu'elle batte l’ancienne d’au moins 30 %.**"
+  },
+  {
+   "p": "100% garanti — Aucun risque pour vous!"
+  },
+  {
+   "h3": "Faites vite! Je ne prends que 2 nouvelles PME chaque mois"
+  },
+  {
+   "p": "**Je fais cela pour me concentrer pleinement sur chaque client et garantir que chaque page de conversion devienne une machine à clients.**"
+  },
+  {
+   "p": "Alors, si vous voulez mettre fin à la frustration, booster vos revenus et enfin respirer, [**contactez-moi dès maintenant**](mailto:freres.bg@viesigners.com). Voyons ensemble si votre PME peut vivre le même succès que les entreprises qui ont travaillé avec nous jusqu'ici."
+  }
+ ]
+}
