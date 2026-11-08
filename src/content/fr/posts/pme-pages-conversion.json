@@ -21,10 +21,6 @@
  ],
  "body": [
   {
-   "img": "work/pme-couverture.jpg",
-   "alt": "Pièce en rénovation avec un escabeau et des pots de peinture"
-  },
-  {
    "callout": "**Contrairement aux pratiques courantes en marketing web, les résultats que je présente dans cette étude de cas ne sont PAS atypiques. Ils correspondent à des résultats ORDINAIRES, obtenus avec l’approche décrite, pour des entreprises dont le service est apprécié par leurs clients.**",
    "icon": "idea"
   },
@@ -388,8 +384,8 @@
    "p": "Son témoignage :"
   },
   {
-   "img": "work/pme-assurances-animaux-temoignage.png",
-   "alt": "Avis 5 étoiles : « Un immense merci à Charles-Érick pour son travail remarquable. Dès le début, il a su me mettre en confiance, a été pleinement à l’écoute de mes besoins et a réussi à transformer mes idées en une page de conversion efficace et professionnelle. »"
+   "quote": "Un immense merci à Charles-Érick pour son travail remarquable. Dès le début, il a su me mettre en confiance, a été pleinement à l’écoute de mes besoins et a réussi à transformer mes idées en une page de conversion efficace et professionnelle.",
+   "stars": 5
   },
   {
    "h2": "Prêt à tripler vos clients dans les 90 prochains jours?"

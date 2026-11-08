@@ -638,6 +638,7 @@ em.acc, .acc {
 .article .lines { line-height: 1.9; }
 .article .quote { margin: 1.8em 0; padding: 1.3rem 1.6rem; border-left: 3px solid var(--pink); border-radius: 0 var(--r-lg) var(--r-lg) 0; background: var(--card); }
 .article .quote p { margin: 0; color: var(--text); }
+.article .quote .stars { color: #f5b301; letter-spacing: .15em; font-size: 1.15rem; margin-bottom: .5rem; }
 .article .quote cite { display: block; margin-top: .8rem; color: var(--text-3); font-size: .92rem; }
 .article .callout { display: flex; gap: 1rem; align-items: flex-start; margin-block: 2rem; padding: 1.4rem 1.6rem; border-radius: var(--r-lg); background: var(--card); }
 .article .callout p { margin: 0; color: var(--text); }

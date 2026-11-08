@@ -624,7 +624,7 @@ R.article = (s, c) => {
     if (b.check) return `<ul class="checklist">${b.check.map((i) => `<li>${fmt(i, lang)}</li>`).join('')}</ul>`;
     if (b.table) return `<div class="table-scroll"><table><thead><tr>${b.table.head.map((h) => `<th scope="col">${fmt(h, lang)}</th>`).join('')}</tr></thead><tbody>${b.table.rows.map((r) => `<tr>${r.map((d, i) => i ? `<td>${fmt(d, lang)}</td>` : `<th scope="row">${fmt(d, lang)}</th>`).join('')}</tr>`).join('')}</tbody></table></div>`;
     if (b.lines) return `<p class="lines">${b.lines.map((i) => fmtA(i)).join('<br>')}</p>`; // short lines kept together, one per line
-    if (b.quote) return `<blockquote class="quote"><p>${fmtA(b.quote)}</p>${b.cite ? `<cite>${fmtA(b.cite)}</cite>` : ''}</blockquote>`;
+    if (b.quote) return `<blockquote class="quote">${b.stars ? `<p class="stars" role="img" aria-label="${b.stars}/5">${'★'.repeat(b.stars)}</p>` : ''}<p>${fmtA(b.quote)}</p>${b.cite ? `<cite>${fmtA(b.cite)}</cite>` : ''}</blockquote>`;
     if (b.callout) return `<aside class="callout">${b.icon ? (CDICO[b.icon] ? `<span class="cd-ico callout__ico" aria-hidden="true">${CDICO[b.icon]}</span>` : `<span class="callout__icon" aria-hidden="true">${esc(b.icon)}</span>`) : ''}<p>${fmtA(b.callout)}</p></aside>`;
     if (b.img) return `<figure class="figure${b.size ? ' figure--' + b.size : ''}">${img(b.img, b.alt || '', { sizes: '(min-width:760px) 46rem, 100vw' })}${b.caption ? `<figcaption>${fmtA(b.caption)}</figcaption>` : ''}</figure>`;
     if (b.compare) return `<div class="compare">${b.compare.map((k) => `<figure><figcaption>${esc(k.label)}</figcaption>${img(k.img, k.alt || '', { sizes: '(min-width:760px) 23rem, 50vw' })}</figure>`).join('')}</div>`;
