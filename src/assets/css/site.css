@@ -193,6 +193,7 @@ em.acc, .acc {
 .drawer__main { display: grid; gap: .1rem; align-content: start; }
 .drawer__main a { font-family: var(--f-display); font-weight: 300; letter-spacing: -.03em; font-size: clamp(2.2rem, 1rem + 4.4vw, 4.2rem); line-height: 1.12; padding: .1rem 0; transition: color .25s, padding-left .4s var(--ease); }
 .drawer__main a:hover, .drawer__main a[aria-current="page"] { color: var(--pink-300); padding-left: .5rem; }
+@media (max-width: 899px) { .drawer__main { gap: .6rem; } .drawer__main a { padding-block: .35rem; } } /* bigger touch targets on phones */
 .drawer__services { display: grid; gap: .2rem; align-content: start; }
 .drawer__services .label { margin-bottom: 1rem; color: var(--slate-400); }
 .drawer__services a { display: block; padding: .9rem 0; border-top: 1px solid var(--line); font-size: 1.1rem; transition: color .25s; }
