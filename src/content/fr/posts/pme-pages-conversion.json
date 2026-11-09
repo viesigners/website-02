@@ -377,8 +377,24 @@
    ]
   },
   {
-   "img": "work/pme-assurances-animaux-rapport.png",
-   "alt": "Rapport de la campagne publicitaire : 273 vues de la landing page, 13 302 personnes atteintes, 92,61 $ dépensés, CPC de 0,245 $ et CTR de 2 %"
+   "stats": [
+    {
+     "n": "92,61 $",
+     "t": "de budget publicitaire, au total"
+    },
+    {
+     "n": "273",
+     "t": "visiteurs sur la page de conversion"
+    },
+    {
+     "n": "0,34 $",
+     "t": "par visiteur sur la page"
+    },
+    {
+     "n": "2 %",
+     "t": "de clics sur l'annonce, contre 0,6 à 1 % en moyenne"
+    }
+   ]
   },
   {
    "p": "Son témoignage :"
