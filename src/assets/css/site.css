@@ -120,6 +120,7 @@ em.acc, .acc {
 .sec-head h2 { max-width: 20ch; }
 .sec-head .lead { font-size: 1.05rem; max-width: 36ch; }
 @media (min-width: 960px) { .sec-head { grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); } }
+@media (max-width: 959px) { .sec-head__side { display: contents; } .sec-head .sec-head__side .lead { order: 2; } } /* one column: label, title, then paragraph */
 
 /* ---------- buttons (rectangular, mono caps) ---------- */
 .pill {
