@@ -599,7 +599,7 @@ R['cta-final'] = (s, c) => `<section class="section section--tight"><div class="
   <div class="cta-final rv">
     <h2 class="display">${fmt(s.h2, c.lang)}</h2>
     <p>${fmt(s.p, c.lang)}</p>
-    <div class="actions"><a class="pill" href="${s.href || url(s.to || 'contact', c.lang)}"${s.href ? ' target="_blank" rel="noopener"' : ''}>${fmt(s.cta, c.lang)}</a>${s.secondary ? `<a class="pill pill--ghost" href="${s.secondary.href}">${esc(s.secondary.label)}</a>` : ''}</div>
+    <div class="actions"><a class="pill" href="${s.href || (s.need ? contactUrl(c, s.need) : url(s.to || 'contact', c.lang))}"${s.href ? ' target="_blank" rel="noopener"' : ''}>${fmt(s.cta, c.lang)}</a>${s.secondary ? `<a class="pill pill--ghost" href="${s.secondary.href}">${esc(s.secondary.label)}</a>` : ''}</div>
   </div>
 </div></section>`;
 
@@ -628,6 +628,7 @@ R.article = (s, c) => {
     if (b.callout) return `<aside class="callout">${b.icon ? (CDICO[b.icon] ? `<span class="cd-ico callout__ico" aria-hidden="true">${CDICO[b.icon]}</span>` : `<span class="callout__icon" aria-hidden="true">${esc(b.icon)}</span>`) : ''}<p>${fmtA(b.callout)}</p></aside>`;
     if (b.img) return `<figure class="figure${b.size ? ' figure--' + b.size : ''}">${img(b.img, b.alt || '', { sizes: '(min-width:760px) 46rem, 100vw' })}${b.caption ? `<figcaption>${fmtA(b.caption)}</figcaption>` : ''}</figure>`;
     if (b.stats) return `<dl class="stats">${b.stats.map((k) => `<div><dt>${fmtA(k.t)}</dt><dd>${esc(k.n)}</dd></div>`).join('')}</dl>`;
+    if (b.cta) return `<aside class="inline-cta"><p>${fmtA(b.cta)}</p><p class="inline-cta__go"><a class="link-arrow" href="${contactUrl(c, b.need)}">${esc(b.label)} ${ico('arrow')}</a>${b.phone ? `<span>${esc(b.phone)} <a href="tel:${CFG.phoneRaw}">${esc(CFG.phone)}</a></span>` : ''}</p></aside>`;
     if (b.compare) return `<div class="compare">${b.compare.map((k) => `<figure><figcaption>${esc(k.label)}</figcaption>${img(k.img, k.alt || '', { sizes: '(min-width:760px) 23rem, 50vw' })}</figure>`).join('')}</div>`;
     return '';
   }).join('\n');
@@ -863,7 +864,7 @@ function toMd(page, c) {
       case 'proof': L.push(...s.items.map((i) => `- **${i.n}** ${t(i.t)}`), ''); break;
       case 'people': L.push(`## ${t(s.h2)}`, '', ...s.items.map((p) => `- **${p.name}** (${p.role}) — ${t(p.text)}`), ''); break;
       case 'facts': L.push(`## ${t(s.h2)}`, '', ...s.items.map((i) => `- **${t(i.k)}**: ${t(i.v)}`), ''); break;
-      case 'article': L.push(...(c.post.summary || []).map((i) => `- ${t(i)}`), '', ...c.post.body.flatMap((b) => b.h2 ? [`## ${t(b.h2)}`, ''] : b.h3 ? [`### ${t(b.h3)}`, ''] : b.p ? [t(b.p), ''] : b.ul ? [...b.ul.map((i) => `- ${t(i)}`), ''] : b.ol ? [...b.ol.map((i, n) => `${n + 1}. ${t(i)}`), ''] : b.check ? [...b.check.map((i) => `- [ ] ${t(i)}`), ''] : b.table ? [`| ${b.table.head.map(t).join(' | ')} |`, `|${b.table.head.map(() => ' --- |').join('')}`, ...b.table.rows.map((r) => `| ${r.map(t).join(' | ')} |`), ''] : b.lines ? [b.lines.map(t).join('  \n'), ''] : b.quote ? [`> ${t(b.quote)}`, ...(b.cite ? ['>', `> — ${t(b.cite)}`] : []), ''] : b.callout ? [`> ${b.icon && !CDICO[b.icon] ? b.icon + ' ' : ''}${t(b.callout)}`, ''] : b.img ? [`![${b.alt || ''}](${abs(`/assets/img/${b.img}`)})`, ''] : b.stats ? [...b.stats.map((k) => `- **${k.n}** ${t(k.t)}`), ''] : b.compare ? [...b.compare.map((k) => `![${k.label} : ${k.alt || ''}](${abs(`/assets/img/${k.img}`)})`), ''] : [])); break;
+      case 'article': L.push(...(c.post.summary || []).map((i) => `- ${t(i)}`), '', ...c.post.body.flatMap((b) => b.h2 ? [`## ${t(b.h2)}`, ''] : b.h3 ? [`### ${t(b.h3)}`, ''] : b.p ? [t(b.p), ''] : b.ul ? [...b.ul.map((i) => `- ${t(i)}`), ''] : b.ol ? [...b.ol.map((i, n) => `${n + 1}. ${t(i)}`), ''] : b.check ? [...b.check.map((i) => `- [ ] ${t(i)}`), ''] : b.table ? [`| ${b.table.head.map(t).join(' | ')} |`, `|${b.table.head.map(() => ' --- |').join('')}`, ...b.table.rows.map((r) => `| ${r.map(t).join(' | ')} |`), ''] : b.lines ? [b.lines.map(t).join('  \n'), ''] : b.quote ? [`> ${t(b.quote)}`, ...(b.cite ? ['>', `> — ${t(b.cite)}`] : []), ''] : b.callout ? [`> ${b.icon && !CDICO[b.icon] ? b.icon + ' ' : ''}${t(b.callout)}`, ''] : b.img ? [`![${b.alt || ''}](${abs(`/assets/img/${b.img}`)})`, ''] : b.cta ? [`${t(b.cta)} [${b.label}](${abs(contactUrl(c, b.need))})`, ''] : b.stats ? [...b.stats.map((k) => `- **${k.n}** ${t(k.t)}`), ''] : b.compare ? [...b.compare.map((k) => `![${k.label} : ${k.alt || ''}](${abs(`/assets/img/${k.img}`)})`), ''] : [])); break;
       case 'posts-list': L.push(...RES[lang].filter((p) => !c.activeTab || p.cat === c.activeTab).map((p) => `- [${p.title}](${abs(p.href)}) — ${p.description}`), ''); break;
       case 'contact': L.push(t(s.lead), '', ...s.points.map((p) => `- ${t(p)}`), '', `${s.labels.phone}: ${CFG.phone}`, `${cityQc(lang)}, Canada · Vancouver, Canada`, ''); break;
       case 'profile-hero': L.push(t(s.role), '', t(s.lead), '', ...s.glance.map((g) => `- ${g.k}: ${g.v}`), ''); break;
@@ -1064,10 +1065,10 @@ function build() {
         page: {
           meta: { title: p.metaTitle || `${p.title} | Viesigners`, description: p.description, h1: p.title }, updated: p.modified || p.date, published: p.date, faq: p.faq, speakable: true,
           sections: [
-            { type: 'page-hero', tag: p.tag, h1: p.h1 || p.title, /* h1 may carry *accent* markup; title stays plain for meta, cards and schema */ lead: p.lead || p.description, ctas: [] },
+            { type: 'page-hero', tag: p.tag, h1: p.h1 || p.title, /* h1 may carry *accent* markup; title stays plain for meta, cards and schema */ lead: p.lead || p.description, ctas: [], brief: p.brief },
             { type: 'article' },
             { type: 'faq', h2: T.faqTitle },
-            { type: 'cta-final', ...T.postCta },
+            { type: 'cta-final', ...T.postCta, ...(p.cta || {}) }, // an article can bring its own closing call to action
           ],
         },
       });
