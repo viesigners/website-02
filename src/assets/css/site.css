@@ -986,6 +986,7 @@ html { scroll-padding-top: 7rem; }
 .cd-slot { display: grid; place-items: center; aspect-ratio: 16 / 10; padding: 1rem; border: 1px dashed var(--line-2); border-radius: var(--r-md); background: var(--card); text-align: center; }
 .cd-slot span { font-family: var(--f-mono); font-size: .75rem; letter-spacing: .02em; line-height: 1.4; color: var(--text-2); }
 .cd-shot--phone .cd-slot { aspect-ratio: 9 / 16; }
+.cd-shot--phone img { aspect-ratio: 9 / 16; object-fit: cover; object-position: top; } /* one phone format for the whole project */
 .cd-shots--1 { max-width: 34rem; }
 @media (min-width: 640px) { .cd-shots--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } .cd-shots--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 639px) { .cd-shots:has(.cd-shot--phone) { grid-template-columns: repeat(3, minmax(0, 1fr)); } .cd-shot--phone .cd-slot { padding: .4rem; } .cd-shot--phone .cd-slot span { font-size: .62rem; } }

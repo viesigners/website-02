@@ -260,9 +260,10 @@
      ],
      "shots": [
       {
-       "label": "Community invitation",
-       "alt": "Invitation to join the community",
-       "img": "work/pharmy-community.jpg"
+       "label": "Mockup: community invitation on mobile",
+       "alt": "Mobile mockup of the community invitation: three benefits, a choice of conditions to follow, and first name and email fields",
+       "img": "work/pharmy-community-m-en.jpg",
+       "phone": true
       }
      ]
     },
