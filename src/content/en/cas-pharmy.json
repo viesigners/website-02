@@ -340,9 +340,9 @@
        "phone": true
       },
       {
-       "label": "Wireframe: marker clicked on mobile",
-       "alt": "Mobile wireframe of a map marker clicked: the clinic and its trials open above the pin",
-       "img": "work/pharmy-wf-map-en.jpg",
+       "label": "Mockup: marker clicked on mobile",
+       "alt": "Mobile mockup of a map marker clicked: the clinic, its address and its trials open above the pin",
+       "img": "work/pharmy-map-m-en.jpg",
        "phone": true
       }
      ]

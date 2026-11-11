@@ -340,9 +340,9 @@
        "phone": true
       },
       {
-       "label": "Wireframe mobile : clic sur un marqueur",
-       "alt": "Wireframe mobile d’un clic sur un marqueur : la clinique et ses essais s’affichent au-dessus du repère",
-       "img": "work/pharmy-wf-map-fr.jpg",
+       "label": "Maquette mobile : clic sur un marqueur",
+       "alt": "Maquette mobile d’un clic sur un marqueur : la clinique, son adresse et ses essais s’affichent au-dessus du repère",
+       "img": "work/pharmy-map-m-en.jpg",
        "phone": true
       }
      ]
