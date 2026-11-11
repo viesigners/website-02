@@ -334,9 +334,9 @@
      ],
      "shots": [
       {
-       "label": "Map with clusters",
-       "alt": "Map of Canada and the United States with trial clusters showing 23, 12 and 6 trials",
-       "img": "work/pharmy-map-clusters.jpg",
+       "label": "Mockup: search results on mobile",
+       "alt": "Mobile mockup of the results: six trials found at three clinics, trial cards and a Show map button",
+       "img": "work/pharmy-m-results.jpg",
        "phone": true
       },
       {

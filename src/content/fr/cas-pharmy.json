@@ -334,9 +334,9 @@
      ],
      "shots": [
       {
-       "label": "Carte avec regroupements",
-       "alt": "Carte du Canada et des États-Unis avec des regroupements de 23, 12 et 6 essais",
-       "img": "work/pharmy-map-clusters.jpg",
+       "label": "Maquette mobile : résultats de recherche",
+       "alt": "Maquette mobile des résultats : six essais trouvés dans trois cliniques, des fiches d’essai et un bouton pour afficher la carte",
+       "img": "work/pharmy-m-results.jpg",
        "phone": true
       },
       {
