@@ -261,7 +261,7 @@
      "shots": [
       {
        "label": "Mockup: community invitation on mobile",
-       "alt": "Mobile mockup of the community invitation: three benefits, a choice of conditions to follow, and first name and email fields",
+       "alt": "Mobile mockup of the community invitation: a message for people who don’t qualify, then the invitation to join the community and its benefits",
        "img": "work/pharmy-community-m-en.jpg",
        "phone": true
       }

@@ -261,7 +261,7 @@
      "shots": [
       {
        "label": "Maquette mobile : invitation à la communauté",
-       "alt": "Maquette mobile de l’invitation à la communauté : trois avantages, le choix des maladies à suivre et les champs prénom et courriel",
+       "alt": "Maquette mobile de l’invitation à la communauté : un message pour les personnes non admissibles, puis l’invitation à rejoindre la communauté et ses avantages",
        "img": "work/pharmy-community-m-en.jpg",
        "phone": true
       }
