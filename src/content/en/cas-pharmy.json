@@ -228,9 +228,9 @@
      ],
      "shots": [
       {
-       "label": "Wireframe: form step 1 on mobile",
-       "alt": "Mobile wireframe of the first form step: a two-step stepper, eligibility questions and a See if you qualify button",
-       "img": "work/pharmy-wf-form-en.jpg",
+       "label": "Mockup: form step 1 on mobile",
+       "alt": "Mobile mockup of the first form step: four eligibility questions with no personal details, a progress bar and a See if you qualify button",
+       "img": "work/pharmy-form-en.jpg",
        "phone": true
       }
      ]

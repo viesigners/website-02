@@ -228,9 +228,9 @@
      ],
      "shots": [
       {
-       "label": "Wireframe mobile : étape 1 du formulaire",
-       "alt": "Wireframe mobile de la première étape du formulaire : un indicateur d’étapes, des questions d’admissibilité et un bouton Voir si je suis admissible",
-       "img": "work/pharmy-wf-form-fr.jpg",
+       "label": "Maquette mobile : étape 1 du formulaire",
+       "alt": "Maquette mobile de la première étape du formulaire : quatre questions d’admissibilité sans renseignement personnel, une barre de progression et un bouton pour vérifier son admissibilité",
+       "img": "work/pharmy-form-en.jpg",
        "phone": true
       }
      ]
