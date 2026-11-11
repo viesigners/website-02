@@ -378,9 +378,9 @@
    "h2": "Le même parcours *sur téléphone*",
    "shots": [
     {
-     "label": "Dernières études",
-     "alt": "Liste mobile des dernières études",
-     "img": "work/pharmy-m-studies.jpg",
+     "label": "Page d’accueil",
+     "alt": "Maquette mobile du haut de la page d’accueil : le titre, les chiffres clés, la recherche d’essais et le début de « Why participate »",
+     "img": "work/pharmy-m-home.jpg",
      "phone": true
     },
     {

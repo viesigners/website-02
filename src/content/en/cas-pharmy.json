@@ -378,9 +378,9 @@
    "h2": "The same journey *on a phone*",
    "shots": [
     {
-     "label": "Latest studies",
-     "alt": "Mobile list of the latest clinical studies",
-     "img": "work/pharmy-m-studies.jpg",
+     "label": "Home page",
+     "alt": "Mobile mockup of the top of the home page: the headline, key figures, trial search and the start of Why participate",
+     "img": "work/pharmy-m-home.jpg",
      "phone": true
     },
     {
