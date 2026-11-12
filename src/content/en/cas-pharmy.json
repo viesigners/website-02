@@ -297,14 +297,14 @@
        "img": "work/pharmy-home-new.jpg"
       },
       {
-       "label": "How it works",
-       "alt": "How clinical studies work page",
-       "img": "work/pharmy-how.jpg"
+       "label": "Conditions",
+       "alt": "Conditions page: an A to Z index and, for each condition, a short definition with links to learn more and see related trials",
+       "img": "work/pharmy-conditions-new.jpg"
       },
       {
-       "label": "Conditions",
-       "alt": "Conditions page with A to Z navigation",
-       "img": "work/pharmy-conditions.jpg"
+       "label": "Glossary",
+       "alt": "Glossary page with expandable terms",
+       "img": "work/pharmy-glossary.jpg"
       }
      ],
      "shotsCls": "cd-shots--stack"

@@ -297,14 +297,14 @@
        "img": "work/pharmy-home-new.jpg"
       },
       {
-       "label": "Comment ça fonctionne",
-       "alt": "Page qui explique le déroulement des études cliniques",
-       "img": "work/pharmy-how.jpg"
+       "label": "Maladies",
+       "alt": "Page des maladies : un index de A à Z et, pour chaque maladie, une courte définition avec des liens vers la fiche et les essais liés",
+       "img": "work/pharmy-conditions-new.jpg"
       },
       {
-       "label": "Maladies",
-       "alt": "Page des maladies, avec une navigation de A à Z",
-       "img": "work/pharmy-conditions.jpg"
+       "label": "Glossaire",
+       "alt": "Page du glossaire, avec des termes à déplier",
+       "img": "work/pharmy-glossary.jpg"
       }
      ],
      "shotsCls": "cd-shots--stack"
