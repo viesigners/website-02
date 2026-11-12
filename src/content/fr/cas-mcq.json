@@ -42,7 +42,12 @@
     },
     {
      "k": "Activités",
-     "v": "Personas, user story mapping, parcours utilisateur, priorisation du développement"
+     "v": "Recherche utilisateur, personas, user story mapping, recommandations d’architecture de l’information et de structure des pages",
+     "more": {
+      "n": 5,
+      "to": "ce-que-jai-fait",
+      "label": "Voir toutes les activités"
+     }
     },
     {
      "k": "Résultat",
@@ -83,9 +88,13 @@
      "b": "Ce que j’ai fait",
      "wide": true,
      "tags": [
+      "Recherche utilisateur",
       "Personas",
       "User story mapping",
       "Parcours utilisateur",
+      "Architecture de l’information",
+      "Structure des pages",
+      "Recommandations UX",
       "Priorisation du développement",
       "Conseil UX"
      ],

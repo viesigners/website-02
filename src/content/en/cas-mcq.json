@@ -42,7 +42,12 @@
     },
     {
      "k": "Activities",
-     "v": "Personas, user story mapping, user journey, development prioritization"
+     "v": "User research, personas, user story mapping, information architecture and page structure recommendations",
+     "more": {
+      "n": 5,
+      "to": "what-i-did",
+      "label": "See all activities"
+     }
     },
     {
      "k": "Result",
@@ -83,9 +88,13 @@
      "b": "What I did",
      "wide": true,
      "tags": [
+      "User research",
       "Personas",
       "User story mapping",
       "User journey",
+      "Information architecture",
+      "Page structure",
+      "UX recommendations",
       "Development prioritization",
       "UX consulting"
      ],
