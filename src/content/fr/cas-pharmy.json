@@ -297,7 +297,7 @@
        "img": "work/pharmy-home-new.jpg"
       },
       {
-       "label": "Maladies",
+       "label": "Conditions",
        "alt": "Page des maladies : un index de A à Z et, pour chaque maladie, une courte définition avec des liens vers la fiche et les essais liés",
        "img": "work/pharmy-conditions-new.jpg"
       },
@@ -384,7 +384,7 @@
      "phone": true
     },
     {
-     "label": "Maladies de A à Z",
+     "label": "Conditions de A à Z",
      "alt": "Maquette mobile de la page des maladies : un index de A à Z, puis les fiches des maladies classées par lettre",
      "img": "work/pharmy-m-conditions-new.jpg",
      "phone": true
