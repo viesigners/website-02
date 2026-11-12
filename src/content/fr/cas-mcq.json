@@ -104,7 +104,7 @@
      "b": "Collaborateurs",
      "bullets": [
       "Équipe de projet du Musée de la civilisation",
-    "Directeur artistique"
+      "Directeur artistique"
      ]
     }
    ],
@@ -141,18 +141,428 @@
     "Toute application ou tout site web devrait commencer par son public cible.",
     "Avec l’équipe du Musée, nous avons défini deux profils d’utilisateurs aux parcours et aux besoins différents : *Nicole, chercheuse amateur*, et *Jérôme, membre du grand public*. Nous avons ensuite créé ensemble, pour chacun, une carte séquentielle des user stories qui vise à approfondir sa relation avec le Musée au fil du temps.",
     "L’équipe du Musée voyait ainsi clairement ce qui comptait le plus, et ce qui pouvait attendre une phase de développement ultérieure sans perdre l’intérêt des gens."
-   ],
-   "shots": [
+   ]
+  },
+  {
+   "type": "cd-personas",
+   "items": [
     {
-     "label": "Les deux personas : Nicole et Jérôme",
-     "alt": "Silhouettes des deux personas : Nicole, chercheuse amateur, et Jérôme, membre du grand public",
-     "img": "work/mcq-personas.jpg"
+     "name": "Nicole",
+     "role": "Chercheuse amateur",
+     "img": "work/mcq-persona-nicole.jpg",
+     "alt": "Silhouette de Nicole",
+     "meta": [
+      {
+       "k": "Âge",
+       "v": "58 ans"
+      },
+      {
+       "k": "Profil",
+       "v": "Enseignante à la retraite, passionnée d’histoire locale et de généalogie"
+      },
+      {
+       "k": "Appareil",
+       "v": "Ordinateur, longues sessions"
+      },
+      {
+       "k": "Aisance numérique",
+       "v": "Élevée"
+      }
+     ],
+     "quote": "Quand je trouve un objet, je veux tout savoir : d’où il vient, qui l’a fait, et si je peux réutiliser son image.",
+     "groups": [
+      {
+       "h": "Objectifs",
+       "list": [
+        "Trouver vite une information précise sur un objet",
+        "Consulter des fiches complètes et les objets reliés",
+        "Comprendre ce qu’elle a le droit de faire avec les images",
+        "Partager ses connaissances et contribuer aux collections"
+       ]
+      },
+      {
+       "h": "Frustrations",
+       "list": [
+        "Des recherches qui renvoient trop de résultats, sans filtres",
+        "Des fiches incomplètes ou sans source",
+        "Ne pas savoir pourquoi un objet n’est pas en ligne"
+       ]
+      },
+      {
+       "h": "Habitudes",
+       "list": [
+        "Arrive souvent par une recherche Google",
+        "Prend des notes et garde des favoris",
+        "Échange dans des groupes d’histoire et de généalogie"
+       ]
+      },
+      {
+       "h": "Ce dont elle a besoin",
+       "list": [
+        "Recherche avancée et filtres",
+        "Fiches détaillées, droits d’utilisation clairs",
+        "Des moyens de contribuer, et d’être reconnue"
+       ]
+      }
+     ]
     },
     {
-     "label": "Les cartes des user stories",
-     "alt": "Cartes des user stories de Jérôme et de Nicole, étape par étape : intérêt, exploration ou recherche, consultation, relation, interaction sociale et contribution",
-     "img": "work/mcq-story-map.jpg",
-     "crop": "1920 / 1500"
+     "name": "Jérôme",
+     "role": "Membre du grand public",
+     "img": "work/mcq-persona-jerome.jpg",
+     "alt": "Silhouette de Jérôme",
+     "meta": [
+      {
+       "k": "Âge",
+       "v": "34 ans"
+      },
+      {
+       "k": "Profil",
+       "v": "Travailleur et jeune parent, visite le Musée une ou deux fois par année"
+      },
+      {
+       "k": "Appareil",
+       "v": "Téléphone, courtes sessions le soir"
+      },
+      {
+       "k": "Aisance numérique",
+       "v": "Moyenne à élevée"
+      }
+     ],
+     "quote": "Je ne sais pas ce que je cherche, mais montrez-moi quelque chose qui me surprend.",
+     "groups": [
+      {
+       "h": "Objectifs",
+       "list": [
+        "Satisfaire sa curiosité, sans effort",
+        "Découvrir des histoires autour des objets",
+        "Partager ses trouvailles avec ses proches"
+       ]
+      },
+      {
+       "h": "Frustrations",
+       "list": [
+        "Des catalogues austères, pensés pour les spécialistes",
+        "Trop de texte d’un coup",
+        "Ne pas savoir par où commencer"
+       ]
+      },
+      {
+       "h": "Habitudes",
+       "list": [
+        "Découvre du contenu par les médias sociaux et la publicité",
+        "Navigue sur son téléphone, entre deux tâches",
+        "Aime et partage ce qui le fait sourire"
+       ]
+      },
+      {
+       "h": "Ce dont il a besoin",
+       "list": [
+        "Des albums et des récits faciles à parcourir",
+        "Des suggestions pour continuer d’explorer",
+        "Une infolettre qui lui donne envie de revenir"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cd-storymap",
+   "label": "User story mapping",
+   "h2": "Deux parcours, *étape par étape*",
+   "legend": {
+    "a": "Activité",
+    "t": "Tâche",
+    "s": "User story"
+   },
+   "want": "Je veux",
+   "so": "pour",
+   "rows": [
+    {
+     "name": "Jérôme",
+     "role": "membre du grand public",
+     "activities": [
+      {
+       "h": "Intérêt envers un contenu",
+       "tasks": [
+        {
+         "h": "Voir une publicité",
+         "stories": [
+          [
+           "Voir des publicités du MCQ",
+           "être informé des contenus intéressants des collections en ligne"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "h": "Exploration",
+       "tasks": [
+        {
+         "h": "Explorer",
+         "stories": [
+          [
+           "Explorer les albums disponibles",
+           "satisfaire ma curiosité"
+          ],
+          [
+           "Explorer les albums d’une catégorie",
+           "découvrir des contenus liés à la catégorie qui m’intéresse"
+          ],
+          [
+           "Explorer les thèmes et les histoires disponibles",
+           "découvrir des récits liés aux sujets qui m’intéressent"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "h": "Consultation",
+       "tasks": [
+        {
+         "h": "Consulter des regroupements d’objets",
+         "stories": [
+          [
+           "Consulter des récits qui racontent l’histoire des objets qu’ils regroupent",
+           "découvrir des faits historiques intéressants liés aux objets des collections"
+          ],
+          [
+           "Consulter des collections d’objets sur un même thème",
+           "découvrir la beauté des objets"
+          ]
+         ]
+        },
+        {
+         "h": "Consulter des regroupements reliés",
+         "stories": [
+          [
+           "Consulter d’autres récits liés à ce que je viens de lire",
+           "approfondir mes connaissances sur un sujet qui me rejoint"
+          ],
+          [
+           "Consulter des collections d’autres thèmes",
+           "découvrir des objets auxquels je n’aurais pas pensé"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "h": "Entrer en relation",
+       "tasks": [
+        {
+         "h": "Recevoir des contenus intéressants",
+         "stories": [
+          [
+           "M’inscrire à une liste d’envoi courriel",
+           "recevoir des histoires intéressantes dans mes courriels"
+          ],
+          [
+           "M’inscrire à une liste qui présente la plateforme",
+           "être informé des nouvelles fonctionnalités"
+          ],
+          [
+           "Suivre le MCQ sur les médias sociaux",
+           "recevoir dans mes fils d’actualité des contenus préparés par l’équipe"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "h": "Interactions sociales",
+       "tasks": [
+        {
+         "h": "Donner son avis",
+         "stories": [
+          [
+           "Dire qu’une histoire ou un album me plaît",
+           "influencer les contenus mis de l’avant par le MCQ"
+          ]
+         ]
+        },
+        {
+         "h": "Partager",
+         "stories": [
+          [
+           "Partager les histoires et les albums que j’aime",
+           "informer les gens de mon réseau qui pourraient être intéressés"
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Nicole",
+     "role": "chercheuse amateur",
+     "activities": [
+      {
+       "h": "Intérêt envers un contenu",
+       "tasks": [
+        {
+         "h": "Voir un sujet précis",
+         "stories": [
+          [
+           "Trouver l’objet qui m’intéresse par une recherche web",
+           "trouver de l’information complémentaire à ce que je sais déjà"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "h": "Recherche",
+       "tasks": [
+        {
+         "h": "Chercher un sujet précis",
+         "stories": [
+          [
+           "Lancer une recherche par mots clés",
+           "trouver rapidement l’information sur un sujet"
+          ],
+          [
+           "Lancer une recherche avancée",
+           "trouver une information précise"
+          ],
+          [
+           "Voir la liste de mes résultats",
+           "savoir si un résultat correspond à ce que je cherche"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "h": "Consultation",
+       "tasks": [
+        {
+         "h": "Consulter le détail d’un objet",
+         "stories": [
+          [
+           "Consulter les fiches d’objets",
+           "en savoir plus sur leur historique et leurs caractéristiques"
+          ]
+         ]
+        },
+        {
+         "h": "Consulter les objets reliés",
+         "stories": [
+          [
+           "Consulter des fiches liées à l’objet que je viens de voir",
+           "approfondir mes connaissances sur un sujet qui me rejoint"
+          ]
+         ]
+        },
+        {
+         "h": "Connaître les droits et restrictions",
+         "stories": [
+          [
+           "Connaître les conditions d’utilisation des images et les droits qui s’y rattachent",
+           "comprendre quel usage est permis"
+          ],
+          [
+           "Connaître les restrictions sur certaines images et certains objets",
+           "comprendre pourquoi ils ne sont pas accessibles en ligne"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "h": "Interactions sociales",
+       "tasks": [
+        {
+         "h": "Partager une fiche",
+         "stories": [
+          [
+           "Partager les fiches d’objets que je trouve intéressantes",
+           "informer les gens de mon réseau qui pourraient être intéressés"
+          ]
+         ]
+        },
+        {
+         "h": "Donner son avis",
+         "stories": [
+          [
+           "Dire qu’un objet m’intéresse ou me plaît",
+           "influencer les contenus mis de l’avant par le MCQ"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "h": "Contribution",
+       "tasks": [
+        {
+         "h": "Corriger et enrichir les contenus",
+         "stories": [
+          [
+           "Devenir contributrice",
+           "contribuer à un domaine qui me tient à cœur"
+          ],
+          [
+           "Suggérer un ajout ou une modification",
+           "mettre mes connaissances à contribution"
+          ]
+         ]
+        },
+        {
+         "h": "Signaler un abus ou une erreur",
+         "stories": [
+          [
+           "Signaler au MCQ un abus que j’ai vu",
+           "contribuer à la qualité des contenus que j’utilise moi aussi"
+          ]
+         ]
+        },
+        {
+         "h": "Club des documentalistes",
+         "stories": [
+          [
+           "Être désignée super documentaliste",
+           "avoir envie de continuer à contribuer"
+          ],
+          [
+           "Que ma contribution soit reconnue",
+           "sentir que je compte pour le MCQ"
+          ]
+         ]
+        },
+        {
+         "h": "Offrir un objet",
+         "stories": [
+          [
+           "Proposer en don des objets que je possède",
+           "enrichir les collections du MCQ"
+          ]
+         ]
+        },
+        {
+         "h": "Faire un don",
+         "stories": [
+          [
+           "Faire un don en argent",
+           "contribuer à la culture et au rayonnement du MCQ"
+          ],
+          [
+           "Financer un projet lié à mes intérêts (restauration, numérisation, acquisition, exposition)",
+           "contribuer à la culture et au rayonnement du MCQ"
+          ],
+          [
+           "Parrainer un objet",
+           "assurer la pérennité d’un objet (documentation, conservation, restauration)"
+          ]
+         ]
+        }
+       ]
+      }
+     ]
     }
    ]
   },
@@ -206,14 +616,12 @@
    "prose": [
     "L’application web « Collections » a été finaliste aux OCTAS, dans la catégorie Ministères et sociétés d’État (4 000 employés et moins). Cette nomination confirme la place du Musée de la civilisation comme institution créative et originale, qui continue de repousser les limites."
    ],
-   "shots": [
-    {
-     "label": "Finaliste aux OCTAS",
-     "alt": "Badge Finaliste OCTAS",
-     "img": "work/mcq-octas.jpg"
-    }
-   ],
-   "split": true
+   "split": true,
+   "award": {
+    "title": "Finaliste",
+    "name": "OCTAS",
+    "cat": "Catégorie Ministères et sociétés d’État (4 000 employés et moins)"
+   }
   },
   {
    "type": "cta-final",

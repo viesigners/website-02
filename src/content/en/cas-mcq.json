@@ -104,7 +104,7 @@
      "b": "Worked with",
      "bullets": [
       "Musée de la civilisation project team",
-    "Art director"
+      "Art director"
      ]
     }
    ],
@@ -141,18 +141,428 @@
     "Every app or website should start with the target audience in mind.",
     "With the museum team, we developed two main user profiles with different backgrounds and needs: *Nicole, an amateur researcher*, and *Jérôme, a member of the general public*. Together, we then created a sequential user story map for each one, aimed at deepening their relationship with the museum along the way.",
     "This let the museum team clearly see what mattered most, and what could come in later development phases without losing people’s interest."
-   ],
-   "shots": [
+   ]
+  },
+  {
+   "type": "cd-personas",
+   "items": [
     {
-     "label": "The two personas: Nicole and Jérôme",
-     "alt": "Silhouettes of the two personas: Nicole, an amateur researcher, and Jérôme, a member of the general public",
-     "img": "work/mcq-personas.jpg"
+     "name": "Nicole",
+     "role": "Amateur researcher",
+     "img": "work/mcq-persona-nicole.jpg",
+     "alt": "Silhouette of Nicole",
+     "meta": [
+      {
+       "k": "Age",
+       "v": "58"
+      },
+      {
+       "k": "Background",
+       "v": "Retired teacher, passionate about local history and genealogy"
+      },
+      {
+       "k": "Device",
+       "v": "Desktop, long sessions"
+      },
+      {
+       "k": "Digital comfort",
+       "v": "High"
+      }
+     ],
+     "quote": "When I find an object, I want to know everything: where it comes from, who made it, and whether I can reuse its image.",
+     "groups": [
+      {
+       "h": "Goals",
+       "list": [
+        "Quickly find precise information about an object",
+        "Browse complete records and related objects",
+        "Understand what she’s allowed to do with the images",
+        "Share her knowledge and contribute to the collections"
+       ]
+      },
+      {
+       "h": "Frustrations",
+       "list": [
+        "Searches that return too many results, with no filters",
+        "Incomplete records with no sources",
+        "Not knowing why an object isn’t online"
+       ]
+      },
+      {
+       "h": "Habits",
+       "list": [
+        "Often arrives from a Google search",
+        "Takes notes and keeps favourites",
+        "Swaps findings in history and genealogy groups"
+       ]
+      },
+      {
+       "h": "What she needs",
+       "list": [
+        "Advanced search and filters",
+        "Detailed records with clear usage rights",
+        "Ways to contribute, and to be recognized for it"
+       ]
+      }
+     ]
     },
     {
-     "label": "The user story maps",
-     "alt": "User story maps for Jérôme and Nicole, step by step: interest, exploration or search, consultation, relationship, social interaction and contribution",
-     "img": "work/mcq-story-map.jpg",
-     "crop": "1920 / 1500"
+     "name": "Jérôme",
+     "role": "Member of the general public",
+     "img": "work/mcq-persona-jerome.jpg",
+     "alt": "Silhouette of Jérôme",
+     "meta": [
+      {
+       "k": "Age",
+       "v": "34"
+      },
+      {
+       "k": "Background",
+       "v": "Working parent who visits the museum once or twice a year"
+      },
+      {
+       "k": "Device",
+       "v": "Phone, short evening sessions"
+      },
+      {
+       "k": "Digital comfort",
+       "v": "Medium to high"
+      }
+     ],
+     "quote": "I don’t know what I’m looking for, but show me something that surprises me.",
+     "groups": [
+      {
+       "h": "Goals",
+       "list": [
+        "Satisfy his curiosity, effortlessly",
+        "Discover the stories behind the objects",
+        "Share his finds with friends and family"
+       ]
+      },
+      {
+       "h": "Frustrations",
+       "list": [
+        "Dry catalogues built for specialists",
+        "Too much text at once",
+        "Not knowing where to start"
+       ]
+      },
+      {
+       "h": "Habits",
+       "list": [
+        "Discovers content through social media and ads",
+        "Browses on his phone, between two tasks",
+        "Likes and shares what makes him smile"
+       ]
+      },
+      {
+       "h": "What he needs",
+       "list": [
+        "Albums and stories that are easy to browse",
+        "Suggestions to keep exploring",
+        "A newsletter that makes him want to come back"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cd-storymap",
+   "label": "User story mapping",
+   "h2": "Two journeys, *step by step*",
+   "legend": {
+    "a": "Activity",
+    "t": "Task",
+    "s": "User story"
+   },
+   "want": "I want to",
+   "so": "so that I can",
+   "rows": [
+    {
+     "name": "Jérôme",
+     "role": "member of the general public",
+     "activities": [
+      {
+       "h": "Interest in content",
+       "tasks": [
+        {
+         "h": "Seeing an ad",
+         "stories": [
+          [
+           "See MCQ ads",
+           "hear about interesting content in the online collections"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "h": "Exploration",
+       "tasks": [
+        {
+         "h": "Exploring",
+         "stories": [
+          [
+           "Explore the available albums",
+           "satisfy my curiosity"
+          ],
+          [
+           "Explore the albums in a category",
+           "discover content related to the category I’m interested in"
+          ],
+          [
+           "Explore the available themes and stories",
+           "discover stories about topics I care about"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "h": "Browsing",
+       "tasks": [
+        {
+         "h": "Browsing object groupings",
+         "stories": [
+          [
+           "Read stories that tell the history of the objects they group",
+           "discover interesting historical facts about objects in the collections"
+          ],
+          [
+           "Browse collections of objects on one theme",
+           "discover the beauty of the objects"
+          ]
+         ]
+        },
+        {
+         "h": "Browsing related groupings",
+         "stories": [
+          [
+           "Read other stories related to what I just read",
+           "deepen my knowledge of a topic that speaks to me"
+          ],
+          [
+           "Browse collections on other themes",
+           "discover objects I wouldn’t have thought of"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "h": "Building a relationship",
+       "tasks": [
+        {
+         "h": "Receiving interesting content",
+         "stories": [
+          [
+           "Sign up for an email list",
+           "get interesting stories in my inbox"
+          ],
+          [
+           "Sign up for platform updates",
+           "hear about new features"
+          ],
+          [
+           "Follow the MCQ on social media",
+           "get content prepared by the team in my feeds"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "h": "Social interactions",
+       "tasks": [
+        {
+         "h": "Giving feedback",
+         "stories": [
+          [
+           "Say that I like a story or an album",
+           "influence the content the MCQ puts forward"
+          ]
+         ]
+        },
+        {
+         "h": "Sharing",
+         "stories": [
+          [
+           "Share the stories and albums I like",
+           "let people in my network who might be interested know"
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Nicole",
+     "role": "amateur researcher",
+     "activities": [
+      {
+       "h": "Interest in content",
+       "tasks": [
+        {
+         "h": "Seeing a specific topic",
+         "stories": [
+          [
+           "Find the object I’m interested in through a web search",
+           "find information that adds to what I already know"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "h": "Search",
+       "tasks": [
+        {
+         "h": "Searching a specific topic",
+         "stories": [
+          [
+           "Run a keyword search",
+           "quickly find information on a topic"
+          ],
+          [
+           "Run an advanced search",
+           "find specific information"
+          ],
+          [
+           "See the list of my results",
+           "tell whether a result matches what I’m looking for"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "h": "Browsing",
+       "tasks": [
+        {
+         "h": "Viewing an object’s details",
+         "stories": [
+          [
+           "View object records",
+           "learn more about their history and features"
+          ]
+         ]
+        },
+        {
+         "h": "Viewing related objects",
+         "stories": [
+          [
+           "View records related to the object I just saw",
+           "deepen my knowledge of a topic that speaks to me"
+          ]
+         ]
+        },
+        {
+         "h": "Checking rights and restrictions",
+         "stories": [
+          [
+           "Know the terms of use and rights attached to the images",
+           "understand what use is allowed"
+          ],
+          [
+           "Know the restrictions on some images and objects",
+           "understand why they aren’t available online"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "h": "Social interactions",
+       "tasks": [
+        {
+         "h": "Sharing a record",
+         "stories": [
+          [
+           "Share the object records I find interesting",
+           "let people in my network who might be interested know"
+          ]
+         ]
+        },
+        {
+         "h": "Giving feedback",
+         "stories": [
+          [
+           "Say that an object interests me or that I like it",
+           "influence the content the MCQ puts forward"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "h": "Contribution",
+       "tasks": [
+        {
+         "h": "Correcting and enriching content",
+         "stories": [
+          [
+           "Become a contributor",
+           "contribute to a field I care about"
+          ],
+          [
+           "Suggest an addition or a change",
+           "put my knowledge to use"
+          ]
+         ]
+        },
+        {
+         "h": "Reporting abuse or an error",
+         "stories": [
+          [
+           "Report abuse I’ve seen to the MCQ",
+           "help keep the content I use accurate"
+          ]
+         ]
+        },
+        {
+         "h": "Documenters’ club",
+         "stories": [
+          [
+           "Be named a super documenter",
+           "want to keep contributing"
+          ],
+          [
+           "Have my contribution recognized",
+           "feel that I matter to the MCQ"
+          ]
+         ]
+        },
+        {
+         "h": "Offering an object",
+         "stories": [
+          [
+           "Offer objects I own as a donation",
+           "enrich the MCQ’s collections"
+          ]
+         ]
+        },
+        {
+         "h": "Donating",
+         "stories": [
+          [
+           "Make a financial donation",
+           "support culture and the MCQ’s reach"
+          ],
+          [
+           "Fund a project tied to my interests (restoration, digitization, acquisition, exhibition)",
+           "support culture and the MCQ’s reach"
+          ],
+          [
+           "Sponsor an object",
+           "secure an object’s future (documentation, conservation, restoration)"
+          ]
+         ]
+        }
+       ]
+      }
+     ]
     }
    ]
   },
@@ -206,14 +616,12 @@
    "prose": [
     "The Collections web app was an OCTAS finalist in the Ministry and State Society category (4,000 employees and less), solidifying the Musée de la civilisation’s position as a creative, original institution that keeps pushing limits."
    ],
-   "shots": [
-    {
-     "label": "OCTAS finalist",
-     "alt": "OCTAS finalist badge",
-     "img": "work/mcq-octas.jpg"
-    }
-   ],
-   "split": true
+   "split": true,
+   "award": {
+    "title": "Finalist",
+    "name": "OCTAS",
+    "cat": "Ministry and State Society category (4,000 employees and less)"
+   }
   },
   {
    "type": "cta-final",

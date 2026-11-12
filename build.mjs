@@ -399,14 +399,35 @@ R.casestudy = (s, c) => `<section class="section"><div class="wrap">
 /* project case studies: prose, decisions, measured test. [À FOURNIR …] stays visible as a highlighted marker until the content is supplied */
 const fmtT = (s, lang) => fmt(s, lang).replace(/\[À FOURNIR[^\]]*\]/g, (m) => `<span class="tbd">${m}</span>`);
 const shots = (list, cls = '') => (list?.length ? `<div class="cd-shots cd-shots--${list.length} ${cls} rv">${list.map((i) => `<figure class="cd-shot${i.phone ? ' cd-shot--phone' : ''}${i.crop ? ' cd-shot--crop' : ''}"${i.crop ? ` style="--crop:${i.crop}"` : ''}>${i.img ? `${img(i.img, i.alt, { sizes: '(min-width:640px) 16rem, 62vw' })}<figcaption>${esc(i.label)}</figcaption>` : `<div class="cd-slot"><span>${esc(i.label)}</span></div>`}</figure>`).join('')}</div>` : '');
+/* award badge: laurel wreath, the distinction, the award name and its category (text, so it stays sharp and translatable) */
+const LAUREL = (flip) => `<svg class="award__laurel${flip ? ' award__laurel--r' : ''}" viewBox="0 0 40 120" aria-hidden="true"><path d="M32 116C14 100 6 78 8 54 9 36 16 20 28 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>${[[25, 14, -30], [17, 30, -18], [11, 47, -6], [9, 64, 6], [11, 81, 18], [17, 97, 32]].map(([x, y, r]) => `<ellipse cx="${x}" cy="${y}" rx="9" ry="4.2" transform="rotate(${r} ${x} ${y}) translate(-6 0)" fill="currentColor"/><ellipse cx="${x}" cy="${y}" rx="9" ry="4.2" transform="rotate(${r + 70} ${x} ${y}) translate(6 0)" fill="currentColor" opacity=".75"/>`).join('')}</svg>`;
+const awardBadge = (a) => `<figure class="award rv" aria-label="${esc(a.title)} ${esc(a.name)} ${esc(a.year || '')}">${LAUREL(false)}<div class="award__body"><span class="award__title">${esc(a.title)}</span><b class="award__name">${esc(a.name)}</b>${a.year ? `<span class="award__year">${esc(a.year)}</span>` : ''}<span class="award__cat">${esc(a.cat)}</span></div>${LAUREL(true)}</figure>`;
 R['cd-text'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-text', { label: s.label })}
   <div class="cd-text${s.wide ? ' cd-text--wide' : ''}${s.split ? ' cd-text--split' : ''}${s.end ? ' cd-text--end' : ''}">
     <div class="prose rv">${s.prose.map((p) => `<p>${fmtT(p, c.lang)}</p>`).join('')}</div>
-    ${s.split ? shots(s.shots) : ''}
+    ${s.split ? (s.award ? awardBadge(s.award) : shots(s.shots)) : ''}
     ${s.steps ? `<ol class="cd-steps">${s.steps.map((i, k) => `<li class="rv" style="--d:${k * .06}s"><b>${esc(i.h)}</b><span>${fmtT(i.p, c.lang)}</span></li>`).join('')}</ol>` : ''}
   </div>
   ${s.split ? '' : shots(s.shots)}
+</div></section>`;
+/* persona cards: avatar, name and role, key facts, a quote, then goals / frustrations / habits / what the product must offer */
+R['cd-personas'] = (s, c) => `<section class="section"><div class="wrap">
+  ${s.h2 ? secHead(s, c, 'cd-personas', { label: s.label }) : ''}
+  <div class="cd-personas">${s.items.map((p, k) => `<article class="cd-persona rv" style="--d:${k * .08}s">
+    <header>${img(p.img, p.alt, { cls: 'cd-persona__img', sizes: '96px' })}<div><h3>${esc(p.name)}</h3><p>${esc(p.role)}</p></div></header>
+    <dl class="cd-persona__meta">${p.meta.map((m) => `<div><dt>${esc(m.k)}</dt><dd>${esc(m.v)}</dd></div>`).join('')}</dl>
+    ${p.quote ? `<blockquote class="cd-persona__quote"><p>${esc(p.quote)}</p></blockquote>` : ''}
+    ${p.groups.map((g) => `<div class="cd-persona__group"><h4>${esc(g.h)}</h4><ul>${g.list.map((x) => `<li>${fmtT(x, c.lang)}</li>`).join('')}</ul></div>`).join('')}
+  </article>`).join('')}</div>
+</div></section>`;
+/* user story map: one row per persona, read left to right — activities (backbone), the tasks under each, then the stories ("I want… so that…") */
+R['cd-storymap'] = (s, c) => `<section class="section"><div class="wrap">
+  ${secHead(s, c, 'cd-storymap', { label: s.label })}
+  ${s.legend ? `<p class="cd-sm__legend rv"><span class="cd-sm__k cd-sm__k--a">${esc(s.legend.a)}</span><span class="cd-sm__k cd-sm__k--t">${esc(s.legend.t)}</span><span class="cd-sm__k cd-sm__k--s">${esc(s.legend.s)}</span></p>` : ''}
+  ${s.rows.map((r) => `<div class="cd-sm rv"><p class="cd-sm__who"><b>${esc(r.name)}</b> ${esc(r.role)}</p>
+    <div class="cd-sm__scroll" tabindex="0" role="region" aria-label="${esc(r.name)} — ${esc(s.label)}"><ol class="cd-sm__row">${r.activities.map((a, k) => `<li class="cd-sm__act"><h3><span>${String(k + 1).padStart(2, '0')}</span>${esc(a.h)}</h3>
+      <ul class="cd-sm__tasks">${a.tasks.map((t) => `<li><h4>${esc(t.h)}</h4><ul class="cd-sm__stories">${t.stories.map((x) => `<li><p class="cd-sm__want"><em>${esc(s.want)}</em> ${esc(x[0])}</p><p class="cd-sm__so"><em>${esc(s.so)}</em> ${esc(x[1])}</p></li>`).join('')}</ul></li>`).join('')}</ul></li>`).join('')}</ol></div></div>`).join('')}
 </div></section>`;
 R['cd-gallery'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-gallery', { label: s.label })}
@@ -879,7 +900,7 @@ const THEME = {
   'hero-home': 'dark', 'page-hero': 'dark', 'cta-final': 'dark',
   friction: 'light', founders: 'dark', services: 'light', stats: 'dark', work: 'light', fit: 'dark', slot: 'light', testimonials: 'light', faq: 'light',
   statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', hub: 'light', partner: 'dark', related: 'light', bio: 'light', legal: 'light', people: 'dark', facts: 'light',
-  'cd-hero': 'dark', 'cd-facts': 'light', 'cd-impact': 'light', 'cd-cards': 'light', 'cd-gallery': 'dark', 'cd-text': 'light', 'cd-card': 'dark', 'cd-image': 'light', 'cd-decisions': 'dark', 'cd-test': 'light', 'posts-list': 'light', article: 'light', 'profile-hero': 'dark', cases: 'light', 'result-cards': 'dark', portfolio: 'light', 'contact-links': 'dark', contact: 'light', 'rich-text': 'light',
+  'cd-hero': 'dark', 'cd-facts': 'light', 'cd-impact': 'light', 'cd-cards': 'light', 'cd-gallery': 'dark', 'cd-personas': 'dark', 'cd-storymap': 'dark', 'cd-text': 'light', 'cd-card': 'dark', 'cd-image': 'light', 'cd-decisions': 'dark', 'cd-test': 'light', 'posts-list': 'light', article: 'light', 'profile-hero': 'dark', cases: 'light', 'result-cards': 'dark', portfolio: 'light', 'contact-links': 'dark', contact: 'light', 'rich-text': 'light',
 };
 const ASSET_HASH = {};
 const PAGES_OUT = []; // for sitemap + llms
