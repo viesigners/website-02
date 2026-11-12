@@ -2,8 +2,20 @@
  "meta": {
   "title": "Étude de cas Pharmy : une plateforme d’essais cliniques | Viesigners",
   "description": "Comment Charles-Erick BG a dirigé l’UX d’une plateforme de recherche d’essais cliniques et testé un formulaire en deux étapes auprès de vrais visiteurs.",
-  "h1": "Étude de cas Pharmy"
+  "h1": "Transformer des microsites d’études éparpillés en une plateforme de recherche pensée pour recruter plus de participants"
  },
+ "article": true,
+ "published": "2026-11-12",
+ "author": "charles-erick",
+ "image": "work/pharmy-search.jpg",
+ "ogImage": "og-pharmy.jpg",
+ "about": [
+  "UX design",
+  "Conversion rate optimization (CRO)",
+  "A/B testing",
+  "Information architecture",
+  "Clinical trial recruitment"
+ ],
  "sections": [
   {
    "type": "cd-hero",

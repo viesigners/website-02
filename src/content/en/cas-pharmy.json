@@ -2,8 +2,20 @@
  "meta": {
   "title": "Pharmy Case Study: One Searchable Clinical Trial Platform | Viesigners",
   "description": "How Charles-Erick BG led the UX of one searchable clinical trial platform and tested a two-step form on real traffic.",
-  "h1": "Pharmy case study"
+  "h1": "Turning scattered trial microsites into a searchable platform built to recruit more participants"
  },
+ "article": true,
+ "published": "2026-11-12",
+ "author": "charles-erick",
+ "image": "work/pharmy-search.jpg",
+ "ogImage": "og-pharmy.jpg",
+ "about": [
+  "UX design",
+  "Conversion rate optimization (CRO)",
+  "A/B testing",
+  "Information architecture",
+  "Clinical trial recruitment"
+ ],
  "sections": [
   {
    "type": "cd-hero",
