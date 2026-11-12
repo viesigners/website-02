@@ -1136,7 +1136,7 @@ html { scroll-padding-top: 7rem; }
 .lightbox figure { margin: 0; display: grid; gap: .8rem; justify-items: center; cursor: zoom-out; }
 .lightbox img { display: block; max-width: min(100%, 1400px); max-height: calc(100dvh - 7rem); width: auto; height: auto; border-radius: var(--r-lg); }
 .lightbox figcaption { color: #dbe5ed; font: .78rem/1.4 var(--f-mono); text-align: center; }
-.lightbox__close { position: fixed; z-index: 2; /* stays above the image, even a tall one */ top: 1rem; right: 1rem; display: grid; place-items: center; width: 3rem; height: 3rem; padding: 0; border: 0; border-radius: 50%; background: #fff; color: var(--navy); box-shadow: 0 0 0 4px rgba(255, 255, 255, .18), 0 8px 24px rgba(0, 0, 0, .45); cursor: pointer; transition: background .2s, color .2s; }
+.lightbox__close { position: fixed; z-index: 2; /* stays above the image, even a tall one */ top: 1rem; right: 1rem; display: grid; place-items: center; width: 3rem; height: 3rem; padding: 0; border: 0; border-radius: 50%; background: rgba(255, 255, 255, .7); color: var(--navy); box-shadow: 0 0 0 4px rgba(255, 255, 255, .18), 0 8px 24px rgba(0, 0, 0, .45); cursor: pointer; transition: background .2s, color .2s; }
 .lightbox__close svg { width: 20px; height: 20px; stroke-width: 2.4; }
 .lightbox__close:hover, .lightbox__close:focus-visible { background: var(--pink); color: #fff; }
 .lightbox__close:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
