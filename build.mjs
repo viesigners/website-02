@@ -70,6 +70,7 @@ const ROUTES = {
   coaching: { fr: 'conseil-affaires-web', en: 'business-advisory' },
   'cas-saas': { fr: 'etudes-de-cas/saas-b2b-ia', en: 'case-studies/b2b-ai-saas' }, // lives under its type (Case studies), not under /blog/
   'cas-pharmy': { fr: 'etudes-de-cas/pharmy', en: 'case-studies/pharmy' }, // lives under its type (Case studies)
+  'cas-mcq': { fr: 'etudes-de-cas/musee-de-la-civilisation', en: 'case-studies/musee-de-la-civilisation' },
   publicite: { fr: 'publicite-numerique', en: 'digital-advertising' },
   'medias-sociaux': { fr: 'medias-sociaux', en: 'social-media' },
   'seo-geo': { fr: 'seo-geo', en: 'seo-geo' },
@@ -86,7 +87,7 @@ const ROUTES = {
   merci: { fr: 'merci', en: 'thank-you' }, // shown after a form submission: noindex, never linked
   actualites: BLOG, // blog: articles + case studies, one filter page per category (the key stays neutral; the name lives in _site.json nav)
 };
-const CASE_KEYS = ['cas-saas', 'cas-pharmy']; // rich case-study pages (casestudy format) listed under Resources > Case studies
+const CASE_KEYS = ['cas-saas', 'cas-pharmy', 'cas-mcq']; // rich case-study pages (casestudy format) listed under Resources > Case studies
 /* old public addresses that now forward to their new page (same model as the profile redirect) */
 const MOVED = [
   { from: { fr: 'design-de-produit/etude-de-cas-saas-b2b-ia', en: 'product-design/b2b-ai-saas-case-study' }, to: 'cas-saas' },
@@ -397,7 +398,7 @@ R.casestudy = (s, c) => `<section class="section"><div class="wrap">
 
 /* project case studies: prose, decisions, measured test. [À FOURNIR …] stays visible as a highlighted marker until the content is supplied */
 const fmtT = (s, lang) => fmt(s, lang).replace(/\[À FOURNIR[^\]]*\]/g, (m) => `<span class="tbd">${m}</span>`);
-const shots = (list, cls = '') => (list?.length ? `<div class="cd-shots cd-shots--${list.length} ${cls} rv">${list.map((i) => `<figure class="cd-shot${i.phone ? ' cd-shot--phone' : ''}">${i.img ? `${img(i.img, i.alt, { sizes: '(min-width:640px) 16rem, 62vw' })}<figcaption>${esc(i.label)}</figcaption>` : `<div class="cd-slot"><span>${esc(i.label)}</span></div>`}</figure>`).join('')}</div>` : '');
+const shots = (list, cls = '') => (list?.length ? `<div class="cd-shots cd-shots--${list.length} ${cls} rv">${list.map((i) => `<figure class="cd-shot${i.phone ? ' cd-shot--phone' : ''}${i.crop ? ' cd-shot--crop' : ''}"${i.crop ? ` style="--crop:${i.crop}"` : ''}>${i.img ? `${img(i.img, i.alt, { sizes: '(min-width:640px) 16rem, 62vw' })}<figcaption>${esc(i.label)}</figcaption>` : `<div class="cd-slot"><span>${esc(i.label)}</span></div>`}</figure>`).join('')}</div>` : '');
 R['cd-text'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-text', { label: s.label })}
   <div class="cd-text${s.wide ? ' cd-text--wide' : ''}${s.split ? ' cd-text--split' : ''}${s.end ? ' cd-text--end' : ''}">

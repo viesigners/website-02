@@ -282,11 +282,11 @@
    "items": [
     {
      "img": "musee-civilisation.jpg",
-     "url": "https://www.behance.net/gallery/158595591/MCQ-Online-Collections-Launch-of-a-New-Web-App",
      "alt": "Plateforme SaaS « Collections » du Musée de la civilisation",
      "title": "« Collections » — Musée de la civilisation",
      "result": "Lancement SaaS · finaliste aux OCTAS",
-     "text": "Lancement de la plateforme SaaS du musée."
+     "text": "Lancement de la plateforme SaaS du musée.",
+     "to": "cas-mcq"
     },
     {
      "img": "trouve-un-stage.jpg",

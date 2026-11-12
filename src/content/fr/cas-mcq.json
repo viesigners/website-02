@@ -1,0 +1,216 @@
+{
+ "meta": {
+  "title": "Étude de cas Musée de la civilisation : lancement de « Collections » | Viesigners",
+  "description": "Comment Charles-Erick BG a accompagné le Musée de la civilisation dans le lancement de « Collections », une application web pour explorer plus de 54 000 objets et archives. Finaliste aux OCTAS.",
+  "h1": "Mettre les collections du Musée de la civilisation à la portée de tous"
+ },
+ "article": true,
+ "author": "charles-erick",
+ "image": "work/mcq-hero.jpg",
+ "ogImage": "og-mcq.jpg",
+ "about": [
+  "UX design",
+  "User research",
+  "User personas",
+  "User story mapping",
+  "Product roadmap",
+  "Museum collections online"
+ ],
+ "sections": [
+  {
+   "type": "cd-hero",
+   "tag": "Étude de cas · Culture",
+   "h1": "Mettre les collections du Musée de la civilisation *à la portée de tous*",
+   "img": "work/mcq-hero.jpg",
+   "alt": "L’application web « Collections » du Musée de la civilisation sur ordinateur et sur téléphone, avec la mention finaliste aux OCTAS",
+   "glance": [
+    {
+     "k": "Expert",
+     "v": "Charles-Erick BG"
+    },
+    {
+     "k": "Rôle",
+     "v": "Conseil UX."
+    },
+    {
+     "k": "Client",
+     "v": "Musée de la civilisation, à Québec."
+    },
+    {
+     "k": "Défi",
+     "v": "Mettre en ligne plus de 9 600 objets et 45 000 documents d’archives et livres, alors que la façon de les présenter et d’interagir avec eux restait à définir."
+    },
+    {
+     "k": "Activités",
+     "v": "Personas, user story mapping, parcours utilisateur, priorisation du développement"
+    },
+    {
+     "k": "Résultat",
+     "v": "*Finaliste aux OCTAS*, catégorie Ministères et sociétés d’État (4 000 employés et moins)."
+    }
+   ],
+   "cta": {
+    "label": "Contacter Charles-Erick"
+   }
+  },
+  {
+   "type": "cd-facts",
+   "caption": "« Collections » sur ordinateur et sur téléphone.",
+   "lead": "Le Musée de la civilisation voulait une expérience engageante et fluide qui incite les gens à *découvrir ses collections, à jouer avec elles et à y contribuer*. Il voulait aussi une vision claire du parcours dans l’application pour prioriser le développement dans le temps. C’est pour cet accompagnement qu’il a fait appel à nous.",
+   "byline": "Par Charles-Erick BG",
+   "items": [
+    {
+     "b": "Rôle",
+     "t": "Conseil UX"
+    },
+    {
+     "b": "Client",
+     "tags": [
+      "Musée",
+      "Culture",
+      "Société d’État"
+     ]
+    },
+    {
+     "b": "Objectifs",
+     "list": [
+      "Donner accès",
+      "Charmer les utilisateurs",
+      "Bâtir des relations qui favorisent la contribution mutuelle"
+     ]
+    },
+    {
+     "b": "Ce que j’ai fait",
+     "wide": true,
+     "tags": [
+      "Personas",
+      "User story mapping",
+      "Parcours utilisateur",
+      "Priorisation du développement",
+      "Conseil UX"
+     ],
+     "id": "ce-que-jai-fait"
+    },
+    {
+     "b": "Collaborateurs",
+     "bullets": [
+      "Équipe du Musée de la civilisation"
+     ]
+    }
+   ],
+   "impact": [
+    {
+     "n": "54 000+",
+     "t": "objets, documents d’archives et livres à numériser et à présenter en ligne."
+    },
+    {
+     "n": "2",
+     "t": "profils d’utilisateurs, chacun avec sa propre carte des user stories."
+    },
+    {
+     "n": "Finaliste",
+     "t": "aux OCTAS, catégorie Ministères et sociétés d’État (4 000 employés et moins)."
+    }
+   ]
+  },
+  {
+   "type": "cd-text",
+   "label": "Le contexte",
+   "h2": "Donner accès, charmer, *bâtir des relations*",
+   "prose": [
+    "Le Musée de la civilisation est un lieu de recherche, d’étude et de documentation qui cherche à comprendre et à interpréter le monde. Ses activités de recherche en font une référence nationale.",
+    "Ses collections sont conservées dans deux réserves. Pour ce projet, plus de 9 600 objets et 45 000 documents d’archives et livres devaient être numérisés et présentés en ligne, pour que le public puisse les consulter, les examiner et jouer virtuellement avec eux. La façon de présenter les objets, et la façon dont les gens interagiraient avec eux, n’étaient pas encore définies."
+   ]
+  },
+  {
+   "type": "cd-text",
+   "theme": "dark",
+   "label": "L’approche",
+   "h2": "Miser d’abord *sur les gens*",
+   "prose": [
+    "Toute application ou tout site web devrait commencer par son public cible.",
+    "Avec l’équipe du Musée, nous avons défini deux profils d’utilisateurs aux parcours et aux besoins différents : *Nicole, chercheuse amateur*, et *Jérôme, membre du grand public*. Nous avons ensuite créé ensemble, pour chacun, une carte séquentielle des user stories qui vise à approfondir sa relation avec le Musée au fil du temps.",
+    "L’équipe du Musée voyait ainsi clairement ce qui comptait le plus, et ce qui pouvait attendre une phase de développement ultérieure sans perdre l’intérêt des gens."
+   ],
+   "shots": [
+    {
+     "label": "Les deux personas : Nicole et Jérôme",
+     "alt": "Silhouettes des deux personas : Nicole, chercheuse amateur, et Jérôme, membre du grand public",
+     "img": "work/mcq-personas.jpg"
+    },
+    {
+     "label": "Les cartes des user stories",
+     "alt": "Cartes des user stories de Jérôme et de Nicole, étape par étape : intérêt, exploration ou recherche, consultation, relation, interaction sociale et contribution",
+     "img": "work/mcq-story-map.jpg",
+     "crop": "1920 / 1500"
+    }
+   ]
+  },
+  {
+   "type": "cd-cards",
+   "label": "La solution",
+   "h2": "Des choix qui *donnent envie d’explorer*",
+   "groups": [
+    {
+     "h": "",
+     "items": [
+      {
+       "h": "Des tiroirs d’information structurés",
+       "p": "Ils utilisent des témoins (cookies) pour retenir les derniers blocs d’information affichés, afin d’adapter l’expérience aux besoins et au contexte de la plupart des utilisateurs."
+      },
+      {
+       "h": "Des contenus liés",
+       "p": "Pour encourager la découverte, l’apprentissage et l’engagement."
+      },
+      {
+       "h": "Des gabarits souples",
+       "p": "Des gabarits de médias et de texte qui donnent de la latitude aux créateurs de contenu, tout en gardant une apparence cohérente et attrayante."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cd-gallery",
+   "label": "Les écrans",
+   "h2": "L’application *en images*",
+   "shots": [
+    {
+     "label": "Fonctionnalités clés",
+     "alt": "Fiche d’un objet avec ses tiroirs d’information, contenus liés, suggestions « Continuez d’explorer » et gabarits de médias",
+     "img": "work/mcq-features.jpg",
+     "crop": "1920 / 1500"
+    },
+    {
+     "label": "Pages de l’application",
+     "alt": "Pages complètes de l’application : accueil des collections, récit sur les calèches et résultats de recherche",
+     "img": "work/mcq-pages.jpg",
+     "crop": "1920 / 1500"
+    }
+   ]
+  },
+  {
+   "type": "cd-text",
+   "label": "La reconnaissance",
+   "h2": "Une bonne UX *se remarque*",
+   "prose": [
+    "L’application web « Collections » a été finaliste aux OCTAS, dans la catégorie Ministères et sociétés d’État (4 000 employés et moins). Cette nomination confirme la place du Musée de la civilisation comme institution créative et originale, qui continue de repousser les limites."
+   ],
+   "shots": [
+    {
+     "label": "Finaliste aux OCTAS",
+     "alt": "Badge Finaliste OCTAS",
+     "img": "work/mcq-octas.jpg"
+    }
+   ],
+   "split": true
+  },
+  {
+   "type": "cta-final",
+   "h2": "Besoin d’un coup de main pour lancer une plateforme *qui donne envie d’explorer?*",
+   "p": "Vous êtes au bon endroit!",
+   "cta": "Contacter Charles-Erick"
+  }
+ ],
+ "faq": []
+}

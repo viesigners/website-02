@@ -1159,3 +1159,6 @@ html { scroll-padding-top: 7rem; }
 
 /* stacked group: the two right-hand screens keep one landscape frame in the page (bottom hidden); the lightbox still shows the whole page */
 @media (min-width: 640px) { .cd-shots--stack .cd-shot:not(:first-child) img { aspect-ratio: 1100 / 755; object-fit: cover; object-position: top; } }
+
+/* a tall screen shown as a preview frame in the page (top only); the lightbox shows it whole */
+.cd-shot--crop img { aspect-ratio: var(--crop); object-fit: cover; object-position: top; }

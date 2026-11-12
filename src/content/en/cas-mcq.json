@@ -1,0 +1,216 @@
+{
+ "meta": {
+  "title": "Musée de la civilisation Case Study: Launching Collections | Viesigners",
+  "description": "How Charles-Erick BG helped the Musée de la civilisation launch Collections, a web app to explore 54,000+ objects and archives. OCTAS finalist.",
+  "h1": "Putting the Musée de la civilisation’s collections within everyone’s reach"
+ },
+ "article": true,
+ "author": "charles-erick",
+ "image": "work/mcq-hero.jpg",
+ "ogImage": "og-mcq.jpg",
+ "about": [
+  "UX design",
+  "User research",
+  "User personas",
+  "User story mapping",
+  "Product roadmap",
+  "Museum collections online"
+ ],
+ "sections": [
+  {
+   "type": "cd-hero",
+   "tag": "Case study · Culture",
+   "h1": "Putting the Musée de la civilisation’s collections *within everyone’s reach*",
+   "img": "work/mcq-hero.jpg",
+   "alt": "The Musée de la civilisation’s Collections web app on a laptop and a phone, with the OCTAS finalist mention",
+   "glance": [
+    {
+     "k": "Expert",
+     "v": "Charles-Erick BG"
+    },
+    {
+     "k": "Role",
+     "v": "UX consulting."
+    },
+    {
+     "k": "Client",
+     "v": "Musée de la civilisation, Quebec City."
+    },
+    {
+     "k": "Challenge",
+     "v": "Put more than 9,600 objects and 45,000 archive documents and books online, while how to present them and how people would interact with them was still undefined."
+    },
+    {
+     "k": "Activities",
+     "v": "Personas, user story mapping, user journey, development prioritization"
+    },
+    {
+     "k": "Result",
+     "v": "*OCTAS finalist*, Ministry and State Society category (4,000 employees and less)."
+    }
+   ],
+   "cta": {
+    "label": "Contact Charles-Erick"
+   }
+  },
+  {
+   "type": "cd-facts",
+   "caption": "Collections on a laptop and a phone.",
+   "lead": "The Musée de la civilisation wanted an engaging, fluid experience that encourages people to *discover its collections, play with them and contribute to them*. It also wanted a clear view of the user journey within the app, to prioritize development over time. That’s what it hired us to guide.",
+   "byline": "By Charles-Erick BG",
+   "items": [
+    {
+     "b": "Role",
+     "t": "UX consulting"
+    },
+    {
+     "b": "Client",
+     "tags": [
+      "Museum",
+      "Culture",
+      "State society"
+     ]
+    },
+    {
+     "b": "Goals",
+     "list": [
+      "Give access",
+      "Delight users",
+      "Build relationships that foster mutual contribution"
+     ]
+    },
+    {
+     "b": "What I did",
+     "wide": true,
+     "tags": [
+      "Personas",
+      "User story mapping",
+      "User journey",
+      "Development prioritization",
+      "UX consulting"
+     ],
+     "id": "what-i-did"
+    },
+    {
+     "b": "Worked with",
+     "bullets": [
+      "Musée de la civilisation team"
+     ]
+    }
+   ],
+   "impact": [
+    {
+     "n": "54,000+",
+     "t": "objects, archive documents and books to digitize and present online."
+    },
+    {
+     "n": "2",
+     "t": "user profiles, each with its own user story map."
+    },
+    {
+     "n": "Finalist",
+     "t": "at the OCTAS, Ministry and State Society category (4,000 employees and less)."
+    }
+   ]
+  },
+  {
+   "type": "cd-text",
+   "label": "The context",
+   "h2": "Give access, delight, *build relationships*",
+   "prose": [
+    "The Musée de la civilisation is a place of inquiry, study and documentation that seeks to understand and interpret the world. Its research activities make the institution a national reference.",
+    "Its collections are kept in two different storage facilities. For this project, more than 9,600 objects and 45,000 archive documents and books were to be digitized and presented online for the public to consult, inspect and virtually play with. How the objects would be presented, and how people would interact with them, was not clearly defined yet."
+   ]
+  },
+  {
+   "type": "cd-text",
+   "theme": "dark",
+   "label": "The approach",
+   "h2": "Focusing on *people first*",
+   "prose": [
+    "Every app or website should start with the target audience in mind.",
+    "With the museum team, we developed two main user profiles with different backgrounds and needs: *Nicole, an amateur researcher*, and *Jérôme, a member of the general public*. Together, we then created a sequential user story map for each one, aimed at deepening their relationship with the museum along the way.",
+    "This let the museum team clearly see what mattered most, and what could come in later development phases without losing people’s interest."
+   ],
+   "shots": [
+    {
+     "label": "The two personas: Nicole and Jérôme",
+     "alt": "Silhouettes of the two personas: Nicole, an amateur researcher, and Jérôme, a member of the general public",
+     "img": "work/mcq-personas.jpg"
+    },
+    {
+     "label": "The user story maps",
+     "alt": "User story maps for Jérôme and Nicole, step by step: interest, exploration or search, consultation, relationship, social interaction and contribution",
+     "img": "work/mcq-story-map.jpg",
+     "crop": "1920 / 1500"
+    }
+   ]
+  },
+  {
+   "type": "cd-cards",
+   "label": "The solution",
+   "h2": "Choices that *make people want to explore*",
+   "groups": [
+    {
+     "h": "",
+     "items": [
+      {
+       "h": "Logically structured information drawers",
+       "p": "They use cookies to remember the last chunks of information displayed, to tailor the experience to the needs and context of most users."
+      },
+      {
+       "h": "Related content",
+       "p": "To encourage discovery, learning and engagement."
+      },
+      {
+       "h": "Flexible templates",
+       "p": "Media and text templates that give content creators flexibility while keeping a consistent, appealing look and feel."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cd-gallery",
+   "label": "The screens",
+   "h2": "The app *in pictures*",
+   "shots": [
+    {
+     "label": "Key features",
+     "alt": "An object page with its information drawers, related content, Continue exploring suggestions and media templates",
+     "img": "work/mcq-features.jpg",
+     "crop": "1920 / 1500"
+    },
+    {
+     "label": "App pages",
+     "alt": "Full pages of the app: the collections home, a story about carriages and search results",
+     "img": "work/mcq-pages.jpg",
+     "crop": "1920 / 1500"
+    }
+   ]
+  },
+  {
+   "type": "cd-text",
+   "label": "Recognition",
+   "h2": "Great UX *gets noticed*",
+   "prose": [
+    "The Collections web app was an OCTAS finalist in the Ministry and State Society category (4,000 employees and less), solidifying the Musée de la civilisation’s position as a creative, original institution that keeps pushing limits."
+   ],
+   "shots": [
+    {
+     "label": "OCTAS finalist",
+     "alt": "OCTAS finalist badge",
+     "img": "work/mcq-octas.jpg"
+    }
+   ],
+   "split": true
+  },
+  {
+   "type": "cta-final",
+   "h2": "Need a hand launching a platform *people want to explore?*",
+   "p": "You’re in the right place!",
+   "cta": "Contact Charles-Erick"
+  }
+ ],
+ "faq": []
+}
