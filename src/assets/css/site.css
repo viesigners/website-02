@@ -1213,3 +1213,6 @@ html { scroll-padding-top: 7rem; }
 .award__name { font-size: clamp(2.6rem, 1.8rem + 3vw, 4.2rem); font-weight: 600; line-height: .95; letter-spacing: .04em; background: linear-gradient(180deg, #fff 30%, #f7d774 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .award__year { font-family: var(--f-mono); font-size: .8rem; color: rgba(255, 255, 255, .7); }
 .award__cat { max-width: 22ch; margin-top: .3rem; font-size: .86rem; line-height: 1.35; color: rgba(219, 229, 237, .85); }
+
+/* stack3: the three right-hand screens share one landscape frame (top shown); the lightbox shows each page whole */
+@media (min-width: 640px) { .cd-shots--stack3 .cd-shot:not(:first-child) img { aspect-ratio: 16 / 10; object-fit: cover; object-position: top; } }

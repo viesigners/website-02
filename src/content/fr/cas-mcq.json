@@ -22,7 +22,7 @@
    "tag": "Étude de cas · Culture",
    "h1": "Mettre les collections du Musée de la civilisation *à la portée de tous*",
    "img": "work/mcq-hero.jpg",
-   "alt": "L’application web « Collections » du Musée de la civilisation sur ordinateur et sur téléphone, avec la mention finaliste aux OCTAS",
+   "alt": "La page Découvrir de « Collections » : une recherche dans 9 600 objets et 45 000 documents d’archives, et des thèmes mis en vedette",
    "glance": [
     {
      "k": "Expert",
@@ -60,7 +60,7 @@
   },
   {
    "type": "cd-facts",
-   "caption": "« Collections » sur ordinateur et sur téléphone.",
+   "caption": "La page Découvrir de « Collections ».",
    "lead": "Le Musée de la civilisation voulait une expérience engageante et fluide qui incite les gens à *découvrir ses collections, à jouer avec elles et à y contribuer*. Il voulait aussi une vision claire du parcours dans l’application pour prioriser le développement dans le temps. C’est pour cet accompagnement qu’il a fait appel à nous.",
    "byline": "Par Charles-Erick BG",
    "items": [
@@ -596,18 +596,27 @@
    "h2": "L’application *en images*",
    "shots": [
     {
-     "label": "Fonctionnalités clés",
-     "alt": "Fiche d’un objet avec ses tiroirs d’information, contenus liés, suggestions « Continuez d’explorer » et gabarits de médias",
-     "img": "work/mcq-features.jpg",
-     "crop": "1920 / 1500"
+     "label": "Découvrir",
+     "alt": "Page d’accueil : recherche, thèmes et albums en vedette, suggestions pour continuer d’explorer",
+     "img": "work/mcq-ui-home.jpg"
     },
     {
-     "label": "Pages de l’application",
-     "alt": "Pages complètes de l’application : accueil des collections, récit sur les calèches et résultats de recherche",
-     "img": "work/mcq-pages.jpg",
-     "crop": "1920 / 1500"
+     "label": "Recherche",
+     "alt": "Recherche avec filtres par type d’objet, période, lieu d’origine et matériau",
+     "img": "work/mcq-ui-search.jpg"
+    },
+    {
+     "label": "Fiche d’objet",
+     "alt": "Fiche d’un objet : galerie, carte d’origine, ligne du temps, sections à déplier et contenus liés",
+     "img": "work/mcq-ui-item.jpg"
+    },
+    {
+     "label": "Récit",
+     "alt": "Récit d’une guide du Musée, avec l’objet présenté et des chapitres à parcourir",
+     "img": "work/mcq-ui-story.jpg"
     }
-   ]
+   ],
+   "shotsCls": "cd-shots--stack3"
   },
   {
    "type": "cd-text",

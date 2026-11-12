@@ -431,7 +431,7 @@ R['cd-storymap'] = (s, c) => `<section class="section"><div class="wrap">
 </div></section>`;
 R['cd-gallery'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-gallery', { label: s.label })}
-  ${shots(s.shots)}
+  ${shots(s.shots, s.shotsCls || '')}
 </div></section>`;
 R['cd-hero'] = (s, c) => `<section class="section cd-hero" aria-labelledby="h1"><div class="wrap">
   <div class="cd-hero__top${s.glance ? ' phero__grid' : ''}"><div>${trailHtml(c, c.crumbs.slice(1, -1), c.crumbs.length > 2 ? '' : `<p>${fmt(s.tag, c.lang)}</p>`)}

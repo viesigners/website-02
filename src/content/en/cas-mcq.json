@@ -22,7 +22,7 @@
    "tag": "Case study · Culture",
    "h1": "Putting the Musée de la civilisation’s collections *within everyone’s reach*",
    "img": "work/mcq-hero.jpg",
-   "alt": "The Musée de la civilisation’s Collections web app on a laptop and a phone, with the OCTAS finalist mention",
+   "alt": "The Collections Discover page: a search across 9,600 objects and 45,000 archive documents, and featured themes",
    "glance": [
     {
      "k": "Expert",
@@ -60,7 +60,7 @@
   },
   {
    "type": "cd-facts",
-   "caption": "Collections on a laptop and a phone.",
+   "caption": "The Collections Discover page.",
    "lead": "The Musée de la civilisation wanted an engaging, fluid experience that encourages people to *discover its collections, play with them and contribute to them*. It also wanted a clear view of the user journey within the app, to prioritize development over time. That’s what it hired us to guide.",
    "byline": "By Charles-Erick BG",
    "items": [
@@ -596,18 +596,27 @@
    "h2": "The app *in pictures*",
    "shots": [
     {
-     "label": "Key features",
-     "alt": "An object page with its information drawers, related content, Continue exploring suggestions and media templates",
-     "img": "work/mcq-features.jpg",
-     "crop": "1920 / 1500"
+     "label": "Discover",
+     "alt": "Home page: search, featured themes and albums, and suggestions to keep exploring",
+     "img": "work/mcq-ui-home.jpg"
     },
     {
-     "label": "App pages",
-     "alt": "Full pages of the app: the collections home, a story about carriages and search results",
-     "img": "work/mcq-pages.jpg",
-     "crop": "1920 / 1500"
+     "label": "Search",
+     "alt": "Search with filters by object type, period, place of origin and material",
+     "img": "work/mcq-ui-search.jpg"
+    },
+    {
+     "label": "Object record",
+     "alt": "An object record: gallery, map of origin, timeline, expandable sections and related content",
+     "img": "work/mcq-ui-item.jpg"
+    },
+    {
+     "label": "Story",
+     "alt": "A museum guide’s story, with the featured object and chapters to browse",
+     "img": "work/mcq-ui-story.jpg"
     }
-   ]
+   ],
+   "shotsCls": "cd-shots--stack3"
   },
   {
    "type": "cd-text",
