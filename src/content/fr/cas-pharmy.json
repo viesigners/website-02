@@ -334,13 +334,13 @@
      ],
      "shots": [
       {
-       "label": "Maquette mobile : résultats de recherche",
+       "label": "Maquette mobile : mode Liste",
        "alt": "Maquette mobile des résultats : six essais trouvés dans trois cliniques, des fiches d’essai et un bouton pour afficher la carte",
        "img": "work/pharmy-m-results.jpg",
        "phone": true
       },
       {
-       "label": "Maquette mobile : clic sur un marqueur",
+       "label": "Maquette mobile : mode Carte",
        "alt": "Maquette mobile d’un clic sur un marqueur : la clinique, son adresse et ses essais s’affichent au-dessus du repère",
        "img": "work/pharmy-map-m-en.jpg",
        "phone": true

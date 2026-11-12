@@ -334,13 +334,13 @@
      ],
      "shots": [
       {
-       "label": "Mockup: search results on mobile",
+       "label": "Mobile mockup: List view",
        "alt": "Mobile mockup of the results: six trials found at three clinics, trial cards and a Show map button",
        "img": "work/pharmy-m-results.jpg",
        "phone": true
       },
       {
-       "label": "Mockup: marker clicked on mobile",
+       "label": "Mobile mockup: Map view",
        "alt": "Mobile mockup of a map marker clicked: the clinic, its address and its trials open above the pin",
        "img": "work/pharmy-map-m-en.jpg",
        "phone": true
