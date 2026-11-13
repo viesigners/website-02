@@ -265,13 +265,15 @@
      "img": "mcq-card.jpg",
      "alt": "Launch of the SaaS platform \"Collections\" for the Musée de la civilisation — OCTAS award finalist",
      "title": "\"Collections\" — Musée de la civilisation",
-     "result": "SaaS launch · OCTAS award finalist"
+     "result": "SaaS launch · OCTAS award finalist",
+     "to": "cas-mcq"
     },
     {
-     "img": "pharmy-hub.jpg",
+     "img": "pharmy-card.jpg",
      "alt": "Pharmy clinical trial search platform — 48% more visitors moving toward sign-up",
      "title": "Pharmy",
-     "result": "+48% more visitors toward sign-up"
+     "result": "+48% more visitors toward sign-up",
+     "to": "cas-pharmy"
     },
     {
      "img": "wizards.jpg",

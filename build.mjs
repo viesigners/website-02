@@ -310,7 +310,7 @@ R.stats = (s, c) => `<section class="section"><div class="wrap">
 
 R.work = (s, c) => `<section class="section"${s.id ? ` id="${s.id}"` : ''}><div class="wrap">
   ${secHead(s, c, 'work')}
-  <div class="work${s.even ? ' work--even' : ''}">${s.items.map((i, k) => `<figure class="work__item rv" style="--d:${(k % 3) * .07}s">${img('work/' + i.img, i.alt, { sizes: k === 0 ? '(min-width:760px) 66vw, 100vw' : '(min-width:760px) 33vw, 100vw' })}<figcaption><b>${esc(i.title)}</b>${i.result ? `<span>${esc(i.result)}</span>` : ''}${i.desc ? `<p>${fmt(i.desc, c.lang)}</p>` : ''}</figcaption></figure>`).join('')}</div>
+  <div class="work${s.even ? ' work--even' : ''}">${s.items.map((i, k) => `<figure class="work__item${i.to && !isHidden(i.to) ? ' work__item--link' : ''} rv" style="--d:${(k % 3) * .07}s">${i.to && !isHidden(i.to) ? `<a class="work__link" href="${url(i.to, c.lang)}" aria-label="${esc(i.title)}"></a>` : ''}${img('work/' + i.img, i.alt, { sizes: k === 0 ? '(min-width:760px) 66vw, 100vw' : '(min-width:760px) 33vw, 100vw' })}<figcaption><b>${esc(i.title)}</b>${i.result ? `<span>${esc(i.result)}</span>` : ''}${i.desc ? `<p>${fmt(i.desc, c.lang)}</p>` : ''}${i.to && !isHidden(i.to) ? `<i class="work__go" aria-hidden="true">${ico('arrow')}</i>` : ''}</figcaption></figure>`).join('')}</div>
   ${s.awards ? `<div class="awards rv"><span class="press__label">${esc(s.awards.label)}</span>${s.awards.items.map((p) => img(p.file, p.alt)).join('')}</div>` : ''}
   ${s.cta && !isHidden(s.cta.to) ? `<p style="margin-top:2.5rem"><a class="pill pill--violet" href="${url(s.cta.to, c.lang)}">${esc(s.cta.label)}</a></p>` : ''}
 </div></section>`;

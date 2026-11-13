@@ -1246,3 +1246,13 @@ html { scroll-padding-top: 7rem; }
 .cd-tip { position: absolute; z-index: 5; bottom: calc(100% + .55rem); left: calc(100% - 1.1rem); translate: calc(-50% + var(--tip-shift, 0px)) 0; width: max-content; max-width: min(18rem, calc(100vw - 2rem)); padding: .6rem .8rem; border-radius: var(--r-md); background: #141826; color: #e9edf3; font-size: .8rem; line-height: 1.45; box-shadow: 0 8px 24px rgba(16, 20, 33, .25); opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .15s, visibility .15s; }
 .cd-tag--info:hover .cd-tip, .cd-tag--info:focus-within .cd-tip { opacity: 1; visibility: visible; }
 .cd-tag--info.tip-off .cd-tip { opacity: 0; visibility: hidden; }
+
+/* Work card that opens its case study: the whole card is the link */
+.work__link { position: absolute; inset: 0; z-index: 2; border-radius: inherit; }
+.work__link:focus-visible { outline: 2px solid var(--pink); outline-offset: 3px; }
+.work__item--link:hover img, .work__item--link:focus-within img { transform: scale(1.04); }
+/* the arrow says "this card opens a page" (no hover on phones) */
+.work__item--link figcaption { padding-right: 3.5rem; }
+.work__go { position: absolute; right: 1.1rem; bottom: 1.15rem; display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: rgba(255, 255, 255, .1); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .35); color: rgba(255, 255, 255, .85); transition: background .2s, color .2s, box-shadow .2s, transform .3s var(--ease); }
+.work__go svg { width: .9rem; height: .9rem; }
+.work__item--link:hover .work__go, .work__item--link:focus-within .work__go { background: var(--pink); box-shadow: none; color: #fff; transform: translateX(3px); }
