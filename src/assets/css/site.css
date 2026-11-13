@@ -1216,3 +1216,12 @@ html { scroll-padding-top: 7rem; }
 
 /* stack3: the three right-hand screens share one landscape frame (top shown); the lightbox shows each page whole */
 @media (min-width: 640px) { .cd-shots--stack3 .cd-shot:not(:first-child) img { aspect-ratio: 16 / 10; object-fit: cover; object-position: top; } }
+
+/* Screens gallery, 2 × 2: four equal landscape previews (top of each page); the lightbox shows each page whole */
+@media (min-width: 640px) { .cd-shots--grid2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* Five phone screens: one row on wide screens, a swipeable row below */
+.cd-shots--5:has(.cd-shot--phone) { max-width: none; }
+@media (min-width: 900px) { .cd-shots--5 { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+@media (min-width: 640px) and (max-width: 899px) { .cd-shots--5:has(.cd-shot--phone img) { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: .5rem; } .cd-shots--5 .cd-shot--phone { flex: 0 0 30%; scroll-snap-align: start; } }
+/* a long phone screen scrolls in the lightbox at phone width instead of stretching to the desktop width */
+.lightbox--phone img { max-width: min(100%, 26rem); }

@@ -1,7 +1,7 @@
 {
  "meta": {
   "title": "Musée de la civilisation Case Study: Launching Collections | Viesigners",
-  "description": "How Charles-Erick BG helped the Musée de la civilisation launch Collections, a web app to explore 54,000+ objects and archives. OCTAS finalist.",
+  "description": "How Charles-Erick BG helped the Musée de la civilisation launch Collections, a web app to explore 54,000+ objects and archives. OCTAS award finalist.",
   "h1": "Putting the Musée de la civilisation’s collections within everyone’s reach"
  },
  "article": true,
@@ -51,7 +51,7 @@
     },
     {
      "k": "Result",
-     "v": "*OCTAS finalist*, Ministry and State Society category (4,000 employees and less)."
+     "v": "*OCTAS award finalist*, Ministry and State Society category (4,000 employees and less)."
     }
    ],
    "cta": {
@@ -119,7 +119,7 @@
     },
     {
      "n": "Finalist",
-     "t": "at the OCTAS, Ministry and State Society category (4,000 employees and less)."
+     "t": "at the OCTAS awards, Ministry and State Society category (4,000 employees and less)."
     }
    ]
   },
@@ -576,15 +576,18 @@
      "items": [
       {
        "h": "Logically structured information drawers",
-       "p": "They use cookies to remember the last chunks of information displayed, to tailor the experience to the needs and context of most users."
+       "p": "They use cookies to remember the last chunks of information displayed, to tailor the experience to the needs and context of most users.",
+       "icon": "drawers"
       },
       {
        "h": "Related content",
-       "p": "To encourage discovery, learning and engagement."
+       "p": "To encourage discovery, learning and engagement.",
+       "icon": "related"
       },
       {
        "h": "Flexible templates",
-       "p": "Media and text templates that give content creators flexibility while keeping a consistent, appealing look and feel."
+       "p": "Media and text templates that give content creators flexibility while keeping a consistent, appealing look and feel.",
+       "icon": "templates"
       }
      ]
     }
@@ -598,32 +601,78 @@
     {
      "label": "Discover",
      "alt": "Home page: search, featured themes and albums, and suggestions to keep exploring",
-     "img": "work/mcq-ui-home.jpg"
+     "img": "work/mcq-ui-home-top.jpg",
+     "full": "work/mcq-ui-home.jpg"
     },
     {
      "label": "Search",
      "alt": "Search with filters by object type, period, place of origin and material",
-     "img": "work/mcq-ui-search.jpg"
+     "img": "work/mcq-ui-search-top.jpg",
+     "full": "work/mcq-ui-search.jpg"
     },
     {
      "label": "Object record",
      "alt": "An object record: gallery, map of origin, timeline, expandable sections and related content",
-     "img": "work/mcq-ui-item.jpg"
+     "img": "work/mcq-ui-item-top.jpg",
+     "full": "work/mcq-ui-item.jpg"
     },
     {
      "label": "Story",
      "alt": "A museum guide’s story, with the featured object and chapters to browse",
-     "img": "work/mcq-ui-story.jpg"
+     "img": "work/mcq-ui-story-top.jpg",
+     "full": "work/mcq-ui-story.jpg"
     }
    ],
-   "shotsCls": "cd-shots--stack3"
+   "shotsCls": "cd-shots--grid2"
+  },
+  {
+   "type": "cd-gallery",
+   "label": "On mobile",
+   "h2": "Same experience, *in your pocket*",
+   "sub": "Mobile and desktop were designed in parallel, for a great experience on every device: filters slide up in a sheet, results switch to two columns, and every touch target is at least 44 px.",
+   "shots": [
+    {
+     "label": "Discover",
+     "alt": "Mobile home page: search, featured themes and albums",
+     "phone": true,
+     "img": "work/mcq-m-home-top.jpg",
+     "full": "work/mcq-m-home.jpg"
+    },
+    {
+     "label": "Search",
+     "alt": "Mobile search results in two columns, with a Filters button",
+     "phone": true,
+     "img": "work/mcq-m-search-top.jpg",
+     "full": "work/mcq-m-search.jpg"
+    },
+    {
+     "label": "Filters",
+     "alt": "Filters in a sheet that slides up: object type, period, place of origin and material",
+     "phone": true,
+     "img": "work/mcq-m-filters.jpg"
+    },
+    {
+     "label": "Object record",
+     "alt": "Mobile object record: photo gallery, key details, map of origin and timeline",
+     "phone": true,
+     "img": "work/mcq-m-item-top.jpg",
+     "full": "work/mcq-m-item.jpg"
+    },
+    {
+     "label": "Story",
+     "alt": "Mobile story: the museum guide’s introduction, a quote and the featured object",
+     "phone": true,
+     "img": "work/mcq-m-story-top.jpg",
+     "full": "work/mcq-m-story.jpg"
+    }
+   ]
   },
   {
    "type": "cd-text",
    "label": "Recognition",
    "h2": "Great UX *gets noticed*",
    "prose": [
-    "The Collections web app was an OCTAS finalist in the Ministry and State Society category (4,000 employees and less), solidifying the Musée de la civilisation’s position as a creative, original institution that keeps pushing limits."
+    "The Collections web app was an OCTAS award finalist in the Ministry and State Society category (4,000 employees and less), solidifying the Musée de la civilisation’s position as a creative, original institution that keeps pushing limits."
    ],
    "split": true,
    "award": {

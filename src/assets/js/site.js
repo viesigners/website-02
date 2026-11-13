@@ -239,11 +239,15 @@
     img.addEventListener('load', place);
     const open = () => {
       opener = b;
-      big.src = best(img);
+      big.src = img.dataset.full || best(img); // a cropped preview opens its full-length screen
       big.alt = img.alt;
       cap.textContent = fig.querySelector('figcaption')?.textContent || '';
       close.setAttribute('aria-label', fr ? 'Fermer' : 'Close');
-      dlg.classList.toggle('lightbox--tall', !fig.classList.contains('cd-shot--phone') && img.naturalHeight > img.naturalWidth * 1.2);
+      // Long screens scroll in the lightbox instead of shrinking to fit; a phone screen counts as long beyond one 390 × 844 screen
+      const phone = fig.classList.contains('cd-shot--phone');
+      const ratio = +img.dataset.ratio || img.naturalHeight / img.naturalWidth;
+      dlg.classList.toggle('lightbox--tall', ratio > (phone ? 2.4 : 1.2));
+      dlg.classList.toggle('lightbox--phone', phone);
       dlg.showModal();
       dlg.scrollTop = 0;
     };

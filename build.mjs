@@ -135,6 +135,9 @@ const CDICO = {
   form: '<svg viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="2"/><path d="M8.5 7h7M8.5 10.5h7M8.5 14h7M8.5 17.5h4"/></svg>',
   time: '<svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.6 2.2M9.5 2.5h5"/></svg>',
   copies: '<svg viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h2"/><path d="M11 12.5h6M11 16h4"/></svg>',
+  drawers: '<svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 9.2h17M3.5 14.8h17M10 6.4h4M10 12h4M10 17.6h4"/></svg>',
+  related: '<svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="5.5" r="2.6"/><circle cx="18" cy="18.5" r="2.6"/><path d="M8.3 10.8l7.4-4M8.3 13.2l7.4 4"/></svg>',
+  templates: '<svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 9h17M10 9v11.5"/><path d="M13 13h4.5M13 16.5h3"/></svg>',
 };
 const ico = (n, cls = '') => `<svg aria-hidden="true" focusable="false"${cls ? ` class="${cls}"` : ''}><use href="#i-${n}"/></svg>`;
 const sparks = (n = 3) => Array.from({ length: n }, () => ico('spark', 'spark')).join('');
@@ -398,9 +401,11 @@ R.casestudy = (s, c) => `<section class="section"><div class="wrap">
 
 /* project case studies: prose, decisions, measured test. [À FOURNIR …] stays visible as a highlighted marker until the content is supplied */
 const fmtT = (s, lang) => fmt(s, lang).replace(/\[À FOURNIR[^\]]*\]/g, (m) => `<span class="tbd">${m}</span>`);
-const shots = (list, cls = '') => (list?.length ? `<div class="cd-shots cd-shots--${list.length} ${cls} rv">${list.map((i) => `<figure class="cd-shot${i.phone ? ' cd-shot--phone' : ''}${i.crop ? ' cd-shot--crop' : ''}"${i.crop ? ` style="--crop:${i.crop}"` : ''}>${i.img ? `${img(i.img, i.alt, { sizes: '(min-width:640px) 16rem, 62vw' })}<figcaption>${esc(i.label)}</figcaption>` : `<div class="cd-slot"><span>${esc(i.label)}</span></div>`}</figure>`).join('')}</div>` : '');
+/* a shot can show a cropped preview (img) and open its full-length screen (full) in the lightbox */
+const fullImg = (tag, full) => { if (!full) return tag; const [w, h] = (IMG_CACHE[full] ||= imgSize(full)); return tag.replace('<img ', `<img data-full="${BASE}/assets/img/${full}" data-ratio="${(h / w).toFixed(3)}" `); };
+const shots = (list, cls = '') => (list?.length ? `<div class="cd-shots cd-shots--${list.length} ${cls} rv">${list.map((i) => `<figure class="cd-shot${i.phone ? ' cd-shot--phone' : ''}${i.crop ? ' cd-shot--crop' : ''}"${i.crop ? ` style="--crop:${i.crop}"` : ''}>${i.img ? `${fullImg(img(i.img, i.alt, { sizes: '(min-width:640px) 16rem, 62vw' }), i.full)}<figcaption>${esc(i.label)}</figcaption>` : `<div class="cd-slot"><span>${esc(i.label)}</span></div>`}</figure>`).join('')}</div>` : '');
 /* award badge: laurel wreath, the distinction, the award name and its category (text, so it stays sharp and translatable) */
-const LAUREL = (flip) => `<svg class="award__laurel${flip ? ' award__laurel--r' : ''}" viewBox="0 0 40 120" aria-hidden="true"><path d="M32 116C14 100 6 78 8 54 9 36 16 20 28 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>${[[25, 14, -30], [17, 30, -18], [11, 47, -6], [9, 64, 6], [11, 81, 18], [17, 97, 32]].map(([x, y, r]) => `<ellipse cx="${x}" cy="${y}" rx="9" ry="4.2" transform="rotate(${r} ${x} ${y}) translate(-6 0)" fill="currentColor"/><ellipse cx="${x}" cy="${y}" rx="9" ry="4.2" transform="rotate(${r + 70} ${x} ${y}) translate(6 0)" fill="currentColor" opacity=".75"/>`).join('')}</svg>`;
+const LAUREL = (flip) => `<svg class="award__laurel${flip ? ' award__laurel--r' : ''}" viewBox="-8 2 49 118" aria-hidden="true"><path d="M32 116C14 100 6 78 8 54 9 36 16 20 28 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>${[[25, 14, -30], [17, 30, -18], [11, 47, -6], [9, 64, 6], [11, 81, 18], [17, 97, 32]].map(([x, y, r]) => `<ellipse cx="${x}" cy="${y}" rx="9" ry="4.2" transform="rotate(${r} ${x} ${y}) translate(-6 0)" fill="currentColor"/><ellipse cx="${x}" cy="${y}" rx="9" ry="4.2" transform="rotate(${r + 70} ${x} ${y}) translate(6 0)" fill="currentColor" opacity=".75"/>`).join('')}</svg>`;
 const awardBadge = (a) => `<figure class="award rv" aria-label="${esc(a.title)} ${esc(a.name)} ${esc(a.year || '')}">${LAUREL(false)}<div class="award__body"><span class="award__title">${esc(a.title)}</span><b class="award__name">${esc(a.name)}</b>${a.year ? `<span class="award__year">${esc(a.year)}</span>` : ''}<span class="award__cat">${esc(a.cat)}</span></div>${LAUREL(true)}</figure>`;
 R['cd-text'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-text', { label: s.label })}

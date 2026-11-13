@@ -1,7 +1,7 @@
 {
  "meta": {
   "title": "Étude de cas Musée de la civilisation : lancement de « Collections » | Viesigners",
-  "description": "Comment Charles-Erick BG a accompagné le Musée de la civilisation dans le lancement de « Collections », une application web pour explorer plus de 54 000 objets et archives. Finaliste aux OCTAS.",
+  "description": "Comment Charles-Erick BG a accompagné le Musée de la civilisation dans le lancement de « Collections », une application web pour explorer plus de 54 000 objets et archives. Finaliste aux prix OCTAS.",
   "h1": "Mettre les collections du Musée de la civilisation à la portée de tous"
  },
  "article": true,
@@ -51,7 +51,7 @@
     },
     {
      "k": "Résultat",
-     "v": "*Finaliste aux OCTAS*, catégorie Ministères et sociétés d’État (4 000 employés et moins)."
+     "v": "*Finaliste aux prix OCTAS*, catégorie Ministères et sociétés d’État (4 000 employés et moins)."
     }
    ],
    "cta": {
@@ -119,7 +119,7 @@
     },
     {
      "n": "Finaliste",
-     "t": "aux OCTAS, catégorie Ministères et sociétés d’État (4 000 employés et moins)."
+     "t": "aux prix OCTAS, catégorie Ministères et sociétés d’État (4 000 employés et moins)."
     }
    ]
   },
@@ -576,15 +576,18 @@
      "items": [
       {
        "h": "Des tiroirs d’information structurés",
-       "p": "Ils utilisent des témoins (cookies) pour retenir les derniers blocs d’information affichés, afin d’adapter l’expérience aux besoins et au contexte de la plupart des utilisateurs."
+       "p": "Ils utilisent des témoins (cookies) pour retenir les derniers blocs d’information affichés, afin d’adapter l’expérience aux besoins et au contexte de la plupart des utilisateurs.",
+       "icon": "drawers"
       },
       {
        "h": "Des contenus liés",
-       "p": "Pour encourager la découverte, l’apprentissage et l’engagement."
+       "p": "Pour encourager la découverte, l’apprentissage et l’engagement.",
+       "icon": "related"
       },
       {
        "h": "Des gabarits souples",
-       "p": "Des gabarits de médias et de texte qui donnent de la latitude aux créateurs de contenu, tout en gardant une apparence cohérente et attrayante."
+       "p": "Des gabarits de médias et de texte qui donnent de la latitude aux créateurs de contenu, tout en gardant une apparence cohérente et attrayante.",
+       "icon": "templates"
       }
      ]
     }
@@ -598,32 +601,78 @@
     {
      "label": "Découvrir",
      "alt": "Page d’accueil : recherche, thèmes et albums en vedette, suggestions pour continuer d’explorer",
-     "img": "work/mcq-ui-home.jpg"
+     "img": "work/mcq-ui-home-top.jpg",
+     "full": "work/mcq-ui-home.jpg"
     },
     {
      "label": "Recherche",
      "alt": "Recherche avec filtres par type d’objet, période, lieu d’origine et matériau",
-     "img": "work/mcq-ui-search.jpg"
+     "img": "work/mcq-ui-search-top.jpg",
+     "full": "work/mcq-ui-search.jpg"
     },
     {
      "label": "Fiche d’objet",
      "alt": "Fiche d’un objet : galerie, carte d’origine, ligne du temps, sections à déplier et contenus liés",
-     "img": "work/mcq-ui-item.jpg"
+     "img": "work/mcq-ui-item-top.jpg",
+     "full": "work/mcq-ui-item.jpg"
     },
     {
      "label": "Récit",
      "alt": "Récit d’une guide du Musée, avec l’objet présenté et des chapitres à parcourir",
-     "img": "work/mcq-ui-story.jpg"
+     "img": "work/mcq-ui-story-top.jpg",
+     "full": "work/mcq-ui-story.jpg"
     }
    ],
-   "shotsCls": "cd-shots--stack3"
+   "shotsCls": "cd-shots--grid2"
+  },
+  {
+   "type": "cd-gallery",
+   "label": "Sur mobile",
+   "h2": "La même expérience, *dans votre poche*",
+   "sub": "Mobile et ordinateur ont été conçus en parallèle, pour une excellente expérience sur chaque appareil : les filtres glissent du bas de l’écran, les résultats passent sur deux colonnes et chaque zone tactile mesure au moins 44 px.",
+   "shots": [
+    {
+     "label": "Découvrir",
+     "alt": "Accueil mobile : recherche, thèmes et albums en vedette",
+     "phone": true,
+     "img": "work/mcq-m-home-top.jpg",
+     "full": "work/mcq-m-home.jpg"
+    },
+    {
+     "label": "Recherche",
+     "alt": "Résultats de recherche mobiles sur deux colonnes, avec un bouton Filtres",
+     "phone": true,
+     "img": "work/mcq-m-search-top.jpg",
+     "full": "work/mcq-m-search.jpg"
+    },
+    {
+     "label": "Filtres",
+     "alt": "Filtres dans un panneau qui glisse du bas : type d’objet, période, lieu d’origine et matériau",
+     "phone": true,
+     "img": "work/mcq-m-filters.jpg"
+    },
+    {
+     "label": "Fiche d’objet",
+     "alt": "Fiche d’objet mobile : galerie de photos, informations clés, carte d’origine et ligne du temps",
+     "phone": true,
+     "img": "work/mcq-m-item-top.jpg",
+     "full": "work/mcq-m-item.jpg"
+    },
+    {
+     "label": "Récit",
+     "alt": "Récit mobile : l’introduction de la guide, une citation et l’objet en vedette",
+     "phone": true,
+     "img": "work/mcq-m-story-top.jpg",
+     "full": "work/mcq-m-story.jpg"
+    }
+   ]
   },
   {
    "type": "cd-text",
    "label": "La reconnaissance",
    "h2": "Une bonne UX *se remarque*",
    "prose": [
-    "L’application web « Collections » a été finaliste aux OCTAS, dans la catégorie Ministères et sociétés d’État (4 000 employés et moins). Cette nomination confirme la place du Musée de la civilisation comme institution créative et originale, qui continue de repousser les limites."
+    "L’application web « Collections » a été finaliste aux prix OCTAS, dans la catégorie Ministères et sociétés d’État (4 000 employés et moins). Cette nomination confirme la place du Musée de la civilisation comme institution créative et originale, qui continue de repousser les limites."
    ],
    "split": true,
    "award": {
