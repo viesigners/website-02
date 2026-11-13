@@ -77,7 +77,7 @@
     },
     {
      "h": "Web development",
-     "p": "Fast, scalable pages strategically adapted to mobile platforms, built so you can keep evolving them."
+     "p": "Fast, scalable pages strategically adapted to mobile platforms, built so you can keep evolving them with the technology that fits you."
     },
     {
      "h": "SEO and GEO foundations",
@@ -87,7 +87,64 @@
      "h": "Measurement and optimization",
      "p": "Conversion tracking in place at launch, so friction points are fixed with data rather than hunches."
     }
-   ]
+   ],
+   "tech": {
+    "label": "Technologies we work with",
+    "items": [
+     {
+      "id": "claude",
+      "name": "Claude Code"
+     },
+     {
+      "id": "nextdotjs",
+      "name": "Next.js"
+     },
+     {
+      "id": "react",
+      "name": "React"
+     },
+     {
+      "id": "astro",
+      "name": "Astro"
+     },
+     {
+      "id": "sanity",
+      "name": "Sanity"
+     },
+     {
+      "id": "contentful",
+      "name": "Contentful"
+     },
+     {
+      "id": "strapi",
+      "name": "Strapi"
+     },
+     {
+      "id": "wordpress",
+      "name": "WordPress"
+     },
+     {
+      "id": "shopify",
+      "name": "Shopify"
+     },
+     {
+      "id": "wix",
+      "name": "Wix"
+     },
+     {
+      "id": "squarespace",
+      "name": "Squarespace"
+     },
+     {
+      "id": "webflow",
+      "name": "Webflow"
+     },
+     {
+      "id": "framer",
+      "name": "Framer"
+     }
+    ]
+   }
   },
   {
    "type": "process",
@@ -199,6 +256,13 @@
    "q": "What's the difference between a website and a landing page?",
    "a": [
     "A website presents your whole business and answers many intentions. A [landing page](@landing-pages) is a single page designed for one action (request a quote, book a call). They complement each other."
+   ]
+  },
+  {
+   "q": "Which technologies do you build websites with?",
+   "a": [
+    "We build with the technology that fits you: Claude Code, Next.js / React, Astro, Sanity, Contentful and Strapi, WordPress, Shopify, Wix, Squarespace, Webflow and Framer.",
+    "We recommend the right one based on what your team needs to update on its own, your budget and your growth plans."
    ]
   },
   {

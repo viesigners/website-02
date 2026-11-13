@@ -356,10 +356,14 @@ R.faq = (s, c) => {
 </div></section>`;
 };
 
+// technology logo row (Simple Icons, CC0): each SVG is inlined so it takes the text colour of the light or dark theme
+const techLogo = (id) => fs.readFileSync(path.join(SRC, 'assets/img/tech', id + '.svg'), 'utf8').replace(/<title>.*?<\/title>/, '').replace(' role="img"', ' aria-hidden="true" focusable="false"');
+const techRow = (t) => `<div class="tech rv"><p class="label">${esc(t.label)}</p><ul class="tech__row">${t.items.map((i) => `<li>${techLogo(i.id)}<span>${esc(i.name)}</span></li>`).join('')}</ul></div>`;
+
 R.deliverables = (s, c) => `<section class="section"${s.id ? ` id="${s.id}"` : ''}><div class="wrap"><div class="split">
   <div class="split__head">${s.label ? `<p class="label rv">${esc(s.label)}</p>` : splitLabel(c, 'deliverables')}<h2 class="rv">${fmt(s.h2, c.lang)}</h2>${s.lead ? `<p class="lead rv">${fmt(s.lead, c.lang)}</p>` : ''}</div>
   <div class="dl">${s.items.map((i, k) => { const link = i.to && !isHidden(i.to); return `<div class="dl__item${link ? ' dl__item--link' : ''}${i.p ? '' : ' dl__item--solo'}${s.icon ? ' dl__item--icon' : ''} rv" style="--d:${k * .04}s">${s.icon ? ico(s.icon, 'dl__icon') : ''}<h3>${link ? `<a class="more" href="${url(i.to, c.lang)}" aria-label="${esc(plain(i.h))}"></a>` : ''}${fmt(i.h, c.lang)}</h3>${i.p ? `<p>${fmt(i.p, c.lang)}</p>` : ''}</div>`; }).join('')}</div>
-</div></div></section>`;
+</div>${s.tech ? techRow(s.tech) : ''}</div></section>`;
 
 R.process = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'process')}
@@ -801,7 +805,7 @@ function orgNodes(lang, T) {
   const o = abs('/#organization');
   return [
     {
-      '@type': ['Organization', 'ProfessionalService'], '@id': o, name: 'Viesigners', alternateName: ['Les Viesigners', 'Les frères BG', 'The BG Twins'],
+      '@type': ['Organization', 'ProfessionalService'], '@id': o, name: 'Viesigners', alternateName: ['UX for the Planet', 'Les Viesigners', 'Les frères BG', 'The BG Twins'],
       url: abs('/'), logo: { '@type': 'ImageObject', url: abs('/assets/img/favicon.png') }, image: abs(`/assets/img/og-card-${lang}.jpg`),
       description: T.orgDescription, telephone: CFG.phone, foundingDate: '2009',
       address: [{ '@type': 'PostalAddress', addressLocality: 'Québec', addressRegion: 'QC', addressCountry: 'CA' }, { '@type': 'PostalAddress', addressLocality: 'Vancouver', addressRegion: 'BC', addressCountry: 'CA' }],
@@ -837,7 +841,7 @@ function toMd(page, c) {
       case 'stats': L.push(s.h2 ? `## ${t(s.h2)}` : '', '', ...s.items.map((i) => `- **${i.n}** ${t(i.h)}: ${t(i.p)}`), ''); break;
       case 'work': L.push(`## ${t(s.h2)}`, '', ...s.items.map((i) => `- ${i.title}${i.result ? ' — ' + i.result : ''}`), ''); break;
       case 'fit': L.push(`## ${t(s.h2)}`, '', `### ${t(s.yes.h)}`, ...s.yes.items.map((i) => `- ${t(i)}`), '', `### ${t(s.no.h)}`, ...s.no.items.map((i) => `- ${t(i)}`), ''); break;
-      case 'deliverables': L.push(`## ${t(s.h2)}`, '', ...(s.lead ? [t(s.lead), ''] : []), ...s.items.map((i) => `- **${t(i.h)}** — ${t(i.p)}`), ''); break;
+      case 'deliverables': L.push(`## ${t(s.h2)}`, '', ...(s.lead ? [t(s.lead), ''] : []), ...s.items.map((i) => `- **${t(i.h)}** — ${t(i.p)}`), '', ...(s.tech ? [`**${t(s.tech.label)}:** ${s.tech.items.map((i) => i.name).join(', ')}`, ''] : [])); break;
       case 'process': L.push(`## ${t(s.h2)}`, '', ...s.steps.map((p, i) => `${i + 1}. **${t(p.h)}** — ${t(p.p)}`), ''); break;
       case 'compare': L.push(`## ${t(s.h2)}`, '', `### ${t(s.before.h)}`, ...s.before.items.map((i) => `- ${t(i)}`), '', `### ${t(s.after.h)}`, ...s.after.items.map((i) => `- ${t(i)}`), ''); break;
       case 'related': L.push(`## ${t(s.h2)}`, '', ...s.items.filter((k) => !isHidden(k)).map((k) => `- [${T.nav[k]}](${abs(url(k, lang))}): ${T.navSub[k]}`), ''); break;
