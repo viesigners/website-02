@@ -1234,3 +1234,5 @@ html { scroll-padding-top: 7rem; }
 @media (min-width: 640px) and (max-width: 899px) { .cd-shots--5:has(.cd-shot--phone img) { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: .5rem; } .cd-shots--5 .cd-shot--phone { flex: 0 0 30%; scroll-snap-align: start; } }
 /* a long phone screen scrolls in the lightbox at phone width instead of stretching to the desktop width */
 .lightbox--phone img { max-width: min(100%, 26rem); }
+/* a section with no heading continues the one above it: no top padding, so the gap is not doubled */
+.theme > .section.section--cont { padding-top: 0; }

@@ -421,7 +421,7 @@ R['cd-text'] = (s, c) => `<section class="section"><div class="wrap">
   ${s.split ? '' : shots(s.shots)}
 </div></section>`;
 /* persona cards: avatar, name and role, key facts, a quote, then goals / frustrations / habits / what the product must offer */
-R['cd-personas'] = (s, c) => `<section class="section"><div class="wrap">
+R['cd-personas'] = (s, c) => `<section class="section${s.h2 ? '' : ' section--cont'}"><div class="wrap">
   ${s.h2 ? secHead(s, c, 'cd-personas', { label: s.label }) : ''}
   <div class="cd-personas">${s.items.map((p, k) => `<article class="cd-persona rv" style="--d:${k * .08}s">
     <header>${img(p.img, p.alt, { cls: 'cd-persona__img', sizes: '96px' })}<div><h3>${esc(p.name)}</h3><p>${esc(p.role)}</p></div></header>
