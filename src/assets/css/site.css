@@ -1236,3 +1236,13 @@ html { scroll-padding-top: 7rem; }
 .lightbox--phone img { max-width: min(100%, 26rem); }
 /* a section with no heading continues the one above it: no top padding, so the gap is not doubled */
 .theme > .section.section--cont { padding-top: 0; }
+
+/* Activity tag with an info note: a quiet icon; the note shows on hover, keyboard focus or tap */
+.cd-tags .cd-tag--info { position: relative; display: inline-flex; align-items: center; gap: .3rem; padding-right: .3rem; }
+.cd-info { display: grid; place-items: center; width: 1.6rem; height: 1.6rem; margin: -.3rem 0; padding: 0; border: 0; border-radius: 50%; background: transparent; color: var(--text-2); cursor: help; }
+.cd-info svg { width: 1rem; height: 1rem; }
+.cd-info:hover, .cd-info:focus-visible { color: var(--text); background: rgba(23, 43, 118, .08); }
+.cd-info:focus-visible { outline: 2px solid var(--pink); outline-offset: 1px; }
+.cd-tip { position: absolute; z-index: 5; bottom: calc(100% + .55rem); left: calc(100% - 1.1rem); translate: calc(-50% + var(--tip-shift, 0px)) 0; width: max-content; max-width: min(18rem, calc(100vw - 2rem)); padding: .6rem .8rem; border-radius: var(--r-md); background: #141826; color: #e9edf3; font-size: .8rem; line-height: 1.45; box-shadow: 0 8px 24px rgba(16, 20, 33, .25); opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .15s, visibility .15s; }
+.cd-tag--info:hover .cd-tip, .cd-tag--info:focus-within .cd-tip { opacity: 1; visibility: visible; }
+.cd-tag--info.tip-off .cd-tip { opacity: 0; visibility: hidden; }

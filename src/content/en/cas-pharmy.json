@@ -95,7 +95,12 @@
       "Information architecture",
       "Wireframing",
       "Form design",
-      "Copywriting"
+      "Copywriting",
+      {
+       "t": "Graphic design",
+       "label": "About the graphic design",
+       "info": "I refreshed the look and feel of these screens myself for this case study. The original app’s visual design may differ."
+      }
      ],
      "id": "what-i-did"
     },

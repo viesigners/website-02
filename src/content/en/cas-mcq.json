@@ -96,14 +96,20 @@
       "Page structure",
       "UX recommendations",
       "Development prioritization",
-      "UX consulting"
+      "UX consulting",
+      {
+       "t": "Graphic design",
+       "label": "About the graphic design",
+       "info": "I refreshed the look and feel of these screens myself for this case study. The original app’s visual design may differ."
+      }
      ],
      "id": "what-i-did"
     },
     {
      "b": "Worked with",
      "bullets": [
-      "Musée de la civilisation project team",
+      "Musée de la civilisation project lead",
+      "Musée de la civilisation development team",
       "Art director"
      ]
     }

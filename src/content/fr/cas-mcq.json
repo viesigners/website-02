@@ -96,14 +96,20 @@
       "Structure des pages",
       "Recommandations UX",
       "Priorisation du développement",
-      "Conseil UX"
+      "Conseil UX",
+      {
+       "t": "Design graphique",
+       "label": "À propos du design graphique",
+       "info": "J’ai moi-même rafraîchi le design visuel de ces écrans pour cette étude de cas. L’application d’origine peut avoir un look différent."
+      }
      ],
      "id": "ce-que-jai-fait"
     },
     {
      "b": "Collaborateurs",
      "bullets": [
-      "Équipe de projet du Musée de la civilisation",
+      "Direction de projet du Musée de la civilisation",
+      "Équipe de développement du Musée de la civilisation",
       "Directeur artistique"
      ]
     }

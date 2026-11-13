@@ -271,3 +271,21 @@ document.addEventListener('click', (e) => {
   t.setAttribute('tabindex', '-1');
   t.focus({ preventScroll: true });
 });
+
+/* Info tooltips on activity tags: keep the note inside the screen, and let Escape hide it */
+(() => {
+  const d = document;
+  d.querySelectorAll('.cd-tag--info').forEach((li) => {
+    const tip = li.querySelector('.cd-tip');
+    const fit = () => {
+      li.classList.remove('tip-off');
+      tip.style.setProperty('--tip-shift', '0px');
+      const r = tip.getBoundingClientRect(), m = 12, vw = d.documentElement.clientWidth;
+      const shift = r.left < m ? m - r.left : r.right > vw - m ? vw - m - r.right : 0;
+      tip.style.setProperty('--tip-shift', `${shift}px`);
+    };
+    li.addEventListener('mouseenter', fit);
+    li.addEventListener('focusin', fit);
+    li.addEventListener('keydown', (e) => { if (e.key === 'Escape') li.classList.add('tip-off'); });
+  });
+})();
