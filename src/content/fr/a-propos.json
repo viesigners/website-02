@@ -111,6 +111,10 @@
         {
           "k": "Reconnaissances",
           "v": "Projets reconnus par Awwwards, OCTAS, Osentreprendre et Gartner."
+        },
+        {
+          "k": "Historique",
+          "v": "Anciennement UX for the Planet (uxfortheplanet.com). En 2026, elle est devenue Viesigners, son évolution directe : nous avons uni nos racines en design UX à notre expertise en marketing numérique."
         }
       ]
     },
@@ -137,6 +141,12 @@
       "q": "Où voir des exemples du travail des fondateurs?",
       "a": [
         "Le [profil de Charles-Erick](@cebg) présente ses études de cas et ses projets, et le [profil Toptal de Jean-François](https://www.toptal.com/designers/resume/jean-francois-b-g#XAEE74) présente les siens."
+      ]
+    },
+    {
+      "q": "Viesigners est-elle la même entreprise que UX for the Planet?",
+      "a": [
+        "Oui. Viesigners est l'évolution directe de UX for the Planet (uxfortheplanet.com). En 2026, nous avons uni nos racines en design UX à notre expertise en marketing numérique pour bâtir une agence intégrée, axée sur le design haut de gamme, l'optimisation du taux de conversion et le conseil en croissance."
       ]
     }
   ]

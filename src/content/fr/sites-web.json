@@ -77,7 +77,7 @@
     },
     {
      "h": "Développement web",
-     "p": "Des pages rapides et évolutives, stratégiquement adaptées aux plateformes mobiles, pensées pour que vous puissiez les faire évoluer."
+     "p": "Des pages rapides et évolutives, stratégiquement adaptées aux plateformes mobiles, pensées pour que vous puissiez les faire évoluer avec la technologie qui vous convient."
     },
     {
      "h": "Fondations SEO et GEO",
@@ -87,7 +87,64 @@
      "h": "Mesure et optimisation",
      "p": "Suivi des conversions en place dès le lancement, afin de repérer les points de friction et de les corriger avec des données plutôt qu'avec des intuitions."
     }
-   ]
+   ],
+   "tech": {
+    "label": "Technologies avec lesquelles nous travaillons",
+    "items": [
+     {
+      "id": "claude",
+      "name": "Claude Code"
+     },
+     {
+      "id": "nextdotjs",
+      "name": "Next.js"
+     },
+     {
+      "id": "react",
+      "name": "React"
+     },
+     {
+      "id": "astro",
+      "name": "Astro"
+     },
+     {
+      "id": "sanity",
+      "name": "Sanity"
+     },
+     {
+      "id": "contentful",
+      "name": "Contentful"
+     },
+     {
+      "id": "strapi",
+      "name": "Strapi"
+     },
+     {
+      "id": "wordpress",
+      "name": "WordPress"
+     },
+     {
+      "id": "shopify",
+      "name": "Shopify"
+     },
+     {
+      "id": "wix",
+      "name": "Wix"
+     },
+     {
+      "id": "squarespace",
+      "name": "Squarespace"
+     },
+     {
+      "id": "webflow",
+      "name": "Webflow"
+     },
+     {
+      "id": "framer",
+      "name": "Framer"
+     }
+    ]
+   }
   },
   {
    "type": "process",
@@ -199,6 +256,13 @@
    "q": "Quelle est la différence entre un site web et une landing page?",
    "a": [
     "Un site web présente l'ensemble de votre entreprise et répond à plusieurs intentions. Une [landing page](@landing-pages) est une page unique, conçue pour une seule action (demander une soumission, réserver un appel). Les deux se complètent."
+   ]
+  },
+  {
+   "q": "Avec quelles technologies concevez-vous vos sites web?",
+   "a": [
+    "Nous travaillons avec la technologie qui vous convient : Claude Code, Next.js / React, Astro, Sanity, Contentful et Strapi, WordPress, Shopify, Wix, Squarespace, Webflow et Framer.",
+    "Nous vous recommandons la bonne selon ce que votre équipe doit pouvoir modifier elle-même, votre budget et vos projets de croissance."
    ]
   },
   {
