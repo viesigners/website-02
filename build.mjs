@@ -916,6 +916,8 @@ const THEME = {
 };
 const ASSET_HASH = {};
 const PAGES_OUT = []; // for sitemap + llms
+/* hreflang set for a page: only when it exists in BOTH languages (EN↔FR from the route table); x-default = the English version */
+const hreflangs = (altUrls) => (LANGS.every((l) => altUrls[l]) ? [...LANGS.map((l) => ({ l, href: abs(altUrls[l]) })), { l: 'x-default', href: abs(altUrls.en) }] : []);
 
 function buildPage({ lang, key, page, post, tab }) {
   const T = TR[lang];
@@ -926,8 +928,7 @@ function buildPage({ lang, key, page, post, tab }) {
     if (key === 'post') { const s = CURRENT_POST_SLUGS[post.key]; altUrls[l] = s?.[l] ? url('post:' + post.key, l) : null; }
     else altUrls[l] = tab ? tab.urls[l] : url(key, l);
   }
-  const alternates = LANGS.filter((l) => altUrls[l]).map((l) => ({ hreflang: l, href: abs(altUrls[l]) }));
-  alternates.push({ hreflang: 'x-default', href: abs('/') });
+  const alternates = hreflangs(altUrls).map((a) => ({ hreflang: a.l, href: a.href }));
 
   /* breadcrumbs */
   const crumbs = [{ name: T.nav.home, url: url('home', lang) }];
@@ -1099,32 +1100,22 @@ function build() {
     }
   }
 
-  /* root "/" — no language screen: send each visitor to the language of their browser.
-     1) hosting rules (_redirects / .htaccess, generated below) redirect server-side using Accept-Language;
-     2) this tiny page is the fallback on hosts without such rules: it redirects instantly with JS
-        (saved choice → browser languages → English) and still offers plain links for crawlers/no-JS. */
-  const rootAlt = [...LANGS.map((l) => `<link rel="alternate" hreflang="${l}" href="${abs('/' + l + '/')}">`), `<link rel="alternate" hreflang="x-default" href="${abs('/')}">`].join('\n');
+  /* root "/": a permanent 301 to /en/ belongs to the host (rules below, or a redirect rule in front of GitHub Pages).
+     This file is only what a host without redirects serves: no JS, no meta refresh, never indexed, canonical = /en/. */
   write(path.join(DIST, 'index.html'), `<!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Viesigners | Agence web Québec — Web agency</title>
-<meta name="description" content="Viesigners — UX/UI, CRO, sites web, landing pages et design de produit. / UX/UI, CRO, websites, landing pages and product design.">
-<link rel="canonical" href="${abs('/')}">
-${rootAlt}
-<meta name="theme-color" content="#101421"><meta name="color-scheme" content="dark"><meta name="robots" content="${NOINDEX ? 'noindex, follow' : 'index, follow'}">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viesigners</title>
+<link rel="canonical" href="${abs('/en/')}">
+<meta name="robots" content="noindex, follow">
 <link rel="icon" href="${BASE}/assets/img/favicon.png">
 <style>html{background:#101421;color:#fff;font-family:system-ui,sans-serif}body{margin:0;min-height:100dvh;display:grid;place-items:center}a{color:#ff488b;margin:0 .75rem}p{text-align:center}</style>
-<script>(function(){var l;try{l=localStorage.getItem('vz-lang')}catch(e){}if(l!=='fr'&&l!=='en'){var a=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'en'];l='en';for(var i=0;i<a.length;i++){var c=String(a[i]).toLowerCase().slice(0,2);if(c==='fr'||c==='en'){l=c;break}}}location.replace('${BASE}/'+l+'/'+location.search+location.hash)})();</script>
-</head><body><p><a href="${BASE}/fr/" hreflang="fr" lang="fr">Viesigners — Français</a><a href="${BASE}/en/" hreflang="en" lang="en">Viesigners — English</a></p></body></html>`);
+</head><body><p><a href="${BASE}/en/" hreflang="en" lang="en">Viesigners — English</a><a href="${BASE}/fr/" hreflang="fr" lang="fr">Viesigners — Français</a></p></body></html>`);
 
   /* 404 */
   write(path.join(DIST, '404.html'), `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>404 | Viesigners</title><meta name="robots" content="noindex"><link rel="stylesheet" href="${BASE}/assets/css/fonts.css"><link rel="stylesheet" href="${BASE}/assets/css/site.css"></head><body><div class="page-bg"></div><main class="chooser"><div><h1 class="display">404.<br><em class="acc">Cette page a pris un détour.</em></h1><p class="lead" style="margin:0 auto 2rem">This page took a detour.</p><div class="opts"><a class="pill" href="${BASE}/fr/">Accueil</a><a class="pill pill--ghost" href="${BASE}/en/">Home</a></div></div></main></body></html>`);
 
   /* sitemap with hreflang alternates */
-  const urls = [{ loc: abs('/'), alts: LANGS.map((l) => ({ l, href: abs('/' + l + '/') })).concat([{ l: 'x-default', href: abs('/') }]) }];
-  for (const p of PAGES_OUT.filter((x) => !x.hidden)) {
-    const alts = LANGS.filter((l) => p.altUrls[l]).map((l) => ({ l, href: abs(p.altUrls[l]) })).concat([{ l: 'x-default', href: abs('/') }]);
-    urls.push({ loc: abs(p.selfUrl), alts });
-  }
+  const urls = PAGES_OUT.filter((x) => !x.hidden).map((p) => ({ loc: abs(p.selfUrl), alts: hreflangs(p.altUrls) })); // "/" is a redirect, not a page
   write(path.join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.map((u) => `<url><loc>${u.loc}</loc><lastmod>${BUILD_DATE}</lastmod>${u.alts.map((a) => `<xhtml:link rel="alternate" hreflang="${a.l}" href="${a.href}"/>`).join('')}</url>`).join('\n')}\n</urlset>\n`);
 
   write(path.join(DIST, '.nojekyll'), ''); // GitHub Pages: serve files as-is
@@ -1144,9 +1135,9 @@ ${rootAlt}
   write(path.join(DIST, 'llms.txt'), llms.join('\n'));
   write(path.join(DIST, 'llms-full.txt'), `# Viesigners — full content\n\n` + PAGES_OUT.filter((x) => !x.hidden).map((p) => `<!-- ${p.selfUrl} -->\n` + p.md).join('\n---\n\n'));
 
-  /* hosting rules: server-side language redirect for "/" (302 + Vary so caches/crawlers stay correct) */
-  write(path.join(DIST, '_redirects'), `/  /fr/  302!  Language=fr\n/  /en/  302!\n`);
-  write(path.join(DIST, '.htaccess'), `# Apache: send "/" to the browser language (English by default)\n<IfModule mod_rewrite.c>\nRewriteEngine On\nRewriteCond %{HTTP:Accept-Language} ^fr [NC]\nRewriteRule ^$ /fr/ [R=302,L]\nRewriteRule ^$ /en/ [R=302,L]\n</IfModule>\n<IfModule mod_headers.c>\nHeader append Vary Accept-Language\n</IfModule>\n`);
+  /* hosting rules: "/" → /en/ permanent redirect, for hosts that read them (GitHub Pages does not) */
+  write(path.join(DIST, '_redirects'), `/  /en/  301\n`); // Cloudflare Pages / Netlify
+  write(path.join(DIST, '.htaccess'), `# Apache: "/" is a permanent redirect to the English site\n<IfModule mod_rewrite.c>\nRewriteEngine On\nRewriteRule ^$ /en/ [R=301,L]\n</IfModule>\n`);
   /* hosting hints */
   write(path.join(DIST, '_headers'), `/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n/\n  Vary: Accept-Language\n  Cache-Control: no-store\n`);
   console.log(`✓ built ${PAGES_OUT.length} pages (${PAGES_OUT.filter((x) => x.hidden).length} hidden: noindex, unlinked) (${LANGS.join(' + ')}) → dist/  [${new Date().toLocaleTimeString()}]`);

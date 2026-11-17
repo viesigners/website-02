@@ -5,8 +5,6 @@
   d.querySelectorAll('[data-year]').forEach((e) => { e.textContent = new Date().getFullYear(); }); // {year} in content stays current between builds
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* remember the visitor's language so "/" sends them back to it next time */
-  try { localStorage.setItem('vz-lang', d.documentElement.lang); } catch (_) {}
 
   /* header: hide on scroll down, show on scroll up */
   const header = d.querySelector('.header');
