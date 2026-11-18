@@ -253,7 +253,7 @@
       {
        "h": "Problem",
        "p": [
-        "The import feature, one of the most used, was confusing:",
+        "The import feature was confusing:",
         {
          "list": [
           "A generic interface had to cover every type of import.",

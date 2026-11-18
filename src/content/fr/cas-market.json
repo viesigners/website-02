@@ -253,7 +253,7 @@
       {
        "h": "Problème",
        "p": [
-        "Très utilisée, la fonctionnalité d’import prêtait à confusion :",
+        "La fonctionnalité d’import prêtait à confusion :",
         {
          "list": [
           "Une interface générique devait couvrir tous les types d’imports.",
