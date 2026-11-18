@@ -160,7 +160,7 @@
       {
        "h": "Un import confus",
        "p": "Des chemins dispersés (l’API à un endroit, les fichiers à un autre), des options cachées dans une interface « avancée » et des erreurs sans explication.",
-       "icon": "form"
+       "icon": "import"
       },
       {
        "h": "Des tableaux de bord conçus un à un",

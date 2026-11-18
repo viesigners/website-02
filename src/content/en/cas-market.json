@@ -160,7 +160,7 @@
       {
        "h": "A confusing import",
        "p": "Scattered paths (the API in one place, files in another), options hidden in an “advanced” interface, and errors with no explanation.",
-       "icon": "form"
+       "icon": "import"
       },
       {
        "h": "Dashboards designed one by one",
