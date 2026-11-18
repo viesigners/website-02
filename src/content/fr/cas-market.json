@@ -159,7 +159,7 @@
       },
       {
        "h": "Un import confus",
-       "p": "Des chemins dispersés (l’API à un endroit, les fichiers à un autre), des options cachées dans une interface « avancée » et des erreurs sans explication.",
+       "p": "Un seul outil générique pour tous les types d’imports, des options cachées dans une interface « avancée » et des erreurs sans explication.",
        "icon": "import"
       },
       {
@@ -218,7 +218,7 @@
       {
        "h": "La refonte d’une fonctionnalité clé",
        "to": "import",
-       "p": "Regrouper tous les imports dans un seul parcours en étapes, qui explique la plateforme pendant qu’on l’utilise."
+       "p": "Remplacer un outil d’import générique par un parcours en étapes, qui explique la plateforme pendant qu’on l’utilise."
       },
       {
        "h": "La refonte de l’architecture de l’information",
@@ -247,12 +247,12 @@
     {
      "id": "import",
      "tag": "Pilier 1 · Refonte d’une fonctionnalité clé",
-     "h": "Regrouper les imports dans un parcours qui enseigne la plateforme",
+     "h": "Remplacer un import générique par un parcours qui enseigne la plateforme",
      "parts": [
       {
        "h": "Problème",
        "p": [
-        "L’import, l’une des fonctionnalités les plus utilisées, était confus : des chemins dispersés selon le type de données, des options mal comprises ou cachées dans une interface « avancée », et des erreurs sans explication.",
+        "L’import, l’une des fonctionnalités les plus utilisées, était confus : un seul outil couvrait tous les types d’imports, avec une interface générique, des options mal comprises ou cachées dans une interface « avancée », et des erreurs sans explication.",
         "Les nouveaux usagers se perdaient, et les demandes au soutien et aux CSM s’accumulaient."
        ]
       },

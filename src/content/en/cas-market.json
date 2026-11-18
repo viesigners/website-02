@@ -159,7 +159,7 @@
       },
       {
        "h": "A confusing import",
-       "p": "Scattered paths (the API in one place, files in another), options hidden in an “advanced” interface, and errors with no explanation.",
+       "p": "One generic tool for every type of import, options hidden in an “advanced” interface, and errors with no explanation.",
        "icon": "import"
       },
       {
@@ -218,7 +218,7 @@
       {
        "h": "Core functionality redesign",
        "to": "import",
-       "p": "Bring every import into a single step-by-step flow that explains the platform as you use it."
+       "p": "Replace a generic import tool with a step-by-step flow that explains the platform as you use it."
       },
       {
        "h": "Information architecture overhaul",
@@ -247,12 +247,12 @@
     {
      "id": "import",
      "tag": "Pillar 1 · Core functionality redesign",
-     "h": "Bring imports into one flow that teaches the platform",
+     "h": "Replace a generic import with a flow that teaches the platform",
      "parts": [
       {
        "h": "Problem",
        "p": [
-        "Import, one of the most used features, was confusing: paths scattered by data type, options that were misunderstood or hidden in an “advanced” interface, and errors with no explanation.",
+        "Import, one of the most used features, was confusing: a single tool covered every type of import with a generic interface, options that were misunderstood or hidden in an “advanced” interface, and errors with no explanation.",
         "New users got lost, and requests to support and the CSMs piled up."
        ]
       },
