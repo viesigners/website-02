@@ -40,7 +40,7 @@
      "k": "Activities",
      "v": "User research, product design, information architecture, design system",
      "more": {
-      "n": 10,
+      "n": 9,
       "to": "what-i-did",
       "label": "See all activities"
      }
@@ -86,7 +86,6 @@
      "wide": true,
      "tags": [
       "User research",
-      "Interviews",
       "Usability testing",
       "Competitive analysis",
       "Information architecture",

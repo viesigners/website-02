@@ -40,7 +40,7 @@
      "k": "Activités",
      "v": "Recherche utilisateur, design de produit, architecture de l’information, design system",
      "more": {
-      "n": 10,
+      "n": 9,
       "to": "ce-que-jai-fait",
       "label": "Voir toutes les activités"
      }
@@ -86,7 +86,6 @@
      "wide": true,
      "tags": [
       "Recherche utilisateur",
-      "Entrevues",
       "Tests utilisateurs",
       "Analyse concurrentielle",
       "Architecture de l’information",
