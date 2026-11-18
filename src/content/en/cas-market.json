@@ -233,7 +233,7 @@
       {
        "h": "Design system",
        "to": "design-system",
-       "p": "Bring in Figma, structure the design system and tie it to the developers’ Storybook."
+       "p": "Bring in Figma, structure the design system and bring it closer to the developers’ Storybook."
       }
      ]
     }
@@ -396,15 +396,15 @@
     {
      "id": "design-system",
      "tag": "Pillar 4 · Design system",
-     "h": "Tie Figma to Storybook so design and code speak the same language",
-     "p": "I led *the move from Adobe XD to Figma*, then structured the design system with the team and tied it to the developers’ Storybook.",
+     "h": "Bring Figma and Storybook closer so design and code speak the same language",
+     "p": "I led *the move from Adobe XD to Figma*, then structured the design system with the team. I also worked to bring it closer to the developers’ Storybook, with procedures to update and document it on both sides.",
      "notes": [
       {
        "k": "Alternatives",
        "list": [
         "Stay on Adobe XD, rebuilding components as needed.",
         {
-         "t": "Move to Figma, with components tied to Storybook.",
+         "t": "Move to Figma, with a design system kept up to date in both Figma and Storybook.",
          "pill": "My recommendation"
         }
        ]
@@ -415,7 +415,7 @@
       },
       {
        "k": "Trade-off",
-       "v": "A migration run alongside ongoing projects."
+       "v": "A migration run alongside ongoing projects. The update procedures hadn’t yet had time to prove themselves by the end of my mandate."
       }
      ]
     }
