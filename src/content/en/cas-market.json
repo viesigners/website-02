@@ -279,7 +279,7 @@
        "h": "Results",
        "p": [
         "Usability tests with journey mapping guided the iterations. A Clarity funnel, in-app surveys and close work with support, professional services and the CSMs helped improve the interface until the old version was retired.",
-        "Within weeks, notably thanks to added debugging information and other well-liked features brought in in a simpler form, we reduced import-related support requests and *raised the import completion rate* with each iteration shipped."
+        "Within weeks, notably thanks to added debugging information and other well-liked features brought in in a simpler form, we *reduced import-related support requests* and *raised the import completion rate* with each iteration shipped."
        ]
       }
      ],
