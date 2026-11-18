@@ -270,10 +270,22 @@
         "Backed by my *market research*, I designed a wizard with guided steps that transformed the experience:"
        ],
        "cards": [
-        "I placed different entry points across the platform, depending on what you wanted to import, and the wizard adapted the options offered or the starting step to the user’s intent.",
-        "The options, shown as cards, teach new users what the platform can do at each step.",
-        "Settings once hidden in an “advanced” mode were simplified so everyone could use them.",
-        "For regular users, the new import was rolled out alongside the old one, in iterations, to give them time to get familiar with it. It meant maintaining two interfaces, but it was the best way to deliver quality while keeping long-time customers happy."
+        {
+         "icon": "entry",
+         "t": "I placed different entry points across the platform, depending on what you wanted to import, and the wizard adapted the options offered or the starting step to the user’s intent."
+        },
+        {
+         "icon": "cards",
+         "t": "The options, shown as cards, teach new users what the platform can do at each step."
+        },
+        {
+         "icon": "sliders",
+         "t": "Settings once hidden in an “advanced” mode were simplified so everyone could use them."
+        },
+        {
+         "icon": "parallel",
+         "t": "For regular users, the new import was rolled out alongside the old one, in iterations, to give them time to get familiar with it. It meant maintaining two interfaces, but it was the best way to deliver quality while keeping long-time customers happy."
+        }
        ]
       },
       {

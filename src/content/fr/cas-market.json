@@ -270,10 +270,22 @@
         "Appuyé par mes *recherches de marché*, j’ai conçu un assistant (wizard) en étapes guidées qui transformait l’expérience :"
        ],
        "cards": [
-        "J’ai placé différents points d’entrée à travers la plateforme, selon ce qu’on voulait importer, et l’assistant adaptait les options offertes ou l’étape de départ à l’intention de l’usager.",
-        "Les options, affichées sous forme de cartes, enseignent aux nouveaux usagers ce que la plateforme permet de faire à chaque étape.",
-        "Des réglages autrefois cachés dans un mode « avancé » ont été simplifiés pour que tous puissent s’en servir.",
-        "Pour les habitués, le nouvel import a été déployé en parallèle de l’ancien, par itérations, pour leur donner le temps de s’y familiariser. Il fallait maintenir deux interfaces, mais c’était la meilleure façon de livrer de la qualité tout en continuant de satisfaire les clients de longue date."
+        {
+         "icon": "entry",
+         "t": "J’ai placé différents points d’entrée à travers la plateforme, selon ce qu’on voulait importer, et l’assistant adaptait les options offertes ou l’étape de départ à l’intention de l’usager."
+        },
+        {
+         "icon": "cards",
+         "t": "Les options, affichées sous forme de cartes, enseignent aux nouveaux usagers ce que la plateforme permet de faire à chaque étape."
+        },
+        {
+         "icon": "sliders",
+         "t": "Des réglages autrefois cachés dans un mode « avancé » ont été simplifiés pour que tous puissent s’en servir."
+        },
+        {
+         "icon": "parallel",
+         "t": "Pour les habitués, le nouvel import a été déployé en parallèle de l’ancien, par itérations, pour leur donner le temps de s’y familiariser. Il fallait maintenir deux interfaces, mais c’était la meilleure façon de livrer de la qualité tout en continuant de satisfaire les clients de longue date."
+        }
        ]
       },
       {

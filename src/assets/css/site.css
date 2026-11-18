@@ -1290,3 +1290,6 @@ html { scroll-padding-top: 7rem; }
 .js .cd-fold__btn::after { content: "↓"; }
 .js .cd-fold__btn[aria-expanded="true"]::after { content: "↑"; }
 .js .cd-fold.is-open + .cd-fold__btn { margin-top: 1.6rem; }
+.cd-pcards li { display: grid; gap: .8rem; align-content: start; }
+.cd-pcards .cd-ico { margin: 0; }
+.cd-pcards .cd-ico { color: var(--pink); background: rgba(255, 72, 139, .16); }
