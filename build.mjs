@@ -139,6 +139,7 @@ const CDICO = {
   drawers: '<svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 9.2h17M3.5 14.8h17M10 6.4h4M10 12h4M10 17.6h4"/></svg>',
   related: '<svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="5.5" r="2.6"/><circle cx="18" cy="18.5" r="2.6"/><path d="M8.3 10.8l7.4-4M8.3 13.2l7.4 4"/></svg>',
   import: '<svg viewBox="0 0 24 24"><path d="M12 3v11.5M7.5 10l4.5 4.5 4.5-4.5"/><path d="M4 14.5v3.5a2.5 2.5 0 0 0 2.5 2.5h11a2.5 2.5 0 0 0 2.5-2.5v-3.5"/></svg>',
+  menu: '<svg viewBox="0 0 24 24"><path d="M4 6.5h16M4 12h16M4 17.5h16"/></svg>',
   templates: '<svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 9h17M10 9v11.5"/><path d="M13 13h4.5M13 16.5h3"/></svg>',
 };
 const ico = (n, cls = '') => `<svg aria-hidden="true" focusable="false"${cls ? ` class="${cls}"` : ''}><use href="#i-${n}"/></svg>`;
