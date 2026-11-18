@@ -288,8 +288,18 @@
      "p": "Après le lancement, j’ai mis en place *un entonnoir par étape dans Microsoft Clarity*. Il a révélé beaucoup d’abandons dès le premier écran : des gens y arrivaient en cherchant autre chose.",
      "notes": [
       {
+       "k": "Alternatives",
+       "list": [
+        "Lancer le nouvel import d’un coup, en retirant l’ancien.",
+        {
+         "t": "Lancer le nouvel import par itérations, avec des boucles de rétroaction.",
+         "pill": "Ma recommandation"
+        }
+       ]
+      },
+      {
        "k": "Pourquoi",
-       "v": "Ajouter des liens d’information sur le premier écran, une idée inspirée des gros joueurs du marché, était un petit développement, rapide et peu coûteux. Plus de gens sont ensuite passés à l’étape suivante. Surtout, l’équipe avait désormais une boucle d’optimisation continue : mesurer, poser une hypothèse, livrer petit, mesurer encore. [À FOURNIR : chiffres de l’entonnoir, s’ils existent]"
+       "v": "Ajouter des liens d’information sur le premier écran, une idée inspirée des gros joueurs du marché, était un petit développement, rapide et peu coûteux. Plus de gens sont ensuite passés à l’étape suivante. [À FOURNIR : chiffres de l’entonnoir, s’ils existent]"
       }
      ]
     },
