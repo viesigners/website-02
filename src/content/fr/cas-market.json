@@ -248,7 +248,7 @@
      "id": "import",
      "tag": "Pilier 1 · Refonte d’une fonctionnalité clé",
      "h": "Regrouper les imports dans un parcours qui enseigne la plateforme",
-     "p": "Un seul point d’entrée dans Contacts, puis *cinq étapes guidées*. Les cartes du premier écran expliquent chaque type de données.",
+     "p": "Un seul point d’entrée dans Contacts, puis *cinq étapes guidées*. Les options, affichées sous forme de cartes, enseignent aux nouveaux usagers ce que la plateforme permet de faire.",
      "notes": [
       {
        "k": "Alternatives",

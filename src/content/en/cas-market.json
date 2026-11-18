@@ -248,7 +248,7 @@
      "id": "import",
      "tag": "Pillar 1 · Core functionality redesign",
      "h": "Bring imports into one flow that teaches the platform",
-     "p": "One entry point in Contacts, then *five guided steps*. The cards on the first screen explain each type of data.",
+     "p": "One entry point in Contacts, then *five guided steps*. The options, shown as cards, teach new users what the platform can do.",
      "notes": [
       {
        "k": "Alternatives",
