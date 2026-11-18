@@ -216,7 +216,7 @@
      "steps": true,
      "items": [
       {
-       "h": "Data import",
+       "h": "Core functionality redesign",
        "to": "import",
        "p": "Bring every import into a single step-by-step flow that explains the platform as you use it."
       },
@@ -246,7 +246,7 @@
    "items": [
     {
      "id": "import",
-     "tag": "Pillar 1 · Data import",
+     "tag": "Pillar 1 · Core functionality redesign",
      "h": "Bring imports into one flow that teaches the platform",
      "p": "One entry point in Contacts, then *five guided steps*. The cards on the first screen explain each type of data.",
      "notes": [
@@ -283,7 +283,7 @@
     },
     {
      "id": "import-measure",
-     "tag": "Pillar 1 · Data import",
+     "tag": "Pillar 1 · Core functionality redesign",
      "h": "Measure every step and fix fast, in small increments",
      "p": "*A Microsoft Clarity funnel* showed many drop-offs on the first screen: people landed there looking for something else.",
      "notes": [
