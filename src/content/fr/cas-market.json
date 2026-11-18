@@ -273,13 +273,14 @@
         "J’ai placé différents points d’entrée à travers la plateforme, selon ce qu’on voulait importer, et l’assistant adaptait les options offertes ou l’étape de départ à l’intention de l’usager.",
         "Les options, affichées sous forme de cartes, enseignent aux nouveaux usagers ce que la plateforme permet de faire à chaque étape.",
         "Des réglages autrefois cachés dans un mode « avancé » ont été simplifiés pour que tous puissent s’en servir.",
-        "Pour les habitués, le nouvel import a été déployé en parallèle de l’ancien pour leur donner le temps de s’y familiariser."
+        "Pour les habitués, le nouvel import a été déployé en parallèle de l’ancien, par itérations, pour leur donner le temps de s’y familiariser. Il fallait maintenir deux interfaces, mais c’était la meilleure façon de livrer de la qualité tout en continuant de satisfaire les clients de longue date."
        ]
       },
       {
        "h": "Résultats",
        "p": [
         "Des tests utilisateurs, avec cartographie du parcours, ont guidé les itérations. Un entonnoir Clarity, des sondages dans la plateforme et une collaboration étroite avec le soutien, les services professionnels et les CSM ont permis d’améliorer l’interface jusqu’au retrait de l’ancienne version.",
+        "L’entonnoir Clarity a par exemple révélé beaucoup d’abandons au premier écran : des gens y arrivaient en cherchant autre chose. Quelques liens d’information, inspirés des gros joueurs du marché, ont suffi pour que plus de gens passent à l’étape suivante. [À FOURNIR : chiffres de l’entonnoir, s’ils existent]",
         "En quelques semaines, notamment grâce à l’ajout d’information de débogage et à l’intégration d’autres fonctionnalités appréciées sous une forme simplifiée, nous avons *réduit les demandes au soutien* liées à l’import et *augmenté le taux de complétion des imports* à chaque itération livrée."
        ]
       }
@@ -293,32 +294,6 @@
       },
       {
        "label": "[À FOURNIR] Analyse et erreurs expliquées"
-      }
-     ]
-    },
-    {
-     "id": "import-mesure",
-     "tag": "Pilier 1 · Refonte d’une fonctionnalité clé",
-     "h": "Mesurer chaque étape et corriger vite, en petit",
-     "p": "*Un entonnoir Microsoft Clarity* a révélé beaucoup d’abandons au premier écran : des gens y arrivaient en cherchant autre chose.",
-     "notes": [
-      {
-       "k": "Alternatives",
-       "list": [
-        "Lancer le nouvel import d’un coup, en retirant l’ancien.",
-        {
-         "t": "Lancer le nouvel import en parallèle de l’ancien, par itérations, avec des boucles de rétroaction.",
-         "pill": "Ma recommandation"
-        }
-       ]
-      },
-      {
-       "k": "Pourquoi",
-       "v": "Quelques liens d’information, inspirés des gros joueurs du marché, ont suffi : un petit développement, et plus de gens passaient à l’étape suivante. [À FOURNIR : chiffres de l’entonnoir, s’ils existent]"
-      },
-      {
-       "k": "Compromis",
-       "v": "Une interface complète plus tard, et deux interfaces à maintenir. Mais c’était la meilleure façon de livrer de la qualité tout en continuant de satisfaire les clients de longue date."
       }
      ]
     },

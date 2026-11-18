@@ -273,13 +273,14 @@
         "I placed different entry points across the platform, depending on what you wanted to import, and the wizard adapted the options offered or the starting step to the user’s intent.",
         "The options, shown as cards, teach new users what the platform can do at each step.",
         "Settings once hidden in an “advanced” mode were simplified so everyone could use them.",
-        "For regular users, the new import was rolled out alongside the old one to give them time to get familiar with it."
+        "For regular users, the new import was rolled out alongside the old one, in iterations, to give them time to get familiar with it. It meant maintaining two interfaces, but it was the best way to deliver quality while keeping long-time customers happy."
        ]
       },
       {
        "h": "Results",
        "p": [
         "Usability tests with journey mapping guided the iterations. A Clarity funnel, in-app surveys and close work with support, professional services and the CSMs helped improve the interface until the old version was retired.",
+        "For example, the Clarity funnel showed many drop-offs on the first screen: people landed there looking for something else. A few information links, inspired by the market’s biggest players, were enough to get more people to the next step. [À FOURNIR : funnel figures, if available]",
         "Within weeks, notably thanks to added debugging information and other well-liked features brought in in a simpler form, we *reduced import-related support requests* and *raised the import completion rate* with each iteration shipped."
        ]
       }
@@ -293,32 +294,6 @@
       },
       {
        "label": "[À FOURNIR] Analysis and explained errors"
-      }
-     ]
-    },
-    {
-     "id": "import-measure",
-     "tag": "Pillar 1 · Core functionality redesign",
-     "h": "Measure every step and fix fast, in small increments",
-     "p": "*A Microsoft Clarity funnel* showed many drop-offs on the first screen: people landed there looking for something else.",
-     "notes": [
-      {
-       "k": "Alternatives",
-       "list": [
-        "Launch the new import all at once, retiring the old one.",
-        {
-         "t": "Launch the new import alongside the old one, in iterations, with feedback loops.",
-         "pill": "My recommendation"
-        }
-       ]
-      },
-      {
-       "k": "Why",
-       "v": "A few information links, inspired by the market’s biggest players, did the job: a small change, and more people moved on to the next step. [À FOURNIR : funnel figures, if available]"
-      },
-      {
-       "k": "Trade-off",
-       "v": "A complete interface later, and two interfaces to maintain. But it was the best way to deliver quality while keeping long-time customers happy."
       }
      ]
     },
