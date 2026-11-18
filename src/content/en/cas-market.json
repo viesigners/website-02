@@ -1,7 +1,7 @@
 {
  "meta": {
   "title": "Market Inc. case study: reinventing a legacy SaaS | Viesigners",
-  "description": "How Charles-Erick BG made a legacy marketing SaaS platform simpler for experts and newcomers alike: data import, navigation, dashboards and design system.",
+  "description": "How Charles-Erick BG made a legacy marketing SaaS platform simpler for experts and newcomers alike: core functionality redesign, information architecture, data visualization and design system.",
   "h1": "Making a complex marketing SaaS platform simple for experts and newcomers"
  },
  "article": true,
@@ -57,7 +57,7 @@
   {
    "type": "cd-facts",
    "caption": "The campaign dashboard, one of the four pillars. I recreated the visuals to respect the non-disclosure agreement.",
-   "lead": "At Market Inc., I helped put a legacy marketing SaaS platform, complex and hard to get started with, *on the path to a world-class SaaS* that can compete with the likes of Adobe. Of all my projects, four were the pillars, from research to launch: data import, main navigation, statistics dashboards and the design system. One thread ties them together: serve the experts without discouraging the newcomers.",
+   "lead": "At Market Inc., I helped put a legacy marketing SaaS platform, complex and hard to get started with, *on the path to a world-class SaaS* that can compete with the likes of Adobe. Of all my projects, four were the pillars, from research to launch: a core functionality redesign, an information architecture overhaul, a data visualization system and design system & tooling leadership. One thread ties them together: serve the experts without discouraging the newcomers.",
    "byline": "By Charles-Erick BG",
    "items": [
     {

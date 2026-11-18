@@ -1,7 +1,7 @@
 {
  "meta": {
   "title": "Étude de cas Market Inc. : réinventer un SaaS legacy | Viesigners",
-  "description": "Comment Charles-Erick BG a rendu une plateforme marketing SaaS legacy plus simple pour les experts comme pour les novices : import, navigation, tableaux de bord et design system.",
+  "description": "Comment Charles-Erick BG a rendu une plateforme marketing SaaS legacy plus simple pour les experts comme pour les novices : refonte d’une fonctionnalité clé, architecture de l’information, visualisation de données et design system.",
   "h1": "Rendre une plateforme marketing SaaS complexe simple pour les experts et les novices"
  },
  "article": true,
@@ -57,7 +57,7 @@
   {
    "type": "cd-facts",
    "caption": "Le tableau de bord de campagne, l’un des quatre piliers. Visuels refaits par mes soins pour respecter l’entente de confidentialité.",
-   "lead": "Chez Market Inc., j’ai contribué à mettre une plateforme marketing SaaS legacy, complexe et difficile à prendre en main, *sur la voie d’un SaaS de classe mondiale*, capable de rivaliser avec les grands comme Adobe. Parmi tous mes projets, quatre en ont été les piliers, de la recherche jusqu’au lancement : l’import de données, la navigation principale, les tableaux de bord de statistiques et le design system. Un seul fil les relie : servir les experts sans décourager les novices.",
+   "lead": "Chez Market Inc., j’ai contribué à mettre une plateforme marketing SaaS legacy, complexe et difficile à prendre en main, *sur la voie d’un SaaS de classe mondiale*, capable de rivaliser avec les grands comme Adobe. Parmi tous mes projets, quatre en ont été les piliers, de la recherche jusqu’au lancement : la refonte d’une fonctionnalité clé, la refonte de l’architecture de l’information, un système de visualisation de données et le leadership du design system et des outils. Un seul fil les relie : servir les experts sans décourager les novices.",
    "byline": "Par Charles-Erick BG",
    "items": [
     {
