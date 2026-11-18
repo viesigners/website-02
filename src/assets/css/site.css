@@ -1265,6 +1265,6 @@ html { scroll-padding-top: 7rem; }
 .cd-subnav a:hover, .cd-subnav a:focus-visible { background: rgba(255, 72, 139, .14); box-shadow: inset 0 0 0 1px rgba(255, 72, 139, .55); }
 .cd-chantier { margin: 0 0 .5rem !important; font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: var(--pink) !important; }
 .cd-decisions > li[id] { scroll-margin-top: 6rem; }
-.cd-jump { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
-.cd-jump:hover, .cd-jump:focus-visible { color: var(--pink); }
+.cd-jump { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; text-decoration: underline; text-decoration-color: rgba(255, 72, 139, .45); text-decoration-thickness: 1px; text-underline-offset: .2em; transition: text-decoration-color .2s; }
+.cd-jump:hover, .cd-jump:focus-visible { text-decoration-color: var(--pink); }
 .tcard.cd-quote { margin-top: clamp(2rem, 1.2rem + 3vw, 3.5rem); }
