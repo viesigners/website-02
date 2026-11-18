@@ -292,7 +292,7 @@
        "list": [
         "Lancer le nouvel import d’un coup, en retirant l’ancien.",
         {
-         "t": "Lancer le nouvel import par itérations, avec des boucles de rétroaction.",
+         "t": "Lancer le nouvel import en parallèle de l’ancien, par itérations, avec des boucles de rétroaction.",
          "pill": "Ma recommandation"
         }
        ]

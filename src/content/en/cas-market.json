@@ -292,7 +292,7 @@
        "list": [
         "Launch the new import all at once, retiring the old one.",
         {
-         "t": "Launch the new import in iterations, with feedback loops.",
+         "t": "Launch the new import alongside the old one, in iterations, with feedback loops.",
          "pill": "My recommendation"
         }
        ]
