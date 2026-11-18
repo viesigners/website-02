@@ -248,7 +248,31 @@
      "id": "import",
      "tag": "Pilier 1 · Refonte d’une fonctionnalité clé",
      "h": "Regrouper les imports dans un parcours qui enseigne la plateforme",
-     "p": "J’ai conçu une expérience en *cinq étapes guidées*, sous forme d’assistant (wizard). Il y avait différents points d’entrée selon ce qu’on voulait importer, et l’assistant s’adaptait au point de départ. Les options, affichées sous forme de cartes, enseignent aux nouveaux usagers ce que la plateforme permet de faire. Des réglages autrefois cachés dans un mode « avancé » ont aussi été simplifiés pour que tous puissent s’en servir. Des tests utilisateurs, avec cartographie du parcours, ont guidé les itérations, et un entonnoir Clarity, des sondages dans la plateforme et une collaboration étroite avec le soutien, les services professionnels et les CSM ont permis d’améliorer l’interface en quelques semaines, notamment avec de l’information de débogage pour *augmenter le taux de complétion des imports*.",
+     "parts": [
+      {
+       "h": "Problème",
+       "p": [
+        "L’import, l’une des fonctionnalités les plus utilisées, était confus : des chemins dispersés selon le type de données, des options mal comprises ou cachées dans une interface « avancée », et des erreurs sans explication.",
+        "Les nouveaux usagers se perdaient, et les demandes au soutien et aux CSM s’accumulaient."
+       ]
+      },
+      {
+       "h": "Solution",
+       "p": [
+        "Appuyé par mes *recherches de marché*, j’ai conçu une expérience en cinq étapes guidées, sous forme d’assistant (wizard).",
+        "J’ai placé différents points d’entrée à travers la plateforme, selon ce qu’on voulait importer, et l’assistant adaptait les options offertes ou l’étape de départ à l’intention de l’usager.",
+        "Les options, affichées sous forme de cartes, enseignent aux nouveaux usagers ce que la plateforme permet de faire à chaque étape.",
+        "Des réglages autrefois cachés dans un mode « avancé » ont été simplifiés pour que tous puissent s’en servir."
+       ]
+      },
+      {
+       "h": "Résultats",
+       "p": [
+        "Des tests utilisateurs, avec cartographie du parcours, ont guidé les itérations. Un entonnoir Clarity, des sondages dans la plateforme et une collaboration étroite avec le soutien, les services professionnels et les CSM ont permis d’améliorer l’interface.",
+        "En quelques semaines, notamment grâce à de l’information de débogage, nous avons réduit les demandes au soutien liées à l’import et *augmenté le taux de complétion des imports* à chaque itération livrée."
+       ]
+      }
+     ],
      "notes": [
       {
        "k": "Alternatives",

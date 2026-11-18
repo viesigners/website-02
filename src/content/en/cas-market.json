@@ -248,7 +248,31 @@
      "id": "import",
      "tag": "Pillar 1 · Core functionality redesign",
      "h": "Bring imports into one flow that teaches the platform",
-     "p": "I designed a *five-step guided* experience as a wizard. There were different entry points depending on what you wanted to import, and the wizard adapted to where you started. The options, shown as cards, teach new users what the platform can do. Settings once hidden in an “advanced” mode were also simplified so everyone could use them. Usability tests with journey mapping guided the iterations, and a Clarity funnel, in-app surveys and close work with support, professional services and the CSMs helped improve the interface within weeks, notably with debugging information to *raise the import completion rate*.",
+     "parts": [
+      {
+       "h": "Problem",
+       "p": [
+        "Import, one of the most used features, was confusing: paths scattered by data type, options that were misunderstood or hidden in an “advanced” interface, and errors with no explanation.",
+        "New users got lost, and requests to support and the CSMs piled up."
+       ]
+      },
+      {
+       "h": "Solution",
+       "p": [
+        "Backed by my *market research*, I designed a five-step guided experience as a wizard.",
+        "I placed different entry points across the platform, depending on what you wanted to import, and the wizard adapted the options offered or the starting step to the user’s intent.",
+        "The options, shown as cards, teach new users what the platform can do at each step.",
+        "Settings once hidden in an “advanced” mode were simplified so everyone could use them."
+       ]
+      },
+      {
+       "h": "Results",
+       "p": [
+        "Usability tests with journey mapping guided the iterations. A Clarity funnel, in-app surveys and close work with support, professional services and the CSMs helped improve the interface.",
+        "Within weeks, notably thanks to debugging information, we reduced import-related support requests and *raised the import completion rate* with each iteration shipped."
+       ]
+      }
+     ],
      "notes": [
       {
        "k": "Alternatives",
