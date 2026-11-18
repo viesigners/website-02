@@ -56,8 +56,8 @@
   },
   {
    "type": "cd-facts",
-   "caption": "Le tableau de bord de campagne, l’un des quatre chantiers. Visuels refaits par mes soins pour respecter l’entente de confidentialité.",
-   "lead": "Chez Market Inc., j’ai mené quatre refontes d’une plateforme marketing SaaS legacy, de la recherche jusqu’au lancement : l’import de données, la navigation principale, les tableaux de bord de statistiques et le design system. Un seul fil les relie : *servir les experts sans décourager les novices*.",
+   "caption": "Le tableau de bord de campagne, l’un des quatre piliers. Visuels refaits par mes soins pour respecter l’entente de confidentialité.",
+   "lead": "Chez Market Inc., j’ai contribué à mettre une plateforme marketing SaaS legacy, complexe et difficile à prendre en main, *sur la voie d’un SaaS de classe mondiale*, capable de rivaliser avec les grands comme Adobe. Parmi tous mes projets, quatre en ont été les piliers, de la recherche jusqu’au lancement : l’import de données, la navigation principale, les tableaux de bord de statistiques et le design system. Un seul fil les relie : servir les experts sans décourager les novices.",
    "byline": "Par Charles-Erick BG",
    "items": [
     {
@@ -129,7 +129,7 @@
    "impact": [
     {
      "n": "4",
-     "t": "chantiers menés de la recherche jusqu’au lancement."
+     "t": "piliers de ma contribution, menés de la recherche jusqu’au lancement."
     },
     {
      "n": "25+",
@@ -208,7 +208,7 @@
    "type": "cd-cards",
    "theme": "light",
    "label": "Le plan",
-   "h2": "Quatre chantiers *à mener*",
+   "h2": "Quatre piliers *pour changer de catégorie*",
    "groups": [
     {
      "h": "",
@@ -243,7 +243,7 @@
    "label": "Décisions clés",
    "h2": "Ce que j’ai décidé, *et pourquoi*",
    "nav": {
-    "label": "Aller à un chantier",
+    "label": "Aller à un pilier",
     "items": [
      {
       "t": "Import",
@@ -266,7 +266,7 @@
    "items": [
     {
      "id": "import",
-     "tag": "Chantier 1 · Import de données",
+     "tag": "Pilier 1 · Import de données",
      "h": "Regrouper les imports dans un parcours qui enseigne la plateforme",
      "p": "Un seul point d’entrée, déplacé du menu principal vers la section Contacts, puis cinq étapes : *quoi importer, de quelle façon, les paramètres, le mapping des champs et l’analyse*. Les cartes du premier écran expliquent chaque type de données : on apprend la structure de la plateforme en important.",
      "notes": [
@@ -303,7 +303,7 @@
     },
     {
      "id": "import-mesure",
-     "tag": "Chantier 1 · Import de données",
+     "tag": "Pilier 1 · Import de données",
      "h": "Mesurer chaque étape et corriger vite, en petit",
      "p": "Après le lancement, j’ai mis en place *un entonnoir par étape dans Microsoft Clarity*. Il a révélé beaucoup d’abandons dès le premier écran : des gens y arrivaient en cherchant autre chose.",
      "notes": [
@@ -329,7 +329,7 @@
     },
     {
      "id": "navigation",
-     "tag": "Chantier 2 · Navigation principale",
+     "tag": "Pilier 2 · Navigation principale",
      "h": "Organiser le menu par cas d’usage : penser marketeur, pas développeur",
      "p": "Le menu principal ne contient plus que *des sections, chacune basée sur un besoin* : consulter ses contacts, lancer une campagne, acquérir des clients, automatiser. Les actions vont dans les en-têtes de section, et l’import devient un bouton dans Contacts.",
      "notes": [
@@ -363,7 +363,7 @@
     },
     {
      "id": "navigation-lancement",
-     "tag": "Chantier 2 · Navigation principale",
+     "tag": "Pilier 2 · Navigation principale",
      "h": "Lancer en parallèle de l’ancien pour réduire le risque",
      "p": "Pendant plusieurs mois, *les clients pouvaient basculer entre l’ancien et le nouveau menu*. Des annonces dans la plateforme demandaient leur avis, et les CSM les prévenaient longtemps à l’avance.",
      "notes": [
@@ -389,7 +389,7 @@
     },
     {
      "id": "tableaux-de-bord",
-     "tag": "Chantier 3 · Tableaux de bord",
+     "tag": "Pilier 3 · Tableaux de bord",
      "h": "Un modèle de tableau de bord pour tous les canaux",
      "p": "Plutôt que de concevoir les statistiques de chaque canal à part, j’ai créé *un modèle réutilisable*, qui s’applique à environ 99 % à un nouveau canal comme WhatsApp ou RCS.",
      "notes": [
@@ -415,7 +415,7 @@
     },
     {
      "id": "design-system",
-     "tag": "Chantier 4 · Design system",
+     "tag": "Pilier 4 · Design system",
      "h": "Arrimer Figma au Storybook pour que design et code parlent le même langage",
      "p": "J’ai chapeauté *le passage d’Adobe XD à Figma* dans l’entreprise, puis la structuration du design system avec l’équipe : sections documentées, composants paramétrés, et un lien progressif avec le Storybook des développeurs.",
      "notes": [

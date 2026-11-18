@@ -56,8 +56,8 @@
   },
   {
    "type": "cd-facts",
-   "caption": "The campaign dashboard, one of the four workstreams. I recreated the visuals to respect the non-disclosure agreement.",
-   "lead": "At Market Inc., I led four redesigns of a legacy marketing SaaS platform, from research to launch: data import, main navigation, statistics dashboards and the design system. One thread ties them together: *serve the experts without discouraging the newcomers*.",
+   "caption": "The campaign dashboard, one of the four pillars. I recreated the visuals to respect the non-disclosure agreement.",
+   "lead": "At Market Inc., I helped put a legacy marketing SaaS platform, complex and hard to get started with, *on the path to a world-class SaaS* that can compete with the likes of Adobe. Of all my projects, four were the pillars, from research to launch: data import, main navigation, statistics dashboards and the design system. One thread ties them together: serve the experts without discouraging the newcomers.",
    "byline": "By Charles-Erick BG",
    "items": [
     {
@@ -129,7 +129,7 @@
    "impact": [
     {
      "n": "4",
-     "t": "workstreams led from research to launch."
+     "t": "pillars of my contribution, led from research to launch."
     },
     {
      "n": "25+",
@@ -208,7 +208,7 @@
    "type": "cd-cards",
    "theme": "light",
    "label": "The plan",
-   "h2": "Four workstreams *to lead*",
+   "h2": "Four pillars *to change leagues*",
    "groups": [
     {
      "h": "",
@@ -243,7 +243,7 @@
    "label": "Key decisions",
    "h2": "What I decided, *and why*",
    "nav": {
-    "label": "Jump to a workstream",
+    "label": "Jump to a pillar",
     "items": [
      {
       "t": "Import",
@@ -266,7 +266,7 @@
    "items": [
     {
      "id": "import",
-     "tag": "Workstream 1 · Data import",
+     "tag": "Pillar 1 · Data import",
      "h": "Bring imports into one flow that teaches the platform",
      "p": "A single entry point, moved from the main menu to the Contacts section, then five steps: *what to import, how, settings, field mapping and analysis*. The cards on the first screen explain each type of data: users learn how the platform is structured while importing.",
      "notes": [
@@ -303,7 +303,7 @@
     },
     {
      "id": "import-measure",
-     "tag": "Workstream 1 · Data import",
+     "tag": "Pillar 1 · Data import",
      "h": "Measure every step and fix fast, in small increments",
      "p": "After launch, I set up *a step-by-step funnel in Microsoft Clarity*. It showed many drop-offs on the very first screen: people landed there looking for something else.",
      "notes": [
@@ -329,7 +329,7 @@
     },
     {
      "id": "navigation",
-     "tag": "Workstream 2 · Main navigation",
+     "tag": "Pillar 2 · Main navigation",
      "h": "Organize the menu by use case: think like a marketer, not a developer",
      "p": "The main menu now holds *only sections, each built around a need*: browse contacts, launch a campaign, acquire customers, automate. Actions live in section headers, and import becomes a button in Contacts.",
      "notes": [
@@ -363,7 +363,7 @@
     },
     {
      "id": "navigation-launch",
-     "tag": "Workstream 2 · Main navigation",
+     "tag": "Pillar 2 · Main navigation",
      "h": "Launch alongside the old version to reduce risk",
      "p": "For several months, *customers could switch between the old and the new menu*. In-app announcements asked for their feedback, and the CSMs gave them plenty of notice.",
      "notes": [
@@ -389,7 +389,7 @@
     },
     {
      "id": "dashboards",
-     "tag": "Workstream 3 · Dashboards",
+     "tag": "Pillar 3 · Dashboards",
      "h": "One dashboard template for every channel",
      "p": "Rather than designing each channel’s statistics separately, I created *a reusable template* that covers about 99% of a new channel such as WhatsApp or RCS.",
      "notes": [
@@ -415,7 +415,7 @@
     },
     {
      "id": "design-system",
-     "tag": "Workstream 4 · Design system",
+     "tag": "Pillar 4 · Design system",
      "h": "Tie Figma to Storybook so design and code speak the same language",
      "p": "I led *the move from Adobe XD to Figma* across the company, then structured the design system with the team: documented sections, configurable components, and a growing link to the developers’ Storybook.",
      "notes": [
