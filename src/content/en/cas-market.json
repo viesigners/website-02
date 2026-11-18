@@ -300,6 +300,10 @@
       {
        "k": "Why",
        "v": "Adding information links to the first screen, an idea borrowed from the market’s biggest players, was a small, quick and inexpensive change. More people then moved on to the next step. [À FOURNIR : funnel figures, if available]"
+      },
+      {
+       "k": "Trade-off",
+       "v": "The new interface took longer to be complete, and the development team had to maintain two interfaces side by side."
       }
      ]
     },
