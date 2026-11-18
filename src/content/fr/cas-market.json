@@ -252,7 +252,7 @@
       {
        "h": "Problème",
        "p": [
-        "L’import, l’une des fonctionnalités les plus utilisées, était confus : un seul outil couvrait tous les types d’imports, avec une interface générique, des options mal comprises ou cachées dans une interface « avancée », et des erreurs sans explication.",
+        "Très utilisée, la fonctionnalité d’import prêtait à confusion : une interface générique devait couvrir tous les types d’imports, des options étaient mal comprises ou cachées dans un mode « avancé », et les erreurs n’étaient pas expliquées.",
         "Les nouveaux usagers se perdaient, et les demandes au soutien et aux CSM s’accumulaient."
        ]
       },
