@@ -252,7 +252,14 @@
       {
        "h": "Problème",
        "p": [
-        "Très utilisée, la fonctionnalité d’import prêtait à confusion : une interface générique devait couvrir tous les types d’imports, des options étaient mal comprises ou cachées dans un mode « avancé », et les erreurs n’étaient pas expliquées.",
+        "Très utilisée, la fonctionnalité d’import prêtait à confusion :",
+        {
+         "list": [
+          "Une interface générique devait couvrir tous les types d’imports.",
+          "Des options étaient mal comprises ou cachées dans un mode « avancé ».",
+          "Les erreurs n’étaient pas expliquées."
+         ]
+        },
         "Les nouveaux usagers se perdaient, et les demandes au soutien et aux CSM s’accumulaient."
        ]
       },

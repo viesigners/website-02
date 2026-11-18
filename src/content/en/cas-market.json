@@ -252,7 +252,14 @@
       {
        "h": "Problem",
        "p": [
-        "The import feature, one of the most used, was confusing: a generic interface had to cover every type of import, options were misunderstood or hidden in an “advanced” mode, and errors went unexplained.",
+        "The import feature, one of the most used, was confusing:",
+        {
+         "list": [
+          "A generic interface had to cover every type of import.",
+          "Options were misunderstood or hidden in an “advanced” mode.",
+          "Errors went unexplained."
+         ]
+        },
         "New users got lost, and requests to support and the CSMs piled up."
        ]
       },
