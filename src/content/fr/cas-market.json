@@ -422,16 +422,6 @@
    ]
   },
   {
-   "type": "cd-card",
-   "label": "Un défi de design imprévu",
-   "h2": "Faire cohabiter *le legacy et le nouveau*",
-   "prose": [
-    "La nouvelle navigation reposait sur une technologie récente, mais plusieurs pages restaient en ASPX, avec un ancien design system et un ancien look. Les deux ne fonctionnaient pas toujours bien ensemble.",
-    "**Tout refaire d’un coup était impossible.** J’ai donc établi un plan global, même sans avoir toutes les réponses, et priorisé les pages à moderniser avec l’équipe produit.",
-    "Pour les pages pas encore refaites, j’ai conçu des *solutions transitoires* : par exemple, un état vide dans une nouvelle page, avec un bouton vers la page legacy, en attendant que celle-ci soit refaite et devienne la vraie."
-   ]
-  },
-  {
    "type": "cd-gallery",
    "theme": "dark",
    "label": "Le système",

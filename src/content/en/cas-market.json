@@ -422,16 +422,6 @@
    ]
   },
   {
-   "type": "cd-card",
-   "label": "An unexpected design challenge",
-   "h2": "Making *legacy and new* live together",
-   "prose": [
-    "The new navigation ran on recent technology, but several pages were still in ASPX, with an old design system and an old look. The two didn’t always work well together.",
-    "**Redoing everything at once was impossible.** So I set out an overall plan, even without every answer, and prioritized the pages to modernize with the product team.",
-    "For pages not yet redesigned, I designed *interim solutions*: for example, an empty state in a new page with a button to the legacy page, until that page was redesigned and became the real one."
-   ]
-  },
-  {
    "type": "cd-gallery",
    "theme": "dark",
    "label": "The system",
