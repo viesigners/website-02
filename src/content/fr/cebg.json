@@ -289,20 +289,20 @@
      "to": "cas-mcq"
     },
     {
+     "img": "pharmy-card.jpg",
+     "alt": "Plateforme de recherche d'études cliniques Pharmy",
+     "title": "Pharmy",
+     "result": "+48 % de candidats potentiels",
+     "text": "Des microsites d'études éparpillés réunis en une seule plateforme de recherche. Nom du client sous NDA.",
+     "to": "cas-pharmy"
+    },
+    {
      "img": "trouve-un-stage-card.jpg",
      "url": "https://www.behance.net/gallery/158180737/Watson-Trouveunstagecom-New-Webapp-Launch",
      "alt": "Plateforme SaaS « Trouve un stage »",
      "title": "« Trouve un stage »",
      "result": "Lancement SaaS · gagnant du prix Osentreprendre",
      "text": "Lancement de la plateforme SaaS de recherche de stages."
-    },
-    {
-     "img": "portfolio/logo-dialog-insight.png",
-     "logo": true,
-     "alt": "Logo de Dialog Insight",
-     "title": "Dialog Insight",
-     "result": "25+ entrevues clients",
-     "text": "Refonte de l'architecture d'information d'une plateforme SaaS de marketing numérique. Malgré l'ampleur du changement, l'adoption a été fluide : l'équipe de support client a reçu très peu d'appels de plaintes."
     }
    ],
    "withAwards": true

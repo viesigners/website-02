@@ -289,20 +289,20 @@
      "to": "cas-mcq"
     },
     {
+     "img": "pharmy-card.jpg",
+     "alt": "Pharmy clinical trial search platform",
+     "title": "Pharmy",
+     "result": "+48% more visitors toward sign-up",
+     "text": "Scattered study microsites brought together into a single search platform. Client name under NDA.",
+     "to": "cas-pharmy"
+    },
+    {
      "img": "trouve-un-stage-card.jpg",
      "url": "https://www.behance.net/gallery/158180737/Watson-Trouveunstagecom-New-Webapp-Launch",
      "alt": "Trouve un stage SaaS platform",
      "title": "“Trouve un stage”",
      "result": "SaaS launch · Osentreprendre prize winner",
      "text": "Launch of the internship search SaaS platform."
-    },
-    {
-     "img": "portfolio/logo-dialog-insight.png",
-     "logo": true,
-     "alt": "Dialog Insight logo",
-     "title": "Dialog Insight",
-     "result": "25+ customer interviews",
-     "text": "Information architecture redesign for a digital marketing SaaS platform. Despite the scale of the change, adoption was smooth: the customer support team received very few complaint calls."
     }
    ],
    "withAwards": true
