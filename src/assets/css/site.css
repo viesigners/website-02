@@ -120,6 +120,8 @@ em.acc, .acc {
 .sec-head h2 { max-width: 20ch; }
 .sec-head .lead { font-size: 1.05rem; max-width: 36ch; }
 @media (min-width: 960px) { .sec-head { grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); } }
+/* one column: label, then the title, then the intro paragraph */
+@media (max-width: 959px) { .sec-head { gap: 1.2rem; } .sec-head__side { display: contents; } .sec-head > h2, .sec-head > .sec-head__main { order: 1; } .sec-head__side > .lead { order: 2; } }
 
 /* ---------- buttons (rectangular, mono caps) ---------- */
 .pill {
