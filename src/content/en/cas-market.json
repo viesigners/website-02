@@ -253,7 +253,7 @@
       {
        "k": "Alternatives",
        "list": [
-        "Keep one tool that handles every import, regardless of the data.",
+        "One screen that handles every import the same way.",
         {
          "t": "A step-by-step flow that adapts to what you import.",
          "pill": "My recommendation"
@@ -290,9 +290,9 @@
       {
        "k": "Alternatives",
        "list": [
-        "Wait for a later redesign to revisit the flow.",
+        "Fix it later, in a future redesign.",
         {
-         "t": "Add links right away to what people were looking for.",
+         "t": "Fix it right away, with a small improvement.",
          "pill": "My recommendation"
         }
        ]
@@ -316,9 +316,9 @@
       {
        "k": "Alternatives",
        "list": [
-        "Keep the existing structure, built around how the system works.",
+        "A menu organized around how the system works, with actions as destinations.",
         {
-         "t": "Sections by use case, with actions in context.",
+         "t": "A menu organized around what marketers need, with actions in context.",
          "pill": "My recommendation"
         }
        ]
@@ -352,7 +352,7 @@
        "list": [
         "Replace the old menu all at once.",
         {
-         "t": "A gradual transition, with both menus side by side.",
+         "t": "Replace the old menu gradually, with both side by side.",
          "pill": "My recommendation"
         }
        ]
@@ -378,7 +378,7 @@
        "list": [
         "A custom dashboard for each channel.",
         {
-         "t": "A shared template, adapted per channel.",
+         "t": "One template for every channel.",
          "pill": "My recommendation"
         }
        ]
@@ -402,9 +402,9 @@
       {
        "k": "Alternatives",
        "list": [
-        "Stay on Adobe XD and rebuild components as needed.",
+        "Stay on Adobe XD, with components rebuilt in code as needed.",
         {
-         "t": "Move to Figma and tie its components to Storybook.",
+         "t": "Move to Figma, with components tied to the code in Storybook.",
          "pill": "My recommendation"
         }
        ]

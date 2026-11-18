@@ -253,7 +253,7 @@
       {
        "k": "Alternatives",
        "list": [
-        "Garder un outil unique qui fait tous les imports, sans distinction des données.",
+        "Un seul écran qui traite tous les imports de la même façon.",
         {
          "t": "Un parcours en étapes qui s’adapte à ce qu’on importe.",
          "pill": "Ma recommandation"
@@ -290,9 +290,9 @@
       {
        "k": "Alternatives",
        "list": [
-        "Attendre une prochaine refonte pour revoir le parcours.",
+        "Corriger plus tard, lors d’une prochaine refonte.",
         {
-         "t": "Ajouter tout de suite des liens vers ce que les gens cherchaient.",
+         "t": "Corriger tout de suite, par une petite amélioration.",
          "pill": "Ma recommandation"
         }
        ]
@@ -316,9 +316,9 @@
       {
        "k": "Alternatives",
        "list": [
-        "Garder la structure existante, pensée selon la logique du système.",
+        "Un menu organisé selon la logique du système, avec les actions comme destinations.",
         {
-         "t": "Des sections par cas d’usage, avec les actions dans leur contexte.",
+         "t": "Un menu organisé selon les besoins du marketeur, avec les actions dans leur contexte.",
          "pill": "Ma recommandation"
         }
        ]
@@ -352,7 +352,7 @@
        "list": [
         "Remplacer l’ancien menu d’un coup.",
         {
-         "t": "Une transition graduelle, avec les deux menus en parallèle.",
+         "t": "Remplacer l’ancien menu graduellement, avec les deux en parallèle.",
          "pill": "Ma recommandation"
         }
        ]
@@ -376,9 +376,9 @@
       {
        "k": "Alternatives",
        "list": [
-        "Un tableau de bord conçu sur mesure pour chaque canal.",
+        "Un tableau de bord sur mesure pour chaque canal.",
         {
-         "t": "Un modèle commun, décliné par canal.",
+         "t": "Un même modèle pour tous les canaux.",
          "pill": "Ma recommandation"
         }
        ]
@@ -402,9 +402,9 @@
       {
        "k": "Alternatives",
        "list": [
-        "Rester sur Adobe XD et recréer les composants au besoin.",
+        "Rester sur Adobe XD, avec des composants recréés au besoin dans le code.",
         {
-         "t": "Migrer vers Figma et arrimer ses composants au Storybook.",
+         "t": "Passer à Figma, avec des composants arrimés au code dans Storybook.",
          "pill": "Ma recommandation"
         }
        ]
