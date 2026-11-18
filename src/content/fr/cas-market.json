@@ -262,7 +262,7 @@
       },
       {
        "k": "Pourquoi",
-       "v": "Les nouveaux se perdaient et les erreurs opaques engorgeaient le soutien. J’ai ajouté un aperçu du fichier et, avec les développeurs, des erreurs qui disent quoi corriger."
+       "v": "Les nouveaux se perdaient et les erreurs opaques engorgeaient le soutien. J’ai donc conçu une expérience en étapes, sous forme d’assistant (wizard). Des tests utilisateurs, avec cartographie du parcours, ont mené à inverser une étape et à afficher un aperçu des données directement dans l’interface. Ensuite, un entonnoir Clarity, des sondages dans la plateforme et une collaboration étroite avec le soutien, les services professionnels et les CSM ont permis d’améliorer l’interface en quelques semaines, notamment avec de l’information de débogage pour augmenter le taux de complétion des imports."
       },
       {
        "k": "Compromis",
