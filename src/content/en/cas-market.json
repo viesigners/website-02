@@ -1,0 +1,376 @@
+{
+ "meta": {
+  "title": "Market Inc. case study: reinventing a legacy SaaS | Viesigners",
+  "description": "How Charles-Erick BG made a legacy marketing SaaS platform simpler for experts and newcomers alike: data import, navigation, dashboards and design system.",
+  "h1": "Making a complex marketing SaaS platform simple for experts and newcomers"
+ },
+ "article": true,
+ "published": "2026-11-17",
+ "author": "charles-erick",
+ "image": "work/market-hero.jpg",
+ "ogImage": "og-market.jpg",
+ "about": [
+  "UX design",
+  "SaaS",
+  "Information architecture",
+  "Design systems",
+  "Data visualization"
+ ],
+ "sections": [
+  {
+   "type": "cd-hero",
+   "tag": "Case study · SaaS",
+   "h1": "Making a complex marketing SaaS platform *simple for experts and newcomers*",
+   "img": "work/market-hero.jpg",
+   "alt": "Statistics dashboard for an RCS campaign: return on investment, delivery, opens, clicks, conversion and attrition",
+   "glance": [
+    { "k": "Expert", "v": "Charles-Erick BG" },
+    { "k": "Role", "v": "[À FOURNIR : exact title]" },
+    { "k": "Problem", "v": "A legacy platform that was hard to learn, costly to support and slow to evolve, used by long-time experts and newcomers alike." },
+    {
+     "k": "Activities",
+     "v": "User research, product design, information architecture, design system",
+     "more": { "n": 10, "to": "what-i-did", "label": "See all activities" }
+    },
+    { "k": "Result", "v": "Onboarding *much easier* according to the CSMs, and *almost no support requests* when the old menu was retired." }
+   ],
+   "cta": { "label": "Contact Charles-Erick" }
+  },
+  {
+   "type": "cd-facts",
+   "caption": "The campaign dashboard, one of the four workstreams. I recreated the visuals to respect the non-disclosure agreement.",
+   "lead": "At Market Inc., I led four redesigns of a legacy marketing SaaS platform, from research to launch: data import, main navigation, statistics dashboards and the design system. One thread ties them together: *serve the experts without discouraging the newcomers*.",
+   "byline": "By Charles-Erick BG",
+   "items": [
+    { "b": "Role", "t": "[À FOURNIR : exact title]" },
+    {
+     "b": "Client",
+     "tags": ["SaaS", "Multichannel marketing", "B2B"],
+     "note": "Market Inc. is a pseudonym; the client is protected by a non-disclosure agreement."
+    },
+    {
+     "b": "Goals",
+     "list": ["A platform that is easier to learn", "Fewer requests to support and CSMs", "New features that ship faster"]
+    },
+    {
+     "b": "What I did",
+     "wide": true,
+     "tags": [
+      "User research",
+      "Interviews",
+      "Usability testing",
+      "Competitive analysis",
+      "Information architecture",
+      "Product design",
+      "Wireframes",
+      "High-fidelity mockups",
+      "Design system",
+      "Copywriting",
+      "Funnel analysis",
+      "Product communication",
+      "Data visualization",
+      {
+       "t": "Graphic design",
+       "label": "About the graphic design",
+       "info": "I redid the visual design of these screens myself for this case study. The original design may differ."
+      }
+     ],
+     "id": "what-i-did"
+    },
+    { "b": "Tools", "tags": ["Figma", "Storybook", "Miro", "Microsoft Clarity"] },
+    { "b": "Collaborators", "bullets": ["Founders", "Product managers", "Developers", "CSMs", "Marketing team"] }
+   ],
+   "impact": [
+    { "n": "4", "t": "workstreams led from research to launch." },
+    { "n": "25+", "t": "customer interviews to prepare the move to the new navigation." },
+    { "n": "~99%", "t": "of a new channel covered out of the box by the dashboard template." }
+   ]
+  },
+  {
+   "type": "cd-cards",
+   "theme": "light",
+   "label": "The friction",
+   "h2": "A platform that was *hard to learn and slow to evolve*",
+   "lead": "Long-time customers who knew every screen worked alongside newcomers, some of them uneasy with technology, and developer-minded users. Every redesign had to serve both ends.",
+   "groups": [
+    {
+     "h": "",
+     "items": [
+      { "h": "Navigation that intimidated", "p": "The main menu held almost every feature, actions included. New users didn’t know where to go.", "icon": "drawers" },
+      { "h": "A confusing import", "p": "Scattered paths (the API in one place, files in another), options hidden in an “advanced” interface, and errors with no explanation.", "icon": "form" },
+      { "h": "Dashboards designed one by one", "p": "Each channel had its own statistics, with no shared foundation. [À FOURNIR : to validate]", "icon": "templates" },
+      { "h": "Components reinvented", "p": "With no design system tied to the code, developers rebuilt components that were hard to maintain afterwards.", "icon": "copies" }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cd-cards",
+   "theme": "light",
+   "label": "The cost to the business",
+   "h2": "Time lost *in support, onboarding and development*",
+   "groups": [
+    {
+     "h": "",
+     "items": [
+      { "h": "Laborious onboarding", "p": "The learning curve was steep: users had to ask internal teams many questions before they could use the platform." },
+      { "h": "Lots of support requests", "p": "Without clear errors, debugging an import often went through support and the CSMs." },
+      { "h": "New features slow to ship", "p": "Adding a channel meant designing its screens from scratch. [À FOURNIR : to validate]" },
+      { "h": "Technical debt to carry", "p": "Legacy ASPX pages with an old design system lived alongside the new technology, which forced trade-offs." }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cd-cards",
+   "theme": "light",
+   "label": "The plan",
+   "h2": "Four workstreams *to lead*",
+   "groups": [
+    {
+     "h": "",
+     "steps": true,
+     "items": [
+      { "h": "Data import", "to": "import", "p": "Bring every import into a single step-by-step flow that explains the platform as you use it." },
+      { "h": "Main navigation", "to": "navigation", "p": "Pick up a redesign started by others and carry it through to retiring the old menu." },
+      { "h": "Dashboards", "to": "dashboards", "p": "Create a reusable campaign statistics template for every channel." },
+      { "h": "Design system", "to": "design-system", "p": "Bring in Figma, structure the design system and tie it to the developers’ Storybook." }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cd-decisions",
+   "label": "Key decisions",
+   "h2": "What I decided, *and why*",
+   "nav": {
+    "label": "Jump to a workstream",
+    "items": [
+     { "t": "Import", "to": "import" },
+     { "t": "Navigation", "to": "navigation" },
+     { "t": "Dashboards", "to": "dashboards" },
+     { "t": "Design system", "to": "design-system" }
+    ]
+   },
+   "items": [
+    {
+     "id": "import",
+     "tag": "Workstream 1 · Data import",
+     "h": "Bring imports into one flow that teaches the platform",
+     "p": "A single entry point, moved from the main menu to the Contacts section, then five steps: *what to import, how, settings, field mapping and analysis*. The cards on the first screen explain each type of data: users learn how the platform is structured while importing.",
+     "notes": [
+      {
+       "k": "Alternatives",
+       "list": [
+        "Keep one tool that handles every import, regardless of the data.",
+        { "t": "A step-by-step flow that adapts to what you import.", "pill": "My recommendation" }
+       ]
+      },
+      {
+       "k": "Why",
+       "v": "New users got lost, and unexplained errors filled the support queue. I added a preview of the file’s first rows so people could map fields without opening it on the side, and, with the developers, errors that say what to fix, where and how."
+      },
+      {
+       "k": "Trade-off",
+       "v": "Users of the old import had to relearn. For them, the old options stayed in the flow, and settings hidden in the “advanced” interface became available to everyone."
+      }
+     ],
+     "shots": [
+      { "label": "[À FOURNIR] Step 1: what to import" },
+      { "label": "[À FOURNIR] Field mapping" },
+      { "label": "[À FOURNIR] Analysis and explained errors" }
+     ]
+    },
+    {
+     "id": "import-measure",
+     "tag": "Workstream 1 · Data import",
+     "h": "Measure every step and fix fast, in small increments",
+     "p": "After launch, I set up *a step-by-step funnel in Microsoft Clarity*. It showed many drop-offs on the very first screen: people landed there looking for something else.",
+     "notes": [
+      {
+       "k": "Alternatives",
+       "list": [
+        "Wait for a later redesign to revisit the flow.",
+        { "t": "Add links right away to what people were looking for.", "pill": "My recommendation" }
+       ]
+      },
+      {
+       "k": "Why",
+       "v": "Adding information links to the first screen, as competitors do, was a small, quick and inexpensive change. More people then moved on to the next step. [À FOURNIR : funnel figures, if available]"
+      },
+      {
+       "k": "Trade-off",
+       "v": "A slightly busier first screen. In return, the team had a continuous optimization loop: measure, form a hypothesis, ship small, measure again."
+      }
+     ]
+    },
+    {
+     "id": "navigation",
+     "tag": "Workstream 2 · Main navigation",
+     "h": "Organize the menu by use case: think like a marketer, not a developer",
+     "p": "The main menu now holds *only sections, each built around a need*: browse contacts, launch a campaign, acquire customers, automate. Actions live in section headers, and import becomes a button in Contacts.",
+     "notes": [
+      {
+       "k": "Alternatives",
+       "list": [
+        "Keep the existing structure, built around how the system works.",
+        { "t": "Sections by use case, with actions in context.", "pill": "My recommendation" }
+       ]
+      },
+      {
+       "k": "Why",
+       "v": "The best in the industry keep navigation light: you enter a context, and that’s where you find the options. I validated the architecture in Miro with every internal team until the founders bought in, then through weekly task-based tests."
+      },
+      {
+       "k": "Trade-off",
+       "v": "We had to prioritize which pages to modernize and accept interim solutions that led to legacy pages (see the challenge below)."
+      }
+     ],
+     "shots": [
+      { "label": "[À FOURNIR] Old menu" },
+      { "label": "[À FOURNIR] New menu and section header" }
+     ]
+    },
+    {
+     "id": "navigation-launch",
+     "tag": "Workstream 2 · Main navigation",
+     "h": "Launch alongside the old version to reduce risk",
+     "p": "For several months, *customers could switch between the old and the new menu*. In-app announcements asked for their feedback, and the CSMs gave them plenty of notice.",
+     "notes": [
+      {
+       "k": "Alternatives",
+       "list": [
+        "Replace the old menu all at once.",
+        { "t": "A gradual transition, with both menus side by side.", "pill": "My recommendation" }
+       ]
+      },
+      {
+       "k": "Why",
+       "v": "The customer base was expert, set in its habits and demanding. More than 25 customer interviews, run with the marketing team, shaped the message of the banners, modals and display rules."
+      },
+      {
+       "k": "Trade-off",
+       "v": "Maintaining two menus for several months. When the old one was retired, customers already knew the new one, and support received almost no requests."
+      }
+     ]
+    },
+    {
+     "id": "dashboards",
+     "tag": "Workstream 3 · Dashboards",
+     "h": "One dashboard template for every channel",
+     "p": "Rather than designing each channel’s statistics separately, I created *a reusable template* that covers about 99% of a new channel such as WhatsApp or RCS.",
+     "notes": [
+      {
+       "k": "Alternatives",
+       "list": [
+        "A custom dashboard for each channel.",
+        { "t": "A shared template, adapted per channel.", "pill": "My recommendation" }
+       ]
+      },
+      {
+       "k": "Why",
+       "v": "I reviewed every dashboard in the platform and those of the biggest players in the market to spot the patterns that recur by sending channel. A shared template makes each new channel faster to ship and consistent with the others."
+      },
+      {
+       "k": "Trade-off",
+       "v": "Each channel keeps its specifics: for an RCS carousel, clicks appear in two tables, one for RCS and one for the fallback SMS."
+      }
+     ]
+    },
+    {
+     "id": "design-system",
+     "tag": "Workstream 4 · Design system",
+     "h": "Tie Figma to Storybook so design and code speak the same language",
+     "p": "I led *the rollout of Figma* across the company, then structured the design system with the team: documented sections, configurable components, and a growing link to the developers’ Storybook.",
+     "notes": [
+      {
+       "k": "Alternatives",
+       "list": [
+        "Stay with the existing tool and rebuild components as needed.",
+        { "t": "Move to Figma and tie its components to Storybook.", "pill": "My recommendation" }
+       ]
+      },
+      {
+       "k": "Why",
+       "v": "Ship faster, without developers reinventing components that are hard to maintain. I convinced leadership, justified the costs through to purchase, managed licences and archived the old mockups."
+      },
+      {
+       "k": "Trade-off",
+       "v": "A migration to run alongside ongoing projects. The navigation’s action headers and the dashboard template were its first applications."
+      }
+     ],
+     "shots": [
+      { "label": "[À FOURNIR] Figma components and their Storybook counterparts" }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cd-card",
+   "label": "An unexpected design challenge",
+   "h2": "Making *legacy and new* live together",
+   "prose": [
+    "The new navigation ran on recent technology, but several pages were still in ASPX, with an old design system and an old look. The two didn’t always work well together.",
+    "**Redoing everything at once was impossible.** So I set out an overall plan, even without every answer, and prioritized the pages to modernize with the product team.",
+    "For pages not yet redesigned, I designed *interim solutions*: for example, an empty state in a new page with a button to the legacy page, until that page was redesigned and became the real one."
+   ]
+  },
+  {
+   "type": "cd-gallery",
+   "theme": "dark",
+   "label": "The system",
+   "h2": "One template, *applied to every view*",
+   "lead": "An info icon explains each metric, a flame icon flags results above the industry benchmark, and a purple card puts the return on investment front and centre.",
+   "shots": [
+    {
+     "label": "Overview",
+     "alt": "Overview of an RCS campaign: return on investment card, performance metrics, a table by segment and a curve over time",
+     "img": "work/market-overview-top.jpg",
+     "full": "work/market-overview.jpg"
+    },
+    {
+     "label": "Overview by volume",
+     "alt": "The same overview, with results shown as volumes rather than rates",
+     "img": "work/market-volume-top.jpg",
+     "full": "work/market-volume.jpg"
+    },
+    {
+     "label": "Clicks",
+     "alt": "Clicks tab: click details, clicks per carousel card, fallback SMS clicks, by segment and over time",
+     "img": "work/market-clicks-top.jpg",
+     "full": "work/market-clicks.jpg"
+    }
+   ]
+  },
+  {
+   "type": "cd-cards",
+   "label": "What users said",
+   "h2": "The *results*",
+   "lead": "Both ends adopted the new screens: power users prefer them, and the CSMs onboard new customers more easily.",
+   "groups": [
+    {
+     "h": "",
+     "items": [
+      { "h": "Easier onboarding", "p": "According to the CSMs, onboarding new customers has been much easier since the new import, a key and frequently used step of onboarding." },
+      { "h": "Almost no support requests", "p": "Thanks to the gradual transition, retiring the old menu generated practically no requests." },
+      { "h": "A platform that is easier to sell", "p": "The sales team noted that the platform had become much easier to sell, a collective result of the product team." }
+     ]
+    }
+   ],
+   "quote": {
+    "text": "Good job, I really like the interface. You can congratulate the dev team who worked on it too. I was discussing it with [a colleague], and he also finds it much easier to use.",
+    "note": "Translated from French.",
+    "name": "Director of Professional Services",
+    "role": "Market Inc., about the new import"
+   },
+   "foot": "Qualitative results, reported by the teams. [À FOURNIR : figures, if available (support requests, adoption of the new import, in-app survey)]"
+  },
+  {
+   "type": "cta-final",
+   "h2": "Your SaaS is powerful, but *hard to learn?*",
+   "p": "Let’s talk about making it simple for your experts and your new customers alike.",
+   "cta": "Contact Charles-Erick"
+  }
+ ],
+ "faq": []
+}

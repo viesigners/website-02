@@ -1256,3 +1256,13 @@ html { scroll-padding-top: 7rem; }
 .work__go { position: absolute; right: 1.1rem; bottom: 1.15rem; display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: rgba(255, 255, 255, .1); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .35); color: rgba(255, 255, 255, .85); transition: background .2s, color .2s, box-shadow .2s, transform .3s var(--ease); }
 .work__go svg { width: .9rem; height: .9rem; }
 .work__item--link:hover .work__go, .work__item--link:focus-within .work__go { background: var(--pink); box-shadow: none; color: #fff; transform: translateX(3px); }
+
+/* multi-workstream case study (Market Inc.): jump links from the plan and above the decisions, a workstream tag on each decision */
+.cd-subnav ul { display: flex; flex-wrap: wrap; gap: .5rem; margin: clamp(1.4rem, 1rem + 1.5vw, 2.2rem) 0 0; padding: 0; list-style: none; }
+.cd-subnav a { display: inline-block; padding: .4rem .9rem; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--line-2); color: inherit; font: 500 .8rem/1.4 var(--f-mono); letter-spacing: .02em; text-decoration: none; transition: background-color .2s, box-shadow .2s; }
+.cd-subnav a:hover, .cd-subnav a:focus-visible { background: rgba(255, 72, 139, .14); box-shadow: inset 0 0 0 1px rgba(255, 72, 139, .55); }
+.cd-chantier { margin: 0 0 .5rem !important; font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: var(--pink) !important; }
+.cd-decisions > li[id] { scroll-margin-top: 6rem; }
+.cd-jump { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.cd-jump:hover, .cd-jump:focus-visible { color: var(--pink); }
+.tcard.cd-quote { margin-top: clamp(2rem, 1.2rem + 3vw, 3.5rem); }

@@ -1,0 +1,525 @@
+{
+ "meta": {
+  "title": "Étude de cas Market Inc. : réinventer un SaaS legacy | Viesigners",
+  "description": "Comment Charles-Erick BG a rendu une plateforme marketing SaaS legacy plus simple pour les experts comme pour les novices : import, navigation, tableaux de bord et design system.",
+  "h1": "Rendre une plateforme marketing SaaS complexe simple pour les experts et les novices"
+ },
+ "article": true,
+ "published": "2026-11-17",
+ "author": "charles-erick",
+ "image": "work/market-hero.jpg",
+ "ogImage": "og-market.jpg",
+ "about": [
+  "UX design",
+  "SaaS",
+  "Information architecture",
+  "Design systems",
+  "Data visualization"
+ ],
+ "sections": [
+  {
+   "type": "cd-hero",
+   "tag": "Étude de cas · SaaS",
+   "h1": "Rendre une plateforme marketing SaaS complexe *simple pour les experts et les novices*",
+   "img": "work/market-hero.jpg",
+   "alt": "Tableau de bord des statistiques d’une campagne RCS : retour sur investissement, livraison, ouvertures, clics, conversion et attrition",
+   "glance": [
+    {
+     "k": "Expert",
+     "v": "Charles-Erick BG"
+    },
+    {
+     "k": "Rôle",
+     "v": "[À FOURNIR : titre exact]"
+    },
+    {
+     "k": "Problème",
+     "v": "Une plateforme legacy difficile à apprendre, coûteuse en soutien et lourde à faire évoluer, utilisée autant par des experts de longue date que par des novices."
+    },
+    {
+     "k": "Activités",
+     "v": "Recherche utilisateur, design de produit, architecture de l’information, design system",
+     "more": {
+      "n": 10,
+      "to": "ce-que-jai-fait",
+      "label": "Voir toutes les activités"
+     }
+    },
+    {
+     "k": "Résultat",
+     "v": "Un onboarding *beaucoup plus simple* selon les CSM, et *presque aucune demande au soutien* au retrait de l’ancien menu."
+    }
+   ],
+   "cta": {
+    "label": "Contacter Charles-Erick"
+   }
+  },
+  {
+   "type": "cd-facts",
+   "caption": "Le tableau de bord de campagne, l’un des quatre chantiers. Visuels refaits par mes soins pour respecter l’entente de confidentialité.",
+   "lead": "Chez Market Inc., j’ai mené quatre refontes d’une plateforme marketing SaaS legacy, de la recherche jusqu’au lancement : l’import de données, la navigation principale, les tableaux de bord de statistiques et le design system. Un seul fil les relie : *servir les experts sans décourager les novices*.",
+   "byline": "Par Charles-Erick BG",
+   "items": [
+    {
+     "b": "Rôle",
+     "t": "[À FOURNIR : titre exact]"
+    },
+    {
+     "b": "Client",
+     "tags": [
+      "SaaS",
+      "Marketing multicanal",
+      "B2B"
+     ],
+     "note": "Market Inc. est un nom fictif; le client est protégé par une entente de confidentialité."
+    },
+    {
+     "b": "Objectifs",
+     "list": [
+      "Une plateforme plus facile à apprendre",
+      "Moins de demandes au soutien et aux CSM",
+      "Des nouveautés plus rapides à livrer"
+     ]
+    },
+    {
+     "b": "Ce que j’ai fait",
+     "wide": true,
+     "tags": [
+      "Recherche utilisateur",
+      "Entrevues",
+      "Tests utilisateurs",
+      "Analyse concurrentielle",
+      "Architecture de l’information",
+      "Design de produit",
+      "Wireframes",
+      "Maquettes haute fidélité",
+      "Design system",
+      "Copywriting",
+      "Analyse d’entonnoir",
+      "Communication produit",
+      "Visualisation de données",
+      {
+       "t": "Design graphique",
+       "label": "À propos du design graphique",
+       "info": "J’ai moi-même refait le design visuel de ces écrans pour cette étude de cas. Le design d’origine peut être différent."
+      }
+     ],
+     "id": "ce-que-jai-fait"
+    },
+    {
+     "b": "Outils",
+     "tags": [
+      "Figma",
+      "Storybook",
+      "Miro",
+      "Microsoft Clarity"
+     ]
+    },
+    {
+     "b": "Collaborateurs",
+     "bullets": [
+      "Fondateurs",
+      "Product managers",
+      "Développeurs",
+      "CSM",
+      "Équipe marketing"
+     ]
+    }
+   ],
+   "impact": [
+    {
+     "n": "4",
+     "t": "chantiers menés de la recherche jusqu’au lancement."
+    },
+    {
+     "n": "25+",
+     "t": "entrevues clients pour préparer la transition vers la nouvelle navigation."
+    },
+    {
+     "n": "~99 %",
+     "t": "d’un nouveau canal couvert d’emblée par le modèle de tableau de bord."
+    }
+   ]
+  },
+  {
+   "type": "cd-cards",
+   "theme": "light",
+   "label": "Les frictions",
+   "h2": "Une plateforme *difficile à apprendre et à faire évoluer*",
+   "lead": "Des clients de longue date qui connaissaient chaque écran côtoyaient des nouveaux clients, parfois peu à l’aise avec la technologie, et des profils de développeurs. Chaque refonte devait servir les deux extrêmes.",
+   "groups": [
+    {
+     "h": "",
+     "items": [
+      {
+       "h": "Une navigation qui intimidait",
+       "p": "Le menu principal contenait presque toutes les fonctionnalités, y compris des actions. Les nouveaux utilisateurs ne savaient pas où aller.",
+       "icon": "drawers"
+      },
+      {
+       "h": "Un import confus",
+       "p": "Des chemins dispersés (l’API à un endroit, les fichiers à un autre), des options cachées dans une interface « avancée » et des erreurs sans explication.",
+       "icon": "form"
+      },
+      {
+       "h": "Des tableaux de bord conçus un à un",
+       "p": "Chaque canal avait ses propres statistiques, sans base commune. [À FOURNIR : à valider]",
+       "icon": "templates"
+      },
+      {
+       "h": "Des composants réinventés",
+       "p": "Sans design system arrimé au code, les développeurs recréaient des composants, difficiles à maintenir ensuite.",
+       "icon": "copies"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cd-cards",
+   "theme": "light",
+   "label": "Le coût pour l’entreprise",
+   "h2": "Du temps perdu *au soutien, à l’onboarding et en développement*",
+   "groups": [
+    {
+     "h": "",
+     "items": [
+      {
+       "h": "Un onboarding laborieux",
+       "p": "La courbe d’apprentissage était abrupte : il fallait poser beaucoup de questions aux équipes internes avant de savoir se servir de la plateforme."
+      },
+      {
+       "h": "Beaucoup de demandes au soutien",
+       "p": "Faute d’erreurs claires, le débogage d’un import passait souvent par le soutien et les CSM."
+      },
+      {
+       "h": "Des nouveautés lentes à livrer",
+       "p": "Ajouter un canal voulait dire concevoir ses écrans de zéro. [À FOURNIR : à valider]"
+      },
+      {
+       "h": "Une dette technique à porter",
+       "p": "Des pages legacy en ASPX, avec un ancien design system, cohabitaient avec la nouvelle technologie, ce qui imposait des compromis."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cd-cards",
+   "theme": "light",
+   "label": "Le plan",
+   "h2": "Quatre chantiers *à mener*",
+   "groups": [
+    {
+     "h": "",
+     "steps": true,
+     "items": [
+      {
+       "h": "L’import de données",
+       "to": "import",
+       "p": "Regrouper tous les imports dans un seul parcours en étapes, qui explique la plateforme pendant qu’on l’utilise."
+      },
+      {
+       "h": "La navigation principale",
+       "to": "navigation",
+       "p": "Reprendre une refonte amorcée par d’autres et la mener jusqu’au retrait de l’ancien menu."
+      },
+      {
+       "h": "Les tableaux de bord",
+       "to": "tableaux-de-bord",
+       "p": "Créer un modèle de statistiques de campagne réutilisable pour chaque canal."
+      },
+      {
+       "h": "Le design system",
+       "to": "design-system",
+       "p": "Implanter Figma, structurer le design system et l’arrimer au Storybook des développeurs."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cd-decisions",
+   "label": "Décisions clés",
+   "h2": "Ce que j’ai décidé, *et pourquoi*",
+   "nav": {
+    "label": "Aller à un chantier",
+    "items": [
+     {
+      "t": "Import",
+      "to": "import"
+     },
+     {
+      "t": "Navigation",
+      "to": "navigation"
+     },
+     {
+      "t": "Tableaux de bord",
+      "to": "tableaux-de-bord"
+     },
+     {
+      "t": "Design system",
+      "to": "design-system"
+     }
+    ]
+   },
+   "items": [
+    {
+     "id": "import",
+     "tag": "Chantier 1 · Import de données",
+     "h": "Regrouper les imports dans un parcours qui enseigne la plateforme",
+     "p": "Un seul point d’entrée, déplacé du menu principal vers la section Contacts, puis cinq étapes : *quoi importer, de quelle façon, les paramètres, le mapping des champs et l’analyse*. Les cartes du premier écran expliquent chaque type de données : on apprend la structure de la plateforme en important.",
+     "notes": [
+      {
+       "k": "Alternatives",
+       "list": [
+        "Garder un outil unique qui fait tous les imports, sans distinction des données.",
+        {
+         "t": "Un parcours en étapes qui s’adapte à ce qu’on importe.",
+         "pill": "Ma recommandation"
+        }
+       ]
+      },
+      {
+       "k": "Pourquoi",
+       "v": "Les nouveaux utilisateurs se perdaient, et les erreurs sans explication remplissaient la file du soutien. J’ai ajouté un aperçu des premières lignes du fichier pour mapper sans l’ouvrir à côté, et, avec les développeurs, des erreurs qui disent quoi corriger, où et comment."
+      },
+      {
+       "k": "Compromis",
+       "v": "Les habitués de l’ancien import devaient réapprendre. Pour eux, les anciennes options sont restées dans le parcours, et des réglages cachés dans l’interface « avancée » sont devenus accessibles à tous."
+      }
+     ],
+     "shots": [
+      {
+       "label": "[À FOURNIR] Étape 1 : quoi importer"
+      },
+      {
+       "label": "[À FOURNIR] Mapping des champs"
+      },
+      {
+       "label": "[À FOURNIR] Analyse et erreurs expliquées"
+      }
+     ]
+    },
+    {
+     "id": "import-mesure",
+     "tag": "Chantier 1 · Import de données",
+     "h": "Mesurer chaque étape et corriger vite, en petit",
+     "p": "Après le lancement, j’ai mis en place *un entonnoir par étape dans Microsoft Clarity*. Il a révélé beaucoup d’abandons dès le premier écran : des gens y arrivaient en cherchant autre chose.",
+     "notes": [
+      {
+       "k": "Alternatives",
+       "list": [
+        "Attendre une prochaine refonte pour revoir le parcours.",
+        {
+         "t": "Ajouter tout de suite des liens vers ce que les gens cherchaient.",
+         "pill": "Ma recommandation"
+        }
+       ]
+      },
+      {
+       "k": "Pourquoi",
+       "v": "Ajouter des liens d’information sur le premier écran, comme le fait la concurrence, était un petit développement, rapide et peu coûteux. Plus de gens sont ensuite passés à l’étape suivante. [À FOURNIR : chiffres de l’entonnoir, s’ils existent]"
+      },
+      {
+       "k": "Compromis",
+       "v": "Un écran de départ un peu plus chargé. En échange, l’équipe avait une boucle d’optimisation continue : mesurer, poser une hypothèse, livrer petit, mesurer encore."
+      }
+     ]
+    },
+    {
+     "id": "navigation",
+     "tag": "Chantier 2 · Navigation principale",
+     "h": "Organiser le menu par cas d’usage : penser marketeur, pas développeur",
+     "p": "Le menu principal ne contient plus que *des sections, chacune basée sur un besoin* : consulter ses contacts, lancer une campagne, acquérir des clients, automatiser. Les actions vont dans les en-têtes de section, et l’import devient un bouton dans Contacts.",
+     "notes": [
+      {
+       "k": "Alternatives",
+       "list": [
+        "Garder la structure existante, pensée selon la logique du système.",
+        {
+         "t": "Des sections par cas d’usage, avec les actions dans leur contexte.",
+         "pill": "Ma recommandation"
+        }
+       ]
+      },
+      {
+       "k": "Pourquoi",
+       "v": "Les meilleurs de l’industrie ont une navigation légère : on entre dans un contexte, et c’est là qu’on trouve les options. J’ai validé l’architecture dans Miro avec toutes les équipes internes jusqu’à l’adhésion des fondateurs, puis par des tests de tâches chaque semaine."
+      },
+      {
+       "k": "Compromis",
+       "v": "Il a fallu prioriser les pages à moderniser et accepter des solutions transitoires vers les pages legacy (voir le défi plus bas)."
+      }
+     ],
+     "shots": [
+      {
+       "label": "[À FOURNIR] Ancien menu"
+      },
+      {
+       "label": "[À FOURNIR] Nouveau menu et en-tête de section"
+      }
+     ]
+    },
+    {
+     "id": "navigation-lancement",
+     "tag": "Chantier 2 · Navigation principale",
+     "h": "Lancer en parallèle de l’ancien pour réduire le risque",
+     "p": "Pendant plusieurs mois, *les clients pouvaient basculer entre l’ancien et le nouveau menu*. Des annonces dans la plateforme demandaient leur avis, et les CSM les prévenaient longtemps à l’avance.",
+     "notes": [
+      {
+       "k": "Alternatives",
+       "list": [
+        "Remplacer l’ancien menu d’un coup.",
+        {
+         "t": "Une transition graduelle, avec les deux menus en parallèle.",
+         "pill": "Ma recommandation"
+        }
+       ]
+      },
+      {
+       "k": "Pourquoi",
+       "v": "La base de clients était experte, habituée et exigeante. Plus de 25 entrevues clients, menées avec l’équipe marketing, ont servi à affiner le message des bannières, des modales et des règles d’affichage."
+      },
+      {
+       "k": "Compromis",
+       "v": "Maintenir deux menus pendant plusieurs mois. Au retrait de l’ancien, les clients savaient déjà se servir du nouveau, et le soutien n’a reçu presque aucune demande."
+      }
+     ]
+    },
+    {
+     "id": "tableaux-de-bord",
+     "tag": "Chantier 3 · Tableaux de bord",
+     "h": "Un modèle de tableau de bord pour tous les canaux",
+     "p": "Plutôt que de concevoir les statistiques de chaque canal à part, j’ai créé *un modèle réutilisable*, qui s’applique à environ 99 % à un nouveau canal comme WhatsApp ou RCS.",
+     "notes": [
+      {
+       "k": "Alternatives",
+       "list": [
+        "Un tableau de bord conçu sur mesure pour chaque canal.",
+        {
+         "t": "Un modèle commun, décliné par canal.",
+         "pill": "Ma recommandation"
+        }
+       ]
+      },
+      {
+       "k": "Pourquoi",
+       "v": "J’ai passé en revue tous les tableaux de bord de la plateforme et ceux des plus gros joueurs du marché, pour repérer les patterns qui reviennent par canal d’envoi. Un modèle commun rend chaque nouveau canal plus rapide à livrer et cohérent avec les autres."
+      },
+      {
+       "k": "Compromis",
+       "v": "Chaque canal garde ses particularités : pour un carrousel RCS, les clics s’affichent en deux tableaux, un pour le RCS et un pour le SMS de repli."
+      }
+     ]
+    },
+    {
+     "id": "design-system",
+     "tag": "Chantier 4 · Design system",
+     "h": "Arrimer Figma au Storybook pour que design et code parlent le même langage",
+     "p": "J’ai chapeauté *l’implantation de Figma* dans l’entreprise, puis la structuration du design system avec l’équipe : sections documentées, composants paramétrés, et un lien progressif avec le Storybook des développeurs.",
+     "notes": [
+      {
+       "k": "Alternatives",
+       "list": [
+        "Continuer avec l’outil existant et des composants recréés au besoin.",
+        {
+         "t": "Migrer vers Figma et arrimer ses composants au Storybook.",
+         "pill": "Ma recommandation"
+        }
+       ]
+      },
+      {
+       "k": "Pourquoi",
+       "v": "Livrer plus vite, sans que les développeurs réinventent des composants difficiles à maintenir. J’ai convaincu la direction, justifié les coûts jusqu’à l’achat, géré les licences et archivé les anciennes maquettes."
+      },
+      {
+       "k": "Compromis",
+       "v": "Une migration à mener en même temps que les projets en cours. Les en-têtes d’actions de la navigation et le modèle de tableau de bord en ont été les premières applications."
+      }
+     ],
+     "shots": [
+      {
+       "label": "[À FOURNIR] Composants Figma et leur équivalent Storybook"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cd-card",
+   "label": "Un défi de design imprévu",
+   "h2": "Faire cohabiter *le legacy et le nouveau*",
+   "prose": [
+    "La nouvelle navigation reposait sur une technologie récente, mais plusieurs pages restaient en ASPX, avec un ancien design system et un ancien look. Les deux ne fonctionnaient pas toujours bien ensemble.",
+    "**Tout refaire d’un coup était impossible.** J’ai donc établi un plan global, même sans avoir toutes les réponses, et priorisé les pages à moderniser avec l’équipe produit.",
+    "Pour les pages pas encore refaites, j’ai conçu des *solutions transitoires* : par exemple, un état vide dans une nouvelle page, avec un bouton vers la page legacy, en attendant que celle-ci soit refaite et devienne la vraie."
+   ]
+  },
+  {
+   "type": "cd-gallery",
+   "theme": "dark",
+   "label": "Le système",
+   "h2": "Un même modèle, *décliné par vue*",
+   "lead": "Une icône d’information explique chaque indicateur, une icône de feu signale les résultats au-dessus du repère de l’industrie, et une carte mauve met le retour sur investissement en avant.",
+   "shots": [
+    {
+     "label": "Vue d’ensemble",
+     "alt": "Vue d’ensemble d’une campagne RCS : carte du retour sur investissement, indicateurs de performance, tableau par segment et courbe dans le temps",
+     "img": "work/market-overview-top.jpg",
+     "full": "work/market-overview.jpg"
+    },
+    {
+     "label": "Vue d’ensemble par volume",
+     "alt": "La même vue d’ensemble, avec les résultats exprimés en volume plutôt qu’en taux",
+     "img": "work/market-volume-top.jpg",
+     "full": "work/market-volume.jpg"
+    },
+    {
+     "label": "Clics",
+     "alt": "Onglet des clics : détail des clics, clics par carte du carrousel, clics du SMS de repli, par segment et dans le temps",
+     "img": "work/market-clicks-top.jpg",
+     "full": "work/market-clicks.jpg"
+    }
+   ]
+  },
+  {
+   "type": "cd-cards",
+   "label": "Ce que les utilisateurs ont dit",
+   "h2": "Les *résultats*",
+   "lead": "Les deux extrêmes ont adopté les nouveaux écrans : les super-utilisateurs les préfèrent, et les CSM intègrent plus facilement les nouveaux clients.",
+   "groups": [
+    {
+     "h": "",
+     "items": [
+      {
+       "h": "Un onboarding plus simple",
+       "p": "Selon les CSM, l’intégration des nouveaux clients est beaucoup plus facile depuis le nouvel import, une étape importante et très utilisée de l’onboarding."
+      },
+      {
+       "h": "Presque aucune demande au soutien",
+       "p": "Grâce à la transition graduelle, le retrait de l’ancien menu n’a généré pratiquement aucune demande."
+      },
+      {
+       "h": "Une plateforme plus facile à vendre",
+       "p": "L’équipe des ventes a souligné que la plateforme était devenue beaucoup plus facile à vendre, un résultat collectif de l’équipe produit."
+      }
+     ]
+    }
+   ],
+   "quote": {
+    "text": "Good job, j’aime vraiment l’interface. Tu pourras féliciter aussi l’équipe de dev qui a travaillé dessus. J’en discutais avec [un collègue], il trouve aussi que c’est vraiment plus facile d’utilisation.",
+    "name": "Directeur des services professionnels",
+    "role": "Market Inc., à propos du nouvel import"
+   },
+   "foot": "Résultats qualitatifs, rapportés par les équipes. [À FOURNIR : chiffres, s’ils existent (demandes au soutien, adoption du nouvel import, questionnaire dans la plateforme)]"
+  },
+  {
+   "type": "cta-final",
+   "h2": "Votre SaaS est puissant, mais *difficile à apprendre?*",
+   "p": "Parlons de la façon de le rendre simple pour vos experts comme pour vos nouveaux clients.",
+   "cta": "Contacter Charles-Erick"
+  }
+ ],
+ "faq": []
+}

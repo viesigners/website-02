@@ -71,6 +71,7 @@ const ROUTES = {
   'cas-saas': { fr: 'etudes-de-cas/saas-b2b-ia', en: 'case-studies/b2b-ai-saas' }, // lives under its type (Case studies), not under /blog/
   'cas-pharmy': { fr: 'etudes-de-cas/pharmy', en: 'case-studies/pharmy' }, // lives under its type (Case studies)
   'cas-mcq': { fr: 'etudes-de-cas/musee-de-la-civilisation', en: 'case-studies/musee-de-la-civilisation' },
+  'cas-market': { fr: 'etudes-de-cas/market-inc', en: 'case-studies/market-inc' }, // Market Inc. is a pseudonym (NDA)
   publicite: { fr: 'publicite-numerique', en: 'digital-advertising' },
   'medias-sociaux': { fr: 'medias-sociaux', en: 'social-media' },
   'seo-geo': { fr: 'seo-geo', en: 'seo-geo' },
@@ -87,7 +88,7 @@ const ROUTES = {
   merci: { fr: 'merci', en: 'thank-you' }, // shown after a form submission: noindex, never linked
   actualites: BLOG, // blog: articles + case studies, one filter page per category (the key stays neutral; the name lives in _site.json nav)
 };
-const CASE_KEYS = ['cas-saas', 'cas-pharmy', 'cas-mcq']; // rich case-study pages (casestudy format) listed under Resources > Case studies
+const CASE_KEYS = ['cas-saas', 'cas-pharmy', 'cas-mcq', 'cas-market']; // rich case-study pages (casestudy format) listed under Resources > Case studies
 /* old public addresses that now forward to their new page (same model as the profile redirect) */
 const MOVED = [
   { from: { fr: 'design-de-produit/etude-de-cas-saas-b2b-ia', en: 'product-design/b2b-ai-saas-case-study' }, to: 'cas-saas' },
@@ -463,12 +464,15 @@ R['cd-impact'] = (s, c) => `<section class="section section--tight"><div class="
 </div></section>`;
 R['cd-cards'] = (s, c) => `<section class="section${s.cls ? ' ' + s.cls : ''}"><div class="wrap">
   ${secHead(s, c, 'cd-cards', { label: s.label })}
-  ${s.groups.map((g) => `<div class="cd-group">${g.h ? `<h3 class="rv">${esc(g.h)}</h3>` : ''}${g.steps ? `<ol class="cd-steps cd-steps--row">${g.items.map((i, k) => `<li class="rv" style="--d:${k * .06}s"><b>${esc(i.h)}</b><span>${fmtT(i.p, c.lang)}${i.list ? `<ol class="cd-olist">${i.list.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>` : ''}</span></li>`).join('')}</ol>` : `<div class="cd-cards cd-cards--${g.items.length}">${g.items.map((i, k) => `<article class="rv" style="--d:${k * .06}s">${i.icon ? `<span class="cd-ico" aria-hidden="true">${CDICO[i.icon]}</span>` : ''}<h4>${esc(i.h)}</h4><p>${fmtT(i.p, c.lang)}</p></article>`).join('')}</div>`}</div>`).join('')}
+  ${s.groups.map((g) => `<div class="cd-group">${g.h ? `<h3 class="rv">${esc(g.h)}</h3>` : ''}${g.steps ? `<ol class="cd-steps cd-steps--row">${g.items.map((i, k) => `<li class="rv" style="--d:${k * .06}s"><b>${i.to ? `<a class="cd-jump" href="#${i.to}" target="_self">${esc(i.h)}</a>` : esc(i.h)}</b><span>${fmtT(i.p, c.lang)}${i.list ? `<ol class="cd-olist">${i.list.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>` : ''}</span></li>`).join('')}</ol>` : `<div class="cd-cards cd-cards--${g.items.length}">${g.items.map((i, k) => `<article class="rv" style="--d:${k * .06}s">${i.icon ? `<span class="cd-ico" aria-hidden="true">${CDICO[i.icon]}</span>` : ''}<h4>${esc(i.h)}</h4><p>${fmtT(i.p, c.lang)}</p></article>`).join('')}</div>`}</div>`).join('')}
+  ${s.quote ? `<figure class="tcard cs__quote cd-quote rv"><blockquote><p>${fmt(s.quote.text, c.lang)}</p></blockquote>${s.quote.note ? `<p class="tnote">${esc(s.quote.note)}</p>` : ''}<figcaption><span class="who"><b>${esc(s.quote.name)}</b>${s.quote.role ? `<span>${esc(s.quote.role)}</span>` : ''}</span></figcaption></figure>` : ''}
+  ${s.foot ? `<p class="cd-source rv">${fmtT(s.foot, c.lang)}</p>` : ''}
 </div></section>`;
 R['cd-image'] = (s, c) => `<section class="section section--tight"><div class="wrap"><figure class="cd-figure rv">${img(s.img, s.alt, { sizes: '(min-width:1320px) 1224px, 100vw' })}${s.caption ? `<figcaption>${fmtT(s.caption, c.lang)}</figcaption>` : ''}</figure></div></section>`;
 R['cd-decisions'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-decisions', { label: s.label })}
-  <ol class="cd-decisions">${s.items.map((i, k) => `<li class="rv"><span class="cd-n">${String(k + 1).padStart(2, '0')}</span><div><h3>${esc(i.h)}</h3><p>${fmtT(i.p, c.lang)}</p><dl>${i.notes.map((n) => `<div><dt>${esc(n.k)}</dt><dd>${n.list ? `<ol class="cd-olist">${n.list.map((x) => typeof x === 'string' ? `<li>${fmtT(x, c.lang)}</li>` : `<li><span>${x.pill ? `<b class="cd-pill">${esc(x.pill)}</b> ` : ''}${fmtT(x.t, c.lang)}</span></li>`).join('')}</ol>` : fmtT(n.v, c.lang)}</dd></div>`).join('')}</dl>${shots(i.shots, i.shotsCls)}</div></li>`).join('')}</ol>
+  ${s.nav ? `<nav class="cd-subnav rv" aria-label="${esc(s.nav.label)}"><ul>${s.nav.items.map((n) => `<li><a href="#${n.to}" target="_self">${esc(n.t)}</a></li>`).join('')}</ul></nav>` : ''}
+  <ol class="cd-decisions">${s.items.map((i, k) => `<li class="rv"${i.id ? ` id="${i.id}"` : ''}><span class="cd-n">${String(k + 1).padStart(2, '0')}</span><div>${i.tag ? `<p class="cd-chantier">${esc(i.tag)}</p>` : ''}<h3>${esc(i.h)}</h3><p>${fmtT(i.p, c.lang)}</p><dl>${i.notes.map((n) => `<div><dt>${esc(n.k)}</dt><dd>${n.list ? `<ol class="cd-olist">${n.list.map((x) => typeof x === 'string' ? `<li>${fmtT(x, c.lang)}</li>` : `<li><span>${x.pill ? `<b class="cd-pill">${esc(x.pill)}</b> ` : ''}${fmtT(x.t, c.lang)}</span></li>`).join('')}</ol>` : fmtT(n.v, c.lang)}</dd></div>`).join('')}</dl>${shots(i.shots, i.shotsCls)}</div></li>`).join('')}</ol>
 </div></section>`;
 R['cd-test'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-test', { label: s.label })}
@@ -878,7 +882,7 @@ function toMd(page, c) {
       case 'cd-card': L.push(`## ${t(s.h2)}`, '', ...s.prose.map((p) => t(p)), ''); break;
       case 'casecard': L.push(`## ${t(s.h)}`, '', `- **${s.n}** ${t(s.nt)}`, `- [${t(s.h)}](${abs(url(s.to, lang))})`, ''); break;
       case 'cd-impact': L.push(...s.items.map((i) => `- **${i.n}** ${t(i.t)}${i.note ? ' ' + t(i.note) : ''}`), ''); break;
-      case 'cd-cards': L.push(`## ${t(s.h2)}`, '', ...(s.sub ? [t(s.sub), ''] : []), ...s.groups.flatMap((g) => [`### ${t(g.h)}`, '', ...g.items.map((i) => `- **${t(i.h)}** ${t(i.p)}`), '']), ''); break;
+      case 'cd-cards': L.push(`## ${t(s.h2)}`, '', ...(s.sub ? [t(s.sub), ''] : []), ...s.groups.flatMap((g) => [`### ${t(g.h)}`, '', ...g.items.map((i) => `- **${t(i.h)}** ${t(i.p)}`), '']), ...(s.quote ? [`> ${t(s.quote.text)}`, `> — ${s.quote.name}${s.quote.role ? ', ' + s.quote.role : ''}`, ''] : []), ''); break;
       case 'cd-hero': L.push(`# ${t(s.h1)}`, ''); break;
       case 'cd-facts': L.push(...(s.impact || []).map((i) => `- **${i.n}** ${t(i.t)}${i.note ? ' ' + t(i.note) : ''}`), '', t(s.lead), '', ...s.items.map((i) => `- ${t(i.b)} ${t(i.t)}`), ''); break;
       case 'cd-text': L.push(`## ${t(s.h2)}`, '', ...s.prose.map((p) => t(p) + '\n'), ...(s.steps || []).map((i, n) => `${n + 1}. **${t(i.h)}** — ${t(i.p)}`), ''); break;
