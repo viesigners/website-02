@@ -463,15 +463,18 @@
      "items": [
       {
        "h": "Easier onboarding",
-       "p": "According to the CSMs, onboarding new customers has been much easier since the new import, a key and frequently used step of onboarding."
+       "p": "According to the CSMs, onboarding new customers has been much easier since the new import, a key and frequently used step of onboarding.",
+       "icon": "onboard"
       },
       {
        "h": "Almost no support requests",
-       "p": "Thanks to the gradual transition, retiring the old menu generated practically no requests."
+       "p": "Thanks to the gradual transition, retiring the old menu generated practically no requests.",
+       "icon": "support"
       },
       {
        "h": "A platform that is easier to sell",
-       "p": "The sales team noted that the platform had become much easier to sell, a collective result of the product team."
+       "p": "The sales team noted that the platform had become much easier to sell, a collective result of the product team.",
+       "icon": "growth"
       }
      ]
     }

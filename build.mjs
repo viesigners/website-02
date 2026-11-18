@@ -140,6 +140,9 @@ const CDICO = {
   related: '<svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="5.5" r="2.6"/><circle cx="18" cy="18.5" r="2.6"/><path d="M8.3 10.8l7.4-4M8.3 13.2l7.4 4"/></svg>',
   import: '<svg viewBox="0 0 24 24"><path d="M12 3v11.5M7.5 10l4.5 4.5 4.5-4.5"/><path d="M4 14.5v3.5a2.5 2.5 0 0 0 2.5 2.5h11a2.5 2.5 0 0 0 2.5-2.5v-3.5"/></svg>',
   menu: '<svg viewBox="0 0 24 24"><path d="M4 6.5h16M4 12h16M4 17.5h16"/></svg>',
+  onboard: '<svg viewBox="0 0 24 24"><circle cx="9.5" cy="8" r="3.5"/><path d="M3 20c0-3.6 2.9-6 6.5-6 1.6 0 3 .5 4.1 1.3"/><path d="M18.5 13v6M15.5 16h6"/></svg>',
+  support: '<svg viewBox="0 0 24 24"><path d="M4.5 13.5V12a7.5 7.5 0 0 1 15 0v1.5"/><rect x="3.5" y="13" width="4" height="6" rx="1.5"/><rect x="16.5" y="13" width="4" height="6" rx="1.5"/><path d="M18.5 19c0 1.4-1.5 2-3.5 2h-2"/></svg>',
+  growth: '<svg viewBox="0 0 24 24"><path d="M3.5 17.5l5.5-5.5 4 4 7.5-7.5"/><path d="M15 8.5h5.5V14"/></svg>',
   templates: '<svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 9h17M10 9v11.5"/><path d="M13 13h4.5M13 16.5h3"/></svg>',
 };
 const ico = (n, cls = '') => `<svg aria-hidden="true" focusable="false"${cls ? ` class="${cls}"` : ''}><use href="#i-${n}"/></svg>`;

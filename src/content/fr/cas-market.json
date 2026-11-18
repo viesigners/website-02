@@ -463,15 +463,18 @@
      "items": [
       {
        "h": "Un onboarding plus simple",
-       "p": "Selon les CSM, l’intégration des nouveaux clients est beaucoup plus facile depuis le nouvel import, une étape importante et très utilisée de l’onboarding."
+       "p": "Selon les CSM, l’intégration des nouveaux clients est beaucoup plus facile depuis le nouvel import, une étape importante et très utilisée de l’onboarding.",
+       "icon": "onboard"
       },
       {
        "h": "Presque aucune demande au soutien",
-       "p": "Grâce à la transition graduelle, le retrait de l’ancien menu n’a généré pratiquement aucune demande."
+       "p": "Grâce à la transition graduelle, le retrait de l’ancien menu n’a généré pratiquement aucune demande.",
+       "icon": "support"
       },
       {
        "h": "Une plateforme plus facile à vendre",
-       "p": "L’équipe des ventes a souligné que la plateforme était devenue beaucoup plus facile à vendre, un résultat collectif de l’équipe produit."
+       "p": "L’équipe des ventes a souligné que la plateforme était devenue beaucoup plus facile à vendre, un résultat collectif de l’équipe produit.",
+       "icon": "growth"
       }
      ]
     }
