@@ -439,12 +439,6 @@
    "lead": "An info icon explains each metric, a flame icon flags results above the industry benchmark, and a purple card puts the return on investment front and centre.",
    "shots": [
     {
-     "label": "Overview",
-     "alt": "Overview of an RCS campaign: return on investment card, performance metrics, a table by segment and a curve over time",
-     "img": "work/market-overview-top.jpg",
-     "full": "work/market-overview.jpg"
-    },
-    {
      "label": "Overview by volume",
      "alt": "The same overview, with results shown as volumes rather than rates",
      "img": "work/market-volume-top.jpg",

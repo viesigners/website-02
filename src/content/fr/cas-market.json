@@ -439,12 +439,6 @@
    "lead": "Une icône d’information explique chaque indicateur, une icône de feu signale les résultats au-dessus du repère de l’industrie, et une carte mauve met le retour sur investissement en avant.",
    "shots": [
     {
-     "label": "Vue d’ensemble",
-     "alt": "Vue d’ensemble d’une campagne RCS : carte du retour sur investissement, indicateurs de performance, tableau par segment et courbe dans le temps",
-     "img": "work/market-overview-top.jpg",
-     "full": "work/market-overview.jpg"
-    },
-    {
      "label": "Vue d’ensemble par volume",
      "alt": "La même vue d’ensemble, avec les résultats exprimés en volume plutôt qu’en taux",
      "img": "work/market-volume-top.jpg",
