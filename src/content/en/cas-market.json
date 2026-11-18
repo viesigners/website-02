@@ -248,7 +248,7 @@
      "id": "import",
      "tag": "Pillar 1 · Data import",
      "h": "Bring imports into one flow that teaches the platform",
-     "p": "A single entry point, moved from the main menu to the Contacts section, then five steps: *what to import, how, settings, field mapping and analysis*. The cards on the first screen explain each type of data: users learn how the platform is structured while importing.",
+     "p": "One entry point in Contacts, then *five guided steps*. The cards on the first screen explain each type of data.",
      "notes": [
       {
        "k": "Alternatives",
@@ -262,11 +262,11 @@
       },
       {
        "k": "Why",
-       "v": "New users got lost, and unexplained errors filled the support queue. I added a preview of the file’s first rows so people could map fields without opening it on the side, and, with the developers, errors that say what to fix, where and how."
+       "v": "Newcomers got lost and unclear errors clogged support. I added a file preview and, with the developers, errors that say what to fix."
       },
       {
        "k": "Trade-off",
-       "v": "Users of the old import had to relearn. For them, the old options stayed in the flow, and settings hidden in the “advanced” interface became available to everyone."
+       "v": "Regular users had to relearn. So the old options stayed, and “advanced” settings became available to everyone."
       }
      ],
      "shots": [
@@ -285,7 +285,7 @@
      "id": "import-measure",
      "tag": "Pillar 1 · Data import",
      "h": "Measure every step and fix fast, in small increments",
-     "p": "After launch, I set up *a step-by-step funnel in Microsoft Clarity*. It showed many drop-offs on the very first screen: people landed there looking for something else.",
+     "p": "*A Microsoft Clarity funnel* showed many drop-offs on the first screen: people landed there looking for something else.",
      "notes": [
       {
        "k": "Alternatives",
@@ -299,11 +299,11 @@
       },
       {
        "k": "Why",
-       "v": "Adding information links to the first screen, an idea borrowed from the market’s biggest players, was a small, quick and inexpensive change. More people then moved on to the next step. [À FOURNIR : funnel figures, if available]"
+       "v": "A few information links, inspired by the market’s biggest players, did the job: a small change, and more people moved on to the next step. [À FOURNIR : funnel figures, if available]"
       },
       {
        "k": "Trade-off",
-       "v": "The new interface took longer to be complete, and the development team had to maintain two interfaces side by side. But it was the best way to deliver quality while keeping long-time customers happy."
+       "v": "A complete interface later, and two interfaces to maintain. But it was the best way to deliver quality while keeping long-time customers happy."
       }
      ]
     },
@@ -311,25 +311,25 @@
      "id": "navigation",
      "tag": "Pillar 2 · Main navigation",
      "h": "Organize the menu by use case: think like a marketer, not a developer",
-     "p": "The main menu now holds *only sections, each built around a need*: browse contacts, launch a campaign, acquire customers, automate. Actions live in section headers, and import becomes a button in Contacts.",
+     "p": "The menu now holds *only sections, one per need*: contacts, campaigns, acquisition, automation. Actions move to section headers.",
      "notes": [
       {
        "k": "Alternatives",
        "list": [
-        "A menu organized around how the system works, with actions as destinations.",
+        "A menu modeled on how the system works.",
         {
-         "t": "A menu organized around what marketers need, with actions in context.",
+         "t": "A menu modeled on what marketers need.",
          "pill": "My recommendation"
         }
        ]
       },
       {
        "k": "Why",
-       "v": "The best in the industry keep navigation light: you enter a context, and that’s where you find the options. I validated the architecture in Miro with every internal team until the founders bought in, then through weekly task-based tests."
+       "v": "The best in the industry keep navigation light. I validated the architecture in Miro with every team, then through weekly task-based tests."
       },
       {
        "k": "Trade-off",
-       "v": "We had to prioritize which pages to modernize and accept interim solutions that led to legacy pages (see the challenge below)."
+       "v": "We had to prioritize which pages to modernize and accept interim links to legacy pages."
       }
      ],
      "shots": [
@@ -345,7 +345,7 @@
      "id": "navigation-launch",
      "tag": "Pillar 2 · Main navigation",
      "h": "Launch alongside the old version to reduce risk",
-     "p": "For several months, *customers could switch between the old and the new menu*. In-app announcements asked for their feedback, and the CSMs gave them plenty of notice.",
+     "p": "For several months, *customers could switch between both menus*, with in-app announcements and support from the CSMs.",
      "notes": [
       {
        "k": "Alternatives",
@@ -359,11 +359,11 @@
       },
       {
        "k": "Why",
-       "v": "The customer base was expert, set in its habits and demanding. More than 25 customer interviews, run with the marketing team, shaped the message of the banners, modals and display rules."
+       "v": "Customers were expert and demanding. More than 25 interviews, run with marketing, shaped the message of the banners and modals."
       },
       {
        "k": "Trade-off",
-       "v": "Maintaining two menus for several months. When the old one was retired, customers already knew the new one, and support received almost no requests."
+       "v": "Two menus to maintain for months. When the old one was retired, support received almost no requests."
       }
      ]
     },
@@ -371,7 +371,7 @@
      "id": "dashboards",
      "tag": "Pillar 3 · Dashboards",
      "h": "One dashboard template for every channel",
-     "p": "Rather than designing each channel’s statistics separately, I created *a reusable template* that covers about 99% of a new channel such as WhatsApp or RCS.",
+     "p": "Rather than one dashboard per channel, *a reusable template* that covers about 99% of a new channel.",
      "notes": [
       {
        "k": "Alternatives",
@@ -385,11 +385,11 @@
       },
       {
        "k": "Why",
-       "v": "I reviewed every dashboard in the platform and those of the biggest players in the market to spot the patterns that recur by sending channel. A shared template makes each new channel faster to ship and consistent with the others."
+       "v": "I analyzed the dashboards in the platform and those of the biggest players to find the shared patterns. Each new channel ships faster and stays consistent."
       },
       {
        "k": "Trade-off",
-       "v": "Each channel keeps its specifics: for an RCS carousel, clicks appear in two tables, one for RCS and one for the fallback SMS."
+       "v": "Each channel keeps its specifics, such as the two click tables of an RCS carousel."
       }
      ]
     },
@@ -397,25 +397,25 @@
      "id": "design-system",
      "tag": "Pillar 4 · Design system",
      "h": "Tie Figma to Storybook so design and code speak the same language",
-     "p": "I led *the move from Adobe XD to Figma* across the company, then structured the design system with the team: documented sections, configurable components, and a growing link to the developers’ Storybook.",
+     "p": "I led *the move from Adobe XD to Figma*, then structured the design system with the team and tied it to the developers’ Storybook.",
      "notes": [
       {
        "k": "Alternatives",
        "list": [
-        "Stay on Adobe XD, with components rebuilt in code as needed.",
+        "Stay on Adobe XD, rebuilding components as needed.",
         {
-         "t": "Move to Figma, with components tied to the code in Storybook.",
+         "t": "Move to Figma, with components tied to Storybook.",
          "pill": "My recommendation"
         }
        ]
       },
       {
        "k": "Why",
-       "v": "Ship faster, without developers reinventing components that are hard to maintain. I convinced leadership, justified the costs through to purchase, managed licences and archived the old mockups."
+       "v": "Ship faster, without reinvented components. I convinced leadership, justified the costs and managed licences."
       },
       {
        "k": "Trade-off",
-       "v": "A migration to run alongside ongoing projects. The navigation’s action headers and the dashboard template were its first applications."
+       "v": "A migration run alongside ongoing projects."
       }
      ]
     }
