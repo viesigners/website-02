@@ -259,10 +259,11 @@
       {
        "h": "Solution",
        "p": [
-        "Backed by my *market research*, I designed a five-step guided experience as a wizard.",
+        "Backed by my *market research*, I designed a five-step guided experience as a wizard, rather than a single screen that handles every import the same way.",
         "I placed different entry points across the platform, depending on what you wanted to import, and the wizard adapted the options offered or the starting step to the user’s intent.",
         "The options, shown as cards, teach new users what the platform can do at each step.",
-        "Settings once hidden in an “advanced” mode were simplified so everyone could use them."
+        "Settings once hidden in an “advanced” mode were simplified so everyone could use them.",
+        "For users used to the old import, the wizard kept the options they knew."
        ]
       },
       {
@@ -271,26 +272,6 @@
         "Usability tests with journey mapping guided the iterations. A Clarity funnel, in-app surveys and close work with support, professional services and the CSMs helped improve the interface.",
         "Within weeks, notably thanks to debugging information, we reduced import-related support requests and *raised the import completion rate* with each iteration shipped."
        ]
-      }
-     ],
-     "notes": [
-      {
-       "k": "Alternatives",
-       "list": [
-        "One screen that handles every import the same way.",
-        {
-         "t": "A step-by-step flow that adapts to what you import.",
-         "pill": "My recommendation"
-        }
-       ]
-      },
-      {
-       "k": "Why",
-       "v": "Newcomers got lost and unclear errors clogged support."
-      },
-      {
-       "k": "Trade-off",
-       "v": "Users used to the old import had to learn a new way of working. To help them, the wizard kept the options they knew."
       }
      ],
      "shots": [
