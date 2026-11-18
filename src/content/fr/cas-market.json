@@ -417,12 +417,12 @@
      "id": "design-system",
      "tag": "Chantier 4 · Design system",
      "h": "Arrimer Figma au Storybook pour que design et code parlent le même langage",
-     "p": "J’ai chapeauté *l’implantation de Figma* dans l’entreprise, puis la structuration du design system avec l’équipe : sections documentées, composants paramétrés, et un lien progressif avec le Storybook des développeurs.",
+     "p": "J’ai chapeauté *le passage d’Adobe XD à Figma* dans l’entreprise, puis la structuration du design system avec l’équipe : sections documentées, composants paramétrés, et un lien progressif avec le Storybook des développeurs.",
      "notes": [
       {
        "k": "Alternatives",
        "list": [
-        "Continuer avec l’outil existant et des composants recréés au besoin.",
+        "Rester sur Adobe XD et recréer les composants au besoin.",
         {
          "t": "Migrer vers Figma et arrimer ses composants au Storybook.",
          "pill": "Ma recommandation"

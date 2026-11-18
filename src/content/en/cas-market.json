@@ -417,12 +417,12 @@
      "id": "design-system",
      "tag": "Workstream 4 · Design system",
      "h": "Tie Figma to Storybook so design and code speak the same language",
-     "p": "I led *the rollout of Figma* across the company, then structured the design system with the team: documented sections, configurable components, and a growing link to the developers’ Storybook.",
+     "p": "I led *the move from Adobe XD to Figma* across the company, then structured the design system with the team: documented sections, configurable components, and a growing link to the developers’ Storybook.",
      "notes": [
       {
        "k": "Alternatives",
        "list": [
-        "Stay with the existing tool and rebuild components as needed.",
+        "Stay on Adobe XD and rebuild components as needed.",
         {
          "t": "Move to Figma and tie its components to Storybook.",
          "pill": "My recommendation"
