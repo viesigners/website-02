@@ -259,7 +259,9 @@
       {
        "h": "Solution",
        "p": [
-        "Appuyé par mes *recherches de marché*, j’ai conçu une expérience en cinq étapes guidées, sous forme d’assistant (wizard), plutôt qu’un seul écran qui traite tous les imports de la même façon.",
+        "Appuyé par mes *recherches de marché*, j’ai conçu un assistant (wizard) en étapes guidées qui transformait l’expérience :"
+       ],
+       "cards": [
         "J’ai placé différents points d’entrée à travers la plateforme, selon ce qu’on voulait importer, et l’assistant adaptait les options offertes ou l’étape de départ à l’intention de l’usager.",
         "Les options, affichées sous forme de cartes, enseignent aux nouveaux usagers ce que la plateforme permet de faire à chaque étape.",
         "Des réglages autrefois cachés dans un mode « avancé » ont été simplifiés pour que tous puissent s’en servir.",

@@ -259,7 +259,9 @@
       {
        "h": "Solution",
        "p": [
-        "Backed by my *market research*, I designed a five-step guided experience as a wizard, rather than a single screen that handles every import the same way.",
+        "Backed by my *market research*, I designed a wizard with guided steps that transformed the experience:"
+       ],
+       "cards": [
         "I placed different entry points across the platform, depending on what you wanted to import, and the wizard adapted the options offered or the starting step to the user’s intent.",
         "The options, shown as cards, teach new users what the platform can do at each step.",
         "Settings once hidden in an “advanced” mode were simplified so everyone could use them.",

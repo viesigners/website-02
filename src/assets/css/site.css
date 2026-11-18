@@ -1270,6 +1270,11 @@ html { scroll-padding-top: 7rem; }
 .tcard.cd-quote { margin-top: clamp(2rem, 1.2rem + 3vw, 3.5rem); }
 
 /* a decision told as a short story: Problem / Solution / Results */
-.cd-parts { display: grid; gap: 1.4rem; max-width: var(--measure); }
+.cd-parts { display: grid; gap: 1.4rem; }
+.cd-part > p { max-width: var(--measure); }
 .cd-part h4 { margin: 0 0 .45rem; font-family: var(--f-mono); font-size: .76rem; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; color: var(--pink); }
 .cd-decisions .cd-part p + p { margin-top: .7rem; }
+/* the things I did, as a row of translucent cards */
+.cd-pcards { display: grid; gap: .8rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+@media (min-width: 640px) { .cd-pcards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.cd-pcards li { padding: 1.1rem 1.2rem; border-radius: var(--r-md); background: rgba(255, 255, 255, .05); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08); color: var(--text-2); font-size: .95rem; line-height: 1.55; }
