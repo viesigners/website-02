@@ -221,17 +221,17 @@
        "p": "Regrouper tous les imports dans un seul parcours en étapes, qui explique la plateforme pendant qu’on l’utilise."
       },
       {
-       "h": "La navigation principale",
+       "h": "La refonte de l’architecture de l’information",
        "to": "navigation",
        "p": "Reprendre une refonte amorcée par d’autres et la mener jusqu’au retrait de l’ancien menu."
       },
       {
-       "h": "Les tableaux de bord",
+       "h": "Un système de visualisation de données",
        "to": "tableaux-de-bord",
        "p": "Créer un modèle de statistiques de campagne réutilisable pour chaque canal."
       },
       {
-       "h": "Le design system",
+       "h": "Le leadership du design system et des outils",
        "to": "design-system",
        "p": "Implanter Figma, structurer le design system et le rapprocher du Storybook des développeurs."
       }
@@ -309,7 +309,7 @@
     },
     {
      "id": "navigation",
-     "tag": "Pilier 2 · Navigation principale",
+     "tag": "Pilier 2 · Refonte de l’architecture de l’information",
      "h": "Organiser le menu par cas d’usage : penser marketeur, pas développeur",
      "p": "Le menu ne contient plus que *des sections par besoin* : contacts, campagnes, acquisition, automatisation. Les actions passent dans les en-têtes de section.",
      "notes": [
@@ -343,7 +343,7 @@
     },
     {
      "id": "navigation-lancement",
-     "tag": "Pilier 2 · Navigation principale",
+     "tag": "Pilier 2 · Refonte de l’architecture de l’information",
      "h": "Lancer en parallèle de l’ancien pour réduire le risque",
      "p": "Pendant plusieurs mois, *les clients pouvaient basculer entre les deux menus*, avec des annonces dans la plateforme et l’appui des CSM.",
      "notes": [
@@ -369,7 +369,7 @@
     },
     {
      "id": "tableaux-de-bord",
-     "tag": "Pilier 3 · Tableaux de bord",
+     "tag": "Pilier 3 · Système de visualisation de données",
      "h": "Un modèle de tableau de bord pour tous les canaux",
      "p": "Plutôt qu’un tableau de bord par canal, *un modèle réutilisable* qui couvre environ 99 % d’un nouveau canal.",
      "notes": [
@@ -395,7 +395,7 @@
     },
     {
      "id": "design-system",
-     "tag": "Pilier 4 · Design system",
+     "tag": "Pilier 4 · Leadership du design system et des outils",
      "h": "Rapprocher Figma et Storybook pour que design et code parlent le même langage",
      "p": "J’ai chapeauté *le passage d’Adobe XD à Figma*, puis structuré le design system avec l’équipe. J’ai aussi travaillé à le rapprocher du Storybook des développeurs, avec des procédures pour le mettre à jour et le documenter des deux côtés.",
      "notes": [

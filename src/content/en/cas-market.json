@@ -221,17 +221,17 @@
        "p": "Bring every import into a single step-by-step flow that explains the platform as you use it."
       },
       {
-       "h": "Main navigation",
+       "h": "Information architecture overhaul",
        "to": "navigation",
        "p": "Pick up a redesign started by others and carry it through to retiring the old menu."
       },
       {
-       "h": "Dashboards",
+       "h": "Data visualization system",
        "to": "dashboards",
        "p": "Create a reusable campaign statistics template for every channel."
       },
       {
-       "h": "Design system",
+       "h": "Design system & tooling leadership",
        "to": "design-system",
        "p": "Bring in Figma, structure the design system and bring it closer to the developers’ Storybook."
       }
@@ -309,7 +309,7 @@
     },
     {
      "id": "navigation",
-     "tag": "Pillar 2 · Main navigation",
+     "tag": "Pillar 2 · Information architecture overhaul",
      "h": "Organize the menu by use case: think like a marketer, not a developer",
      "p": "The menu now holds *only sections, one per need*: contacts, campaigns, acquisition, automation. Actions move to section headers.",
      "notes": [
@@ -343,7 +343,7 @@
     },
     {
      "id": "navigation-launch",
-     "tag": "Pillar 2 · Main navigation",
+     "tag": "Pillar 2 · Information architecture overhaul",
      "h": "Launch alongside the old version to reduce risk",
      "p": "For several months, *customers could switch between both menus*, with in-app announcements and support from the CSMs.",
      "notes": [
@@ -369,7 +369,7 @@
     },
     {
      "id": "dashboards",
-     "tag": "Pillar 3 · Dashboards",
+     "tag": "Pillar 3 · Data visualization system",
      "h": "One dashboard template for every channel",
      "p": "Rather than one dashboard per channel, *a reusable template* that covers about 99% of a new channel.",
      "notes": [
@@ -395,7 +395,7 @@
     },
     {
      "id": "design-system",
-     "tag": "Pillar 4 · Design system",
+     "tag": "Pillar 4 · Design system & tooling leadership",
      "h": "Bring Figma and Storybook closer so design and code speak the same language",
      "p": "I led *the move from Adobe XD to Figma*, then structured the design system with the team. I also worked to bring it closer to the developers’ Storybook, with procedures to update and document it on both sides.",
      "notes": [
