@@ -389,7 +389,7 @@
       },
       {
        "k": "Trade-off",
-       "v": "Each channel keeps its specifics, such as the two click tables of an RCS carousel."
+       "v": "The template had to keep some flexibility to adapt to each channel’s specifics, such as the two click tables of an RCS carousel."
       }
      ]
     },
