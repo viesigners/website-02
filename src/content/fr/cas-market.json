@@ -437,11 +437,6 @@
        "k": "Compromis",
        "v": "Une migration à mener en même temps que les projets en cours. Les en-têtes d’actions de la navigation et le modèle de tableau de bord en ont été les premières applications."
       }
-     ],
-     "shots": [
-      {
-       "label": "[À FOURNIR] Composants Figma et leur équivalent Storybook"
-      }
      ]
     }
    ]

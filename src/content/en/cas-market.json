@@ -24,17 +24,35 @@
    "img": "work/market-hero.jpg",
    "alt": "Statistics dashboard for an RCS campaign: return on investment, delivery, opens, clicks, conversion and attrition",
    "glance": [
-    { "k": "Expert", "v": "Charles-Erick BG" },
-    { "k": "Role", "v": "[À FOURNIR : exact title]" },
-    { "k": "Problem", "v": "A legacy platform that was hard to learn, costly to support and slow to evolve, used by long-time experts and newcomers alike." },
+    {
+     "k": "Expert",
+     "v": "Charles-Erick BG"
+    },
+    {
+     "k": "Role",
+     "v": "[À FOURNIR : exact title]"
+    },
+    {
+     "k": "Problem",
+     "v": "A legacy platform that was hard to learn, costly to support and slow to evolve, used by long-time experts and newcomers alike."
+    },
     {
      "k": "Activities",
      "v": "User research, product design, information architecture, design system",
-     "more": { "n": 10, "to": "what-i-did", "label": "See all activities" }
+     "more": {
+      "n": 10,
+      "to": "what-i-did",
+      "label": "See all activities"
+     }
     },
-    { "k": "Result", "v": "Onboarding *much easier* according to the CSMs, and *almost no support requests* when the old menu was retired." }
+    {
+     "k": "Result",
+     "v": "Onboarding *much easier* according to the CSMs, and *almost no support requests* when the old menu was retired."
+    }
    ],
-   "cta": { "label": "Contact Charles-Erick" }
+   "cta": {
+    "label": "Contact Charles-Erick"
+   }
   },
   {
    "type": "cd-facts",
@@ -42,15 +60,26 @@
    "lead": "At Market Inc., I led four redesigns of a legacy marketing SaaS platform, from research to launch: data import, main navigation, statistics dashboards and the design system. One thread ties them together: *serve the experts without discouraging the newcomers*.",
    "byline": "By Charles-Erick BG",
    "items": [
-    { "b": "Role", "t": "[À FOURNIR : exact title]" },
+    {
+     "b": "Role",
+     "t": "[À FOURNIR : exact title]"
+    },
     {
      "b": "Client",
-     "tags": ["SaaS", "Multichannel marketing", "B2B"],
+     "tags": [
+      "SaaS",
+      "Multichannel marketing",
+      "B2B"
+     ],
      "note": "Market Inc. is a pseudonym; the client is protected by a non-disclosure agreement."
     },
     {
      "b": "Goals",
-     "list": ["A platform that is easier to learn", "Fewer requests to support and CSMs", "New features that ship faster"]
+     "list": [
+      "A platform that is easier to learn",
+      "Fewer requests to support and CSMs",
+      "New features that ship faster"
+     ]
     },
     {
      "b": "What I did",
@@ -77,13 +106,39 @@
      ],
      "id": "what-i-did"
     },
-    { "b": "Tools", "tags": ["Figma", "Storybook", "Miro", "Microsoft Clarity"] },
-    { "b": "Collaborators", "bullets": ["Founders", "Product managers", "Developers", "CSMs", "Marketing team"] }
+    {
+     "b": "Tools",
+     "tags": [
+      "Figma",
+      "Storybook",
+      "Miro",
+      "Microsoft Clarity"
+     ]
+    },
+    {
+     "b": "Collaborators",
+     "bullets": [
+      "Founders",
+      "Product managers",
+      "Developers",
+      "CSMs",
+      "Marketing team"
+     ]
+    }
    ],
    "impact": [
-    { "n": "4", "t": "workstreams led from research to launch." },
-    { "n": "25+", "t": "customer interviews to prepare the move to the new navigation." },
-    { "n": "~99%", "t": "of a new channel covered out of the box by the dashboard template." }
+    {
+     "n": "4",
+     "t": "workstreams led from research to launch."
+    },
+    {
+     "n": "25+",
+     "t": "customer interviews to prepare the move to the new navigation."
+    },
+    {
+     "n": "~99%",
+     "t": "of a new channel covered out of the box by the dashboard template."
+    }
    ]
   },
   {
@@ -96,10 +151,26 @@
     {
      "h": "",
      "items": [
-      { "h": "Navigation that intimidated", "p": "The main menu held almost every feature, actions included. New users didn’t know where to go.", "icon": "drawers" },
-      { "h": "A confusing import", "p": "Scattered paths (the API in one place, files in another), options hidden in an “advanced” interface, and errors with no explanation.", "icon": "form" },
-      { "h": "Dashboards designed one by one", "p": "Each channel had its own statistics, with no shared foundation. [À FOURNIR : to validate]", "icon": "templates" },
-      { "h": "Components reinvented", "p": "With no design system tied to the code, developers rebuilt components that were hard to maintain afterwards.", "icon": "copies" }
+      {
+       "h": "Navigation that intimidated",
+       "p": "The main menu held almost every feature, actions included. New users didn’t know where to go.",
+       "icon": "drawers"
+      },
+      {
+       "h": "A confusing import",
+       "p": "Scattered paths (the API in one place, files in another), options hidden in an “advanced” interface, and errors with no explanation.",
+       "icon": "form"
+      },
+      {
+       "h": "Dashboards designed one by one",
+       "p": "Each channel had its own statistics, with no shared foundation. [À FOURNIR : to validate]",
+       "icon": "templates"
+      },
+      {
+       "h": "Components reinvented",
+       "p": "With no design system tied to the code, developers rebuilt components that were hard to maintain afterwards.",
+       "icon": "copies"
+      }
      ]
     }
    ]
@@ -113,10 +184,22 @@
     {
      "h": "",
      "items": [
-      { "h": "Laborious onboarding", "p": "The learning curve was steep: users had to ask internal teams many questions before they could use the platform." },
-      { "h": "Lots of support requests", "p": "Without clear errors, debugging an import often went through support and the CSMs." },
-      { "h": "New features slow to ship", "p": "Adding a channel meant designing its screens from scratch. [À FOURNIR : to validate]" },
-      { "h": "Technical debt to carry", "p": "Legacy ASPX pages with an old design system lived alongside the new technology, which forced trade-offs." }
+      {
+       "h": "Laborious onboarding",
+       "p": "The learning curve was steep: users had to ask internal teams many questions before they could use the platform."
+      },
+      {
+       "h": "Lots of support requests",
+       "p": "Without clear errors, debugging an import often went through support and the CSMs."
+      },
+      {
+       "h": "New features slow to ship",
+       "p": "Adding a channel meant designing its screens from scratch. [À FOURNIR : to validate]"
+      },
+      {
+       "h": "Technical debt to carry",
+       "p": "Legacy ASPX pages with an old design system lived alongside the new technology, which forced trade-offs."
+      }
      ]
     }
    ]
@@ -131,10 +214,26 @@
      "h": "",
      "steps": true,
      "items": [
-      { "h": "Data import", "to": "import", "p": "Bring every import into a single step-by-step flow that explains the platform as you use it." },
-      { "h": "Main navigation", "to": "navigation", "p": "Pick up a redesign started by others and carry it through to retiring the old menu." },
-      { "h": "Dashboards", "to": "dashboards", "p": "Create a reusable campaign statistics template for every channel." },
-      { "h": "Design system", "to": "design-system", "p": "Bring in Figma, structure the design system and tie it to the developers’ Storybook." }
+      {
+       "h": "Data import",
+       "to": "import",
+       "p": "Bring every import into a single step-by-step flow that explains the platform as you use it."
+      },
+      {
+       "h": "Main navigation",
+       "to": "navigation",
+       "p": "Pick up a redesign started by others and carry it through to retiring the old menu."
+      },
+      {
+       "h": "Dashboards",
+       "to": "dashboards",
+       "p": "Create a reusable campaign statistics template for every channel."
+      },
+      {
+       "h": "Design system",
+       "to": "design-system",
+       "p": "Bring in Figma, structure the design system and tie it to the developers’ Storybook."
+      }
      ]
     }
    ]
@@ -146,10 +245,22 @@
    "nav": {
     "label": "Jump to a workstream",
     "items": [
-     { "t": "Import", "to": "import" },
-     { "t": "Navigation", "to": "navigation" },
-     { "t": "Dashboards", "to": "dashboards" },
-     { "t": "Design system", "to": "design-system" }
+     {
+      "t": "Import",
+      "to": "import"
+     },
+     {
+      "t": "Navigation",
+      "to": "navigation"
+     },
+     {
+      "t": "Dashboards",
+      "to": "dashboards"
+     },
+     {
+      "t": "Design system",
+      "to": "design-system"
+     }
     ]
    },
    "items": [
@@ -163,7 +274,10 @@
        "k": "Alternatives",
        "list": [
         "Keep one tool that handles every import, regardless of the data.",
-        { "t": "A step-by-step flow that adapts to what you import.", "pill": "My recommendation" }
+        {
+         "t": "A step-by-step flow that adapts to what you import.",
+         "pill": "My recommendation"
+        }
        ]
       },
       {
@@ -176,9 +290,15 @@
       }
      ],
      "shots": [
-      { "label": "[À FOURNIR] Step 1: what to import" },
-      { "label": "[À FOURNIR] Field mapping" },
-      { "label": "[À FOURNIR] Analysis and explained errors" }
+      {
+       "label": "[À FOURNIR] Step 1: what to import"
+      },
+      {
+       "label": "[À FOURNIR] Field mapping"
+      },
+      {
+       "label": "[À FOURNIR] Analysis and explained errors"
+      }
      ]
     },
     {
@@ -191,7 +311,10 @@
        "k": "Alternatives",
        "list": [
         "Wait for a later redesign to revisit the flow.",
-        { "t": "Add links right away to what people were looking for.", "pill": "My recommendation" }
+        {
+         "t": "Add links right away to what people were looking for.",
+         "pill": "My recommendation"
+        }
        ]
       },
       {
@@ -214,7 +337,10 @@
        "k": "Alternatives",
        "list": [
         "Keep the existing structure, built around how the system works.",
-        { "t": "Sections by use case, with actions in context.", "pill": "My recommendation" }
+        {
+         "t": "Sections by use case, with actions in context.",
+         "pill": "My recommendation"
+        }
        ]
       },
       {
@@ -227,8 +353,12 @@
       }
      ],
      "shots": [
-      { "label": "[À FOURNIR] Old menu" },
-      { "label": "[À FOURNIR] New menu and section header" }
+      {
+       "label": "[À FOURNIR] Old menu"
+      },
+      {
+       "label": "[À FOURNIR] New menu and section header"
+      }
      ]
     },
     {
@@ -241,7 +371,10 @@
        "k": "Alternatives",
        "list": [
         "Replace the old menu all at once.",
-        { "t": "A gradual transition, with both menus side by side.", "pill": "My recommendation" }
+        {
+         "t": "A gradual transition, with both menus side by side.",
+         "pill": "My recommendation"
+        }
        ]
       },
       {
@@ -264,7 +397,10 @@
        "k": "Alternatives",
        "list": [
         "A custom dashboard for each channel.",
-        { "t": "A shared template, adapted per channel.", "pill": "My recommendation" }
+        {
+         "t": "A shared template, adapted per channel.",
+         "pill": "My recommendation"
+        }
        ]
       },
       {
@@ -287,7 +423,10 @@
        "k": "Alternatives",
        "list": [
         "Stay with the existing tool and rebuild components as needed.",
-        { "t": "Move to Figma and tie its components to Storybook.", "pill": "My recommendation" }
+        {
+         "t": "Move to Figma and tie its components to Storybook.",
+         "pill": "My recommendation"
+        }
        ]
       },
       {
@@ -298,9 +437,6 @@
        "k": "Trade-off",
        "v": "A migration to run alongside ongoing projects. The navigation’s action headers and the dashboard template were its first applications."
       }
-     ],
-     "shots": [
-      { "label": "[À FOURNIR] Figma components and their Storybook counterparts" }
      ]
     }
    ]
@@ -351,9 +487,18 @@
     {
      "h": "",
      "items": [
-      { "h": "Easier onboarding", "p": "According to the CSMs, onboarding new customers has been much easier since the new import, a key and frequently used step of onboarding." },
-      { "h": "Almost no support requests", "p": "Thanks to the gradual transition, retiring the old menu generated practically no requests." },
-      { "h": "A platform that is easier to sell", "p": "The sales team noted that the platform had become much easier to sell, a collective result of the product team." }
+      {
+       "h": "Easier onboarding",
+       "p": "According to the CSMs, onboarding new customers has been much easier since the new import, a key and frequently used step of onboarding."
+      },
+      {
+       "h": "Almost no support requests",
+       "p": "Thanks to the gradual transition, retiring the old menu generated practically no requests."
+      },
+      {
+       "h": "A platform that is easier to sell",
+       "p": "The sales team noted that the platform had become much easier to sell, a collective result of the product team."
+      }
      ]
     }
    ],
