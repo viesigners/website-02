@@ -248,7 +248,7 @@
      "id": "import",
      "tag": "Pillar 1 · Core functionality redesign",
      "h": "Bring imports into one flow that teaches the platform",
-     "p": "I designed a step-by-step experience as a wizard.",
+     "p": "I designed a step-by-step experience as a wizard: one entry point in Contacts, then *five guided steps*. The options, shown as cards, teach new users what the platform can do. Usability tests with journey mapping guided the iterations, notably swapping a step and adding a data preview button right in the interface. Then a Clarity funnel, in-app surveys and close work with support, professional services and the CSMs helped improve the interface within weeks, notably with debugging information to raise the import completion rate.",
      "notes": [
       {
        "k": "Alternatives",
