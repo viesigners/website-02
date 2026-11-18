@@ -248,7 +248,7 @@
      "id": "import",
      "tag": "Pilier 1 · Refonte d’une fonctionnalité clé",
      "h": "Regrouper les imports dans un parcours qui enseigne la plateforme",
-     "p": "J’ai conçu une expérience en étapes, sous forme d’assistant (wizard) : un seul point d’entrée dans Contacts, puis *cinq étapes guidées*. Les options, affichées sous forme de cartes, enseignent aux nouveaux usagers ce que la plateforme permet de faire. Des tests utilisateurs, avec cartographie du parcours, ont guidé les itérations, et un entonnoir Clarity, des sondages dans la plateforme et une collaboration étroite avec le soutien, les services professionnels et les CSM ont permis d’améliorer l’interface en quelques semaines, notamment avec de l’information de débogage pour *augmenter le taux de complétion des imports*.",
+     "p": "J’ai conçu une expérience en étapes, sous forme d’assistant (wizard) : un seul point d’entrée dans Contacts, puis *cinq étapes guidées*. Les options, affichées sous forme de cartes, enseignent aux nouveaux usagers ce que la plateforme permet de faire. Des réglages autrefois cachés dans un mode « avancé » ont aussi été simplifiés pour que tous puissent s’en servir. Des tests utilisateurs, avec cartographie du parcours, ont guidé les itérations, et un entonnoir Clarity, des sondages dans la plateforme et une collaboration étroite avec le soutien, les services professionnels et les CSM ont permis d’améliorer l’interface en quelques semaines, notamment avec de l’information de débogage pour *augmenter le taux de complétion des imports*.",
      "notes": [
       {
        "k": "Alternatives",
@@ -266,7 +266,7 @@
       },
       {
        "k": "Compromis",
-       "v": "Les utilisateurs habitués à l’ancien import devaient apprendre une nouvelle façon de faire. Pour les aider, l’assistant a gardé les options qu’ils connaissaient. Des réglages autrefois cachés dans un mode « avancé » ont aussi été simplifiés pour que tous puissent s’en servir."
+       "v": "Les utilisateurs habitués à l’ancien import devaient apprendre une nouvelle façon de faire. Pour les aider, l’assistant a gardé les options qu’ils connaissaient."
       }
      ],
      "shots": [
