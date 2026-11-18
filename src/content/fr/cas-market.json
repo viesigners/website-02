@@ -373,7 +373,7 @@
      "id": "tableaux-de-bord",
      "tag": "Pilier 3 · Système de visualisation de données",
      "h": "Un modèle de tableau de bord pour tous les canaux",
-     "p": "Plutôt qu’un tableau de bord par canal, *un modèle réutilisable* qui couvre environ 99 % d’un nouveau canal.",
+     "p": "Plutôt qu’un tableau de bord par canal, *un modèle réutilisable* qui couvre environ 99 % d’un nouveau canal. Une icône d’information explique chaque indicateur, une icône de feu signale les résultats au-dessus du repère de l’industrie, et une carte mauve met le retour sur investissement en avant.",
      "notes": [
       {
        "k": "Alternatives",
@@ -393,7 +393,22 @@
        "k": "Compromis",
        "v": "Le modèle devait garder une certaine flexibilité pour s’adapter aux particularités de chaque canal, comme les deux tableaux de clics d’un carrousel RCS."
       }
-     ]
+     ],
+     "shots": [
+      {
+       "label": "Vue d’ensemble par volume",
+       "alt": "La même vue d’ensemble, avec les résultats exprimés en volume plutôt qu’en taux",
+       "img": "work/market-volume-top.jpg",
+       "full": "work/market-volume.jpg"
+      },
+      {
+       "label": "Clics",
+       "alt": "Onglet des clics : détail des clics, clics par carte du carrousel, clics du SMS de repli, par segment et dans le temps",
+       "img": "work/market-clicks-top.jpg",
+       "full": "work/market-clicks.jpg"
+      }
+     ],
+     "shotsCls": "cd-shots--grid2"
     },
     {
      "id": "design-system",
@@ -420,27 +435,6 @@
        "v": "Une migration menée en parallèle des projets en cours."
       }
      ]
-    }
-   ]
-  },
-  {
-   "type": "cd-gallery",
-   "theme": "dark",
-   "label": "Le système",
-   "h2": "Un même modèle, *décliné par vue*",
-   "lead": "Une icône d’information explique chaque indicateur, une icône de feu signale les résultats au-dessus du repère de l’industrie, et une carte mauve met le retour sur investissement en avant.",
-   "shots": [
-    {
-     "label": "Vue d’ensemble par volume",
-     "alt": "La même vue d’ensemble, avec les résultats exprimés en volume plutôt qu’en taux",
-     "img": "work/market-volume-top.jpg",
-     "full": "work/market-volume.jpg"
-    },
-    {
-     "label": "Clics",
-     "alt": "Onglet des clics : détail des clics, clics par carte du carrousel, clics du SMS de repli, par segment et dans le temps",
-     "img": "work/market-clicks-top.jpg",
-     "full": "work/market-clicks.jpg"
     }
    ]
   },

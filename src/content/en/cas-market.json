@@ -373,7 +373,7 @@
      "id": "dashboards",
      "tag": "Pillar 3 · Data visualization system",
      "h": "One dashboard template for every channel",
-     "p": "Rather than one dashboard per channel, *a reusable template* that covers about 99% of a new channel.",
+     "p": "Rather than one dashboard per channel, *a reusable template* that covers about 99% of a new channel. An info icon explains each metric, a flame icon flags results above the industry benchmark, and a purple card puts the return on investment front and centre.",
      "notes": [
       {
        "k": "Alternatives",
@@ -393,7 +393,22 @@
        "k": "Trade-off",
        "v": "The template had to keep some flexibility to adapt to each channel’s specifics, such as the two click tables of an RCS carousel."
       }
-     ]
+     ],
+     "shots": [
+      {
+       "label": "Overview by volume",
+       "alt": "The same overview, with results shown as volumes rather than rates",
+       "img": "work/market-volume-top.jpg",
+       "full": "work/market-volume.jpg"
+      },
+      {
+       "label": "Clicks",
+       "alt": "Clicks tab: click details, clicks per carousel card, fallback SMS clicks, by segment and over time",
+       "img": "work/market-clicks-top.jpg",
+       "full": "work/market-clicks.jpg"
+      }
+     ],
+     "shotsCls": "cd-shots--grid2"
     },
     {
      "id": "design-system",
@@ -420,27 +435,6 @@
        "v": "A migration run alongside ongoing projects."
       }
      ]
-    }
-   ]
-  },
-  {
-   "type": "cd-gallery",
-   "theme": "dark",
-   "label": "The system",
-   "h2": "One template, *applied to every view*",
-   "lead": "An info icon explains each metric, a flame icon flags results above the industry benchmark, and a purple card puts the return on investment front and centre.",
-   "shots": [
-    {
-     "label": "Overview by volume",
-     "alt": "The same overview, with results shown as volumes rather than rates",
-     "img": "work/market-volume-top.jpg",
-     "full": "work/market-volume.jpg"
-    },
-    {
-     "label": "Clicks",
-     "alt": "Clicks tab: click details, clicks per carousel card, fallback SMS clicks, by segment and over time",
-     "img": "work/market-clicks-top.jpg",
-     "full": "work/market-clicks.jpg"
     }
    ]
   },
