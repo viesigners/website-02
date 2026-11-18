@@ -1279,3 +1279,4 @@ html { scroll-padding-top: 7rem; }
 @media (min-width: 640px) { .cd-pcards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .cd-pcards li { padding: 1.1rem 1.2rem; border-radius: var(--r-md); background: rgba(255, 255, 255, .05); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08); color: var(--text-2); font-size: .95rem; line-height: 1.55; }
 .cd-part > .cd-blist { margin: .7rem 0; max-width: var(--measure); }
+.cd-part > .cd-blist li { color: var(--text-2); }
