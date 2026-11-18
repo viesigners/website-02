@@ -243,27 +243,6 @@
    "type": "cd-decisions",
    "label": "Key decisions",
    "h2": "What I decided, *and why*",
-   "nav": {
-    "label": "Jump to a pillar",
-    "items": [
-     {
-      "t": "Import",
-      "to": "import"
-     },
-     {
-      "t": "Navigation",
-      "to": "navigation"
-     },
-     {
-      "t": "Dashboards",
-      "to": "dashboards"
-     },
-     {
-      "t": "Design system",
-      "to": "design-system"
-     }
-    ]
-   },
    "items": [
     {
      "id": "import",

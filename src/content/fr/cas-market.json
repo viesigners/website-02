@@ -243,27 +243,6 @@
    "type": "cd-decisions",
    "label": "Décisions clés",
    "h2": "Ce que j’ai décidé, *et pourquoi*",
-   "nav": {
-    "label": "Aller à un pilier",
-    "items": [
-     {
-      "t": "Import",
-      "to": "import"
-     },
-     {
-      "t": "Navigation",
-      "to": "navigation"
-     },
-     {
-      "t": "Tableaux de bord",
-      "to": "tableaux-de-bord"
-     },
-     {
-      "t": "Design system",
-      "to": "design-system"
-     }
-    ]
-   },
    "items": [
     {
      "id": "import",
