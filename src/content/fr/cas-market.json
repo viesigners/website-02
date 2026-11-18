@@ -288,16 +288,6 @@
      "p": "Après le lancement, j’ai mis en place *un entonnoir par étape dans Microsoft Clarity*. Il a révélé beaucoup d’abandons dès le premier écran : des gens y arrivaient en cherchant autre chose.",
      "notes": [
       {
-       "k": "Alternatives",
-       "list": [
-        "Corriger plus tard, lors d’une prochaine refonte.",
-        {
-         "t": "Corriger tout de suite, par une petite amélioration.",
-         "pill": "Ma recommandation"
-        }
-       ]
-      },
-      {
        "k": "Pourquoi",
        "v": "Ajouter des liens d’information sur le premier écran, une idée inspirée des gros joueurs du marché, était un petit développement, rapide et peu coûteux. Plus de gens sont ensuite passés à l’étape suivante. [À FOURNIR : chiffres de l’entonnoir, s’ils existent]"
       },
