@@ -248,6 +248,7 @@
      "id": "import",
      "tag": "Pilier 1 · Refonte d’une fonctionnalité clé",
      "h": "Remplacer un import générique par un parcours qui enseigne la plateforme",
+     "summary": "Très utilisée, la fonctionnalité d’import reposait sur une interface générique qui déroutait les nouveaux usagers et engorgeait le soutien. Appuyé par mes recherches de marché, je l’ai remplacée par un assistant en étapes guidées qui s’adapte à ce qu’on importe et enseigne la plateforme. Résultat : *moins de demandes au soutien* et *un taux de complétion des imports en hausse* à chaque itération.",
      "parts": [
       {
        "h": "Problème",

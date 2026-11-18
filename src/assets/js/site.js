@@ -2,6 +2,11 @@
 (() => {
   const d = document, root = d.documentElement;
   root.classList.add('js');
+  /* case studies: a decision's details fold under its summary; the button reveals or hides them */
+  d.querySelectorAll('.cd-fold__btn').forEach((b) => b.addEventListener('click', () => {
+    const f = d.getElementById(b.getAttribute('aria-controls')), open = f.classList.toggle('is-open');
+    b.setAttribute('aria-expanded', open); b.textContent = open ? b.dataset.less : b.dataset.more;
+  }));
   d.querySelectorAll('[data-year]').forEach((e) => { e.textContent = new Date().getFullYear(); }); // {year} in content stays current between builds
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 

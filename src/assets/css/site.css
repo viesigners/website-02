@@ -1280,3 +1280,12 @@ html { scroll-padding-top: 7rem; }
 .cd-pcards li { padding: 1.1rem 1.2rem; border-radius: var(--r-md); background: rgba(255, 255, 255, .05); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08); color: var(--text-2); font-size: .95rem; line-height: 1.55; }
 .cd-part > .cd-blist { margin: .7rem 0; max-width: var(--measure); }
 .cd-part > .cd-blist li { color: var(--text-2); }
+
+/* decision summary + folded details ("Read more"): without JS everything stays visible */
+.cd-decisions .cd-summary { color: var(--text); font-size: 1.05rem; line-height: 1.6; max-width: var(--measure); margin: 0 0 1.2rem; }
+.cd-fold__btn { display: none; }
+.js .cd-fold:not(.is-open) { max-height: 9rem; overflow: hidden; -webkit-mask-image: linear-gradient(to bottom, #000 25%, transparent); mask-image: linear-gradient(to bottom, #000 25%, transparent); }
+.js .cd-fold__btn { display: inline-flex; align-items: center; gap: .4rem; margin: .4rem 0 0; padding: .45rem 1rem; border: 0; border-radius: 999px; background: rgba(255, 255, 255, .06); box-shadow: inset 0 0 0 1px rgba(255, 72, 139, .5); color: #ff8ab5; font: 500 .8rem/1.4 var(--f-mono); letter-spacing: .03em; text-transform: uppercase; cursor: pointer; transition: background-color .2s, color .2s; }
+.js .cd-fold__btn:hover, .js .cd-fold__btn:focus-visible { background: var(--pink); color: #101421; }
+.js .cd-fold__btn::after { content: "↓"; }
+.js .cd-fold__btn[aria-expanded="true"]::after { content: "↑"; }
