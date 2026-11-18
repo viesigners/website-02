@@ -248,7 +248,7 @@
      "id": "import",
      "tag": "Pillar 1 · Core functionality redesign",
      "h": "Replace a generic import with a flow that teaches the platform",
-     "summary": "The import feature, one of the most used, relied on a generic interface that confused newcomers and clogged support. Backed by my market research, I replaced it with a guided, step-by-step wizard that adapts to what you import and teaches the platform. The result: *fewer support requests* and *a rising import completion rate* with each iteration.",
+     "summary": "The import feature, one of the most used, relied on a generic interface that confused newcomers and clogged support. Backed by my market research, I replaced it with a guided, step-by-step wizard that adapts to what you import and teaches the platform. The result: *fewer support requests* and *a rising import completion rate*.",
      "parts": [
       {
        "h": "Problem",
