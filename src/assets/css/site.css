@@ -1289,3 +1289,4 @@ html { scroll-padding-top: 7rem; }
 .js .cd-fold__btn:hover, .js .cd-fold__btn:focus-visible { background: var(--pink); color: #101421; }
 .js .cd-fold__btn::after { content: "↓"; }
 .js .cd-fold__btn[aria-expanded="true"]::after { content: "↑"; }
+.js .cd-fold.is-open + .cd-fold__btn { margin-top: 1.6rem; }
