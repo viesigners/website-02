@@ -916,6 +916,7 @@ const THEME = {
 };
 const ASSET_HASH = {};
 const PAGES_OUT = []; // for sitemap + llms
+const REDIRECTS = []; // moved addresses -> new page, written as host 301 rules
 /* hreflang set for a page: only when it exists in BOTH languages (EN↔FR from the route table); x-default = the English version */
 const hreflangs = (altUrls) => (LANGS.every((l) => altUrls[l]) ? [...LANGS.map((l) => ({ l, href: abs(altUrls[l]) })), { l: 'x-default', href: abs(altUrls.en) }] : []);
 
@@ -1024,6 +1025,7 @@ function build() {
   ASSET_HASH.fonts = hash(path.join(SRC, 'assets/css/fonts.css'));
   ASSET_HASH.js = hash(path.join(SRC, 'assets/js/site.js'));
   PAGES_OUT.length = 0;
+  REDIRECTS.length = 0;
 
   /* load content */
   CURRENT_POST_SLUGS = {}; POST_CATS = {};
@@ -1070,6 +1072,7 @@ function build() {
       });
       // the bare profile URL is not a page of its own: it forwards to the first tab (keeps older links and the About page working)
       const first = tabUrl(nav.items[0], 0, l);
+      REDIRECTS.push({ from: profileBase(l), to: first });
       write(path.join(DIST, profileBase(l).slice(BASE.length), 'index.html'), `<!doctype html>
 <html lang="${l}"><head><meta charset="utf-8"><meta name="robots" content="noindex"><link rel="canonical" href="${abs(first)}"><meta http-equiv="refresh" content="0; url=${first}"><title>${esc(page.meta.h1 || '')}</title></head>
 <body><script>location.replace(${JSON.stringify(first)} + location.hash)</script><p><a href="${first}">${esc(nav.items[0].label)}</a></p></body></html>
@@ -1078,6 +1081,7 @@ function build() {
     for (const m of MOVED) {
       if (!m.post && RES_CATS[l].some((cat) => cat.slug === m.from[l] && RES[l].some((p) => p.cat === cat.key))) continue;
       const to = m.post ? url('post:' + m.post, l) : url(m.to, l);
+      REDIRECTS.push({ from: `${BASE}/${l}/${m.from[l]}/${m.post ? CURRENT_POST_SLUGS[m.post][l] + '/' : ''}`, to });
       write(path.join(DIST, l, m.from[l], m.post ? CURRENT_POST_SLUGS[m.post][l] : '', 'index.html'), `<!doctype html>
 <html lang="${l}"><head><meta charset="utf-8"><meta name="robots" content="noindex"><link rel="canonical" href="${abs(to)}"><meta http-equiv="refresh" content="0; url=${to}"><title>Viesigners</title></head>
 <body><script>location.replace(${JSON.stringify(to)} + location.hash)</script><p><a href="${to}">${to}</a></p></body></html>
@@ -1135,9 +1139,12 @@ function build() {
   write(path.join(DIST, 'llms.txt'), llms.join('\n'));
   write(path.join(DIST, 'llms-full.txt'), `# Viesigners — full content\n\n` + PAGES_OUT.filter((x) => !x.hidden).map((p) => `<!-- ${p.selfUrl} -->\n` + p.md).join('\n---\n\n'));
 
-  /* hosting rules: "/" → /en/ permanent redirect, for hosts that read them (GitHub Pages does not) */
-  write(path.join(DIST, '_redirects'), `/  /en/  301\n`); // Cloudflare Pages / Netlify
-  write(path.join(DIST, '.htaccess'), `# Apache: "/" is a permanent redirect to the English site\n<IfModule mod_rewrite.c>\nRewriteEngine On\nRewriteRule ^$ /en/ [R=301,L]\n</IfModule>\n`);
+  /* hosting rules: "/" → /en/ and every moved address → its new page, as permanent 301s, for hosts that read them.
+     GitHub Pages reads none of these: in front of it, Cloudflare applies redirects.csv (Bulk Redirects list). */
+  const hostRedirects = [{ from: `${BASE}/`, to: `${BASE}/en/` }, ...REDIRECTS.filter((r, i, a) => r.from !== r.to && a.findIndex((x) => x.from === r.from) === i)];
+  write(path.join(DIST, '_redirects'), hostRedirects.map((r) => `${r.from}  ${r.to}  301`).join('\n') + '\n'); // Cloudflare Pages / Netlify
+  write(path.join(DIST, '.htaccess'), `# Apache: permanent redirects ("/" → English site, moved addresses → their new page)\n<IfModule mod_rewrite.c>\nRewriteEngine On\n${hostRedirects.map((r) => `RewriteRule ^${r.from.slice(1).replace(/[.]/g, '\\.')}$ ${r.to} [R=301,L]`).join('\n')}\n</IfModule>\n`);
+  write(path.join(DIST, 'redirects.csv'), hostRedirects.map((r) => `${abs(r.from).replace(/^https?:\/\//, '')},${abs(r.to)},301`).join('\n') + '\n'); // Cloudflare → Bulk Redirects → import list
   /* hosting hints */
   write(path.join(DIST, '_headers'), `/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n/\n  Vary: Accept-Language\n  Cache-Control: no-store\n`);
   console.log(`✓ built ${PAGES_OUT.length} pages (${PAGES_OUT.filter((x) => x.hidden).length} hidden: noindex, unlinked) (${LANGS.join(' + ')}) → dist/  [${new Date().toLocaleTimeString()}]`);

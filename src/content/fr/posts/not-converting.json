@@ -1,11 +1,11 @@
 {
-  "key": "not-converting", "slug": "site-web-ne-convertit-pas", "date": "2026-11-03", "modified": "2026-11-03",
+  "key": "not-converting", "slug": "site-web-ne-convertit-pas", "date": "2026-11-03", "modified": "2026-11-20",
   "category": "insights", "tag": "CRO", "read": "12 min de lecture",
-  "h1": "Votre site web ne convertit pas ses visiteurs? *Voici ce qui cloche*",
-  "title": "Votre site web ne convertit pas ses visiteurs? Voici ce qui cloche",
-  "metaTitle": "Site web qui ne convertit pas? 10 raisons et quoi faire | Viesigners",
+  "h1": "Pourquoi votre site web ne convertit pas? *Les 10 causes et quoi faire*",
+  "title": "Pourquoi votre site web ne convertit pas? Les 10 causes et quoi faire",
+  "metaTitle": "Pourquoi mon site web ne convertit pas? 10 causes | Viesigners",
   "description": "Votre site web ne convertit pas ses visiteurs? Découvrez les 10 problèmes de message, d'UX et de confiance les plus courants, et une liste gratuite pour auditer votre site.",
-  "keywords": ["site web qui ne convertit pas", "optimisation du taux de conversion", "CRO", "taux de conversion site web", "liste de vérification conversion"],
+  "keywords": ["pourquoi mon site ne convertit pas", "site web qui ne convertit pas", "site internet qui ne convertit pas", "optimisation du taux de conversion", "CRO", "taux de conversion site web", "liste de vérification conversion"],
   "summary": [
     "Quand le trafic ne se transforme pas en demandes, la cause est presque toujours la **friction** : un message qui ne passe pas, un parcours trop difficile ou trop peu de preuves.",
     "Les 10 problèmes les plus courants se regroupent en trois familles : **message, expérience et confiance**.",
