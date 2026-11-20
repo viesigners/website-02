@@ -8,7 +8,11 @@
   "name": "Design de produit fractionnel",
   "type": "Designer de produit, lead designer de produit et directeur du design fractionnel pour produits SaaS et IA",
   "audience": "Jeunes pousses SaaS et IA, équipes produit sans designer senior, fondateurs et responsables produit",
-  "offer": { "price": "3450", "currency": "USD", "unit": "par mois, 5 heures par semaine" }
+  "offer": {
+   "price": "3450",
+   "currency": "USD",
+   "unit": "par mois, 5 heures par semaine"
+  }
  },
  "sections": [
   {
@@ -18,14 +22,34 @@
    "h1": "Un designer de produit senior dans votre équipe, *sans embauche à temps plein*",
    "lead": "Obtenez un designer de produit, un lead ou un directeur du design quelques heures par semaine. On audite votre produit, on priorise ce qui freine l'activation et la rétention, et on conçoit les améliorations avec votre équipe, semaine après semaine.",
    "ctas": [
-    { "label": "Estimer votre prix mensuel", "to": "#tarifs", "style": "violet" },
-    { "label": "Réserver un appel", "to": "@contact", "style": "ghost" }
+    {
+     "label": "Estimer votre prix mensuel",
+     "to": "#tarifs",
+     "style": "violet"
+    },
+    {
+     "label": "Réserver un appel",
+     "to": "@contact",
+     "style": "ghost"
+    }
    ],
    "brief": [
-    { "b": "Pour qui :", "t": "les produits SaaS et IA qui ont une équipe, mais pas de designer senior, ou une équipe de design qui a besoin d'un lead." },
-    { "b": "Fonctionnement :", "t": "dès 5 heures par semaine, facturé au mois. Vous choisissez le rôle et les heures, et vous les ajustez selon votre croissance." },
-    { "b": "Prix :", "t": "dès 3 450 $ US/mois (designer de produit, 5 h/semaine). Le taux baisse quand le nombre d'heures augmente." },
-    { "b": "Preuve :", "t": "6 ans intégrés à une entreprise SaaS B2B en IA, 10 heures par semaine. Un projet de 90 jours : +31 % de revenus récurrents, −24 % d'attrition." }
+    {
+     "b": "Pour qui :",
+     "t": "les produits SaaS et IA qui ont une équipe, mais pas de designer senior, ou une équipe de design qui a besoin d'un lead."
+    },
+    {
+     "b": "Fonctionnement :",
+     "t": "dès 5 heures par semaine, facturé au mois. Vous choisissez le rôle et les heures, et vous les ajustez selon votre croissance."
+    },
+    {
+     "b": "Prix :",
+     "t": "dès 3 450 $ US/mois (designer de produit, 5 h/semaine). Le taux baisse quand le nombre d'heures augmente."
+    },
+    {
+     "b": "Preuve :",
+     "t": "Ludo.ai : partenaire de design de produit depuis 6 ans, 10 h par semaine, des premières versions jusqu’à un outil d’IA de premier plan pour les créateurs de jeux."
+    }
    ]
   },
   {
@@ -43,12 +67,30 @@
    "h2": "Trois rôles, *une même façon de travailler*",
    "lead": "Le rôle, c'est le niveau de séniorité. Les heures, c'est le volume. Vous choisissez les deux.",
    "items": [
-    { "h": "Designer de produit", "p": "Le design concret : fonctionnalités, parcours, prototypes, tests d'utilisabilité et entretien du système de design, dans vos sprints." },
-    { "h": "Lead designer de produit", "p": "Tout ce qui précède, plus la direction du design pour votre équipe produit : priorités, revues de design et qualité d'une fonctionnalité à l'autre." },
-    { "h": "Directeur du design", "p": "Stratégie produit et UX avec la direction : feuille de route, plan de recherche, revues du travail de votre équipe et aide au recrutement de designers." },
-    { "h": "Audit et carnet priorisé", "p": "Chaque mandat commence par un audit du produit et de ses données, pour que les premières semaines servent aux améliorations les plus payantes." },
-    { "h": "Rythme hebdomadaire", "p": "Des livraisons, des revues et des décisions régulières, dans vos outils (Figma, Jira, Linear, Slack ou Teams)." },
-    { "h": "Bilan mensuel", "p": "Ce qui a été livré, ce que ça a changé dans les chiffres et ce qui vient ensuite. Vous ajustez le rôle ou les heures quand vous voulez." }
+    {
+     "h": "Designer de produit",
+     "p": "Le design concret : fonctionnalités, parcours, prototypes, tests d'utilisabilité et entretien du système de design, dans vos sprints."
+    },
+    {
+     "h": "Lead designer de produit",
+     "p": "Tout ce qui précède, plus la direction du design pour votre équipe produit : priorités, revues de design et qualité d'une fonctionnalité à l'autre."
+    },
+    {
+     "h": "Directeur du design",
+     "p": "Stratégie produit et UX avec la direction : feuille de route, plan de recherche, revues du travail de votre équipe et aide au recrutement de designers."
+    },
+    {
+     "h": "Audit et carnet priorisé",
+     "p": "Chaque mandat commence par un audit du produit et de ses données, pour que les premières semaines servent aux améliorations les plus payantes."
+    },
+    {
+     "h": "Rythme hebdomadaire",
+     "p": "Des livraisons, des revues et des décisions régulières, dans vos outils (Figma, Jira, Linear, Slack ou Teams)."
+    },
+    {
+     "h": "Bilan mensuel",
+     "p": "Ce qui a été livré, ce que ça a changé dans les chiffres et ce qui vient ensuite. Vous ajustez le rôle ou les heures quand vous voulez."
+    }
    ]
   },
   {
@@ -59,12 +101,36 @@
    "lead": "Choisissez un rôle et le nombre d'heures par semaine. Plus vous réservez d'heures, plus le taux horaire baisse.",
    "currency": "$ US",
    "weeks": 4.33,
-   "hours": [5, 10, 15, 20],
-   "discounts": { "10": 10, "15": 20, "20": 25 },
+   "hours": [
+    5,
+    10,
+    15,
+    20
+   ],
+   "discounts": {
+    "10": 10,
+    "15": 20,
+    "20": 25
+   },
    "roles": [
-    { "id": "designer", "label": "Designer de produit", "rate": 160, "desc": "Le design concret, dans vos sprints." },
-    { "id": "lead", "label": "Lead designer de produit", "rate": 180, "desc": "La direction et la qualité du design dans tout votre produit." },
-    { "id": "head", "label": "Directeur du design", "rate": 200, "desc": "La stratégie produit et UX avec la direction." }
+    {
+     "id": "designer",
+     "label": "Designer de produit",
+     "rate": 160,
+     "desc": "Le design concret, dans vos sprints."
+    },
+    {
+     "id": "lead",
+     "label": "Lead designer de produit",
+     "rate": 180,
+     "desc": "La direction et la qualité du design dans tout votre produit."
+    },
+    {
+     "id": "head",
+     "label": "Directeur du design",
+     "rate": 200,
+     "desc": "La stratégie produit et UX avec la direction."
+    }
    ],
    "labels": {
     "role": "Rôle",
@@ -77,16 +143,35 @@
     "table": "Prix mensuel selon le rôle et les heures par semaine (dollars américains, 4,33 semaines par mois)"
    },
    "note": "Prix en dollars américains, avant taxes, arrondis aux 50 $ près. Les clients canadiens peuvent être facturés en dollars canadiens. Minimum de 5 heures par semaine; le rôle et les heures peuvent changer d'un mois à l'autre.",
-   "cta": { "label": "Réserver un appel", "to": "@contact" }
+   "cta": {
+    "label": "Réserver un appel",
+    "to": "@contact"
+   }
   },
   {
    "type": "process",
    "h2": "Comment un mandat fractionnel *commence*",
    "steps": [
-    { "h": "Appel de découverte", "p": "On regarde votre produit, votre équipe et vos objectifs, et on s'entend sur le rôle et les heures.", "out": "Résultat : une portée et une date de début claires." },
-    { "h": "Audit et carnet", "p": "On analyse le produit, ses données et les commentaires des utilisateurs, et on classe les améliorations selon leur impact.", "out": "Livrable : un carnet UX priorisé." },
-    { "h": "Livraison hebdomadaire", "p": "On conçoit, teste et transmet les améliorations dans vos sprints, avec vos développeurs.", "out": "Livrable : des améliorations livrées chaque semaine." },
-    { "h": "Bilan mensuel", "p": "On mesure ce qui a changé et on planifie le mois suivant. Vous pouvez ajuster le rôle ou les heures.", "out": "Livrable : résultats et prochaines priorités." }
+    {
+     "h": "Appel de découverte",
+     "p": "On regarde votre produit, votre équipe et vos objectifs, et on s'entend sur le rôle et les heures.",
+     "out": "Résultat : une portée et une date de début claires."
+    },
+    {
+     "h": "Audit et carnet",
+     "p": "On analyse le produit, ses données et les commentaires des utilisateurs, et on classe les améliorations selon leur impact.",
+     "out": "Livrable : un carnet UX priorisé."
+    },
+    {
+     "h": "Livraison hebdomadaire",
+     "p": "On conçoit, teste et transmet les améliorations dans vos sprints, avec vos développeurs.",
+     "out": "Livrable : des améliorations livrées chaque semaine."
+    },
+    {
+     "h": "Bilan mensuel",
+     "p": "On mesure ce qui a changé et on planifie le mois suivant. Vous pouvez ajuster le rôle ou les heures.",
+     "out": "Livrable : résultats et prochaines priorités."
+    }
    ]
   },
   {
@@ -120,14 +205,21 @@
    }
   },
   {
-   "type": "casecard",
-   "to": "cas-saas",
-   "tag": "Étude de cas",
-   "n": "+31 %",
-   "nt": "de revenus récurrents en 90 jours pour une entreprise SaaS B2B en IA, avec −24 % d'attrition",
-   "h": "6 ans intégrés à une entreprise SaaS B2B en IA",
-   "p": "10 heures par semaine, année après année. Dans un projet de 90 jours, une proposition de valeur réécrite, un délai de valeur plus court et une page de fonctionnalité repensée ont fait croître les revenus récurrents de 31 % et baisser l'attrition de 24 %.",
-   "cta": "Lire l'étude de cas"
+   "type": "testimonials",
+   "h2": "Ce que disent nos *clients de longue date*",
+   "items": [
+    {
+     "name": "Tom Pigott",
+     "role": "PDG",
+     "date": "2026-04",
+     "lang": "fr",
+     "title": "A grandement contribué au succès dont nous profitons aujourd’hui",
+     "text": "Jean-François a été un collaborateur incroyable sur un projet SaaS auquel je me consacre depuis plusieurs années. Sa vision unique et son expérience de ce qui fait un excellent UX/UI, de la façon de tester en A/B tous les aspects de notre landing page, d’affiner notre entonnoir de génération de prospects, etc., ont tous grandement contribué au succès dont nous profitons aujourd’hui. Je recommande fortement Jean-François et son agence!",
+     "translatedFrom": "en",
+     "company": "Ludo.ai",
+     "joiner": "de"
+    }
+   ]
   },
   {
    "type": "fit",
@@ -160,7 +252,11 @@
    "type": "related",
    "h2": "Vous aimerez *aussi*",
    "cta": "Voir le service",
-   "items": ["audit", "design-produit", "tarifs"]
+   "items": [
+    "audit",
+    "design-produit",
+    "tarifs"
+   ]
   },
   {
    "type": "cta-final",
@@ -172,27 +268,39 @@
  "faq": [
   {
    "q": "Qu'est-ce qu'un designer de produit fractionnel?",
-   "a": ["Un designer de produit fractionnel est un designer senior qui travaille à temps partiel dans votre équipe, généralement de quelques heures à quelques jours par semaine, de façon continue. Vous obtenez une expertise UX/UI senior sans le coût ni l'engagement d'une embauche à temps plein."]
+   "a": [
+    "Un designer de produit fractionnel est un designer senior qui travaille à temps partiel dans votre équipe, généralement de quelques heures à quelques jours par semaine, de façon continue. Vous obtenez une expertise UX/UI senior sans le coût ni l'engagement d'une embauche à temps plein."
+   ]
   },
   {
    "q": "Combien coûte un designer de produit fractionnel?",
-   "a": ["Chez Viesigners, à partir de 3 450 $ US par mois pour un designer de produit à 5 heures par semaine. Le lead designer de produit commence à environ 3 900 $ US et le directeur du design à environ 4 350 $ US par mois. Le taux horaire baisse de 10 % à 10 heures par semaine, de 20 % à 15 heures et de 25 % à 20 heures. Utilisez le calculateur ci-dessus pour une estimation précise."]
+   "a": [
+    "Chez Viesigners, à partir de 3 450 $ US par mois pour un designer de produit à 5 heures par semaine. Le lead designer de produit commence à environ 3 900 $ US et le directeur du design à environ 4 350 $ US par mois. Le taux horaire baisse de 10 % à 10 heures par semaine, de 20 % à 15 heures et de 25 % à 20 heures. Utilisez le calculateur ci-dessus pour une estimation précise."
+   ]
   },
   {
    "q": "Quelle est la différence entre un designer de produit fractionnel et un directeur du design fractionnel?",
-   "a": ["Le designer de produit fait le travail de design concret : parcours, écrans, prototypes et tests. Le directeur du design définit la stratégie produit et UX avec la direction, révise le travail de l'équipe et aide à recruter des designers. Les deux peuvent être réservés pour le même nombre d'heures; c'est le rôle qui fixe le taux."]
+   "a": [
+    "Le designer de produit fait le travail de design concret : parcours, écrans, prototypes et tests. Le directeur du design définit la stratégie produit et UX avec la direction, révise le travail de l'équipe et aide à recruter des designers. Les deux peuvent être réservés pour le même nombre d'heures; c'est le rôle qui fixe le taux."
+   ]
   },
   {
    "q": "Quel est l'engagement minimum?",
-   "a": ["5 heures par semaine, facturées au mois. Vous pouvez changer le rôle ou le nombre d'heures d'un mois à l'autre."]
+   "a": [
+    "5 heures par semaine, facturées au mois. Vous pouvez changer le rôle ou le nombre d'heures d'un mois à l'autre."
+   ]
   },
   {
    "q": "Travaillez-vous avec nos développeurs et nos outils?",
-   "a": ["Oui. On travaille dans vos outils et vos rituels (Figma, Jira ou Linear, Slack ou Teams, revues de sprint) et on livre des maquettes que vos développeurs peuvent intégrer."]
+   "a": [
+    "Oui. On travaille dans vos outils et vos rituels (Figma, Jira ou Linear, Slack ou Teams, revues de sprint) et on livre des maquettes que vos développeurs peuvent intégrer."
+   ]
   },
   {
    "q": "Travaillez-vous avec des équipes à l'extérieur du Canada?",
-   "a": ["Oui. Nous sommes à Québec et à Vancouver et travaillons en français et en anglais avec des équipes au Canada, aux États-Unis et en Europe."]
+   "a": [
+    "Oui. Nous sommes à Québec et à Vancouver et travaillons en français et en anglais avec des équipes au Canada, aux États-Unis et en Europe."
+   ]
   }
  ]
 }
