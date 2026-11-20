@@ -12,14 +12,84 @@
    "h1": "Digital experiences for brands *kids and fans love*",
    "lead": "Toy e-commerce sites, game interfaces, companion apps and AR/VR experiences: our founders have designed them for some of the best-known toy and entertainment brands, and now bring that experience to your products.",
    "ctas": [
-    { "label": "Discuss a project", "to": "@contact", "style": "violet" },
-    { "label": "See the work", "to": "#work", "style": "ghost" }
+    {
+     "label": "Discuss a project",
+     "to": "@contact",
+     "style": "violet"
+    },
+    {
+     "label": "See the work",
+     "to": "#work",
+     "style": "ghost"
+    }
    ],
    "brief": [
-    { "b": "Who it's for:", "t": "toy companies, game studios, licensors and the agencies that serve them." },
-    { "b": "What we design:", "t": "toy e-commerce sites, game UI, companion apps, AR/VR experiences and brand sites." },
-    { "b": "Experience:", "t": "Disney, Marvel, Warner Bros., Hasbro brands, Spin Master, Wizards of the Coast and Ubisoft, in our careers." },
-    { "b": "How:", "t": "as a project, as a fractional designer in your team, or white-label for your agency." }
+    {
+     "b": "Who it's for:",
+     "t": "toy companies, game studios, licensors and the agencies that serve them."
+    },
+    {
+     "b": "What we design:",
+     "t": "toy e-commerce sites, game UI, companion apps, AR/VR experiences and brand sites."
+    },
+    {
+     "b": "Experience:",
+     "t": "Disney, Marvel, Warner Bros., Hasbro brands, Spin Master, Wizards of the Coast and Ubisoft, in our careers."
+    },
+    {
+     "b": "How:",
+     "t": "as a project, as a fractional designer in your team, or white-label for your agency."
+    }
+   ],
+   "advised": "Toy, game and entertainment brands we have designed for, in our careers",
+   "logosLabel": "Toy, game and entertainment brands",
+   "logos": [
+    {
+     "id": "disney",
+     "alt": "Disney"
+    },
+    {
+     "id": "marvel",
+     "alt": "Marvel"
+    },
+    {
+     "id": "warner",
+     "alt": "Warner Bros."
+    },
+    {
+     "id": "ubisoft",
+     "alt": "Ubisoft"
+    },
+    {
+     "id": "transformers",
+     "alt": "Transformers",
+     "ext": "svg"
+    },
+    {
+     "id": "nerf",
+     "alt": "Nerf",
+     "ext": "svg"
+    },
+    {
+     "id": "monopoly",
+     "alt": "Monopoly",
+     "ext": "svg"
+    },
+    {
+     "id": "meccano",
+     "alt": "Meccano",
+     "ext": "svg"
+    },
+    {
+     "id": "wizards",
+     "alt": "Wizards of the Coast",
+     "ext": "svg"
+    },
+    {
+     "id": "dnd",
+     "alt": "Dungeons & Dragons",
+     "ext": "svg"
+    }
    ]
   },
   {
@@ -36,12 +106,30 @@
    "id": "formats",
    "h2": "What we *design*",
    "items": [
-    { "h": "Toy e-commerce sites", "p": "Online stores and brand sites that make products easy to find, compare and buy, for parents and for collectors." },
-    { "h": "Game interfaces", "p": "Menus, HUDs, onboarding and in-game flows for mobile, console and web games." },
-    { "h": "Companion apps", "p": "Apps that extend a toy or a game: building instructions, controls, collections and content." },
-    { "h": "AR/VR experiences", "p": "Interfaces for augmented and virtual reality, where the experience has to feel natural from the first second." },
-    { "h": "Licensed IP experiences", "p": "Digital products built around an existing universe, within the licensor's guidelines." },
-    { "h": "Kids and family UX", "p": "Flows that kids understand and parents trust, designed with children's privacy rules (such as COPPA) in mind." }
+    {
+     "h": "Toy e-commerce sites",
+     "p": "Online stores and brand sites that make products easy to find, compare and buy, for parents and for collectors."
+    },
+    {
+     "h": "Game interfaces",
+     "p": "Menus, HUDs, onboarding and in-game flows for mobile, console and web games."
+    },
+    {
+     "h": "Companion apps",
+     "p": "Apps that extend a toy or a game: building instructions, controls, collections and content."
+    },
+    {
+     "h": "AR/VR experiences",
+     "p": "Interfaces for augmented and virtual reality, where the experience has to feel natural from the first second."
+    },
+    {
+     "h": "Licensed IP experiences",
+     "p": "Digital products built around an existing universe, within the licensor's guidelines."
+    },
+    {
+     "h": "Kids and family UX",
+     "p": "Flows that kids understand and parents trust, designed with children's privacy rules (such as COPPA) in mind."
+    }
    ]
   },
   {
@@ -50,11 +138,36 @@
    "h2": "Toy, game and entertainment *projects*",
    "lead": "A selection of products our founders have worked on during their careers, in agencies and in-house.",
    "items": [
-    { "img": "assassins-creed.jpg", "alt": "Online platform designed for Assassin's Creed Odyssey", "title": "Assassin's Creed Odyssey", "result": "Online platform — Ubisoft" },
-    { "img": "spin-master.jpg", "alt": "App interface designed for Spin Master", "title": "Spin Master", "result": "App interface" },
-    { "img": "marvel.jpg", "alt": "Game interface designed for Marvel", "title": "Marvel", "result": "Game interface" },
-    { "img": "warner-bros.jpg", "alt": "Video game interface designed for Warner Bros.", "title": "Warner Bros.", "result": "Video game interface" },
-    { "img": "wizards.jpg", "alt": "Website designed for Wizards of the Coast", "title": "Wizards of the Coast", "result": "Website" }
+    {
+     "img": "assassins-creed.jpg",
+     "alt": "Online platform designed for Assassin's Creed Odyssey",
+     "title": "Assassin's Creed Odyssey",
+     "result": "Online platform — Ubisoft"
+    },
+    {
+     "img": "spin-master.jpg",
+     "alt": "App interface designed for Spin Master",
+     "title": "Spin Master",
+     "result": "App interface"
+    },
+    {
+     "img": "marvel.jpg",
+     "alt": "Game interface designed for Marvel",
+     "title": "Marvel",
+     "result": "Game interface"
+    },
+    {
+     "img": "warner-bros.jpg",
+     "alt": "Video game interface designed for Warner Bros.",
+     "title": "Warner Bros.",
+     "result": "Video game interface"
+    },
+    {
+     "img": "wizards.jpg",
+     "alt": "Website designed for Wizards of the Coast",
+     "title": "Wizards of the Coast",
+     "result": "Website"
+    }
    ]
   },
   {
@@ -86,7 +199,12 @@
    "type": "related",
    "h2": "Ways to *work with us*",
    "cta": "See the service",
-   "items": ["fractional", "design-produit", "sites-web", "marque-blanche"]
+   "items": [
+    "fractional",
+    "design-produit",
+    "sites-web",
+    "marque-blanche"
+   ]
   },
   {
    "type": "cta-final",
@@ -98,19 +216,27 @@
  "faq": [
   {
    "q": "What's different about UX design for toys and games?",
-   "a": ["Toy and game products serve several audiences at once: kids who play, parents who buy and decide, fans who know the universe, and brand owners who protect it. The design has to be fun and intuitive for the first group while staying clear, trustworthy and on-brand for the others."]
+   "a": [
+    "Toy and game products serve several audiences at once: kids who play, parents who buy and decide, fans who know the universe, and brand owners who protect it. The design has to be fun and intuitive for the first group while staying clear, trustworthy and on-brand for the others."
+   ]
   },
   {
    "q": "Have you worked with major toy and entertainment brands?",
-   "a": ["Yes. During their careers, in agencies and in-house, our founders have worked on digital products for Disney, Marvel, Warner Bros., Hasbro brands, Spin Master, Wizards of the Coast and Ubisoft."]
+   "a": [
+    "Yes. During their careers, in agencies and in-house, our founders have worked on digital products for Disney, Marvel, Warner Bros., Hasbro brands, Spin Master, Wizards of the Coast and Ubisoft."
+   ]
   },
   {
    "q": "Do you design for children's privacy rules?",
-   "a": ["Yes. We design kids' and family experiences with children's privacy rules such as COPPA in the United States in mind, for example around sign-up, data collection and parental consent. Final compliance remains a legal review on your side."]
+   "a": [
+    "Yes. We design kids' and family experiences with children's privacy rules such as COPPA in the United States in mind, for example around sign-up, data collection and parental consent. Final compliance remains a legal review on your side."
+   ]
   },
   {
    "q": "Can you work white-label for our agency?",
-   "a": ["Yes. We work as a white-label UX/UI partner for agencies that serve toy, game and entertainment brands."]
+   "a": [
+    "Yes. We work as a white-label UX/UI partner for agencies that serve toy, game and entertainment brands."
+   ]
   }
  ]
 }

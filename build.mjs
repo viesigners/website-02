@@ -154,10 +154,18 @@ function secHead(s, c, type, { id = '', h2 = s.h2, label = c.T.labels?.[type] } 
 }
 const splitLabel = (c, type) => (c.T.labels?.[type] ? `<p class="label rv">${esc(c.T.labels[type])}</p>` : '');
 
-R['hero-home'] = (s, c) => {
-  const { lang, T } = c;
+/* scrolling logo strip (home hero, and any page hero that lists "logos"): the row is repeated so the loop never shows a gap;
+   only the first copy keeps its alt text */
+const logoStrip = (s) => {
   const logos = s.logos.map((l) => img(`logo-${l.id}.${l.ext || 'png'}`, l.alt, { lazy: false, cls: (([w, h]) => (w / h > 4.2 ? 'wide' : ''))(IMG_CACHE[`logo-${l.id}.${l.ext || 'png'}`] ||= imgSize(`logo-${l.id}.${l.ext || 'png'}`)) }));
   const dup = logos.map((x) => x.replace(/alt="[^"]*"/, 'alt=""'));
+  return `<div class="logos">
+      <div class="logos__head"><p class="label">${esc(s.advised)}</p>${s.more ? `<span class="more">${esc(s.more)}</span>` : ''}</div>
+      <div class="logos__mask" role="group" aria-label="${esc(s.logosLabel)}"><div class="logos__row">${logos.join('')}<span aria-hidden="true" style="display:contents">${dup.join('')}</span>${dup.join('')}${dup.join('')}</div></div>
+    </div>`;
+};
+R['hero-home'] = (s, c) => {
+  const { lang, T } = c;
   return `<section class="hero" aria-labelledby="h1">
   <div class="hero__art" aria-hidden="true"><div class="hero__dots"></div></div>
   <div class="wrap">
@@ -165,10 +173,7 @@ R['hero-home'] = (s, c) => {
     <h2 class="hero__title">${fmt(s.h1, lang)}</h2>
     <p class="hero__lead">${fmt(s.lead, lang)}</p>
     <div class="hero__cta"><a class="pill" href="${url('contact', lang)}">${esc(s.cta)}</a></div>
-    <div class="logos">
-      <div class="logos__head"><p class="label">${esc(s.advised)}</p>${s.more ? `<span class="more">${esc(s.more)}</span>` : ''}</div>
-      <div class="logos__mask" role="group" aria-label="${esc(s.logosLabel)}"><div class="logos__row">${logos.join('')}<span aria-hidden="true" style="display:contents">${dup.join('')}</span>${logos.map((x) => x.replace(/alt="[^"]*"/, 'alt=""')).join('')}${dup.join('')}</div></div>
-    </div>
+    ${logoStrip(s)}
   </div>
 </section>`;
 };
@@ -196,7 +201,8 @@ R['page-hero'] = (s, c) => {
       <div class="phero__actions">${ctas}</div>
     </div>
     ${brief}
-  </div></div></section>`;
+  </div>
+  ${s.logos ? logoStrip(s) : ''}</div></section>`;
 };
 
 R.statement = (s, c) => `<section class="section statement${s.wide ? ' statement--wide' : ''}${s.checks ? ' statement--rich' : ''}"><div class="wrap">
