@@ -1,0 +1,198 @@
+{
+ "meta": {
+  "title": "Designer de produit fractionnel pour SaaS et IA | Viesigners",
+  "description": "Designer de produit, lead ou directeur du design fractionnel pour produits SaaS et IA, dès 5 heures par semaine. UX/UI senior, prix mensuel transparent, dès 3 450 $ US/mois.",
+  "h1": "Designer de produit et directeur du design fractionnel pour produits SaaS et IA"
+ },
+ "service": {
+  "name": "Design de produit fractionnel",
+  "type": "Designer de produit, lead designer de produit et directeur du design fractionnel pour produits SaaS et IA",
+  "audience": "Jeunes pousses SaaS et IA, équipes produit sans designer senior, fondateurs et responsables produit",
+  "offer": { "price": "3450", "currency": "USD", "unit": "par mois, 5 heures par semaine" }
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tagH1": true,
+   "tag": "Designer de produit et directeur du design fractionnel pour produits SaaS et IA",
+   "h1": "Un designer de produit senior dans votre équipe, *sans embauche à temps plein*",
+   "lead": "Obtenez un designer de produit, un lead ou un directeur du design quelques heures par semaine. On audite votre produit, on priorise ce qui freine l'activation et la rétention, et on conçoit les améliorations avec votre équipe, semaine après semaine.",
+   "ctas": [
+    { "label": "Estimer votre prix mensuel", "to": "#tarifs", "style": "violet" },
+    { "label": "Réserver un appel", "to": "@contact", "style": "ghost" }
+   ],
+   "brief": [
+    { "b": "Pour qui :", "t": "les produits SaaS et IA qui ont une équipe, mais pas de designer senior, ou une équipe de design qui a besoin d'un lead." },
+    { "b": "Fonctionnement :", "t": "dès 5 heures par semaine, facturé au mois. Vous choisissez le rôle et les heures, et vous les ajustez selon votre croissance." },
+    { "b": "Prix :", "t": "dès 3 450 $ US/mois (designer de produit, 5 h/semaine). Le taux baisse quand le nombre d'heures augmente." },
+    { "b": "Preuve :", "t": "6 ans intégrés à une entreprise SaaS B2B en IA, 10 heures par semaine. Un projet de 90 jours : +31 % de revenus récurrents, −24 % d'attrition." }
+   ]
+  },
+  {
+   "type": "statement",
+   "wide": true,
+   "text": "La plupart des équipes SaaS n'ont pas besoin d'un designer à temps plein pour améliorer leur produit. Elles ont besoin d'un *jugement senior, chaque semaine*, sur ce qu'il faut améliorer ensuite.",
+   "prose": [
+    "Un designer de produit fractionnel travaille dans votre équipe comme le ferait un employé : mêmes outils, mêmes rituels, même carnet de produit. La différence, c'est l'engagement. Vous achetez les heures dont vous avez besoin, à un niveau senior, sans recruter, intégrer ni gérer une embauche à temps plein.",
+    "Notre travail commence par un audit de votre produit et de ses données, puis devient un rythme hebdomadaire ou mensuel d'améliorations : intégration des utilisateurs, activation, pages de prix, parcours clés et système de design qui garde le tout cohérent."
+   ]
+  },
+  {
+   "type": "deliverables",
+   "id": "roles",
+   "h2": "Trois rôles, *une même façon de travailler*",
+   "lead": "Le rôle, c'est le niveau de séniorité. Les heures, c'est le volume. Vous choisissez les deux.",
+   "items": [
+    { "h": "Designer de produit", "p": "Le design concret : fonctionnalités, parcours, prototypes, tests d'utilisabilité et entretien du système de design, dans vos sprints." },
+    { "h": "Lead designer de produit", "p": "Tout ce qui précède, plus la direction du design pour votre équipe produit : priorités, revues de design et qualité d'une fonctionnalité à l'autre." },
+    { "h": "Directeur du design", "p": "Stratégie produit et UX avec la direction : feuille de route, plan de recherche, revues du travail de votre équipe et aide au recrutement de designers." },
+    { "h": "Audit et carnet priorisé", "p": "Chaque mandat commence par un audit du produit et de ses données, pour que les premières semaines servent aux améliorations les plus payantes." },
+    { "h": "Rythme hebdomadaire", "p": "Des livraisons, des revues et des décisions régulières, dans vos outils (Figma, Jira, Linear, Slack ou Teams)." },
+    { "h": "Bilan mensuel", "p": "Ce qui a été livré, ce que ça a changé dans les chiffres et ce qui vient ensuite. Vous ajustez le rôle ou les heures quand vous voulez." }
+   ]
+  },
+  {
+   "type": "price-calc",
+   "id": "tarifs",
+   "label": "Tarifs",
+   "h2": "Estimez votre *prix mensuel*",
+   "lead": "Choisissez un rôle et le nombre d'heures par semaine. Plus vous réservez d'heures, plus le taux horaire baisse.",
+   "currency": "$ US",
+   "weeks": 4.33,
+   "hours": [5, 10, 15, 20],
+   "discounts": { "10": 10, "15": 20, "20": 25 },
+   "roles": [
+    { "id": "designer", "label": "Designer de produit", "rate": 160, "desc": "Le design concret, dans vos sprints." },
+    { "id": "lead", "label": "Lead designer de produit", "rate": 180, "desc": "La direction et la qualité du design dans tout votre produit." },
+    { "id": "head", "label": "Directeur du design", "rate": 200, "desc": "La stratégie produit et UX avec la direction." }
+   ],
+   "labels": {
+    "role": "Rôle",
+    "hours": "Heures par semaine",
+    "monthly": "Prix mensuel estimé",
+    "perHour": "/h",
+    "perWeek": "/sem.",
+    "perMonth": "/mois",
+    "noDiscount": "taux de base",
+    "table": "Prix mensuel selon le rôle et les heures par semaine (dollars américains, 4,33 semaines par mois)"
+   },
+   "note": "Prix en dollars américains, avant taxes, arrondis aux 50 $ près. Les clients canadiens peuvent être facturés en dollars canadiens. Minimum de 5 heures par semaine; le rôle et les heures peuvent changer d'un mois à l'autre.",
+   "cta": { "label": "Réserver un appel", "to": "@contact" }
+  },
+  {
+   "type": "process",
+   "h2": "Comment un mandat fractionnel *commence*",
+   "steps": [
+    { "h": "Appel de découverte", "p": "On regarde votre produit, votre équipe et vos objectifs, et on s'entend sur le rôle et les heures.", "out": "Résultat : une portée et une date de début claires." },
+    { "h": "Audit et carnet", "p": "On analyse le produit, ses données et les commentaires des utilisateurs, et on classe les améliorations selon leur impact.", "out": "Livrable : un carnet UX priorisé." },
+    { "h": "Livraison hebdomadaire", "p": "On conçoit, teste et transmet les améliorations dans vos sprints, avec vos développeurs.", "out": "Livrable : des améliorations livrées chaque semaine." },
+    { "h": "Bilan mensuel", "p": "On mesure ce qui a changé et on planifie le mois suivant. Vous pouvez ajuster le rôle ou les heures.", "out": "Livrable : résultats et prochaines priorités." }
+   ]
+  },
+  {
+   "type": "statement",
+   "text": "Besoin d'aller plus vite? *Deux designers seniors en parallèle.*",
+   "prose": [
+    "Pour une refonte majeure ou une échéance serrée, on peut mettre les deux fondateurs sur votre produit en même temps, avec notre méthode de refonte UI accélérée : un designer sur la recherche et la structure, l'autre sur l'interface et le système de design, en parallèle.",
+    "Cette option dépend de nos disponibilités. Parlez-en lors de l'appel de découverte."
+   ]
+  },
+  {
+   "type": "compare",
+   "h2": "Embauche à temps plein ou *designer fractionnel?*",
+   "before": {
+    "h": "Embauche à temps plein ou grande agence",
+    "items": [
+     "Des mois de recrutement et d'intégration avant la première amélioration",
+     "Un salaire complet, même les semaines où il y a peu de design à faire",
+     "Des projets d'agence qui se terminent, et l'expertise repart avec eux",
+     "Des profils juniors derrière des noms seniors"
+    ]
+   },
+   "after": {
+    "h": "Designer fractionnel Viesigners",
+    "items": [
+     "Démarrage en quelques jours, pas en quelques mois",
+     "Seulement les heures dont vous avez besoin, dès 5 par semaine",
+     "Un partenaire à long terme qui connaît votre produit et vos utilisateurs",
+     "Vous travaillez directement avec des designers seniors, les fondateurs"
+    ]
+   }
+  },
+  {
+   "type": "casecard",
+   "to": "cas-saas",
+   "tag": "Étude de cas",
+   "n": "+31 %",
+   "nt": "de revenus récurrents en 90 jours pour une entreprise SaaS B2B en IA, avec −24 % d'attrition",
+   "h": "6 ans intégrés à une entreprise SaaS B2B en IA",
+   "p": "10 heures par semaine, année après année. Dans un projet de 90 jours, une proposition de valeur réécrite, un délai de valeur plus court et une page de fonctionnalité repensée ont fait croître les revenus récurrents de 31 % et baisser l'attrition de 24 %.",
+   "cta": "Lire l'étude de cas"
+  },
+  {
+   "type": "fit",
+   "h2": "Un designer fractionnel, *est-ce pour vous?*",
+   "yes": {
+    "h": "Un bon choix si",
+    "items": [
+     "Vous avez un produit SaaS ou IA en ligne et une équipe de développement",
+     "Personne dans l'équipe ne porte l'UX à un niveau senior",
+     "L'activation, la rétention ou la conversion comptent plus que les nouvelles fonctionnalités",
+     "Vous cherchez un partenaire à long terme, pas un projet ponctuel"
+    ]
+   },
+   "no": {
+    "h": "Probablement pas si",
+    "items": [
+     "Vous avez besoin d'un designer à temps plein, sur place",
+     "Vous avez seulement besoin d'une refonte ponctuelle : voyez nos projets de design de produit",
+     "Vous n'avez pas de développeurs pour livrer les améliorations",
+     "Vous avez besoin de moins de 5 heures de design par semaine"
+    ]
+   }
+  },
+  {
+   "type": "faq",
+   "h2": "Questions fréquentes sur le *design de produit fractionnel*",
+   "open": true
+  },
+  {
+   "type": "related",
+   "h2": "Vous aimerez *aussi*",
+   "cta": "Voir le service",
+   "items": ["audit", "design-produit", "tarifs"]
+  },
+  {
+   "type": "cta-final",
+   "h2": "Prêt à ajouter un *designer senior* à votre équipe?",
+   "p": "Parlez-nous de votre produit. On vous proposera le rôle et les heures qui conviennent.",
+   "cta": "Réserver un appel"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Qu'est-ce qu'un designer de produit fractionnel?",
+   "a": ["Un designer de produit fractionnel est un designer senior qui travaille à temps partiel dans votre équipe, généralement de quelques heures à quelques jours par semaine, de façon continue. Vous obtenez une expertise UX/UI senior sans le coût ni l'engagement d'une embauche à temps plein."]
+  },
+  {
+   "q": "Combien coûte un designer de produit fractionnel?",
+   "a": ["Chez Viesigners, à partir de 3 450 $ US par mois pour un designer de produit à 5 heures par semaine. Le lead designer de produit commence à environ 3 900 $ US et le directeur du design à environ 4 350 $ US par mois. Le taux horaire baisse de 10 % à 10 heures par semaine, de 20 % à 15 heures et de 25 % à 20 heures. Utilisez le calculateur ci-dessus pour une estimation précise."]
+  },
+  {
+   "q": "Quelle est la différence entre un designer de produit fractionnel et un directeur du design fractionnel?",
+   "a": ["Le designer de produit fait le travail de design concret : parcours, écrans, prototypes et tests. Le directeur du design définit la stratégie produit et UX avec la direction, révise le travail de l'équipe et aide à recruter des designers. Les deux peuvent être réservés pour le même nombre d'heures; c'est le rôle qui fixe le taux."]
+  },
+  {
+   "q": "Quel est l'engagement minimum?",
+   "a": ["5 heures par semaine, facturées au mois. Vous pouvez changer le rôle ou le nombre d'heures d'un mois à l'autre."]
+  },
+  {
+   "q": "Travaillez-vous avec nos développeurs et nos outils?",
+   "a": ["Oui. On travaille dans vos outils et vos rituels (Figma, Jira ou Linear, Slack ou Teams, revues de sprint) et on livre des maquettes que vos développeurs peuvent intégrer."]
+  },
+  {
+   "q": "Travaillez-vous avec des équipes à l'extérieur du Canada?",
+   "a": ["Oui. Nous sommes à Québec et à Vancouver et travaillons en français et en anglais avec des équipes au Canada, aux États-Unis et en Europe."]
+  }
+ ]
+}

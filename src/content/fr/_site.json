@@ -24,6 +24,10 @@
   "terms": "Conditions générales",
   "marque-blanche": "Partenaire en marque blanche",
   "copywriting": "Copywriting",
+  "fractional": "Design de produit fractionnel",
+  "audit": "Audit UX/CRO",
+  "tarifs": "Tarifs",
+  "jouets-jeux": "Jouets, jeux et divertissement",
   "cebg": "Charles-Erick BG"
  },
  "navSub": {
@@ -34,7 +38,11 @@
   "medias-sociaux": "Présence sociale qui nourrit votre entonnoir",
   "seo-geo": "Soyez trouvé sur Google et cité par les IA",
   "coaching": "Offres et lancements pour entrepreneurs de services",
-  "copywriting": "Des mots qui transforment les visiteurs en clients"
+  "copywriting": "Des mots qui transforment les visiteurs en clients",
+  "fractional": "Un designer senior dans votre équipe, quelques heures par semaine",
+  "audit": "Un audit à prix fixe de ce qui vous coûte des conversions",
+  "tarifs": "Tous les prix « à partir de », par service",
+  "jouets-jeux": "UX/UI pour marques de jouets, jeux et divertissement"
  },
  "brief": "En bref",
  "updated": "Mis à jour le",

@@ -1,0 +1,116 @@
+{
+ "meta": {
+  "title": "Design UX/UI pour marques de jouets, jeux et divertissement | Viesigners",
+  "description": "Design UX/UI pour marques de jouets, jeux vidéo et propriétés intellectuelles du divertissement : boutiques en ligne de jouets, interfaces de jeu, applications compagnons et expériences RA/RV.",
+  "h1": "Design UX/UI pour marques de jouets, jeux et divertissement"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tagH1": true,
+   "tag": "Design UX/UI pour marques de jouets, jeux et divertissement",
+   "h1": "Des expériences numériques pour les marques que *les enfants et les fans adorent*",
+   "lead": "Boutiques en ligne de jouets, interfaces de jeu, applications compagnons et expériences RA/RV : nos fondateurs en ont conçu pour certaines des marques de jouets et de divertissement les plus connues, et mettent cette expérience au service de vos produits.",
+   "ctas": [
+    { "label": "Parler de votre projet", "to": "@contact", "style": "violet" },
+    { "label": "Voir les réalisations", "to": "#realisations", "style": "ghost" }
+   ],
+   "brief": [
+    { "b": "Pour qui :", "t": "fabricants de jouets, studios de jeux, détenteurs de licences et les agences qui les servent." },
+    { "b": "Ce qu'on conçoit :", "t": "boutiques en ligne de jouets, interfaces de jeu, applications compagnons, expériences RA/RV et sites de marque." },
+    { "b": "Expérience :", "t": "Disney, Marvel, Warner Bros., des marques d'Hasbro, Spin Master, Wizards of the Coast et Ubisoft, au fil de nos carrières." },
+    { "b": "Comment :", "t": "en projet, comme designer fractionnel dans votre équipe, ou en marque blanche pour votre agence." }
+   ]
+  },
+  {
+   "type": "statement",
+   "wide": true,
+   "text": "Concevoir pour le jeu est un métier à part. Il faut *émerveiller un enfant, rassurer un parent et respecter la marque*, sur le même écran.",
+   "prose": [
+    "Les produits de jouets et de divertissement s'adressent à des publics que la plupart des équipes UX ne côtoient jamais en même temps : des enfants qui explorent en touchant à tout, des parents qui décident et paient, des collectionneurs et des fans qui connaissent l'univers mieux que quiconque, et des détenteurs de licences qui protègent chaque détail de la marque.",
+    "Nos fondateurs ont passé des années à concevoir pour ce mélange, en agence et à l'interne, sur des produits pour Disney, Marvel, Warner Bros., des marques d'Hasbro comme Transformers, Nerf, Monopoly et Play-Doh, Spin Master, Wizards of the Coast et Ubisoft."
+   ]
+  },
+  {
+   "type": "deliverables",
+   "id": "formats",
+   "h2": "Ce qu'on *conçoit*",
+   "items": [
+    { "h": "Boutiques en ligne de jouets", "p": "Boutiques et sites de marque qui rendent les produits faciles à trouver, à comparer et à acheter, pour les parents comme pour les collectionneurs." },
+    { "h": "Interfaces de jeu", "p": "Menus, interfaces en jeu, intégration des joueurs et parcours pour les jeux mobiles, sur console et sur le Web." },
+    { "h": "Applications compagnons", "p": "Des applications qui prolongent un jouet ou un jeu : instructions de montage, commandes, collections et contenu." },
+    { "h": "Expériences RA/RV", "p": "Des interfaces de réalité augmentée et virtuelle, où l'expérience doit sembler naturelle dès la première seconde." },
+    { "h": "Expériences sous licence", "p": "Des produits numériques bâtis autour d'un univers existant, dans le respect des normes du détenteur de la licence." },
+    { "h": "UX pour enfants et familles", "p": "Des parcours que les enfants comprennent et auxquels les parents font confiance, conçus en tenant compte des règles de protection des données des enfants (comme la COPPA)." }
+   ]
+  },
+  {
+   "type": "work",
+   "id": "realisations",
+   "h2": "Projets de jouets, de jeux et de *divertissement*",
+   "lead": "Une sélection de produits sur lesquels nos fondateurs ont travaillé au fil de leurs carrières, en agence et à l'interne.",
+   "items": [
+    { "img": "assassins-creed.jpg", "alt": "Plateforme en ligne conçue pour Assassin's Creed Odyssey", "title": "Assassin's Creed Odyssey", "result": "Plateforme en ligne — Ubisoft" },
+    { "img": "spin-master.jpg", "alt": "Interface d'application conçue pour Spin Master", "title": "Spin Master", "result": "Interface d'application" },
+    { "img": "marvel.jpg", "alt": "Interface de jeu conçue pour la compagnie Marvel", "title": "Marvel", "result": "Interface de jeu" },
+    { "img": "warner-bros.jpg", "alt": "Interface de jeu vidéo conçue pour la compagnie Warner Bros.", "title": "Warner Bros.", "result": "Interface de jeu vidéo" },
+    { "img": "wizards.jpg", "alt": "Site web conçu pour la marque Wizards of the Coast", "title": "Wizards of the Coast", "result": "Site web" }
+   ]
+  },
+  {
+   "type": "fit",
+   "h2": "Avec qui *on travaille*",
+   "yes": {
+    "h": "Un bon choix si vous êtes",
+    "items": [
+     "Un fabricant de jouets qui lance ou améliore une boutique en ligne ou une application",
+     "Un studio de jeux qui a besoin d'UX/UI senior pour ses menus, l'intégration des joueurs ou la monétisation",
+     "Un détenteur de licence ou une équipe de marque qui bâtit une expérience numérique autour de son univers",
+     "Une agence au service de marques de jouets ou de divertissement qui a besoin d'UX/UI en marque blanche"
+    ]
+   },
+   "no": {
+    "h": "Probablement pas si",
+    "items": [
+     "Vous avez besoin d'illustration de jeu, de modélisation 3D ou d'animation : on conçoit l'expérience et l'interface",
+     "Vous avez besoin d'une équipe complète de développement de jeu"
+    ]
+   }
+  },
+  {
+   "type": "faq",
+   "h2": "Questions fréquentes sur l'UX pour *jouets et jeux*",
+   "open": true
+  },
+  {
+   "type": "related",
+   "h2": "Comment *travailler avec nous*",
+   "cta": "Voir le service",
+   "items": ["fractional", "design-produit", "sites-web", "marque-blanche"]
+  },
+  {
+   "type": "cta-final",
+   "h2": "Vous créez quelque chose que *les enfants et les fans vont adorer?*",
+   "p": "Parlez-nous de votre produit, de votre marque et de votre public. On vous dira comment on peut vous aider.",
+   "cta": "Parler de votre projet"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Qu'est-ce qui distingue le design UX pour les jouets et les jeux?",
+   "a": ["Les produits de jouets et de jeux servent plusieurs publics à la fois : les enfants qui jouent, les parents qui achètent et décident, les fans qui connaissent l'univers, et les propriétaires de la marque qui la protègent. Le design doit être amusant et intuitif pour les premiers, tout en restant clair, digne de confiance et fidèle à la marque pour les autres."]
+  },
+  {
+   "q": "Avez-vous travaillé avec de grandes marques de jouets et de divertissement?",
+   "a": ["Oui. Au fil de leurs carrières, en agence et à l'interne, nos fondateurs ont travaillé sur des produits numériques pour Disney, Marvel, Warner Bros., des marques d'Hasbro, Spin Master, Wizards of the Coast et Ubisoft."]
+  },
+  {
+   "q": "Tenez-vous compte des règles de protection des données des enfants?",
+   "a": ["Oui. On conçoit les expériences pour enfants et familles en tenant compte des règles de protection des données des enfants, comme la COPPA aux États-Unis, par exemple pour l'inscription, la collecte de données et le consentement parental. La conformité finale reste une validation juridique de votre côté."]
+  },
+  {
+   "q": "Pouvez-vous travailler en marque blanche pour notre agence?",
+   "a": ["Oui. On travaille comme partenaire UX/UI en marque blanche pour les agences au service de marques de jouets, de jeux et de divertissement."]
+  }
+ ]
+}

@@ -286,4 +286,41 @@ document.addEventListener('click', (e) => {
     li.addEventListener('focusin', fit);
     li.addEventListener('keydown', (e) => { if (e.key === 'Escape') li.classList.add('tip-off'); });
   });
+
+  /* price calculator: role × hours per week → monthly estimate (the full table stays in the HTML) */
+  d.querySelectorAll('[data-pcalc]').forEach((box) => {
+    const cfg = JSON.parse(box.dataset.pcalc), range = box.querySelector('input[type=range]'), hv = box.querySelector('#pcalc-hv');
+    const fmtN = (n) => (cfg.lang === 'fr' ? `${n.toLocaleString('fr-CA')} ${cfg.currency}` : `${cfg.currency}${n.toLocaleString('en-CA')}`);
+    const out = (k) => box.querySelector(`[data-out="${k}"]`), noDisc = out('disc').textContent;
+    const update = () => {
+      const role = cfg.roles.find((r) => r.id === box.querySelector('input[name="pcalc-role"]:checked').value), h = cfg.hours[+range.value], disc = cfg.discounts[h] || 0;
+      const rate = role.rate * (1 - disc / 100);
+      out('month').textContent = fmtN(Math.round((rate * h * cfg.weeks) / 50) * 50);
+      out('rate').textContent = fmtN(Math.round(rate));
+      out('disc').textContent = disc ? `−${disc}%` : noDisc;
+      hv.textContent = h; range.setAttribute('aria-valuetext', `${h} h`);
+    };
+    box.addEventListener('input', update); box.addEventListener('change', update);
+  });
+
+  /* pricing tabs: show one panel at a time, follow #anchors, arrow keys move between tabs */
+  d.querySelectorAll('[data-ptabs]').forEach((box) => {
+    const tabs = [...box.querySelectorAll('[role=tab]')], panels = [...box.querySelectorAll('[role=tabpanel]')];
+    box.classList.add('is-tabbed');
+    const show = (id, focus) => {
+      const i = Math.max(0, panels.findIndex((p) => p.id === id));
+      tabs.forEach((t, k) => { t.setAttribute('aria-selected', k === i); t.tabIndex = k === i ? 0 : -1; });
+      panels.forEach((p, k) => { p.hidden = k !== i; });
+      if (focus) tabs[i].focus();
+    };
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', (e) => { e.preventDefault(); show(panels[i].id); history.replaceState(history.state, '', '#' + panels[i].id); });
+      t.addEventListener('keydown', (e) => {
+        const n = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (n) { e.preventDefault(); const j = (i + n + tabs.length) % tabs.length; show(panels[j].id, true); history.replaceState(history.state, '', '#' + panels[j].id); }
+      });
+    });
+    show(decodeURIComponent(location.hash.slice(1)));
+    addEventListener('hashchange', () => show(decodeURIComponent(location.hash.slice(1))));
+  });
 })();

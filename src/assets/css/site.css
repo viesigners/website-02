@@ -1256,3 +1256,57 @@ html { scroll-padding-top: 7rem; }
 .work__go { position: absolute; right: 1.1rem; bottom: 1.15rem; display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: rgba(255, 255, 255, .1); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .35); color: rgba(255, 255, 255, .85); transition: background .2s, color .2s, box-shadow .2s, transform .3s var(--ease); }
 .work__go svg { width: .9rem; height: .9rem; }
 .work__item--link:hover .work__go, .work__item--link:focus-within .work__go { background: var(--pink); box-shadow: none; color: #fff; transform: translateX(3px); }
+
+/* ---------- price calculator (role × hours per week) ---------- */
+.pcalc { display: grid; gap: clamp(1rem, .6rem + 1.4vw, 2rem); grid-template-columns: 1fr; border-radius: var(--r-lg); padding: clamp(1.4rem, 1rem + 1.6vw, 2.6rem); background: var(--card); }
+@media (min-width: 900px) { .pcalc { grid-template-columns: 1.4fr 1fr; align-items: stretch; } }
+.pcalc__roles { display: grid; gap: .6rem; border: 0; padding: 0; margin: 0 0 1.6rem; }
+.pcalc__roles legend, .pcalc__hours label, .pcalc__lbl { font-family: var(--f-mono); font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; color: var(--text-3); margin-bottom: .8rem; }
+.pcalc__role { display: grid; grid-template-columns: 1.4rem 1fr; gap: .8rem; align-items: start; padding: .9rem 1rem; border-radius: var(--r-md); box-shadow: inset 0 0 0 1px var(--line-2); cursor: pointer; transition: box-shadow .2s, background .2s; }
+.pcalc__role:has(input:checked) { box-shadow: inset 0 0 0 2px var(--pink); background: rgba(255, 72, 139, .06); }
+.pcalc__role input { accent-color: var(--pink); width: 1.1rem; height: 1.1rem; margin-top: .2rem; }
+.pcalc__role b { display: block; font-weight: 500; }
+.pcalc__role small { display: block; color: var(--text-2); font-size: .9rem; line-height: 1.45; margin-top: .2rem; }
+.pcalc__hours input[type=range] { width: 100%; accent-color: var(--pink); margin-top: .4rem; }
+.pcalc__hours output { color: var(--text); font-weight: 600; }
+.pcalc__ticks { display: flex; justify-content: space-between; font-size: .8rem; color: var(--text-3); margin-top: .3rem; }
+.pcalc__out { display: flex; flex-direction: column; justify-content: center; gap: .6rem; border-radius: var(--r-lg); padding: clamp(1.4rem, 1rem + 1.4vw, 2.2rem); background: var(--navy); color: #fff; }
+.pcalc__out .pcalc__lbl { color: rgba(219, 229, 237, .78); margin: 0; }
+.pcalc__price { font-size: clamp(2.2rem, 1.4rem + 3vw, 3.6rem); font-weight: 300; letter-spacing: -0.03em; line-height: 1.05; }
+.pcalc__sub { color: rgba(219, 229, 237, .86); font-size: .95rem; }
+.pcalc__out .pill { align-self: flex-start; margin-top: .8rem; }
+.ptable { margin-top: clamp(1.4rem, 1rem + 1.4vw, 2.4rem); overflow-x: auto; }
+.ptable table { width: 100%; border-collapse: collapse; min-width: 34rem; font-size: .95rem; }
+.ptable caption { text-align: left; font-family: var(--f-mono); font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; color: var(--text-3); padding-bottom: .8rem; }
+.ptable th, .ptable td { padding: .8rem .7rem; border-top: 1px solid var(--line); text-align: left; vertical-align: top; }
+.ptable thead th { font-weight: 500; color: var(--text-2); border-top: 0; }
+.ptable th small, .ptable thead small { display: block; font-weight: 400; color: var(--text-3); font-size: .8rem; }
+.ptable td { color: var(--text-2); white-space: nowrap; }
+.ptable__note { margin-top: 1rem; color: var(--text-3); font-size: .9rem; max-width: var(--measure); }
+
+/* ---------- pricing tabs (all panels in the HTML; JS shows one) ---------- */
+.ptabs__list { display: none; }
+.ptabs.is-tabbed .ptabs__list { display: flex; gap: .5rem; flex-wrap: nowrap; overflow-x: auto; padding-bottom: .4rem; margin-bottom: 1.4rem; scrollbar-width: thin; }
+.ptabs__tab { flex: none; padding: .7rem 1.1rem; border-radius: var(--r-sm); box-shadow: inset 0 0 0 1px var(--line-2); font-family: var(--f-mono); font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; color: var(--text-2); transition: background .2s, color .2s, box-shadow .2s; }
+.ptabs__tab:hover { color: var(--text); box-shadow: inset 0 0 0 1px var(--pink); }
+.ptabs__tab[aria-selected="true"] { background: var(--pink); color: var(--charcoal); box-shadow: none; }
+.ptabs__panel { border-radius: var(--r-lg); padding: clamp(1.4rem, 1rem + 1.8vw, 2.8rem); background: var(--card); }
+.ptabs__panel + .ptabs__panel { margin-top: 1.2rem; }
+.ptabs.is-tabbed .ptabs__panel + .ptabs__panel { margin-top: 0; }
+.ptabs__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 1rem 2rem; margin-bottom: 1.2rem; }
+.ptabs__head h3 { font-size: clamp(1.4rem, 1rem + 1.4vw, 2.1rem); font-weight: 300; letter-spacing: -0.028em; max-width: 30ch; }
+.ptabs__from { display: flex; flex-direction: column; text-align: right; }
+.ptabs__from span { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: var(--text-3); }
+.ptabs__from b { font-size: clamp(1.6rem, 1.1rem + 1.6vw, 2.4rem); font-weight: 400; letter-spacing: -0.02em; color: var(--accent-text); }
+.ptabs__from small { color: var(--text-3); font-size: .85rem; }
+.ptabs__lead { color: var(--text-2); max-width: var(--measure); margin-bottom: 1.2rem; }
+.ptabs__plans { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); margin-bottom: 1.2rem; }
+.ptabs__plan { border-radius: var(--r-md); padding: 1.2rem 1.3rem; box-shadow: inset 0 0 0 1px var(--line-2); }
+.ptabs__plan h4 { font-weight: 500; margin-bottom: .3rem; }
+.ptabs__price { font-size: 1.3rem; color: var(--accent-text); margin-bottom: .5rem; }
+.ptabs__plan p:not(.ptabs__price) { color: var(--text-2); font-size: .95rem; }
+.ptabs__plan ul, .ptabs__inc { margin-top: .6rem; }
+.ptabs__plan li, .ptabs__inc li { display: grid; grid-template-columns: 1.4rem 1fr; gap: .6rem; padding-block: .45rem; color: var(--text-2); line-height: 1.45; }
+.ptabs__plan li svg, .ptabs__inc li svg { width: 1.1rem; height: 1.1rem; margin-top: .15rem; color: #6ee7b7; }
+.ptabs__note { margin-top: 1rem; color: var(--text-3); font-size: .9rem; max-width: var(--measure); }
+.ptabs__ctas { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.6rem; }

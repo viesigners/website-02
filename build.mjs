@@ -84,6 +84,10 @@ const ROUTES = {
   'marque-blanche': { fr: 'partenaire-marque-blanche', en: 'white-label-partner' },
   privacy: { fr: 'politique-de-confidentialite', en: 'privacy-policy' },
   terms: { fr: 'conditions-generales', en: 'terms-of-use' },
+  fractional: { fr: 'design-produit-fractionnel', en: 'fractional-product-design' }, // ongoing product design, priced by role × hours (slider)
+  audit: { fr: 'audit-ux-cro', en: 'ux-cro-audit' }, // fixed-price entry offer
+  tarifs: { fr: 'tarifs', en: 'pricing' }, // every "from" price, one tab per service
+  'jouets-jeux': { fr: 'secteurs/jouets-jeux-divertissement', en: 'industries/toys-games-entertainment' }, // industry page (toys, games, entertainment)
   merci: { fr: 'merci', en: 'thank-you' }, // shown after a form submission: noindex, never linked
   actualites: BLOG, // blog: articles + case studies, one filter page per category (the key stays neutral; the name lives in _site.json nav)
 };
@@ -103,7 +107,7 @@ const catSlug = (key, lang) => RES_CATS[lang]?.find((k) => k.key === key)?.slug 
    Edit "hidden" in src/config.json to bring them back (empty list = everything visible). */
 const HIDDEN = new Set(CFG.hidden || []);
 const isHidden = (key) => (key === 'post' || key.startsWith('post:') ? HIDDEN.has('actualites') || HIDDEN.has(key) : HIDDEN.has(key));
-const SERVICE_KEYS = ['sites-web', 'landing-pages', 'design-produit', 'coaching', 'publicite', 'medias-sociaux', 'seo-geo', 'copywriting'];
+const SERVICE_KEYS = ['sites-web', 'landing-pages', 'design-produit', 'fractional', 'audit', 'coaching', 'publicite', 'medias-sociaux', 'seo-geo', 'copywriting'];
 const MAIN_SERVICE_KEYS = ['sites-web', 'landing-pages', 'design-produit', 'coaching']; // menu and footer stay short: the rest lives on the services hub
 const POSTS = { fr: [], en: [] };            // filled at load
 let CURRENT_POST_SLUGS = {};                 // key -> {fr,en}
@@ -714,6 +718,52 @@ R.contact = (s, c) => {
 
 R['rich-text'] = (s, c) => `<section class="section section--tight"><div class="wrap"><div class="prose">${s.p.map((p) => `<p>${fmt(p, c.lang)}</p>`).join('')}</div></div></section>`;
 
+/* price calculator: role (seniority) × hours per week → monthly price. Every combination is computed here and
+   printed in a plain table (readable without JS, by search engines and AI); site.js turns the controls into a live estimate. */
+const calcMonthly = (s, role, h) => Math.round((role.rate * (1 - (s.discounts[h] || 0) / 100) * h * (s.weeks || 4.33)) / 50) * 50;
+const money = (n, s, lang) => (lang === 'fr' ? `${n.toLocaleString('fr-CA')} ${s.currency}` : `${s.currency}${n.toLocaleString('en-CA')}`);
+R['price-calc'] = (s, c) => {
+  const { lang } = c;
+  const rate = (r, h) => Math.round(r.rate * (1 - (s.discounts[h] || 0) / 100));
+  const data = { roles: s.roles.map((r) => ({ id: r.id, rate: r.rate })), hours: s.hours, discounts: s.discounts, weeks: s.weeks || 4.33, currency: s.currency, lang };
+  const r0 = s.roles[0], h0 = s.hours[0];
+  return `<section class="section"${s.id ? ` id="${s.id}"` : ''}><div class="wrap">
+  ${secHead(s, c, 'pricing', { label: s.label })}
+  <div class="pcalc rv" data-pcalc='${esc(JSON.stringify(data))}'>
+    <div class="pcalc__controls">
+      <fieldset class="pcalc__roles"><legend>${esc(s.labels.role)}</legend>${s.roles.map((r, i) => `<label class="pcalc__role"><input type="radio" name="pcalc-role" value="${r.id}"${i === 0 ? ' checked' : ''}><span><b>${esc(r.label)}</b><small>${fmt(r.desc, lang)}</small></span></label>`).join('')}</fieldset>
+      <div class="pcalc__hours"><label for="pcalc-h">${esc(s.labels.hours)}: <output id="pcalc-hv">${h0}</output> h</label>
+        <input id="pcalc-h" type="range" min="0" max="${s.hours.length - 1}" step="1" value="0" list="pcalc-ticks" aria-valuetext="${h0} h"><datalist id="pcalc-ticks">${s.hours.map((h, i) => `<option value="${i}" label="${h} h"></option>`).join('')}</datalist>
+        <div class="pcalc__ticks" aria-hidden="true">${s.hours.map((h) => `<span>${h} h</span>`).join('')}</div></div>
+    </div>
+    <div class="pcalc__out" aria-live="polite"><span class="pcalc__lbl">${esc(s.labels.monthly)}</span><b class="pcalc__price" data-out="month">${money(calcMonthly(s, r0, h0), s, lang)}</b><span class="pcalc__sub"><span data-out="rate">${money(rate(r0, h0), s, lang)}</span>${esc(s.labels.perHour)} · <span data-out="disc">${s.discounts[h0] ? '−' + s.discounts[h0] + '%' : esc(s.labels.noDiscount)}</span></span>${s.cta ? `<a class="pill pill--violet" href="${url(s.cta.to.slice(1), lang)}">${esc(s.cta.label)}</a>` : ''}</div>
+  </div>
+  <div class="ptable rv"><table><caption>${esc(s.labels.table)}</caption><thead><tr><th scope="col">${esc(s.labels.role)}</th>${s.hours.map((h) => `<th scope="col">${h} h${esc(s.labels.perWeek)}${s.discounts[h] ? ` <small>−${s.discounts[h]}%</small>` : ''}</th>`).join('')}</tr></thead>
+  <tbody>${s.roles.map((r) => `<tr><th scope="row">${esc(r.label)} <small>${money(r.rate, s, lang)}${esc(s.labels.perHour)}</small></th>${s.hours.map((h) => `<td>${money(calcMonthly(s, r, h), s, lang)}${esc(s.labels.perMonth)}</td>`).join('')}</tr>`).join('')}</tbody></table>
+  ${s.note ? `<p class="ptable__note">${fmt(s.note, lang)}</p>` : ''}</div>
+</div></section>`;
+};
+
+/* pricing tabs: one panel per service. All panels are in the HTML (search engines and AI read every price);
+   with JS only the selected one shows, and each has its own #anchor so links and ads can open the right tab. */
+R['price-tabs'] = (s, c) => {
+  const { lang } = c;
+  return `<section class="section"><div class="wrap">
+  ${secHead(s, c, 'pricing', { label: s.label })}
+  <div class="ptabs" data-ptabs>
+    <div class="ptabs__list" role="tablist" aria-label="${esc(s.h2 ? plain(s.h2) : '')}">${s.tabs.map((t, i) => `<a class="ptabs__tab" role="tab" id="tab-${t.id}" href="#${t.id}" aria-controls="${t.id}" aria-selected="${i === 0}">${esc(t.label)}</a>`).join('')}</div>
+    ${s.tabs.map((t) => `<div class="ptabs__panel" role="tabpanel" id="${t.id}" aria-labelledby="tab-${t.id}" tabindex="0">
+      <div class="ptabs__head"><h3>${fmt(t.title, lang)}</h3><p class="ptabs__from"><span>${esc(t.fromLabel || s.fromLabel)}</span><b>${esc(t.from)}</b>${t.unit ? `<small>${esc(t.unit)}</small>` : ''}</p></div>
+      ${t.lead ? `<p class="ptabs__lead">${fmt(t.lead, lang)}</p>` : ''}
+      ${t.plans ? `<div class="ptabs__plans">${t.plans.map((p) => `<div class="ptabs__plan"><h4>${fmt(p.h, lang)}</h4><p class="ptabs__price">${esc(p.price)}</p>${p.p ? `<p>${fmt(p.p, lang)}</p>` : ''}${p.items ? `<ul>${p.items.map((x) => `<li>${ico('check')}<span>${fmt(x, lang)}</span></li>`).join('')}</ul>` : ''}</div>`).join('')}</div>` : ''}
+      ${t.items ? `<ul class="ptabs__inc">${t.items.map((x) => `<li>${ico('check')}<span>${fmt(x, lang)}</span></li>`).join('')}</ul>` : ''}
+      ${t.note ? `<p class="ptabs__note">${fmt(t.note, lang)}</p>` : ''}
+      <p class="ptabs__ctas">${(t.ctas || []).filter((b) => !isHidden(b.to.slice(1))).map((b, i) => `<a class="pill ${i ? 'pill--ghost' : 'pill--violet'}" href="${url(b.to.slice(1), lang)}">${esc(b.label)}</a>`).join('')}</p>
+    </div>`).join('')}
+  </div>
+</div></section>`;
+};
+
 /* ----------------------------- layout ------------------------------------- */
 const SPRITE = `<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
 <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v5.5M12 7.6v.1" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
@@ -899,6 +949,8 @@ function toMd(page, c) {
       case 'portfolio-grid': L.push(`## ${t(s.h2)}`, '', ...s.items.map((k) => `- ${k.title} — ${k.result}`), ''); break;
       case 'contact-links': L.push(`## ${t(s.h2)}`, '', `${s.p} ${CFG.phone}`, ''); break;
       case 'testimonials': L.push(`## ${t(s.h2)}`, '', ...s.items.map((x) => `> ${x.text}\n> — ${x.name}${x.role ? ', ' + x.role : ''} (${x.date})`), ''); break;
+      case 'price-calc': L.push(`## ${t(s.h2)}`, '', ...(s.lead ? [t(s.lead), ''] : []), `| ${s.labels.role} | ${s.hours.map((h) => `${h} h${s.labels.perWeek}`).join(' | ')} |`, `|${['', ...s.hours].map(() => ' --- |').join('')}`, ...s.roles.map((r) => `| ${r.label} (${money(r.rate, s, lang)}${s.labels.perHour}) | ${s.hours.map((h) => money(calcMonthly(s, r, h), s, lang) + s.labels.perMonth).join(' | ')} |`), '', ...(s.note ? [t(s.note), ''] : [])); break;
+      case 'price-tabs': L.push(`## ${t(s.h2)}`, '', ...s.tabs.flatMap((x) => [`### ${t(x.title)}`, '', `${x.fromLabel || s.fromLabel} ${x.from}${x.unit ? ' ' + x.unit : ''}`, '', ...(x.lead ? [t(x.lead), ''] : []), ...(x.plans || []).flatMap((p) => [`- **${t(p.h)}** — ${p.price}${p.p ? ': ' + t(p.p) : ''}`]), ...(x.items || []).map((i) => `- ${t(i)}`), '', ...(x.note ? [t(x.note), ''] : [])])); break;
       case 'cta-final': L.push(`## ${t(s.h2)}`, '', t(s.p), ''); break;
       case 'faq': if (page.faq?.length) L.push(`## ${t(s.h2 || T.faqTitle)}`, '', ...page.faq.flatMap((f) => [`### ${t(f.q)}`, '', ...f.a.flatMap((p) => [t(p), ''])])); break;
     }
@@ -972,6 +1024,8 @@ function buildPage({ lang, key, page, post, tab }) {
       '@type': 'Service', '@id': canonical + '#service', name: page.service.name, serviceType: page.service.type, description: page.meta.description, provider: { '@id': abs('/#organization') },
       areaServed: [{ '@type': 'Country', name: 'Canada' }, { '@type': 'Place', name: 'Worldwide' }], availableChannel: { '@type': 'ServiceChannel', serviceUrl: abs(url('contact', lang)) },
       audience: { '@type': 'BusinessAudience', audienceType: page.service.audience }, mainEntityOfPage: { '@id': pageId },
+      // "from" price shown on the page: the same number in the schema (offers.price = the lowest price; unitText says per month / per audit)
+      ...(page.service.offer ? { offers: { '@type': 'Offer', url: canonical, priceCurrency: page.service.offer.currency, price: page.service.offer.price, ...(page.service.offer.unit ? { priceSpecification: { '@type': 'UnitPriceSpecification', price: page.service.offer.price, priceCurrency: page.service.offer.currency, unitText: page.service.offer.unit } } : {}), availability: 'https://schema.org/InStock' } } : {}),
     });
   }
   if (key === 'charles-erick' || key === 'jean-francois') webpage.mainEntity = { '@id': abs('/#' + key) };

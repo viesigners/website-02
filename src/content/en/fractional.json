@@ -1,0 +1,198 @@
+{
+ "meta": {
+  "title": "Fractional Product Designer & Head of Design for SaaS | Viesigners",
+  "description": "Fractional product designer, lead or head of design for SaaS and AI products, from 5 hours a week. Senior UX/UI, transparent monthly pricing, from US$3,450/month.",
+  "h1": "Fractional product designer and head of design for SaaS and AI products"
+ },
+ "service": {
+  "name": "Fractional product design",
+  "type": "Fractional product designer, lead product designer and head of design for SaaS and AI products",
+  "audience": "SaaS and AI startups, product teams without a senior designer, founders and product leaders",
+  "offer": { "price": "3450", "currency": "USD", "unit": "per month, 5 hours per week" }
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tagH1": true,
+   "tag": "Fractional product designer and head of design for SaaS and AI products",
+   "h1": "A senior product designer in your team, *without a full-time hire*",
+   "lead": "Get a senior product designer, lead or head of design a few hours a week. We audit your product, prioritize what holds back activation and retention, and design the improvements with your team, week after week.",
+   "ctas": [
+    { "label": "Estimate your monthly price", "to": "#pricing", "style": "violet" },
+    { "label": "Book an intro call", "to": "@contact", "style": "ghost" }
+   ],
+   "brief": [
+    { "b": "Who it's for:", "t": "SaaS and AI products with a team but no senior designer, or a design team that needs a lead." },
+    { "b": "How it works:", "t": "from 5 hours a week, billed monthly. Pick the role and the hours; change them as you grow." },
+    { "b": "Price:", "t": "from US$3,450/month (product designer, 5 h/week). The rate drops as weekly hours increase." },
+    { "b": "Proof:", "t": "6 years embedded with a B2B AI SaaS company, 10 hours a week. One 90-day project: +31% MRR, −24% churn." }
+   ]
+  },
+  {
+   "type": "statement",
+   "wide": true,
+   "text": "Most SaaS teams don't need a full-time designer to fix their product. They need *senior judgment, every week*, on what to improve next.",
+   "prose": [
+    "A fractional product designer works inside your team like an employee would: same tools, same rituals, same backlog. The difference is the commitment. You buy the hours you need, at a senior level, without recruiting, onboarding or managing a full-time hire.",
+    "Our work starts with an audit of your product and its numbers, then turns into a weekly or monthly cadence of improvements: onboarding, activation, pricing pages, key workflows and the design system that keeps it all consistent."
+   ]
+  },
+  {
+   "type": "deliverables",
+   "id": "roles",
+   "h2": "Three roles, *one way of working*",
+   "lead": "The role is about seniority. The hours are about volume. You choose both.",
+   "items": [
+    { "h": "Product designer", "p": "Hands-on design: features, user flows, prototypes, usability tests and design system upkeep, inside your sprints." },
+    { "h": "Lead product designer", "p": "Everything above, plus design direction for your product team: priorities, design reviews and quality across features." },
+    { "h": "Head of design", "p": "Product and UX strategy with leadership: roadmap input, research plan, design reviews of your team's work and help hiring designers." },
+    { "h": "Audit and prioritized backlog", "p": "Every engagement starts by auditing the product and its data, so the first weeks go to the improvements with the biggest impact." },
+    { "h": "Weekly cadence", "p": "A regular rhythm of design deliveries, reviews and decisions, in your tools (Figma, Jira, Linear, Slack or Teams)." },
+    { "h": "Monthly review", "p": "What shipped, what it changed in the numbers, and what comes next. You adjust the role or the hours at any time." }
+   ]
+  },
+  {
+   "type": "price-calc",
+   "id": "pricing",
+   "label": "Pricing",
+   "h2": "Estimate your *monthly price*",
+   "lead": "Pick a role and the number of hours per week. The more hours you book, the lower the hourly rate.",
+   "currency": "US$",
+   "weeks": 4.33,
+   "hours": [5, 10, 15, 20],
+   "discounts": { "10": 10, "15": 20, "20": 25 },
+   "roles": [
+    { "id": "designer", "label": "Product designer", "rate": 160, "desc": "Hands-on design inside your sprints." },
+    { "id": "lead", "label": "Lead product designer", "rate": 180, "desc": "Design direction and quality across your product." },
+    { "id": "head", "label": "Head of design", "rate": 200, "desc": "Product and UX strategy with leadership." }
+   ],
+   "labels": {
+    "role": "Role",
+    "hours": "Hours per week",
+    "monthly": "Estimated monthly price",
+    "perHour": "/h",
+    "perWeek": "/week",
+    "perMonth": "/mo",
+    "noDiscount": "base rate",
+    "table": "Monthly price by role and hours per week (US dollars, 4.33 weeks per month)"
+   },
+   "note": "Prices in US dollars, before taxes, rounded to the nearest $50. Canadian clients can be billed in CAD. Minimum 5 hours a week; the role and hours can change from one month to the next.",
+   "cta": { "label": "Book an intro call", "to": "@contact" }
+  },
+  {
+   "type": "process",
+   "h2": "How a fractional engagement *starts*",
+   "steps": [
+    { "h": "Intro call", "p": "We look at your product, your team and your goals, and agree on the role and hours.", "out": "Outcome: a clear scope and start date." },
+    { "h": "Audit and backlog", "p": "We review the product, its analytics and user feedback, and rank the improvements by impact.", "out": "Deliverable: a prioritized UX backlog." },
+    { "h": "Weekly delivery", "p": "We design, test and hand off improvements inside your sprints, with your developers.", "out": "Deliverable: shipped improvements every week." },
+    { "h": "Monthly review", "p": "We measure what changed and plan the next month. You can adjust the role or the hours.", "out": "Deliverable: results and next priorities." }
+   ]
+  },
+  {
+   "type": "statement",
+   "text": "Need to move faster? *Two senior designers in parallel.*",
+   "prose": [
+    "For a major redesign or a deadline, we can put both founders on your product at the same time, using our accelerated UI overhaul method: one designer on research and structure, the other on interface and design system, working in parallel.",
+    "This option depends on our availability. Ask about it on the intro call."
+   ]
+  },
+  {
+   "type": "compare",
+   "h2": "Full-time hire or *fractional designer?*",
+   "before": {
+    "h": "Full-time hire or large agency",
+    "items": [
+     "Months of recruiting and onboarding before the first improvement",
+     "A full salary, even in weeks with little design work",
+     "Agency projects that end, then the knowledge leaves with them",
+     "Junior profiles behind senior names"
+    ]
+   },
+   "after": {
+    "h": "Viesigners fractional designer",
+    "items": [
+     "Started in days, not months",
+     "Only the hours you need, from 5 a week",
+     "A long-term partner who knows your product and users",
+     "You work directly with senior designers, the founders"
+    ]
+   }
+  },
+  {
+   "type": "casecard",
+   "to": "cas-saas",
+   "tag": "Case study",
+   "n": "+31%",
+   "nt": "MRR in 90 days for a B2B AI SaaS company, with −24% churn",
+   "h": "6 years embedded with a B2B AI SaaS company",
+   "p": "10 hours a week, year after year. In one 90-day project, a rewritten value proposition, faster time-to-value and a redesigned feature page lifted MRR by 31% and cut churn by 24%.",
+   "cta": "Read the case study"
+  },
+  {
+   "type": "fit",
+   "h2": "Is a fractional designer *right for you?*",
+   "yes": {
+    "h": "A good fit if",
+    "items": [
+     "You have a live SaaS or AI product and a development team",
+     "Nobody on the team owns UX at a senior level",
+     "Activation, retention or conversion matter more than new features",
+     "You want a long-term partner, not a one-off project"
+    ]
+   },
+   "no": {
+    "h": "Probably not if",
+    "items": [
+     "You need a full-time, on-site designer",
+     "You only need a one-time redesign: see our product design projects",
+     "You don't have developers to ship the improvements",
+     "You need under 5 hours of design a week"
+    ]
+   }
+  },
+  {
+   "type": "faq",
+   "h2": "Frequently asked questions about *fractional product design*",
+   "open": true
+  },
+  {
+   "type": "related",
+   "h2": "You might *also like*",
+   "cta": "See the service",
+   "items": ["audit", "design-produit", "tarifs"]
+  },
+  {
+   "type": "cta-final",
+   "h2": "Ready to add a *senior designer* to your team?",
+   "p": "Tell us about your product. We'll suggest the role and the hours that fit.",
+   "cta": "Book an intro call"
+  }
+ ],
+ "faq": [
+  {
+   "q": "What is a fractional product designer?",
+   "a": ["A fractional product designer is a senior designer who works part time inside your team, usually a few hours to a few days a week, on an ongoing basis. You get senior UX/UI expertise without the cost and commitment of a full-time hire."]
+  },
+  {
+   "q": "How much does a fractional product designer cost?",
+   "a": ["At Viesigners, from US$3,450 a month for a product designer at 5 hours a week. Lead product designer starts at about US$3,900 and head of design at about US$4,350 a month. The hourly rate drops by 10% at 10 hours a week, 20% at 15 hours and 25% at 20 hours. Use the calculator above for your exact estimate."]
+  },
+  {
+   "q": "What's the difference between a fractional product designer and a fractional head of design?",
+   "a": ["A product designer does the hands-on design work: flows, screens, prototypes and tests. A head of design sets the product and UX strategy with leadership, reviews the team's work and helps hire designers. Both can be booked for the same number of hours; the role sets the rate."]
+  },
+  {
+   "q": "What is the minimum commitment?",
+   "a": ["5 hours a week, billed monthly. You can change the role or the number of hours from one month to the next."]
+  },
+  {
+   "q": "Do you work with our developers and tools?",
+   "a": ["Yes. We work inside your tools and rituals (Figma, Jira or Linear, Slack or Teams, sprint reviews) and hand off designs your developers can build."]
+  },
+  {
+   "q": "Do you work with teams outside Canada?",
+   "a": ["Yes. We're based in Vancouver and Quebec City and work in English and French with teams in the United States, Canada and Europe."]
+  }
+ ]
+}

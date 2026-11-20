@@ -1,0 +1,123 @@
+{
+ "meta": {
+  "title": "Audit UX/CRO à prix fixe pour sites web et SaaS | Viesigners",
+  "description": "Un audit UX et conversion (CRO) à prix fixe de votre site web, landing page ou produit SaaS : ce qui vous coûte des clients, classé par impact, avec un plan d'action clair.",
+  "h1": "Audit UX/CRO à prix fixe pour sites web, landing pages et produits SaaS"
+ },
+ "service": {
+  "name": "Audit UX/CRO",
+  "type": "Audit UX et audit d'optimisation du taux de conversion (CRO) à prix fixe",
+  "audience": "Entreprises de services, commerce en ligne, SaaS et applications"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tagH1": true,
+   "tag": "Audit UX/CRO à prix fixe pour sites web, landing pages et produits SaaS",
+   "h1": "Découvrez exactement ce qui *vous coûte des clients*",
+   "lead": "Des experts seniors en UX et en conversion analysent votre site web, votre landing page ou votre produit, trouvent les frictions qui empêchent les visiteurs d'acheter ou de s'inscrire, et classent chaque correctif selon son impact. Un prix fixe, sans surprise.",
+   "ctas": [
+    { "label": "Commander un audit", "to": "@contact", "style": "violet" },
+    { "label": "Voir tous les tarifs", "to": "@tarifs", "style": "ghost" }
+   ],
+   "brief": [
+    { "b": "Pour qui :", "t": "les entreprises qui ont du trafic, mais pas assez de demandes, de ventes ou d'inscriptions." },
+    { "b": "Vous recevez :", "t": "un plan d'action priorisé, des écrans annotés et un appel de bilan avec les fondateurs." },
+    { "b": "Prix :", "t": "[PRIX À CONFIRMER], fixe, convenu avant de commencer." },
+    { "b": "Ensuite :", "t": "vous corrigez vous-mêmes, ou on s'en charge (projet ou mandat fractionnel)." }
+   ]
+  },
+  {
+   "type": "statement",
+   "wide": true,
+   "text": "Refaire un site sans audit, c'est deviner. *Un audit vous dit quoi corriger en premier*, et quoi laisser tel quel.",
+   "prose": [
+    "La plupart des sites et des produits ne perdent pas leurs clients à cause d'un gros problème. Ils les perdent à travers une douzaine de petites frictions : une promesse floue, une étape confuse, une preuve absente, un formulaire trop long. Chacune coûte un peu; ensemble, elles coûtent cher.",
+    "Notre audit les trouve, explique pourquoi elles nuisent et les classe, pour que votre prochaine heure de travail aille là où elle rapporte le plus."
+   ]
+  },
+  {
+   "type": "deliverables",
+   "id": "inclus",
+   "h2": "Ce qu'on *analyse*",
+   "items": [
+    { "h": "Message et offre", "p": "Est-ce clair en quelques secondes : ce que vous vendez, à qui et pourquoi vous? On vérifie la proposition de valeur, les titres et les appels à l'action." },
+    { "h": "Expérience utilisateur", "p": "La navigation, les parcours clés et les formulaires, analysés selon les bonnes pratiques d'utilisabilité et le comportement réel des utilisateurs." },
+    { "h": "Parcours de conversion", "p": "Chaque étape, de la première visite à la demande, à l'achat ou à l'inscription, et les endroits où les gens décrochent." },
+    { "h": "Confiance et preuves", "p": "Témoignages, études de cas, garanties et éléments rassurants aux moments où les visiteurs hésitent." },
+    { "h": "Mobile et vitesse", "p": "Comment les pages se lisent, se chargent et fonctionnent sur un téléphone, là où se font la plupart des visites." },
+    { "h": "Données", "p": "Si vous nous y donnez accès, vos statistiques et enregistrements de sessions, pour confirmer ce que l'analyse suggère." }
+   ]
+  },
+  {
+   "type": "process",
+   "h2": "Comment se déroule *l'audit*",
+   "steps": [
+    { "h": "Démarrage", "p": "Un court appel pour comprendre vos objectifs, votre public et les pages ou le produit à analyser.", "out": "Résultat : une portée et un prix fixe convenus." },
+    { "h": "Analyse", "p": "On analyse l'expérience, les textes et, si possible, vos données.", "out": "Résultat : chaque friction documentée." },
+    { "h": "Plan d'action", "p": "On classe chaque correctif selon son impact et l'effort requis, et on le montre sur des écrans annotés.", "out": "Livrable : un plan d'action priorisé." },
+    { "h": "Bilan", "p": "On vous présente les constats et on répond aux questions de votre équipe.", "out": "Livrable : un appel de bilan et des prochaines étapes claires." }
+   ]
+  },
+  {
+   "type": "fit",
+   "h2": "L'audit, *est-ce pour vous?*",
+   "yes": {
+    "h": "Un bon choix si",
+    "items": [
+     "Vous avez des visites, mais pas assez de demandes, de ventes ou d'inscriptions",
+     "Vous prévoyez une refonte et voulez savoir ce qui doit vraiment changer",
+     "Votre SaaS perd des utilisateurs pendant l'intégration ou avant de payer",
+     "Vous voulez un avis externe et senior avant d'investir davantage en publicité"
+    ]
+   },
+   "no": {
+    "h": "Probablement pas si",
+    "items": [
+     "Votre site n'a presque pas encore de trafic : commencez par la visibilité",
+     "Vous avez besoin d'un tout nouveau site : voyez la création de site web",
+     "Vous cherchez un avis gratuit"
+    ]
+   }
+  },
+  {
+   "type": "faq",
+   "h2": "Questions fréquentes sur *l'audit UX/CRO*",
+   "open": true
+  },
+  {
+   "type": "related",
+   "h2": "Après l'audit",
+   "cta": "Voir le service",
+   "items": ["landing-pages", "design-produit", "fractional"]
+  },
+  {
+   "type": "cta-final",
+   "h2": "Prêt à découvrir ce qui *freine vos conversions?*",
+   "p": "Dites-nous quel site, quelle page ou quel produit analyser. On vous confirme la portée et le prix fixe.",
+   "cta": "Commander un audit"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Qu'est-ce qu'un audit UX/CRO?",
+   "a": ["Un audit UX/CRO est une analyse experte d'un site web, d'une landing page ou d'un produit numérique qui repère ce qui empêche les visiteurs de devenir des clients. L'UX porte sur la clarté et la facilité de l'expérience; le CRO (optimisation du taux de conversion) porte sur sa capacité à mener les gens à l'action. Le résultat est une liste de correctifs priorisée."]
+  },
+  {
+   "q": "Combien coûte l'audit?",
+   "a": ["[PRIX À CONFIRMER]. Le prix est fixe et confirmé avant de commencer, selon la taille du site ou du produit."]
+  },
+  {
+   "q": "Qu'est-ce que je reçois à la fin?",
+   "a": ["Un plan d'action priorisé avec des écrans annotés, et un appel de bilan où on présente les constats à votre équipe et répond à ses questions."]
+  },
+  {
+   "q": "Est-ce que vous appliquez les correctifs?",
+   "a": ["Vous pouvez les appliquer vous-mêmes avec le plan d'action, ou nous les confier : projet de landing page ou de site web, projet de design de produit, ou mandat fractionnel continu."]
+  },
+  {
+   "q": "Pouvez-vous auditer un produit SaaS ou une application mobile?",
+   "a": ["Oui. On audite des sites web, des landing pages et des tunnels de vente, ainsi que des produits SaaS et des applications mobiles, y compris l'intégration des utilisateurs, l'activation et les pages de prix."]
+  }
+ ]
+}

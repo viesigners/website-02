@@ -1,0 +1,123 @@
+{
+ "meta": {
+  "title": "Fixed-Price UX/CRO Audit for Websites & SaaS | Viesigners",
+  "description": "A fixed-price UX and conversion (CRO) audit of your website, landing page or SaaS product: what costs you customers, ranked by impact, with a clear action plan.",
+  "h1": "Fixed-price UX/CRO audit for websites, landing pages and SaaS products"
+ },
+ "service": {
+  "name": "UX/CRO audit",
+  "type": "UX audit and conversion rate optimization (CRO) audit at a fixed price",
+  "audience": "Service businesses, e-commerce, SaaS and app companies"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tagH1": true,
+   "tag": "Fixed-price UX/CRO audit for websites, landing pages and SaaS products",
+   "h1": "Find out exactly what *costs you customers*",
+   "lead": "Senior UX and conversion experts review your website, landing page or product, find the friction that stops visitors from buying or signing up, and rank every fix by impact. One fixed price, no surprises.",
+   "ctas": [
+    { "label": "Order an audit", "to": "@contact", "style": "violet" },
+    { "label": "See all prices", "to": "@tarifs", "style": "ghost" }
+   ],
+   "brief": [
+    { "b": "Who it's for:", "t": "businesses with traffic that doesn't turn into enough inquiries, sales or sign-ups." },
+    { "b": "What you get:", "t": "a prioritized action plan, annotated screens and a debrief call with the founders." },
+    { "b": "Price:", "t": "[PRICE TO CONFIRM], fixed, agreed before we start." },
+    { "b": "Next step:", "t": "fix it yourselves, or have us do it (project or fractional)." }
+   ]
+  },
+  {
+   "type": "statement",
+   "wide": true,
+   "text": "Redesigning without an audit is guessing. *An audit tells you what to fix first*, and what to leave alone.",
+   "prose": [
+    "Most sites and products don't lose customers because of one big problem. They lose them through a dozen small frictions: a vague promise, a confusing step, a missing proof, a form that asks too much. Each one costs a little; together they cost a lot.",
+    "Our audit finds them, explains why they hurt, and ranks them so your next hour of work goes where it brings the most revenue."
+   ]
+  },
+  {
+   "type": "deliverables",
+   "id": "included",
+   "h2": "What we *review*",
+   "items": [
+    { "h": "Message and offer", "p": "Is it clear in a few seconds what you sell, to whom and why you? We check the value proposition, headlines and calls to action." },
+    { "h": "User experience", "p": "Navigation, key paths and forms, reviewed against usability best practices and real user behavior." },
+    { "h": "Conversion path", "p": "Every step from first visit to inquiry, purchase or sign-up, and where people drop off." },
+    { "h": "Trust and proof", "p": "Testimonials, case studies, guarantees and reassurance at the moments visitors hesitate." },
+    { "h": "Mobile and speed", "p": "How the pages read, load and work on a phone, where most visits happen." },
+    { "h": "Data", "p": "When you give us access, your analytics and session recordings to confirm what the review suggests." }
+   ]
+  },
+  {
+   "type": "process",
+   "h2": "How the audit *works*",
+   "steps": [
+    { "h": "Kickoff", "p": "A short call to understand your goals, your audience and the pages or product to review.", "out": "Outcome: an agreed scope and fixed price." },
+    { "h": "Review", "p": "We review the experience, the copy and, when available, your data.", "out": "Outcome: every friction point documented." },
+    { "h": "Action plan", "p": "We rank each fix by impact and effort and show it on annotated screens.", "out": "Deliverable: a prioritized action plan." },
+    { "h": "Debrief", "p": "We walk you through the findings and answer your team's questions.", "out": "Deliverable: a debrief call and clear next steps." }
+   ]
+  },
+  {
+   "type": "fit",
+   "h2": "Is the audit *right for you?*",
+   "yes": {
+    "h": "A good fit if",
+    "items": [
+     "You get visits but not enough inquiries, sales or sign-ups",
+     "You're planning a redesign and want to know what really needs to change",
+     "Your SaaS loses users during onboarding or before paying",
+     "You want an outside, senior opinion before investing more in ads"
+    ]
+   },
+   "no": {
+    "h": "Probably not if",
+    "items": [
+     "Your site has almost no traffic yet: start with visibility",
+     "You need a brand-new site from scratch: see website creation",
+     "You're looking for a free opinion"
+    ]
+   }
+  },
+  {
+   "type": "faq",
+   "h2": "Frequently asked questions about the *UX/CRO audit*",
+   "open": true
+  },
+  {
+   "type": "related",
+   "h2": "After the audit",
+   "cta": "See the service",
+   "items": ["landing-pages", "design-produit", "fractional"]
+  },
+  {
+   "type": "cta-final",
+   "h2": "Ready to find out what *holds back your conversions?*",
+   "p": "Tell us which site, page or product to review. We'll confirm the scope and the fixed price.",
+   "cta": "Order an audit"
+  }
+ ],
+ "faq": [
+  {
+   "q": "What is a UX/CRO audit?",
+   "a": ["A UX/CRO audit is an expert review of a website, landing page or digital product that identifies what prevents visitors from becoming customers. UX covers how easy and clear the experience is; CRO (conversion rate optimization) covers how well it leads people to act. The result is a prioritized list of fixes."]
+  },
+  {
+   "q": "How much does the audit cost?",
+   "a": ["[PRICE TO CONFIRM]. The price is fixed and confirmed before we start, based on the size of the site or product."]
+  },
+  {
+   "q": "What do I receive at the end?",
+   "a": ["A prioritized action plan with annotated screens, and a debrief call where we walk your team through the findings and answer questions."]
+  },
+  {
+   "q": "Do you implement the fixes?",
+   "a": ["You can implement them yourselves with the action plan, or have us do it, as a landing page or website project, a product design project, or an ongoing fractional engagement."]
+  },
+  {
+   "q": "Can you audit a SaaS product or a mobile app?",
+   "a": ["Yes. We audit websites, landing pages and sales funnels, as well as SaaS products and mobile apps, including onboarding, activation and pricing pages."]
+  }
+ ]
+}

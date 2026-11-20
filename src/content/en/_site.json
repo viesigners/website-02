@@ -24,6 +24,10 @@
   "terms": "Terms of use",
   "marque-blanche": "White-label partner",
   "copywriting": "Copywriting",
+  "fractional": "Fractional product design",
+  "audit": "UX/CRO audit",
+  "tarifs": "Pricing",
+  "jouets-jeux": "Toys, games and entertainment",
   "cebg": "Charles-Erick BG"
  },
  "navSub": {
@@ -34,7 +38,11 @@
   "medias-sociaux": "A social presence that feeds your funnel",
   "seo-geo": "Get found on Google and cited by AI",
   "coaching": "Offers and launches for service entrepreneurs",
-  "copywriting": "Words that turn visitors into customers"
+  "copywriting": "Words that turn visitors into customers",
+  "fractional": "A senior designer in your team, a few hours a week",
+  "audit": "A fixed-price audit of what costs you conversions",
+  "tarifs": "Every \"from\" price, by service",
+  "jouets-jeux": "UX/UI for toy brands, games and entertainment IP"
  },
  "brief": "At a glance",
  "updated": "Last updated",

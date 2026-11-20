@@ -1,0 +1,121 @@
+{
+ "meta": {
+  "title": "Pricing: Websites, Product Design, UX Audit & Coaching | Viesigners",
+  "description": "Viesigners pricing: \"from\" prices for websites and landing pages, fractional product design (from US$3,450/month), the fixed-price UX/CRO audit and ImpaX business coaching.",
+  "h1": "Viesigners pricing"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "compact": true,
+   "tagH1": true,
+   "tag": "Pricing",
+   "h1": "Clear prices, *before the first call*",
+   "lead": "Every service has a starting price. Your final quote depends on the scope, and we confirm it in writing before any work begins.",
+   "ctas": [
+    { "label": "Discuss a project", "to": "@contact", "style": "violet" }
+   ]
+  },
+  {
+   "type": "price-tabs",
+   "label": "Pricing",
+   "h2": "Pick a *service*",
+   "fromLabel": "From",
+   "tabs": [
+    {
+     "id": "websites",
+     "label": "Websites & landing pages",
+     "title": "Websites, landing pages and *sales funnels*",
+     "from": "[PRICE TO CONFIRM]",
+     "lead": "A fixed price per project, set after a short call about your goals and the number of pages.",
+     "items": [
+      "Offer architecture and persuasive copy",
+      "UX/UI design, mobile first",
+      "Fast development and basic SEO/GEO setup",
+      "Conversion tracking from day one"
+     ],
+     "ctas": [
+      { "label": "Website creation", "to": "@sites-web" },
+      { "label": "Landing pages and funnels", "to": "@landing-pages" }
+     ]
+    },
+    {
+     "id": "product-design",
+     "label": "Product design",
+     "title": "Product design for *SaaS, apps and AI products*",
+     "from": "US$3,450",
+     "unit": "per month (fractional)",
+     "plans": [
+      { "h": "Fractional product design", "price": "From US$3,450/month", "p": "A product designer, lead or head of design from 5 hours a week. The hourly rate drops as hours increase.", "items": ["Product designer: US$160/h", "Lead product designer: US$180/h", "Head of design: US$200/h", "−10% at 10 h/week, −20% at 15 h, −25% at 20 h"] },
+      { "h": "Product design projects", "price": "Quote per project", "p": "A defined scope: a new product, a redesign or a feature, with a fixed price and timeline. Ask about our accelerated overhaul with two senior designers in parallel." }
+     ],
+     "ctas": [
+      { "label": "Fractional product design", "to": "@fractional" },
+      { "label": "Product design projects", "to": "@design-produit" }
+     ]
+    },
+    {
+     "id": "audit",
+     "label": "UX/CRO audit",
+     "title": "Fixed-price *UX/CRO audit*",
+     "from": "[PRICE TO CONFIRM]",
+     "unit": "fixed price",
+     "lead": "The best first step: find out what costs you customers before you redesign or spend more on ads.",
+     "items": [
+      "Review of message, user experience, conversion path, trust and mobile",
+      "Prioritized action plan with annotated screens",
+      "Debrief call with the founders"
+     ],
+     "ctas": [
+      { "label": "See the audit", "to": "@audit" }
+     ]
+    },
+    {
+     "id": "coaching",
+     "label": "Business coaching",
+     "title": "ImpaX *business coaching* program",
+     "from": "CA$4,000",
+     "unit": "for 3 months (group)",
+     "lead": "Our ImpaX program helps coaches, consultants and experts build a premium offer and sign clients. The program currently runs in French; an English cohort opens when the waitlist is full enough.",
+     "plans": [
+      { "h": "Group", "price": "From CA$4,000 / 3 months", "items": ["Up to two 1-hour Q&A sessions a week", "Learning platform with pre-recorded content", "Private community", "1:1 access to the founders"] },
+      { "h": "VIP", "price": "From CA$8,000 / 3 months", "items": ["Everything in Group", "A 60-minute 1:1 session every week"] }
+     ],
+     "note": "Programs last 6 to 13 weeks, with weekly, 3-month and annual options. Longer commitments get a discount, and you can upgrade within a set period at no fee. Prices before taxes; euro prices on request.",
+     "ctas": [
+      { "label": "See the program", "to": "@coaching" }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "faq",
+   "h2": "Frequently asked questions about *pricing*",
+   "open": true
+  },
+  {
+   "type": "cta-final",
+   "h2": "Not sure which service *fits?*",
+   "p": "Tell us where you are and what you want to achieve. We'll point you to the right option and confirm the price.",
+   "cta": "Discuss a project"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Why do you show your prices?",
+   "a": ["Because it saves everyone time. You know before the first call whether we fit your budget, and we spend the call on your project instead of on numbers."]
+  },
+  {
+   "q": "Are the prices final?",
+   "a": ["They are starting prices. Your final price depends on the scope, and we confirm it in writing before any work begins. There are no surprise fees."]
+  },
+  {
+   "q": "In which currency do you bill?",
+   "a": ["Fractional product design is priced in US dollars; Canadian clients can be billed in Canadian dollars. Other services are priced in Canadian dollars. Prices are before taxes."]
+  },
+  {
+   "q": "Where should I start if I'm not sure what I need?",
+   "a": ["With the UX/CRO audit. It shows what costs you customers and which service would fix it, and you can act on it with or without us."]
+  }
+ ]
+}
