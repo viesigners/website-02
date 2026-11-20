@@ -2,7 +2,7 @@
  "meta": {
   "title": "Audit UX/CRO à prix fixe pour sites web et SaaS | Viesigners",
   "description": "Un audit UX et conversion (CRO) à prix fixe de votre site web, landing page ou produit SaaS : ce qui vous coûte des clients, classé par impact, avec un plan d'action clair.",
-  "h1": "Audit UX/CRO à prix fixe pour sites web, landing pages et produits SaaS"
+  "h1": "Audit UX/CRO à prix fixe"
  },
  "service": {
   "name": "Audit UX/CRO",
@@ -13,7 +13,7 @@
   {
    "type": "page-hero",
    "tagH1": true,
-   "tag": "Audit UX/CRO à prix fixe pour sites web, landing pages et produits SaaS",
+   "tag": "Audit UX/CRO à prix fixe",
    "h1": "Découvrez exactement ce qui *vous coûte des clients*",
    "lead": "Des experts seniors en UX et en conversion analysent votre site web, votre landing page ou votre produit, trouvent les frictions qui empêchent les visiteurs d'acheter ou de s'inscrire, et classent chaque correctif selon son impact. Un prix fixe, sans surprise.",
    "ctas": [
