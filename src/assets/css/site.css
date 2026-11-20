@@ -550,7 +550,9 @@ em.acc, .acc {
 .tnote { margin: -.6rem 0 0; font-family: var(--f-mono); font-size: .68rem; letter-spacing: .03em; text-transform: uppercase; color: var(--text-3); }
 .tcard figcaption { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
 .who { display: grid; gap: .1rem; min-width: 0; }
-.tlogo { flex: none; height: clamp(24px, 2.2vw, 32px); width: auto; max-width: 8rem; object-fit: contain; filter: var(--logo-filter); opacity: .9; }
+/* client logo at the top of a testimonial: the file is used as a mask, filled with the text color (navy on light, white on dark) */
+.tlogo { display: block; height: clamp(28px, 2.2vw, 36px); width: auto; max-width: 12rem; background: var(--text); -webkit-mask: var(--logo) no-repeat left center / contain; mask: var(--logo) no-repeat left center / contain; }
+.tgrid--one .tlogo { height: clamp(34px, 2.8vw, 44px); }
 .who b { font-weight: 600; letter-spacing: -.01em; }
 .who span { color: var(--text-2); font-size: .85rem; line-height: 1.35; }
 .who time { color: var(--text-3); font-family: var(--f-mono); font-size: .7rem; letter-spacing: .03em; text-transform: uppercase; margin-top: .25rem; }
