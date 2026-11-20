@@ -550,9 +550,11 @@ em.acc, .acc {
 .tnote { margin: -.6rem 0 0; font-family: var(--f-mono); font-size: .68rem; letter-spacing: .03em; text-transform: uppercase; color: var(--text-3); }
 .tcard figcaption { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
 .who { display: grid; gap: .1rem; min-width: 0; }
-/* client logo at the top of a testimonial: the file is used as a mask, filled with the text color (navy on light, white on dark) */
-.tlogo { display: block; height: clamp(28px, 2.2vw, 36px); width: auto; max-width: 12rem; background: var(--text); -webkit-mask: var(--logo) no-repeat left center / contain; mask: var(--logo) no-repeat left center / contain; }
-.tgrid--one .tlogo { height: clamp(34px, 2.8vw, 44px); }
+/* client logo in the top-right corner of a testimonial, faint: the file is used as a mask filled with the text color */
+.tcard:has(.tlogo) { position: relative; }
+.tlogo { position: absolute; top: clamp(1.4rem, 1rem + 1.2vw, 2rem); right: clamp(1.4rem, 1rem + 1.2vw, 2rem); height: clamp(20px, 1.6vw, 26px); width: auto; max-width: 7rem; background: var(--text); opacity: .3; -webkit-mask: var(--logo) no-repeat right center / contain; mask: var(--logo) no-repeat right center / contain; }
+.tgrid--one .tlogo { top: clamp(1.8rem, 1.2rem + 2vw, 3rem); right: clamp(1.8rem, 1.2rem + 2vw, 3rem); }
+.tcard:has(.tlogo) .tq { padding-right: 6.5rem; } /* the title never runs under the logo */
 .who b { font-weight: 600; letter-spacing: -.01em; }
 .who span { color: var(--text-2); font-size: .85rem; line-height: 1.35; }
 .who time { color: var(--text-3); font-family: var(--f-mono); font-size: .7rem; letter-spacing: .03em; text-transform: uppercase; margin-top: .25rem; }
