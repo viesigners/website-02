@@ -1315,3 +1315,6 @@ html { scroll-padding-top: 7rem; }
 .ptabs__plan li svg, .ptabs__inc li svg { width: 1.1rem; height: 1.1rem; margin-top: .15rem; color: #6ee7b7; }
 .ptabs__note { margin-top: 1rem; color: var(--text-3); font-size: .9rem; max-width: var(--measure); }
 .ptabs__ctas { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.6rem; }
+/* link to the original review (Google, LinkedIn…): proof that the testimonial is real */
+.tsrc { display: inline-flex; align-items: center; gap: .4rem; margin-top: .45rem; font-family: var(--f-mono); font-size: .7rem; letter-spacing: .03em; text-transform: uppercase; color: var(--accent-text); border-bottom: 1px solid currentColor; width: max-content; }
+.tsrc svg { width: .8rem; height: .8rem; }
