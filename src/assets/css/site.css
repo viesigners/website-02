@@ -207,8 +207,18 @@ em.acc, .acc {
 .lang-m a, .lang-m span { padding: .6rem .9rem; border-radius: var(--r-sm); color: var(--slate-400); box-shadow: inset 0 0 0 1px var(--line-2); }
 .lang-m [aria-current="true"] { background: rgba(255, 255, 255, .12); color: #fff; }
 .lang-m a:hover { color: #fff; }
-@media (min-width: 900px) { .drawer__in { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); } .drawer__foot, .drawer__industry { grid-column: 1 / -1; } }
-@media (min-width: 1180px) { .drawer__in { grid-template-columns: minmax(0, 5fr) minmax(0, 5fr) minmax(0, 3.6fr); } .drawer__industry { grid-column: auto; } }
+.drawer__main { order: 1; } .drawer__feature { order: 2; } .drawer__services { order: 3; } .drawer__industry { order: 4; } .drawer__foot { order: 5; }
+@media (min-width: 900px) {
+  .drawer__in { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); }
+  .drawer__main, .drawer__services, .drawer__feature, .drawer__industry, .drawer__foot { order: 0; }
+  .drawer__foot { grid-column: 1 / -1; }
+}
+@media (min-width: 1180px) {
+  .drawer__in { grid-template-columns: minmax(0, 5fr) minmax(0, 5fr) minmax(0, 3.6fr); grid-template-rows: auto 1fr auto; }
+  .drawer__main { grid-column: 1; grid-row: 1 / 3; } .drawer__services { grid-column: 2; grid-row: 1 / 3; }
+  .drawer__industry { grid-column: 3; grid-row: 1; } .drawer__feature { grid-column: 3; grid-row: 2; }
+  .drawer__foot { grid-row: 3; }
+}
 
 /* ---------- hero (home) ---------- */
 .hero { position: relative; overflow: clip; padding-top: clamp(6.5rem, 5.25rem + 3.2vw, 9rem); padding-bottom: clamp(2.5rem, 2rem + 3vw, 5rem); }
@@ -775,11 +785,17 @@ em.acc, .acc {
 /* ---------- services hub link (home, menu) ---------- */
 .services__all { margin-top: clamp(1.8rem, 1.2rem + 2vw, 3rem); }
 .drawer__services a.drawer__all { display: inline-flex; align-items: center; gap: .6rem; margin-top: .6rem; padding: .9rem 0 0; border-top: 0; border-bottom: 0; font-family: var(--f-mono); font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; color: var(--pink-300); }
-.drawer__services a.drawer__feat { margin-top: .6rem; padding: .9rem 1rem; border: 0; border-radius: var(--r-md); background: rgba(255, 72, 139, .1); box-shadow: inset 2px 0 0 var(--pink); }
-.drawer__services a.drawer__feat span { display: block; margin-bottom: .2rem; font-family: var(--f-mono); font-size: .7rem; letter-spacing: .05em; text-transform: uppercase; color: var(--pink-300); }
-.drawer__services a.drawer__feat:hover { background: rgba(255, 72, 139, .16); padding-left: 1rem; }
+.drawer__feature { display: grid; gap: .9rem; align-content: start; }
+.drawer__feat { display: grid; gap: .35rem; padding: 1.3rem 1.4rem; border-radius: var(--r-lg); background: rgba(255, 72, 139, .1); box-shadow: inset 0 0 0 1px rgba(255, 72, 139, .35); transition: background .25s, transform .3s var(--ease); }
+.drawer__feat:hover, .drawer__feat[aria-current="page"] { background: rgba(255, 72, 139, .16); transform: translateY(-2px); }
+.drawer__feat b { font-family: var(--f-display); font-weight: 400; font-size: 1.35rem; letter-spacing: -.02em; }
+.drawer__feat small { color: rgba(219, 229, 237, .8); font-size: .92rem; line-height: 1.45; }
+.drawer__feat i { display: inline-flex; align-items: center; gap: .5rem; margin-top: .3rem; font-style: normal; font-family: var(--f-mono); font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; color: var(--pink-300); }
+.drawer__feat i svg { width: 1em; height: 1em; transition: transform .3s var(--ease); }
+.drawer__feat:hover i svg { transform: translateX(.3rem); }
+.drawer__feat span { display: block; margin-bottom: .2rem; font-family: var(--f-mono); font-size: .7rem; letter-spacing: .05em; text-transform: uppercase; color: var(--pink-300); }
 /* "just need regular senior input?" under Product design */
-.drawer__services .drawer__aside { margin: -.35rem 0 .6rem; font-size: .88rem; color: var(--slate-400); }
+.drawer__services .drawer__aside { margin: .1rem 0 .8rem; padding: .75rem .9rem; border-radius: var(--r-md); background: rgba(255, 255, 255, .045); box-shadow: inset 2px 0 0 rgba(244, 128, 192, .7); font-size: .86rem; line-height: 1.5; color: var(--slate-400); }
 .drawer__services .drawer__aside a { display: inline-flex; align-items: center; gap: .35rem; padding: 0; border: 0; font-size: inherit; color: var(--pink-300); }
 .drawer__services .drawer__aside a svg { width: .85em; height: .85em; transition: transform .3s var(--ease); }
 .drawer__services .drawer__aside a:hover svg { transform: translateX(.25rem); }
