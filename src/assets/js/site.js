@@ -299,6 +299,7 @@ document.addEventListener('click', (e) => {
       out('rate').textContent = fmtN(Math.round(rate));
       out('disc').textContent = disc ? `−${disc}%` : noDisc;
       hv.textContent = h; range.setAttribute('aria-valuetext', `${h} h`);
+      range.style.setProperty('--fill', `${(range.value / range.max) * 100}%`); // pink part of the track, up to the thumb
     };
     box.addEventListener('input', update); box.addEventListener('change', update);
   });

@@ -739,7 +739,7 @@ R['price-calc'] = (s, c) => {
     <div class="pcalc__controls">
       <fieldset class="pcalc__roles"><legend>${esc(s.labels.role)}</legend>${s.roles.map((r, i) => `<label class="pcalc__role"><input type="radio" name="pcalc-role" value="${r.id}"${i === 0 ? ' checked' : ''}><span><b>${esc(r.label)}</b><small>${fmt(r.desc, lang)}</small></span></label>`).join('')}</fieldset>
       <div class="pcalc__hours"><label for="pcalc-h">${esc(s.labels.hours)}: <output id="pcalc-hv">${h0}</output> h</label>
-        <input id="pcalc-h" type="range" min="0" max="${s.hours.length - 1}" step="1" value="0" list="pcalc-ticks" aria-valuetext="${h0} h"><datalist id="pcalc-ticks">${s.hours.map((h, i) => `<option value="${i}" label="${h} h"></option>`).join('')}</datalist>
+        <input id="pcalc-h" type="range" min="0" max="${s.hours.length - 1}" step="1" value="0" aria-valuetext="${h0} h" style="--fill:0%">
         <div class="pcalc__ticks" aria-hidden="true">${s.hours.map((h) => `<span>${h} h</span>`).join('')}</div></div>
     </div>
     <div class="pcalc__out" aria-live="polite"><span class="pcalc__lbl">${esc(s.labels.monthly)}</span><b class="pcalc__price" data-out="month">${money(calcMonthly(s, r0, h0), s, lang)}</b><span class="pcalc__sub"><span data-out="rate">${money(rate(r0, h0), s, lang)}</span>${esc(s.labels.perHour)} · <span data-out="disc">${s.discounts[h0] ? '−' + s.discounts[h0] + '%' : esc(s.labels.noDiscount)}</span></span>${s.cta ? `<a class="pill pill--violet" href="${url(s.cta.to.slice(1), lang)}">${esc(s.cta.label)}</a>` : ''}</div>
