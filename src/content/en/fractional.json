@@ -144,10 +144,10 @@
    },
    "note": "Prices in US dollars, before taxes, rounded to the nearest $50. Canadian clients can be billed in CAD. Minimum 5 hours a week; the role and hours can change from one month to the next.",
    "cta": {
-    "label": "Book an intro call",
+    "label": "Get a custom quote",
     "to": "@contact"
    },
-   "estimate": "Estimate for startups and scale-ups. Your final price depends on your product’s complexity, your user base and what’s at stake for your business; we confirm it in writing after the intro call.",
+   "estimate": "Estimate for startups and scale-ups. Your final price is confirmed in writing after the call, based on your product and what’s at stake.",
    "callouts": [
     {
      "h": "Enterprise or large product team?",

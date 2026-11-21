@@ -7,7 +7,7 @@
  "service": {
   "name": "Design de produit fractionnel",
   "type": "Designer de produit, lead designer de produit et directeur du design fractionnel pour produits SaaS et IA",
-  "audience": "Jeunes pousses SaaS et IA, équipes produit sans designer senior, fondateurs et responsables produit",
+  "audience": "Startups SaaS et IA, équipes produit sans designer senior, fondateurs et responsables produit",
   "offer": {
    "price": "3450",
    "currency": "USD",
@@ -98,7 +98,7 @@
    "id": "tarifs",
    "label": "Tarifs",
    "h2": "Estimez votre *prix mensuel*",
-   "lead": "Tarifs pour jeunes pousses et entreprises en croissance. Choisissez un rôle et le nombre d’heures par semaine; plus vous réservez d’heures, plus le taux horaire baisse.",
+   "lead": "Tarifs pour startups et entreprises en croissance. Choisissez un rôle et le nombre d’heures par semaine; plus vous réservez d’heures, plus le taux horaire baisse.",
    "currency": "$ US",
    "weeks": 4.33,
    "hours": [
@@ -144,10 +144,10 @@
    },
    "note": "Prix en dollars américains, avant taxes, arrondis aux 50 $ près. Les clients canadiens peuvent être facturés en dollars canadiens. Minimum de 5 heures par semaine; le rôle et les heures peuvent changer d'un mois à l'autre.",
    "cta": {
-    "label": "Réserver un appel",
+    "label": "Obtenir une soumission",
     "to": "@contact"
    },
-   "estimate": "Estimation pour jeunes pousses et entreprises en croissance. Votre prix final dépend de la complexité de votre produit, de votre base d’utilisateurs et de ce qui est en jeu pour votre entreprise; on vous le confirme par écrit après l’appel de découverte.",
+   "estimate": "Estimation pour startups et entreprises en croissance. Prix final confirmé par écrit après l’appel, selon votre produit et vos enjeux.",
    "callouts": [
     {
      "h": "Grande entreprise ou grande équipe produit?",
@@ -287,7 +287,7 @@
   {
    "q": "Combien coûte un designer de produit fractionnel?",
    "a": [
-    "Chez Viesigners, pour les jeunes pousses et les entreprises en croissance, à partir de 3 450 $ US par mois pour un designer de produit à 5 heures par semaine. Le lead designer de produit commence à environ 3 900 $ US et le directeur du design à environ 4 350 $ US par mois. Le taux horaire baisse de 10 % à 10 heures par semaine, de 20 % à 15 heures et de 25 % à 20 heures. Les grandes entreprises et les grandes équipes produit obtiennent une soumission sur mesure, selon la base d’utilisateurs, l’impact d’affaires et le niveau d’implication."
+    "Chez Viesigners, pour les startups et les entreprises en croissance, à partir de 3 450 $ US par mois pour un designer de produit à 5 heures par semaine. Le lead designer de produit commence à environ 3 900 $ US et le directeur du design à environ 4 350 $ US par mois. Le taux horaire baisse de 10 % à 10 heures par semaine, de 20 % à 15 heures et de 25 % à 20 heures. Les grandes entreprises et les grandes équipes produit obtiennent une soumission sur mesure, selon la base d’utilisateurs, l’impact d’affaires et le niveau d’implication."
    ]
   },
   {
