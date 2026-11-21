@@ -1296,7 +1296,8 @@ html { scroll-padding-top: 7rem; }
 /* who the prices are for: larger companies (custom quote) and smaller budgets (audit or project) */
 .pcallouts { display: grid; gap: clamp(.8rem, .5rem + 1vw, 1.25rem); margin-top: clamp(1.4rem, 1rem + 1.4vw, 2.4rem); }
 @media (min-width: 760px) { .pcallouts { grid-template-columns: 1fr 1fr; } }
-.pcallout:only-child { grid-column: 1 / -1; justify-self: center; width: min(100%, 36rem); text-align: center; }
+.pcallout:only-child { grid-column: 1 / -1; display: grid; gap: .6rem 2.5rem; align-items: center; background: var(--card); box-shadow: inset 3px 0 0 var(--pink); border-radius: 0 var(--r-lg) var(--r-lg) 0; }
+@media (min-width: 760px) { .pcallout:only-child { grid-template-columns: minmax(14rem, 1fr) 2fr; } .pcallout:only-child h3 { margin-bottom: 0; } }
 .pcallout { border-radius: var(--r-lg); padding: clamp(1.3rem, 1rem + 1vw, 2rem); box-shadow: inset 0 0 0 1px var(--line-2); }
 .pcallout h3 { font-size: clamp(1.15rem, 1rem + .5vw, 1.4rem); font-weight: 400; letter-spacing: -0.02em; margin-bottom: .6rem; }
 .pcallout p { color: var(--text-2); line-height: 1.55; }
