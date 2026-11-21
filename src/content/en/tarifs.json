@@ -138,10 +138,7 @@
       }
      ]
     }
-   ],
-   "currency": {
-    "note": "Prices converted from US dollars for reference, rounded down. Your quote confirms the billing currency."
-   }
+   ]
   },
   {
    "type": "faq",
