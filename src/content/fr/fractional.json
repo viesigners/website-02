@@ -1,13 +1,13 @@
 {
  "meta": {
   "title": "Designer de produit fractionnel pour SaaS et IA | Viesigners",
-  "description": "Designer de produit, lead ou directeur du design fractionnel pour produits SaaS et IA, dès 5 heures par semaine. UX/UI senior, prix mensuel transparent, dès 3 450 $ US/mois.",
+  "description": "Designer de produit, lead ou directeur du design fractionnel pour produits SaaS, IA et applications mobiles, dès 5 heures par semaine. UX/UI senior, prix mensuel transparent, dès 3 450 $ US/mois.",
   "h1": "Designer de produit fractionnel pour SaaS et IA"
  },
  "service": {
   "name": "Design de produit fractionnel",
-  "type": "Designer de produit, lead designer de produit et directeur du design fractionnel pour produits SaaS et IA",
-  "audience": "Startups SaaS et IA, équipes produit sans designer senior, fondateurs et responsables produit",
+  "type": "Designer de produit, lead designer de produit et directeur du design fractionnel pour produits SaaS, IA et applications mobiles",
+  "audience": "Startups SaaS et IA, équipes d’applications mobiles, équipes produit sans designer senior, fondateurs et responsables produit",
   "offer": {
    "price": "3450",
    "currency": "USD",
@@ -20,7 +20,7 @@
    "tagH1": true,
    "tag": "Designer de produit fractionnel pour SaaS et IA",
    "h1": "Un designer de produit senior dans votre équipe, *sans embauche à temps plein*",
-   "lead": "Obtenez un designer de produit, un lead ou un directeur du design quelques heures par semaine. On audite votre produit, on priorise ce qui freine l'activation et la rétention, et on conçoit les améliorations avec votre équipe, semaine après semaine.",
+   "lead": "Obtenez un designer de produit, un lead ou un directeur du design quelques heures par semaine. On audite votre produit SaaS ou votre application mobile, on priorise ce qui freine l’activation et la rétention, et on conçoit les améliorations avec votre équipe, au rythme qui vous convient.",
    "ctas": [
     {
      "label": "Estimer votre prix mensuel",
@@ -36,7 +36,7 @@
    "brief": [
     {
      "b": "Pour qui :",
-     "t": "les produits SaaS et IA qui ont une équipe, mais pas de designer senior, ou une équipe de design qui a besoin d'un lead."
+     "t": "les produits SaaS, IA ou applications mobiles qui ont une équipe, mais pas de designer senior, ou une équipe de design qui a besoin d’un lead."
     },
     {
      "b": "Fonctionnement :",
@@ -313,6 +313,12 @@
    "q": "Quel est l'engagement minimum?",
    "a": [
     "5 heures par semaine, facturées au mois. Vous pouvez changer le rôle ou le nombre d'heures d'un mois à l'autre."
+   ]
+  },
+  {
+   "q": "Travaillez-vous aussi sur des applications mobiles?",
+   "a": [
+    "Oui. On conçoit des applications iOS et Android, de l’intégration des utilisateurs aux parcours clés, y compris des applications compagnons et des jeux mobiles. Au fil de leurs carrières, nos fondateurs ont notamment conçu l’application compagnon Meccano pour Spin Master, téléchargée plus de 500 000 fois."
    ]
   },
   {
