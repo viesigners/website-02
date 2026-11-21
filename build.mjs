@@ -875,10 +875,19 @@ function header(c) {
   const main = [['home', 'home'], ['a-propos', 'a-propos'], ['tarifs', 'tarifs'], ['realisations', 'realisations'], ['actualites', 'actualites'], ['contact', 'contact']]
       .filter(([k]) => !isHidden(k))
     .map(([k, label]) => `<a href="${url(k, lang)}"${cur(k, k === 'a-propos' ? ['charles-erick', 'jean-francois'] : k === 'actualites' ? ['post', ...CASE_KEYS] : [])}>${esc(T.nav[label])}</a>`).join('');
-  const services = MAIN_SERVICE_KEYS.filter((k) => !isHidden(k)).map((k) => `<a href="${url(k, lang)}"${cur(k)}>${esc(T.nav[k])}<small>${esc(T.navSub[k])}</small></a>`).join('')
+  // fractional design is not its own menu item: a short mention right under Product design leads to it
+  const fracNote = isHidden('fractional') ? '' : `<p class="drawer__aside">${esc(T.navFracQ)} <a href="${url('fractional', lang)}"${cur('fractional')}>${esc(T.navFracLink)} ${ico('arrow')}</a></p>`;
+  const services = MAIN_SERVICE_KEYS.filter((k) => k !== 'fractional' && !isHidden(k)).map((k) => `<a href="${url(k, lang)}"${cur(k)}>${esc(T.nav[k])}<small>${esc(T.navSub[k])}</small></a>${k === 'design-produit' ? fracNote : ''}`).join('')
     + (isHidden('audit') ? '' : `<a class="drawer__feat" href="${url('audit', lang)}"${cur('audit')}><span>${esc(T.navStart)}</span>${esc(T.nav.audit)}<small>${esc(T.navSub.audit)}</small></a>`)
-    + `<a class="drawer__all" href="${url('services', lang)}"${cur('services')}>${esc(T.navAll)} ${ico('arrow')}</a>`
-    + (isHidden('jouets-jeux') ? '' : `<p class="label drawer__ind">${esc(T.industriesLabel)}</p><a href="${url('jouets-jeux', lang)}"${cur('jouets-jeux')}>${esc(T.nav['jouets-jeux'])}<small>${esc(T.navSub['jouets-jeux'])}</small></a>`);
+    + `<a class="drawer__all" href="${url('services', lang)}"${cur('services')}>${esc(T.navAll)} ${ico('arrow')}</a>`;
+  // third column: the industry page as a callout of its own
+  const industry = isHidden('jouets-jeux') ? '' : `<aside class="drawer__industry"><p class="label">${esc(T.industriesLabel)}</p>
+      <a class="indcard" href="${url('jouets-jeux', lang)}"${cur('jouets-jeux')}>
+        <span class="indcard__logos" aria-hidden="true">${[['marvel', 'png'], ['transformers', 'svg'], ['ubisoft', 'png']].map(([id, ext]) => img(`logo-${id}.${ext}`, '', { lazy: true })).join('')}</span>
+        <b>${esc(T.nav['jouets-jeux'])}</b>
+        <span class="indcard__q">${esc(T.indQ)}</span>
+        <span class="indcard__go">${esc(T.indLink)} ${ico('arrow')}</span>
+      </a></aside>`;
   return `<a class="skip" href="#main">${esc(T.skip)}</a>
 <header class="header" id="top">
   <div class="header__in">
@@ -891,6 +900,7 @@ function header(c) {
   <div class="wrap drawer__in">
     <nav class="drawer__main" aria-label="${esc(T.mainNav)}">${main}</nav>
     <nav class="drawer__services" aria-label="${esc(T.servicesLabel)}"><p class="label">${esc(T.nav.services)}</p>${services}</nav>
+    ${industry}
     <div class="drawer__foot">
       <div class="drawer__prefs"><div class="lang-m" role="group" aria-label="${esc(T.langLabel)}">${['en', 'fr'].map((l) => (l === lang ? `<span aria-current="true">${l.toUpperCase()}</span>` : `<a href="${altUrl}" hreflang="${l}" lang="${l}" aria-label="${esc(T.langSwitch)}">${l.toUpperCase()}</a>`)).join('')}</div>
       <span class="drawer__sep" aria-hidden="true"></span>${curSel(T.currencyLabel)}</div>
