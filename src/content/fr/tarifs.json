@@ -13,7 +13,11 @@
    "h1": "Des prix clairs, *avant le premier appel*",
    "lead": "Chaque service a un prix de départ. Votre prix final dépend de la portée du mandat, et on le confirme par écrit avant de commencer.",
    "ctas": [
-    { "label": "Parler de votre projet", "to": "@contact", "style": "violet" }
+    {
+     "label": "Parler de votre projet",
+     "to": "@contact",
+     "style": "violet"
+    }
    ]
   },
   {
@@ -35,23 +39,49 @@
       "Mesure des conversions dès le premier jour"
      ],
      "ctas": [
-      { "label": "Création de site web", "to": "@sites-web" },
-      { "label": "Landing pages et tunnels", "to": "@landing-pages" }
+      {
+       "label": "Création de site web",
+       "to": "@sites-web"
+      },
+      {
+       "label": "Landing pages et tunnels",
+       "to": "@landing-pages"
+      }
      ]
     },
     {
      "id": "design-produit",
-     "label": "Design de produit",
+     "label": "Design de produit et applis",
      "title": "Design de produit pour *SaaS, applications et produits IA*",
      "from": "3 450 $ US",
      "unit": "par mois (fractionnel)",
      "plans": [
-      { "h": "Design de produit fractionnel", "price": "Dès 3 450 $ US/mois", "p": "Un designer de produit, un lead ou un directeur du design dès 5 heures par semaine. Le taux horaire baisse quand le nombre d'heures augmente.", "items": ["Designer de produit : 160 $ US/h", "Lead designer de produit : 180 $ US/h", "Directeur du design : 200 $ US/h", "−10 % à 10 h/sem., −20 % à 15 h, −25 % à 20 h"] },
-      { "h": "Projets de design de produit", "price": "Soumission par projet", "p": "Une portée définie : un nouveau produit, une refonte ou une fonctionnalité, avec un prix et un échéancier fixes. Informez-vous sur notre refonte accélérée avec deux designers seniors en parallèle." }
+      {
+       "h": "Design de produit fractionnel",
+       "price": "Dès 3 450 $ US/mois",
+       "p": "Un designer de produit, un lead ou un directeur du design dès 5 heures par semaine. Le taux horaire baisse quand le nombre d'heures augmente.",
+       "items": [
+        "Designer de produit : 160 $ US/h",
+        "Lead designer de produit : 180 $ US/h",
+        "Directeur du design : 200 $ US/h",
+        "−10 % à 10 h/sem., −20 % à 15 h, −25 % à 20 h"
+       ]
+      },
+      {
+       "h": "Projets de design de produit",
+       "price": "Soumission par projet",
+       "p": "Une portée définie : un nouveau produit, une refonte ou une fonctionnalité, avec un prix et un échéancier fixes. Informez-vous sur notre refonte accélérée avec deux designers seniors en parallèle."
+      }
      ],
      "ctas": [
-      { "label": "Design de produit fractionnel", "to": "@fractional" },
-      { "label": "Projets de design de produit", "to": "@design-produit" }
+      {
+       "label": "Design de produit fractionnel",
+       "to": "@fractional"
+      },
+      {
+       "label": "Projets de design de produit",
+       "to": "@design-produit"
+      }
      ]
     },
     {
@@ -67,7 +97,10 @@
       "Appel de bilan avec les fondateurs"
      ],
      "ctas": [
-      { "label": "Voir l'audit", "to": "@audit" }
+      {
+       "label": "Voir l'audit",
+       "to": "@audit"
+      }
      ]
     },
     {
@@ -78,12 +111,31 @@
      "unit": "pour 3 mois (groupe)",
      "lead": "ImpaX, l'accélérateur pour experts ambitieux, aide les coachs, consultants et experts à bâtir une offre premium et à signer des clients.",
      "plans": [
-      { "h": "Groupe", "price": "Dès 4 000 $ CA / 3 mois", "items": ["Jusqu'à deux séances de questions de 1 h par semaine", "Plateforme d'apprentissage avec contenu préenregistré", "Communauté privée", "Accès individuel aux fondateurs"] },
-      { "h": "VIP", "price": "Dès 8 000 $ CA / 3 mois", "items": ["Tout ce qui est inclus dans Groupe", "Une séance individuelle de 60 minutes chaque semaine"] }
+      {
+       "h": "Groupe",
+       "price": "Dès 4 000 $ CA / 3 mois",
+       "items": [
+        "Jusqu'à deux séances de questions de 1 h par semaine",
+        "Plateforme d'apprentissage avec contenu préenregistré",
+        "Communauté privée",
+        "Accès individuel aux fondateurs"
+       ]
+      },
+      {
+       "h": "VIP",
+       "price": "Dès 8 000 $ CA / 3 mois",
+       "items": [
+        "Tout ce qui est inclus dans Groupe",
+        "Une séance individuelle de 60 minutes chaque semaine"
+       ]
+      }
      ],
      "note": "Les programmes durent de 6 à 13 semaines, avec des formules hebdomadaires, trimestrielles et annuelles. Les engagements plus longs sont escomptés, et vous pouvez passer à une formule supérieure sans frais pendant une période donnée. Prix avant taxes; prix en euros sur demande.",
      "ctas": [
-      { "label": "Voir le programme", "to": "@coaching" }
+      {
+       "label": "Voir le programme",
+       "to": "@coaching"
+      }
      ]
     }
    ]
@@ -103,19 +155,27 @@
  "faq": [
   {
    "q": "Pourquoi affichez-vous vos prix?",
-   "a": ["Parce que ça fait gagner du temps à tout le monde. Vous savez avant le premier appel si on correspond à votre budget, et on consacre l'appel à votre projet plutôt qu'aux chiffres."]
+   "a": [
+    "Parce que ça fait gagner du temps à tout le monde. Vous savez avant le premier appel si on correspond à votre budget, et on consacre l'appel à votre projet plutôt qu'aux chiffres."
+   ]
   },
   {
    "q": "Les prix sont-ils définitifs?",
-   "a": ["Ce sont des prix de départ. Votre prix final dépend de la portée du mandat, et on le confirme par écrit avant de commencer. Aucuns frais surprises."]
+   "a": [
+    "Ce sont des prix de départ. Votre prix final dépend de la portée du mandat, et on le confirme par écrit avant de commencer. Aucuns frais surprises."
+   ]
   },
   {
    "q": "Dans quelle devise facturez-vous?",
-   "a": ["Le design de produit fractionnel est affiché en dollars américains; les clients canadiens peuvent être facturés en dollars canadiens. Les autres services sont en dollars canadiens. Les prix sont avant taxes."]
+   "a": [
+    "Le design de produit fractionnel est affiché en dollars américains; les clients canadiens peuvent être facturés en dollars canadiens. Les autres services sont en dollars canadiens. Les prix sont avant taxes."
+   ]
   },
   {
    "q": "Par où commencer si je ne sais pas ce dont j'ai besoin?",
-   "a": ["Par l'audit UX/CRO. Il montre ce qui vous coûte des clients et quel service le réglerait, et vous pouvez agir avec ou sans nous."]
+   "a": [
+    "Par l'audit UX/CRO. Il montre ce qui vous coûte des clients et quel service le réglerait, et vous pouvez agir avec ou sans nous."
+   ]
   }
  ]
 }
