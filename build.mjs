@@ -742,11 +742,12 @@ R['price-calc'] = (s, c) => {
         <input id="pcalc-h" type="range" min="0" max="${s.hours.length - 1}" step="1" value="0" aria-valuetext="${h0} h" style="--fill:0%">
         <div class="pcalc__ticks" aria-hidden="true">${s.hours.map((h) => `<span>${h} h</span>`).join('')}</div></div>
     </div>
-    <div class="pcalc__out" aria-live="polite"><span class="pcalc__lbl">${esc(s.labels.monthly)}</span><b class="pcalc__price" data-out="month">${money(calcMonthly(s, r0, h0), s, lang)}</b><span class="pcalc__sub"><span data-out="rate">${money(rate(r0, h0), s, lang)}</span>${esc(s.labels.perHour)} · <span data-out="disc">${s.discounts[h0] ? '−' + s.discounts[h0] + '%' : esc(s.labels.noDiscount)}</span></span>${s.cta ? `<a class="pill pill--violet" href="${url(s.cta.to.slice(1), lang)}">${esc(s.cta.label)}</a>` : ''}</div>
+    <div class="pcalc__out" aria-live="polite"><span class="pcalc__lbl">${esc(s.labels.monthly)}</span><b class="pcalc__price" data-out="month">${money(calcMonthly(s, r0, h0), s, lang)}</b><span class="pcalc__sub"><span data-out="rate">${money(rate(r0, h0), s, lang)}</span>${esc(s.labels.perHour)} · <span data-out="disc">${s.discounts[h0] ? '−' + s.discounts[h0] + '%' : esc(s.labels.noDiscount)}</span></span>${s.estimate ? `<span class="pcalc__est">${fmt(s.estimate, lang)}</span>` : ''}${s.cta ? `<a class="pill pill--violet" href="${url(s.cta.to.slice(1), lang)}">${esc(s.cta.label)}</a>` : ''}</div>
   </div>
   <div class="ptable rv"><table><caption>${esc(s.labels.table)}</caption><thead><tr><th scope="col">${esc(s.labels.role)}</th>${s.hours.map((h) => `<th scope="col">${h} h${esc(s.labels.perWeek)}${s.discounts[h] ? ` <small>−${s.discounts[h]}%</small>` : ''}</th>`).join('')}</tr></thead>
   <tbody>${s.roles.map((r) => `<tr><th scope="row">${esc(r.label)} <small>${money(r.rate, s, lang)}${esc(s.labels.perHour)}</small></th>${s.hours.map((h) => `<td>${money(calcMonthly(s, r, h), s, lang)}${esc(s.labels.perMonth)}</td>`).join('')}</tr>`).join('')}</tbody></table>
   ${s.note ? `<p class="ptable__note">${fmt(s.note, lang)}</p>` : ''}</div>
+  ${s.callouts ? `<div class="pcallouts">${s.callouts.map((x, k) => `<div class="pcallout rv" style="--d:${k * .08}s"><h3>${fmt(x.h, lang)}</h3><p>${fmt(x.p, lang)}</p></div>`).join('')}</div>` : ''}
 </div></section>`;
 };
 
@@ -955,7 +956,7 @@ function toMd(page, c) {
       case 'portfolio-grid': L.push(`## ${t(s.h2)}`, '', ...s.items.map((k) => `- ${k.title} — ${k.result}`), ''); break;
       case 'contact-links': L.push(`## ${t(s.h2)}`, '', `${s.p} ${CFG.phone}`, ''); break;
       case 'testimonials': L.push(`## ${t(s.h2)}`, '', ...s.items.map((x) => `> ${x.text}\n> — ${x.name}${x.role ? ', ' + x.role : ''} (${x.date})`), ''); break;
-      case 'price-calc': L.push(`## ${t(s.h2)}`, '', ...(s.lead ? [t(s.lead), ''] : []), `| ${s.labels.role} | ${s.hours.map((h) => `${h} h${s.labels.perWeek}`).join(' | ')} |`, `|${['', ...s.hours].map(() => ' --- |').join('')}`, ...s.roles.map((r) => `| ${r.label} (${money(r.rate, s, lang)}${s.labels.perHour}) | ${s.hours.map((h) => money(calcMonthly(s, r, h), s, lang) + s.labels.perMonth).join(' | ')} |`), '', ...(s.note ? [t(s.note), ''] : [])); break;
+      case 'price-calc': L.push(`## ${t(s.h2)}`, '', ...(s.lead ? [t(s.lead), ''] : []), `| ${s.labels.role} | ${s.hours.map((h) => `${h} h${s.labels.perWeek}`).join(' | ')} |`, `|${['', ...s.hours].map(() => ' --- |').join('')}`, ...s.roles.map((r) => `| ${r.label} (${money(r.rate, s, lang)}${s.labels.perHour}) | ${s.hours.map((h) => money(calcMonthly(s, r, h), s, lang) + s.labels.perMonth).join(' | ')} |`), '', ...(s.note ? [t(s.note), ''] : []), ...(s.estimate ? [t(s.estimate), ''] : []), ...(s.callouts || []).flatMap((x) => [`### ${t(x.h)}`, '', t(x.p), ''])); break;
       case 'price-tabs': L.push(`## ${t(s.h2)}`, '', ...s.tabs.flatMap((x) => [`### ${t(x.title)}`, '', `${x.fromLabel || s.fromLabel} ${x.from}${x.unit ? ' ' + x.unit : ''}`, '', ...(x.lead ? [t(x.lead), ''] : []), ...(x.plans || []).flatMap((p) => [`- **${t(p.h)}** — ${p.price}${p.p ? ': ' + t(p.p) : ''}`]), ...(x.items || []).map((i) => `- ${t(i)}`), '', ...(x.note ? [t(x.note), ''] : [])])); break;
       case 'cta-final': L.push(`## ${t(s.h2)}`, '', t(s.p), ''); break;
       case 'faq': if (page.faq?.length) L.push(`## ${t(s.h2 || T.faqTitle)}`, '', ...page.faq.flatMap((f) => [`### ${t(f.q)}`, '', ...f.a.flatMap((p) => [t(p), ''])])); break;

@@ -98,7 +98,7 @@
    "id": "tarifs",
    "label": "Tarifs",
    "h2": "Estimez votre *prix mensuel*",
-   "lead": "Choisissez un rôle et le nombre d'heures par semaine. Plus vous réservez d'heures, plus le taux horaire baisse.",
+   "lead": "Tarifs pour jeunes pousses et entreprises en croissance. Choisissez un rôle et le nombre d’heures par semaine; plus vous réservez d’heures, plus le taux horaire baisse.",
    "currency": "$ US",
    "weeks": 4.33,
    "hours": [
@@ -146,7 +146,18 @@
    "cta": {
     "label": "Réserver un appel",
     "to": "@contact"
-   }
+   },
+   "estimate": "Estimation pour jeunes pousses et entreprises en croissance. Votre prix final dépend de la complexité de votre produit, de votre base d’utilisateurs et de ce qui est en jeu pour votre entreprise; on vous le confirme par écrit après l’appel de découverte.",
+   "callouts": [
+    {
+     "h": "Grande entreprise ou grande équipe produit?",
+     "p": "On établit une soumission sur mesure, selon votre base d’utilisateurs, l’impact d’affaires et le niveau d’implication. [Parlez-nous de votre projet](@contact)."
+    },
+    {
+     "h": "Petite équipe ou budget plus serré?",
+     "p": "Si votre produit ou votre site est en ligne, commencez par notre [audit UX/CRO à prix fixe](@audit). Pas encore de produit? On conçoit votre première version dans un [projet à portée définie](@design-produit)."
+    }
+   ]
   },
   {
    "type": "process",
@@ -276,7 +287,7 @@
   {
    "q": "Combien coûte un designer de produit fractionnel?",
    "a": [
-    "Chez Viesigners, à partir de 3 450 $ US par mois pour un designer de produit à 5 heures par semaine. Le lead designer de produit commence à environ 3 900 $ US et le directeur du design à environ 4 350 $ US par mois. Le taux horaire baisse de 10 % à 10 heures par semaine, de 20 % à 15 heures et de 25 % à 20 heures. Utilisez le calculateur ci-dessus pour une estimation précise."
+    "Chez Viesigners, pour les jeunes pousses et les entreprises en croissance, à partir de 3 450 $ US par mois pour un designer de produit à 5 heures par semaine. Le lead designer de produit commence à environ 3 900 $ US et le directeur du design à environ 4 350 $ US par mois. Le taux horaire baisse de 10 % à 10 heures par semaine, de 20 % à 15 heures et de 25 % à 20 heures. Les grandes entreprises et les grandes équipes produit obtiennent une soumission sur mesure, selon la base d’utilisateurs, l’impact d’affaires et le niveau d’implication."
    ]
   },
   {

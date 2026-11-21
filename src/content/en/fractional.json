@@ -98,7 +98,7 @@
    "id": "pricing",
    "label": "Pricing",
    "h2": "Estimate your *monthly price*",
-   "lead": "Pick a role and the number of hours per week. The more hours you book, the lower the hourly rate.",
+   "lead": "Pricing for startups and scale-ups. Pick a role and the number of hours per week; the more hours you book, the lower the hourly rate.",
    "currency": "US$",
    "weeks": 4.33,
    "hours": [
@@ -146,7 +146,18 @@
    "cta": {
     "label": "Book an intro call",
     "to": "@contact"
-   }
+   },
+   "estimate": "Estimate for startups and scale-ups. Your final price depends on your product’s complexity, your user base and what’s at stake for your business; we confirm it in writing after the intro call.",
+   "callouts": [
+    {
+     "h": "Enterprise or large product team?",
+     "p": "We price on a custom quote, based on your user base, the business impact and the level of involvement. [Tell us about your project](@contact)."
+    },
+    {
+     "h": "Smaller team or budget?",
+     "p": "If your product or site is live, start with our [fixed-price UX/CRO audit](@audit). No product yet? We design your first version as a [fixed-scope project](@design-produit)."
+    }
+   ]
   },
   {
    "type": "process",
@@ -274,7 +285,7 @@
   {
    "q": "How much does a fractional product designer cost?",
    "a": [
-    "At Viesigners, from US$3,450 a month for a product designer at 5 hours a week. Lead product designer starts at about US$3,900 and head of design at about US$4,350 a month. The hourly rate drops by 10% at 10 hours a week, 20% at 15 hours and 25% at 20 hours. Use the calculator above for your exact estimate."
+    "At Viesigners, for startups and scale-ups, from US$3,450 a month for a product designer at 5 hours a week. Lead product designer starts at about US$3,900 and head of design at about US$4,350 a month. The hourly rate drops by 10% at 10 hours a week, 20% at 15 hours and 25% at 20 hours. Enterprises and large product teams get a custom quote based on the user base, the business impact and the level of involvement."
    ]
   },
   {
