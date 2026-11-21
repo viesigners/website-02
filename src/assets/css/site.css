@@ -774,6 +774,10 @@ em.acc, .acc {
 /* ---------- services hub link (home, menu) ---------- */
 .services__all { margin-top: clamp(1.8rem, 1.2rem + 2vw, 3rem); }
 .drawer__services a.drawer__all { display: inline-flex; align-items: center; gap: .6rem; margin-top: .6rem; padding: .9rem 0 0; border-top: 0; border-bottom: 0; font-family: var(--f-mono); font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; color: var(--pink-300); }
+.drawer__services a.drawer__feat { margin-top: .6rem; padding: .9rem 1rem; border: 0; border-radius: var(--r-md); background: rgba(255, 72, 139, .1); box-shadow: inset 2px 0 0 var(--pink); }
+.drawer__services a.drawer__feat span { display: block; margin-bottom: .2rem; font-family: var(--f-mono); font-size: .7rem; letter-spacing: .05em; text-transform: uppercase; color: var(--pink-300); }
+.drawer__services a.drawer__feat:hover { background: rgba(255, 72, 139, .16); padding-left: 1rem; }
+.drawer__services .drawer__ind { margin-top: 1.8rem; }
 .drawer__services a.drawer__all svg { width: 1em; height: 1em; transition: transform .3s var(--ease); }
 .drawer__services a.drawer__all:hover svg { transform: translateX(.35rem); }
 
@@ -809,6 +813,8 @@ em.acc, .acc {
   .hub__adv  { grid-column: 6 / 13; grid-row: 6 / 11; }
   .hub__soc  { grid-column: 1 / 5;  grid-row: 11 / 13; }
   .hub__copy   { grid-column: 5 / 13; grid-row: 11 / 13; }
+  .hub__frac { grid-column: 1 / 8; grid-row: 13 / 16; }
+  .hub__audit { grid-column: 8 / 13; grid-row: 13 / 16; }
 }
 .section--tight .casecard--word { margin-top: 0; }
 .theme .section--partner { padding-bottom: clamp(6rem, 4rem + 7vw, 10rem); }

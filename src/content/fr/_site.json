@@ -1,4 +1,6 @@
 {
+ "navStart": "Vous ne savez pas par où commencer?",
+ "industriesLabel": "Secteurs",
  "currencyLabel": "Devise",
  "seeReview": "Voir l’avis sur Google",
  "servicesLabel": "Nos services",
@@ -41,7 +43,7 @@
   "seo-geo": "Soyez trouvé sur Google et cité par les IA",
   "coaching": "Offres et lancements pour entrepreneurs de services",
   "copywriting": "Des mots qui transforment les visiteurs en clients",
-  "fractional": "Un designer senior dans votre équipe, quelques heures par semaine",
+  "fractional": "Un designer senior dans votre équipe, quelques heures par semaine ou par mois",
   "audit": "Un audit à prix fixe de ce qui vous coûte des conversions",
   "tarifs": "Tous les prix « à partir de », par service",
   "jouets-jeux": "UX/UI pour marques de jouets, jeux et divertissement"

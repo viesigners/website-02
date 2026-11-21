@@ -108,7 +108,7 @@ const catSlug = (key, lang) => RES_CATS[lang]?.find((k) => k.key === key)?.slug 
 const HIDDEN = new Set(CFG.hidden || []);
 const isHidden = (key) => (key === 'post' || key.startsWith('post:') ? HIDDEN.has('actualites') || HIDDEN.has(key) : HIDDEN.has(key));
 const SERVICE_KEYS = ['sites-web', 'landing-pages', 'design-produit', 'fractional', 'audit', 'coaching', 'publicite', 'medias-sociaux', 'seo-geo', 'copywriting'];
-const MAIN_SERVICE_KEYS = ['sites-web', 'landing-pages', 'design-produit', 'coaching']; // menu and footer stay short: the rest lives on the services hub
+const MAIN_SERVICE_KEYS = ['sites-web', 'landing-pages', 'design-produit', 'fractional', 'coaching']; // menu and footer stay short: the rest lives on the services hub
 const POSTS = { fr: [], en: [] };            // filled at load
 let CURRENT_POST_SLUGS = {};                 // key -> {fr,en}
 let POST_CATS = {};                          // key -> category key (an article's address starts with its type)
@@ -872,10 +872,13 @@ function header(c) {
   const alt = lang === 'fr' ? 'en' : 'fr';
   const altUrl = c.altUrls[alt] || `/${alt}/`;
   const cur = (k, extra = []) => (key === k || extra.includes(key) ? ' aria-current="page"' : '');
-  const main = [['home', 'home'], ['a-propos', 'a-propos'], ['realisations', 'realisations'], ['actualites', 'actualites'], ['contact', 'contact']]
+  const main = [['home', 'home'], ['a-propos', 'a-propos'], ['tarifs', 'tarifs'], ['realisations', 'realisations'], ['actualites', 'actualites'], ['contact', 'contact']]
       .filter(([k]) => !isHidden(k))
     .map(([k, label]) => `<a href="${url(k, lang)}"${cur(k, k === 'a-propos' ? ['charles-erick', 'jean-francois'] : k === 'actualites' ? ['post', ...CASE_KEYS] : [])}>${esc(T.nav[label])}</a>`).join('');
-  const services = MAIN_SERVICE_KEYS.filter((k) => !isHidden(k)).map((k) => `<a href="${url(k, lang)}"${cur(k)}>${esc(T.nav[k])}<small>${esc(T.navSub[k])}</small></a>`).join('') + `<a class="drawer__all" href="${url('services', lang)}"${cur('services')}>${esc(T.navAll)} ${ico('arrow')}</a>`;
+  const services = MAIN_SERVICE_KEYS.filter((k) => !isHidden(k)).map((k) => `<a href="${url(k, lang)}"${cur(k)}>${esc(T.nav[k])}<small>${esc(T.navSub[k])}</small></a>`).join('')
+    + (isHidden('audit') ? '' : `<a class="drawer__feat" href="${url('audit', lang)}"${cur('audit')}><span>${esc(T.navStart)}</span>${esc(T.nav.audit)}<small>${esc(T.navSub.audit)}</small></a>`)
+    + `<a class="drawer__all" href="${url('services', lang)}"${cur('services')}>${esc(T.navAll)} ${ico('arrow')}</a>`
+    + (isHidden('jouets-jeux') ? '' : `<p class="label drawer__ind">${esc(T.industriesLabel)}</p><a href="${url('jouets-jeux', lang)}"${cur('jouets-jeux')}>${esc(T.nav['jouets-jeux'])}<small>${esc(T.navSub['jouets-jeux'])}</small></a>`);
   return `<a class="skip" href="#main">${esc(T.skip)}</a>
 <header class="header" id="top">
   <div class="header__in">
@@ -904,8 +907,8 @@ function footer(c) {
   <div class="footer__grid">
     <div><a class="footer__logo" href="${url('home', lang)}" aria-label="Viesigners — ${esc(T.nav.home)}">${img('logo-viesigners.png', 'Viesigners')}</a><p style="color:var(--text-2);max-width:34ch">${esc(T.footer.blurb)}</p>
       <p style="margin-top:1.4rem"><a class="pill pill--sm" href="${url('contact', lang)}">${esc(T.footer.cta)}</a></p></div>
-    <div><h2>${esc(T.nav.services)}</h2><ul>${MAIN_SERVICE_KEYS.filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.footer.nav?.[k] || T.nav[k])}</a></li>`).join('')}<li><a class="footer__all" href="${url('services', lang)}">${esc(T.navAll)} ${ico('arrow')}</a></li></ul></div>
-    <div><h2>${esc(T.footer.company)}</h2><ul>${['a-propos', 'realisations', 'actualites', 'contact'].filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.nav[k])}</a></li>`).join('')}</ul></div>
+    <div><h2>${esc(T.nav.services)}</h2><ul>${[...MAIN_SERVICE_KEYS, 'audit', 'jouets-jeux'].filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.footer.nav?.[k] || T.nav[k])}</a></li>`).join('')}<li><a class="footer__all" href="${url('services', lang)}">${esc(T.navAll)} ${ico('arrow')}</a></li></ul></div>
+    <div><h2>${esc(T.footer.company)}</h2><ul>${['a-propos', 'tarifs', 'realisations', 'actualites', 'contact'].filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.nav[k])}</a></li>`).join('')}</ul></div>
     <div><h2>${esc(T.nav.contact)}</h2><address><span>${cityQc(lang)}, Canada</span><span>Vancouver, Canada</span><a href="tel:${CFG.phoneRaw}">${esc(CFG.phone)}</a></address>
       <div class="footer__social"><a href="${CFG.social.facebook}" target="_blank" rel="noopener noreferrer me" aria-label="Facebook ${esc(T.newTab)}">${ico('fb')}</a><a href="${CFG.social.linkedin}" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn ${esc(T.newTab)}">${ico('in')}</a></div></div>
   </div>

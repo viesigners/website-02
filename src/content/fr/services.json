@@ -86,6 +86,22 @@
           "cta": "Voir le service",
           "title": "Copywriting",
           "desc": "Des textes persuasifs, pensés pour le SEO, pour votre site, vos landing pages et votre produit : des messages clairs qui transforment les visiteurs en clients."
+        },
+        {
+          "area": "frac",
+          "size": "md",
+          "to": "@fractional",
+          "cta": "Voir le service",
+          "title": "Design de produit fractionnel",
+          "desc": "Un designer de produit, un lead ou un directeur du design dans votre équipe, quelques heures par semaine ou par mois. Dès {$3450}/mois."
+        },
+        {
+          "area": "audit",
+          "size": "md",
+          "to": "@audit",
+          "cta": "Voir l’audit",
+          "title": "Audit UX/CRO",
+          "desc": "Un audit à prix fixe de ce qui vous coûte des clients, classé par impact. La meilleure première étape avant une refonte."
         }
       ]
     },

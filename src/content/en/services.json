@@ -86,6 +86,22 @@
           "cta": "See the service",
           "title": "Copywriting",
           "desc": "Persuasive, SEO-aware copy for your website, landing pages and product: clear messages that turn visitors into customers."
+        },
+        {
+          "area": "frac",
+          "size": "md",
+          "to": "@fractional",
+          "cta": "See the service",
+          "title": "Fractional product design",
+          "desc": "A senior product designer, lead or head of design in your team, a few hours a week or a month. From {$3450}/month."
+        },
+        {
+          "area": "audit",
+          "size": "md",
+          "to": "@audit",
+          "cta": "See the audit",
+          "title": "UX/CRO audit",
+          "desc": "A fixed-price audit of what costs you customers, ranked by impact. The best first step before a redesign."
         }
       ]
     },
