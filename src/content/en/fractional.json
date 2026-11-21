@@ -186,8 +186,7 @@
    "tag": "Accelerated option",
    "text": "Need to move faster? *Two senior designers in parallel.*",
    "prose": [
-    "For a major redesign or a tight deadline, we put both founders on your product at the same time, with our accelerated UI overhaul method.",
-    "This option depends on our availability. Ask about it on the intro call."
+    "For a major redesign or a tight deadline, we put both founders on your product at the same time, with our accelerated UI overhaul method."
    ],
    "tracks": [
     {
@@ -201,7 +200,7 @@
    ],
    "together": "Same product, same sprints, in parallel",
    "cta": {
-    "label": "Ask about the accelerated option",
+    "label": "Check our availability",
     "to": "@contact"
    }
   },
