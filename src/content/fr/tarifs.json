@@ -30,7 +30,7 @@
      "id": "sites-web",
      "label": "Sites web et landing pages",
      "title": "Sites web, landing pages et *tunnels de vente*",
-     "from": "1 987 $ CA",
+     "from": "{$1987}",
      "lead": "Un prix fixe par projet, établi après un court appel sur vos objectifs, le nombre de pages et les fonctionnalités.",
      "items": [
       "Architecture de l'offre et rédaction persuasive",
@@ -53,17 +53,17 @@
      "id": "design-produit",
      "label": "Design de produit et applis",
      "title": "Design de produit pour *SaaS, applications et produits IA*",
-     "from": "3 450 $ US",
+     "from": "{$3450}",
      "unit": "par mois (fractionnel)",
      "plans": [
       {
        "h": "Design de produit fractionnel",
-       "price": "Dès 3 450 $ US/mois",
+       "price": "Dès {$3450}/mois",
        "p": "Un designer de produit, un lead ou un directeur du design dès 5 heures par semaine. Le taux horaire baisse quand le nombre d'heures augmente.",
        "items": [
-        "Designer de produit : 160 $ US/h",
-        "Lead designer de produit : 180 $ US/h",
-        "Directeur du design : 200 $ US/h",
+        "Designer de produit : {$160:h}/h",
+        "Lead designer de produit : {$180:h}/h",
+        "Directeur du design : {$200:h}/h",
         "−10 % à 10 h/sem., −20 % à 15 h, −25 % à 20 h"
        ]
       },
@@ -107,13 +107,13 @@
      "id": "coaching",
      "label": "Coaching business",
      "title": "*Coaching business* : le programme ImpaX",
-     "from": "4 000 $ CA",
+     "from": "{$2800}",
      "unit": "pour 3 mois (groupe)",
      "lead": "ImpaX, l'accélérateur pour experts ambitieux, aide les coachs, consultants et experts à bâtir une offre premium et à signer des clients.",
      "plans": [
       {
        "h": "Groupe",
-       "price": "Dès 4 000 $ CA / 3 mois",
+       "price": "Dès {$2800} / 3 mois",
        "items": [
         "Jusqu'à deux séances de questions de 1 h par semaine",
         "Plateforme d'apprentissage avec contenu préenregistré",
@@ -123,14 +123,14 @@
       },
       {
        "h": "VIP",
-       "price": "Dès 8 000 $ CA / 3 mois",
+       "price": "Dès {$5700} / 3 mois",
        "items": [
         "Tout ce qui est inclus dans Groupe",
         "Une séance individuelle de 60 minutes chaque semaine"
        ]
       }
      ],
-     "note": "Les programmes durent de 6 à 13 semaines, avec des formules hebdomadaires, trimestrielles et annuelles. Les engagements plus longs sont escomptés, et vous pouvez passer à une formule supérieure sans frais pendant une période donnée. Prix avant taxes; prix en euros sur demande.",
+     "note": "Les programmes durent de 6 à 13 semaines, avec des formules hebdomadaires, trimestrielles et annuelles. Les engagements plus longs sont escomptés, et vous pouvez passer à une formule supérieure sans frais pendant une période donnée. Prix avant taxes.",
      "ctas": [
       {
        "label": "Voir le programme",
@@ -138,7 +138,11 @@
       }
      ]
     }
-   ]
+   ],
+   "currency": {
+    "aria": "Devise",
+    "note": "Prix convertis à titre indicatif, arrondis à la baisse."
+   }
   },
   {
    "type": "faq",
@@ -168,7 +172,7 @@
   {
    "q": "Dans quelle devise facturez-vous?",
    "a": [
-    "Le design de produit fractionnel est affiché en dollars américains; les clients canadiens peuvent être facturés en dollars canadiens. Les autres services sont en dollars canadiens. Les prix sont avant taxes."
+    "Nos prix sont fixés en dollars américains. Le sélecteur de devise affiche un équivalent approximatif en dollars canadiens ou en euros; la soumission finale confirme la devise de facturation. Les prix sont avant taxes."
    ]
   },
   {

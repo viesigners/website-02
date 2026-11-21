@@ -30,7 +30,7 @@
      "id": "websites",
      "label": "Websites & landing pages",
      "title": "Websites, landing pages and *sales funnels*",
-     "from": "CA$1,987",
+     "from": "{$1987}",
      "lead": "A fixed price per project, set after a short call about your goals, the number of pages and the features.",
      "items": [
       "Offer architecture and persuasive copy",
@@ -53,17 +53,17 @@
      "id": "product-design",
      "label": "Product & app design",
      "title": "Product design for *SaaS, apps and AI products*",
-     "from": "US$3,450",
+     "from": "{$3450}",
      "unit": "per month (fractional)",
      "plans": [
       {
        "h": "Fractional product design",
-       "price": "From US$3,450/month",
+       "price": "From {$3450}/month",
        "p": "A product designer, lead or head of design from 5 hours a week. The hourly rate drops as hours increase.",
        "items": [
-        "Product designer: US$160/h",
-        "Lead product designer: US$180/h",
-        "Head of design: US$200/h",
+        "Product designer: {$160:h}/h",
+        "Lead product designer: {$180:h}/h",
+        "Head of design: {$200:h}/h",
         "−10% at 10 h/week, −20% at 15 h, −25% at 20 h"
        ]
       },
@@ -107,13 +107,13 @@
      "id": "coaching",
      "label": "Business coaching",
      "title": "ImpaX *business coaching* program",
-     "from": "CA$4,000",
+     "from": "{$2800}",
      "unit": "for 3 months (group)",
      "lead": "Our ImpaX program helps coaches, consultants and experts build a premium offer and sign clients. The program currently runs in French; an English cohort opens when the waitlist is full enough.",
      "plans": [
       {
        "h": "Group",
-       "price": "From CA$4,000 / 3 months",
+       "price": "From {$2800} / 3 months",
        "items": [
         "Up to two 1-hour Q&A sessions a week",
         "Learning platform with pre-recorded content",
@@ -123,14 +123,14 @@
       },
       {
        "h": "VIP",
-       "price": "From CA$8,000 / 3 months",
+       "price": "From {$5700} / 3 months",
        "items": [
         "Everything in Group",
         "A 60-minute 1:1 session every week"
        ]
       }
      ],
-     "note": "Programs last 6 to 13 weeks, with weekly, 3-month and annual options. Longer commitments get a discount, and you can upgrade within a set period at no fee. Prices before taxes; euro prices on request.",
+     "note": "Programs last 6 to 13 weeks, with weekly, 3-month and annual options. Longer commitments get a discount, and you can upgrade within a set period at no fee. Prices before taxes.",
      "ctas": [
       {
        "label": "See the program",
@@ -138,7 +138,11 @@
       }
      ]
     }
-   ]
+   ],
+   "currency": {
+    "aria": "Currency",
+    "note": "Converted prices are approximate, rounded down."
+   }
   },
   {
    "type": "faq",
@@ -168,7 +172,7 @@
   {
    "q": "In which currency do you bill?",
    "a": [
-    "Fractional product design is priced in US dollars; Canadian clients can be billed in Canadian dollars. Other services are priced in Canadian dollars. Prices are before taxes."
+    "Our prices are set in US dollars. The currency selector shows an approximate equivalent in Canadian dollars or euros; your final quote confirms the billing currency. Prices are before taxes."
    ]
   },
   {

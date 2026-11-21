@@ -304,6 +304,25 @@ document.addEventListener('click', (e) => {
     box.addEventListener('input', update); box.addEventListener('change', update);
   });
 
+  /* currency selector: the HTML shows US dollars; CAD and EUR come from the rates in config.json,
+     rounded down (prices to the hundred, hourly rates to the nearest 5). The choice is remembered on this device. */
+  const curSels = d.querySelectorAll('.cursel');
+  if (curSels.length) {
+    const fx = JSON.parse(curSels[0].dataset.fx), lang = d.documentElement.lang === 'fr' ? 'fr' : 'en';
+    const signs = { USD: ['US$', '$ US'], CAD: ['CA$', '$ CA'], EUR: ['€', '€'] };
+    const show = (n, cur) => (lang === 'fr' ? `${n.toLocaleString('fr-CA')} ${signs[cur][1]}` : `${signs[cur][0]}${n.toLocaleString('en-CA')}`);
+    const convert = (usd, cur, hourly) => (cur === 'USD' ? usd : hourly ? Math.floor((usd * fx[cur]) / 5) * 5 : Math.floor((usd * fx[cur]) / 100) * 100);
+    const apply = (cur) => {
+      d.querySelectorAll('.money').forEach((m) => { m.textContent = show(convert(+m.dataset.usd, cur, m.hasAttribute('data-h')), cur); });
+      curSels.forEach((s) => s.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', b.dataset.cur === cur)));
+      try { localStorage.setItem('vz-currency', cur); } catch (e) { /* private mode: the choice just isn't remembered */ }
+    };
+    curSels.forEach((s) => s.addEventListener('click', (e) => { const b = e.target.closest('button[data-cur]'); if (b) apply(b.dataset.cur); }));
+    let saved = null;
+    try { saved = localStorage.getItem('vz-currency'); } catch (e) { /* ignore */ }
+    if (saved && saved !== 'USD' && fx[saved]) apply(saved);
+  }
+
   /* pricing tabs: show one panel at a time, follow #anchors, arrow keys move between tabs */
   d.querySelectorAll('[data-ptabs]').forEach((box) => {
     const tabs = [...box.querySelectorAll('[role=tab]')], panels = [...box.querySelectorAll('[role=tabpanel]')];

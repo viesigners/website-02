@@ -1323,7 +1323,7 @@ html { scroll-padding-top: 7rem; }
 .ptabs__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 1rem 2rem; margin-bottom: 1.2rem; }
 .ptabs__head h3 { font-size: clamp(1.4rem, 1rem + 1.4vw, 2.1rem); font-weight: 300; letter-spacing: -0.028em; max-width: 30ch; }
 .ptabs__from { display: flex; flex-direction: column; text-align: right; }
-.ptabs__from span { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: var(--text-3); }
+.ptabs__from > span { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: var(--text-3); }
 .ptabs__from b { font-size: clamp(1.6rem, 1.1rem + 1.6vw, 2.4rem); font-weight: 400; letter-spacing: -0.02em; color: var(--accent-text); }
 .ptabs__from small { color: var(--text-3); font-size: .85rem; }
 .ptabs__lead { color: var(--text-2); max-width: var(--measure); margin-bottom: 1.2rem; }
@@ -1361,3 +1361,11 @@ html { scroll-padding-top: 7rem; }
 @keyframes fband-run { to { transform: scaleX(1); } }
 .fband__together { font-family: var(--f-mono); font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; color: var(--text-3); text-align: center; margin-top: .3rem; }
 @media (prefers-reduced-motion: reduce) { .fband__bar i { transform: none; } .fband.in .fband__bar i { animation: none; } }
+
+/* currency selector (USD default, CAD, EUR) */
+.cursel { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin-bottom: 1rem; }
+.cursel button { padding: .45rem .8rem; border: 0; border-radius: var(--r-sm); background: transparent; box-shadow: inset 0 0 0 1px var(--line-2); color: var(--text-2); font-family: var(--f-mono); font-size: .75rem; letter-spacing: .05em; cursor: pointer; transition: background .2s, color .2s, box-shadow .2s; }
+.cursel button:hover { color: var(--text); box-shadow: inset 0 0 0 1px var(--pink); }
+.cursel button[aria-pressed="true"] { background: var(--navy); color: #fff; box-shadow: none; }
+.cursel button:focus-visible { outline: 3px solid var(--pink); outline-offset: 2px; }
+.cursel__note { margin-left: .4rem; color: var(--text-3); font-size: .8rem; }

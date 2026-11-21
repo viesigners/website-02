@@ -29,5 +29,13 @@
   ],
   "person": {
     "email": "freres.bg@viesigners.com"
+  },
+  "currency": {
+    "note": "US dollars are the base. Update these two rates every 3 months (or when a rate moves more than 5%). Converted prices are rounded down: prices to the hundred, hourly rates to the nearest 5.",
+    "updated": "2026-11-20",
+    "rates": {
+      "CAD": 1.38,
+      "EUR": 0.92
+    }
   }
 }

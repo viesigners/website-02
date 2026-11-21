@@ -121,6 +121,12 @@ const url = (key, lang) => {
 const abs = (u) => ORIGIN + (BASE && !(u === BASE || u.startsWith(BASE + '/')) ? BASE : '') + u;
 
 /* ----------------------------- text formatting ---------------------------- */
+/* prices: content writes them in US dollars as {$1987} (a price) or {$160:h} (an hourly rate). The HTML shows USD;
+   the currency selector (site.js) converts them with the rates in config.json, rounded DOWN: prices to the hundred,
+   hourly rates to the nearest 5. The same rules live here (USD) and in site.js (CAD, EUR). */
+const CUR_SIGNS = { USD: ['US$', '$ US'], CAD: ['CA$', '$ CA'], EUR: ['€', '€'] };
+const fmtCur = (n, cur, lang) => (lang === 'fr' ? `${n.toLocaleString('fr-CA')} ${CUR_SIGNS[cur][1]}` : `${CUR_SIGNS[cur][0]}${n.toLocaleString('en-CA')}`);
+const moneyTok = (h, lang) => h.replace(/\{\$(\d+)(:h)?\}/g, (_, n, hr) => `<span class="money" data-usd="${n}"${hr ? ' data-h' : ''}>${fmtCur(+n, 'USD', lang)}</span>`);
 function fmt(s, lang) {
   if (s == null) return '';
   let h = esc(s);
@@ -131,9 +137,9 @@ function fmt(s, lang) {
   h = h.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
   h = h.replace(/\*([^*]+)\*/g, '<em class="acc">$1</em>');
   if (lang === 'fr') h = h.replace(/ ([:;!?»])/g, ' $1').replace(/« /g, '« ');
-  return h;
+  return moneyTok(h, lang);
 }
-const plain = (s = '') => String(s).replace(/\{year\}/g, YEAR).replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*\*?([^*]+)\*\*?/g, '$1');
+const plain = (s = '') => String(s).replace(/\{\$(\d+)(:h)?\}/g, (_, n) => `US$${Number(n).toLocaleString('en-US')}`).replace(/\{year\}/g, YEAR).replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*\*?([^*]+)\*\*?/g, '$1');
 const CDICO = {
   trust: '<svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.4-3 8.3-7 10-4-1.7-7-5.6-7-10V6z"/><path d="M9.8 9.6a2.3 2.3 0 1 1 3.4 2c-.7.4-1.2.9-1.2 1.7"/><path d="M12 16.2h.01"/></svg>',
   form: '<svg viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="2"/><path d="M8.5 7h7M8.5 10.5h7M8.5 14h7M8.5 17.5h4"/></svg>',
@@ -765,6 +771,9 @@ R['price-calc'] = (s, c) => {
 </div></section>`;
 };
 
+/* currency selector: USD (default, what the HTML and schema show), CAD, EUR. site.js converts every .money on the page. */
+const curSel = (lang, label) => `<div class="cursel" role="group" aria-label="${esc(label.aria)}" data-fx='${esc(JSON.stringify(CFG.currency.rates))}'>${['USD', 'CAD', 'EUR'].map((c) => `<button type="button" data-cur="${c}" aria-pressed="${c === 'USD'}">${c}</button>`).join('')}<span class="cursel__note">${esc(label.note)}</span></div>`;
+
 /* pricing tabs: one panel per service. All panels are in the HTML (search engines and AI read every price);
    with JS only the selected one shows, and each has its own #anchor so links and ads can open the right tab. */
 R['price-tabs'] = (s, c) => {
@@ -772,11 +781,12 @@ R['price-tabs'] = (s, c) => {
   return `<section class="section"><div class="wrap">
   ${secHead(s, c, 'pricing', { label: s.label })}
   <div class="ptabs" data-ptabs>
+    ${s.currency ? curSel(lang, s.currency) : ''}
     <div class="ptabs__list" role="tablist" aria-label="${esc(s.h2 ? plain(s.h2) : '')}">${s.tabs.map((t, i) => `<a class="ptabs__tab" role="tab" id="tab-${t.id}" href="#${t.id}" aria-controls="${t.id}" aria-selected="${i === 0}">${esc(t.label)}</a>`).join('')}</div>
     ${s.tabs.map((t) => `<div class="ptabs__panel" role="tabpanel" id="${t.id}" aria-labelledby="tab-${t.id}" tabindex="0">
-      <div class="ptabs__head"><h3>${fmt(t.title, lang)}</h3><p class="ptabs__from"><span>${esc(t.fromLabel || s.fromLabel)}</span><b>${esc(t.from)}</b>${t.unit ? `<small>${esc(t.unit)}</small>` : ''}</p></div>
+      <div class="ptabs__head"><h3>${fmt(t.title, lang)}</h3><p class="ptabs__from"><span>${esc(t.fromLabel || s.fromLabel)}</span><b>${moneyTok(esc(t.from), lang)}</b>${t.unit ? `<small>${esc(t.unit)}</small>` : ''}</p></div>
       ${t.lead ? `<p class="ptabs__lead">${fmt(t.lead, lang)}</p>` : ''}
-      ${t.plans ? `<div class="ptabs__plans">${t.plans.map((p) => `<div class="ptabs__plan"><h4>${fmt(p.h, lang)}</h4><p class="ptabs__price">${esc(p.price)}</p>${p.p ? `<p>${fmt(p.p, lang)}</p>` : ''}${p.items ? `<ul>${p.items.map((x) => `<li>${ico('check')}<span>${fmt(x, lang)}</span></li>`).join('')}</ul>` : ''}</div>`).join('')}</div>` : ''}
+      ${t.plans ? `<div class="ptabs__plans">${t.plans.map((p) => `<div class="ptabs__plan"><h4>${fmt(p.h, lang)}</h4><p class="ptabs__price">${moneyTok(esc(p.price), lang)}</p>${p.p ? `<p>${fmt(p.p, lang)}</p>` : ''}${p.items ? `<ul>${p.items.map((x) => `<li>${ico('check')}<span>${fmt(x, lang)}</span></li>`).join('')}</ul>` : ''}</div>`).join('')}</div>` : ''}
       ${t.items ? `<ul class="ptabs__inc">${t.items.map((x) => `<li>${ico('check')}<span>${fmt(x, lang)}</span></li>`).join('')}</ul>` : ''}
       ${t.note ? `<p class="ptabs__note">${fmt(t.note, lang)}</p>` : ''}
       <p class="ptabs__ctas">${(t.ctas || []).filter((b) => !isHidden(b.to.slice(1))).map((b, i) => `<a class="pill ${i ? 'pill--ghost' : 'pill--violet'}" href="${url(b.to.slice(1), lang)}">${esc(b.label)}</a>`).join('')}</p>
