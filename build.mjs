@@ -771,8 +771,9 @@ R['price-calc'] = (s, c) => {
 </div></section>`;
 };
 
-/* currency selector: USD (default, what the HTML and schema show), CAD, EUR. site.js converts every .money on the page. */
-const curSel = (lang, label) => `<div class="cursel" role="group" aria-label="${esc(label.aria)}" data-fx='${esc(JSON.stringify(CFG.currency.rates))}'>${['USD', 'CAD', 'EUR'].map((c) => `<button type="button" data-cur="${c}" aria-pressed="${c === 'USD'}">${c}</button>`).join('')}<span class="cursel__note">${esc(label.note)}</span></div>`;
+/* currency selector, in the menu on every page: USD (default, what the HTML and schema show), CAD, EUR.
+   site.js converts every .money on the page and remembers the choice from page to page. */
+const curSel = (label) => `<div class="cursel" role="group" aria-label="${esc(label)}" data-fx='${esc(JSON.stringify(CFG.currency.rates))}'>${['USD', 'CAD', 'EUR'].map((c) => `<button type="button" data-cur="${c}" aria-pressed="${c === 'USD'}">${c}</button>`).join('')}</div>`;
 
 /* pricing tabs: one panel per service. All panels are in the HTML (search engines and AI read every price);
    with JS only the selected one shows, and each has its own #anchor so links and ads can open the right tab. */
@@ -781,7 +782,7 @@ R['price-tabs'] = (s, c) => {
   return `<section class="section"><div class="wrap">
   ${secHead(s, c, 'pricing', { label: s.label })}
   <div class="ptabs" data-ptabs>
-    ${s.currency ? curSel(lang, s.currency) : ''}
+    ${s.currency ? `<p class="cur-note">${esc(s.currency.note)}</p>` : ''}
     <div class="ptabs__list" role="tablist" aria-label="${esc(s.h2 ? plain(s.h2) : '')}">${s.tabs.map((t, i) => `<a class="ptabs__tab" role="tab" id="tab-${t.id}" href="#${t.id}" aria-controls="${t.id}" aria-selected="${i === 0}">${esc(t.label)}</a>`).join('')}</div>
     ${s.tabs.map((t) => `<div class="ptabs__panel" role="tabpanel" id="${t.id}" aria-labelledby="tab-${t.id}" tabindex="0">
       <div class="ptabs__head"><h3>${fmt(t.title, lang)}</h3><p class="ptabs__from"><span>${esc(t.fromLabel || s.fromLabel)}</span><b>${moneyTok(esc(t.from), lang)}</b>${t.unit ? `<small>${esc(t.unit)}</small>` : ''}</p></div>
@@ -889,6 +890,7 @@ function header(c) {
     <nav class="drawer__services" aria-label="${esc(T.servicesLabel)}"><p class="label">${esc(T.nav.services)}</p>${services}</nav>
     <div class="drawer__foot">
       <div class="lang-m" role="group" aria-label="${esc(T.langLabel)}">${['en', 'fr'].map((l) => (l === lang ? `<span aria-current="true">${l.toUpperCase()}</span>` : `<a href="${altUrl}" hreflang="${l}" lang="${l}" aria-label="${esc(T.langSwitch)}">${l.toUpperCase()}</a>`)).join('')}</div>
+      ${curSel(T.currencyLabel)}
       <a class="pill" href="${url('contact', lang)}">${esc(T.ctaShort)}</a>
     </div>
   </div>

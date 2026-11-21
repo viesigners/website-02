@@ -1362,10 +1362,12 @@ html { scroll-padding-top: 7rem; }
 .fband__together { font-family: var(--f-mono); font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; color: var(--text-3); text-align: center; margin-top: .3rem; }
 @media (prefers-reduced-motion: reduce) { .fband__bar i { transform: none; } .fband.in .fband__bar i { animation: none; } }
 
-/* currency selector (USD default, CAD, EUR) */
-.cursel { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin-bottom: 1rem; }
-.cursel button { padding: .45rem .8rem; border: 0; border-radius: var(--r-sm); background: transparent; box-shadow: inset 0 0 0 1px var(--line-2); color: var(--text-2); font-family: var(--f-mono); font-size: .75rem; letter-spacing: .05em; cursor: pointer; transition: background .2s, color .2s, box-shadow .2s; }
-.cursel button:hover { color: var(--text); box-shadow: inset 0 0 0 1px var(--pink); }
-.cursel button[aria-pressed="true"] { background: var(--navy); color: #fff; box-shadow: none; }
+/* currency selector in the menu, styled like the language switch next to it (USD default, CAD, EUR) */
+.cursel { display: flex; gap: .4rem; font-family: var(--f-mono); font-size: .8rem; font-weight: 500; letter-spacing: .04em; }
+.cursel button { padding: .6rem .9rem; border: 0; border-radius: var(--r-sm); background: transparent; box-shadow: inset 0 0 0 1px var(--line-2); color: var(--slate-400); font: inherit; letter-spacing: inherit; cursor: pointer; transition: background .2s, color .2s; }
+.cursel button:hover { color: #fff; }
+.cursel button[aria-pressed="true"] { background: rgba(255, 255, 255, .12); color: #fff; }
 .cursel button:focus-visible { outline: 3px solid var(--pink); outline-offset: 2px; }
-.cursel__note { margin-left: .4rem; color: var(--text-3); font-size: .8rem; }
+/* "converted prices" note next to prices: only when the visitor picked CAD or EUR */
+.cur-note { display: none; margin-bottom: 1rem; color: var(--text-3); font-size: .85rem; }
+:root[data-cur="CAD"] .cur-note, :root[data-cur="EUR"] .cur-note { display: block; }

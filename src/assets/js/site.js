@@ -315,6 +315,7 @@ document.addEventListener('click', (e) => {
     const apply = (cur) => {
       d.querySelectorAll('.money').forEach((m) => { m.textContent = show(convert(+m.dataset.usd, cur, m.hasAttribute('data-h')), cur); });
       curSels.forEach((s) => s.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', b.dataset.cur === cur)));
+      d.documentElement.dataset.cur = cur; // shows the "converted prices" notes when the currency isn't USD
       try { localStorage.setItem('vz-currency', cur); } catch (e) { /* private mode: the choice just isn't remembered */ }
     };
     curSels.forEach((s) => s.addEventListener('click', (e) => { const b = e.target.closest('button[data-cur]'); if (b) apply(b.dataset.cur); }));
