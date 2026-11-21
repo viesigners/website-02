@@ -182,12 +182,28 @@
    ]
   },
   {
-   "type": "statement",
+   "type": "feature-band",
+   "tag": "Accelerated option",
    "text": "Need to move faster? *Two senior designers in parallel.*",
    "prose": [
-    "For a major redesign or a deadline, we can put both founders on your product at the same time, using our accelerated UI overhaul method: one designer on research and structure, the other on interface and design system, working in parallel.",
+    "For a major redesign or a tight deadline, we put both founders on your product at the same time, with our accelerated UI overhaul method.",
     "This option depends on our availability. Ask about it on the intro call."
-   ]
+   ],
+   "tracks": [
+    {
+     "who": "Designer 1",
+     "h": "Research and structure"
+    },
+    {
+     "who": "Designer 2",
+     "h": "Interface and design system"
+    }
+   ],
+   "together": "Same product, same sprints, in parallel",
+   "cta": {
+    "label": "Ask about the accelerated option",
+    "to": "@contact"
+   }
   },
   {
    "type": "compare",

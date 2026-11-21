@@ -1340,3 +1340,23 @@ html { scroll-padding-top: 7rem; }
 /* link to the original review (Google, LinkedIn…): proof that the testimonial is real */
 .tsrc { display: inline-flex; align-items: center; gap: .4rem; margin-top: .45rem; font-family: var(--f-mono); font-size: .7rem; letter-spacing: .03em; text-transform: uppercase; color: var(--accent-text); border-bottom: 1px solid currentColor; width: max-content; }
 .tsrc svg { width: .8rem; height: .8rem; }
+
+/* ---------- highlighted option (feature band): navy panel with a pink glow ---------- */
+.fband { position: relative; overflow: hidden; display: grid; gap: clamp(1.6rem, 1rem + 2vw, 3rem); align-items: center; border-radius: var(--r-xl); padding: clamp(1.8rem, 1rem + 3.5vw, 4.5rem); color: #fff; background: radial-gradient(120% 90% at 100% 0%, rgba(227, 58, 219, .32), transparent 55%), radial-gradient(90% 80% at 0% 100%, rgba(255, 72, 139, .22), transparent 60%), var(--navy); box-shadow: 0 30px 60px -30px rgba(23, 43, 118, .55); --text: #fff; --text-2: rgba(219, 229, 237, .86); --text-3: rgba(179, 192, 212, .8); --line: rgba(179, 192, 212, .22); --accent-text: var(--pink-300); }
+@media (min-width: 900px) { .fband { grid-template-columns: 1.15fr 1fr; } }
+.fband .eyebrow-tag { color: var(--pink-300); margin-bottom: 1.1rem; }
+.fband h2 { font-family: var(--f-display); font-weight: 300; font-size: clamp(1.8rem, 1.1rem + 2.4vw, 3rem); line-height: 1.08; letter-spacing: -0.028em; margin-bottom: 1.2rem; text-wrap: balance; }
+.fband h2 .acc { color: var(--pink-300); }
+.fband__text > p:not(.eyebrow-tag) { color: var(--text-2); font-size: 1.05rem; line-height: 1.6; max-width: 52ch; }
+.fband__text > p + p { margin-top: .8rem; }
+.fband .pill { margin-top: 1.8rem; }
+.fband__tracks { display: grid; gap: 1rem; }
+.fband__track { display: grid; gap: .35rem; padding: 1.2rem 1.3rem; border-radius: var(--r-lg); background: rgba(255, 255, 255, .06); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .12); }
+.fband__who { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: var(--pink-300); }
+.fband__track b { font-weight: 500; font-size: 1.05rem; }
+.fband__bar { position: relative; height: 4px; margin-top: .6rem; border-radius: 99px; background: rgba(255, 255, 255, .12); overflow: hidden; }
+.fband__bar i { position: absolute; inset: 0 auto 0 0; width: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--pink), var(--purple)); transform-origin: left; transform: scaleX(.15); }
+.fband.in .fband__bar i { animation: fband-run 2.6s var(--ease) var(--d, 0s) forwards; }
+@keyframes fband-run { to { transform: scaleX(1); } }
+.fband__together { font-family: var(--f-mono); font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; color: var(--text-3); text-align: center; margin-top: .3rem; }
+@media (prefers-reduced-motion: reduce) { .fband__bar i { transform: none; } .fband.in .fband__bar i { animation: none; } }

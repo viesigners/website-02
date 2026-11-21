@@ -182,12 +182,28 @@
    ]
   },
   {
-   "type": "statement",
-   "text": "Besoin d'aller plus vite? *Deux designers seniors en parallèle.*",
+   "type": "feature-band",
+   "tag": "Option accélérée",
+   "text": "Besoin d’aller plus vite? *Deux designers seniors en parallèle.*",
    "prose": [
-    "Pour une refonte majeure ou une échéance serrée, on peut mettre les deux fondateurs sur votre produit en même temps, avec notre méthode de refonte UI accélérée : un designer sur la recherche et la structure, l'autre sur l'interface et le système de design, en parallèle.",
-    "Cette option dépend de nos disponibilités. Parlez-en lors de l'appel de découverte."
-   ]
+    "Pour une refonte majeure ou une échéance serrée, on met les deux fondateurs sur votre produit en même temps, avec notre méthode de refonte UI accélérée.",
+    "Cette option dépend de nos disponibilités. Parlez-en lors de l’appel de découverte."
+   ],
+   "tracks": [
+    {
+     "who": "Designer 1",
+     "h": "Recherche et structure"
+    },
+    {
+     "who": "Designer 2",
+     "h": "Interface et système de design"
+    }
+   ],
+   "together": "Même produit, mêmes sprints, en parallèle",
+   "cta": {
+    "label": "Parler de l’option accélérée",
+    "to": "@contact"
+   }
   },
   {
    "type": "compare",

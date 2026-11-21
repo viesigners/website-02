@@ -216,6 +216,20 @@ R.statement = (s, c) => `<section class="section statement${s.wide ? ' statement
   </div>` : ''}
 </div></section>`;
 
+/* highlighted option: a navy panel that stands out from the page without a "featured" label;
+   the right side shows the two designers working in parallel (one track each) */
+R['feature-band'] = (s, c) => `<section class="section section--tight"><div class="wrap">
+  <div class="fband rv">
+    <div class="fband__text">
+      ${s.tag ? `<p class="eyebrow-tag">${esc(s.tag)}</p>` : ''}
+      <h2>${fmt(s.text, c.lang)}</h2>
+      ${(s.prose || []).map((p) => `<p>${fmt(p, c.lang)}</p>`).join('')}
+      ${s.cta && !isHidden(s.cta.to.slice(1)) ? `<a class="pill pill--violet" href="${url(s.cta.to.slice(1), c.lang)}">${esc(s.cta.label)}</a>` : ''}
+    </div>
+    ${s.tracks ? `<div class="fband__tracks" aria-hidden="false">${s.tracks.map((t, k) => `<div class="fband__track" style="--d:${k * .25}s"><span class="fband__who">${esc(t.who)}</span><b>${fmt(t.h, c.lang)}</b><span class="fband__bar"><i></i></span></div>`).join('')}${s.together ? `<p class="fband__together">${fmt(s.together, c.lang)}</p>` : ''}</div>` : ''}
+  </div>
+</div></section>`;
+
 R.legal = (s, c) => `<section class="section legal"><div class="wrap">
   <div class="legal__body">${s.blocks.map((k) => `<section class="legal__block"><h2>${esc(k.h)}</h2>${(k.p || []).map((t) => `<p>${fmt(t, c.lang)}</p>`).join('')}${k.ul ? `<ul>${k.ul.map((t) => `<li>${fmt(t, c.lang)}</li>`).join('')}</ul>` : ''}</section>`).join('')}</div>
 </div></section>`;
@@ -956,6 +970,7 @@ function toMd(page, c) {
       case 'portfolio-grid': L.push(`## ${t(s.h2)}`, '', ...s.items.map((k) => `- ${k.title} — ${k.result}`), ''); break;
       case 'contact-links': L.push(`## ${t(s.h2)}`, '', `${s.p} ${CFG.phone}`, ''); break;
       case 'testimonials': L.push(`## ${t(s.h2)}`, '', ...s.items.map((x) => `> ${x.text}\n> — ${x.name}${x.role ? ', ' + x.role : ''} (${x.date})`), ''); break;
+      case 'feature-band': L.push(`## ${t(s.text)}`, '', ...(s.prose || []).flatMap((p) => [t(p), '']), ...(s.tracks || []).map((x) => `- ${x.who}: ${t(x.h)}`), ...(s.together ? ['', t(s.together)] : []), ''); break;
       case 'price-calc': L.push(`## ${t(s.h2)}`, '', ...(s.lead ? [t(s.lead), ''] : []), `| ${s.labels.role} | ${s.hours.map((h) => `${h} h${s.labels.perWeek}`).join(' | ')} |`, `|${['', ...s.hours].map(() => ' --- |').join('')}`, ...s.roles.map((r) => `| ${r.label} (${money(r.rate, s, lang)}${s.labels.perHour}) | ${s.hours.map((h) => money(calcMonthly(s, r, h), s, lang) + s.labels.perMonth).join(' | ')} |`), '', ...(s.note ? [t(s.note), ''] : []), ...(s.estimate ? [t(s.estimate), ''] : []), ...(s.callouts || []).flatMap((x) => [`### ${t(x.h)}`, '', t(x.p), ''])); break;
       case 'price-tabs': L.push(`## ${t(s.h2)}`, '', ...s.tabs.flatMap((x) => [`### ${t(x.title)}`, '', `${x.fromLabel || s.fromLabel} ${x.from}${x.unit ? ' ' + x.unit : ''}`, '', ...(x.lead ? [t(x.lead), ''] : []), ...(x.plans || []).flatMap((p) => [`- **${t(p.h)}** — ${p.price}${p.p ? ': ' + t(p.p) : ''}`]), ...(x.items || []).map((i) => `- ${t(i)}`), '', ...(x.note ? [t(x.note), ''] : [])])); break;
       case 'cta-final': L.push(`## ${t(s.h2)}`, '', t(s.p), ''); break;
