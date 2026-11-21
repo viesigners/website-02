@@ -384,6 +384,37 @@ em.acc, .acc {
 .work__item { position: relative; border-radius: var(--r-lg); overflow: hidden; background: var(--card); isolation: isolate; }
 .work__item img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3; transition: transform 1s var(--ease); }
 .work__item:hover img { transform: scale(1.04); }
+/* brand tint: pulls the mixed screenshots toward the site palette; full color on hover */
+.work { --tint: .18; --sat: .15; }
+.work__item img { filter: saturate(var(--sat)); transition: transform 1s var(--ease), filter .5s var(--ease); }
+.work__item::before { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; border-radius: inherit; background: linear-gradient(155deg, rgb(23 43 118), rgb(120 40 150) 70%, rgb(227 58 219)); mix-blend-mode: color; opacity: var(--tint); transition: opacity .5s var(--ease); }
+.work__item::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; border-radius: inherit; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08); }
+.work__item figcaption { z-index: 2; }
+.work__item:hover img, .work__item:focus-within img { filter: none; }
+.work__item:hover::before, .work__item:focus-within::before { opacity: 0; }
+/* other brands without a showcased project: fills the last cell of the grid */
+.work__more { display: flex; flex-direction: column; justify-content: center; gap: .75rem; padding: clamp(1rem, .8rem + .6vw, 1.3rem) clamp(1.1rem, .9rem + .7vw, 1.5rem); border-radius: var(--r-lg); color: #fff; background: radial-gradient(110% 90% at 100% 0%, rgba(227, 58, 219, .22), transparent 60%), #1a2050; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08); }
+@media (min-width: 760px) { .work__more { grid-column: span 2; } }
+.work__more .label { color: var(--pink-300); }
+.work__more ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem 1.1rem; }
+.work__more li { display: grid; gap: .1rem; align-content: start; }
+.work__more-end { margin: 0; color: rgba(219, 229, 237, .7); font-size: .8rem; font-style: italic; line-height: 1.35; }
+.work__more b { font-family: var(--f-display); font-weight: 400; font-size: .95rem; line-height: 1.2; letter-spacing: -.01em; }
+.work__more span { color: rgba(219, 229, 237, .6); font-family: var(--f-mono); font-size: .62rem; letter-spacing: .03em; text-transform: uppercase; }
+/* awards: navy cards with single-color logos (CSS mask), on a light section */
+.prizes { list-style: none; margin: 0; padding: 0; display: grid; gap: clamp(.8rem, .5rem + 1vw, 1.25rem); grid-template-columns: 1fr; }
+@media (min-width: 600px) { .prizes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 960px) { .prizes { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.prize { display: flex; flex-direction: column; gap: .3rem; padding: 1.5rem 1.4rem 1.4rem; border-radius: var(--r-lg); color: #fff; background: radial-gradient(110% 90% at 100% 0%, rgba(227, 58, 219, .2), transparent 60%), #1a2050; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08); }
+.prize__logo { display: block; height: 64px; margin-bottom: 1rem; background: rgba(255, 255, 255, .92); -webkit-mask: var(--logo) left center / contain no-repeat; mask: var(--logo) left center / contain no-repeat; }
+.prize__logo--text { -webkit-mask: none; mask: none; background: none; display: flex; align-items: center; font-family: var(--f-display); font-weight: 400; font-size: 1.9rem; letter-spacing: -.03em; color: rgba(255, 255, 255, .92); }
+.prize__status { color: var(--pink-300); font-family: var(--f-mono); font-size: .7rem; letter-spacing: .05em; text-transform: uppercase; }
+.prize h3 { font-family: var(--f-display); font-weight: 400; font-size: 1.2rem; line-height: 1.2; letter-spacing: -.015em; color: #fff; }
+.prize__cat { color: rgba(219, 229, 237, .85); font-size: .95rem; line-height: 1.4; }
+.prize__proj { display: grid; gap: .15rem; margin-top: auto; padding-top: .9rem; }
+.prize__proj b { font-weight: 400; color: rgba(219, 229, 237, .75); font-size: .88rem; font-style: italic; }
+.prize__proj span { color: rgba(219, 229, 237, .55); font-family: var(--f-mono); font-size: .66rem; letter-spacing: .04em; text-transform: uppercase; }
+.work--even .work__item::before, .work--even .work__item::after { bottom: auto; aspect-ratio: 4 / 3; height: auto; }
 .work__item figcaption { position: absolute; inset: auto 0 0 0; padding: 3.5rem 1.2rem 1.1rem; background: linear-gradient(180deg, transparent, rgba(16, 20, 33, .92) 70%); font-size: .95rem; line-height: 1.35; color: #fff; }
 .work__item figcaption b { display: block; font-family: var(--f-display); font-weight: 400; font-size: 1.15rem; letter-spacing: -0.015em; }
 .work__item figcaption span { color: var(--pink-300); font-family: var(--f-mono); font-size: .72rem; letter-spacing: .03em; text-transform: uppercase; }

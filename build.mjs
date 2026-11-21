@@ -340,9 +340,14 @@ R.stats = (s, c) => `<section class="section"><div class="wrap">
 
 R.work = (s, c) => `<section class="section"${s.id ? ` id="${s.id}"` : ''}><div class="wrap">
   ${secHead(s, c, 'work')}
-  <div class="work${s.even ? ' work--even' : ''}">${s.items.map((i, k) => `<figure class="work__item${i.to && !isHidden(i.to) ? ' work__item--link' : ''} rv" style="--d:${(k % 3) * .07}s">${i.to && !isHidden(i.to) ? `<a class="work__link" href="${url(i.to, c.lang)}" aria-label="${esc(i.title)}"></a>` : ''}${img('work/' + i.img, i.alt, { sizes: k === 0 ? '(min-width:760px) 66vw, 100vw' : '(min-width:760px) 33vw, 100vw' })}<figcaption><b>${esc(i.title)}</b>${i.result ? `<span>${esc(i.result)}</span>` : ''}${i.desc ? `<p>${fmt(i.desc, c.lang)}</p>` : ''}${i.to && !isHidden(i.to) ? `<i class="work__go" aria-hidden="true">${ico('arrow')}</i>` : ''}</figcaption></figure>`).join('')}</div>
+  <div class="work${s.even ? ' work--even' : ''}">${s.items.map((i, k) => `<figure class="work__item${i.to && !isHidden(i.to) ? ' work__item--link' : ''} rv" style="--d:${(k % 3) * .07}s${CFG.workSat?.[i.img] != null ? `;--sat:${CFG.workSat[i.img]}` : ''}">${i.to && !isHidden(i.to) ? `<a class="work__link" href="${url(i.to, c.lang)}" aria-label="${esc(i.title)}"></a>` : ''}${img('work/' + i.img, i.alt, { sizes: k === 0 ? '(min-width:760px) 66vw, 100vw' : '(min-width:760px) 33vw, 100vw' })}<figcaption><b>${esc(i.title)}</b>${i.result ? `<span>${esc(i.result)}</span>` : ''}${i.desc ? `<p>${fmt(i.desc, c.lang)}</p>` : ''}${i.to && !isHidden(i.to) ? `<i class="work__go" aria-hidden="true">${ico('arrow')}</i>` : ''}</figcaption></figure>`).join('')}${s.more ? `<div class="work__more rv" style="--d:.14s"><p class="label">${esc(s.more.label)}</p><ul>${s.more.items.map((i) => `<li><b>${esc(i.name)}</b><span>${esc(i.what)}</span></li>`).join('')}</ul>${s.more.end ? `<p class="work__more-end">${esc(s.more.end)}</p>` : ''}</div>` : ''}</div>
   ${s.awards ? `<div class="awards rv"><span class="press__label">${esc(s.awards.label)}</span>${s.awards.items.map((p) => img(p.file, p.alt)).join('')}</div>` : ''}
   ${s.cta && !isHidden(s.cta.to) ? `<p style="margin-top:2.5rem"><a class="pill pill--violet" href="${url(s.cta.to, c.lang)}">${esc(s.cta.label)}</a></p>` : ''}
+</div></section>`;
+
+R.awards = (s, c) => `<section class="section"${s.id ? ` id="${s.id}"` : ''}><div class="wrap">
+  ${secHead(s, c, 'awards')}
+  <ul class="prizes">${s.items.map((i, k) => `<li class="prize rv" style="--d:${(k % 3) * .07}s">${i.logo ? `<span class="prize__logo" role="img" aria-label="${esc(i.name)}" style="--logo:url('/assets/img/${i.logo}')"></span>` : i.logoText ? `<span class="prize__logo prize__logo--text" aria-hidden="true">${esc(i.logoText)}</span>` : ''}<p class="prize__status">${esc(i.status)}</p><h3>${esc(i.name)}</h3><p class="prize__cat">${esc(i.cat)}</p><p class="prize__proj"><b>${esc(i.project)}</b>${i.kind ? `<span>${esc(i.kind)}</span>` : ''}</p></li>`).join('')}</ul>
 </div></section>`;
 
 R.fit = (s, c) => {
@@ -442,7 +447,7 @@ const tagLi = (g, k) => (typeof g === 'string' ? `<li>${esc(g)}</li>` : `<li cla
 const shots = (list, cls = '') => (list?.length ? `<div class="cd-shots cd-shots--${list.length} ${cls} rv">${list.map((i) => `<figure class="cd-shot${i.phone ? ' cd-shot--phone' : ''}${i.crop ? ' cd-shot--crop' : ''}"${i.crop ? ` style="--crop:${i.crop}"` : ''}>${i.img ? `${fullImg(img(i.img, i.alt, { sizes: '(min-width:640px) 16rem, 62vw' }), i.full)}<figcaption>${esc(i.label)}</figcaption>` : `<div class="cd-slot"><span>${esc(i.label)}</span></div>`}</figure>`).join('')}</div>` : '');
 /* award badge: laurel wreath, the distinction, the award name and its category (text, so it stays sharp and translatable) */
 const LAUREL = (flip) => `<svg class="award__laurel${flip ? ' award__laurel--r' : ''}" viewBox="-8 2 49 118" aria-hidden="true"><path d="M32 116C14 100 6 78 8 54 9 36 16 20 28 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>${[[25, 14, -30], [17, 30, -18], [11, 47, -6], [9, 64, 6], [11, 81, 18], [17, 97, 32]].map(([x, y, r]) => `<ellipse cx="${x}" cy="${y}" rx="9" ry="4.2" transform="rotate(${r} ${x} ${y}) translate(-6 0)" fill="currentColor"/><ellipse cx="${x}" cy="${y}" rx="9" ry="4.2" transform="rotate(${r + 70} ${x} ${y}) translate(6 0)" fill="currentColor" opacity=".75"/>`).join('')}</svg>`;
-const awardBadge = (a) => `<figure class="award rv" aria-label="${esc(a.title)} ${esc(a.name)} ${esc(a.year || '')}">${LAUREL(false)}<div class="award__body"><span class="award__title">${esc(a.title)}</span><b class="award__name">${esc(a.name)}</b>${a.year ? `<span class="award__year">${esc(a.year)}</span>` : ''}<span class="award__cat">${esc(a.cat)}</span></div>${LAUREL(true)}</figure>`;
+const awardBadge = (a) => `<figure class="award rv" aria-label="${esc(a.title)} ${esc(a.name)} ${esc(a.year || '')}">${LAUREL(false)}<div class="award__body"><span class="award__title">${esc(a.title)}</span><b class="award__name">${esc(a.name)}</b>${a.year ? `<span class="award__year">${esc(a.year)}</span>` : ''}<span class="prize__cat">${esc(a.cat)}</span></div>${LAUREL(true)}</figure>`;
 R['cd-text'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-text', { label: s.label })}
   <div class="cd-text${s.wide ? ' cd-text--wide' : ''}${s.split ? ' cd-text--split' : ''}${s.end ? ' cd-text--end' : ''}">
@@ -661,7 +666,7 @@ R['cta-final'] = (s, c) => `<section class="section section--tight"><div class="
   <div class="cta-final rv">
     <h2 class="display">${fmt(s.h2, c.lang)}</h2>
     <p>${fmt(s.p, c.lang)}</p>
-    <div class="actions"><a class="pill" href="${s.href || url(s.to || 'contact', c.lang)}"${s.href ? ' target="_blank" rel="noopener"' : ''}>${fmt(s.cta, c.lang)}</a>${s.secondary ? `<a class="pill pill--ghost" href="${s.secondary.href}">${esc(s.secondary.label)}</a>` : ''}</div>
+    <div class="actions"><a class="pill" href="${s.href || url(s.to || 'contact', c.lang)}"${s.href ? ' target="_blank" rel="noopener"' : ''}>${fmt(s.cta, c.lang)}</a>${s.secondary ? `<a class="pill pill--ghost" href="${s.secondary.href || url(s.secondary.to, c.lang)}">${esc(s.secondary.label)}</a>` : ''}</div>
   </div>
 </div></section>`;
 
@@ -967,7 +972,7 @@ function toMd(page, c) {
       case 'hub': L.push(`## ${t(s.h2)}`, '', t(s.lead), '', ...s.items.flatMap((k) => [`### ${t(k.title)}`, t(k.desc), '']), ''); break;
       case 'services': L.push(`## ${t(s.h2)}`, '', t(s.lead), '', ...s.cards.flatMap((k) => [`### ${t(k.title)}`, t(k.desc), ...(k.items || []).map((i) => `- ${i.b ? t(i.b) + ' — ' : ''}${t(i.t)}`), '']), ''); break;
       case 'stats': L.push(s.h2 ? `## ${t(s.h2)}` : '', '', ...s.items.map((i) => `- **${i.n}** ${t(i.h)}: ${t(i.p)}`), ''); break;
-      case 'work': L.push(`## ${t(s.h2)}`, '', ...s.items.map((i) => `- ${i.title}${i.result ? ' — ' + i.result : ''}`), ''); break;
+      case 'work': L.push(`## ${t(s.h2)}`, '', ...s.items.map((i) => `- ${i.title}${i.result ? ' — ' + i.result : ''}`), '', ...(s.more ? [`**${t(s.more.label)}:**`, ...s.more.items.map((i) => `- ${i.name} — ${i.what}`), ...(s.more.end ? [`- ${s.more.end}`] : []), ''] : [])); break;
       case 'fit': L.push(`## ${t(s.h2)}`, '', `### ${t(s.yes.h)}`, ...s.yes.items.map((i) => `- ${t(i)}`), '', `### ${t(s.no.h)}`, ...s.no.items.map((i) => `- ${t(i)}`), ''); break;
       case 'deliverables': L.push(`## ${t(s.h2)}`, '', ...(s.lead ? [t(s.lead), ''] : []), ...s.items.map((i) => `- **${t(i.h)}** — ${t(i.p)}`), '', ...(s.tech ? [`**${t(s.tech.label)}:** ${s.tech.items.map((i) => i.name).join(', ')}`, ''] : [])); break;
       case 'process': L.push(`## ${t(s.h2)}`, '', ...s.steps.map((p, i) => `${i + 1}. **${t(p.h)}** — ${t(p.p)}`), ''); break;
@@ -983,6 +988,7 @@ function toMd(page, c) {
       case 'cd-decisions': L.push(`## ${t(s.h2)}`, '', ...s.items.flatMap((i) => [`### ${t(i.h)}`, '', t(i.p), '', ...i.notes.map((n) => `- ${t(n.k)}: ${t(n.v)}`), '']), ''); break;
       case 'cd-test': L.push(`## ${t(s.h2)}`, '', ...(s.stats || []).map((x) => `- ${x.h}: ${x.vals.map((v) => `${v.k} ${v.v}`).join(', ')} (${x.d})`), ...(s.tables || []).flatMap((x) => x.rows).map((r) => `- ${r.join(' | ').replace(/\|(?=[^ ])/, ' — ')}`), '', ...s.reads.flatMap((i) => [`### ${t(i.h)}`, '', ...[].concat(i.p).flatMap((x) => [t(x), ''])]), ...(s.shipped ? [`### ${t(s.shipped.h)}`, '', ...s.shipped.list.map((x) => `- ${t(x)}`), ''] : []), ''); break;
       case 'casestudy': L.push(`## ${t(s.h2)}`, '', ...(s.client ? [t(s.client), ''] : []), ...s.results.map((i) => `- **${i.n}** ${t(i.t)}`), '', `### ${t(s.problem.h)}`, '', t(s.problem.lead), '', ...s.problem.items.map((i) => `- ${t(i)}`), '', `### ${t(s.did.h)}`, '', ...s.did.steps.map((p, i) => `${i + 1}. **${t(p.h)}** — ${t(p.p)}`), '', `> ${t(s.quote.text)}`, `> — ${s.quote.by}`, '', t(s.note), ''); break;
+      case 'awards': L.push(`## ${t(s.h2)}`, '', ...s.items.map((i) => `- **${i.name}**, ${i.cat} (${i.status}) — ${i.project}${i.kind ? ` (${i.kind})` : ''}`), ''); break;
       case 'proof': L.push(...s.items.map((i) => `- **${i.n}** ${t(i.t)}`), ''); break;
       case 'people': L.push(`## ${t(s.h2)}`, '', ...s.items.map((p) => `- **${p.name}** (${p.role}) — ${t(p.text)}`), ''); break;
       case 'facts': L.push(`## ${t(s.h2)}`, '', ...s.items.map((i) => `- **${t(i.k)}**: ${t(i.v)}`), ''); break;
@@ -1012,7 +1018,7 @@ function toMd(page, c) {
 const THEME = {
   'hero-home': 'dark', 'page-hero': 'dark', 'cta-final': 'dark',
   friction: 'light', founders: 'dark', services: 'light', stats: 'dark', work: 'light', fit: 'dark', slot: 'light', testimonials: 'light', faq: 'light',
-  statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', casestudy: 'dark', casecard: 'dark', hub: 'light', partner: 'dark', related: 'light', bio: 'light', legal: 'light', people: 'dark', facts: 'light',
+  statement: 'light', deliverables: 'dark', process: 'light', compare: 'dark', proof: 'light', awards: 'light', casestudy: 'dark', casecard: 'dark', hub: 'light', partner: 'dark', related: 'light', bio: 'light', legal: 'light', people: 'dark', facts: 'light',
   'cd-hero': 'dark', 'cd-facts': 'light', 'cd-impact': 'light', 'cd-cards': 'light', 'cd-gallery': 'dark', 'cd-personas': 'dark', 'cd-storymap': 'dark', 'cd-text': 'light', 'cd-card': 'dark', 'cd-image': 'light', 'cd-decisions': 'dark', 'cd-test': 'light', 'posts-list': 'light', article: 'light', 'profile-hero': 'dark', cases: 'light', 'result-cards': 'dark', portfolio: 'light', 'contact-links': 'dark', contact: 'light', 'rich-text': 'light',
 };
 const ASSET_HASH = {};

@@ -52,7 +52,8 @@
   "fractional": "A senior designer in your team, a few hours a week or a month",
   "audit": "A fixed-price audit of what costs you conversions",
   "tarifs": "Every \"from\" price, by service",
-  "jouets-jeux": "UX/UI for toy brands, games and entertainment IP"
+  "jouets-jeux": "UX/UI for toy brands, games and entertainment IP",
+  "marque-blanche": "Senior UX/UI under your brand, for your agency"
  },
  "brief": "At a glance",
  "updated": "Last updated",
@@ -110,6 +111,7 @@
   "friction": "The problem",
   "stats": "Results",
   "work": "Work",
+  "awards": "Awards",
   "fit": "Who it's for",
   "slot": "Testimonials",
   "faq": "FAQ",

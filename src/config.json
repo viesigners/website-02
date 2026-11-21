@@ -1,4 +1,5 @@
 {
+  "workSat": { "_note": "optional per-image saturation for the project cards (default .15, set in site.css); add \"file.jpg\": value to override one image" },
   "origin": "https://viesigners.com",
   "published": "2026-10-03",
   "phone": "+1 581-502-1115",

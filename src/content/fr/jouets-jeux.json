@@ -9,7 +9,7 @@
    "type": "page-hero",
    "tagH1": true,
    "tag": "Design UX/UI pour marques de jouets, jeux et divertissement",
-   "h1": "Des expériences numériques pour les marques que *les enfants et les fans adorent*",
+   "h1": "Le design UX qui *donne envie de jouer*",
    "lead": "Boutiques en ligne de jouets, interfaces de jeu, applications compagnons et expériences RA/RV : nos fondateurs en ont conçu pour certaines des marques de jouets et de divertissement les plus connues, et mettent cette expérience au service de vos produits.",
    "ctas": [
     {
@@ -41,7 +41,7 @@
      "t": "en projet, comme designer fractionnel dans votre équipe, ou en marque blanche pour votre agence."
     }
    ],
-   "advised": "Des marques de jouets, de jeux et de divertissement pour lesquelles nous avons conçu, au fil de nos carrières",
+   "advised": "Des marques de jouets, de jeux et de divertissement pour lesquelles nous avons conçu",
    "logosLabel": "Marques de jouets, de jeux et de divertissement",
    "logos": [
     {
@@ -98,7 +98,7 @@
    "text": "Concevoir pour le jeu est un métier à part. Il faut *émerveiller un enfant, rassurer un parent et respecter la marque*, sur le même écran.",
    "prose": [
     "Les produits de jouets et de divertissement s'adressent à des publics que la plupart des équipes UX ne côtoient jamais en même temps : des enfants qui explorent en touchant à tout, des parents qui décident et paient, des collectionneurs et des fans qui connaissent l'univers mieux que quiconque, et des détenteurs de licences qui protègent chaque détail de la marque.",
-    "Nos fondateurs ont passé des années à concevoir pour ce mélange, en agence et à l'interne, sur des produits pour Disney, Marvel, Warner Bros., des marques d'Hasbro comme Transformers, Nerf, Monopoly et Play-Doh, Spin Master, Wizards of the Coast et Ubisoft."
+    "Nos fondateurs ont passé des années à concevoir pour ce mélange, en agence et à l'interne : boutiques en ligne, jeux mobiles, applications compagnons et sites de marque."
    ]
   },
   {
@@ -136,7 +136,7 @@
    "type": "work",
    "id": "realisations",
    "h2": "Projets de jouets, de jeux et de *divertissement*",
-   "lead": "Une sélection de produits sur lesquels nos fondateurs ont travaillé au fil de leurs carrières, en agence et à l'interne.",
+   "lead": "Une sélection de produits conçus par nos fondateurs, en agence et à l'interne.",
    "items": [
     {
      "img": "assassins-creed.jpg",
@@ -167,6 +167,125 @@
      "alt": "Site web conçu pour la marque Wizards of the Coast",
      "title": "Wizards of the Coast",
      "result": "Site web"
+    }
+   ],
+   "more": {
+    "label": "On a aussi fait le design UX pour",
+    "end": "… et bien d’autres que les enfants et les fans adorent.",
+    "items": [
+     {
+      "name": "Star Wars: Heroes Path",
+      "what": "Jeu mobile"
+     },
+     {
+      "name": "Monopoly",
+      "what": "Site web"
+     },
+     {
+      "name": "Play-Doh",
+      "what": "Site web"
+     },
+     {
+      "name": "Littlest Pet Shop",
+      "what": "Site web"
+     },
+     {
+      "name": "Transformers",
+      "what": "Application"
+     },
+     {
+      "name": "Hasbro Gaming",
+      "what": "Site web"
+     },
+     {
+      "name": "Furby",
+      "what": "Boutique en ligne"
+     },
+     {
+      "name": "Love2Learn Elmo",
+      "what": "Application"
+     },
+     {
+      "name": "Dungeons & Dragons",
+      "what": "Site web"
+     },
+     {
+      "name": "Magic: The Gathering",
+      "what": "Appli compagnon"
+     }
+    ]
+   }
+  },
+  {
+   "type": "proof",
+   "items": [
+    {
+     "n": "1M+",
+     "t": "téléchargements générés pour nos clients de jouets et de jeux"
+    },
+    {
+     "n": "4,5+",
+     "t": "étoiles pour plusieurs de nos applications de jouets et de jeux dans les magasins d'applis"
+    },
+    {
+     "n": "7",
+     "t": "prix et nominations, dont le Best in Play de la GDC"
+    }
+   ]
+  },
+  {
+   "type": "awards",
+   "id": "prix",
+   "h2": "Prix et *distinctions*",
+   "lead": "Des projets auxquels nos fondateurs ont contribué, récompensés par l'industrie du jeu et du jouet.",
+   "items": [
+    {
+     "logo": "awards/gdc.svg",
+     "status": "Lauréat 2017",
+     "name": "GDC Play",
+     "cat": "Best in Play, Game Developers Conference",
+     "project": "Little Lords of Twilight",
+     "kind": "Jeu mobile et tablette"
+    },
+    {
+     "logo": "awards/bma.png",
+     "status": "Lauréat platine 2017",
+     "name": "Best Mobile App Awards",
+     "cat": "Application mobile la mieux conçue",
+     "project": "Little Lords of Twilight",
+     "kind": "Jeu mobile et tablette"
+    },
+    {
+     "logo": "awards/communicator.svg",
+     "status": "2 prix, 2017",
+     "name": "Communicator Awards",
+     "cat": "Meilleur design visuel et Mobile – Jeux",
+     "project": "Little Lords of Twilight",
+     "kind": "Jeu mobile et tablette"
+    },
+    {
+     "logo": "awards/indieprize.svg",
+     "status": "Finaliste 2017",
+     "name": "Indie Prize, Casual Connect USA",
+     "cat": "Meilleur jeu mobile et tablette",
+     "project": "Little Lords of Twilight",
+     "kind": "Jeu mobile et tablette"
+    },
+    {
+     "status": "Lauréat 2014",
+     "name": "Tillywig Toy & Media Awards",
+     "cat": "Brain Child Award",
+     "project": "Disney Story Central",
+     "kind": "Application web",
+     "logo": "awards/brainchild.svg"
+    },
+    {
+     "status": "Lauréat 2014",
+     "name": "Concours Boomerang",
+     "cat": "Stratégie d'acquisition et de fidélisation",
+     "project": "Poule Position",
+     "logoText": "boomeranG",
+     "kind": "Jeu mobile"
     }
    ]
   },
@@ -208,9 +327,13 @@
   },
   {
    "type": "cta-final",
-   "h2": "Vous créez quelque chose que *les enfants et les fans vont adorer?*",
+   "h2": "Votre produit doit *donner envie de jouer?*",
    "p": "Parlez-nous de votre produit, de votre marque et de votre public. On vous dira comment on peut vous aider.",
-   "cta": "Parler de votre projet"
+   "cta": "Parler de votre projet",
+   "secondary": {
+    "label": "Ou commencer par un audit",
+    "to": "audit"
+   }
   }
  ],
  "faq": [

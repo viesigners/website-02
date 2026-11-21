@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+  <defs>
+    <path id="top" d="M 24 100 A 76 76 0 0 1 176 100"/>
+    <path id="bottom" d="M 12 100 A 88 88 0 0 0 188 100"/>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="none" stroke="#000" stroke-width="6"/>
+  <circle cx="100" cy="100" r="68" fill="none" stroke="#000" stroke-width="4"/>
+  <text font-size="17" letter-spacing="1.6" text-anchor="middle"><textPath href="#top" startOffset="50%">TILLYWIG TOY AWARDS</textPath></text>
+  <text font-size="17" letter-spacing="1.6" text-anchor="middle"><textPath href="#bottom" startOffset="50%">AWARD WINNER</textPath></text>
+  <circle cx="17" cy="100" r="3.5"/>
+  <circle cx="183" cy="100" r="3.5"/>
+  <text x="100" y="97" font-size="34" text-anchor="middle" letter-spacing="-.5">BRAIN</text>
+  <text x="100" y="130" font-size="34" text-anchor="middle" letter-spacing="-.5">CHILD</text>
+</svg>

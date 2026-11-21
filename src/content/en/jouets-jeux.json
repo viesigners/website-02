@@ -9,7 +9,7 @@
    "type": "page-hero",
    "tagH1": true,
    "tag": "UX/UI design for toy brands, games and entertainment",
-   "h1": "Digital experiences for brands *kids and fans love*",
+   "h1": "UX design that makes people *want to play*",
    "lead": "Toy e-commerce sites, game interfaces, companion apps and AR/VR experiences: our founders have designed them for some of the best-known toy and entertainment brands, and now bring that experience to your products.",
    "ctas": [
     {
@@ -41,7 +41,7 @@
      "t": "as a project, as a fractional designer in your team, or white-label for your agency."
     }
    ],
-   "advised": "Toy, game and entertainment brands we have designed for, in our careers",
+   "advised": "Toy, game and entertainment brands we have designed for",
    "logosLabel": "Toy, game and entertainment brands",
    "logos": [
     {
@@ -98,7 +98,7 @@
    "text": "Designing for play is its own craft. It has to *delight a child, reassure a parent and respect the brand*, all on the same screen.",
    "prose": [
     "Toy and entertainment products have audiences most UX teams never deal with at once: kids who explore by tapping everything, parents who decide and pay, collectors and fans who know the universe better than anyone, and licensors who protect every detail of the brand.",
-    "Our founders have spent years designing for that mix, in agencies and in-house, on products for Disney, Marvel, Warner Bros., Hasbro brands such as Transformers, Nerf, Monopoly and Play-Doh, Spin Master, Wizards of the Coast and Ubisoft."
+    "Our founders have spent years designing for that mix, in agencies and in-house: online stores, mobile games, companion apps and brand sites."
    ]
   },
   {
@@ -136,7 +136,7 @@
    "type": "work",
    "id": "work",
    "h2": "Toy, game and entertainment *projects*",
-   "lead": "A selection of products our founders have worked on during their careers, in agencies and in-house.",
+   "lead": "A selection of products our founders designed, in agencies and in-house.",
    "items": [
     {
      "img": "assassins-creed.jpg",
@@ -167,6 +167,125 @@
      "alt": "Website designed for Wizards of the Coast",
      "title": "Wizards of the Coast",
      "result": "Website"
+    }
+   ],
+   "more": {
+    "label": "We also did UX design for",
+    "end": "… and many more that kids and fans love.",
+    "items": [
+     {
+      "name": "Star Wars: Heroes Path",
+      "what": "Mobile game"
+     },
+     {
+      "name": "Monopoly",
+      "what": "Website"
+     },
+     {
+      "name": "Play-Doh",
+      "what": "Website"
+     },
+     {
+      "name": "Littlest Pet Shop",
+      "what": "Website"
+     },
+     {
+      "name": "Transformers",
+      "what": "App"
+     },
+     {
+      "name": "Hasbro Gaming",
+      "what": "Website"
+     },
+     {
+      "name": "Furby",
+      "what": "Online store"
+     },
+     {
+      "name": "Love2Learn Elmo",
+      "what": "App"
+     },
+     {
+      "name": "Dungeons & Dragons",
+      "what": "Website"
+     },
+     {
+      "name": "Magic: The Gathering",
+      "what": "Companion app"
+     }
+    ]
+   }
+  },
+  {
+   "type": "proof",
+   "items": [
+    {
+     "n": "1M+",
+     "t": "downloads generated for our toy and game clients"
+    },
+    {
+     "n": "4.5+",
+     "t": "star ratings for several of our toy and game apps in the app stores"
+    },
+    {
+     "n": "7",
+     "t": "awards and nominations, including GDC Best in Play"
+    }
+   ]
+  },
+  {
+   "type": "awards",
+   "id": "awards",
+   "h2": "Awards and *recognition*",
+   "lead": "Projects our founders contributed to, recognized by the games and toy industry.",
+   "items": [
+    {
+     "logo": "awards/gdc.svg",
+     "status": "Winner 2017",
+     "name": "GDC Play",
+     "cat": "Best in Play, Game Developers Conference",
+     "project": "Little Lords of Twilight",
+     "kind": "Mobile and tablet game"
+    },
+    {
+     "logo": "awards/bma.png",
+     "status": "Platinum winner 2017",
+     "name": "Best Mobile App Awards",
+     "cat": "Best Designed Mobile App",
+     "project": "Little Lords of Twilight",
+     "kind": "Mobile and tablet game"
+    },
+    {
+     "logo": "awards/communicator.svg",
+     "status": "2 awards, 2017",
+     "name": "Communicator Awards",
+     "cat": "Best Visual Design and Mobile – Games",
+     "project": "Little Lords of Twilight",
+     "kind": "Mobile and tablet game"
+    },
+    {
+     "logo": "awards/indieprize.svg",
+     "status": "Finalist 2017",
+     "name": "Indie Prize, Casual Connect USA",
+     "cat": "Best Mobile/Tablet",
+     "project": "Little Lords of Twilight",
+     "kind": "Mobile and tablet game"
+    },
+    {
+     "status": "Winner 2014",
+     "name": "Tillywig Toy & Media Awards",
+     "cat": "Brain Child Award",
+     "project": "Disney Story Central",
+     "kind": "Web app",
+     "logo": "awards/brainchild.svg"
+    },
+    {
+     "status": "Winner 2014",
+     "name": "Concours Boomerang",
+     "cat": "Acquisition and loyalty strategy",
+     "project": "Poule Position",
+     "logoText": "boomeranG",
+     "kind": "Mobile game"
     }
    ]
   },
@@ -208,9 +327,13 @@
   },
   {
    "type": "cta-final",
-   "h2": "Building something *kids and fans will love?*",
+   "h2": "Need a product that makes people *want to play?*",
    "p": "Tell us about your product, your brand and your audience. We'll tell you how we can help.",
-   "cta": "Discuss a project"
+   "cta": "Discuss a project",
+   "secondary": {
+    "label": "Or start with an audit",
+    "to": "audit"
+   }
   }
  ],
  "faq": [
