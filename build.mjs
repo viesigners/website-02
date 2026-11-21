@@ -889,8 +889,8 @@ function header(c) {
     <nav class="drawer__main" aria-label="${esc(T.mainNav)}">${main}</nav>
     <nav class="drawer__services" aria-label="${esc(T.servicesLabel)}"><p class="label">${esc(T.nav.services)}</p>${services}</nav>
     <div class="drawer__foot">
-      <div class="lang-m" role="group" aria-label="${esc(T.langLabel)}">${['en', 'fr'].map((l) => (l === lang ? `<span aria-current="true">${l.toUpperCase()}</span>` : `<a href="${altUrl}" hreflang="${l}" lang="${l}" aria-label="${esc(T.langSwitch)}">${l.toUpperCase()}</a>`)).join('')}</div>
-      ${curSel(T.currencyLabel)}
+      <div class="drawer__prefs"><div class="lang-m" role="group" aria-label="${esc(T.langLabel)}">${['en', 'fr'].map((l) => (l === lang ? `<span aria-current="true">${l.toUpperCase()}</span>` : `<a href="${altUrl}" hreflang="${l}" lang="${l}" aria-label="${esc(T.langSwitch)}">${l.toUpperCase()}</a>`)).join('')}</div>
+      ${curSel(T.currencyLabel)}</div>
       <a class="pill" href="${url('contact', lang)}">${esc(T.ctaShort)}</a>
     </div>
   </div>

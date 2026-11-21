@@ -200,6 +200,8 @@ em.acc, .acc {
 .drawer__services a small { display: block; margin-top: .15rem; font-size: .88rem; color: var(--slate-400); }
 .drawer__services a:hover, .drawer__services a[aria-current="page"] { color: var(--pink-300); }
 .drawer__foot { display: flex; flex-wrap: wrap; align-items: center; gap: 1.2rem 2rem; }
+/* language and currency, stacked */
+.drawer__prefs { display: grid; gap: .5rem; justify-items: start; }
 .lang-m { display: flex; gap: .4rem; font-family: var(--f-mono); font-size: .8rem; font-weight: 500; letter-spacing: .04em; }
 .lang-m a, .lang-m span { padding: .6rem .9rem; border-radius: var(--r-sm); color: var(--slate-400); box-shadow: inset 0 0 0 1px var(--line-2); }
 .lang-m [aria-current="true"] { background: rgba(255, 255, 255, .12); color: #fff; }
