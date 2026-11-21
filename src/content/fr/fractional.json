@@ -191,11 +191,13 @@
    "tracks": [
     {
      "who": "Designer 1",
-     "h": "Recherche et structure"
+     "h": "Système de design et transfert aux développeurs",
+     "p": "Composants, documentation et outils pour que votre équipe de développement utilise tout facilement."
     },
     {
      "who": "Designer 2",
-     "h": "Interface et système de design"
+     "h": "UX, architecture de l’information et interface",
+     "p": "Refonte de l’interface, parcours utilisateurs et live ops."
     }
    ],
    "together": "Même produit, mêmes sprints, en parallèle",

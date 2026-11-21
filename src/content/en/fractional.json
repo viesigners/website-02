@@ -191,11 +191,13 @@
    "tracks": [
     {
      "who": "Designer 1",
-     "h": "Research and structure"
+     "h": "Design system and dev handoff",
+     "p": "Components, documentation and dev tooling, so your developers can use everything right away."
     },
     {
      "who": "Designer 2",
-     "h": "Interface and design system"
+     "h": "UX, information architecture and UI",
+     "p": "UI update, user flows and live ops."
     }
    ],
    "together": "Same product, same sprints, in parallel",

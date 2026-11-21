@@ -1354,6 +1354,7 @@ html { scroll-padding-top: 7rem; }
 .fband__track { display: grid; gap: .35rem; padding: 1.2rem 1.3rem; border-radius: var(--r-lg); background: rgba(255, 255, 255, .06); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .12); }
 .fband__who { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: var(--pink-300); }
 .fband__track b { font-weight: 500; font-size: 1.05rem; }
+.fband__detail { color: var(--text-2); font-size: .92rem; line-height: 1.45; }
 .fband__bar { position: relative; height: 4px; margin-top: .6rem; border-radius: 99px; background: rgba(255, 255, 255, .12); overflow: hidden; }
 .fband__bar i { position: absolute; inset: 0 auto 0 0; width: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--pink), var(--purple)); transform-origin: left; transform: scaleX(.15); }
 .fband.in .fband__bar i { animation: fband-run 2.6s var(--ease) var(--d, 0s) forwards; }
