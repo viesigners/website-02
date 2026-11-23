@@ -1,0 +1,75 @@
+{
+ "meta": {
+  "title": "UX/UI Design for Fintech | Viesigners",
+  "description": "UX/UI design for fintech: clear journeys and interfaces that build trust, on desktop and mobile.",
+  "h1": "UX/UI design for fintech"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tagH1": true,
+   "tag": "UX/UI design for fintech",
+   "h1": "UX design that makes finance *simple and reassuring*",
+   "lead": "Clear journeys and interfaces that build trust, for products where every click touches your users' money. [À FOURNIR: our founders' fintech projects, in one sentence].",
+   "ctas": [
+    {
+     "label": "Discuss a project",
+     "to": "@contact",
+     "style": "violet"
+    },
+    {
+     "label": "See the work",
+     "to": "#work",
+     "style": "ghost"
+    }
+   ]
+  },
+  {
+   "type": "work",
+   "screens": true,
+   "id": "work",
+   "h2": "Fintech *projects*",
+   "lead": "[À FOURNIR: project context, e.g. agency or in-house].",
+   "items": [
+    {
+     "kind": "desktop",
+     "slot": "[À FOURNIR: desktop screenshot 1]"
+    },
+    {
+     "kind": "desktop",
+     "slot": "[À FOURNIR: desktop screenshot 2]"
+    },
+    {
+     "kind": "desktop",
+     "slot": "[À FOURNIR: desktop screenshot 3]"
+    },
+    {
+     "kind": "desktop",
+     "slot": "[À FOURNIR: desktop screenshot 4]"
+    },
+    {
+     "kind": "mobile",
+     "slot": "[À FOURNIR: mobile screenshot 1]"
+    },
+    {
+     "kind": "mobile",
+     "slot": "[À FOURNIR: mobile screenshot 2]"
+    },
+    {
+     "kind": "mobile",
+     "slot": "[À FOURNIR: mobile screenshot 3]"
+    }
+   ]
+  },
+  {
+   "type": "cta-final",
+   "h2": "Need a financial product that *builds trust?*",
+   "p": "Tell us about your product, your users and your goals. We'll tell you how we can help.",
+   "cta": "Discuss a project",
+   "secondary": {
+    "label": "Or start with a free diagnostic",
+    "to": "audit"
+   }
+  }
+ ]
+}

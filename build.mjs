@@ -87,6 +87,7 @@ const ROUTES = {
   fractional: { fr: 'design-produit-fractionnel', en: 'fractional-product-design' }, // ongoing product design, priced by role × hours (slider)
   audit: { fr: 'diagnostic-ux-conversion-retention', en: 'ux-conversion-retention-diagnostic' }, // free 20-min diagnostic call (lead magnet), booked on cal.com; key kept as 'audit'
   'jouets-jeux': { fr: 'secteurs/jouets-jeux-divertissement', en: 'industries/toys-games-entertainment' }, // industry page (toys, games, entertainment)
+  fintech: { fr: 'secteurs/fintech', en: 'industries/fintech' }, // industry page (fintech): built and indexed, but linked from no menu or footer yet
   merci: { fr: 'merci', en: 'thank-you' }, // shown after a form submission: noindex, never linked
   actualites: BLOG, // blog: articles + case studies, one filter page per category (the key stays neutral; the name lives in _site.json nav)
 };
@@ -342,6 +343,14 @@ R.work = (s, c) => `<section class="section"${s.id ? ` id="${s.id}"` : ''}><div 
   <div class="work${s.even ? ' work--even' : ''}">${s.items.map((i, k) => `<figure class="work__item${i.to && !isHidden(i.to) ? ' work__item--link' : ''} rv" style="--d:${(k % 3) * .07}s${CFG.workSat?.[i.img] != null ? `;--sat:${CFG.workSat[i.img]}` : ''}">${i.to && !isHidden(i.to) ? `<a class="work__link" href="${url(i.to, c.lang)}" aria-label="${esc(i.title)}"></a>` : ''}${img('work/' + i.img, i.alt, { sizes: k === 0 ? '(min-width:760px) 66vw, 100vw' : '(min-width:760px) 33vw, 100vw' })}<figcaption><b>${esc(i.title)}</b>${i.result ? `<span>${esc(i.result)}</span>` : ''}${i.desc ? `<p>${fmt(i.desc, c.lang)}</p>` : ''}${i.to && !isHidden(i.to) ? `<i class="work__go" aria-hidden="true">${ico('arrow')}</i>` : ''}</figcaption></figure>`).join('')}${s.more ? `<div class="work__more rv" style="--d:.14s"><p class="label">${esc(s.more.label)}</p><ul>${s.more.items.map((i) => `<li><b>${esc(i.name)}</b><span>${esc(i.what)}</span></li>`).join('')}</ul>${s.more.end ? `<p class="work__more-end">${esc(s.more.end)}</p>` : ''}</div>` : ''}</div>
   ${s.awards ? `<div class="awards rv"><span class="press__label">${esc(s.awards.label)}</span>${s.awards.items.map((p) => img(p.file, p.alt)).join('')}</div>` : ''}
   ${s.cta && !isHidden(s.cta.to) ? `<p style="margin-top:2.5rem"><a class="pill pill--violet" href="${url(s.cta.to, c.lang)}">${esc(s.cta.label)}</a></p>` : ''}
+</div></section>`;
+
+/* work, "screens" variant: product screenshots kept at their own proportions (desktop 16:10, two per row; mobile 9:19.5, three per row).
+   An item without img renders a dashed placeholder slot until the screenshot is supplied. */
+const workGrid = R.work;
+R.work = (s, c) => !s.screens ? workGrid(s, c) : `<section class="section"${s.id ? ` id="${s.id}"` : ''}><div class="wrap">
+  ${secHead(s, c, 'work')}
+  ${['desktop', 'mobile'].map((kind) => { const its = s.items.filter((i) => (i.kind || 'desktop') === kind); return its.length ? `<div class="screens screens--${kind}">${its.map((i, k) => `<figure class="screens__item rv" style="--d:${(k % 3) * .07}s">${i.img ? img('work/' + i.img, i.alt, { sizes: kind === 'desktop' ? '(min-width:760px) 50vw, 100vw' : '(min-width:760px) 33vw, 50vw' }) : `<div class="screens__slot">${fmtT(i.slot || '[À FOURNIR]', c.lang)}</div>`}${i.title || i.result ? `<figcaption>${i.title ? `<b>${esc(i.title)}</b>` : ''}${i.result ? `<span>${esc(i.result)}</span>` : ''}</figcaption>` : ''}</figure>`).join('')}</div>` : ''; }).join('')}
 </div></section>`;
 
 R.awards = (s, c) => `<section class="section"${s.id ? ` id="${s.id}"` : ''}><div class="wrap">

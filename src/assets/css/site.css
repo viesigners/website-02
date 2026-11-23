@@ -1504,3 +1504,20 @@ html { scroll-padding-top: 7rem; }
 /* "converted prices" note next to prices: only when the visitor picked CAD or EUR */
 .cur-note { display: none; margin-bottom: 1rem; color: var(--text-3); font-size: .85rem; }
 :root[data-cur="CAD"] .cur-note, :root[data-cur="EUR"] .cur-note { display: block; }
+
+/* work, "screens" variant (industry pages): desktop screenshots two per row, mobile three per row, incomplete rows centered */
+.screens { --sg: clamp(.8rem, .5rem + 1vw, 1.25rem); display: flex; flex-wrap: wrap; justify-content: center; gap: var(--sg); }
+.screens + .screens { margin-top: var(--sg); }
+.screens__item { margin: 0; flex: 0 0 100%; min-width: 0; }
+.screens--mobile .screens__item { flex-basis: calc((100% - var(--sg)) / 2); }
+@media (min-width: 760px) {
+  .screens--desktop .screens__item { flex-basis: calc((100% - var(--sg)) / 2); }
+  .screens--mobile .screens__item { flex-basis: calc((100% - 2 * var(--sg)) / 3); max-width: 300px; }
+}
+.screens__item img, .screens__slot { display: block; width: 100%; height: auto; border-radius: var(--r-lg); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08); }
+.screens--desktop .screens__item img, .screens--desktop .screens__slot { aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
+.screens--mobile .screens__item img, .screens--mobile .screens__slot { aspect-ratio: 9 / 19.5; object-fit: cover; object-position: top; }
+.screens__slot { display: grid; place-items: center; padding: 1rem; text-align: center; border: 2px dashed rgba(255, 72, 139, .45); background: rgba(255, 255, 255, .03); color: var(--text-2); font-family: var(--f-mono); font-size: .75rem; }
+.screens__item figcaption { padding: .9rem .2rem 0; }
+.screens__item figcaption b { display: block; font-family: var(--f-display); font-weight: 400; font-size: 1.1rem; letter-spacing: -.015em; }
+.screens__item figcaption span { color: var(--pink); font-family: var(--f-mono); font-size: .72rem; letter-spacing: .03em; text-transform: uppercase; }

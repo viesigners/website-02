@@ -1,0 +1,75 @@
+{
+ "meta": {
+  "title": "Design UX/UI pour la fintech | Viesigners",
+  "description": "Design UX/UI pour la fintech : des parcours clairs et des interfaces qui inspirent confiance, sur ordinateur et sur mobile.",
+  "h1": "Design UX/UI pour la fintech"
+ },
+ "sections": [
+  {
+   "type": "page-hero",
+   "tagH1": true,
+   "tag": "Design UX/UI pour la fintech",
+   "h1": "Le design UX qui rend la finance *simple et rassurante*",
+   "lead": "Des parcours clairs et des interfaces qui inspirent confiance, pour des produits où chaque clic touche l'argent de vos utilisateurs. [À FOURNIR : projets fintech de nos fondateurs, en une phrase].",
+   "ctas": [
+    {
+     "label": "Parler de votre projet",
+     "to": "@contact",
+     "style": "violet"
+    },
+    {
+     "label": "Voir les réalisations",
+     "to": "#realisations",
+     "style": "ghost"
+    }
+   ]
+  },
+  {
+   "type": "work",
+   "screens": true,
+   "id": "realisations",
+   "h2": "Projets *fintech*",
+   "lead": "[À FOURNIR : contexte des projets, par exemple en agence ou à l'interne].",
+   "items": [
+    {
+     "kind": "desktop",
+     "slot": "[À FOURNIR : capture desktop 1]"
+    },
+    {
+     "kind": "desktop",
+     "slot": "[À FOURNIR : capture desktop 2]"
+    },
+    {
+     "kind": "desktop",
+     "slot": "[À FOURNIR : capture desktop 3]"
+    },
+    {
+     "kind": "desktop",
+     "slot": "[À FOURNIR : capture desktop 4]"
+    },
+    {
+     "kind": "mobile",
+     "slot": "[À FOURNIR : capture mobile 1]"
+    },
+    {
+     "kind": "mobile",
+     "slot": "[À FOURNIR : capture mobile 2]"
+    },
+    {
+     "kind": "mobile",
+     "slot": "[À FOURNIR : capture mobile 3]"
+    }
+   ]
+  },
+  {
+   "type": "cta-final",
+   "h2": "Votre produit financier doit *inspirer confiance?*",
+   "p": "Parlez-nous de votre produit, de vos utilisateurs et de vos objectifs. On vous dira comment on peut vous aider.",
+   "cta": "Parler de votre projet",
+   "secondary": {
+    "label": "Ou commencer par un diagnostic gratuit",
+    "to": "audit"
+   }
+  }
+ ]
+}
