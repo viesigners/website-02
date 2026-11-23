@@ -79,7 +79,7 @@
   },
   {
    "type": "cd-gallery",
-   "theme": "light",
+   "theme": "dark",
    "id": "work",
    "label": "Work",
    "h2": "The product *in pictures*",

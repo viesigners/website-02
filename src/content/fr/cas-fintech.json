@@ -79,7 +79,7 @@
   },
   {
    "type": "cd-gallery",
-   "theme": "light",
+   "theme": "dark",
    "id": "realisations",
    "label": "Réalisations",
    "h2": "Le produit *en images*",
