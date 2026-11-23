@@ -1522,7 +1522,7 @@ html { scroll-padding-top: 7rem; }
 .cd-bento--duo { grid-template-areas: "tx tx tx tx tx tx" "d1 d1 d1 d1 d1 d1" "m1 m1 m1 m2 m2 m2" "d2 d2 d2 d2 d2 d2"; }
 .cd-bento__text { align-self: center; display: grid; gap: .9rem; }
 @media (max-width: 759px) { .cd-bento--duo .cd-bento__item--desk[style*="d2"] { aspect-ratio: 1280 / 1484; } .cd-bento--duo [style*="d2"] .cd-zoom { display: none; } .cd-bento--duo [style*="d2"] img { pointer-events: none; } } /* small screens: the project timeline shows almost whole, so no enlarge button */
-.cd-bento__text p { margin: 0; font-size: clamp(1.05rem, .95rem + .4vw, 1.3rem); line-height: 1.5; }
+.cd-bento__text p { margin: 0; font-size: clamp(1rem, .9rem + .3vw, 1.15rem); line-height: 1.55; }
 @media (min-width: 760px) {
   .cd-bento--duo { grid-template-areas: "tx tx tx tx d1 d1 d1 d1 d1 d1 d1 d1" "m1 m1 m1 m2 m2 m2 d2 d2 d2 d2 d2 d2"; }
   .cd-bento--duo .cd-bento__item--desk[style*="d1"] { aspect-ratio: 4 / 3; }
