@@ -1,4 +1,5 @@
 {
+ "author": "organization",
  "meta": {
   "title": "Étude de cas SaaS B2B : +31% MRR, −24% attrition | Viesigners",
   "description": "Comment nous avons augmenté le MRR d'un SaaS B2B en IA de 31% et réduit son attrition de 24% en 90 jours : proposition de valeur, intégration, page clé.",
@@ -25,16 +26,16 @@
     },
     {
      "b": "Exécution :",
-     "t": "100% senior, par le cofondateur Jean-François (Toptal Top 3%)."
+     "t": "100% senior, par Viesigners, sous la direction du cofondateur Jean-François BG."
     }
    ],
    "ctas": [
     {
-     "label": "Réserver une analyse gratuite",
-     "to": "https://cal.com/viesigners/user-journey-teardown-call"
+     "label": "Obtenir mon diagnostic gratuit",
+     "to": "@audit"
     }
    ],
-   "byline": "Par Jean-François BG (Toptal Top 3%)"
+   "byline": "Par Viesigners · projet dirigé par Jean-François BG"
   },
   {
    "type": "casestudy",
@@ -84,16 +85,17 @@
     "name": "PDG, SaaS B2B en IA",
     "role": "Nom confidentiel"
    },
-   "note": "100% de la refonte UX/UI et de la stratégie CRO a été exécuté directement par le cofondateur Jean-François (Toptal Top 3%), sans déléguer à des juniors.",
-   "cta": "Réserver une analyse gratuite",
-   "ctaNote": "Sans pression de vente : des pistes concrètes sur votre parcours usager.",
+   "note": "100% de la refonte UX/UI et de la stratégie CRO a été exécuté par Viesigners, directement par le cofondateur Jean-François, sans déléguer à des juniors.",
+   "cta": "Obtenir mon diagnostic gratuit",
+   "ctaNote": "Sans pression de vente : vos 3 à 4 priorités UX, par écrit.",
    "theme": "light",
-   "ctaHref": "https://cal.com/viesigners/user-journey-teardown-call"
+   "ctaTo": "audit"
   },
   {
    "type": "work",
    "even": true,
-   "h2": "D'autres *résultats SaaS* marquants",
+   "h2": "D'autres résultats SaaS *signés par nos fondateurs*",
+   "lead": "Avant Viesigners, nos fondateurs ont conçu ces produits, en agence et à l'interne.",
    "items": [
     {
      "img": "assassins-creed.jpg",
@@ -113,8 +115,8 @@
      "img": "spin-master.jpg",
      "alt": "Application Builder/Controller Hub de Meccano pour Spin Master : écran de contrôle et instructions de montage téléchargeables sur deux téléphones",
      "title": "Application Builder/Controller Hub de Meccano",
-     "result": "1 M+ téléchargements",
-     "desc": "Conception de l'architecture de l'information et de l'UX pour aplanir la courbe d'apprentissage, rendre la navigation intuitive et favoriser une adoption rapide : plus de 1 M de téléchargements."
+     "result": "500 k+ téléchargements",
+     "desc": "Conception de l'architecture de l'information et de l'UX pour aplanir la courbe d'apprentissage, rendre la navigation intuitive et favoriser une adoption rapide : plus de 500 000 téléchargements."
     },
     {
      "img": "pharmy-card.jpg",
@@ -206,12 +208,12 @@
    "img": "charles-erick-jean-francois-bg-viesigners-founders.jpg",
    "imgName": "Charles-Erick et Jean-François BG, cofondateurs de Viesigners",
    "checks": [
-    "Experts du Toptal Top 3%",
+    "Plus de 30 années d'expérience combinée",
     "Exécution 100% senior sur chaque projet",
     "Votre dossier n'est jamais délégué"
    ],
    "names": "Charles-Erick et Jean-François BG",
-   "caption": "Cofondateurs · Toptal Top 3%"
+   "caption": "Cofondateurs de Viesigners"
   },
   {
    "type": "faq",
@@ -232,8 +234,8 @@
    "type": "cta-final",
    "h2": "Repérons les fuites de votre *tunnel et de votre intégration*",
    "p": "Si votre produit a un trafic stable mais que la conversion ou la rétention stagne, passons votre parcours en revue ensemble.",
-   "cta": "Réserver une analyse gratuite",
-   "href": "https://cal.com/viesigners/user-journey-teardown-call"
+   "cta": "Obtenir mon diagnostic gratuit",
+   "to": "audit"
   }
  ],
  "faq": [
@@ -252,7 +254,7 @@
   {
    "q": "Pouvez-vous faire la même chose pour mon SaaS?",
    "a": [
-    "Les résultats dépendent de chaque produit, mais la méthode s'applique. Nous commençons par un bilan du parcours usager pour repérer les fuites dans votre tunnel, votre intégration et vos pages clés. [Réserver une analyse gratuite](https://cal.com/viesigners/user-journey-teardown-call)."
+    "Les résultats dépendent de chaque produit, mais la méthode s'applique. Nous commençons par un diagnostic UX gratuit pour repérer les fuites dans votre tunnel, votre intégration et vos pages clés. [Obtenir mon diagnostic gratuit](@audit)."
    ]
   }
  ],

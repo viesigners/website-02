@@ -1,18 +1,13 @@
 {
  "meta": {
   "title": "Fractional Product Designer & Head of Design for SaaS | Viesigners",
-  "description": "Fractional product designer, lead or head of design for SaaS, AI products and mobile apps, from 5 hours a week. Senior UX/UI, transparent monthly pricing, from US$3,450/month.",
+  "description": "Fractional product designer, lead or head of design for SaaS, AI products and mobile apps, from 5 hours a week. Senior UX/UI with 16+ years of experience, a monthly fee based on the scope of the project.",
   "h1": "Fractional product designer for SaaS and AI"
  },
  "service": {
   "name": "Fractional product design",
   "type": "Fractional product designer, lead product designer and head of design for SaaS, AI products and mobile apps",
-  "audience": "SaaS and AI startups, mobile app teams, product teams without a senior designer, founders and product leaders",
-  "offer": {
-   "price": "3450",
-   "currency": "USD",
-   "unit": "per month, 5 hours per week"
-  }
+  "audience": "SaaS and AI startups, mobile app teams, product teams without a senior designer, founders and product leaders"
  },
  "sections": [
   {
@@ -23,13 +18,13 @@
    "lead": "A senior product designer, lead or head of design, a few hours a week or a month. We audit your SaaS product or mobile app, then improve conversion, activation and retention with your team.",
    "ctas": [
     {
-     "label": "Estimate your monthly price",
-     "to": "#pricing",
+     "label": "Book an intro call",
+     "to": "@contact",
      "style": "violet"
     },
     {
-     "label": "Book an intro call",
-     "to": "@contact",
+     "label": "See the roles",
+     "to": "#roles",
      "style": "ghost"
     }
    ],
@@ -44,7 +39,7 @@
     },
     {
      "b": "Price:",
-     "t": "from US$3,450/month (product designer, 5 h/week). The rate drops as weekly hours increase."
+     "t": "a monthly fee based on the scope of the project, confirmed in writing after the intro call."
     },
     {
      "b": "Proof:",
@@ -151,9 +146,11 @@
    "callouts": [
     {
      "h": "Smaller team or budget?",
-     "p": "If your product or site is live, start with our [fixed-price UX/CRO audit](@audit). No product yet? We design your first version as a [fixed-scope project](@design-produit)."
+     "p": "If your product or site is live, start with our [free UX Conversion & Retention Diagnostic](@audit). No product yet? We design your first version as a [fixed-scope project](@design-produit)."
     }
-   ]
+   ],
+   "off": true,
+   "_note": "price slider kept for later: remove \"off\" to publish it again (and set currency.selector to true in config.json)"
   },
   {
    "type": "process",
@@ -278,7 +275,7 @@
    "items": [
     "audit",
     "design-produit",
-    "tarifs"
+    "landing-pages"
    ]
   },
   {
@@ -298,7 +295,9 @@
   {
    "q": "How much does a fractional product designer cost?",
    "a": [
-    "At Viesigners, from US$3,450 a month for a product designer at 5 hours a week. Lead product designer starts at about US$3,900 and head of design at about US$4,350 a month. The hourly rate drops by 10% at 10 hours a week, 20% at 15 hours and 25% at 20 hours. These prices are for established companies and product teams; the final price is confirmed in writing after the intro call."
+    "You don't take a plane to the corner store. The right investment depends on where you're going.",
+    "As a rule of thumb, plan 10–20% of the project's budget for design.",
+    "We confirm the exact price in writing before the project starts."
    ]
   },
   {
@@ -316,7 +315,7 @@
   {
    "q": "Do you also work on mobile apps?",
    "a": [
-    "Yes. We design iOS and Android apps, from onboarding to key user flows, including companion apps and mobile games. During their careers, our founders designed, among others, the Meccano companion app for Spin Master, downloaded more than a million times."
+    "Yes. We design iOS and Android apps, from onboarding to key user flows, including companion apps and mobile games. During their careers, our founders designed, among others, the Meccano companion app for Spin Master, downloaded more than 500,000 times."
    ]
   },
   {

@@ -1,4 +1,5 @@
 {
+  "menu": { "serviceDescriptions": true, "cardDescriptions": false, "_note": "true = show the one-line descriptions in the menu: under each service (navSub) and on the Featured industry (indQ) and Start here (navSub.audit) cards; texts live in _site.json" },
   "workSat": { "_note": "optional per-image saturation for the project cards (default .15, set in site.css); add \"file.jpg\": value to override one image" },
   "origin": "https://viesigners.com",
   "published": "2026-10-03",
@@ -13,16 +14,6 @@
     "toptal": "",
     "toptalJF": "https://www.toptal.com/designers/resume/jean-francois-b-g#XAEE74"
   },
-  "legal": {
-    "fr": {
-      "privacy": "https://docs.google.com/document/d/1qTgYIzYSS77hyjOed2NVqTbrQTfDKk9Vxlm4z47uF14/edit?tab=t.0#heading=h.7ulsj23f40pu",
-      "terms": "https://docs.google.com/document/d/1Qe1i7yRyh_SQCOK9RA2f0hUM99DEfXp7pCj1Vf0PGFo/edit?tab=t.0#heading=h.3cv1kzs95pop"
-    },
-    "en": {
-      "privacy": "https://docs.google.com/document/d/15IwzlyUQ20FT3wGHYUMsltzcC1zouH2p2N2FvbXbb6E/edit?tab=t.0#heading=h.nivmg1279y28",
-      "terms": "https://docs.google.com/document/d/1fbT0Is9NYfZ9j3fouXgxXuVtV1AcorlkK9uh-1A94PA/edit?tab=t.0#heading=h.cuaavcbi4l1k"
-    }
-  },
   "hidden": [
     "charles-erick",
     "jean-francois",
@@ -32,6 +23,7 @@
     "email": "freres.bg@viesigners.com"
   },
   "currency": {
+    "selector": false,
     "note": "US dollars are the base. Update these two rates every 3 months (or when a rate moves more than 5%). Converted prices are rounded down: prices to the hundred, hourly rates to the nearest 5.",
     "updated": "2026-11-20",
     "rates": {

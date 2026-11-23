@@ -1,123 +1,156 @@
 {
  "meta": {
-  "title": "Fixed-Price UX/CRO Audit for Websites & SaaS | Viesigners",
-  "description": "A fixed-price UX and conversion (CRO) audit of your website, landing page or SaaS product: what costs you customers, ranked by impact, with a clear action plan.",
-  "h1": "Fixed-price UX/CRO audit"
+  "title": "Free UX Conversion & Retention Diagnostic (UX/CRO audit) | Viesigners",
+  "description": "A free 20-minute UX/CRO audit of your website, online store, SaaS or app with a senior UX expert. Leave with your top 3–4 UX priorities to improve conversion, retention and sales.",
+  "h1": "Free UX Conversion & Retention Diagnostic"
  },
  "service": {
-  "name": "UX/CRO audit",
-  "type": "UX audit and conversion rate optimization (CRO) audit at a fixed price",
-  "audience": "Service businesses, e-commerce, SaaS and app companies"
+  "name": "UX Conversion & Retention Diagnostic",
+  "type": "Free 20-minute UX, CRO and retention audit with a written report of the top 3–4 priorities",
+  "audience": "Service businesses, ecommerce, SaaS and apps",
+  "offer": { "price": "0", "currency": "USD" }
  },
  "sections": [
   {
    "type": "page-hero",
    "tagH1": true,
-   "tag": "Fixed-price UX/CRO audit",
-   "h1": "Find out exactly what *costs you customers*",
-   "lead": "Senior UX and conversion experts review your website, landing page or product, find the friction that stops visitors from buying or signing up, and rank every fix by impact. One fixed price, no surprises.",
+   "tag": "Free UX Conversion & Retention Diagnostic",
+   "h1": "Find what's costing you customers and sales, *in 20 minutes*",
+   "lead": "Show us your website, online store or product. A senior UX and web expert with 16 years of experience spots where you're losing prospects and users, then hands you your top 3–4 UX priorities to improve conversion and sales, in writing. Free, no strings attached.",
    "ctas": [
-    { "label": "Order an audit", "to": "@contact", "style": "violet" },
-    { "label": "See all prices", "to": "@tarifs", "style": "ghost" }
+    { "label": "Book my free diagnostic", "to": "https://cal.com/viesigners/ux-conversion-retention-diagnostic-call", "style": "violet" },
+    { "label": "What we review", "to": "#review", "style": "ghost" }
    ],
    "brief": [
-    { "b": "Who it's for:", "t": "businesses with traffic that doesn't turn into enough inquiries, sales or sign-ups." },
-    { "b": "What you get:", "t": "a prioritized action plan, annotated screens and a debrief call with the founders." },
-    { "b": "Price:", "t": "[PRICE TO CONFIRM], fixed, agreed before we start." },
-    { "b": "Next step:", "t": "fix it yourselves, or have us do it (project or fractional)." }
+    { "b": "Length:", "t": "20 minutes on a video call, with one of our founders." },
+    { "b": "You get:", "t": "your top 3–4 UX priorities, ranked by impact, in a short written report." },
+    { "b": "For:", "t": "service businesses, online stores, SaaS and apps that are already live." },
+    { "b": "Slots:", "t": "4 a week, so each diagnostic gets proper prep." },
+    { "b": "Price:", "t": "free, no commitment." }
    ]
   },
   {
    "type": "statement",
    "wide": true,
-   "text": "Redesigning without an audit is guessing. *An audit tells you what to fix first*, and what to leave alone.",
+   "text": "You don't need a redesign to sell more. *You need to know what to fix first.*",
    "prose": [
-    "Most sites and products don't lose customers because of one big problem. They lose them through a dozen small frictions: a vague promise, a confusing step, a missing proof, a form that asks too much. Each one costs a little; together they cost a lot.",
-    "Our audit finds them, explains why they hurt, and ranks them so your next hour of work goes where it brings the most revenue."
+    "Most websites and products don't lose customers to one big problem, but to a dozen small frictions: a fuzzy message, a confusing buying process, a poorly tuned tech setup, missing proof, a puzzling interface. Each one costs a little; together, they cost a lot.",
+    "In 20 minutes, we find the ones costing you the most, whether they stop people from buying or from coming back, and tell you where to start."
    ]
   },
   {
    "type": "deliverables",
-   "id": "included",
+   "id": "review",
+   "label": "The diagnostic",
    "h2": "What we *review*",
+   "lead": "Four angles, to land on your top priorities.",
    "items": [
-    { "h": "Message and offer", "p": "Is it clear in a few seconds what you sell, to whom and why you? We check the value proposition, headlines and calls to action." },
-    { "h": "User experience", "p": "Navigation, key paths and forms, reviewed against usability best practices and real user behavior." },
-    { "h": "Conversion path", "p": "Every step from first visit to inquiry, purchase or sign-up, and where people drop off." },
-    { "h": "Trust and proof", "p": "Testimonials, case studies, guarantees and reassurance at the moments visitors hesitate." },
-    { "h": "Mobile and speed", "p": "How the pages read, load and work on a phone, where most visits happen." },
-    { "h": "Data", "p": "When you give us access, your analytics and session recordings to confirm what the review suggests." }
+    { "h": "Message and copy", "p": "Is it clear in 5 seconds what you sell, who it's for and why you? Are your headlines, copy and calls to action written to convert?" },
+    { "h": "Buying journey", "p": "Where are you losing prospects? We follow the path from the first visit to the inquiry, purchase or signup: pages, forms, cart and checkout." },
+    { "h": "Product interface and retention", "p": "Once people sign up or buy, do they stay and spend more? We look at your home screen and main feature screens, your upgrade and upsell prompts, and what brings customers back." },
+    { "h": "Performance and visibility", "p": "A quick check of speed, mobile experience, SEO and GEO basics and conversion tracking, to see if the tech is holding you back." }
+   ]
+  },
+  {
+   "type": "deliverables",
+   "label": "By business model",
+   "h2": "One method, *four angles*",
+   "lead": "We tailor the diagnostic to what drives sales and retention for your type of business.",
+   "items": [
+    { "h": "Service businesses", "p": "Offer clarity, trust signals, the path to a quote request or a booked call, and what turns clients into repeat clients and referrals." },
+    { "h": "Ecommerce", "p": "Product pages, cart, checkout, average order value, and what brings shoppers back for a second order." },
+    { "h": "SaaS", "p": "Signup, activation, onboarding, the home screen and key features, the pricing page and upgrade prompts." },
+    { "h": "Mobile apps", "p": "Your App Store and Google Play listing, onboarding, in-app purchases and retention." }
    ]
   },
   {
    "type": "process",
-   "h2": "How the audit *works*",
+   "h2": "How it *works*",
    "steps": [
-    { "h": "Kickoff", "p": "A short call to understand your goals, your audience and the pages or product to review.", "out": "Outcome: an agreed scope and fixed price." },
-    { "h": "Review", "p": "We review the experience, the copy and, when available, your data.", "out": "Outcome: every friction point documented." },
-    { "h": "Action plan", "p": "We rank each fix by impact and effort and show it on annotated screens.", "out": "Deliverable: a prioritized action plan." },
-    { "h": "Debrief", "p": "We walk you through the findings and answer your team's questions.", "out": "Deliverable: a debrief call and clear next steps." }
-   ]
+    { "h": "Book", "p": "Pick a time on our calendar and answer a few short questions: your site or product, your goal and your main metric.", "out": "Result: a confirmed 20-minute slot." },
+    { "h": "We prep", "p": "Before the call, we review your site or product, so we show up with findings instead of generic questions.", "out": "Result: a call that's useful from minute one." },
+    { "h": "The call", "p": "20 minutes on video with one of our founders. You show us your site or interface, we show you what we see and answer your questions.", "out": "Result: your main frictions, explained." },
+    { "h": "The report", "p": "Within 2 business days, you get a short written report with your top 3–4 priorities, their impact and the effort each takes.", "out": "Deliverable: your top 3–4 UX priorities, in writing." }
+   ],
+   "note": "**Want us to fix them for you?** If the diagnostic hits the mark, we'll book a follow-up at the end of the call to plan the work together. No pressure: the report is yours either way."
   },
   {
    "type": "fit",
-   "h2": "Is the audit *right for you?*",
+   "h2": "Is the diagnostic *right for you?*",
    "yes": {
     "h": "A good fit if",
     "items": [
-     "You get visits but not enough inquiries, sales or sign-ups",
-     "You're planning a redesign and want to know what really needs to change",
-     "Your SaaS loses users during onboarding or before paying",
-     "You want an outside, senior opinion before investing more in ads"
+     "Your website, store or product is live and already gets visitors or users",
+     "You get traffic, but not enough inquiries, sales, signups or paying users",
+     "People buy or sign up once, then don't come back",
+     "You're planning a redesign and want to know what really needs to change"
     ]
    },
    "no": {
     "h": "Probably not if",
     "items": [
-     "Your site has almost no traffic yet: start with visibility",
-     "You need a brand-new site from scratch: see website creation",
-     "You're looking for a free opinion"
+     "Your site or product isn't launched yet: see [website design](@sites-web) or [product design](@design-produit) instead",
+     "You want a full review of every page: the diagnostic focuses on your top 3–4 priorities",
+     "You only want a list of technical bugs"
     ]
+   },
+   "foot": {
+    "p": "Only 4 diagnostic slots a week, so each one gets proper prep.",
+    "label": "Book my diagnostic",
+    "href": "https://cal.com/viesigners/ux-conversion-retention-diagnostic-call"
    }
   },
   {
    "type": "faq",
-   "h2": "Frequently asked questions about the *UX/CRO audit*",
+   "h2": "Frequently asked questions about the *free UX diagnostic*",
    "open": true
   },
   {
    "type": "related",
-   "h2": "After the audit",
+   "h2": "To act on your priorities",
    "cta": "See the service",
    "items": ["landing-pages", "design-produit", "fractional"]
   },
   {
    "type": "cta-final",
-   "h2": "Ready to find out what *holds back your conversions?*",
-   "p": "Tell us which site, page or product to review. We'll confirm the scope and the fixed price.",
-   "cta": "Order an audit"
+   "h2": "Ready to find out what's *holding back your sales?*",
+   "p": "Book your 20 minutes. We prep the call, and you leave with your top 3–4 UX priorities, in writing.",
+   "cta": "Book my free diagnostic",
+   "href": "https://cal.com/viesigners/ux-conversion-retention-diagnostic-call"
   }
  ],
  "faq": [
   {
+   "q": "Is the diagnostic really free?",
+   "a": ["Yes. No fee, no credit card, no commitment. We offer 4 diagnostics a week because it's the best way to show you how we work."]
+  },
+  {
+   "q": "Who will I meet?",
+   "a": ["One of our two founders: a senior UX and web expert with 16 years of experience designing websites, online stores, SaaS products and apps. If someone else on your side makes the decisions, invite them: they'll hear the reasoning firsthand."]
+  },
+  {
    "q": "What is a UX/CRO audit?",
-   "a": ["A UX/CRO audit is an expert review of a website, landing page or digital product that identifies what prevents visitors from becoming customers. UX covers how easy and clear the experience is; CRO (conversion rate optimization) covers how well it leads people to act. The result is a prioritized list of fixes."]
+   "a": ["A UX/CRO audit is an expert review of a website, online store or digital product that finds what stops visitors from becoming customers. UX covers how clear and easy the experience is; CRO (conversion rate optimization) covers how well it leads people to act. Our diagnostic is a short, focused version that also looks at retention: it pinpoints the 3 or 4 priorities with the biggest impact."]
   },
   {
-   "q": "How much does the audit cost?",
-   "a": ["[PRICE TO CONFIRM]. The price is fixed and confirmed before we start, based on the size of the site or product."]
+   "q": "What's the difference between conversion and retention?",
+   "a": ["Conversion is getting a visitor to act: buy, sign up or get in touch. Retention is keeping them: coming back, staying subscribed, buying again. Most growth problems involve both, so we look at both."]
   },
   {
-   "q": "What do I receive at the end?",
-   "a": ["A prioritized action plan with annotated screens, and a debrief call where we walk your team through the findings and answer questions."]
+   "q": "What do I get after the call?",
+   "a": ["A short written report with your top 3–4 UX priorities, ranked by impact, with the estimated effort for each. You can share it with your team or partners."]
   },
   {
-   "q": "Do you implement the fixes?",
-   "a": ["You can implement them yourselves with the action plan, or have us do it, as a landing page or website project, a product design project, or an ongoing fractional engagement."]
+   "q": "Are you going to try to sell me something?",
+   "a": ["If the diagnostic hits the mark and you want help putting your priorities into action, we'll book a follow-up at the end of the call to plan it. Otherwise, you leave with your report, and that's it."]
   },
   {
-   "q": "Can you audit a SaaS product or a mobile app?",
-   "a": ["Yes. We audit websites, landing pages and sales funnels, as well as SaaS products and mobile apps, including onboarding, activation and pricing pages."]
+   "q": "Can you review an online store, a SaaS product or a mobile app?",
+   "a": ["Yes. We review service business websites, online stores, SaaS products and mobile apps, including product pages, checkout, onboarding, activation, key feature screens, upsells and pricing pages."]
+  },
+  {
+   "q": "What should I prepare?",
+   "a": ["A link to your site or access to your product, your main goal and, if you have it, one key number: conversion rate, signups, sales or churn. We take care of the rest."]
   }
  ]
 }

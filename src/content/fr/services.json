@@ -29,7 +29,7 @@
           "to": "@sites-web",
           "cta": "Voir le service",
           "title": "Création de site web",
-          "desc": "Enracinez votre notoriété et prenez la place qui vous revient dans votre marché. Plus de 600 projets livrés, reconnus par Awwwards."
+          "desc": "Enracinez votre notoriété et prenez la place qui vous revient dans votre marché. Plus de 600 projets réalisés par nos fondateurs."
         },
         {
           "area": "land",
@@ -93,15 +93,15 @@
           "to": "@fractional",
           "cta": "Voir le service",
           "title": "Design de produit fractionnel",
-          "desc": "Un designer de produit, un lead ou un directeur du design dans votre équipe, quelques heures par semaine ou par mois. Dès {$3450}/mois."
+          "desc": "Un designer de produit, un lead ou un directeur du design dans votre équipe, quelques heures par semaine ou par mois."
         },
         {
           "area": "audit",
           "size": "md",
           "to": "@audit",
-          "cta": "Voir l’audit",
-          "title": "Audit UX/CRO",
-          "desc": "Un audit à prix fixe de ce qui vous coûte des clients, classé par impact. La meilleure première étape avant une refonte."
+          "cta": "Voir le diagnostic",
+          "title": "Diagnostic UX gratuit : conversion et rétention",
+          "desc": "20 minutes avec un expert senior pour trouver où vous perdez des clients et des ventes. Vous repartez avec vos 3 à 4 priorités UX, par écrit."
         }
       ]
     },

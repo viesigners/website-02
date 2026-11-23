@@ -121,13 +121,15 @@
       const opt = need && need.selectedOptions[0];
       const short = !!opt && (!need.value || opt.dataset.key === 'hi');
       form.classList.toggle('is-short', short);
-      form.querySelectorAll('[data-project]').forEach(w => {
-        w.hidden = short;
+      const free = !!opt && opt.dataset.key === 'diagnostic'; // free diagnostic: no budget to ask
+      form.querySelectorAll('[data-project], [data-budget]').forEach(w => {
+        const off = short || (free && w.hasAttribute('data-budget'));
+        w.hidden = off;
         w.querySelectorAll('input, select, textarea').forEach(i => {
           if (i.dataset.req === undefined) i.dataset.req = i.required ? '1' : '0';
-          i.required = !short && i.dataset.req === '1';
-          i.disabled = short;
-          if (short) { i.removeAttribute('aria-invalid'); const err = i.closest('.field')?.querySelector('.err'); if (err) err.textContent = ''; }
+          i.required = !off && i.dataset.req === '1';
+          i.disabled = off;
+          if (off) { i.removeAttribute('aria-invalid'); const err = i.closest('.field')?.querySelector('.err'); if (err) err.textContent = ''; }
         });
       });
     };

@@ -14,7 +14,7 @@
   "body": [
     { "p": "People are landing on your site. Your analytics prove it. And yet the phone stays quiet." },
     { "p": "When a website isn't converting visitors, the cause is rarely the traffic or the quality of your offer. It's friction: a message that doesn't land, a path that's harder than it should be, or too little proof to justify the risk. And when that happens, the money stays in your customers' pockets." },
-    { "p": "After advising more than 600 businesses, from startups to brands like Disney and Dell, we keep finding the same patterns. Here are the 10 most common ones, followed by a checklist you can use to audit your own site this week." },
+    { "p": "After more than 600 projects, for everyone from startups to brands like Disney and Dell, we keep finding the same patterns. Here are the 10 most common ones, followed by a checklist you can use to audit your own site this week." },
 
     { "h2": "First, confirm you have a conversion problem" },
     { "p": "A conversion rate only means something next to the right benchmark, and many of the numbers online are the wrong one. The 2.35% \"average website conversion rate\" you'll see everywhere actually [comes from a 2014 study of Google Ads accounts](https://www.digitalapplied.com/blog/conversion-rate-benchmarks-2026-industry-channel), not websites." },
@@ -72,7 +72,7 @@
     { "p": "**The fix:** Address objections directly with a clear process, a price range or starting point, your guarantee and real photos of your team. A focused FAQ near the decision point helps too." },
 
     { "h2": "The website conversion checklist: audit your site in an hour" },
-    { "p": "This checklist is built from the patterns we've identified across 600+ businesses. Open your most-visited page on your phone and be honest with each item. If it would embarrass you in front of a customer, leave it unchecked." },
+    { "p": "This checklist is built from the patterns we've identified across 600+ projects. Open your most-visited page on your phone and be honest with each item. If it would embarrass you in front of a customer, leave it unchecked." },
     { "h3": "Message" },
     { "check": [
       "A stranger can say what we do, and for whom, after 5 seconds on the page",

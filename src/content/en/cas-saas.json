@@ -1,4 +1,5 @@
 {
+ "author": "organization",
  "meta": {
   "title": "B2B SaaS Case Study: +31% MRR, −24% Churn | Viesigners",
   "description": "How we lifted a B2B AI SaaS's MRR by 31% and cut churn by 24% in 90 days: a rewritten value proposition, faster onboarding and a redesigned feature page.",
@@ -25,16 +26,16 @@
     },
     {
      "b": "Execution:",
-     "t": "100% senior, by co-founder Jean-François (Toptal Top 3%)."
+     "t": "100% senior, by Viesigners, led by co-founder Jean-François BG."
     }
    ],
    "ctas": [
     {
-     "label": "Book a free 15-minute teardown",
-     "to": "https://cal.com/viesigners/user-journey-teardown-call"
+     "label": "Get my free diagnostic",
+     "to": "@audit"
     }
    ],
-   "byline": "By Jean-François BG (Toptal Top 3%)"
+   "byline": "By Viesigners · project led by Jean-François BG"
   },
   {
    "type": "casestudy",
@@ -84,16 +85,17 @@
     "name": "CEO, B2B AI SaaS",
     "role": "Name under NDA"
    },
-   "note": "100% of the UX/UI redesign and CRO strategy was executed directly by co-founder Jean-François (Toptal Top 3%), with no delegation to junior staff.",
-   "cta": "Book a free 15-minute teardown",
-   "ctaNote": "No sales pitch: just actionable feedback on your user journey.",
+   "note": "100% of the UX/UI redesign and CRO strategy was executed by Viesigners, directly by co-founder Jean-François, with no delegation to junior staff.",
+   "cta": "Get my free diagnostic",
+   "ctaNote": "No sales pitch: your top 3–4 UX priorities, in writing.",
    "theme": "light",
-   "ctaHref": "https://cal.com/viesigners/user-journey-teardown-call"
+   "ctaTo": "audit"
   },
   {
    "type": "work",
    "even": true,
-   "h2": "More great *SaaS results*",
+   "h2": "More SaaS results *from our founders' careers*",
+   "lead": "Before Viesigners, our founders designed these products, at agencies and in-house.",
    "items": [
     {
      "img": "assassins-creed.jpg",
@@ -113,8 +115,8 @@
      "img": "spin-master.jpg",
      "alt": "Meccano's Builder/Controller Hub app for Spin Master: controller screen and downloadable building instructions on two phones",
      "title": "Meccano's Builder/Controller Hub App",
-     "result": "1M+ downloads",
-     "desc": "Engineered the information architecture and UX to flatten the learning curve, making navigation intuitive and driving rapid adoption with 1M+ downloads."
+     "result": "500K+ downloads",
+     "desc": "Engineered the information architecture and UX to flatten the learning curve, making navigation intuitive and driving rapid adoption with 500K+ downloads."
     },
     {
      "img": "pharmy-card.jpg",
@@ -201,12 +203,12 @@
    "img": "charles-erick-jean-francois-bg-viesigners-founders.jpg",
    "imgName": "Charles-Erick and Jean-François BG, co-founders of Viesigners",
    "checks": [
-    "Toptal Top 3% experts",
+    "30+ combined years of experience",
     "100% senior execution on every project",
     "Your account is never delegated"
    ],
    "names": "Charles-Erick & Jean-François BG",
-   "caption": "Co-founders · Toptal Top 3%"
+   "caption": "Co-founders of Viesigners"
   },
   {
    "type": "faq",
@@ -227,8 +229,8 @@
    "type": "cta-final",
    "h2": "Want to spot the leaks in your *funnel and onboarding?*",
    "p": "If your product has steady traffic but conversion or retention is lagging, let's review your flow together.",
-   "cta": "Book a free 15-minute teardown",
-   "href": "https://cal.com/viesigners/user-journey-teardown-call"
+   "cta": "Get my free diagnostic",
+   "to": "audit"
   }
  ],
  "faq": [
@@ -247,7 +249,7 @@
   {
    "q": "Can you do the same for my SaaS?",
    "a": [
-    "Results depend on each product, but the method applies. We start with a user-journey teardown to spot the leaks in your funnel, onboarding and key feature pages. [Book a free 15-minute teardown](https://cal.com/viesigners/user-journey-teardown-call)."
+    "Results depend on each product, but the method applies. We start with a free UX diagnostic to spot the leaks in your funnel, onboarding and key feature pages. [Get my free diagnostic](@audit)."
    ]
   }
  ],

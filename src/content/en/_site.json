@@ -1,8 +1,13 @@
 {
  "navFeatured": "Start here",
- "navAuditGo": "See the audit",
+ "navAuditGo": "See the diagnostic",
  "navFracQ": "Just need regular senior input?",
  "navFracLink": "See our fractional option",
+ "navFracSub": "Fractional option",
+ "navNew": "New",
+ "headerCta": "Free diagnostic",
+ "navCompanyTitle": "The agency",
+ "navServicesTitle": "Signature services",
  "indQ": "Toy brand, game studio or licensor? We know your audiences.",
  "indLink": "See our expertise",
  "navStart": "Not sure where to start?",
@@ -35,8 +40,7 @@
   "marque-blanche": "White-label partner",
   "copywriting": "Copywriting",
   "fractional": "Fractional product design",
-  "audit": "UX/CRO audit",
-  "tarifs": "Pricing",
+  "audit": "Free UX Conversion & Retention Diagnostic",
   "jouets-jeux": "Toys, games and entertainment",
   "cebg": "Charles-Erick BG"
  },
@@ -50,8 +54,7 @@
   "coaching": "Offers and launches for service entrepreneurs",
   "copywriting": "Words that turn visitors into customers",
   "fractional": "A senior designer in your team, a few hours a week or a month",
-  "audit": "A fixed-price audit of what costs you conversions",
-  "tarifs": "Every \"from\" price, by service",
+  "audit": "Your top 3–4 UX priorities in 20 minutes, free",
   "jouets-jeux": "UX/UI for toy brands, games and entertainment IP",
   "marque-blanche": "Senior UX/UI under your brand, for your agency"
  },
@@ -67,12 +70,13 @@
  "langLabel": "Language",
  "langSwitch": "Passer au français",
  "ctaShort": "Let's grow!",
+ "ctaDiag": "Get my free diagnostic",
  "menu": "Menu",
  "top": "Back to top",
  "footerTag": "The accelerator pedal for *growing businesses*",
  "footer": {
   "who": "Viesigners",
-  "blurb": "A lean UX/UI and conversion agency. Two senior founders and a network of trusted specialists, in Quebec and Vancouver.",
+  "blurb": "An independent UX/UI and conversion agency in Quebec City and Vancouver, founded by two senior designers.",
   "cta": "Let's talk!",
   "company": "Company",
   "rights": "Les Viesigners. All rights reserved.",
@@ -80,7 +84,7 @@
   "terms": "Terms and conditions",
   "cookies": "Cookie settings"
  },
- "orgDescription": "Viesigners is a lean Canadian UX/UI, web and marketing agency (Quebec and Vancouver) specialized in UX/UI and conversion rate optimization (CRO): websites, landing pages, sales funnels, SaaS and app product design, and business advisory. With a network of vetted experts, it also supports companies in digital advertising, SEO and GEO.",
+ "orgDescription": "Viesigners is an independent UX/UI and conversion agency in Quebec City and Vancouver, founded by two senior designers: websites, online stores, landing pages, sales funnels, SaaS and app product design, and business advisory. With a network of vetted experts, it also supports companies in digital advertising, SEO and GEO.",
  "knowsAbout": [
   "UX/UI design",
   "Conversion rate optimization (CRO)",
@@ -95,10 +99,18 @@
   "Business advisory"
  ],
  "awards": [
-  "Top 3% of the world's web experts (Toptal)",
   "Projects recognized by Awwwards",
   "OCTAS award finalist",
   "Osentreprendre award"
+ ],
+ "awardsJF": [
+  "Top 3% of the world's web experts (Toptal)",
+  "GDC Play 2017: Best in Play",
+  "Best Mobile App Awards 2017: Platinum",
+  "Communicator Awards 2017 (2 awards)",
+  "Indie Prize, Casual Connect USA 2017: finalist",
+  "Tillywig Brain Child Award 2014",
+  "Boomerang competition 2014: winner"
  ],
  "jobTitle": "Co-founder, UX/UI and CRO expert",
  "postCta": {

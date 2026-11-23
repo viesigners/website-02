@@ -85,8 +85,7 @@ const ROUTES = {
   privacy: { fr: 'politique-de-confidentialite', en: 'privacy-policy' },
   terms: { fr: 'conditions-generales', en: 'terms-of-use' },
   fractional: { fr: 'design-produit-fractionnel', en: 'fractional-product-design' }, // ongoing product design, priced by role × hours (slider)
-  audit: { fr: 'audit-ux-cro', en: 'ux-cro-audit' }, // fixed-price entry offer
-  tarifs: { fr: 'tarifs', en: 'pricing' }, // every "from" price, one tab per service
+  audit: { fr: 'diagnostic-ux-conversion-retention', en: 'ux-conversion-retention-diagnostic' }, // free 20-min diagnostic call (lead magnet), booked on cal.com; key kept as 'audit'
   'jouets-jeux': { fr: 'secteurs/jouets-jeux-divertissement', en: 'industries/toys-games-entertainment' }, // industry page (toys, games, entertainment)
   merci: { fr: 'merci', en: 'thank-you' }, // shown after a form submission: noindex, never linked
   actualites: BLOG, // blog: articles + case studies, one filter page per category (the key stays neutral; the name lives in _site.json nav)
@@ -156,7 +155,7 @@ const sparks = (n = 3) => Array.from({ length: n }, () => ico('spark', 'spark'))
 const R = {};
 const rv = (d = 0) => ` class="rv" style="--d:${d}s"`;
 function secHead(s, c, type, { id = '', h2 = s.h2, label = c.T.labels?.[type] } = {}) {
-  return `<div class="sec-head"><div class="sec-head__side">${label ? `<p class="label rv">${esc(label)}</p>` : ''}${s.lead ? `<p class="lead rv" style="--d:.08s">${fmt(s.lead, c.lang)}</p>` : ''}</div>${((h) => (s.sub ? `<div class="sec-head__main">${h}<p class="sec-head__sub rv" style="--d:.08s">${fmtT(s.sub, c.lang)}</p></div>` : h))(h2 ? `<h2${id ? ` id="${id}"` : ''} class="rv" style="--d:.04s">${fmt(h2, c.lang)}</h2>` : '')}</div>`;
+  return `<div class="sec-head"><div class="sec-head__side">${label ? `<p class="label rv">${esc(label)}</p>` : ''}${s.lead ? s.lead.split('\n').map((l) => `<p class="lead rv" style="--d:.08s">${fmt(l, c.lang)}</p>`).join('') : ''}</div>${((h) => (s.sub ? `<div class="sec-head__main">${h}<p class="sec-head__sub rv" style="--d:.08s">${fmtT(s.sub, c.lang)}</p></div>` : h))(h2 ? `<h2${id ? ` id="${id}"` : ''} class="rv" style="--d:.04s">${fmt(h2, c.lang)}</h2>` : '')}</div>`;
 }
 const splitLabel = (c, type) => (c.T.labels?.[type] ? `<p class="label rv">${esc(c.T.labels[type])}</p>` : '');
 
@@ -178,7 +177,7 @@ R['hero-home'] = (s, c) => {
     <h1 id="h1" class="label">${fmt(s.tag, lang)}</h1>
     <h2 class="hero__title">${fmt(s.h1, lang)}</h2>
     <p class="hero__lead">${fmt(s.lead, lang)}</p>
-    <div class="hero__cta"><a class="pill" href="${url('contact', lang)}">${esc(s.cta)}</a></div>
+    <div class="hero__cta"><a class="pill" href="${url(s.ctaTo || 'contact', lang)}">${esc(s.cta)}</a></div>
     ${logoStrip(s)}
   </div>
 </section>`;
@@ -194,7 +193,7 @@ R['page-hero'] = (s, c) => {
   const parents = c.crumbs.slice(1, c.activeTab ? -2 : -1);
   const last = isArticle ? '' : s.tag ? (s.tagH1 ? `<h1 id="h1">${fmt(s.tag, lang)}</h1>` : `<p>${fmt(s.tag, lang)}</p>`) : '';
   const trail = trailHtml(c, parents, last);
-  const ctas = (s.ctas || []).filter((b) => !(b.to.startsWith('@') && isHidden(b.to.slice(1)))).map((b) => `<a class="pill ${b.style === 'ghost' ? 'pill--ghost' : b.style === 'violet' ? 'pill--violet' : ''}" href="${b.to.startsWith('@') ? url(b.to.slice(1), lang) : b.to}"${/^https?:/.test(b.to) ? ' target="_blank" rel="noopener"' : ''}>${esc(b.label)}</a>`).join('');
+  const ctas = (s.ctas || []).filter((b) => !(b.to.startsWith('@') && isHidden(b.to.slice(1)))).map((b) => `<a class="pill ${b.style === 'ghost' ? 'pill--ghost' : b.style === 'violet' ? 'pill--violet' : ''}" href="${b.need ? contactUrl(c, b.need) : b.to.startsWith('@') ? url(b.to.slice(1), lang) : b.to}"${/^https?:/.test(b.to) ? ' target="_blank" rel="noopener"' : ''}>${esc(b.label)}</a>`).join('');
   const brief = s.brief ? `<aside class="brief rv" aria-labelledby="brief-t" style="--d:.15s"><h2 id="brief-t">${esc(T.brief)}</h2><ul>${s.brief.map((i) => `<li>${ico('check')}<span>${i.b ? `<strong>${fmt(i.b, lang)}</strong> ` : ''}${fmtT(i.t, lang)}</span></li>`).join('')}</ul><p class="upd">${esc(T.updated)} <time datetime="${page.updated || BUILD_DATE}">${new Date(page.updated || BUILD_DATE).toLocaleDateString(lang === 'fr' ? 'fr-CA' : 'en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time></p></aside>` : '';
   return `<section class="phero${s.compact ? ' phero--compact' : ''}" aria-labelledby="h1"><div class="wrap">
   <div class="phero__grid">
@@ -359,7 +358,7 @@ R.fit = (s, c) => {
     <div class="fit__col fit__col--yes rv"><h3>${fmt(s.yes.h, lang)}</h3><ul>${li(s.yes.items, 'check')}</ul></div>
     <div class="fit__col fit__col--no rv" style="--d:.1s"><h3>${fmt(s.no.h, lang)}</h3><ul>${li(s.no.items, 'x')}</ul></div>
   </div>
-  ${s.foot ? `<div class="fit__foot rv"><p>${fmt(s.foot.p, lang)}</p><a class="pill pill--violet" href="${s.foot.href || url(s.foot.to, lang)}">${esc(s.foot.label)}</a></div>` : ''}
+  ${s.foot ? `<div class="fit__foot rv"><p>${fmt(s.foot.p, lang)}</p><a class="pill pill--violet" href="${s.foot.href || (s.foot.need ? contactUrl(c, s.foot.need) : url(s.foot.to, lang))}"${s.foot.href ? ' target="_blank" rel="noopener"' : ''}>${esc(s.foot.label)}</a></div>` : ''}
   ${s.partner && !isHidden(s.partner.to) ? `<article class="casecard casecard--word rv"><a class="more" href="${url(s.partner.to, lang)}" aria-label="${esc(s.partner.label)}"></a><div class="casecard__n"><p class="eyebrow-tag">${esc(s.partner.tag)}</p><b>${esc(s.partner.word)}</b></div><div class="casecard__body"><h3>${fmt(s.partner.h, lang)}</h3><p>${fmt(s.partner.p, lang)}</p><span class="link-arrow">${esc(s.partner.label)} ${ico('arrow')}</span></div></article>` : ''}
 </div></section>`;
 };
@@ -383,7 +382,7 @@ R.testimonials = (s, c) => {
 
 R.slot = (s, c) => `<section class="section section--tight"><div class="wrap">
   ${secHead(s, c, 'slot')}
-  <div class="slot rv"><h3>${fmt(s.h3, c.lang)}</h3><a class="pill pill--violet" href="${url('contact', c.lang)}">${esc(s.cta)}</a></div>
+  <div class="slot rv"><h3>${fmt(s.h3, c.lang)}</h3><a class="pill pill--violet" href="${url(s.to || 'contact', c.lang)}">${esc(s.cta)}</a></div>
 </div></section>`;
 
 R.faq = (s, c) => {
@@ -407,6 +406,7 @@ R.deliverables = (s, c) => `<section class="section"${s.id ? ` id="${s.id}"` : '
 R.process = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'process')}
   <ol class="steps" style="--n:${s.steps.length}">${s.steps.map((p, k) => `<li class="step rv" style="--d:${k * .08}s"><h3>${fmt(p.h, c.lang)}</h3><p>${fmt(p.p, c.lang)}</p>${p.out ? `<p class="out">${fmt(p.out, c.lang)}</p>` : ''}</li>`).join('')}</ol>
+  ${s.note ? `<p class="steps__note rv">${ico('arrow')}<span>${fmt(s.note, c.lang)}</span></p>` : ''}
 </div></section>`;
 
 R.compare = (s, c) => {
@@ -435,7 +435,7 @@ R.casestudy = (s, c) => `<section class="section"><div class="wrap">
   </div>
   <figure class="tcard cs__quote rv"><blockquote>${s.quote.title ? `<h3 class="tq">${esc(s.quote.title)}</h3>` : ''}<p>${fmt(s.quote.text, c.lang)}</p></blockquote><figcaption><span class="who"><b>${esc(s.quote.name)}</b><span>${esc(s.quote.role)}</span></span></figcaption></figure>
   <p class="cs__note rv">${fmt(s.note, c.lang)}</p>
-  <p class="cs__cta rv"><a class="pill" href="${s.ctaHref || url('contact', c.lang)}"${s.ctaHref ? ' target="_blank" rel="noopener"' : ''}>${esc(s.cta)}</a> <span>${esc(s.ctaNote)}</span></p>
+  <p class="cs__cta rv"><a class="pill" href="${s.ctaHref || url(s.ctaTo || 'contact', c.lang)}"${s.ctaHref ? ' target="_blank" rel="noopener"' : ''}>${esc(s.cta)}</a> <span>${esc(s.ctaNote)}</span></p>
 </div></section>`;
 
 /* project case studies: prose, decisions, measured test. [À FOURNIR …] stays visible as a highlighted marker until the content is supplied */
@@ -666,7 +666,7 @@ R['cta-final'] = (s, c) => `<section class="section section--tight"><div class="
   <div class="cta-final rv">
     <h2 class="display">${fmt(s.h2, c.lang)}</h2>
     <p>${fmt(s.p, c.lang)}</p>
-    <div class="actions"><a class="pill" href="${s.href || url(s.to || 'contact', c.lang)}"${s.href ? ' target="_blank" rel="noopener"' : ''}>${fmt(s.cta, c.lang)}</a>${s.secondary ? `<a class="pill pill--ghost" href="${s.secondary.href || url(s.secondary.to, c.lang)}">${esc(s.secondary.label)}</a>` : ''}</div>
+    <div class="actions"><a class="pill" href="${s.href || (s.need ? contactUrl(c, s.need) : url(s.to || 'contact', c.lang))}"${s.href ? ' target="_blank" rel="noopener"' : ''}>${fmt(s.cta, c.lang)}</a>${s.secondary ? `<a class="pill pill--ghost" href="${s.secondary.href || url(s.secondary.to, c.lang)}">${esc(s.secondary.label)}</a>` : ''}</div>
   </div>
 </div></section>`;
 
@@ -735,7 +735,7 @@ R.contact = (s, c) => {
     <div class="field" data-project><label for="f-phone">${esc(f.phone)} ${req}</label><div class="phone"><select name="dial" aria-label="${esc(f.dial)}" data-dial>${countries.map((k) => `<option value="${k.dial}" data-cc="${k.cc}"${k.cc === 'CA' ? ' selected' : ''}>${k.flag} ${k.dial}</option>`).join('')}</select><input id="f-phone" name="phone" type="tel" autocomplete="tel-national" inputmode="tel" required></div>${err}</div>
     <div class="row2" data-project>
       <div class="field"><label for="f-site">${esc(f.website)} ${req}</label><input id="f-site" name="website" autocomplete="url" inputmode="url" required>${err}</div>
-      <div class="field"><label for="f-budget">${esc(f.budget)} ${req}</label><input id="f-budget" name="budget" inputmode="text" placeholder="${esc(f.budgetPh)}" required>${err}</div>
+      <div class="field" data-budget><label for="f-budget">${esc(f.budget)} ${req}</label><input id="f-budget" name="budget" inputmode="text" placeholder="${esc(f.budgetPh)}" required>${err}</div>
     </div>
     <div class="field" data-project><label for="f-country">${esc(f.country)} ${req}</label><select id="f-country" name="country" autocomplete="country" required data-country>${countries.map((k) => `<option value="${k.cc}"${k.cc === 'CA' ? ' selected' : ''}>${k.flag} ${esc(k.name)}</option>`).join('')}</select>${err}</div>
     <div class="field"><label for="f-msg">${esc(f.message)} ${req}</label><textarea id="f-msg" name="message" required></textarea>${err}</div>
@@ -877,21 +877,22 @@ function header(c) {
   const alt = lang === 'fr' ? 'en' : 'fr';
   const altUrl = c.altUrls[alt] || `/${alt}/`;
   const cur = (k, extra = []) => (key === k || extra.includes(key) ? ' aria-current="page"' : '');
-  const main = [['home', 'home'], ['a-propos', 'a-propos'], ['tarifs', 'tarifs'], ['realisations', 'realisations'], ['actualites', 'actualites'], ['contact', 'contact']]
+  const main = [['a-propos', 'a-propos'], ['realisations', 'realisations'], ['actualites', 'actualites'], ['contact', 'contact']]
       .filter(([k]) => !isHidden(k))
     .map(([k, label]) => `<a href="${url(k, lang)}"${cur(k, k === 'a-propos' ? ['charles-erick', 'jean-francois'] : k === 'actualites' ? ['post', ...CASE_KEYS] : [])}>${esc(T.nav[label])}</a>`).join('');
   // fractional design is not its own menu item: a short mention right under Product design leads to it
-  const fracNote = isHidden('fractional') ? '' : `<p class="drawer__aside">${esc(T.navFracQ)} <a href="${url('fractional', lang)}"${cur('fractional')}>${esc(T.navFracLink)} ${ico('arrow')}</a></p>`;
-  const services = MAIN_SERVICE_KEYS.filter((k) => k !== 'fractional' && !isHidden(k)).map((k) => `<a href="${url(k, lang)}"${cur(k)}>${esc(T.nav[k])}<small>${esc(T.navSub[k])}</small></a>${k === 'design-produit' ? fracNote : ''}`).join('')
+  // fractional = a way to buy product design: shown as an indented sub-link under it (earlier boxed note used navFracQ + navFracLink)
+  const fracNote = isHidden('fractional') ? '' : `<a class="drawer__sub" href="${url('fractional', lang)}"${cur('fractional')}><span aria-hidden="true">↳</span> ${esc(T.navFracSub)}${T.navNew ? ` <em class="badge">${esc(T.navNew)}</em>` : ''}</a>`;
+  const services = MAIN_SERVICE_KEYS.filter((k) => k !== 'fractional' && !isHidden(k)).map((k) => `<a href="${url(k, lang)}"${cur(k)}>${esc(T.nav[k])}${CFG.menu?.serviceDescriptions !== false ? `<small>${esc(T.navSub[k])}</small>` : ''}</a>${k === 'design-produit' ? fracNote : ''}`).join('')
     + `<a class="drawer__all" href="${url('services', lang)}"${cur('services')}>${esc(T.navAll)} ${ico('arrow')}</a>`;
   const feature = isHidden('audit') ? '' : `<aside class="drawer__feature"><p class="label">${esc(T.navFeatured)}</p>
-      <a class="drawer__feat" href="${url('audit', lang)}"${cur('audit')}><span>${esc(T.navStart)}</span><b>${esc(T.nav.audit)}</b><small>${esc(T.navSub.audit)}</small><i>${esc(T.navAuditGo)} ${ico('arrow')}</i></a></aside>`;
+      <a class="drawer__feat" href="${url('audit', lang)}"${cur('audit')}><b>${esc(T.nav.audit)}</b>${CFG.menu?.cardDescriptions !== false ? `<small>${esc(T.navSub.audit)}</small>` : ''}<i>${esc(T.navAuditGo)} ${ico('arrow')}</i></a></aside>`;
   // third column: the industry page as a callout of its own
   const industry = isHidden('jouets-jeux') ? '' : `<aside class="drawer__industry"><p class="label">${esc(T.industriesLabel)}</p>
       <a class="indcard" href="${url('jouets-jeux', lang)}"${cur('jouets-jeux')}>
-        <span class="indcard__logos" aria-hidden="true">${[['marvel', 'png'], ['transformers', 'svg'], ['ubisoft', 'png']].map(([id, ext]) => img(`logo-${id}.${ext}`, '', { lazy: true })).join('')}</span>
+        <span class="indcard__logos" aria-hidden="true">${[['marvel', 'png'], ['transformers', 'svg'], ['disney', 'png'], ['wizards', 'svg'], ['meccano', 'svg'], ['warner', 'png'], ['ubisoft', 'png'], ['dnd', 'svg']] /* priority order: the last ones drop out first when the card narrows */.map(([id, ext]) => img(`logo-${id}.${ext}`, '', { lazy: true })).join('')}</span>
         <b>${esc(T.nav['jouets-jeux'])}</b>
-        <span class="indcard__q">${esc(T.indQ)}</span>
+        ${CFG.menu?.cardDescriptions !== false ? `<span class="indcard__q">${esc(T.indQ)}</span>` : ''}
         <span class="indcard__go">${esc(T.indLink)} ${ico('arrow')}</span>
       </a></aside>`;
   return `<a class="skip" href="#main">${esc(T.skip)}</a>
@@ -899,19 +900,19 @@ function header(c) {
   <div class="header__in">
     <a class="hbtn hphone" href="tel:${CFG.phoneRaw}" aria-label="${esc(T.call)} ${esc(CFG.phone)}">${ico('phone')}<span>${esc(CFG.phone)}</span></a>
     <a class="brand" href="${url('home', lang)}" aria-label="Viesigners — ${esc(T.nav.home)}">${img('logo-viesigners.png', 'Viesigners', { lazy: false })}</a>
-    <button class="hbtn hmenu" type="button" aria-expanded="false" aria-controls="drawer" data-open="${esc(T.menu)}" data-close="${esc(T.close)}"><span class="hmenu__t" data-close="${esc(T.close)}">${esc(T.menu)}</span><span class="hmenu__i" aria-hidden="true"><i></i><i></i><i></i></span></button>
+    <div class="header__end">${isHidden('audit') || key === 'audit' ? '' : `<a class="hbtn header__cta" href="${url('audit', lang)}">${esc(T.headerCta)}</a>`}<button class="hbtn hmenu" type="button" aria-expanded="false" aria-controls="drawer" data-open="${esc(T.menu)}" data-close="${esc(T.close)}"><span class="hmenu__t" data-close="${esc(T.close)}">${esc(T.menu)}</span><span class="hmenu__i" aria-hidden="true"><i></i><i></i><i></i></span></button></div>
   </div>
 </header>
 <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="${esc(T.menu)}">
   <div class="wrap drawer__in">
-    <nav class="drawer__main" aria-label="${esc(T.mainNav)}">${main}</nav>
-    <nav class="drawer__services" aria-label="${esc(T.servicesLabel)}"><p class="label">${esc(T.nav.services)}</p>${services}</nav>
+    <nav class="drawer__services" aria-label="${esc(T.servicesLabel)}"><p class="label">${esc(T.navServicesTitle || T.nav.services)}</p>${services}</nav>
     ${industry}
     ${feature}
+    <nav class="drawer__main" aria-label="${esc(T.mainNav)}">${T.navCompanyTitle ? `<p class="label">${esc(T.navCompanyTitle)}</p>` : ''}${main}</nav>
     <div class="drawer__foot">
       <div class="drawer__prefs"><div class="lang-m" role="group" aria-label="${esc(T.langLabel)}">${['en', 'fr'].map((l) => (l === lang ? `<span aria-current="true">${l.toUpperCase()}</span>` : `<a href="${altUrl}" hreflang="${l}" lang="${l}" aria-label="${esc(T.langSwitch)}">${l.toUpperCase()}</a>`)).join('')}</div>
-      <span class="drawer__sep" aria-hidden="true"></span>${curSel(T.currencyLabel)}</div>
-      <a class="pill" href="${url('contact', lang)}">${esc(T.ctaShort)}</a>
+      ${CFG.currency?.selector ? `<span class="drawer__sep" aria-hidden="true"></span>${curSel(T.currencyLabel)}` : ''}</div>
+      <a class="pill" href="${url(isHidden('audit') ? 'contact' : 'audit', lang)}">${esc(isHidden('audit') ? T.ctaShort : T.ctaDiag)}</a>
     </div>
   </div>
 </div>`;
@@ -924,12 +925,13 @@ function footer(c) {
   <div class="footer__grid">
     <div><a class="footer__logo" href="${url('home', lang)}" aria-label="Viesigners — ${esc(T.nav.home)}">${img('logo-viesigners.png', 'Viesigners')}</a><p style="color:var(--text-2);max-width:34ch">${esc(T.footer.blurb)}</p>
       <p style="margin-top:1.4rem"><a class="pill pill--sm" href="${url('contact', lang)}">${esc(T.footer.cta)}</a></p></div>
-    <div><h2>${esc(T.nav.services)}</h2><ul>${[...MAIN_SERVICE_KEYS, 'audit', 'jouets-jeux'].filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.footer.nav?.[k] || T.nav[k])}</a></li>`).join('')}<li><a class="footer__all" href="${url('services', lang)}">${esc(T.navAll)} ${ico('arrow')}</a></li></ul></div>
-    <div><h2>${esc(T.footer.company)}</h2><ul>${['a-propos', 'tarifs', 'realisations', 'actualites', 'contact'].filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.nav[k])}</a></li>`).join('')}</ul></div>
+    <div><h2>${esc(T.nav.services)}</h2><ul>${[...MAIN_SERVICE_KEYS].filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.footer.nav?.[k] || T.nav[k])}</a></li>`).join('')}<li><a class="footer__all" href="${url('services', lang)}">${esc(T.navAll)} ${ico('arrow')}</a></li></ul></div>
+    <div class="footer__stack">${[['audit', T.navFeatured], ['jouets-jeux', T.industriesLabel]].filter(([k]) => !isHidden(k)).map(([k, h]) => `<div><h2>${esc(h)}</h2><ul><li><a href="${url(k, lang)}">${esc(T.footer.nav?.[k] || T.nav[k])}</a></li></ul></div>`).join('')}</div>
+    <div><h2>${esc(T.footer.company)}</h2><ul>${['a-propos', 'realisations', 'actualites', 'contact'].filter((k) => !isHidden(k)).map((k) => `<li><a href="${url(k, lang)}">${esc(T.nav[k])}</a></li>`).join('')}</ul></div>
     <div><h2>${esc(T.nav.contact)}</h2><address><span>${cityQc(lang)}, Canada</span><span>Vancouver, Canada</span><a href="tel:${CFG.phoneRaw}">${esc(CFG.phone)}</a></address>
       <div class="footer__social"><a href="${CFG.social.facebook}" target="_blank" rel="noopener noreferrer me" aria-label="Facebook ${esc(T.newTab)}">${ico('fb')}</a><a href="${CFG.social.linkedin}" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn ${esc(T.newTab)}">${ico('in')}</a></div></div>
   </div>
-  <div class="footer__base"><span>© ${new Date().getFullYear()} ${esc(T.footer.rights)}</span><span><a href="${url('privacy', lang)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(T.footer.privacy)} ${esc(T.newTab)}">${esc(T.footer.privacy)}</a> · <a href="${url('terms', lang)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(T.footer.terms)} ${esc(T.newTab)}">${esc(T.footer.terms)}</a>${CFG.clarityId ? ` · <button type="button" class="linklike" data-cookie-open>${esc(T.footer.cookies)}</button>` : ''}</span></div>
+  <div class="footer__base"><span>© ${new Date().getFullYear()} ${esc(T.footer.rights)}</span><span><a href="${url('privacy', lang)}">${esc(T.footer.privacy)}</a> · <a href="${url('terms', lang)}">${esc(T.footer.terms)}</a>${CFG.clarityId ? ` · <button type="button" class="linklike" data-cookie-open>${esc(T.footer.cookies)}</button>` : ''}</span></div>
 </div></footer>`;
 }
 
@@ -945,11 +947,11 @@ function orgNodes(lang, T) {
       areaServed: [{ '@type': 'Country', name: 'Canada' }, { '@type': 'Place', name: 'Worldwide' }],
       availableLanguage: ['fr', 'en'], sameAs: [CFG.social.facebook, CFG.social.linkedin, CFG.social.toptal].filter(Boolean),
       knowsAbout: T.knowsAbout, founder: [{ '@id': abs('/#charles-erick') }, { '@id': abs('/#jean-francois') }],
-      award: T.awards, slogan: T.footerTag.replace(/\*/g, ''),
+      slogan: T.footerTag.replace(/\*/g, ''),
     },
     { '@type': 'WebSite', '@id': abs('/#website'), url: abs('/'), name: 'Viesigners', publisher: { '@id': o }, inLanguage: ['fr', 'en'] },
-    { '@type': 'Person', '@id': abs('/#charles-erick'), name: 'Charles-Erick BG', jobTitle: T.jobTitle, worksFor: { '@id': o }, image: abs('/assets/img/founders-1.jpg'), ...(isHidden('charles-erick') ? {} : { url: abs(url('charles-erick', lang)) }), knowsAbout: T.knowsAbout, nationality: 'CA' },
-    { '@type': 'Person', '@id': abs('/#jean-francois'), name: 'Jean-François BG', jobTitle: T.jobTitle, worksFor: { '@id': o }, image: abs('/assets/img/founders-1.jpg'), ...(isHidden('jean-francois') ? {} : { url: abs(url('jean-francois', lang)) }), sameAs: [CFG.social.toptalJF], knowsAbout: T.knowsAbout, nationality: 'CA' },
+    { '@type': 'Person', '@id': abs('/#charles-erick'), name: 'Charles-Erick BG', jobTitle: T.jobTitle, award: T.awards, worksFor: { '@id': o }, image: abs('/assets/img/founders-1.jpg'), ...(isHidden('charles-erick') ? {} : { url: abs(url('charles-erick', lang)) }), knowsAbout: T.knowsAbout, nationality: 'CA' },
+    { '@type': 'Person', '@id': abs('/#jean-francois'), name: 'Jean-François BG', jobTitle: T.jobTitle, award: T.awardsJF, worksFor: { '@id': o }, image: abs('/assets/img/founders-1.jpg'), ...(isHidden('jean-francois') ? {} : { url: abs(url('jean-francois', lang)) }), sameAs: [CFG.social.toptalJF], knowsAbout: T.knowsAbout, nationality: 'CA' },
   ];
 }
 
@@ -959,7 +961,7 @@ function toMd(page, c) {
   const L = [];
   const t = (s) => plain(s);
   L.push(`# ${t(page.meta.h1 || page.meta.title)}`, '', `> ${page.meta.description}`, '', `URL: ${abs(c.selfUrl)}`, `${T.updated} ${page.updated || BUILD_DATE}`, '');
-  for (const s of page.sections) {
+  for (const s of page.sections.filter((x) => !x.off)) {
     switch (s.type) {
       case 'hero-home': L.push(t(s.h1), '', t(s.lead), ''); break;
       case 'page-hero': L.push(t(s.lead), '', s.brief ? `## ${T.brief}` : '', ...(s.brief || []).map((b) => `- ${b.b ? t(b.b) + ' ' : ''}${t(b.t)}`), ''); break;
@@ -1051,6 +1053,7 @@ function buildPage({ lang, key, page, post, tab }) {
   const ctx = { lang, T, key, page, post, crumbs, altUrls, selfUrl, activeTab: tab?.id };
   let prevTheme = null;
   const body = page.sections.map((s, i) => {
+    if (s.off) return ''; // kept in the content file for later, not published
     if (!R[s.type]) throw new Error('No renderer for ' + s.type + ' in ' + key);
     const html = R[s.type](s, ctx);
     if (!html) return '';

@@ -29,7 +29,7 @@
           "to": "@sites-web",
           "cta": "See the service",
           "title": "Website creation",
-          "desc": "Root your reputation and take the place you deserve in your market. 600+ projects delivered, recognized by Awwwards."
+          "desc": "Root your reputation and take the place you deserve in your market. 600+ projects completed by our founders."
         },
         {
           "area": "land",
@@ -93,15 +93,15 @@
           "to": "@fractional",
           "cta": "See the service",
           "title": "Fractional product design",
-          "desc": "A senior product designer, lead or head of design in your team, a few hours a week or a month. From {$3450}/month."
+          "desc": "A senior product designer, lead or head of design in your team, a few hours a week or a month."
         },
         {
           "area": "audit",
           "size": "md",
           "to": "@audit",
-          "cta": "See the audit",
-          "title": "UX/CRO audit",
-          "desc": "A fixed-price audit of what costs you customers, ranked by impact. The best first step before a redesign."
+          "cta": "See the diagnostic",
+          "title": "Free UX Conversion & Retention Diagnostic",
+          "desc": "20 minutes with a senior expert to find where you lose customers and sales. You leave with your top 3–4 UX priorities, in writing."
         }
       ]
     },

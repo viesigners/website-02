@@ -49,6 +49,11 @@
     "need": "How can we help?",
     "needs": [
      {
+      "t": "I want my free UX diagnostic",
+      "page": "audit",
+      "key": "diagnostic"
+     },
+     {
       "t": "I need a website",
       "page": "sites-web",
       "key": "website"

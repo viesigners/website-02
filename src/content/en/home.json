@@ -1,17 +1,18 @@
 {
  "meta": {
   "title": "UX/UI & CRO Agency in Quebec & Vancouver | Viesigners",
-  "description": "UX/UI and CRO agency in Quebec City and Vancouver: websites, landing pages, sales funnels and SaaS product design. 600+ businesses advised. Multiply your sales.",
-  "h1": "We help you make the Web your Unfair Advantage"
+  "description": "UX/UI and CRO agency in Quebec City and Vancouver: websites, online stores, landing pages, sales funnels and SaaS product design. 600+ projects completed.",
+  "h1": "Multiply your sales and revenue per customer with UX-led growth strategies"
  },
  "sections": [
   {
    "type": "hero-home",
-   "tag": "UX/UI, Web and Marketing Agency: websites, funnels, SaaS and Apps",
+   "tag": "UX/UI, Web and Marketing Agency: websites, online stores, SaaS and Apps",
    "h1": "Multiply your sales and revenue per customer, with *UX‑led growth strategies*",
-   "lead": "We help service businesses, SaaS companies and mobile app makers optimize their digital presence for two precise results: winning more customers and maximizing the value of each one — an approach that puts human psychology to work for your profitability.",
-   "cta": "Start a project",
-   "advised": "We've advised more than 600 businesses, including some of the biggest",
+   "lead": "We help service businesses, online stores, SaaS companies and mobile app makers optimize their digital presence for two precise results: winning more customers and maximizing the value of each one — an approach that puts human psychology to work for your profitability.",
+   "cta": "Get my free diagnostic",
+   "ctaTo": "audit",
+   "advised": "600+ projects completed over our careers, some for the world's biggest brands",
    "logosLabel": "Companies advised by Viesigners",
    "logos": [
     {
@@ -121,7 +122,7 @@
   {
    "type": "founders",
    "kicker": "What if you stopped relying on trial and error?",
-   "h2": "Meet the founders: Canada's #1 lean UX/UI, web and marketing agency for *making your business profitable*",
+   "h2": "Meet the founders: an independent UX/UI and conversion agency for *making your business profitable*",
    "sub": "Charles-Erick & Jean-François BG — Masters of web experience design (2009)",
    "text": [
     "**Hi! This is The BG Twins.** Hybrid UX/UI and conversion rate optimization (CRO) experts from Quebec, with more than 30 combined years helping companies of all sizes perform online, in English and French."
@@ -132,8 +133,8 @@
    },
    "photoAlt": "Charles-Erick and Jean-François BG, motivated to grow your business!",
    "chip": {
-    "b": "Toptal top 3%",
-    "t": "Declared among the world's best web experts"
+    "b": "Top 3% according to Toptal",
+    "t": "Jean-François selected among the world's best"
    },
    "press": {
     "label": "As seen in",
@@ -176,7 +177,7 @@
      "to": "@sites-web",
      "cta": "See the service",
      "title": "Professional website creation",
-     "desc": "Root your reputation and take the place you deserve in your market. 600+ projects delivered, recognized by Awwwards.",
+     "desc": "Root your reputation and take the place you deserve in your market. 600+ projects completed by our founders.",
      "mini": true
     },
     {
@@ -213,7 +214,7 @@
   {
    "type": "stats",
    "h2": "Stop leaving money on the table and *maximize your profitability*",
-   "lead": "We help companies grow faster by applying strategic systems proven with major brands like Disney, Marvel, Hasbro and Dell, as well as with over 600 organizations of every size that experienced accelerated growth. **Your business is NOT a guinea pig!** You benefit from a concrete, high-performing, measurable approach that aligns your offer, your positioning and your digital experience with your business goals.",
+   "lead": "We help companies grow faster by applying strategic systems proven with major brands like Disney, Marvel, Hasbro and Dell, as well as through over 600 projects for organizations of every size that experienced accelerated growth. **Your business is NOT a guinea pig!**\nYou benefit from a concrete, high-performing, measurable approach that aligns your offer, your positioning and your digital experience with your business goals.",
    "items": [
     {
      "n": "5×",
@@ -222,8 +223,8 @@
     },
     {
      "n": "600+",
-     "h": "Companies we've helped to date",
-     "p": "We've advised more than 600 companies, some of the largest on planet Earth (and startups too!)."
+     "h": "Projects completed over our careers",
+     "p": "Our founders have completed more than 600 projects, for some of the biggest brands on planet Earth (and startups too!)."
     },
     {
      "n": "30+",
@@ -231,7 +232,7 @@
      "p": "B2B, B2C, B2B2C, e-commerce, SaaS, local or online services, wellness, baseball… we've worked in more than 30 fields."
     },
     {
-     "n": "6+",
+     "n": "29+",
      "h": "Our international reach",
      "p": "Entrepreneurs and companies from more than 29 countries around the world have trusted us."
     }
@@ -241,7 +242,7 @@
    "type": "work",
    "id": "realisations",
    "h2": "A few projects you might *recognize…*",
-   "lead": "We've built over 600 websites, apps and landing pages for SMEs and large corporations, created high-converting online funnels for startups and solopreneurs, and helped businesses gain visibility, clients and profitability.",
+   "lead": "Our founders have built over 600 websites, apps and landing pages for SMEs and large corporations, created high-converting online funnels for startups and solopreneurs, and helped businesses gain visibility, clients and profitability.",
    "items": [
     {
      "img": "assassins-creed.jpg",
@@ -295,7 +296,7 @@
     }
    ],
    "awards": {
-    "label": "Projects recognized by",
+    "label": "Our founders' projects recognized by",
     "items": [
      {
       "file": "award-gartner.png",
@@ -312,6 +313,30 @@
      {
       "file": "award-octas.png",
       "alt": "OCTAS"
+     },
+     {
+      "file": "awards/gdc.svg",
+      "alt": "GDC Play — Best in Play"
+     },
+     {
+      "file": "awards/bma.png",
+      "alt": "Best Mobile App Awards"
+     },
+     {
+      "file": "awards/communicator.svg",
+      "alt": "Communicator Awards"
+     },
+     {
+      "file": "awards/indieprize.svg",
+      "alt": "Indie Prize"
+     },
+     {
+      "file": "awards/brainchild.svg",
+      "alt": "Tillywig Brain Child Award"
+     },
+     {
+      "file": "awards/boomerang.svg",
+      "alt": "Concours Boomerang"
      }
     ]
    },
@@ -326,7 +351,7 @@
    "yes": {
     "h": "It's for you if:",
     "items": [
-     "You're a service business — SaaS, apps, online services or local services",
+     "You're a service business (online or local), an online store, a SaaS company or a mobile app",
      "You want to grow your business",
      "You're serious — you want results, not just pretty pages that flatter your ego"
     ]
@@ -341,8 +366,8 @@
    },
    "foot": {
     "p": "If you match the profile we're looking for, it's time to talk!",
-    "label": "It's my turn",
-    "to": "contact"
+    "label": "Get my free diagnostic",
+    "to": "audit"
    },
    "partner": {
     "tag": "For agencies and freelancers",
@@ -496,7 +521,8 @@
    ],
    "slot": {
     "h3": "Insert your success story here!",
-    "cta": "Contact us"
+    "cta": "Get my free diagnostic",
+    "to": "audit"
    }
   },
   {
@@ -508,35 +534,42 @@
    "type": "cta-final",
    "h2": "What we're trying to say is: it's time to hit the *go button!*",
    "p": "The accelerator pedal for growing businesses.",
-   "cta": "Let's go!"
+   "cta": "Get my free diagnostic",
+   "to": "audit"
   }
  ],
  "faq": [
   {
    "q": "What is Viesigners?",
    "a": [
-    "Viesigners is a lean Canadian UX/UI, web and marketing agency based in Quebec and Vancouver, founded by Charles-Erick and Jean-François BG. We specialize in UX/UI and conversion rate optimization (CRO): websites, landing pages, sales funnels, SaaS and mobile app product design, and business advisory.",
+    "Viesigners is an independent UX/UI and conversion agency in Quebec City and Vancouver, founded by two senior designers: Charles-Erick and Jean-François BG. We design websites, online stores, landing pages and sales funnels, as well as SaaS products and mobile apps, and we offer business advisory.",
     "With our network of experts, we also support clients in digital advertising, social media and SEO/GEO."
+   ]
+  },
+  {
+   "q": "Do you offer a free diagnostic?",
+   "a": [
+    "Yes. In 20 minutes, one of our founders reviews your website, online store or product, then sends you your top 3–4 UX priorities to improve conversion, retention and sales, in writing. [Book your free diagnostic](@audit)."
    ]
   },
   {
    "q": "What does a digital agency actually do?",
    "a": [
-    "A digital agency weaves invisible links between brands and minds. It codes emotions. It designs stories that interest, explain and motivate action.",
-    "At least, that's what we strive to do every day: build high-performing digital ecosystems — sites, apps, campaigns and content that propel brands toward more visibility, engagement and measurable growth."
+    "A digital agency helps a business attract customers online and convert them: it designs and improves its websites, online stores, landing pages, apps and campaigns.",
+    "At Viesigners, we focus on UX/UI and conversion: we find where your visitors drop off, design clearer and more persuasive journeys, then measure the results. For advertising, social media and SEO/GEO, we rely on our network of experts."
    ]
   },
   {
-   "q": "What are the advantages of a lean agency like yours?",
+   "q": "What are the advantages of an independent agency like yours?",
    "a": [
-    "First, we don't know of any agency that, like us, makes it a point of honor to deliver top 3% worldwide quality without handing you off to an inexperienced employee or making you feel like a number, as you often see in larger agencies.",
+    "First, we don't know of any agency that, like us, makes it a point of honor to have you work directly with senior experts, without handing you off to an inexperienced employee or making you feel like a number, as you often see in larger agencies.",
     "We believe that's why a growing number of our clients set aside budgets originally planned for other experts: we deliver on our promises and focus all of our actions on your ROI."
    ]
   },
   {
    "q": "How can I be sure I'll get my money's worth?",
    "a": [
-    "Every service we offer comes with a guarantee that other agencies don't dare to offer. [Contact us](@contact) to learn the details."
+    "Every service we offer comes with a guarantee that other agencies often don't dare to offer. [Contact us](@contact) to learn the details."
    ]
   },
   {

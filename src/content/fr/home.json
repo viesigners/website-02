@@ -1,17 +1,18 @@
 {
  "meta": {
   "title": "Agence UX/UI et CRO à Québec et Vancouver | Viesigners",
-  "description": "Agence UX/UI et CRO à Québec et Vancouver : sites web, landing pages, tunnels de vente et design de produit SaaS. Plus de 600 entreprises conseillées. Multipliez vos ventes.",
-  "h1": "On t'aide à faire du Web ton Avantage déloyal"
+  "description": "Agence UX/UI et CRO à Québec et Vancouver : sites web, boutiques en ligne, landing pages, tunnels de vente et design de produit SaaS. Plus de 600 projets réalisés.",
+  "h1": "Multipliez vos ventes et votre revenu par client grâce aux stratégies de croissance UX"
  },
  "sections": [
   {
    "type": "hero-home",
-   "tag": "Agence UX/UI, web et marketing : sites, tunnels, SaaS et applis",
+   "tag": "Agence UX/UI, web et marketing : sites, boutiques en ligne, SaaS et applis",
    "h1": "Multipliez vos ventes et votre revenu par client, grâce aux *stratégies de croissance UX*",
-   "lead": "Nous aidons les entreprises de services, SaaS et applications mobiles à optimiser leur présence numérique pour deux résultats précis : acquérir plus de clients et maximiser la valeur de chacun — une approche qui met la psychologie humaine au service de votre rentabilité.",
-   "cta": "Démarrer un projet",
-   "advised": "On a conseillé plus de 600 entreprises, dont certaines parmi les plus grandes",
+   "lead": "Nous aidons les entreprises de services, les boutiques en ligne, les SaaS et les applications mobiles à optimiser leur présence numérique pour deux résultats précis : acquérir plus de clients et maximiser la valeur de chacun — une approche qui met la psychologie humaine au service de votre rentabilité.",
+   "cta": "Obtenir mon diagnostic gratuit",
+   "ctaTo": "audit",
+   "advised": "600+ projets réalisés en carrière, dont certains pour les plus grandes marques au monde",
    "logosLabel": "Entreprises conseillées par Viesigners",
    "logos": [
     {
@@ -121,7 +122,7 @@
   {
    "type": "founders",
    "kicker": "Et si vous laissiez tomber les essais-erreurs?",
-   "h2": "Découvrez les fondateurs : l'agence UX/UI, web et marketing canadienne lean no 1 pour *rentabiliser votre entreprise*",
+   "h2": "Découvrez les fondateurs : une agence indépendante spécialisée en UX/UI et en conversion, pour *rentabiliser votre entreprise*",
    "sub": "Charles-Erick & Jean-François BG — Maîtres en conception d'expériences web (2009)",
    "text": [
     "**Bonjour! Ici Les Frères BG.** Experts hybrides en UX/UI et optimisation du taux de conversion (CRO), originaires du Québec, avec plus de 30 années combinées à aider des entreprises de toutes tailles à performer en ligne, en français comme en anglais."
@@ -132,8 +133,8 @@
    },
    "photoAlt": "Charles-Erick et Jean-François BG, motivés à faire croître votre entreprise!",
    "chip": {
-    "b": "Toptal top 3%",
-    "t": "Déclarés parmi les meilleurs experts web mondiaux"
+    "b": "Top 3% selon Toptal",
+    "t": "Jean-François sélectionné parmi les meilleurs au monde"
    },
    "press": {
     "label": "Tel que vu dans",
@@ -176,7 +177,7 @@
      "to": "@sites-web",
      "cta": "Voir le service",
      "title": "Création de site web professionnel",
-     "desc": "Enracinez votre notoriété et prenez la place qui vous revient dans votre marché. Plus de 600 projets livrés, reconnus par Awwwards.",
+     "desc": "Enracinez votre notoriété et prenez la place qui vous revient dans votre marché. Plus de 600 projets réalisés par nos fondateurs.",
      "mini": true
     },
     {
@@ -213,7 +214,7 @@
   {
    "type": "stats",
    "h2": "Arrêtez de laisser de l'argent sur la table et *maximisez votre rentabilité*",
-   "lead": "Nous aidons les entreprises à croître plus rapidement en appliquant des systèmes stratégiques validés auprès de grandes marques comme Disney, Marvel, Hasbro et Dell, ainsi qu'auprès de plus de 600 organisations de toute taille, qui ont connu une croissance accélérée. **Votre entreprise n'est PAS un cobaye!** Vous profitez d'une approche concrète, performante et mesurable qui aligne votre offre, votre positionnement et votre expérience numérique sur vos objectifs d'affaires.",
+   "lead": "Nous aidons les entreprises à croître plus rapidement en appliquant des systèmes stratégiques validés auprès de grandes marques comme Disney, Marvel, Hasbro et Dell, ainsi qu'à travers plus de 600 projets pour des organisations de toute taille, qui ont connu une croissance accélérée. **Votre entreprise n'est PAS un cobaye!**\nVous profitez d'une approche concrète, performante et mesurable qui aligne votre offre, votre positionnement et votre expérience numérique sur vos objectifs d'affaires.",
    "items": [
     {
      "n": "5×",
@@ -222,8 +223,8 @@
     },
     {
      "n": "600+",
-     "h": "Entreprises que nous avons aidées à ce jour",
-     "p": "Nous avons conseillé plus de 600 entreprises, certaines parmi les plus grandes sur la planète terre (et des startups aussi!)."
+     "h": "Projets réalisés en carrière",
+     "p": "Nos fondateurs ont réalisé plus de 600 projets, pour certaines des plus grandes marques de la planète (et des startups aussi!)."
     },
     {
      "n": "30+",
@@ -231,7 +232,7 @@
      "p": "B2B, B2C, B2B2C, e-commerce, SaaS, services locaux ou en ligne, mieux-être, baseball… on a touché à plus de 30 domaines."
     },
     {
-     "n": "6+",
+     "n": "29+",
      "h": "Notre portée internationale",
      "p": "Des entrepreneurs et entreprises provenant de plus de 29 pays à travers le monde nous ont fait confiance."
     }
@@ -241,7 +242,7 @@
    "type": "work",
    "id": "realisations",
    "h2": "Quelques réalisations que vous reconnaîtrez *peut-être…*",
-   "lead": "Nous avons conçu plus de 600 sites web, applications et landing pages pour des PME et de grandes entreprises, bâti des tunnels en ligne à haut taux de conversion pour des startups et des solopreneurs, et aidé des entreprises à gagner en visibilité, en clients et en rentabilité.",
+   "lead": "Nos fondateurs ont conçu plus de 600 sites web, applications et landing pages pour des PME et de grandes entreprises, bâti des tunnels en ligne à haut taux de conversion pour des startups et des solopreneurs, et aidé des entreprises à gagner en visibilité, en clients et en rentabilité.",
    "items": [
     {
      "img": "assassins-creed.jpg",
@@ -295,7 +296,7 @@
     }
    ],
    "awards": {
-    "label": "Projets reconnus par",
+    "label": "Projets de nos fondateurs reconnus par",
     "items": [
      {
       "file": "award-gartner.png",
@@ -312,6 +313,30 @@
      {
       "file": "award-octas.png",
       "alt": "OCTAS"
+     },
+     {
+      "file": "awards/gdc.svg",
+      "alt": "GDC Play — Best in Play"
+     },
+     {
+      "file": "awards/bma.png",
+      "alt": "Best Mobile App Awards"
+     },
+     {
+      "file": "awards/communicator.svg",
+      "alt": "Communicator Awards"
+     },
+     {
+      "file": "awards/indieprize.svg",
+      "alt": "Indie Prize"
+     },
+     {
+      "file": "awards/brainchild.svg",
+      "alt": "Tillywig Brain Child Award"
+     },
+     {
+      "file": "awards/boomerang.svg",
+      "alt": "Concours Boomerang"
      }
     ]
    },
@@ -326,7 +351,7 @@
    "yes": {
     "h": "C'est pour vous si :",
     "items": [
-     "Vous êtes une entreprise de service — SaaS, applications, services en ligne ou services locaux",
+     "Vous êtes une entreprise de services (en ligne ou locale), une boutique en ligne, un SaaS ou une application mobile",
      "Vous désirez faire croître votre entreprise",
      "Vous êtes sérieux — vous voulez des résultats, pas seulement de belles pages qui flattent votre ego"
     ]
@@ -341,8 +366,8 @@
    },
    "foot": {
     "p": "Si vous correspondez au profil recherché, c'est le temps de se parler!",
-    "label": "C'est mon tour",
-    "to": "contact"
+    "label": "Obtenir mon diagnostic gratuit",
+    "to": "audit"
    },
    "partner": {
     "tag": "Pour agences et pigistes",
@@ -500,7 +525,8 @@
    ],
    "slot": {
     "h3": "Insérez votre histoire à succès ici!",
-    "cta": "Contactez-nous"
+    "cta": "Obtenir mon diagnostic gratuit",
+    "to": "audit"
    }
   },
   {
@@ -512,35 +538,42 @@
    "type": "cta-final",
    "h2": "Ce qu'on essaie de dire, c'est qu'il est temps d'appuyer sur le *ti-bouton!*",
    "p": "La pédale d'accélérateur des entreprises en croissance.",
-   "cta": "Let's go!"
+   "cta": "Obtenir mon diagnostic gratuit",
+   "to": "audit"
   }
  ],
  "faq": [
   {
    "q": "Qu'est-ce que Viesigners?",
    "a": [
-    "Viesigners est une agence UX/UI, web et marketing canadienne lean basée à Québec et à Vancouver, fondée par Charles-Erick et Jean-François BG. Nous sommes spécialisés en UX/UI et en optimisation du taux de conversion (CRO) : sites web, landing pages, tunnels de vente, design de produit SaaS et applications mobiles, et conseil d'affaires web.",
+    "Viesigners est une agence indépendante spécialisée en UX/UI et en conversion, à Québec et à Vancouver, fondée par deux designers seniors : Charles-Erick et Jean-François BG. Nous concevons des sites web, des boutiques en ligne, des landing pages et des tunnels de vente, ainsi que des produits SaaS et des applications mobiles, et nous offrons du conseil d'affaires web.",
     "Avec notre réseau d'experts, nous accompagnons aussi nos clients en publicité numérique, en médias sociaux et en SEO/GEO."
+   ]
+  },
+  {
+   "q": "Offrez-vous un diagnostic gratuit?",
+   "a": [
+    "Oui. En 20 minutes, l'un de nos fondateurs analyse votre site, votre boutique en ligne ou votre produit, puis vous remet par écrit vos 3 à 4 priorités UX pour améliorer la conversion, la rétention et les ventes. [Réservez votre diagnostic gratuit](@audit)."
    ]
   },
   {
    "q": "Que fait une agence numérique, exactement?",
    "a": [
-    "Une agence numérique tisse des liens invisibles entre les marques et les esprits. Elle code des émotions. Elle conçoit des histoires qui intéressent, expliquent et motivent l'action.",
-    "Du moins, c'est ce que nous nous efforçons de faire tous les jours : construire des écosystèmes digitaux performants — sites, applications, campagnes et contenus qui propulsent les marques vers plus de visibilité, d'engagement et de croissance mesurable."
+    "Une agence numérique aide une entreprise à attirer des clients en ligne et à les convertir : elle conçoit et améliore ses sites web, boutiques en ligne, landing pages, applications et campagnes.",
+    "Chez Viesigners, on se concentre sur l'UX/UI et la conversion : on repère où vos visiteurs décrochent, on conçoit des parcours plus clairs et plus persuasifs, puis on mesure les résultats. Pour la publicité, les médias sociaux et le SEO/GEO, on s'appuie sur notre réseau d'experts."
    ]
   },
   {
-   "q": "Quels sont les avantages d'une agence lean comme la vôtre?",
+   "q": "Quels sont les avantages d'une agence indépendante comme la vôtre?",
    "a": [
-    "D'abord, nous ne connaissons aucune agence qui, comme nous, se fait un code d'honneur d'offrir des services dignes du top 3% mondial, sans vous faire prendre en charge par un employé sans expérience ni vous donner l'impression d'être un numéro, comme on le voit dans de plus grandes agences.",
+    "D'abord, nous ne connaissons aucune agence qui, comme nous, se fait un code d'honneur de vous faire travailler directement avec des experts seniors, sans vous faire prendre en charge par un employé sans expérience ni vous donner l'impression d'être un numéro, comme on le voit dans de plus grandes agences.",
     "Nous croyons que c'est la raison pour laquelle un nombre grandissant de nos clients nous réserve des budgets préalablement prévus pour d'autres experts : nous livrons nos promesses et focalisons la totalité de nos actions sur votre ROI."
    ]
   },
   {
    "q": "Comment m'assurer d'en avoir pour mon argent?",
    "a": [
-    "Chaque service que nous offrons vient avec une garantie que les autres agences n'osent pas offrir. [Contactez-nous](@contact) pour en connaître les détails."
+    "Chaque service que nous offrons vient avec une garantie que les autres agences n'osent souvent pas offrir. [Contactez-nous](@contact) pour en connaître les détails."
    ]
   },
   {

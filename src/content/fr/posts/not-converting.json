@@ -14,7 +14,7 @@
   "body": [
     { "p": "Des gens arrivent sur votre site. Vos statistiques le prouvent. Et pourtant, le téléphone ne sonne pas." },
     { "p": "Quand un site web ne convertit pas ses visiteurs, la cause est rarement le trafic ou la qualité de votre offre. C'est la friction : un message qui ne passe pas, un parcours plus difficile qu'il ne devrait l'être ou trop peu de preuves pour justifier le risque. Et pendant ce temps, l'argent reste dans les poches de vos clients." },
-    { "p": "Après avoir conseillé plus de 600 entreprises, des jeunes pousses jusqu'à des marques comme Disney et Dell, nous retrouvons toujours les mêmes schémas. Voici les 10 plus courants, suivis d'une liste de vérification pour auditer votre propre site cette semaine." },
+    { "p": "Après plus de 600 projets, pour des jeunes pousses jusqu'à des marques comme Disney et Dell, nous retrouvons toujours les mêmes schémas. Voici les 10 plus courants, suivis d'une liste de vérification pour auditer votre propre site cette semaine." },
 
     { "h2": "D'abord, confirmez que vous avez un problème de conversion" },
     { "p": "Un taux de conversion ne veut rien dire sans le bon point de comparaison, et bien des chiffres qui circulent en ligne sont les mauvais. Le fameux « taux de conversion moyen des sites web » de 2,35 % [provient en fait d'une étude de 2014 sur des comptes Google Ads](https://www.digitalapplied.com/blog/conversion-rate-benchmarks-2026-industry-channel), pas sur des sites web." },
@@ -72,7 +72,7 @@
     { "p": "**La solution :** répondez directement aux objections avec un processus clair, une fourchette de prix ou un prix de départ, votre garantie et de vraies photos de votre équipe. Une FAQ ciblée près du moment de la décision aide aussi." },
 
     { "h2": "La liste de vérification de la conversion : auditez votre site en une heure" },
-    { "p": "Cette liste repose sur les schémas que nous avons observés dans plus de 600 entreprises. Ouvrez votre page la plus visitée sur votre téléphone et soyez honnête pour chaque point. Si un élément vous gênerait devant un client, ne le cochez pas." },
+    { "p": "Cette liste repose sur les schémas que nous avons observés dans plus de 600 projets. Ouvrez votre page la plus visitée sur votre téléphone et soyez honnête pour chaque point. Si un élément vous gênerait devant un client, ne le cochez pas." },
     { "h3": "Message" },
     { "check": [
       "Un inconnu peut dire ce que nous faisons, et pour qui, après 5 secondes sur la page",
