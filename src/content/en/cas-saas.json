@@ -1,15 +1,15 @@
 {
  "author": "organization",
  "meta": {
-  "title": "B2B SaaS Case Study: +31% MRR, −24% Churn | Viesigners",
-  "description": "How we lifted a B2B AI SaaS's MRR by 31% and cut churn by 24% in 90 days: a rewritten value proposition, faster onboarding and a redesigned feature page.",
-  "h1": "How a B2B AI SaaS lifted MRR by 31% and cut churn by 24% in 90 days"
+  "title": "B2B SaaS Case Study: +30% Conversions, −24% Churn | Viesigners",
+  "description": "How we lifted conversions on a B2B AI SaaS's main revenue page by 30% and cut its churn by 24% in 90 days: a rewritten value proposition, faster onboarding and a redesigned feature page.",
+  "h1": "How an AI SaaS gained 30% more conversions and cut churn by 24%"
  },
  "sections": [
   {
    "type": "page-hero",
    "tag": "Case study",
-   "h1": "How a B2B AI SaaS lifted *MRR by 31%* and cut churn by 24% in 90 days",
+   "h1": "How an AI SaaS gained *30% more conversions* and cut churn by 24%",
    "lead": "Steady traffic, but revenue was leaking through poor free-to-paid conversion and high onboarding churn. By re-aligning the value proposition, shortening time-to-value and [redesigning a key feature page](@landing-pages), we delivered measurable growth within weeks.",
    "brief": [
     {
@@ -22,7 +22,7 @@
     },
     {
      "b": "Results:",
-     "t": "+31% MRR in 4 days, −24% churn in 90 days, +30% feature-page conversions in 4 days."
+     "t": "+30% conversions on the main revenue feature page in 4 days, −24% churn in 90 days (up to −40% on key segments)."
     },
     {
      "b": "Execution:",
@@ -39,19 +39,19 @@
   },
   {
    "type": "casestudy",
-   "h2": "From *leaking revenue* to +31% MRR",
+   "h2": "From *leaking revenue* to +30% conversions",
    "results": [
     {
-     "n": "+31%",
-     "t": "monthly recurring revenue (MRR), 4 days after launch"
+     "n": "+30%",
+     "t": "conversions on the feature page that drives the most revenue, in 4 days"
     },
     {
      "n": "−24%",
-     "t": "churn in 90 days, up to −40% on key user segments"
+     "t": "churn in 90 days"
     },
     {
-     "n": "+30%",
-     "t": "conversions on the core revenue feature page, in 4 days"
+     "n": "−40%",
+     "t": "churn on the most improved user segments"
     }
    ],
    "problem": {
@@ -237,7 +237,7 @@
   {
    "q": "What results did this SaaS case study achieve?",
    "a": [
-    "+31% monthly recurring revenue within 4 days of launch, −24% churn over 90 days (up to −40% on key user segments) and +30% conversions on the core revenue feature page within 4 days."
+    "+30% conversions on the feature page that drives the most revenue, within 4 days, and −24% churn over 90 days (up to −40% on key user segments)."
    ]
   },
   {
@@ -256,5 +256,5 @@
  "article": true,
  "published": "2026-10-23",
  "ogImage": "og-case-study-en.jpg",
- "ogAlt": "Case study: a B2B AI SaaS lifted MRR by 31% in 4 days and cut churn by 24% in 90 days, by Viesigners"
+ "ogAlt": "Case study: a B2B AI SaaS gained 30% more conversions in 4 days and cut churn by 24% in 90 days, by Viesigners"
 }

@@ -1,15 +1,15 @@
 {
  "author": "organization",
  "meta": {
-  "title": "Étude de cas SaaS B2B : +31% MRR, −24% attrition | Viesigners",
-  "description": "Comment nous avons augmenté le MRR d'un SaaS B2B en IA de 31% et réduit son attrition de 24% en 90 jours : proposition de valeur, intégration, page clé.",
-  "h1": "Comment un SaaS B2B en IA a augmenté son MRR de 31% et réduit son attrition de 24% en 90 jours"
+  "title": "Étude de cas SaaS B2B : +30 % de conversions, −24 % d'attrition | Viesigners",
+  "description": "Comment nous avons augmenté de 30 % les conversions de la page la plus payante d'un SaaS B2B en IA et réduit son attrition de 24 % en 90 jours : proposition de valeur, intégration, page clé.",
+  "h1": "Comment un SaaS en IA a gagné 30 % de conversions et réduit son attrition de 24 %"
  },
  "sections": [
   {
    "type": "page-hero",
    "tag": "Étude de cas",
-   "h1": "Comment un SaaS B2B en IA a augmenté son *MRR de 31%* et réduit son attrition de 24% en 90 jours",
+   "h1": "Comment un SaaS en IA a gagné *30 % de conversions* et réduit son attrition de 24 %",
    "lead": "Un trafic stable, mais des revenus qui fuyaient : peu de conversions du gratuit au payant et une forte attrition à l'intégration. En réalignant la proposition de valeur, en accélérant le temps avant la valeur et en [redessinant une page clé](@landing-pages), nous avons produit une croissance mesurable en quelques semaines.",
    "brief": [
     {
@@ -22,7 +22,7 @@
     },
     {
      "b": "Résultats :",
-     "t": "+31% de MRR en 4 jours, −24% d'attrition en 90 jours, +30% de conversions sur la page de fonction en 4 jours."
+     "t": "+30 % de conversions sur la page de fonction la plus payante en 4 jours, −24 % d'attrition en 90 jours (jusqu'à −40 % sur des segments clés)."
     },
     {
      "b": "Exécution :",
@@ -39,19 +39,19 @@
   },
   {
    "type": "casestudy",
-   "h2": "De *revenus qui fuient* à +31% de MRR",
+   "h2": "De *revenus qui fuient* à +30 % de conversions",
    "results": [
     {
-     "n": "+31%",
-     "t": "de revenu mensuel récurrent (MRR), 4 jours après la mise en ligne"
+     "n": "+30 %",
+     "t": "de conversions sur la page de fonction qui génère le plus de revenus, en 4 jours"
     },
     {
-     "n": "−24%",
-     "t": "d'attrition en 90 jours, jusqu'à −40% sur des segments clés"
+     "n": "−24 %",
+     "t": "d'attrition en 90 jours"
     },
     {
-     "n": "+30%",
-     "t": "de conversions sur la page de la fonction principale, en 4 jours"
+     "n": "−40 %",
+     "t": "d'attrition sur les segments d'usagers les plus améliorés"
     }
    ],
    "problem": {
@@ -242,7 +242,7 @@
   {
    "q": "Quels résultats cette étude de cas a-t-elle produits?",
    "a": [
-    "+31% de revenu mensuel récurrent en 4 jours après la mise en ligne, −24% d'attrition sur 90 jours (jusqu'à −40% sur des segments clés) et +30% de conversions sur la page de la fonction principale en 4 jours."
+    "+30 % de conversions sur la page de fonction qui génère le plus de revenus, en 4 jours, et −24 % d'attrition sur 90 jours (jusqu'à −40 % sur des segments d'usagers clés)."
    ]
   },
   {
@@ -261,5 +261,5 @@
  "article": true,
  "published": "2026-10-23",
  "ogImage": "og-case-study-fr.jpg",
- "ogAlt": "Étude de cas : un SaaS B2B en IA a augmenté son MRR de 31% en 4 jours et réduit son attrition de 24% en 90 jours, par Viesigners"
+ "ogAlt": "Étude de cas : un SaaS B2B en IA a gagné 30 % de conversions en 4 jours et réduit son attrition de 24 % en 90 jours, par Viesigners"
 }
