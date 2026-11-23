@@ -1,0 +1,59 @@
+{
+ "meta": {
+  "unlisted": true,
+  "title": "Fintech case study | Viesigners",
+  "description": "[À FOURNIR: one-sentence description of the case study]",
+  "h1": "[À FOURNIR: case study title]"
+ },
+ "sections": [
+  {
+   "type": "cd-hero",
+   "tag": "Case study · Fintech",
+   "h1": "[À FOURNIR: case study title]",
+   "slot": "[À FOURNIR: main image]",
+   "cta": {
+    "label": "Contact Charles-Erick"
+   }
+  },
+  {
+   "type": "cd-gallery",
+   "id": "work",
+   "label": "Work",
+   "h2": "The product *in pictures*",
+   "shots": [
+    {
+     "label": "Desktop screen 1"
+    },
+    {
+     "label": "Desktop screen 2"
+    },
+    {
+     "label": "Desktop screen 3"
+    },
+    {
+     "label": "Desktop screen 4"
+    }
+   ],
+   "phones": [
+    {
+     "label": "Mobile screen 1",
+     "phone": true
+    },
+    {
+     "label": "Mobile screen 2",
+     "phone": true
+    },
+    {
+     "label": "Mobile screen 3",
+     "phone": true
+    }
+   ]
+  },
+  {
+   "type": "cta-final",
+   "h2": "Need a financial product that *builds trust?*",
+   "p": "You’re in the right place!",
+   "cta": "Contact Charles-Erick"
+  }
+ ]
+}

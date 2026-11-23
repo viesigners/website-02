@@ -1504,3 +1504,4 @@ html { scroll-padding-top: 7rem; }
 /* "converted prices" note next to prices: only when the visitor picked CAD or EUR */
 .cur-note { display: none; margin-bottom: 1rem; color: var(--text-3); font-size: .85rem; }
 :root[data-cur="CAD"] .cur-note, :root[data-cur="EUR"] .cur-note { display: block; }
+@media (min-width: 640px) { .cd-shots--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } } /* four desktop screens: two by two */

@@ -70,6 +70,7 @@ const ROUTES = {
   coaching: { fr: 'conseil-affaires-web', en: 'business-advisory' },
   'cas-saas': { fr: 'etudes-de-cas/saas-b2b-ia', en: 'case-studies/b2b-ai-saas' }, // lives under its type (Case studies), not under /blog/
   'cas-pharmy': { fr: 'etudes-de-cas/pharmy', en: 'case-studies/pharmy' }, // lives under its type (Case studies)
+  'cas-fintech': { fr: 'etudes-de-cas/fintech', en: 'case-studies/fintech' }, // unlisted for now (meta.unlisted): reachable by its URL only
   'cas-mcq': { fr: 'etudes-de-cas/musee-de-la-civilisation', en: 'case-studies/musee-de-la-civilisation' },
   publicite: { fr: 'publicite-numerique', en: 'digital-advertising' },
   'medias-sociaux': { fr: 'medias-sociaux', en: 'social-media' },
@@ -90,7 +91,7 @@ const ROUTES = {
   merci: { fr: 'merci', en: 'thank-you' }, // shown after a form submission: noindex, never linked
   actualites: BLOG, // blog: articles + case studies, one filter page per category (the key stays neutral; the name lives in _site.json nav)
 };
-const CASE_KEYS = ['cas-saas', 'cas-pharmy', 'cas-mcq']; // rich case-study pages (casestudy format) listed under Resources > Case studies
+const CASE_KEYS = ['cas-saas', 'cas-pharmy', 'cas-mcq', 'cas-fintech']; // rich case-study pages (casestudy format) listed under Resources > Case studies
 /* old public addresses that now forward to their new page (same model as the profile redirect) */
 const MOVED = [
   { from: { fr: 'design-de-produit/etude-de-cas-saas-b2b-ia', en: 'product-design/b2b-ai-saas-case-study' }, to: 'cas-saas' },
@@ -478,12 +479,13 @@ R['cd-storymap'] = (s, c) => `<section class="section"><div class="wrap">
 R['cd-gallery'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-gallery', { label: s.label })}
   ${shots(s.shots, s.shotsCls || '')}
+  ${s.phones ? shots(s.phones) : ''}
 </div></section>`;
 R['cd-hero'] = (s, c) => `<section class="section cd-hero" aria-labelledby="h1"><div class="wrap">
   <div class="cd-hero__top${s.glance ? ' phero__grid' : ''}"><div>${trailHtml(c, c.crumbs.slice(1, -1), c.crumbs.length > 2 ? '' : `<p>${fmt(s.tag, c.lang)}</p>`)}
   <h1 id="h1" class="display phero__title">${fmt(s.h1, c.lang)}</h1>${s.cta ? `<div class="actions cd-hero__cta"><a class="pill" href="${url(s.cta.to || 'contact', c.lang)}">${fmt(s.cta.label, c.lang)}</a></div>` : ''}</div>
   ${s.glance ? `<aside class="brief cd-brief" aria-labelledby="brief-t"><h2 id="brief-t">${esc(c.T.brief)}</h2><ul>${s.glance.map((g) => `<li>${ico('check')}<span><strong>${esc(g.k)}${c.lang === 'fr' ? '&nbsp;:' : ':'}</strong> ${fmt(g.v, c.lang)}${g.more ? ` <a class="cd-more" href="#${g.more.to}" target="_self" aria-label="${esc(g.more.label)}">+${g.more.n}</a>` : ''}${g.note ? `<small class="cd-note">${esc(g.note)}</small>` : ''}</span></li>`).join('')}</ul></aside>` : ''}</div>
-  <figure class="cd-hero__img">${img(s.img, s.alt, { lazy: false, sizes: '(min-width:1320px) 1224px, 100vw' })}</figure>
+  <figure class="cd-hero__img">${s.img ? img(s.img, s.alt, { lazy: false, sizes: '(min-width:1320px) 1224px, 100vw' }) : `<div class="cd-slot"><span>${fmtT(s.slot || '[À FOURNIR]', c.lang)}</span></div>`}</figure>
 </div></section>`;
 R['cd-facts'] = (s, c) => `<section class="section cd-factsec"><div class="wrap">
   ${s.caption ? `<p class="cd-cap rv">${fmtT(s.caption, c.lang)}</p>` : ''}
@@ -1156,7 +1158,7 @@ function build() {
   for (const l of LANGS) {
     RES[l] = [
       ...POSTS[l].map((p) => ({ cat: p.category || 'insights', tag: p.tag, title: p.title, description: p.description, date: p.date, read: p.read, href: url('post:' + p.key, l) })),
-      ...CASE_KEYS.map((k) => { const pg = pages[`${l}:${k}`]; return { cat: 'case-studies', tag: pg.sections[0].tag, title: plain(pg.sections[0].h1 || pg.meta.h1), /* the card shows the page's own headline */ description: pg.meta.description, date: pg.published, href: url(k, l) }; }),
+      ...CASE_KEYS.filter((k) => !pages[`${l}:${k}`].meta.unlisted).map((k) => { const pg = pages[`${l}:${k}`]; return { cat: 'case-studies', tag: pg.sections[0].tag, title: plain(pg.sections[0].h1 || pg.meta.h1), /* the card shows the page's own headline */ description: pg.meta.description, date: pg.published, href: url(k, l) }; }),
     ].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
   }
   PROFILE_FIRST = Object.fromEntries(LANGS.map((l) => [l, pages[`${l}:cebg`].sections.find((s) => s.type === 'role-nav')?.items[0]?.path]));

@@ -1,0 +1,59 @@
+{
+ "meta": {
+  "unlisted": true,
+  "title": "Étude de cas fintech | Viesigners",
+  "description": "[À FOURNIR : description de l'étude de cas en une phrase]",
+  "h1": "[À FOURNIR : titre de l'étude de cas]"
+ },
+ "sections": [
+  {
+   "type": "cd-hero",
+   "tag": "Étude de cas · Fintech",
+   "h1": "[À FOURNIR : titre de l'étude de cas]",
+   "slot": "[À FOURNIR : image principale]",
+   "cta": {
+    "label": "Contacter Charles-Erick"
+   }
+  },
+  {
+   "type": "cd-gallery",
+   "id": "realisations",
+   "label": "Réalisations",
+   "h2": "Le produit *en images*",
+   "shots": [
+    {
+     "label": "Écran desktop 1"
+    },
+    {
+     "label": "Écran desktop 2"
+    },
+    {
+     "label": "Écran desktop 3"
+    },
+    {
+     "label": "Écran desktop 4"
+    }
+   ],
+   "phones": [
+    {
+     "label": "Écran mobile 1",
+     "phone": true
+    },
+    {
+     "label": "Écran mobile 2",
+     "phone": true
+    },
+    {
+     "label": "Écran mobile 3",
+     "phone": true
+    }
+   ]
+  },
+  {
+   "type": "cta-final",
+   "h2": "Votre produit financier doit *inspirer confiance?*",
+   "p": "Vous êtes au bon endroit!",
+   "cta": "Contacter Charles-Erick"
+  }
+ ]
+}
