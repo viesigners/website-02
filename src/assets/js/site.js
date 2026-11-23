@@ -204,7 +204,7 @@
 /* lightbox:start — case study screenshots open in a modal */
 (() => {
   const d = document;
-  const imgs = d.querySelectorAll('.cd-shot img');
+  const imgs = d.querySelectorAll('.cd-shot img, .cd-bento__item img'); // gallery screens and bento screens
   if (!imgs.length || typeof HTMLDialogElement !== 'function') return;
   const isFr = (el) => (el.closest('[lang]')?.getAttribute('lang') || d.documentElement.lang || 'en').startsWith('fr');
   const svg = (p) => `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
@@ -223,7 +223,7 @@
     return c[c.length - 1][0];
   };
   imgs.forEach((img) => {
-    const fig = img.closest('.cd-shot');
+    const fig = img.closest('.cd-shot, .cd-bento__item');
     const fr = isFr(img);
     const b = d.createElement('button');
     b.type = 'button';
@@ -244,7 +244,7 @@
       cap.textContent = fig.querySelector('figcaption')?.textContent || '';
       close.setAttribute('aria-label', fr ? 'Fermer' : 'Close');
       // Long screens scroll in the lightbox instead of shrinking to fit; a phone screen counts as long beyond one 390 × 844 screen
-      const phone = fig.classList.contains('cd-shot--phone');
+      const phone = fig.classList.contains('cd-shot--phone') || fig.classList.contains('cd-bento__item--phone');
       const ratio = +img.dataset.ratio || img.naturalHeight / img.naturalWidth;
       dlg.classList.toggle('lightbox--tall', ratio > (phone ? 2.4 : 1.2));
       dlg.classList.toggle('lightbox--phone', phone);
