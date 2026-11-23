@@ -44,7 +44,8 @@
    "cta": {
     "label": "Contact Charles-Erick"
    },
-   "slot": "[À FOURNIR: main image]"
+   "img": "work/halden-hero.jpg",
+   "alt": "Halden Wealth client portal: welcome screen with the total market value, the household split across accounts, an AI insight and the portfolio growth chart"
   },
   {
    "type": "cd-facts",
@@ -107,10 +108,10 @@
      ]
     },
     {
-     "img": "work/halden-overview.jpg",
+     "img": "work/halden-overview-rest.jpg",
      "full": "work/halden-overview.jpg",
-     "alt": "Halden Wealth client portal: total market value, portfolio growth chart, AI assistant, smart alerts and household accounts",
-     "label": "Halden Wealth client portal: total market value, portfolio growth chart, AI assistant, smart alerts and household accounts"
+     "alt": "Rest of the Halden Wealth client portal: AI assistant, smart alerts, household accounts, an RRSP reminder and the advisory team",
+     "label": "Rest of the Halden Wealth client portal: AI assistant, smart alerts, household accounts, an RRSP reminder and the advisory team"
     },
     {
      "label": "Mobile screen 1",

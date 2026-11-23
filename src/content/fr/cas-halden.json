@@ -44,7 +44,8 @@
    "cta": {
     "label": "Contacter Charles-Erick"
    },
-   "slot": "[À FOURNIR : image principale]"
+   "img": "work/halden-hero.jpg",
+   "alt": "Portail client de Halden Wealth : accueil avec la valeur marchande totale, la répartition du ménage entre les comptes, une suggestion de l’IA et le graphique de croissance du portefeuille"
   },
   {
    "type": "cd-facts",
@@ -107,10 +108,10 @@
      ]
     },
     {
-     "img": "work/halden-overview.jpg",
+     "img": "work/halden-overview-rest.jpg",
      "full": "work/halden-overview.jpg",
-     "alt": "Portail client de Halden Wealth : valeur marchande totale, graphique de croissance du portefeuille, assistant IA, alertes et comptes du ménage",
-     "label": "Portail client de Halden Wealth : valeur marchande totale, graphique de croissance du portefeuille, assistant IA, alertes et comptes du ménage"
+     "alt": "Suite du portail client de Halden Wealth : assistant IA, alertes, comptes du ménage, rappel REER et équipe de conseillers",
+     "label": "Suite du portail client de Halden Wealth : assistant IA, alertes, comptes du ménage, rappel REER et équipe de conseillers"
     },
     {
      "label": "Écran mobile 1",
