@@ -70,7 +70,7 @@ const ROUTES = {
   coaching: { fr: 'conseil-affaires-web', en: 'business-advisory' },
   'cas-saas': { fr: 'etudes-de-cas/saas-b2b-ia', en: 'case-studies/b2b-ai-saas' }, // lives under its type (Case studies), not under /blog/
   'cas-pharmy': { fr: 'etudes-de-cas/pharmy', en: 'case-studies/pharmy' }, // lives under its type (Case studies)
-  'cas-fintech': { fr: 'etudes-de-cas/fintech', en: 'case-studies/fintech' }, // unlisted for now (meta.unlisted): reachable by its URL only
+  'cas-halden': { fr: 'etudes-de-cas/halden-wealth', en: 'case-studies/halden-wealth' }, // Halden Wealth (pseudonym, client under NDA); unlisted for now (meta.unlisted): reachable by its URL only
   'cas-mcq': { fr: 'etudes-de-cas/musee-de-la-civilisation', en: 'case-studies/musee-de-la-civilisation' },
   publicite: { fr: 'publicite-numerique', en: 'digital-advertising' },
   'medias-sociaux': { fr: 'medias-sociaux', en: 'social-media' },
@@ -91,7 +91,7 @@ const ROUTES = {
   merci: { fr: 'merci', en: 'thank-you' }, // shown after a form submission: noindex, never linked
   actualites: BLOG, // blog: articles + case studies, one filter page per category (the key stays neutral; the name lives in _site.json nav)
 };
-const CASE_KEYS = ['cas-saas', 'cas-pharmy', 'cas-mcq', 'cas-fintech']; // rich case-study pages (casestudy format) listed under Resources > Case studies
+const CASE_KEYS = ['cas-saas', 'cas-pharmy', 'cas-mcq', 'cas-halden']; // rich case-study pages (casestudy format) listed under Resources > Case studies
 /* old public addresses that now forward to their new page (same model as the profile redirect) */
 const MOVED = [
   { from: { fr: 'design-de-produit/etude-de-cas-saas-b2b-ia', en: 'product-design/b2b-ai-saas-case-study' }, to: 'cas-saas' },
