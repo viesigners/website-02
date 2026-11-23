@@ -1504,6 +1504,17 @@ html { scroll-padding-top: 7rem; }
 /* "converted prices" note next to prices: only when the visitor picked CAD or EUR */
 .cur-note { display: none; margin-bottom: 1rem; color: var(--text-3); font-size: .85rem; }
 :root[data-cur="CAD"] .cur-note, :root[data-cur="EUR"] .cur-note { display: block; }
-@media (min-width: 640px) { .cd-shots--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } } /* four desktop screens: two by two */
-.cd-hero__by { display: flex; flex-wrap: wrap; gap: .4rem 1.6rem; margin-bottom: 0; }
-.cd-hero__by b { font-weight: 400; color: var(--pink-300); }
+/* bento gallery (desktop + mobile screens mixed): phones keep 9:19.5 and drive the block height, desktop screens fill beside them */
+.cd-bento { display: grid; gap: clamp(.6rem, .4rem + .8vw, 1.1rem); margin-top: clamp(1.6rem, 1rem + 2vw, 2.6rem);
+  grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-areas: "d1 d1 d1 d1 d1 d1" "d2 d2 d2 d2 d2 d2" "m1 m1 m2 m2 m3 m3" "d3 d3 d3 d3 d3 d3" "d4 d4 d4 d4 d4 d4"; }
+.cd-bento__item { position: relative; margin: 0; min-width: 0; border-radius: var(--r-md); overflow: hidden; }
+.cd-bento__item--desk { aspect-ratio: 16 / 10; }
+.cd-bento__item--phone { aspect-ratio: 9 / 19.5; }
+.cd-bento__item > img, .cd-bento__item > .cd-slot { position: absolute; inset: 0; width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; object-position: top; border-radius: inherit; }
+.cd-bento__item > img { box-shadow: 0 0 0 1px var(--line-2); }
+@media (min-width: 760px) {
+  .cd-bento { grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-areas:
+    "m1 m1 m1 m1 d1 d1 d1 d1 d1 d1 d1 d1" "m1 m1 m1 m1 d2 d2 d2 d2 d2 d2 d2 d2"
+    "d3 d3 d3 d3 d3 d3 m2 m2 m2 m3 m3 m3" "d4 d4 d4 d4 d4 d4 m2 m2 m2 m3 m3 m3"; }
+  .cd-bento__item--desk { aspect-ratio: auto; } /* height comes from the phone beside it */
+}

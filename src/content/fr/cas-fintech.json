@@ -1,16 +1,20 @@
 {
  "meta": {
   "unlisted": true,
-  "title": "Étude de cas fintech : rendre la finance simple | Viesigners",
+  "title": "Étude de cas fintech : rendre la finance personnelle simple | Viesigners",
   "description": "Comment Charles-Erick BG, consultant en design UX/UI et design de produit, a conçu un produit fintech pensé pour être simple et compréhensible, même sans connaissances financières. Client sous NDA.",
-  "h1": "Rendre la finance simple et compréhensible pour tout le monde"
+  "h1": "Rendre la finance personnelle simple et compréhensible pour tout le monde"
  },
  "sections": [
   {
    "type": "cd-hero",
    "tag": "Étude de cas · Fintech",
-   "h1": "Rendre la finance *simple et compréhensible* pour tout le monde",
-   "facts": [
+   "h1": "Rendre la finance personnelle *simple et compréhensible* pour tout le monde",
+   "glance": [
+    {
+     "k": "Expert",
+     "v": "Charles-Erick BG"
+    },
     {
      "k": "Client",
      "v": "Sous NDA"
@@ -20,10 +24,10 @@
      "v": "Consultant en design UX/UI et design de produit"
     }
    ],
-   "slot": "[À FOURNIR : image principale]",
    "cta": {
     "label": "Contacter Charles-Erick"
-   }
+   },
+   "slot": "[À FOURNIR : image principale]"
   },
   {
    "type": "cd-gallery",
@@ -31,7 +35,11 @@
    "id": "realisations",
    "label": "Réalisations",
    "h2": "Le produit *en images*",
-   "shots": [
+   "bento": [
+    {
+     "label": "Écran mobile 1",
+     "phone": true
+    },
     {
      "label": "Écran desktop 1"
     },
@@ -43,12 +51,6 @@
     },
     {
      "label": "Écran desktop 4"
-    }
-   ],
-   "phones": [
-    {
-     "label": "Écran mobile 1",
-     "phone": true
     },
     {
      "label": "Écran mobile 2",
