@@ -1,15 +1,25 @@
 {
  "meta": {
   "unlisted": true,
-  "title": "Étude de cas fintech | Viesigners",
-  "description": "[À FOURNIR : description de l'étude de cas en une phrase]",
-  "h1": "[À FOURNIR : titre de l'étude de cas]"
+  "title": "Étude de cas fintech : rendre la finance simple | Viesigners",
+  "description": "Comment Charles-Erick BG, consultant en design UX/UI et design de produit, a conçu un produit fintech pensé pour être simple et compréhensible, même sans connaissances financières. Client sous NDA.",
+  "h1": "Rendre la finance simple et compréhensible pour tout le monde"
  },
  "sections": [
   {
    "type": "cd-hero",
    "tag": "Étude de cas · Fintech",
-   "h1": "[À FOURNIR : titre de l'étude de cas]",
+   "h1": "Rendre la finance *simple et compréhensible* pour tout le monde",
+   "facts": [
+    {
+     "k": "Client",
+     "v": "Sous NDA"
+    },
+    {
+     "k": "Rôle",
+     "v": "Consultant en design UX/UI et design de produit"
+    }
+   ],
    "slot": "[À FOURNIR : image principale]",
    "cta": {
     "label": "Contacter Charles-Erick"

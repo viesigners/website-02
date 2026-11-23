@@ -1,15 +1,25 @@
 {
  "meta": {
   "unlisted": true,
-  "title": "Fintech case study | Viesigners",
-  "description": "[À FOURNIR: one-sentence description of the case study]",
-  "h1": "[À FOURNIR: case study title]"
+  "title": "Fintech Case Study: Making Finance Simple | Viesigners",
+  "description": "How Charles-Erick BG, UX/UI & product design consultant, designed a fintech product built to be simple and understandable, even with no financial background. Client under NDA.",
+  "h1": "Making finance simple and understandable for everyday people"
  },
  "sections": [
   {
    "type": "cd-hero",
    "tag": "Case study · Fintech",
-   "h1": "[À FOURNIR: case study title]",
+   "h1": "Making finance *simple and understandable* for everyday people",
+   "facts": [
+    {
+     "k": "Client",
+     "v": "Under NDA"
+    },
+    {
+     "k": "Role",
+     "v": "UX/UI & Product design consultant"
+    }
+   ],
    "slot": "[À FOURNIR: main image]",
    "cta": {
     "label": "Contact Charles-Erick"

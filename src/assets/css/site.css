@@ -1505,3 +1505,5 @@ html { scroll-padding-top: 7rem; }
 .cur-note { display: none; margin-bottom: 1rem; color: var(--text-3); font-size: .85rem; }
 :root[data-cur="CAD"] .cur-note, :root[data-cur="EUR"] .cur-note { display: block; }
 @media (min-width: 640px) { .cd-shots--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } } /* four desktop screens: two by two */
+.cd-hero__by { display: flex; flex-wrap: wrap; gap: .4rem 1.6rem; margin-bottom: 0; }
+.cd-hero__by b { font-weight: 400; color: var(--pink-300); }
