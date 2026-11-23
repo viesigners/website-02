@@ -30,6 +30,54 @@
    "slot": "[À FOURNIR: main image]"
   },
   {
+   "type": "cd-facts",
+   "caption": "Visuals refreshed by me and modified to respect the NDA.",
+   "lead": "I was hired by the company to *make its UI and UX simpler*. They needed my help on multiple products and platforms, including mobile apps. Here are some examples of the kind of work I did.",
+   "byline": "By Charles-Erick BG",
+   "items": [
+    {
+     "b": "Role",
+     "t": "UX/UI & Product design consultant"
+    },
+    {
+     "b": "Client",
+     "tags": [
+      "Fintech",
+      "Personal finance",
+      "Financial services"
+     ],
+     "note": "The client is under NDA."
+    },
+    {
+     "b": "Goals",
+     "list": [
+      "Personal finance that everyday people find simple",
+      "Win more market share"
+     ]
+    },
+    {
+     "b": "What I did",
+     "wide": true,
+     "id": "what-i-did",
+     "tags": [
+      "UX audit",
+      "Insight synthesis",
+      "Information architecture",
+      "Wireframing",
+      "Design system improvement recommendations",
+      "Form design",
+      "Copywriting",
+      {
+       "t": "Graphic design",
+       "label": "About the graphic design",
+       "info": "I refreshed the look and feel of these screens myself and modified them to respect the NDA. The original visual design may differ."
+      },
+      "Stakeholder communication"
+     ]
+    }
+   ]
+  },
+  {
    "type": "cd-gallery",
    "theme": "light",
    "id": "work",

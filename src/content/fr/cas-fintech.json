@@ -30,6 +30,54 @@
    "slot": "[À FOURNIR : image principale]"
   },
   {
+   "type": "cd-facts",
+   "caption": "Visuels rafraîchis par mes soins et modifiés pour respecter l’entente de confidentialité.",
+   "lead": "L’entreprise m’a engagé pour *simplifier ses interfaces et son expérience utilisateur*. Elle avait besoin de moi sur plusieurs produits et plateformes, dont des applications mobiles. Voici quelques exemples du type de travail que j’ai réalisé.",
+   "byline": "Par Charles-Erick BG",
+   "items": [
+    {
+     "b": "Rôle",
+     "t": "Consultant en design UX/UI et design de produit"
+    },
+    {
+     "b": "Client",
+     "tags": [
+      "Fintech",
+      "Finance personnelle",
+      "Services financiers"
+     ],
+     "note": "Le client est protégé par une entente de confidentialité."
+    },
+    {
+     "b": "Objectifs",
+     "list": [
+      "Une finance personnelle simple à comprendre pour tous",
+      "Gagner des parts de marché"
+     ]
+    },
+    {
+     "b": "Ce que j’ai fait",
+     "wide": true,
+     "id": "ce-que-jai-fait",
+     "tags": [
+      "Audit UX",
+      "Synthèse des constats",
+      "Architecture de l’information",
+      "Wireframes",
+      "Recommandations pour améliorer le design system",
+      "Conception de formulaires",
+      "Copywriting",
+      {
+       "t": "Design graphique",
+       "label": "À propos du design graphique",
+       "info": "J’ai moi-même rafraîchi le design visuel de ces écrans et je l’ai modifié pour respecter l’entente de confidentialité. Le design d’origine peut être différent."
+      },
+      "Communication avec les parties prenantes"
+     ]
+    }
+   ]
+  },
+  {
    "type": "cd-gallery",
    "theme": "light",
    "id": "realisations",
