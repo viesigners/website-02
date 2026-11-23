@@ -115,12 +115,18 @@
      "label": "Rest of the Halden Wealth client portal: AI assistant, smart alerts, household accounts, an RRSP reminder and the advisory team"
     },
     {
-     "label": "Mobile screen 1",
-     "phone": true
+     "label": "Halden Wealth project timeline on mobile: savings projects grouped by horizon, with the years along a vertical line",
+     "phone": true,
+     "img": "work/halden-m-projects.jpg",
+     "full": "work/halden-m-projects-full.jpg",
+     "alt": "Halden Wealth project timeline on mobile: savings projects grouped by horizon, with the years along a vertical line"
     },
     {
-     "label": "Mobile screen 2",
-     "phone": true
+     "label": "Halden Wealth client portal on mobile: welcome screen with an AI insight, the total market value and the Ask Halden button",
+     "phone": true,
+     "img": "work/halden-m-home.jpg",
+     "full": "work/halden-m-overview-full.jpg",
+     "alt": "Halden Wealth client portal on mobile: welcome screen with an AI insight, the total market value and the Ask Halden button"
     },
     {
      "img": "work/halden-projects.jpg",

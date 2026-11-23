@@ -115,12 +115,18 @@
      "label": "Suite du portail client de Halden Wealth : assistant IA, alertes, comptes du ménage, rappel REER et équipe de conseillers"
     },
     {
-     "label": "Écran mobile 1",
-     "phone": true
+     "label": "Ligne du temps des projets de Halden Wealth sur mobile : projets d’épargne regroupés par horizon, avec les années le long d’une ligne verticale",
+     "phone": true,
+     "img": "work/halden-m-projects.jpg",
+     "full": "work/halden-m-projects-full.jpg",
+     "alt": "Ligne du temps des projets de Halden Wealth sur mobile : projets d’épargne regroupés par horizon, avec les années le long d’une ligne verticale"
     },
     {
-     "label": "Écran mobile 2",
-     "phone": true
+     "label": "Portail client de Halden Wealth sur mobile : accueil avec une suggestion de l’IA, la valeur marchande totale et le bouton Ask Halden",
+     "phone": true,
+     "img": "work/halden-m-home.jpg",
+     "full": "work/halden-m-overview-full.jpg",
+     "alt": "Portail client de Halden Wealth sur mobile : accueil avec une suggestion de l’IA, la valeur marchande totale et le bouton Ask Halden"
     },
     {
      "img": "work/halden-projects.jpg",
