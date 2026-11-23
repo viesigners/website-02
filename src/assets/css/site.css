@@ -1518,3 +1518,12 @@ html { scroll-padding-top: 7rem; }
     "d3 d3 d3 d3 d3 d3 m2 m2 m2 m3 m3 m3" "d4 d4 d4 d4 d4 d4 m2 m2 m2 m3 m3 m3"; }
   .cd-bento__item--desk { aspect-ratio: auto; } /* height comes from the phone beside it */
 }
+/* bento 'duo': 2 desktop + 2 mobile + a short paragraph */
+.cd-bento--duo { grid-template-areas: "tx tx tx tx tx tx" "d1 d1 d1 d1 d1 d1" "m1 m1 m1 m2 m2 m2" "d2 d2 d2 d2 d2 d2"; }
+.cd-bento__text { align-self: center; display: grid; gap: .9rem; }
+.cd-bento__text p { margin: 0; font-size: clamp(1.05rem, .95rem + .4vw, 1.3rem); line-height: 1.5; }
+@media (min-width: 760px) {
+  .cd-bento--duo { grid-template-areas: "tx tx tx tx d1 d1 d1 d1 d1 d1 d1 d1" "m1 m1 m1 m2 m2 m2 d2 d2 d2 d2 d2 d2"; }
+  .cd-bento--duo .cd-bento__item--desk[style*="d1"] { aspect-ratio: 4 / 3; }
+  .cd-bento__text { padding-right: clamp(.5rem, 1vw, 1.5rem); }
+}

@@ -17,11 +17,28 @@
     },
     {
      "k": "Client",
-     "v": "Under NDA"
+     "v": "Fintech, under NDA"
     },
     {
      "k": "Role",
-     "v": "UX/UI & Product design consultant"
+     "v": "UX/UI & Product design consultant."
+    },
+    {
+     "k": "Problem",
+     "v": "Interfaces and journeys too complex for everyday people, across several products and platforms, including mobile apps."
+    },
+    {
+     "k": "Activities",
+     "v": "UX audit, insight synthesis, information architecture, wireframing, form design",
+     "more": {
+      "n": 4,
+      "to": "what-i-did",
+      "label": "See all activities"
+     }
+    },
+    {
+     "k": "Result",
+     "v": "[À FOURNIR: result]"
     }
    ],
    "cta": {
@@ -85,30 +102,32 @@
    "h2": "The product *in pictures*",
    "bento": [
     {
+     "text": [
+      "[À FOURNIR: the problems and what I did, in 2 or 3 short sentences]"
+     ]
+    },
+    {
+     "img": "work/halden-overview.jpg",
+     "full": "work/halden-overview.jpg",
+     "alt": "Halden Wealth client portal: total market value, portfolio growth chart, AI assistant, smart alerts and household accounts",
+     "label": "Halden Wealth client portal: total market value, portfolio growth chart, AI assistant, smart alerts and household accounts"
+    },
+    {
      "label": "Mobile screen 1",
      "phone": true
-    },
-    {
-     "label": "Desktop screen 1"
-    },
-    {
-     "label": "Desktop screen 2"
-    },
-    {
-     "label": "Desktop screen 3"
-    },
-    {
-     "label": "Desktop screen 4"
     },
     {
      "label": "Mobile screen 2",
      "phone": true
     },
     {
-     "label": "Mobile screen 3",
-     "phone": true
+     "img": "work/halden-projects.jpg",
+     "full": "work/halden-projects.jpg",
+     "alt": "Halden Wealth project timeline: savings projects grouped by horizon, with the total needed and an AI insight",
+     "label": "Halden Wealth project timeline: savings projects grouped by horizon, with the total needed and an AI insight"
     }
-   ]
+   ],
+   "bentoLayout": "duo"
   },
   {
    "type": "cta-final",

@@ -477,17 +477,18 @@ R['cd-storymap'] = (s, c) => `<section class="section"><div class="wrap">
       <ul class="cd-sm__tasks">${a.tasks.map((t) => `<li><h4>${esc(t.h)}</h4><ul class="cd-sm__stories">${t.stories.map((x) => `<li><p class="cd-sm__want"><em>${esc(s.want)}</em> ${esc(x[0])}</p><p class="cd-sm__so"><em>${esc(s.so)}</em> ${esc(x[1])}</p></li>`).join('')}</ul></li>`).join('')}</ul></li>`).join('')}</ol></div></div>`).join('')}
 </div></section>`;
 /* bento gallery: desktop and mobile screens mixed. The phones keep their format and set each block's height; the desktop screens fill
-   the space beside them (cropped from the top). Built for 4 desktop + 3 mobile: block 1 = phone 1 | desktop 1-2, block 2 = desktop 3-4 | phones 2-3. */
-const bento = (list, lang) => { let d = 0, m = 0; return `<div class="cd-bento rv">${list.map((i) => { const a = i.phone ? `m${++m}` : `d${++d}`; return `<figure class="cd-bento__item cd-bento__item--${i.phone ? 'phone' : 'desk'}" style="grid-area:${a}">${i.img ? fullImg(img(i.img, i.alt, { sizes: i.phone ? '(min-width:760px) 25vw, 33vw' : '(min-width:760px) 66vw, 100vw' }), i.full) : `<div class="cd-slot"><span>${fmtT(i.label, lang)}</span></div>`}</figure>`; }).join('')}</div>`; };
+   the space beside them (cropped from the top). Default layout: 4 desktop + 3 mobile (block 1 = phone 1 | desktop 1-2, block 2 = desktop 3-4 | phones 2-3).
+   'duo' layout: 2 desktop + 2 mobile + a short text (row 1 = text | desktop 1, row 2 = phones 1-2 | desktop 2). */
+const bento = (list, lang, layout) => { let d = 0, m = 0; return `<div class="cd-bento${layout ? ` cd-bento--${layout}` : ''} rv">${list.map((i) => { if (i.text) return `<div class="cd-bento__text" style="grid-area:tx">${i.text.map((t) => `<p>${fmtT(t, lang)}</p>`).join('')}</div>`; const a = i.phone ? `m${++m}` : `d${++d}`; return `<figure class="cd-bento__item cd-bento__item--${i.phone ? 'phone' : 'desk'}" style="grid-area:${a}">${i.img ? fullImg(img(i.img, i.alt, { sizes: i.phone ? '(min-width:760px) 25vw, 33vw' : '(min-width:760px) 66vw, 100vw' }), i.full) : `<div class="cd-slot"><span>${fmtT(i.label, lang)}</span></div>`}</figure>`; }).join('')}</div>`; };
 R['cd-gallery'] = (s, c) => `<section class="section"><div class="wrap">
   ${secHead(s, c, 'cd-gallery', { label: s.label })}
-  ${s.bento ? bento(s.bento, c.lang) : shots(s.shots, s.shotsCls || '')}
+  ${s.bento ? bento(s.bento, c.lang, s.bentoLayout) : shots(s.shots, s.shotsCls || '')}
   ${s.phones ? shots(s.phones) : ''}
 </div></section>`;
 R['cd-hero'] = (s, c) => `<section class="section cd-hero" aria-labelledby="h1"><div class="wrap">
   <div class="cd-hero__top${s.glance ? ' phero__grid' : ''}"><div>${trailHtml(c, c.crumbs.slice(1, -1), c.crumbs.length > 2 ? '' : `<p>${fmt(s.tag, c.lang)}</p>`)}
   <h1 id="h1" class="display phero__title">${fmt(s.h1, c.lang)}</h1>${s.cta ? `<div class="actions cd-hero__cta"><a class="pill" href="${url(s.cta.to || 'contact', c.lang)}">${fmt(s.cta.label, c.lang)}</a></div>` : ''}</div>
-  ${s.glance ? `<aside class="brief cd-brief" aria-labelledby="brief-t"><h2 id="brief-t">${esc(c.T.brief)}</h2><ul>${s.glance.map((g) => `<li>${ico('check')}<span><strong>${esc(g.k)}${c.lang === 'fr' ? '&nbsp;:' : ':'}</strong> ${fmt(g.v, c.lang)}${g.more ? ` <a class="cd-more" href="#${g.more.to}" target="_self" aria-label="${esc(g.more.label)}">+${g.more.n}</a>` : ''}${g.note ? `<small class="cd-note">${esc(g.note)}</small>` : ''}</span></li>`).join('')}</ul></aside>` : ''}</div>
+  ${s.glance ? `<aside class="brief cd-brief" aria-labelledby="brief-t"><h2 id="brief-t">${esc(c.T.brief)}</h2><ul>${s.glance.map((g) => `<li>${ico('check')}<span><strong>${esc(g.k)}${c.lang === 'fr' ? '&nbsp;:' : ':'}</strong> ${fmtT(g.v, c.lang)}${g.more ? ` <a class="cd-more" href="#${g.more.to}" target="_self" aria-label="${esc(g.more.label)}">+${g.more.n}</a>` : ''}${g.note ? `<small class="cd-note">${esc(g.note)}</small>` : ''}</span></li>`).join('')}</ul></aside>` : ''}</div>
   <figure class="cd-hero__img">${s.img ? img(s.img, s.alt, { lazy: false, sizes: '(min-width:1320px) 1224px, 100vw' }) : `<div class="cd-slot"><span>${fmtT(s.slot || '[À FOURNIR]', c.lang)}</span></div>`}</figure>
 </div></section>`;
 R['cd-facts'] = (s, c) => `<section class="section cd-factsec"><div class="wrap">

@@ -17,11 +17,28 @@
     },
     {
      "k": "Client",
-     "v": "Sous NDA"
+     "v": "Fintech, sous NDA"
     },
     {
      "k": "Rôle",
-     "v": "Consultant en design UX/UI et design de produit"
+     "v": "Consultant en design UX/UI et design de produit."
+    },
+    {
+     "k": "Problème",
+     "v": "Des interfaces et des parcours trop complexes pour des gens ordinaires, sur plusieurs produits et plateformes, dont des applications mobiles."
+    },
+    {
+     "k": "Activités",
+     "v": "Audit UX, synthèse des constats, architecture de l’information, wireframes, conception de formulaires",
+     "more": {
+      "n": 4,
+      "to": "ce-que-jai-fait",
+      "label": "Voir toutes les activités"
+     }
+    },
+    {
+     "k": "Résultat",
+     "v": "[À FOURNIR : résultat]"
     }
    ],
    "cta": {
@@ -85,30 +102,32 @@
    "h2": "Le produit *en images*",
    "bento": [
     {
+     "text": [
+      "[À FOURNIR : les problèmes et ce que j’ai fait, en 2 ou 3 phrases courtes]"
+     ]
+    },
+    {
+     "img": "work/halden-overview.jpg",
+     "full": "work/halden-overview.jpg",
+     "alt": "Portail client de Halden Wealth : valeur marchande totale, graphique de croissance du portefeuille, assistant IA, alertes et comptes du ménage",
+     "label": "Portail client de Halden Wealth : valeur marchande totale, graphique de croissance du portefeuille, assistant IA, alertes et comptes du ménage"
+    },
+    {
      "label": "Écran mobile 1",
      "phone": true
-    },
-    {
-     "label": "Écran desktop 1"
-    },
-    {
-     "label": "Écran desktop 2"
-    },
-    {
-     "label": "Écran desktop 3"
-    },
-    {
-     "label": "Écran desktop 4"
     },
     {
      "label": "Écran mobile 2",
      "phone": true
     },
     {
-     "label": "Écran mobile 3",
-     "phone": true
+     "img": "work/halden-projects.jpg",
+     "full": "work/halden-projects.jpg",
+     "alt": "Ligne du temps des projets de Halden Wealth : projets d’épargne regroupés par horizon, avec le total nécessaire et une suggestion de l’IA",
+     "label": "Ligne du temps des projets de Halden Wealth : projets d’épargne regroupés par horizon, avec le total nécessaire et une suggestion de l’IA"
     }
-   ]
+   ],
+   "bentoLayout": "duo"
   },
   {
    "type": "cta-final",
