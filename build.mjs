@@ -70,7 +70,7 @@ const ROUTES = {
   coaching: { fr: 'conseil-affaires-web', en: 'business-advisory' },
   'cas-saas': { fr: 'etudes-de-cas/saas-b2b-ia', en: 'case-studies/b2b-ai-saas' }, // lives under its type (Case studies), not under /blog/
   'cas-pharmy': { fr: 'etudes-de-cas/pharmy', en: 'case-studies/pharmy' }, // lives under its type (Case studies)
-  'cas-halden': { fr: 'etudes-de-cas/halden-wealth', en: 'case-studies/halden-wealth' }, // Halden Wealth (pseudonym, client under NDA); unlisted for now (meta.unlisted): reachable by its URL only
+  'cas-halden': { fr: 'etudes-de-cas/halden-wealth', en: 'case-studies/halden-wealth' }, // Halden Wealth (pseudonym, client under NDA). meta.unlisted: true would keep a case study out of the case-study listings
   'cas-mcq': { fr: 'etudes-de-cas/musee-de-la-civilisation', en: 'case-studies/musee-de-la-civilisation' },
   publicite: { fr: 'publicite-numerique', en: 'digital-advertising' },
   'medias-sociaux': { fr: 'medias-sociaux', en: 'social-media' },
