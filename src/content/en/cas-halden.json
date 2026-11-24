@@ -5,6 +5,10 @@
   "description": "How Charles-Erick BG, UX/UI & product design consultant, designed a fintech product built to be simple and understandable, even with no financial background. Client under NDA.",
   "h1": "Making personal finance simple for everyday people"
  },
+ "article": true,
+ "published": "2026-11-23",
+ "author": "charles-erick",
+ "image": "work/halden-hero.jpg",
  "sections": [
   {
    "type": "cd-hero",
