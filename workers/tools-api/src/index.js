@@ -25,12 +25,21 @@ const json = (request, body, status = 200) => new Response(body === null ? null 
   headers: { ...cors(request), 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' },
 });
 
-/* constant-time comparison so the password can't be guessed by timing */
+/* the page sends "Bearer b64.<base64 of the UTF-8 password>" so accented passwords survive HTTP headers;
+   a plain "Bearer <password>" (curl, older pages) still works */
+function givenPassword(request) {
+  const raw = (request.headers.get('Authorization') || '').replace(/^Bearer\s+/i, '');
+  if (!raw.startsWith('b64.')) return raw;
+  try { return new TextDecoder().decode(Uint8Array.from(atob(raw.slice(4)), (c) => c.charCodeAt(0))); } catch { return ''; }
+}
+/* constant-time comparison so the password can't be guessed by timing.
+   Spaces and line breaks around either side are ignored (terminals on Windows can add a stray "\r" when the secret is typed). */
 async function authorized(request, env) {
-  const given = (request.headers.get('Authorization') || '').replace(/^Bearer\s+/i, '');
-  if (!env.EDIT_PASSWORD || !given) return false;
+  const given = givenPassword(request).trim();
+  const expected = String(env.EDIT_PASSWORD || '').trim();
+  if (!expected || !given) return false;
   const enc = new TextEncoder();
-  const [a, b] = await Promise.all([crypto.subtle.digest('SHA-256', enc.encode(given)), crypto.subtle.digest('SHA-256', enc.encode(env.EDIT_PASSWORD))]);
+  const [a, b] = await Promise.all([crypto.subtle.digest('SHA-256', enc.encode(given)), crypto.subtle.digest('SHA-256', enc.encode(expected))]);
   const x = new Uint8Array(a), y = new Uint8Array(b);
   let diff = 0; for (let i = 0; i < x.length; i++) diff |= x[i] ^ y[i];
   return diff === 0;

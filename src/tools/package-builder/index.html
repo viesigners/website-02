@@ -1047,21 +1047,23 @@ function pushShared() {
   syncState = 'saving'; paintSync();
   pushTimer = setTimeout(async () => {
     try {
-      const r = await fetch(`${API}/settings/${TOOL}`, { method: 'PUT', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${editPass}` }, body: JSON.stringify({ settings: S }) });
+      const r = await fetch(`${API}/settings/${TOOL}`, { method: 'PUT', headers: { 'Content-Type': 'application/json', Authorization: bearer(editPass) }, body: JSON.stringify({ settings: S }) });
       if (r.status === 401) { lockEditing(); setSync('error'); return; }
       if (!r.ok) throw new Error(r.status);
       setSync('saved', (await r.json()).updatedAt);
     } catch (e) { setSync('error'); }
   }, 700); // one save after a burst of typing
 }
+/* the password goes base64-encoded (UTF-8) so accents (é, à…) survive the HTTP header */
+function bearer(pw) { const bytes = new TextEncoder().encode(pw.trim()); let bin = ''; bytes.forEach((b) => { bin += String.fromCharCode(b); }); return `Bearer b64.${btoa(bin)}`; }
 function lockEditing() { editPass = ''; try { localStorage.removeItem(PASS_KEY); } catch (e) {} paintLock(); }
 dlg.addEventListener('submit', async (e) => {
   const form = e.target.closest('[data-unlock]'); if (!form) return;
   e.preventDefault();
-  const value = form.querySelector('input').value, msg = document.getElementById('lock-msg');
+  const value = form.querySelector('input').value.trim(), msg = document.getElementById('lock-msg');
   msg.textContent = 'Vérification…';
   try {
-    const r = await fetch(`${API}/check`, { headers: { Authorization: `Bearer ${value}` } });
+    const r = await fetch(`${API}/check`, { headers: { Authorization: bearer(value) } });
     if (r.status !== 204) { msg.textContent = 'Mot de passe invalide.'; return; }
     editPass = value; try { localStorage.setItem(PASS_KEY, value); } catch (err) {}
     paintLock();
