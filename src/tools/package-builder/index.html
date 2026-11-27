@@ -230,7 +230,7 @@
   .settings-row { display: flex; justify-content: center; margin-top: 34px; }
 
   /* settings dialog */
-  dialog { width: min(720px, calc(100vw - 32px)); max-height: calc(100dvh - 48px); padding: 0; border: 0; border-radius: var(--r-xl); background: var(--slate-50); color: var(--navy); }
+  dialog { width: min(1040px, calc(100vw - 32px)); max-height: calc(100dvh - 48px); padding: 0; border: 0; border-radius: var(--r-xl); background: var(--slate-50); color: var(--navy); }
   dialog::backdrop { background: rgba(16, 20, 33, .7); backdrop-filter: blur(4px); }
   .dlg-h { position: sticky; top: 0; z-index: 2; display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 20px 24px; background: var(--slate-50); border-bottom: 1px solid var(--line); }
   .dlg-h h2 { font-family: var(--f-display); font-weight: 400; font-size: 1.5rem; letter-spacing: -0.02em; }
@@ -245,8 +245,20 @@
   .lock input:focus { outline: none; box-shadow: inset 0 0 0 2px var(--pink); }
   .lock-msg { flex-basis: 100%; color: var(--navy-500); font-size: .78rem; }
   .lock.ok { background: transparent; padding: 0; color: var(--navy-500); }
-  .dlg-b { padding: 6px 24px 26px; }
-  .fs { margin-top: 22px; }
+  .dlg-b { padding: 6px 24px 26px; display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 32px; }
+  .fs { margin-top: 22px; scroll-margin-top: 100px; }
+  /* section navigation: stays in view while the settings scroll */
+  .dlg-nav { position: sticky; top: 96px; align-self: start; display: grid; gap: 2px; padding-top: 18px; }
+  .dlg-nav p { margin: 0 0 6px 10px; font-family: var(--f-mono); font-size: .64rem; letter-spacing: .04em; text-transform: uppercase; color: var(--navy-500); }
+  .dlg-nav button { appearance: none; border: 0; background: none; cursor: pointer; text-align: left; padding: 7px 10px; border-radius: var(--r-sm); font-size: .84rem; line-height: 1.3; color: var(--navy-500); border-left: 2px solid transparent; }
+  .dlg-nav button:hover { background: var(--slate-100); color: var(--navy); }
+  .dlg-nav button[aria-current="true"] { color: var(--navy); font-weight: 600; border-left-color: var(--pink); background: var(--slate-100); border-radius: 0 var(--r-sm) var(--r-sm) 0; }
+  @media (max-width: 820px) {
+    .dlg-b { grid-template-columns: 1fr; gap: 0; }
+    .dlg-nav { position: static; display: flex; flex-wrap: wrap; gap: 4px; padding-top: 14px; }
+    .dlg-nav p { flex-basis: 100%; margin-left: 0; }
+    .dlg-nav button { border-left: 0; padding: 5px 9px; background: var(--slate-100); border-radius: 999px; font-size: .76rem; }
+  }
   .fs > .label { margin-bottom: 10px; }
   .fs-h { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; }
   .fs-h .label { margin: 0; }
@@ -280,7 +292,8 @@
   .sub-l b { font-weight: 600; }
   .sub-l span { color: var(--navy-500); }
   @media (max-width: 560px) { .sub { grid-template-columns: 1fr auto; } .sub .inp { grid-column: 1 / -1; } }
-  dialog { overflow-x: hidden; }
+  dialog { overflow-x: hidden; overscroll-behavior: contain; }
+  html:has(dialog[open]), html:has(dialog[open]) body { overflow: hidden; } /* the page behind stays still */
   .undo[hidden] { display: none; }
   .switch input { position: absolute; opacity: 0; }
   .knob { width: 44px; height: 26px; border-radius: 999px; background: var(--slate-200); position: relative; transition: background .25s; }
@@ -339,7 +352,7 @@
 
 <dialog id="settings" aria-labelledby="settings-title">
   <div class="dlg-h"><div><h2 id="settings-title">Réglages globaux</h2><p class="sync" id="sync"></p></div><div class="panel-tools"><button class="undo top-only" type="button" data-undo disabled title="Aucune réinitialisation à annuler">Réglages précédents</button><button class="pill pill--sm pill--light top-only" type="button" data-defaults>Tout réinitialiser</button><button class="x" type="button" id="close-settings" aria-label="Fermer">×</button></div></div>
-  <div class="dlg-b"><div id="lockbar"></div><fieldset class="setfs" id="settings-fs"><div id="settings-body"></div></fieldset></div>
+  <div class="dlg-b"><nav class="dlg-nav" id="settings-nav" aria-label="Sections des réglages"></nav><div class="dlg-main"><div id="lockbar"></div><fieldset class="setfs" id="settings-fs"><div id="settings-body"></div></fieldset></div></div>
 </dialog>
 
 <script>
@@ -397,7 +410,7 @@ const DEFAULTS = {
     urgentPrivateVip: { vip: 10 },
     transferHours: { vip: 10 },
   },
-  sec: { qg: 5, formule: 5, offre: 5, traffic: 5, vente: 5, accomp: 5, continuite: 5, dare: 5 }, // % of the current plan's default weekly price
+  sec: { qg: 5, formule: 5, offre: 5, traffic: 5, vente: 5, accomp: 5, continuite: 5, dare: 5 }, // % of the Communauté (Intensif) weekly price; same amount in every plan
 };
 
 const SECTIONS = [
@@ -514,7 +527,7 @@ const featPrice = (id, pid = planId) => {
   if (id === 'qaMonthly') return perCall() * QA_MONTHLY_CPW * (1 + pct / 100);
   return planDefault(pid) * pct / 100;
 };
-const secPrice = (id, pid = planId) => planDefault(pid) * (+S.sec[id] || 0) / 100;
+const secPrice = (id) => planDefault('communaute') * (+S.sec[id] || 0) / 100; // fixed: the same in every plan
 function planWeekly(pid, pc = pace) {
   if (pid === 'communaute' && pc !== 'intensif') {
     const perCall = (S.ref * S.mult.communaute) / PACES.intensif.cpw; // Intensif cost per call
@@ -826,8 +839,8 @@ function renderSettings() {
       ${usage(f.id).map((u) => `<div class="sub"><span class="sub-l"><b>${P[u.pid].name}</b> <span>· ${u.detail}</span></span>
         <span class="calc" data-calc="feat:${f.id}:${u.pid}">= ${money(featPrice(f.id, u.pid))} / sem</span>
         ${num(`feat.${f.id}.${u.pid}`, (S.feat[f.id] || {})[u.pid] || 0, f.id === 'qaMonthly' ? '% / appel' : '%', 1)}</div>`).join('')}</div>`).join('');
-  const secCalc = (id) => PLANS.map((p) => `${p.name} ${money(secPrice(id, p.id))}`).join(' · ');
-  const secRows = SECTIONS.map((s) => `<div class="field"><span>${esc(s.t)}<small><span class="calc" data-calc="sec:${s.id}">${secCalc(s.id)}</span></small></span>${num('sec.' + s.id, S.sec[s.id], '%', 0.5)}</div>`).join('');
+  const secCalc = (id) => `= ${money(secPrice(id))} / sem, dans tous les forfaits`;
+  const secRows = SECTIONS.map((s) => `<div class="field"><span>${esc(s.t)}<small><span class="calc" data-calc="sec:${s.id}">${secCalc(s.id)}</span></small></span>${num('sec.' + s.id, S.sec[s.id], '% Communauté', 0.5)}</div>`).join('');
   document.getElementById('settings-body').innerHTML = `
     <div class="fs"><div class="fs-h"><p class="label">Prix de référence</p><button class="fs-reset" type="button" data-reset-keys="ref,mult">Réinitialiser</button></div><p>Montant hebdomadaire du forfait Minimum. Les autres forfaits en sont des multiples.</p><div class="fields">
       <div class="field"><span>Montant hebdo de référence<small>= prix du forfait Minimum</small></span>${num('ref', S.ref, '$ / sem', 0.01)}</div>
@@ -844,7 +857,7 @@ function renderSettings() {
       <label class="switch"><span><b>Prix gelé à vie</b><br><small style="color:var(--navy-500)">Affiche cette inclusion dans les forfaits.</small></span><input type="checkbox" data-set="frozen" ${S.frozen ? 'checked' : ''}><span class="knob"></span></label>
     </div></div>
     <div class="fs"><div class="fs-h"><p class="label">Prix à la carte</p><button class="fs-reset" type="button" data-reset-keys="feat">Réinitialiser</button></div><p>Ajouté quand on coche une option, retiré quand on décoche une inclusion. Chaque % porte sur le prix hebdo par défaut du forfait concerné (${PLANS.map((p) => `${p.name} <span data-calc="plan:${p.id}">${money(planDefault(p.id))}</span>`).join(', ')}). Exception : les appels mensuels, majorés sur le coût par appel du rythme Intensif. 0 = prix à définir.</p><div class="fields">${featRows}</div></div>
-    <div class="fs"><div class="fs-h"><p class="label">Sections de la Plateforme d'Excellence</p><button class="fs-reset" type="button" data-reset-keys="sec">Réinitialiser</button></div><p>Retirées dans les réglages du plan (tous les forfaits). En % du prix hebdo par défaut du forfait choisi.</p><div class="fields">${secRows}</div></div>
+    <div class="fs"><div class="fs-h"><p class="label">Sections de la Plateforme d'Excellence</p><button class="fs-reset" type="button" data-reset-keys="sec">Réinitialiser</button></div><p>Retirées dans les réglages du plan. Chaque section vaut un montant fixe, le même dans tous les forfaits : <b>un % du prix hebdo du forfait Communauté</b> (Intensif, <span data-calc="plan:communaute">${money(planDefault('communaute'))}</span> / sem).</p><div class="fields">${secRows}</div></div>
     <div class="fs"><div class="fs-h"><p class="label">Guide de marque</p><button class="fs-reset" type="button" data-reset-keys="guide">Réinitialiser</button></div><p>Paiement unique, avec le même rabais que la fréquence de paiement (voir « Rabais selon la fréquence »).</p><div class="fields">
       <div class="field"><span>Valeur<small>Tous les forfaits · option</small></span>${num('guide.value', S.guide.value, '$')}</div>
     </div></div>
@@ -854,6 +867,24 @@ function renderSettings() {
     <div class="fs"><div class="fs-h"><p class="label">Done for you</p><button class="fs-reset" type="button" data-reset-keys="dfyRate">Réinitialiser</button></div><div class="fields">
       <div class="field"><span>Taux horaire régulier<small>pour le calcul des rabais 20% / 30%</small></span>${num('dfyRate', S.dfyRate, '$ / h')}</div>
     </div></div>`;
+  renderSettingsNav();
+}
+/* one link per section; clicking scrolls the window to that section's title */
+function renderSettingsNav() {
+  const fss = [...document.querySelectorAll('#settings-body .fs')];
+  fss.forEach((fs, i) => { fs.id = `set-${i}`; });
+  document.getElementById('settings-nav').innerHTML = '<p>Aller à</p>' + fss.map((fs, i) =>
+    `<button type="button" data-goto="set-${i}">${esc(fs.querySelector('.label').textContent)}</button>`).join('');
+  markNav();
+}
+function markNav() {
+  const dlgEl = document.getElementById('settings');
+  const fss = [...document.querySelectorAll('#settings-body .fs')];
+  const top = dlgEl.getBoundingClientRect().top + 110;
+  let cur = fss[0];
+  for (const fs of fss) if (fs.getBoundingClientRect().top <= top) cur = fs;
+  if (dlgEl.scrollTop + dlgEl.clientHeight >= dlgEl.scrollHeight - 4) cur = fss.at(-1); // bottom reached: last section
+  document.querySelectorAll('#settings-nav [data-goto]').forEach((b) => b.setAttribute('aria-current', String(!!cur && b.dataset.goto === cur.id)));
 }
 
 function render() { renderTerms(); renderPlans(); renderPanel(); }
@@ -946,7 +977,8 @@ window.addEventListener('resize', () => { clearTimeout(window.__rz); window.__rz
 const dlg = document.getElementById('settings');
 document.getElementById('open-settings').addEventListener('click', () => { renderSettings(); paintLock(); paintSync(); dlg.showModal(); dlg.scrollTop = 0; dlg.classList.remove('scrolled'); });
 document.getElementById('close-settings').addEventListener('click', () => dlg.close());
-dlg.addEventListener('scroll', () => dlg.classList.toggle('scrolled', dlg.scrollTop > 8));
+dlg.addEventListener('scroll', () => { dlg.classList.toggle('scrolled', dlg.scrollTop > 8); markNav(); });
+dlg.addEventListener('click', (e) => { const go = e.target.closest('[data-goto]'); if (go) document.getElementById(go.dataset.goto)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
 /* settings as they were just before the last reset, so a reset clicked by mistake can be undone (kept across reloads) */
 const PREV = STORE + '-before-reset';
 let beforeReset = null;
@@ -983,7 +1015,7 @@ dlg.addEventListener('input', (e) => {
   dlg.querySelectorAll('[data-calc]').forEach((el) => {
     const [kind, id, pid] = el.dataset.calc.split(':');
     if (kind === 'plan') el.textContent = money(planDefault(id));
-    else if (kind === 'sec') el.textContent = PLANS.map((p) => `${p.name} ${money(secPrice(id, p.id))}`).join(' · ');
+    else if (kind === 'sec') el.textContent = `= ${money(secPrice(id))} / sem, dans tous les forfaits`;
     else el.textContent = `= ${money(featPrice(id, pid))} / sem`;
   });
   render();
