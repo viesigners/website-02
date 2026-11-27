@@ -235,7 +235,15 @@
   .dlg-h { position: sticky; top: 0; z-index: 2; display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 20px 24px; background: var(--slate-50); border-bottom: 1px solid var(--line); }
   .dlg-h h2 { font-family: var(--f-display); font-weight: 400; font-size: 1.5rem; letter-spacing: -0.02em; }
   .sync { margin: 2px 0 0; font-size: .74rem; color: var(--navy-500); }
-  .sync[data-state="saved"] { color: #1f8a63; }
+  /* live sync status: pulsing pink dot + gradient text that flows */
+  .sync.live { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; }
+  .live-dot { position: relative; width: 8px; height: 8px; border-radius: 50%; background: var(--pink); box-shadow: 0 0 6px 1px rgba(255, 72, 139, .8); flex: none; }
+  .live-dot::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 2px solid var(--pink); opacity: 0; animation: live-ping 1.8s var(--ease) infinite; }
+  .live-t { background: linear-gradient(90deg, var(--pink-600), var(--purple), var(--pink-600)); background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; animation: live-flow 3s linear infinite; }
+  @keyframes live-ping { 0% { transform: scale(.6); opacity: .9; } 100% { transform: scale(1.8); opacity: 0; } }
+  @keyframes live-flow { to { background-position: -200% center; } }
+  dialog.locked .top-only, .dlg-nav[hidden], .setfs[hidden] { display: none; }
+  dialog.locked .dlg-b { grid-template-columns: 1fr; }
   .sync[data-state="error"], .sync[data-state="offline"] { color: #b54708; }
   .setfs { border: 0; margin: 0; padding: 0; min-width: 0; }
   .setfs:disabled .fields, .setfs:disabled .fblock, .setfs:disabled .fs-reset { opacity: .5; }
@@ -883,7 +891,7 @@ function markNav() {
   const top = dlgEl.getBoundingClientRect().top + 110;
   let cur = fss[0];
   for (const fs of fss) if (fs.getBoundingClientRect().top <= top) cur = fs;
-  if (dlgEl.scrollTop + dlgEl.clientHeight >= dlgEl.scrollHeight - 4) cur = fss.at(-1); // bottom reached: last section
+  if (dlgEl.open && dlgEl.scrollTop > 0 && dlgEl.scrollTop + dlgEl.clientHeight >= dlgEl.scrollHeight - 4) cur = fss.at(-1); // scrolled to the bottom: last section
   document.querySelectorAll('#settings-nav [data-goto]').forEach((b) => b.setAttribute('aria-current', String(!!cur && b.dataset.goto === cur.id)));
 }
 
@@ -975,7 +983,7 @@ window.addEventListener('resize', () => { clearTimeout(window.__rz); window.__rz
 
 /* settings: live update without rebuilding the dialog (keeps the caret where it is) */
 const dlg = document.getElementById('settings');
-document.getElementById('open-settings').addEventListener('click', () => { renderSettings(); paintLock(); paintSync(); dlg.showModal(); dlg.scrollTop = 0; dlg.classList.remove('scrolled'); });
+document.getElementById('open-settings').addEventListener('click', () => { renderSettings(); paintLock(); paintSync(); dlg.showModal(); dlg.scrollTop = 0; dlg.classList.remove('scrolled'); markNav(); });
 document.getElementById('close-settings').addEventListener('click', () => dlg.close());
 dlg.addEventListener('scroll', () => { dlg.classList.toggle('scrolled', dlg.scrollTop > 8); markNav(); });
 dlg.addEventListener('click', (e) => { const go = e.target.closest('[data-goto]'); if (go) document.getElementById(go.dataset.goto)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
@@ -1039,7 +1047,10 @@ function setSync(state, at) { syncState = state; if (at) syncAt = at; paintSync(
 function paintSync() {
   const el = document.getElementById('sync'); if (!el) return;
   el.dataset.state = syncState;
-  el.textContent = {
+  /* "live": the team settings are in sync (just saved, or loaded from the team) */
+  const live = syncState === 'saved' || (syncState === 'idle' && !!syncAt);
+  el.classList.toggle('live', live);
+  const text = {
     loading: 'Chargement des réglages de l’équipe…',
     idle: syncAt ? `Réglages de l’équipe · mis à jour le ${when(syncAt)}` : 'Réglages par défaut · aucun réglage d’équipe enregistré',
     saving: 'Enregistrement pour toute l’équipe…',
@@ -1047,17 +1058,23 @@ function paintSync() {
     error: 'Erreur : ce changement n’est pas enregistré pour l’équipe',
     offline: 'Réglages de l’équipe inaccessibles : les changements restent sur cet appareil',
   }[syncState];
+  el.innerHTML = live ? `<span class="live-dot" aria-hidden="true"></span><span class="live-t">${esc(text)}</span>` : esc(text);
 }
 function paintLock() {
   const bar = document.getElementById('lockbar'); if (!bar) return;
-  document.getElementById('settings-fs').disabled = !canEdit();
-  dlg.querySelector('[data-defaults]').disabled = !canEdit();
+  /* locked: the numbers are hidden, not just greyed out, so a visitor who opens the window sees nothing but the password field */
+  const open = canEdit();
+  document.getElementById('settings-fs').disabled = !open;
+  document.getElementById('settings-fs').hidden = !open;
+  document.getElementById('settings-nav').hidden = !open;
+  dlg.classList.toggle('locked', !open);
+  dlg.querySelector('[data-defaults]').disabled = !open;
   syncUndo();
   if (syncState === 'offline' && !editPass) { bar.innerHTML = ''; return; }
   bar.innerHTML = editPass
     ? '<p class="lock ok">Modification activée sur cet appareil. <button type="button" class="fs-reset" data-lock>Verrouiller</button></p>'
     : `<form class="lock" data-unlock><label for="edit-pass">Mot de passe d’édition</label><input id="edit-pass" type="password" autocomplete="current-password" required><button class="pill pill--sm" type="submit">Déverrouiller</button>
-       <span class="lock-msg" id="lock-msg">Tout le monde voit ces réglages ; il faut le mot de passe pour les modifier.</span></form>`;
+       <span class="lock-msg" id="lock-msg">Les réglages sont masqués. Entre le mot de passe pour les voir et les modifier.</span></form>`;
 }
 async function loadShared() {
   setSync('loading');
