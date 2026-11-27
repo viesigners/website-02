@@ -1131,6 +1131,46 @@ ${cookieBanner(ctx)}
   PAGES_OUT.push({ hidden: isHidden(key) || !!page.noindex, lang, key, selfUrl, altUrls, title: page.meta.title, description: page.meta.description, md: toMd(page, ctx), nav: key === 'post' ? 'post' : key });
 }
 
+/* ----------------------------- internal tools ----------------------------- */
+/* src/tools/** is published as-is at /tools/ (sales, marketing… HTML tools reachable from anywhere).
+   Never indexed: every HTML file gets a robots noindex tag (injected if missing), nothing is linked from the site,
+   nothing goes in the sitemap or llms.txt, and robots.txt does NOT name the folder (a Disallow would advertise it
+   and stop crawlers from reading the noindex). /tools/ itself is an index generated from the files' <title>s
+   unless src/tools/index.html exists. Note: the repository is public, so this is unlisted, not private. */
+const TOOLS_ROBOTS = '<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">';
+function buildTools() {
+  const src = path.join(SRC, 'tools');
+  if (!fs.existsSync(src)) return 0;
+  const out = path.join(DIST, 'tools');
+  copyDir(src, out);
+  const pages = [];
+  const walk = (dir) => { for (const f of fs.readdirSync(dir, { withFileTypes: true })) { const p = path.join(dir, f.name); if (f.isDirectory()) walk(p); else if (f.name.endsWith('.html')) pages.push(p); } };
+  walk(out);
+  const list = [];
+  for (const p of pages) {
+    let h = fs.readFileSync(p, 'utf8');
+    h = /<meta\s+name=["']robots["'][^>]*>/i.test(h) ? h.replace(/<meta\s+name=["']robots["'][^>]*>/gi, TOOLS_ROBOTS) : h.replace(/<head([^>]*)>/i, `<head$1>${TOOLS_ROBOTS}`);
+    fs.writeFileSync(p, h);
+    const rel = path.relative(out, p).split(path.sep).join('/');
+    if (rel === 'index.html') continue;
+    const title = (h.match(/<title>([^<]*)<\/title>/i) || [])[1] || rel;
+    const desc = (h.match(/<meta\s+name=["']description["']\s+content=["']([^"']*)["']/i) || [])[1] || '';
+    list.push({ href: `${BASE}/tools/${rel.replace(/(^|\/)index\.html$/, '$1')}`, title, desc });
+  }
+  if (!fs.existsSync(path.join(src, 'index.html'))) {
+    list.sort((a, b) => a.title.localeCompare(b.title, 'fr'));
+    write(path.join(out, 'index.html'), `<!doctype html><html lang="fr"><head><meta charset="utf-8">${TOOLS_ROBOTS}<meta name="viewport" content="width=device-width, initial-scale=1"><title>Outils | Viesigners</title><link rel="stylesheet" href="${BASE}/assets/css/fonts.css">
+<link rel="icon" href="${BASE}/assets/img/favicon.png">
+<style>*{box-sizing:border-box}body{margin:0;min-height:100dvh;background:#101421;color:#fff;font:16px/1.55 Geist,system-ui,sans-serif;-webkit-font-smoothing:antialiased}main{max-width:860px;margin:0 auto;padding:22px 16px 64px}header img{width:118px;height:auto;display:block;margin-bottom:48px}
+.label{display:inline-flex;align-items:center;gap:.6rem;font:500 .75rem/1.3 "Geist Mono",monospace;letter-spacing:.04em;text-transform:uppercase}.label::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:#ff488b}
+h1{font:300 clamp(2.3rem,1rem + 4.4vw,3.9rem)/1.04 "Hanken Grotesk",sans-serif;letter-spacing:-.028em;margin:16px 0 14px}h1 em{font-style:normal;background:linear-gradient(90deg,#ff488b,#e33adb);-webkit-background-clip:text;background-clip:text;color:transparent}p.lead{color:rgba(219,229,237,.78);margin:0 0 2.2rem;font-size:1.15rem}
+ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}li a{display:block;padding:20px 22px;background:rgba(255,255,255,.05);border-radius:15px;color:inherit;text-decoration:none;transition:background .3s}li a:hover{background:rgba(255,255,255,.09)}strong{display:block;font:400 1.4rem/1.2 "Hanken Grotesk",sans-serif;letter-spacing:-.018em;margin-bottom:4px}span{color:rgba(219,229,237,.7);font-size:.95rem}code{font:.85rem "Geist Mono",monospace}:focus-visible{outline:3px solid #ff488b;outline-offset:3px;border-radius:4px}</style></head>
+<body><main><header><a href="${BASE}/" aria-label="Viesigners"><img src="${BASE}/assets/img/logo-viesigners.png" alt="Viesigners" width="320" height="62"></a></header><p class="label">Outils internes</p><h1>Outils <em>Viesigners</em></h1><p class="lead">Ventes, marketing et opérations. Section non indexée, non liée au site.</p>
+<ul>${list.map((t) => `<li><a href="${esc(t.href)}"><strong>${esc(t.title)}</strong>${t.desc ? `<span>${esc(t.desc)}</span>` : `<span><code>${esc(t.href)}</code></span>`}</a></li>`).join('')}</ul></main></body></html>\n`);
+  }
+  return list.length;
+}
+
 /* ----------------------------- driver ------------------------------------- */
 const TR = {};
 function build() {
@@ -1241,6 +1281,7 @@ function build() {
   write(path.join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.map((u) => `<url><loc>${u.loc}</loc><lastmod>${BUILD_DATE}</lastmod>${u.alts.map((a) => `<xhtml:link rel="alternate" hreflang="${a.l}" href="${a.href}"/>`).join('')}</url>`).join('\n')}\n</urlset>\n`);
 
   write(path.join(DIST, '.nojekyll'), ''); // GitHub Pages: serve files as-is
+  const toolCount = buildTools(); // internal tools at /tools/ (noindex, unlinked)
   /* robots: everything open, AI crawlers explicitly welcome */
   const bots = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot-Extended', 'Bingbot', 'CCBot', 'cohere-ai', 'Meta-ExternalAgent', 'Amazonbot', 'DuckAssistBot', 'MistralAI-User'];
   if (NOINDEX) write(path.join(DIST, 'robots.txt'), `# staging build — do not index\nUser-agent: *\nDisallow: /\n`);
@@ -1264,8 +1305,8 @@ function build() {
   write(path.join(DIST, '.htaccess'), `# Apache: permanent redirects ("/" → English site, moved addresses → their new page)\n<IfModule mod_rewrite.c>\nRewriteEngine On\n${hostRedirects.map((r) => `RewriteRule ^${r.from.slice(1).replace(/[.]/g, '\\.')}$ ${r.to} [R=301,L]`).join('\n')}\n</IfModule>\n`);
   write(path.join(DIST, 'redirects.csv'), hostRedirects.map((r) => `${abs(r.from).replace(/^https?:\/\//, '')},${abs(r.to)},301`).join('\n') + '\n'); // Cloudflare → Bulk Redirects → import list
   /* hosting hints */
-  write(path.join(DIST, '_headers'), `/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n/\n  Vary: Accept-Language\n  Cache-Control: no-store\n`);
-  console.log(`✓ built ${PAGES_OUT.length} pages (${PAGES_OUT.filter((x) => x.hidden).length} hidden: noindex, unlinked) (${LANGS.join(' + ')}) → dist/  [${new Date().toLocaleTimeString()}]`);
+  write(path.join(DIST, '_headers'), `/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n/\n  Vary: Accept-Language\n  Cache-Control: no-store\n/tools/*\n  X-Robots-Tag: noindex, nofollow, noarchive\n  Cache-Control: no-store\n`);
+  console.log(`✓ built ${PAGES_OUT.length} pages (${PAGES_OUT.filter((x) => x.hidden).length} hidden: noindex, unlinked) (${LANGS.join(' + ')}) + ${toolCount} tools → dist/  [${new Date().toLocaleTimeString()}]`);
 }
 
 build();

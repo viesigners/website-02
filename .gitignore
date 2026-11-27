@@ -7,3 +7,7 @@ dist/
 node_modules/
 *.log
 research/
+
+# Cloudflare Worker local secrets and state
+.dev.vars
+.wrangler/

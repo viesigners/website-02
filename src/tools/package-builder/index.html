@@ -1,0 +1,1077 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forfaits ImpaX</title>
+<meta name="description" content="Forfaits Accélération ImpaX : Minimum, Communauté (dont Progression Flexible) et VIP, ajustables avec options, total par semaine, mois, trimestre ou année.">
+<link rel="icon" href="/assets/img/favicon.png">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<style>
+  /* Viesigners design tokens (same as src/assets/css/site.css) */
+  :root {
+    --charcoal: #101421; --charcoal-2: #171c2e;
+    --navy: #172b76; --navy-500: #586490; --navy-700: #0f1d55;
+    --slate-50: #eef2f5; --slate-100: #dbe5ed; --slate-200: #cfd7e7; --slate-400: #b3c0d4;
+    --pink: #ff488b; --pink-600: #f6186a; --pink-300: #f480c0; --purple: #e33adb;
+    --grad: linear-gradient(90deg, #ff488b 0%, #e33adb 100%);
+    --f-display: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --f-text: "Geist", "Helvetica Neue", Arial, sans-serif;
+    --f-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    --r-sm: 7px; --r-md: 10px; --r-lg: 15px; --r-xl: 30px;
+    --ease: cubic-bezier(.22, 1, .36, 1);
+    --line: rgba(23, 43, 118, .14); --line-d: rgba(179, 192, 212, .18);
+    --t2-d: rgba(219, 229, 237, .8);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; min-height: 100dvh; background: var(--charcoal); color: #fff; font-family: var(--f-text); font-size: 1rem; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+  body::before { content: ""; position: fixed; inset: -20vh -10vw auto auto; width: 70vw; height: 70vh; z-index: -1; pointer-events: none; background: radial-gradient(closest-side, rgba(227, 58, 219, .18), transparent), radial-gradient(closest-side at 30% 60%, rgba(23, 43, 118, .55), transparent); }
+  :focus-visible { outline: 3px solid var(--pink); outline-offset: 3px; border-radius: 4px; }
+  ::selection { background: var(--pink); color: #fff; }
+  h1, h2, h3, h4, p { margin: 0; }
+  button, input { font: inherit; color: inherit; }
+  ul { margin: 0; padding: 0; list-style: none; }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 16px 80px; }
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0 40px; }
+  .top img { width: 118px; height: auto; display: block; }
+  .mono { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; }
+  .tag { color: var(--slate-400); }
+  .label { display: inline-flex; align-items: center; gap: .6rem; font-family: var(--f-mono); font-size: .75rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; line-height: 1.3; }
+  .label::before { content: ""; width: .42rem; height: .42rem; border-radius: 50%; background: var(--pink); flex: none; }
+  .acc { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; padding-bottom: .16em; margin-bottom: -.16em; }
+
+  .hero { display: grid; gap: 18px; margin: 0 auto 30px; max-width: 760px; text-align: center; justify-items: center; }
+  .hero h1 { font-family: var(--f-display); font-weight: 300; font-size: clamp(2.3rem, 1rem + 4.4vw, 3.9rem); letter-spacing: -0.028em; line-height: 1.04; text-wrap: balance; }
+  .hero .lead { color: var(--t2-d); font-size: clamp(1.05rem, 1rem + .35vw, 1.25rem); max-width: 52ch; }
+
+  /* buttons */
+  .pill { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 2.75rem; padding: .7rem 1.2rem; border: 0; border-radius: var(--r-sm); cursor: pointer; background: var(--pink); color: var(--charcoal); font-family: var(--f-mono); font-size: .78rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; transition: background .25s, transform .3s var(--ease), box-shadow .3s; }
+  .pill:hover { background: var(--pink-600); transform: translateY(-2px); }
+  .pill--ghost { background: transparent; color: #fff; box-shadow: inset 0 0 0 1px rgba(179, 192, 212, .36); }
+  .pill--ghost:hover { background: rgba(255, 255, 255, .06); box-shadow: inset 0 0 0 1px #fff; }
+  .pill--light { background: var(--slate-100); color: var(--navy); }
+  .pill--light:hover { background: var(--slate-200); }
+  .pill--white { background: #fff; color: var(--navy); }
+  .pill--white:hover { background: var(--slate-100); }
+  .pill--sm { min-height: 2.3rem; padding: .45rem .85rem; font-size: .7rem; }
+  .pill--block { width: 100%; }
+  .pill svg { width: 1rem; height: 1rem; flex: none; }
+
+  /* term bar */
+  .bar { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; margin-bottom: 40px; }
+  .seg { display: inline-flex; flex-wrap: wrap; padding: 4px; border-radius: 999px; background: rgba(255, 255, 255, .06); box-shadow: inset 0 0 0 1px var(--line-d); }
+  .seg button { appearance: none; border: 0; background: transparent; color: var(--t2-d); cursor: pointer; min-height: 2.6rem; padding: .55rem 1.15rem; border-radius: 999px; font-family: var(--f-mono); font-size: .76rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; transition: background .25s, color .25s; }
+  .seg button:hover { color: #fff; }
+  .seg button[aria-pressed="true"] { background: var(--grad); color: #fff; }
+  .seg button small { opacity: .8; margin-left: .3em; }
+
+  /* ---------- plan cards (ludo-style) ---------- */
+  .plans { display: grid; gap: 22px; align-items: stretch; }
+  @media (min-width: 900px) { .plans { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  .card {
+    position: relative; display: flex; flex-direction: column; gap: 16px; padding: 26px 24px 24px; border-radius: var(--r-xl); cursor: pointer;
+    background: linear-gradient(180deg, #1c3390 0%, var(--navy) 55%, var(--navy-700) 100%); color: #fff;
+    box-shadow: inset 0 0 0 1px rgba(179, 192, 212, .16); transition: transform .45s var(--ease), box-shadow .3s;
+  }
+  .card:hover { transform: translateY(-4px); }
+  .card.feat { box-shadow: inset 0 0 0 2px rgba(255, 72, 139, .55); }
+  .card.sel { box-shadow: inset 0 0 0 3px var(--pink), 0 24px 60px -24px rgba(255, 72, 139, .55); }
+  .ribbon { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); white-space: nowrap; padding: .45rem 1rem; border-radius: 999px; background: var(--grad); font-family: var(--f-mono); font-size: .68rem; letter-spacing: .04em; text-transform: uppercase; }
+  .card-h { display: flex; align-items: center; gap: 14px; }
+  .tile { width: 46px; height: 46px; border-radius: 12px; background: #fff; display: grid; place-items: center; flex: none; }
+  .tile svg { width: 24px; height: 24px; color: var(--pink-600); }
+  .card-h h3 { font-family: var(--f-display); font-weight: 400; font-size: 1.65rem; letter-spacing: -0.02em; line-height: 1.05; }
+  .card-h small { display: block; font-family: var(--f-mono); font-size: .66rem; letter-spacing: .04em; text-transform: uppercase; color: var(--pink-300); margin-bottom: 3px; }
+  .card .pitch { color: var(--t2-d); font-size: .95rem; line-height: 1.45; min-height: 2.9em; }
+  .card hr { border: 0; border-top: 1px solid rgba(179, 192, 212, .22); margin: 0; width: 100%; }
+  .savep { justify-self: start; align-self: flex-start; padding: .32rem .7rem; border-radius: 999px; background: rgba(255, 72, 139, .2); color: var(--pink-300); font-family: var(--f-mono); font-size: .66rem; letter-spacing: .04em; text-transform: uppercase; box-shadow: inset 0 0 0 1px rgba(255, 72, 139, .45); }
+  .savep.ghost { visibility: hidden; }
+  .from { font-family: var(--f-mono); font-size: .66rem; letter-spacing: .04em; text-transform: uppercase; color: var(--t2-d); margin-bottom: -10px; }
+  .price { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .price strong { font-family: var(--f-display); font-weight: 300; font-size: clamp(2.5rem, 2rem + 1.4vw, 3.1rem); letter-spacing: -0.035em; line-height: 1; }
+  .price span { font-family: var(--f-mono); font-size: .7rem; letter-spacing: .04em; text-transform: uppercase; color: var(--t2-d); }
+  .per { color: var(--t2-d); font-size: .9rem; margin-top: -8px; }
+  .per b { color: #fff; font-weight: 600; }
+  .opts-note { color: var(--t2-d); font-size: .85rem; line-height: 1.4; margin-top: -6px; }
+  .opts-note b { color: var(--pink-300); font-weight: 500; }
+  .places { font-family: var(--f-mono); font-size: .66rem; letter-spacing: .04em; text-transform: uppercase; color: var(--slate-400); }
+
+  /* Communauté: rhythm picker (Progression Flexible) */
+  .pace { display: grid; gap: 6px; padding: 10px; border-radius: var(--r-lg); background: rgba(16, 20, 33, .35); box-shadow: inset 0 0 0 1px rgba(179, 192, 212, .16); cursor: default; }
+  .pace > p { font-family: var(--f-mono); font-size: .64rem; letter-spacing: .04em; text-transform: uppercase; color: var(--t2-d); padding: 2px 4px 4px; }
+  .pace-o { position: relative; display: grid; grid-template-columns: 18px 1fr auto; gap: 10px; align-items: center; padding: 8px 10px; border-radius: var(--r-md); cursor: pointer; font-size: .88rem; line-height: 1.3; transition: background .2s; }
+  .pace-o:hover { background: rgba(255, 255, 255, .06); }
+  .pace-o.on { background: rgba(255, 255, 255, .1); }
+  .pace-o input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+  .pace-o .dot { width: 16px; height: 16px; border-radius: 50%; box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .5); }
+  .pace-o.on .dot { background: var(--grad); box-shadow: inset 0 0 0 4px #fff; }
+  .pace-o input:focus-visible + .dot { outline: 3px solid var(--pink); outline-offset: 3px; }
+  .pace-o small { display: block; color: var(--t2-d); font-size: .74rem; }
+  .pace-o em { font-style: normal; font-family: var(--f-mono); font-size: .66rem; color: var(--pink-300); white-space: nowrap; }
+  .pace .flex-h { font-family: var(--f-mono); font-size: .62rem; letter-spacing: .04em; text-transform: uppercase; color: var(--pink-300); padding: 6px 4px 0; }
+
+  .feats { display: grid; gap: 9px; font-size: .92rem; line-height: 1.4; }
+  .feats .plus { color: var(--t2-d); font-size: .85rem; }
+  .feats li { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; }
+  .feats li svg { width: 18px; height: 18px; margin-top: 1px; }
+  .feats li .ok { color: var(--pink-300); }
+  .feats li .ko { color: rgba(179, 192, 212, .5); }
+  .feats li.dim { color: rgba(219, 229, 237, .55); }
+  .feats li.frozen { grid-template-columns: 30px 1fr; align-items: center; padding: 10px 12px; margin-bottom: 4px; border-radius: var(--r-md); background: linear-gradient(135deg, rgba(255, 72, 139, .22), rgba(227, 58, 219, .22)); box-shadow: inset 0 0 0 1px rgba(255, 72, 139, .5); font-size: .82rem; color: var(--t2-d); }
+  .feats li.frozen svg { width: 28px; height: 28px; color: #fff; filter: drop-shadow(0 0 6px rgba(255, 72, 139, .8)); }
+  .feats li.frozen b { display: block; color: #fff; font-size: .95rem; font-weight: 600; }
+  .card .cta { margin-top: auto; }
+
+  /* ---------- tweak panel, points at the selected card ---------- */
+  .panel { grid-column: 1 / -1; position: relative; margin-top: 8px; background: var(--slate-50); color: var(--navy); border-radius: var(--r-xl); padding: clamp(16px, 2.6vw, 30px); scroll-margin-top: 16px; animation: drop .45s var(--ease); }
+  .panel::before { content: ""; position: absolute; top: -11px; left: calc(var(--ax, 50%) - 12px); width: 24px; height: 24px; background: var(--slate-50); transform: rotate(45deg); border-radius: 4px; }
+  @keyframes drop { from { opacity: 0; transform: translateY(-8px); } }
+  .panel-h { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; padding: 0 4px 16px; border-bottom: 1px solid var(--line); }
+  .panel-h strong { font-family: var(--f-display); font-weight: 400; font-size: 1.6rem; letter-spacing: -0.02em; line-height: 1.1; }
+  .panel-h .mod { color: var(--pink-600); }
+  .panel-tools { display: flex; align-items: center; gap: 8px; }
+  /* subtle seller-only link: opens the full customization (downsells) */
+  /* "Réglages du plan": a quiet, admin-looking link under each card (or below the open panels) */
+  .plan-link { text-align: center; margin-top: -10px; }
+  .sublink { appearance: none; border: 0; background: none; padding: 4px 6px; cursor: pointer; font-family: var(--f-mono); font-size: .64rem; letter-spacing: .04em; text-transform: uppercase; color: var(--slate-400); opacity: .55; display: inline-flex; align-items: center; gap: 6px; }
+  .sublink svg { width: 12px; height: 12px; }
+  .sublink:hover, .sublink[aria-expanded="true"] { opacity: 1; color: #fff; }
+  .panel .sublink { margin-top: 18px; color: var(--navy-500); opacity: .6; }
+  .panel .sublink:hover, .panel .sublink[aria-expanded="true"] { color: var(--navy); opacity: 1; }
+  .sublink .chev { width: 7px; height: 7px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg) translateY(-2px); transition: transform .25s; }
+  .sublink[aria-expanded="true"] .chev { transform: rotate(-135deg) translateY(-2px); }
+  .cset { margin-top: 8px; padding-top: 4px; border-top: 1px dashed var(--line); animation: drop .35s var(--ease); }
+  .cset-h { display: flex; justify-content: flex-end; margin-top: 14px; }
+  .panel-b { display: grid; gap: 22px; align-items: start; margin-top: 4px; }
+  @media (min-width: 980px) { .panel-b { grid-template-columns: minmax(0, 1fr) 340px; } .summary { position: sticky; top: 16px; } }
+
+  .group { margin-top: 22px; }
+  .group > .label, .more > summary { color: var(--navy); margin: 0 4px 12px; flex-wrap: wrap; }
+  .hint { color: var(--pink-600); text-transform: none; letter-spacing: 0; font-family: var(--f-text); font-weight: 500; }
+  .list { display: grid; border-top: 1px solid var(--line); }
+  .more { margin-top: 22px; }
+  .more > summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: .6rem; font-family: var(--f-mono); font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; }
+  .more > summary::-webkit-details-marker { display: none; }
+  .more > summary::before { content: "+"; display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--navy); color: #fff; font-size: .9rem; }
+  .more[open] > summary::before { content: "−"; }
+
+  .row { position: relative; display: grid; grid-template-columns: 28px 1fr auto; gap: 14px; align-items: center; padding: 14px 8px; border-bottom: 1px solid var(--line); transition: background .2s; }
+  label.row { cursor: pointer; }
+  label.row:hover { background: rgba(255, 255, 255, .7); }
+  label.row.on { background: rgba(246, 24, 106, .045); }
+  .row .ic { display: grid; place-items: center; width: 28px; height: 28px; }
+  .row .ic > svg { width: 20px; height: 20px; color: var(--pink-600); }
+  .tx { color: var(--navy-500); font-size: .92rem; line-height: 1.45; min-width: 0; }
+  .tx b { display: block; color: var(--navy); font-weight: 600; font-size: .98rem; }
+  .tx .cond { display: block; margin-top: 4px; font-size: .76rem; line-height: 1.4; color: var(--navy-500); opacity: .85; }
+  .pace-note { margin: 10px 4px 8px; font-family: var(--f-mono); font-size: .64rem; letter-spacing: .04em; text-transform: uppercase; color: var(--pink-600); }
+  .pr { text-align: right; white-space: nowrap; font-family: var(--f-display); font-size: 1.08rem; letter-spacing: -0.01em; }
+  .pr .note { display: block; margin-top: 2px; font-family: var(--f-mono); font-size: .62rem; letter-spacing: .04em; text-transform: uppercase; color: var(--navy-500); white-space: normal; max-width: 22ch; margin-left: auto; }
+  .pr.mono { font-family: var(--f-mono); font-size: .66rem; color: var(--navy-500); white-space: normal; max-width: 22ch; }
+  .chip { display: inline-block; font-family: var(--f-mono); font-size: .6rem; letter-spacing: .04em; text-transform: uppercase; padding: .22rem .5rem; border-radius: 999px; background: var(--slate-100); color: var(--navy-500); vertical-align: middle; margin-left: 6px; }
+  .chip.inc { background: rgba(246, 24, 106, .1); color: var(--pink-600); }
+  .chip.tbd { background: #fff4d6; color: #7a5a00; }
+  .row:not(.on) .pr { color: var(--navy-500); }
+
+  .row input, .sec input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+  .box { width: 22px; height: 22px; border-radius: 6px; box-shadow: inset 0 0 0 1.5px rgba(23, 43, 118, .35); display: grid; place-items: center; transition: background .2s, box-shadow .2s; flex: none; }
+  .box svg { width: 14px; height: 14px; color: #fff; opacity: 0; transform: scale(.6); transition: opacity .2s, transform .3s var(--ease); }
+  .box.radio { border-radius: 50%; }
+  .on > .ic .box, .sec.on .box { background: var(--grad); box-shadow: none; }
+  .on > .ic .box svg, .sec.on .box svg { opacity: 1; transform: none; }
+  input:focus-visible + .box { outline: 3px solid var(--pink); outline-offset: 3px; }
+
+  .secs-d { grid-column: 2 / -1; margin-top: 4px; }
+  .secs-d > summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 8px; padding: 6px 0; font-family: var(--f-mono); font-size: .68rem; letter-spacing: .04em; text-transform: uppercase; color: var(--pink-600); }
+  .secs-d > summary::-webkit-details-marker { display: none; }
+  .secs-d > summary::after { content: ""; width: 7px; height: 7px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg) translateY(-2px); transition: transform .25s; }
+  .secs-d[open] > summary::after { transform: rotate(-135deg) translateY(-2px); }
+  .secs { display: grid; gap: 2px; margin-top: 4px; padding-top: 8px; border-top: 1px dashed var(--line); }
+  .secs .min { font-size: .78rem; color: var(--navy-500); padding: 4px 4px 2px; }
+  .sec.locked { cursor: not-allowed; }
+  .sec { position: relative; display: grid; grid-template-columns: 22px 1fr; gap: 10px; align-items: center; padding: 6px 4px; border-radius: var(--r-sm); cursor: pointer; font-size: .87rem; color: var(--navy); }
+  .sec:hover { background: var(--slate-50); }
+  .sec .box { width: 18px; height: 18px; border-radius: 5px; }
+  .sec .box svg { width: 11px; height: 11px; }
+  .sec .p { font-family: var(--f-mono); font-size: .64rem; letter-spacing: .04em; color: var(--navy-500); }
+  .sec:not(.on) span:nth-of-type(2) { color: var(--navy-500); text-decoration: line-through; text-decoration-color: rgba(23, 43, 118, .3); }
+
+  .stepper { display: inline-flex; align-items: center; gap: 4px; margin-top: 8px; padding: 3px; border-radius: var(--r-sm); background: var(--slate-100); }
+  .stepper button { width: 30px; height: 30px; border: 0; border-radius: 6px; background: #fff; color: var(--navy); cursor: pointer; font-size: 1.05rem; line-height: 1; }
+  .stepper button:hover { background: var(--slate-200); }
+  .stepper output { min-width: 5.5em; text-align: center; font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; }
+
+  .foot { margin-top: 18px; padding: 0 4px; color: var(--navy-500); font-size: .8rem; line-height: 1.5; display: grid; gap: 6px; }
+
+  /* summary (navy) */
+  .summary { background: var(--navy); color: #fff; border-radius: var(--r-xl); padding: 24px 22px; display: grid; gap: 14px; }
+  .summary .label { color: var(--t2-d); }
+  .summary h3 { font-family: var(--f-display); font-weight: 400; font-size: 1.4rem; letter-spacing: -0.02em; line-height: 1.15; }
+  .summary h3 small { display: block; font-family: var(--f-mono); font-size: .68rem; letter-spacing: .04em; text-transform: uppercase; color: var(--pink-300); margin-top: 6px; }
+  .big { font-family: var(--f-display); font-weight: 300; font-size: clamp(2.3rem, 1.6rem + 2.2vw, 3rem); letter-spacing: -0.03em; line-height: 1; }
+  .big small { font-family: var(--f-mono); font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; color: var(--pink-300); margin-left: 8px; }
+  .big .upfront { display: block; font-size: 1.1rem; line-height: 1.3; letter-spacing: -0.02em; margin-bottom: 6px; color: var(--t2-d); }
+  .big .upfront small { margin-left: 2px; font-family: var(--f-text); font-size: .9rem; letter-spacing: 0; text-transform: none; color: var(--t2-d); }
+  .lines { display: grid; gap: 6px; padding: 14px 0; border-top: 1px solid rgba(179, 192, 212, .25); border-bottom: 1px solid rgba(179, 192, 212, .25); font-size: .9rem; }
+  .lines div { display: flex; justify-content: space-between; gap: 10px; }
+  .lines span:first-child { color: var(--t2-d); }
+  .lines .ups { display: block; }
+  .ups button { appearance: none; border: 0; background: rgba(255, 72, 139, .16); color: var(--pink-300); border-radius: var(--r-sm); padding: .35rem .6rem; margin: 2px 0 4px; cursor: pointer; font-family: var(--f-mono); font-size: .66rem; letter-spacing: .04em; text-transform: uppercase; text-align: left; }
+  .ups button:hover { background: rgba(255, 72, 139, .28); color: #fff; }
+  .nudge { background: rgba(255, 255, 255, .08); border-radius: var(--r-md); padding: 12px 14px; font-size: .86rem; color: var(--t2-d); }
+  .nudge b { color: #fff; }
+  .nudge button { margin-top: 8px; }
+  .discuss { font-size: .86rem; color: var(--t2-d); }
+  .discuss ul { margin: 6px 0 0; padding-left: 1.1em; list-style: disc; }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+  .toast { font-family: var(--f-mono); font-size: .7rem; letter-spacing: .04em; text-transform: uppercase; color: var(--pink-300); min-height: 1em; }
+  .settings-row { display: flex; justify-content: center; margin-top: 34px; }
+
+  /* settings dialog */
+  dialog { width: min(720px, calc(100vw - 32px)); max-height: calc(100dvh - 48px); padding: 0; border: 0; border-radius: var(--r-xl); background: var(--slate-50); color: var(--navy); }
+  dialog::backdrop { background: rgba(16, 20, 33, .7); backdrop-filter: blur(4px); }
+  .dlg-h { position: sticky; top: 0; z-index: 2; display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 20px 24px; background: var(--slate-50); border-bottom: 1px solid var(--line); }
+  .dlg-h h2 { font-family: var(--f-display); font-weight: 400; font-size: 1.5rem; letter-spacing: -0.02em; }
+  .sync { margin: 2px 0 0; font-size: .74rem; color: var(--navy-500); }
+  .sync[data-state="saved"] { color: #1f8a63; }
+  .sync[data-state="error"], .sync[data-state="offline"] { color: #b54708; }
+  .setfs { border: 0; margin: 0; padding: 0; min-width: 0; }
+  .setfs:disabled .fields, .setfs:disabled .fblock, .setfs:disabled .fs-reset { opacity: .5; }
+  .lock { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 18px 0 0; padding: 12px 14px; border-radius: var(--r-md); background: var(--slate-100); font-size: .85rem; }
+  .lock label { font-weight: 600; }
+  .lock input { flex: 1 1 160px; min-width: 0; padding: 8px 10px; border: 0; border-radius: var(--r-sm); box-shadow: inset 0 0 0 1px var(--line); background: #fff; font: inherit; }
+  .lock input:focus { outline: none; box-shadow: inset 0 0 0 2px var(--pink); }
+  .lock-msg { flex-basis: 100%; color: var(--navy-500); font-size: .78rem; }
+  .lock.ok { background: transparent; padding: 0; color: var(--navy-500); }
+  .dlg-b { padding: 6px 24px 26px; }
+  .fs { margin-top: 22px; }
+  .fs > .label { margin-bottom: 10px; }
+  .fs-h { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .fs-h .label { margin: 0; }
+  .fs-reset { appearance: none; border: 0; background: none; cursor: pointer; padding: 4px 6px; font-family: var(--f-mono); font-size: .64rem; letter-spacing: .04em; text-transform: uppercase; color: var(--navy-500); text-decoration: underline; text-decoration-color: rgba(88, 100, 144, .35); text-underline-offset: 3px; }
+  .fs-reset:hover { color: var(--pink-600); }
+  .fs > p { color: var(--navy-500); font-size: .85rem; margin: -4px 0 10px; }
+  /* flat rows: one hairline between settings, no boxes */
+  .fields { display: grid; border-top: 1px solid var(--line); }
+  .field { display: grid; grid-template-columns: 1fr 150px; gap: 12px; align-items: center; padding: 10px 2px; border-bottom: 1px solid var(--line); font-size: .9rem; }
+  .field small { display: block; color: var(--navy-500); font-size: .76rem; }
+  .inp { display: flex; align-items: center; gap: 6px; background: #fff; border-radius: var(--r-sm); padding: 0 10px; box-shadow: inset 0 0 0 1px var(--line); }
+  .inp input { width: 100%; min-width: 0; border: 0; background: transparent; padding: 8px 0; text-align: right; font-family: var(--f-mono); font-size: .85rem; }
+  .inp input:focus { outline: none; }
+  .inp:focus-within { box-shadow: inset 0 0 0 2px var(--pink); }
+  .inp span { font-family: var(--f-mono); font-size: .7rem; color: var(--navy-500); white-space: nowrap; }
+  .switch { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; padding: 12px 2px; border-bottom: 1px solid var(--line); cursor: pointer; }
+  /* "Tout réinitialiser" and its undo link only show at the top of the window, so a stray click mid-scroll can't wipe everything */
+  .top-only { transition: opacity .2s, visibility .2s; }
+  dialog.scrolled .top-only { opacity: 0; visibility: hidden; pointer-events: none; }
+  .undo { appearance: none; border: 0; background: none; cursor: pointer; padding: 4px 6px; font-size: .8rem; color: var(--navy-500); text-decoration: underline; text-decoration-color: rgba(88, 100, 144, .35); text-underline-offset: 3px; }
+  .undo:hover { color: var(--navy); }
+  .undo:disabled { opacity: .4; cursor: default; text-decoration: none; color: var(--navy-500); } /* nothing to restore yet */
+  /* where an à la carte price is used */
+  .calc { font-family: var(--f-mono); font-size: .68rem; color: var(--navy-500); white-space: nowrap; }
+  .field small .calc { white-space: normal; display: block; margin-top: 3px; }
+  /* an option used in several plans: a title line, then one indented line per plan */
+  .fblock { padding: 12px 2px 6px; border-bottom: 1px solid var(--line); font-size: .9rem; }
+  .fblock > small { display: block; color: var(--navy-500); font-size: .76rem; }
+  .sub { display: grid; grid-template-columns: 1fr auto 150px; gap: 12px; align-items: center; padding: 7px 0 7px 14px; margin-top: 4px; border-left: 2px solid var(--slate-200); }
+  .sub-l { font-size: .82rem; line-height: 1.35; min-width: 0; }
+  .sub-l b { font-weight: 600; }
+  .sub-l span { color: var(--navy-500); }
+  @media (max-width: 560px) { .sub { grid-template-columns: 1fr auto; } .sub .inp { grid-column: 1 / -1; } }
+  dialog { overflow-x: hidden; }
+  .undo[hidden] { display: none; }
+  .switch input { position: absolute; opacity: 0; }
+  .knob { width: 44px; height: 26px; border-radius: 999px; background: var(--slate-200); position: relative; transition: background .25s; }
+  .knob::after { content: ""; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .2); transition: transform .3s var(--ease); }
+  .switch input:checked + .knob { background: var(--pink); }
+  .switch input:checked + .knob::after { transform: translateX(18px); }
+  .switch input:focus-visible + .knob { outline: 3px solid var(--pink); outline-offset: 3px; }
+  .x { width: 40px; height: 40px; border: 0; border-radius: 50%; background: var(--slate-100); color: var(--navy); cursor: pointer; font-size: 1.2rem; }
+  .x:hover { background: var(--slate-200); }
+
+  @media (max-width: 560px) {
+    .row { grid-template-columns: 24px 1fr; gap: 12px; padding: 13px 4px; }
+    .row > .pr { grid-column: 2; text-align: left; }
+    .pr .note { margin-left: 0; }
+    .secs { grid-column: 1 / -1; }
+    .field { grid-template-columns: 1fr; }
+    .dlg-h, .dlg-b { padding-left: 16px; padding-right: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+  @media print {
+    body { background: #fff; color: var(--navy); } body::before, .bar, .no-print, .card:not(.sel), .actions, .toast, .stepper button, .nudge, .settings-row, .more:not([open]) { display: none !important; }
+    .top img { filter: invert(1) hue-rotate(180deg); }
+    .hero h1, .hero .lead { color: var(--navy); }
+    .plans, .panel-b { grid-template-columns: 1fr; }
+    .card { break-inside: avoid; } .panel::before { display: none; }
+    .summary { position: static; break-inside: avoid; }
+    .row:not(.on):not(.static), .sec:not(.on) { display: none; }
+    .panel { padding: 0; background: #fff; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a href="/" aria-label="Viesigners"><img src="/assets/img/logo-viesigners.png" alt="Viesigners" width="320" height="62"></a>
+    <span class="mono tag">Outil interne · Forfaits</span>
+  </header>
+
+  <section class="hero">
+    <p class="label">Accélération ImpaX</p>
+    <h1>Forfaits <span class="acc">Accélération ImpaX</span></h1>
+    <p class="lead">Choisis un forfait, puis ajuste-le au besoin et au budget du client.</p>
+  </section>
+
+  <div class="bar"><div class="seg" role="group" aria-label="Fréquence de paiement" id="terms"></div></div>
+
+  <div class="plans" id="plans"></div>
+
+  <div class="settings-row">
+    <button class="pill pill--ghost" type="button" id="open-settings">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+      Réglages globaux
+    </button>
+  </div>
+</div>
+
+<dialog id="settings" aria-labelledby="settings-title">
+  <div class="dlg-h"><div><h2 id="settings-title">Réglages globaux</h2><p class="sync" id="sync"></p></div><div class="panel-tools"><button class="undo top-only" type="button" data-undo disabled title="Aucune réinitialisation à annuler">Réglages précédents</button><button class="pill pill--sm pill--light top-only" type="button" data-defaults>Tout réinitialiser</button><button class="x" type="button" id="close-settings" aria-label="Fermer">×</button></div></div>
+  <div class="dlg-b"><div id="lockbar"></div><fieldset class="setfs" id="settings-fs"><div id="settings-body"></div></fieldset></div>
+</dialog>
+
+<script>
+/* ===========================================================================
+   Forfaits Accélération ImpaX — from the Google Sheets "Accélération ImpaX -
+   Forfaits" (Minimum / Communauté / VIP, -15% quarterly, -50% annual) and the
+   archived "Progression Flexible ImpaX" sheet (6 or 4 calls per quarter,
+   brand guide, "Transfers de valeur" insurance).
+
+   Pricing model
+   - Every recurring price is a WEEKLY amount. The reference weekly amount
+     (settings) is the Minimum plan's price; Communauté and VIP are multiples.
+   - Communauté has a call rhythm: 2 Q&A slots a week, or "Progression
+     Flexible" (6 or 4 calls per 3 months), each with its own weekly price.
+     Defaults keep the archived sheet's quarterly prices (845 $ and 702 $).
+   - Paying ahead discounts every weekly amount: quarterly -15%, annual -50%.
+   - Tweaking: each feature has an à la carte weekly price, added when ticked,
+     removed when an included one is unticked (never below 0).
+   - The brand guide is a one-time purchase whose discount depends on the
+     payment frequency. "Done for you" website items are flags to discuss.
+   Settings are saved in this browser (localStorage).
+=========================================================================== */
+
+const STORE = 'vz-impax-settings-v6';
+/* older saves, newest first, with the values to drop because their default changed (v2: 50% annual; v3: rhythm % worked back from old prices) */
+const STORE_OLD = [
+  ['vz-impax-settings-v5', ['feat', 'sec']],
+  ['vz-impax-settings-v4', ['feat', 'sec', 'guide', 'insurance']],
+  ['vz-impax-settings-v3', ['pacePct', 'feat', 'sec', 'guide', 'insurance']],
+  ['vz-impax-settings-v2', ['pacePct', 'disc.year', 'feat', 'sec', 'guide', 'insurance']],
+];
+const WEEKS = { week: 1, month: 52 / 12, quarter: 13, year: 52 };
+
+const DEFAULTS = {
+  ref: 50,
+  mult: { minimum: 1, communaute: 6, vip: 12 },
+  disc: { quarter: 15, year: 40 },
+  /* Communauté rhythms other than Intensif: % added to Intensif's cost per call (Intensif weekly price ÷ 2 calls).
+     Fewer calls cost more per call (flexibility premium). With Intensif at 300 $/sem (150 $ per call):
+     Régulier 195 $/sem, Vitesse de croisière 96,92 $/sem, Vitesse ajustée 69,23 $/sem.
+     DEFAULTS hold the team's chosen numbers: every browser starts from them (a browser's own edits override them locally). */
+  pacePct: { regulier: 30, croisiere: 40, ajustee: 50 },
+  frozen: true,
+  dfyRate: 125,
+  guide: { value: 600 },   // one-time; discounted by the payment-frequency discount above
+  insurance: { price: 50 }, // one-time, fixed
+  /* à la carte prices, in % so they follow the base price: one % per plan where the item is used, of THAT plan's default weekly price
+     (Minimum 50 $, Communauté Intensif 300 $, VIP 600 $ by default). Canal 24/7: 150 $ Minimum, 15 $ Communauté, 60 $ VIP.
+     Exception: monthly Q&A calls = % added to Intensif's cost per call, 12 calls a year. */
+  feat: {
+    qaMonthly: { minimum: 60 },
+    urgentPrivate: { communaute: 10 },
+    ateliers: { vip: 25 },
+    channel247: { minimum: 300, communaute: 5, vip: 10 },
+    urgentPrivateVip: { vip: 0 },
+    transferHours: { vip: 0 },
+  },
+  sec: { qg: 5, formule: 5, offre: 5, traffic: 5, vente: 5, accomp: 5, continuite: 5, dare: 5 }, // % of the current plan's default weekly price
+};
+
+const SECTIONS = [
+  { id: 'qg', t: 'Quartier Général' },
+  { id: 'formule', t: "Formule ImpaX — Le modèle d'affaires à 500$/h" },
+  { id: 'offre', t: "Offre sur le web — Le protocole de design d'offre irrésistible" },
+  { id: 'traffic', t: 'Traffic sur le web — Le moteur de génération de prospects sur demande' },
+  { id: 'vente', t: 'Vente sur le web — Les méthodes de signature de clients faciles, sans pression' },
+  { id: 'accomp', t: "Accompagnement — La formule d'accompagnement premium à 2h/sem" },
+  { id: 'continuite', t: "Continuité — Les stratégies de réengagement clients et d'utilisation de leur succès" },
+  { id: 'dare', t: 'BONUS : DARe — Direction Aucun Regret : Vis à ton plein potentiel' },
+];
+
+/* type: check | platform | qty | once | flag | info.  x = exclusive group.  s = short label on the plan cards.
+   free = label when the price is legitimately 0.  lock = when included, shown with a plain checkmark, cannot be removed. */
+const FEATURES = [
+  { id: 'platform', type: 'platform', lock: true, s: "Plateforme d'Excellence · 8 sections", b: "Accès à la Plateforme d'Excellence", t: 'Formation en ligne à ton rythme.' },
+  { id: 'private750', type: 'info', s: 'Rencontres privées sur-demande à 750$/h', b: 'Rencontres privées sur-demande illimitées', t: 'par vidéoconférence, au taux préférentiel de 750$/h.', free: '750 $/h à l’usage', note: 'Normalement 1300$ · sauve 550$' },
+  { id: 'urgentChannel', type: 'check', lock: true, s: "Canal direct d'urgences (WhatsApp)", b: "Canal direct d'urgences", t: 'avec les Viesigners via WhatsApp.' },
+  { id: 'community', type: 'check', lock: true, s: 'Communauté WhatsApp', b: 'Communauté WhatsApp', t: "Pour échanger et poser des questions à d'autres entrepreneurs comme toi.", free: 'Sans frais additionnel' },
+  { id: 'frozen', type: 'info', s: 'Prix gelé à vie', b: 'Prix gelé à vie!', t: 'Conserve ton prix parce que tu continues avec nous.', free: 'Inclus', onlyIf: 'frozen' },
+
+  { id: 'qaMonthly', type: 'check', x: 'qa', lock: true, s: 'Appels Q&amp;A de groupe mensuels', b: 'Appels Q&amp;A de groupe mensuels', t: "N'attends pas 3 mois pour poser tes questions : viens sur un appel Q&amp;A chaque première semaine du mois." },
+  { id: 'qa1', type: 'check', x: 'qa', lock: true, s: "1 plage d'appel Q&amp;A / sem", b: "Accès à 1 plage d'appel Q&amp;A par semaine", t: 'de 1h en groupe en vidéoconférence' },
+  { id: 'qa2', type: 'check', x: 'qa', lock: true, s: "2 plages d'appel Q&amp;A / sem", b: "Accès à 2 plages d'appel Q&amp;A par semaine", t: 'de 1h en groupe en vidéoconférence' },
+  { id: 'flex6', type: 'check', x: 'qa', lock: true, s: '6 appels Q&amp;A sur 3 mois, à ton rythme', b: 'Accès à 6 appels Q&amp;A sur 3 mois', t: 'de 1h en groupe en vidéoconférence. Progression Flexible : tu peux passer des semaines sans appel.' },
+  { id: 'flex4', type: 'check', x: 'qa', lock: true, s: '4 appels Q&amp;A sur 3 mois, à ton rythme', b: 'Accès à 4 appels Q&amp;A sur 3 mois', t: 'de 1h en groupe en vidéoconférence. Progression Flexible : tu peux passer des semaines sans appel.' },
+  { id: 'insurance', type: 'once', s: 'Assurance « Transfers de valeur »', b: 'Assurance « Transfers de valeur »', t: "Convertis chaque heure d'appel non utilisée en 1h de service « <i>Done for you</i> » — Ex. On crée ton image de pub." },
+
+  { id: 'urgentPrivate', type: 'check', x: 'urgent', s: "Rencontres privées d'urgence illimitées", b: "Rencontres privées d'urgence illimitées", t: 'sur-demande, par vidéoconférence', cond: 'Réservées aux questions non résolues via les appels, la communauté ou le canal direct.' },
+  { id: 'dfy20', type: 'check', x: 'dfy', lock: true, s: '20% de rabais sur le « Done for you »', b: '20% de rabais sur honoraires « <i>Done for you</i> »', t: 'Contactez-nous pour la liste des services disponibles.', pct: 20 },
+
+  { id: 'ateliers', type: 'qty', max: 5, s: 'Atelier de travail privé', b: 'Ateliers de travail', t: 'de 1h en privé par vidéoconférence' },
+  { id: 'channel247', type: 'check', s: 'Canal direct 24/7, support prioritaire en privé', b: 'Canal direct 24/7', t: 'avec les Viesigners (via WhatsApp) pour du support prioritaire en privé' },
+  { id: 'urgentPrivateVip', type: 'check', x: 'urgent', s: "Rencontres d'urgence illimitées, sans condition", b: "Rencontres privées d'urgence illimitées", t: 'sur-demande, par vidéoconférence, sans condition' },
+  { id: 'transferHours', type: 'check', s: 'Heures transférables en « clé-en-main »', b: 'Heure d’appel privé transférable en « clé-en-main »', t: '1h d’atelier de travail = 2h15 de travail « <i>done for you</i> ». Contactez-nous pour la liste des services disponibles.' },
+  { id: 'dfy30', type: 'check', x: 'dfy', lock: true, s: '30% de rabais sur le « Done for you »', b: '30% de rabais sur honoraires « <i>Done for you</i> »', t: 'Contactez-nous pour la liste des services disponibles.', pct: 30 },
+
+  { id: 'guide', type: 'once', s: 'Guide de marque', b: 'Guide de marque', t: '3 templates de visuels de publications (images, carousels citations), 2 templates de visuels pour publicités (meta/linkedin), typographies, palette de couleurs pour ta marque, documentation pour utiliser les templates et les couleurs.' },
+  { id: 'site20', type: 'flag', sum: "Site web d'autorité suprême", s: "Site web d'autorité suprême à 20% de rabais", b: "Ton site Web d'autorité suprême à 20% de rabais", t: 'de classe top 3%, 100% clé-en-main, modèles éprouvés, personnalisé pour ta marque.', free: 'À partir de seulement 2000$', note: "Sélectionner pour qu'on prévoit du temps pour en discuter" },
+  { id: 'site13h', type: 'flag', s: "13h d'ateliers converties en site web complet, sans frais", b: "Convertis 13 heures d'atelier de travail en site web complet d'autorité suprême sans frais", t: 'Valeur de 2600$, applicable en tout temps, site de classe top 3%, 100% clé-en-main, modèles éprouvés, personnalisé pour ta marque.', free: 'Sans frais additionnel' },
+];
+const F = Object.fromEntries(FEATURES.map((f) => [f.id, f]));
+
+/* inc: true = included, number = included quantity per week.  up = suggested upsells shown in the panel. */
+const BASE_INC = { platform: true, private750: true, urgentChannel: true, community: true, frozen: true };
+const PACES = {
+  intensif: { t: 'Intensif', cpw: 2, d: "2 plages d'appel Q&A par semaine", inc: { ...BASE_INC, qa2: true, urgentPrivate: true, dfy20: true } },
+  regulier: { t: 'Régulier', cpw: 1, d: "1 plage d'appel Q&A par semaine", inc: { ...BASE_INC, qa1: true, urgentPrivate: true, dfy20: true } },
+  croisiere: { t: 'Vitesse de croisière', cpw: 6 / 13, d: '6 appels Q&A sur 3 mois', flex: true, inc: { ...BASE_INC, flex6: true, dfy20: true } },
+  ajustee: { t: 'Vitesse ajustée', cpw: 4 / 13, d: '4 appels Q&A sur 3 mois, pour experts occupés', flex: true, inc: { ...BASE_INC, flex4: true, dfy20: true } },
+};
+const PLANS = [
+  { id: 'minimum', pre: 'Forfait', name: 'Minimum', icon: 'laptop', pitch: 'Pour avancer à ton rythme avec la formation et un filet de sécurité.', inc: BASE_INC, up: ['qaMonthly', 'channel247', 'guide', 'site20'], miss: ['Appels Q&amp;A de groupe (en option)'] },
+  { id: 'communaute', pre: 'Accélération', name: 'Communauté', icon: 'people', ribbon: 'Le plus populaire', places: 'Seulement 8 places au total', pitch: 'Pour progresser en groupe, avec des appels Q&A au rythme qui te convient.', up: ['insurance', 'channel247', 'urgentPrivate', 'guide', 'site20'] },
+  { id: 'vip', pre: 'Accélération', name: 'VIP', icon: 'crown', places: 'Seulement 3 places au total', pitch: 'Pour aller vite avec des ateliers privés et un accès direct aux Viesigners.', inc: { ...BASE_INC, qa2: true, urgentPrivate: false, dfy20: false, ateliers: 1, channel247: true, urgentPrivateVip: true, transferHours: true, dfy30: true, site13h: true }, up: ['ateliers', 'guide'] },
+];
+const P = Object.fromEntries(PLANS.map((p) => [p.id, p]));
+const TERMS = [{ id: 'week', t: 'Hebdo' }, { id: 'quarter', t: 'Trimestriel' }, { id: 'year', t: 'Annuel' }];
+const TERM_UNIT = { week: '/ sem', quarter: '/ 3 m', year: '/ an' };
+const TERM_PER = { week: 'par mois', quarter: 'par trimestre', year: 'par année' };
+
+/* ----------------------------- state ----------------------------------- */
+const clone = (o) => JSON.parse(JSON.stringify(o));
+function deepMerge(a, b) { for (const k in b) { if (b[k] && typeof b[k] === 'object' && a[k] && typeof a[k] === 'object') deepMerge(a[k], b[k]); else if (k in a) a[k] = b[k]; } return a; }
+function loadSettings() {
+  let s = clone(DEFAULTS);
+  try {
+    const raw = localStorage.getItem(STORE);
+    if (raw) s = deepMerge(s, JSON.parse(raw));
+    else {
+      for (const [key, drop] of STORE_OLD) {
+        const old = localStorage.getItem(key); if (!old) continue;
+        const o = JSON.parse(old);
+        for (const path of drop) { const [a, b] = path.split('.'); if (b) { if (o[a]) delete o[a][b]; } else delete o[a]; }
+        s = deepMerge(s, o); break;
+      }
+    }
+  } catch (e) {}
+  return s;
+}
+function saveSettings() { try { localStorage.setItem(STORE, JSON.stringify(S)); } catch (e) {} pushShared(); } // this device + the team (if unlocked)
+
+let S = loadSettings();
+let term = 'quarter';
+let planId = null;          // no plan selected → no panel
+let pace = 'intensif';      // Communauté call rhythm
+let sel = {}, secs = {};
+let secsOpen = false;       // platform sections list: collapsed by default
+/* two panels under the cards: the extra options (what a happy client sees) and, below it, the plan settings (downsells, seller only) */
+let upsellOpen = false, customOpen = false;
+
+const incOf = (pid, pc = pace) => (pid === 'communaute' ? PACES[pc].inc : P[pid].inc);
+function choosePlan(pid) {
+  /* keep one-time and "to discuss" picks (brand guide, website) when switching plans; recurring options reset */
+  const prevInc = planId ? incOf(planId) : {};
+  const added = Object.keys(sel).filter((id) => sel[id] && !prevInc[id] && ['once', 'flag'].includes(F[id].type) && P[pid].up.includes(id)); // only if the new plan offers it
+  planId = pid;
+  if (typeof lastPace !== 'undefined') lastPace = pace;
+  sel = Object.fromEntries(Object.entries(incOf(pid)).filter(([, v]) => v));
+  for (const id of added) { const f = F[id]; if (f.x && FEATURES.some((o) => o.x === f.x && sel[o.id])) continue; sel[id] = true; }
+  if (!Object.keys(secs).length || !planId) secs = {};
+  SECTIONS.forEach((s) => { if (!(s.id in secs)) secs[s.id] = true; });
+}
+
+/* ----------------------------- pricing --------------------------------- */
+const disc = () => (term === 'week' ? 0 : (S.disc[term] || 0) / 100);
+const qty = (v) => (v === true ? 1 : +v || 0);
+const QA_MONTHLY_CPW = 12 / 52; // monthly Q&A: 12 calls a year
+const perCall = () => (S.ref * S.mult.communaute) / 2; // Intensif cost per call (2 calls a week)
+const planDefault = (pid) => planWeekly(pid, 'intensif'); // a plan's default weekly price (Communauté: Intensif)
+const featPrice = (id, pid = planId) => {
+  const pct = +((S.feat[id] || {})[pid]) || 0;
+  if (id === 'qaMonthly') return perCall() * QA_MONTHLY_CPW * (1 + pct / 100);
+  return planDefault(pid) * pct / 100;
+};
+const secPrice = (id, pid = planId) => planDefault(pid) * (+S.sec[id] || 0) / 100;
+function planWeekly(pid, pc = pace) {
+  if (pid === 'communaute' && pc !== 'intensif') {
+    const perCall = (S.ref * S.mult.communaute) / PACES.intensif.cpw; // Intensif cost per call
+    return perCall * PACES[pc].cpw * (1 + (+S.pacePct[pc] || 0) / 100);
+  }
+  return S.ref * (S.mult[pid] ?? 1);
+}
+function weeklyRaw() {
+  const inc = incOf(planId);
+  let w = planWeekly(planId);
+  for (const f of FEATURES) if (f.type === 'check' || f.type === 'qty') w += (qty(sel[f.id]) - qty(inc[f.id])) * featPrice(f.id);
+  for (const s of SECTIONS) w += ((sel.platform && secs[s.id] ? 1 : 0) - (inc.platform ? 1 : 0)) * secPrice(s.id);
+  return Math.max(0, w);
+}
+const weekly = () => weeklyRaw() * (1 - disc());
+const guidePct = () => (term === 'week' ? 0 : +S.disc[term] || 0); // same discount as the plan's payment frequency
+const guidePrice = () => S.guide.value * (1 - guidePct() / 100);
+/* one-time purchases (the website items are not priced: "prix à évaluer") */
+const ONCE = { guide: () => guidePrice(), insurance: () => +S.insurance.price || 0 };
+const oncePrice = (id) => ONCE[id]();
+const onceSel = () => Object.keys(ONCE).filter((id) => sel[id]);
+const oneTime = () => onceSel().reduce((t, id) => t + oncePrice(id), 0);
+const onceName = (id) => (id === 'guide' ? `Guide de marque${guidePct() ? ` à ${guidePct()}% de rabais` : ''}` : plain(F[id].b));
+const onceShort = (id) => (id === 'guide' ? 'Guide de marque' : 'Assurance Transfers de valeur'); // résumé card labels
+const flagsSel = () => FEATURES.filter((f) => f.type === 'flag' && sel[f.id] && !incOf(planId)[f.id]);
+/* lowest price a plan can be sold at, before tweaks (Communauté: its cheapest call rhythm) */
+const fromWeekly = (pid) => (pid === 'communaute' ? Math.min(...Object.keys(PACES).map((pc) => planWeekly(pid, pc))) : planWeekly(pid));
+const MIN_SECTIONS = 2;
+function isModified() {
+  const inc = incOf(planId);
+  const ids = new Set([...Object.keys(inc), ...Object.keys(sel)]);
+  for (const id of ids) if (id !== 'frozen' && qty(inc[id]) !== qty(sel[id])) return true;
+  return SECTIONS.some((s) => !secs[s.id]);
+}
+
+/* ----------------------------- formatting ------------------------------ */
+const r2 = (n) => Math.round(n * 100) / 100;
+const money = (n) => { n = r2(n); return n.toLocaleString('fr-CA', { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 }) + ' $'; };
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const plain = (h) => { const d = document.createElement('div'); d.innerHTML = h; return d.textContent.trim(); };
+const visible = (f) => !(f.onlyIf && !S[f.onlyIf]);
+const planName = (pid = planId) => {
+  if (pid !== 'communaute' || pace === 'intensif') return P[pid].name; // the default rhythm needs no label
+  return `${P[pid].name} · ${PACES[pace].flex ? `Progression Flexible (${PACES[pace].t})` : PACES[pace].t}`;
+};
+
+const ICON = {
+  check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5" stroke-width="1.6"/><path d="M7.8 12.3l2.8 2.8 5.6-5.6"/></svg>',
+  cross: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"/><path d="M9 9l6 6M15 9l-6 6"/></svg>',
+  tick: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+  ok: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+  freeze: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M3.34 7l17.32 10M3.34 17 20.66 7"/><path d="M9.6 3.9 12 5.8l2.4-1.9M9.6 20.1 12 18.2l2.4 1.9M4.4 10.6l3-.4.4-3M19.6 13.4l-3 .4-.4 3M4.4 13.4l3 .4.4 3M19.6 10.6l-3-.4-.4-3"/><circle cx="12" cy="12" r="1.6"/></svg>',
+  video: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="2.5" y="6" width="13" height="12" rx="2"/><path d="m15.5 10 6-3.5v11l-6-3.5z"/></svg>',
+  laptop: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></svg>',
+  people: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c.6-3.3 3-5 6-5s5.4 1.7 6 5"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14c2.4.2 4 1.7 4.5 4.5"/></svg>',
+  crown: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3.5 8l4.5 4 4-7 4 7 4.5-4-2 11h-13z"/><path d="M6 19h12"/></svg>',
+};
+
+/* ----------------------------- render: terms --------------------------- */
+function renderTerms() {
+  document.getElementById('terms').innerHTML = TERMS.map((t) => {
+    const d = t.id === 'week' ? 0 : S.disc[t.id];
+    return `<button type="button" data-term="${t.id}" aria-pressed="${t.id === term}">${t.t}${d ? `<small>-${d}%</small>` : ''}</button>`;
+  }).join('');
+}
+
+/* ----------------------------- render: plan cards ---------------------- */
+function cardFeatures(p) {
+  const order = ['minimum', 'communaute', 'vip'];
+  const prev = order[order.indexOf(p.id) - 1];
+  const inc = incOf(p.id, 'intensif');
+  const prevInc = prev ? incOf(prev, 'intensif') : {};
+  const items = FEATURES.filter((f) => visible(f) && f.id !== 'frozen' && inc[f.id] && (!prev || !prevInc[f.id] || qty(inc[f.id]) !== qty(prevInc[f.id])))
+    .map((f) => `<li><span class="ok">${ICON.check}</span><span>${f.type === 'qty' ? `${inc[f.id]} ${f.s.toLowerCase()} / sem` : f.s}</span></li>`);
+  const miss = (p.miss || []).map((t) => `<li class="dim"><span class="ko">${ICON.cross}</span><span>${t}</span></li>`);
+  const frozen = S.frozen ? `<li class="frozen">${ICON.freeze}<span><b>Prix gelé à vie</b>Tu conserves ce prix tant que tu continues avec nous.</span></li>` : '';
+  return `<ul class="feats">${frozen}${prev ? `<li class="plus" style="display:block">Tout le forfait ${P[prev].name}, plus :</li>` : ''}${items.join('')}${miss.join('')}</ul>`;
+}
+/* Communauté's call rhythm, chosen in the panel (a radio choice, so circles) */
+function paceHtml() {
+  const d = 1 - disc();
+  const opt = (id) => `<label class="row${pace === id ? ' on' : ''}"><span class="ic"><input type="radio" name="pace" data-pace="${id}" ${pace === id ? 'checked' : ''}><span class="box radio">${ICON.tick}</span></span><span class="tx"><b>${PACES[id].t}${id === 'intensif' ? '<span class="chip inc">Le plus populaire</span>' : ''}</b>${PACES[id].d}</span><span class="pr">${money(planWeekly('communaute', id) * d)}<span class="note">/ sem</span></span></label>`;
+  return `<div class="group"><p class="label">Rythme d'appels <span class="hint">— en choisir 1</span></p><div class="list">${opt('intensif')}${opt('regulier')}</div>
+    <p class="pace-note">Progression Flexible — passe des semaines sans appel</p><div class="list">${opt('croisiere')}${opt('ajustee')}</div></div>`;
+}
+const GEAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg>';
+function renderPlans() {
+  const d = disc();
+  const html = PLANS.map((p) => {
+    /* every card shows the plan with its default settings (Communauté: the Intensif rhythm); tweaks live in the panel */
+    const raw = planWeekly(p.id, 'intensif');
+    const w = raw * (1 - d);
+    const isSel = p.id === planId;
+    return `<article class="card${p.ribbon ? ' feat' : ''}${isSel ? ' sel' : ''}" data-card="${p.id}" tabindex="-1">
+      ${p.ribbon ? `<span class="ribbon">${p.ribbon}</span>` : ''}
+      <div class="card-h"><span class="tile">${ICON[p.icon]}</span><h3><small>${p.pre}</small>${p.name}</h3></div>
+      <p class="pitch">${p.pitch}</p>
+      <span class="savep${d ? '' : ' ghost'}">Sauve ${money(raw * d * 52)} / an</span>
+      <p class="from">Prix de base</p>
+      <div class="price"><strong>${money(w)}</strong><span>/ sem</span></div>
+      <p class="per">soit <b>${money(term === 'week' ? w * WEEKS.month : w * WEEKS[term])}</b> ${TERM_PER[term]}${d ? ` · payé ${term === 'quarter' ? 'au trimestre' : "à l'année"}` : ''}</p>
+      <hr>
+      ${cardFeatures(p)}
+      ${p.places ? `<p class="places">${p.places}</p>` : ''}
+      <button class="pill pill--block cta ${isSel ? '' : 'pill--white'}" type="button" data-plan="${p.id}" aria-expanded="${isSel}">${isSel ? 'Sélectionné' : `Choisir ${p.name}`}</button>
+    </article>`;
+  });
+  const grid = document.getElementById('plans');
+  const gear = GEAR;
+  grid.innerHTML = html.join('')
+    + (planId && upsellOpen ? '<section class="panel" id="panel" aria-label="Options supplémentaires"></section>' : '')
+    + (planId && upsellOpen ? '' : PLANS.map((p) => `<div class="plan-link no-print" data-link="${p.id}"><button class="sublink" type="button" data-custom="${p.id}">${gear}Réglages du plan</button></div>`).join(''));
+  placePanel();
+}
+/* order in the grid. Desktop: cards, options panel, plan-settings panel, then one "Réglages du plan" link under each column.
+   One column: each card, its panels when it is the chosen one, then its link. The options panel's arrow points at the chosen card. */
+function placePanel() {
+  const grid = document.getElementById('plans');
+  const panels = ['panel'].map((id) => document.getElementById(id)).filter(Boolean);
+  const cols = getComputedStyle(grid).gridTemplateColumns.split(' ').length;
+  const order = cols > 1
+    ? [...PLANS.map((p) => grid.querySelector(`[data-card="${p.id}"]`)), ...panels, ...PLANS.map((p) => grid.querySelector(`[data-link="${p.id}"]`))]
+    : PLANS.flatMap((p) => [grid.querySelector(`[data-card="${p.id}"]`), ...(p.id === planId ? panels : []), grid.querySelector(`[data-link="${p.id}"]`)]);
+  order.filter(Boolean).forEach((el) => grid.appendChild(el));
+  const panel = document.getElementById('panel');
+  if (!panel) return;
+  const card = grid.querySelector(`[data-card="${planId}"]`);
+  const pr = panel.getBoundingClientRect(), cr = card.getBoundingClientRect();
+  panel.style.setProperty('--ax', `${cr.left + cr.width / 2 - pr.left}px`);
+}
+
+/* ----------------------------- render: panel --------------------------- */
+function priceTag(f, included) {
+  const d = 1 - disc();
+  if (f.type === 'flag' || f.type === 'info') {
+    if (f.type === 'flag' && included) return '<span></span>';
+    return `<span class="pr${f.free && f.free.length > 14 ? ' mono' : ''}">${f.free || ''}${f.note ? `<span class="note">${f.note}</span>` : ''}</span>`;
+  }
+  if (f.type === 'once') {
+    const pct = f.id === 'guide' ? guidePct() : 0;
+    return `<span class="pr">${money(oncePrice(f.id))}<span class="note">Paiement unique${pct ? ` · -${pct}% · valeur ${money(S.guide.value)}` : ''}</span></span>`;
+  }
+  if (included) return '<span></span>'; // the group title already says "Inclus"
+  if (f.free && !featPrice(f.id)) return `<span class="pr mono">${f.free}</span>`;
+  if (!featPrice(f.id)) return `<span class="pr"><span class="chip tbd">Prix à définir</span></span>`;
+  return `<span class="pr">+ ${money(featPrice(f.id) * d)}<span class="note">/ sem${f.type === 'qty' ? ' chacun' : ''}</span></span>`;
+}
+/* small print under an item: the sheet's asterisk notes (Done-for-you discounts are computed from the regular hourly rate) */
+const cond = (f) => {
+  const t = f.pct ? `Sauve ${money(S.dfyRate * f.pct / 100)}/h — paye ${money(S.dfyRate * (1 - f.pct / 100))}/h au lieu de ${money(S.dfyRate)}/h.` : f.cond;
+  return t ? `<small class="cond">${t}</small>` : '';
+};
+function rowHtml(f) {
+  const inc = incOf(planId);
+  const included = !!inc[f.id];
+  if (f.type === 'platform') {
+    /* always included; the client picks at least MIN_SECTIONS of its sections (collapsed by default) */
+    const n = SECTIONS.filter((s) => secs[s.id]).length;
+    const list = SECTIONS.map((s) => {
+      const son = !!secs[s.id], locked = son && n <= MIN_SECTIONS;
+      return `<label class="sec${son ? ' on' : ''}${locked ? ' locked' : ''}"${locked ? ` title="Minimum ${MIN_SECTIONS} sections"` : ''}><input type="checkbox" data-sec="${s.id}" ${son ? 'checked' : ''} ${locked ? 'disabled' : ''}><span class="box">${ICON.tick}</span><span>${esc(s.t)}</span></label>`;
+    }).join('');
+    return `<div class="row static"><span class="ic">${ICON.ok}</span><span class="tx"><b>${f.b}</b>${f.t}</span><span></span>
+      <details class="secs-d"${secsOpen ? ' open' : ''}><summary>Sections incluses · ${n}/${SECTIONS.length}</summary><div class="secs"><p class="min">Choisis au moins ${MIN_SECTIONS} sections.</p>${list}</div></details></div>`;
+  }
+  if (f.type === 'info' || (f.type === 'flag' && included) || (f.lock && included)) {
+    return `<div class="row static"><span class="ic">${f.id === 'frozen' ? ICON.freeze : ICON.ok}</span><span class="tx"><b>${f.b}</b>${f.t}${cond(f)}</span>${priceTag(f, included)}</div>`;
+  }
+  if (f.type === 'qty') {
+    const n = qty(sel[f.id]), incN = qty(inc[f.id]), delta = n - incN, p = featPrice(f.id) * (1 - disc());
+    const tag = !featPrice(f.id) ? `<span class="pr">${incN ? `<span class="chip inc">${incN} inclus</span>` : ''}${n > incN ? '<span class="chip tbd">Prix à définir</span>' : ''}</span>`
+      : `<span class="pr">${delta ? `${delta > 0 ? '+' : '−'} ${money(Math.abs(delta) * p)}` : ''}<span class="note">${money(p)} / sem chacun</span></span>`;
+    return `<div class="row${n ? ' on' : ''}"><span class="ic">${ICON.video}</span>
+      <span class="tx"><b>${f.b}${incN ? `<span class="chip inc">${incN} inclus</span>` : ''}</b>${f.t}
+        <span class="stepper" role="group" aria-label="${plain(f.b)} par semaine"><button type="button" data-qty="${f.id}" data-d="-1" aria-label="Moins">−</button><output>${n} / sem</output><button type="button" data-qty="${f.id}" data-d="1" aria-label="Plus">+</button></span>
+      </span>${tag}</div>`;
+  }
+  const on = !!sel[f.id];
+  const title = f.id === 'guide' ? `${f.b}${guidePct() ? ` à ${guidePct()}% de rabais` : ''}` : f.b;
+  /* checkboxes are always square; circles are only for real radio choices (the call rhythm) */
+  return `<label class="row${on ? ' on' : ''}">
+    <span class="ic"><input type="checkbox" data-feat="${f.id}" ${on ? 'checked' : ''}><span class="box">${ICON.tick}</span></span>
+    <span class="tx"><b>${title}</b>${f.t}${cond(f)}</span>
+    ${priceTag(f, included)}
+  </label>`;
+}
+function footnotes() {
+  const out = [];
+  if (sel.urgentPrivate) out.push("*Rencontres d'urgence réservées aux questions non résolues via les appels, la communauté ou le canal direct.");
+  for (const id of ['dfy20', 'dfy30']) if (sel[id]) { const pct = F[id].pct, rate = S.dfyRate; out.push(`Rabais « Done for you » de ${pct}% : sauve ${money(rate * pct / 100)}/h — paye ${money(rate * (1 - pct / 100))}/h au lieu de ${money(rate)}/h.`); }
+  return out;
+}
+function renderPanel() {
+  const panel = document.getElementById('panel'); if (!panel) return;
+  const p = P[planId], inc = incOf(planId);
+  const incl = FEATURES.filter((f) => visible(f) && inc[f.id] && !(planId === 'communaute' && f.x === 'qa'));
+  /* only the options that make sense for this plan (and rhythm); a quantity item included in the plan is tweaked in place */
+  const ups = p.up.map((id) => F[id]).filter((f) => !inc[f.id]);
+  const mod = isModified();
+  panel.innerHTML = `
+    <div class="panel-h"><div><span class="mono" style="color:var(--navy-500)">${p.pre}</span><br><strong>${planName()}${mod ? ' <span class="mod">· personnalisé</span>' : ''}</strong></div>
+      <div class="panel-tools no-print"><button class="x" type="button" data-close="all" aria-label="Fermer">×</button></div></div>
+    <div class="panel-b">
+      <div>
+        ${ups.length ? `<div class="group"><p class="label">Options supplémentaires</p><div class="list">${ups.map(rowHtml).join('')}</div></div>` : '<p class="group" style="color:var(--navy-500)">Aucune option supplémentaire pour ce forfait.</p>'}
+        <button class="sublink no-print" type="button" data-custom="${planId}" aria-expanded="${customOpen}">${GEAR}Réglages du plan<span class="chev"></span></button>
+        ${customOpen ? '<div class="cset" id="cpanel"></div>' : ''}
+      </div>
+      <aside class="summary" id="summary" aria-live="polite"></aside>
+    </div>`;
+  renderSummary();
+  renderCustom(incl, mod);
+}
+/* plan settings (seller only), expanded inside the options panel: call rhythm, included items, platform sections.
+   The summary beside it stays in view; the same "Réglages du plan" button collapses it. */
+function renderCustom(incl, mod) {
+  const box = document.getElementById('cpanel'); if (!box) return;
+  box.innerHTML = `
+    ${mod || (planId === 'communaute' && pace !== 'intensif') ? '<div class="cset-h no-print"><button class="pill pill--sm pill--light" type="button" data-reset>Réinitialiser le forfait</button></div>' : ''}
+    ${planId === 'communaute' ? paceHtml() : ''}
+    <div class="group"><p class="label">Inclus dans le forfait</p><div class="list">${incl.map(rowHtml).join('')}</div></div>`;
+}
+
+
+/* ----------------------------- render: summary ------------------------- */
+function nudge() {
+  if (!isModified()) return '';
+  const raw = weeklyRaw();
+  const ladder = [['minimum'], ['communaute', 'ajustee'], ['communaute', 'croisiere'], ['communaute', 'regulier'], ['communaute', 'intensif'], ['vip']];
+  const here = ladder.findIndex(([id, pc]) => id === planId && (!pc || pc === pace));
+  const up = ladder.slice(here + 1).find(([id, pc]) => planWeekly(id, pc) <= raw);
+  if (!up) return '';
+  const [id, pc] = up;
+  const name = id === 'communaute' ? `Communauté (${PACES[pc].t})` : P[id].name;
+  return `<div class="nudge">Ce montage coûte autant ou plus que <b>${name}</b> (${money(planWeekly(id, pc) * (1 - disc()))} / sem), qui inclut déjà plus.<br><button class="pill pill--sm" type="button" data-plan="${id}"${pc ? ` data-pc="${pc}"` : ''}>Voir ${name}</button></div>`;
+}
+function renderSummary() {
+  const el = document.getElementById('summary'); if (!el) return;
+  const w = weekly(), full = weeklyRaw(), d = disc();
+  const saved = (full - w) * WEEKS[term];
+  const raw = weeklyRaw(), dq = (S.disc.quarter || 0) / 100, dy = (S.disc.year || 0) / 100;
+  /* upsells to a longer commitment: Communauté → annual, Minimum → quarterly */
+  const toYear = planId === 'communaute' && term !== 'year' ? raw * 52 * (dy - d) : 0;
+  const toQuarter = planId === 'minimum' && term === 'week' ? raw * 13 * dq : 0;
+  const upfront = [...flagsSel().map((f) => `${f.sum || plain(f.b)} <small>(prix à évaluer)</small>`), ...onceSel().map((id) => `${onceShort(id)} ${money(oncePrice(id))}`)];
+  el.innerHTML = `
+    <p class="label">Résumé</p>
+    <h3>${planName()}${isModified() ? ' · personnalisé' : ''}<small>Paiement ${TERMS.find((t) => t.id === term).t.toLowerCase()}${d ? ` · -${S.disc[term]}%` : ''}</small></h3>
+    <div class="big">${upfront.map((t) => `<span class="upfront">${t} +</span>`).join('')}${money(w * WEEKS[term])}<small>${TERM_UNIT[term]}</small></div>
+    ${saved > 0.004 ? `<span class="savep">Sauve ${money(saved)} vs hebdo</span>` : ''}
+    <div class="lines">
+      <div><span>Par semaine</span><span>${money(w)}</span></div>
+      <div><span>Par mois (4,33 sem)</span><span>${money(w * WEEKS.month)}</span></div>
+      <div><span>Par trimestre (13 sem)</span><span>${money(w * WEEKS.quarter)}</span></div>
+      ${toQuarter > 0.004 ? `<div class="ups"><button type="button" data-goterm="quarter">Sauve ${money(toQuarter)} avec un paiement au trimestre →</button></div>` : ''}
+      <div><span>Par année (52 sem)</span><span>${money(w * WEEKS.year)}</span></div>
+      ${toYear > 0.004 ? `<div class="ups"><button type="button" data-goterm="year">Sauve ${money(toYear)} / an avec un paiement annuel →</button></div>` : ''}
+      ${onceSel().map((id) => `<div><span>${onceShort(id)} (unique)</span><span>${money(oncePrice(id))}</span></div>`).join('')}
+    </div>
+    ${nudge()}
+    <div class="actions"><button class="pill" type="button" data-copy>Copier le résumé</button><button class="pill pill--ghost" type="button" data-print>Imprimer / PDF</button></div>
+    <div class="toast" id="toast"></div>`;
+}
+function summaryText() {
+  const w = weekly(), d = disc(), inc = incOf(planId);
+  const tName = TERMS.find((t) => t.id === term).t;
+  const lines = [];
+  for (const f of FEATURES) {
+    if (!visible(f)) continue;
+    if (f.type === 'info') { if (inc[f.id]) lines.push(plain(f.b) + (f.id === 'private750' ? ' (750$/h)' : '')); continue; }
+    if (planId === 'communaute' && f.x === 'qa' && sel[f.id]) { lines.push(`Rythme ${PACES[pace].t} : ${plain(f.b)}`); continue; }
+    if (f.type === 'flag' || f.type === 'once' || !sel[f.id]) { if (f.type === 'flag' && inc[f.id]) lines.push(plain(f.b)); continue; }
+    if (f.type === 'qty') lines.push(`${plain(f.b)} : ${sel[f.id]} / sem`);
+    else if (f.type === 'platform') { const on = SECTIONS.filter((s) => secs[s.id]); lines.push(`${plain(f.b)} (${on.length}/${SECTIONS.length} sections)` + (on.length < SECTIONS.length ? ' : ' + on.map((s) => s.t.split(' — ')[0]).join(', ') : '')); }
+    else lines.push(plain(f.b));
+  }
+  const out = [`Forfait ${planName()}${isModified() ? ' (personnalisé)' : ''} — paiement ${tName.toLowerCase()}${d ? ` (-${S.disc[term]}%)` : ''}`, '', 'Inclus :', ...lines.map((l) => `• ${l}`)];
+  if (onceSel().length) out.push('', 'Paiement unique :', ...onceSel().map((id) => `• ${onceName(id)} : ${money(oncePrice(id))}`));
+  const flags = flagsSel();
+  if (flags.length) out.push('', 'À évaluer :', ...flags.map((f) => `• ${plain(f.b)} — ${f.free}`));
+  const parts = [...flags.map((f) => `${f.sum || plain(f.b)} (prix à évaluer)`), ...onceSel().map((id) => `${onceName(id)} ${money(oncePrice(id))}`), `${money(w * WEEKS[term])} ${TERM_UNIT[term]}`];
+  out.push('', `Total : ${parts.join(' + ')}  (${money(w)} / sem · ${money(w * WEEKS.month)} / mois)`);
+  const fn = footnotes(); if (fn.length) out.push('', ...fn);
+  return out.join('\n');
+}
+
+/* ----------------------------- render: settings ------------------------ */
+const num = (path, val, unit, step = 1) => `<span class="inp"><input type="number" inputmode="decimal" min="0" step="${step}" data-set="${path}" value="${r2(+val)}" aria-label="${path}"><span>${unit}</span></span>`;
+/* where an à la carte price is used: which plan, as an option (upsell) or as a removable inclusion (plan settings) */
+function usage(id) {
+  const f = F[id], out = [];
+  const plans = [];
+  for (const p of PLANS) {
+    const variants = p.id === 'communaute' ? Object.keys(PACES).map((pc) => [pc, PACES[pc].inc]) : [[null, p.inc]];
+    const incIn = variants.filter(([, inc]) => inc[id]).map(([pc]) => pc);
+    const optIn = p.up.includes(id) ? variants.filter(([, inc]) => !inc[id]).map(([pc]) => pc) : [];
+    const which = (arr) => (p.id === 'communaute' && arr.length < variants.length ? ` (${arr.map((pc) => PACES[pc].t).join(', ')})` : '');
+    const parts = [];
+    if (incIn.length) parts.push(f.type === 'qty' ? `${qty(variants[0][1][id])} inclus, extra en option` : `inclus, retirable${which(incIn)}`);
+    if (optIn.length) parts.push(`option${which(optIn)}`);
+    if (parts.length) plans.push({ pid: p.id, detail: parts.join(' · ') });
+  }
+  return plans;
+}
+function renderSettings() {
+  /* only what an upsell or the plan settings can add or remove; locked inclusions have no price of their own */
+  const featRows = Object.keys(DEFAULTS.feat).map((id) => F[id])
+    .map((f) => `<div class="fblock">${plain(f.b)}<small>${plain(f.t)}${f.type === 'qty' ? ' · prix par atelier' : ''}</small>
+      ${usage(f.id).map((u) => `<div class="sub"><span class="sub-l"><b>${P[u.pid].name}</b> <span>· ${u.detail}</span></span>
+        <span class="calc" data-calc="feat:${f.id}:${u.pid}">= ${money(featPrice(f.id, u.pid))} / sem</span>
+        ${num(`feat.${f.id}.${u.pid}`, (S.feat[f.id] || {})[u.pid] || 0, f.id === 'qaMonthly' ? '% / appel' : '%', 1)}</div>`).join('')}</div>`).join('');
+  const secCalc = (id) => PLANS.map((p) => `${p.name} ${money(secPrice(id, p.id))}`).join(' · ');
+  const secRows = SECTIONS.map((s) => `<div class="field"><span>${esc(s.t)}<small><span class="calc" data-calc="sec:${s.id}">${secCalc(s.id)}</span></small></span>${num('sec.' + s.id, S.sec[s.id], '%', 0.5)}</div>`).join('');
+  document.getElementById('settings-body').innerHTML = `
+    <div class="fs"><div class="fs-h"><p class="label">Prix de référence</p><button class="fs-reset" type="button" data-reset-keys="ref,mult">Réinitialiser</button></div><p>Montant hebdomadaire du forfait Minimum. Les autres forfaits en sont des multiples.</p><div class="fields">
+      <div class="field"><span>Montant hebdo de référence<small>= prix du forfait Minimum</small></span>${num('ref', S.ref, '$ / sem', 0.01)}</div>
+      ${['minimum', 'communaute', 'vip'].map((id) => `<div class="field"><span>${P[id].name}${id === 'communaute' ? ' (intensif)' : ''}<small data-out="${id}">${money(S.ref * S.mult[id])} / sem</small></span>${num('mult.' + id, S.mult[id], '× réf.', 0.5)}</div>`).join('')}
+    </div></div>
+    <div class="fs"><div class="fs-h"><p class="label">Communauté · autres rythmes d'appels</p><button class="fs-reset" type="button" data-reset-keys="pacePct">Réinitialiser</button></div><p>Majoration sur le coût par appel du rythme Intensif (<span data-out="percall">${money(planWeekly('communaute', 'intensif') / 2)}</span> par appel). Prix hebdomadaire avant rabais.</p><div class="fields">
+      ${['regulier', 'croisiere', 'ajustee'].map((pc) => `<div class="field"><span>${PACES[pc].t}<small>${PACES[pc].d} · <span data-out="pace-${pc}">${money(planWeekly('communaute', pc))}</span> / sem</small></span>${num('pacePct.' + pc, S.pacePct[pc], '% / appel', 0.5)}</div>`).join('')}
+    </div></div>
+    <div class="fs"><div class="fs-h"><p class="label">Rabais selon la fréquence</p><button class="fs-reset" type="button" data-reset-keys="disc">Réinitialiser</button></div><p>Appliqués à tous les montants hebdomadaires.</p><div class="fields">
+      <div class="field"><span>Paiement trimestriel</span>${num('disc.quarter', S.disc.quarter, '%')}</div>
+      <div class="field"><span>Paiement annuel</span>${num('disc.year', S.disc.year, '%')}</div>
+    </div></div>
+    <div class="fs"><div class="fs-h"><p class="label">Affichage</p><button class="fs-reset" type="button" data-reset-keys="frozen">Réinitialiser</button></div><div class="fields">
+      <label class="switch"><span><b>Prix gelé à vie</b><br><small style="color:var(--navy-500)">Affiche cette inclusion dans les forfaits.</small></span><input type="checkbox" data-set="frozen" ${S.frozen ? 'checked' : ''}><span class="knob"></span></label>
+    </div></div>
+    <div class="fs"><div class="fs-h"><p class="label">Prix à la carte</p><button class="fs-reset" type="button" data-reset-keys="feat">Réinitialiser</button></div><p>Ajouté quand on coche une option, retiré quand on décoche une inclusion. Chaque % porte sur le prix hebdo par défaut du forfait concerné (${PLANS.map((p) => `${p.name} <span data-calc="plan:${p.id}">${money(planDefault(p.id))}</span>`).join(', ')}). Exception : les appels mensuels, majorés sur le coût par appel du rythme Intensif. 0 = prix à définir.</p><div class="fields">${featRows}</div></div>
+    <div class="fs"><div class="fs-h"><p class="label">Sections de la Plateforme d'Excellence</p><button class="fs-reset" type="button" data-reset-keys="sec">Réinitialiser</button></div><p>Retirées dans les réglages du plan (tous les forfaits). En % du prix hebdo par défaut du forfait choisi.</p><div class="fields">${secRows}</div></div>
+    <div class="fs"><div class="fs-h"><p class="label">Guide de marque</p><button class="fs-reset" type="button" data-reset-keys="guide">Réinitialiser</button></div><p>Paiement unique, avec le même rabais que la fréquence de paiement (voir « Rabais selon la fréquence »).</p><div class="fields">
+      <div class="field"><span>Valeur<small>Tous les forfaits · option</small></span>${num('guide.value', S.guide.value, '$')}</div>
+    </div></div>
+    <div class="fs"><div class="fs-h"><p class="label">Assurance « Transfers de valeur »</p><button class="fs-reset" type="button" data-reset-keys="insurance">Réinitialiser</button></div><p>Paiement unique, prix fixe.</p><div class="fields">
+      <div class="field"><span>Prix<small>Communauté · option</small></span>${num('insurance.price', S.insurance.price, '$')}</div>
+    </div></div>
+    <div class="fs"><div class="fs-h"><p class="label">Done for you</p><button class="fs-reset" type="button" data-reset-keys="dfyRate">Réinitialiser</button></div><div class="fields">
+      <div class="field"><span>Taux horaire régulier<small>pour le calcul des rabais 20% / 30%</small></span>${num('dfyRate', S.dfyRate, '$ / h')}</div>
+    </div></div>`;
+}
+
+function render() { renderTerms(); renderPlans(); renderPanel(); }
+
+/* ----------------------------- events ---------------------------------- */
+const keepFocus = (q) => { const el = document.querySelector(q); if (el) el.focus({ preventScroll: true }); };
+document.getElementById('terms').addEventListener('click', (e) => { const b = e.target.closest('[data-term]'); if (!b) return; term = b.dataset.term; render(); keepFocus(`[data-term="${term}"]`); });
+
+document.addEventListener('click', (e) => {
+  if (e.target.closest('[data-stop]') || e.target.closest('dialog')) return;
+  const gt = e.target.closest('[data-goterm]');
+  if (gt) { term = gt.dataset.goterm; render(); keepFocus('[data-copy]'); return; }
+  const pl = e.target.closest('[data-plan]') || (!e.target.closest('.panel') && e.target.closest('[data-card]'));
+  if (pl) {
+    const id = pl.dataset.plan || pl.dataset.card;
+    if (pl.dataset.pc) pace = pl.dataset.pc;
+    else if (id === 'communaute' && planId !== 'communaute') pace = 'intensif';
+    const fromNudge = !!pl.closest('.nudge');
+    if (fromNudge) { choosePlan(id); upsellOpen = true; render(); document.getElementById('panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
+    if (id === planId) {
+      /* the chosen card toggles its panels */
+      if (upsellOpen || customOpen) upsellOpen = customOpen = false; else upsellOpen = true;
+    } else { choosePlan(id); upsellOpen = true; customOpen = false; } // choosing a plan shows its extra options only
+    render();
+    if (upsellOpen) document.getElementById('panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    return;
+  }
+  const cu = e.target.closest('[data-custom]');
+  if (cu) {
+    const id = cu.dataset.custom;
+    if (id !== planId) { if (id === 'communaute') pace = 'intensif'; choosePlan(id); customOpen = true; }
+    else customOpen = !customOpen;
+    upsellOpen = true; // plan settings live inside the options panel
+    render();
+    document.getElementById(customOpen ? 'cpanel' : 'panel')?.scrollIntoView({ behavior: 'smooth', block: customOpen ? 'start' : 'nearest' });
+    return;
+  }
+  const cl = e.target.closest('[data-close]');
+  if (cl) {
+    if (cl.dataset.close === 'custom') customOpen = false; else upsellOpen = customOpen = false;
+    render();
+    if (!upsellOpen) document.querySelector(`[data-card="${planId}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+  if (e.target.closest('[data-reset]')) { secs = {}; pace = 'intensif'; const id = planId; planId = null; sel = {}; choosePlan(id); render(); return; } // back to the plan's default settings
+  const q = e.target.closest('[data-qty]');
+  /* a quantity never goes below what the plan requires (VIP: 1 atelier / sem) */
+  if (q) { const f = F[q.dataset.qty]; sel[f.id] = Math.min(f.max || 9, Math.max(qty(incOf(planId)[f.id]), qty(sel[f.id]) + +q.dataset.d)); renderPlans(); renderPanel(); keepFocus(`[data-qty="${f.id}"][data-d="${q.dataset.d}"]`); return; }
+  if (e.target.closest('[data-print]')) { window.print(); return; }
+  if (e.target.closest('[data-copy]')) {
+    const txt = summaryText();
+    const done = () => { const t = document.getElementById('toast'); if (t) t.textContent = 'Résumé copié'; };
+    (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(done).catch(() => { const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); done(); } catch (err) {} ta.remove(); });
+    return;
+  }
+});
+
+document.getElementById('plans').addEventListener('change', (e) => {
+  const t = e.target;
+  if (t.dataset.pace) {
+    pace = t.dataset.pace;
+    if (planId === 'communaute') switchPace(t.dataset.prev || null); else { const wasOpen = !!planId; choosePlan('communaute'); if (!wasOpen) requestAnimationFrame(() => document.getElementById('panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' })); }
+    render(); keepFocus(`[data-pace="${pace}"]`); return;
+  }
+  if (t.dataset.feat) {
+    const f = F[t.dataset.feat];
+    if (t.checked && f.x) FEATURES.filter((o) => o.x === f.x).forEach((o) => { sel[o.id] = false; });
+    sel[f.id] = t.checked;
+    if (f.type === 'platform' && t.checked && !SECTIONS.some((s) => secs[s.id])) SECTIONS.forEach((s) => { secs[s.id] = true; });
+  } else if (t.dataset.sec) { secs[t.dataset.sec] = t.checked; secsOpen = true; }
+  else return;
+  const key = t.dataset.feat ? `[data-feat="${t.dataset.feat}"]` : `[data-sec="${t.dataset.sec}"]`;
+  renderPlans(); renderPanel(); keepFocus(key);
+});
+/* switching Communauté's rhythm swaps the calls, keeps the other tweaks */
+let lastPace = pace;
+function switchPace() {
+  const was = PACES[lastPace].inc, now = PACES[pace].inc;
+  for (const id of new Set([...Object.keys(was), ...Object.keys(now)])) {
+    if (now[id]) sel[id] = true;                 // newly included
+    else if (was[id] && sel[id]) sel[id] = false; // was part of the old rhythm only
+  }
+  lastPace = pace;
+}
+
+document.addEventListener('toggle', (e) => { if (e.target.classList && e.target.classList.contains('secs-d')) secsOpen = e.target.open; }, true);
+window.addEventListener('resize', () => { clearTimeout(window.__rz); window.__rz = setTimeout(placePanel, 120); });
+
+/* settings: live update without rebuilding the dialog (keeps the caret where it is) */
+const dlg = document.getElementById('settings');
+document.getElementById('open-settings').addEventListener('click', () => { renderSettings(); paintLock(); paintSync(); dlg.showModal(); dlg.scrollTop = 0; dlg.classList.remove('scrolled'); });
+document.getElementById('close-settings').addEventListener('click', () => dlg.close());
+dlg.addEventListener('scroll', () => dlg.classList.toggle('scrolled', dlg.scrollTop > 8));
+/* settings as they were just before the last reset, so a reset clicked by mistake can be undone (kept across reloads) */
+const PREV = STORE + '-before-reset';
+let beforeReset = null;
+try { const raw = localStorage.getItem(PREV); if (raw) beforeReset = deepMerge(clone(DEFAULTS), JSON.parse(raw)); } catch (e) {}
+const undoBtn = dlg.querySelector('[data-undo]');
+function syncUndo() {
+  undoBtn.disabled = !beforeReset || !canEdit();
+  undoBtn.title = beforeReset ? 'Revenir aux réglages d’avant la dernière réinitialisation' : 'Aucune réinitialisation à annuler';
+  try { if (beforeReset) localStorage.setItem(PREV, JSON.stringify(beforeReset)); else localStorage.removeItem(PREV); } catch (e) {}
+} // first called by paintLock(), once the shared-settings state below exists
+dlg.addEventListener('click', (e) => {
+  if (e.target === dlg) { dlg.close(); return; }
+  if (e.target.closest('[data-undo]')) { if (!beforeReset) return; S = beforeReset; beforeReset = null; }
+  else {
+    const one = e.target.closest('[data-reset-keys]');
+    const all = e.target.closest('[data-defaults]');
+    if (!one && !all) return;
+    beforeReset = clone(S);
+    if (all) S = clone(DEFAULTS);                                                         // whole dialog
+    else one.dataset.resetKeys.split(',').forEach((k) => { S[k] = clone(DEFAULTS)[k]; }); // one section
+  }
+  syncUndo();
+  saveSettings(); renderSettings(); render();
+});
+dlg.addEventListener('input', (e) => {
+  const t = e.target; if (!t.dataset.set) return;
+  const keys = t.dataset.set.split('.');
+  let o = S; for (const k of keys.slice(0, -1)) o = o[k];
+  o[keys.at(-1)] = t.type === 'checkbox' ? t.checked : Math.max(0, parseFloat(String(t.value).replace(',', '.')) || 0);
+  saveSettings();
+  for (const id of ['minimum', 'communaute', 'vip']) { const out = dlg.querySelector(`[data-out="${id}"]`); if (out) out.textContent = `${money(S.ref * S.mult[id])} / sem`; }
+  for (const pc of ['regulier', 'croisiere', 'ajustee']) { const out = dlg.querySelector(`[data-out="pace-${pc}"]`); if (out) out.textContent = money(planWeekly('communaute', pc)); }
+  const pcOut = dlg.querySelector('[data-out="percall"]'); if (pcOut) pcOut.textContent = money(planWeekly('communaute', 'intensif') / 2);
+  dlg.querySelectorAll('[data-calc]').forEach((el) => {
+    const [kind, id, pid] = el.dataset.calc.split(':');
+    if (kind === 'plan') el.textContent = money(planDefault(id));
+    else if (kind === 'sec') el.textContent = PLANS.map((p) => `${p.name} ${money(secPrice(id, p.id))}`).join(' · ');
+    else el.textContent = `= ${money(featPrice(id, pid))} / sem`;
+  });
+  render();
+});
+
+/* ----------------------------- shared settings ------------------------- */
+/* The numbers in Réglages globaux are shared by the whole team through a small Cloudflare Worker (workers/tools-api):
+   everyone loads them when the page opens; editing needs the edit password, entered once per device.
+   If the service can't be reached, the page falls back to this device's copy (or the built-in defaults). */
+const IS_LOCAL = ['localhost', '127.0.0.1'].includes(location.hostname);
+/* local preview uses the live API, or a local one with ?api=http://127.0.0.1:8787/tools-api (wrangler dev) */
+const API = IS_LOCAL ? (new URLSearchParams(location.search).get('api') || 'https://viesigners.com/tools-api') : '/tools-api';
+const TOOL = 'package-builder';
+const PASS_KEY = 'vz-tools-edit-pass';
+let editPass = '';
+try { editPass = localStorage.getItem(PASS_KEY) || ''; } catch (e) {}
+let syncState = 'loading', syncAt = null, pushTimer = null;
+const canEdit = () => !!editPass || syncState === 'offline'; // offline: edits stay on this device
+const when = (iso) => new Date(iso).toLocaleString('fr-CA', { dateStyle: 'medium', timeStyle: 'short' });
+function setSync(state, at) { syncState = state; if (at) syncAt = at; paintSync(); paintLock(); }
+function paintSync() {
+  const el = document.getElementById('sync'); if (!el) return;
+  el.dataset.state = syncState;
+  el.textContent = {
+    loading: 'Chargement des réglages de l’équipe…',
+    idle: syncAt ? `Réglages de l’équipe · mis à jour le ${when(syncAt)}` : 'Réglages par défaut · aucun réglage d’équipe enregistré',
+    saving: 'Enregistrement pour toute l’équipe…',
+    saved: `Enregistré pour toute l’équipe · ${when(syncAt)}`,
+    error: 'Erreur : ce changement n’est pas enregistré pour l’équipe',
+    offline: 'Réglages de l’équipe inaccessibles : les changements restent sur cet appareil',
+  }[syncState];
+}
+function paintLock() {
+  const bar = document.getElementById('lockbar'); if (!bar) return;
+  document.getElementById('settings-fs').disabled = !canEdit();
+  dlg.querySelector('[data-defaults]').disabled = !canEdit();
+  syncUndo();
+  if (syncState === 'offline' && !editPass) { bar.innerHTML = ''; return; }
+  bar.innerHTML = editPass
+    ? '<p class="lock ok">Modification activée sur cet appareil. <button type="button" class="fs-reset" data-lock>Verrouiller</button></p>'
+    : `<form class="lock" data-unlock><label for="edit-pass">Mot de passe d’édition</label><input id="edit-pass" type="password" autocomplete="current-password" required><button class="pill pill--sm" type="submit">Déverrouiller</button>
+       <span class="lock-msg" id="lock-msg">Tout le monde voit ces réglages ; il faut le mot de passe pour les modifier.</span></form>`;
+}
+async function loadShared() {
+  setSync('loading');
+  try {
+    const r = await fetch(`${API}/settings/${TOOL}`, { cache: 'no-store' });
+    if (!r.ok) throw new Error(r.status);
+    const data = await r.json();
+    if (data.settings) {
+      S = deepMerge(clone(DEFAULTS), data.settings);
+      try { localStorage.setItem(STORE, JSON.stringify(S)); } catch (e) {}
+      render(); if (dlg.open) renderSettings();
+    }
+    setSync('idle', data.updatedAt);
+  } catch (e) { setSync('offline'); }
+}
+function pushShared() {
+  if (!editPass) return;
+  clearTimeout(pushTimer);
+  syncState = 'saving'; paintSync();
+  pushTimer = setTimeout(async () => {
+    try {
+      const r = await fetch(`${API}/settings/${TOOL}`, { method: 'PUT', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${editPass}` }, body: JSON.stringify({ settings: S }) });
+      if (r.status === 401) { lockEditing(); setSync('error'); return; }
+      if (!r.ok) throw new Error(r.status);
+      setSync('saved', (await r.json()).updatedAt);
+    } catch (e) { setSync('error'); }
+  }, 700); // one save after a burst of typing
+}
+function lockEditing() { editPass = ''; try { localStorage.removeItem(PASS_KEY); } catch (e) {} paintLock(); }
+dlg.addEventListener('submit', async (e) => {
+  const form = e.target.closest('[data-unlock]'); if (!form) return;
+  e.preventDefault();
+  const value = form.querySelector('input').value, msg = document.getElementById('lock-msg');
+  msg.textContent = 'Vérification…';
+  try {
+    const r = await fetch(`${API}/check`, { headers: { Authorization: `Bearer ${value}` } });
+    if (r.status !== 204) { msg.textContent = 'Mot de passe invalide.'; return; }
+    editPass = value; try { localStorage.setItem(PASS_KEY, value); } catch (err) {}
+    paintLock();
+    if (!syncAt) pushShared(); // nothing saved for the team yet: this device's numbers become the team's
+  } catch (err) { msg.textContent = 'Service inaccessible pour le moment.'; }
+});
+dlg.addEventListener('click', (e) => { if (e.target.closest('[data-lock]')) lockEditing(); });
+
+render();
+loadShared();
+</script>
+</body>
+</html>

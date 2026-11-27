@@ -1,0 +1,16 @@
+# Viesigners tools API: shared settings for the internal tools at /tools/.
+# Deploy: npx wrangler@3 deploy   (from this folder, after `npx wrangler@3 login`)
+# Edit password: npx wrangler@3 secret put EDIT_PASSWORD   (typed by you, never stored in this repo)
+name = "viesigners-tools-api"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+workers_dev = false
+
+routes = [
+  { pattern = "viesigners.com/tools-api/*", zone_name = "viesigners.com" },
+]
+
+# Created with: npx wrangler@3 kv namespace create TOOLS_KV  → paste the id below
+[[kv_namespaces]]
+binding = "TOOLS_KV"
+id = "eb7c2626efb2434d949e92a978ab3eb1"

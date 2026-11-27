@@ -55,3 +55,12 @@ Dans le workflow : retirer `SITE_NOINDEX`, mettre `SITE_BASE: ""` et `SITE_ORIGI
 - Pages masquées (voir `hidden` dans `src/config.json`) : construites mais `noindex`, hors sitemap et `llms.txt`.
 - Formulaire de contact : envoie à `freres.bg@viesigners.com` via FormSubmit (`formEndpoint` dans `src/config.json`). **À la toute première soumission, FormSubmit envoie un courriel d'activation à cette adresse : cliquer sur le lien de confirmation.** En cas d'échec, le formulaire ouvre le courriel de l'utilisateur (repli mailto).
 - Aperçu privé non indexable sous `/website-02/` : voir les lignes commentées dans le workflow.
+
+## Outils internes (`/tools/`)
+Déposer un fichier HTML autonome dans `src/tools/` (ou un dossier `src/tools/<nom>/index.html`), puis `git push` : il est publié à `viesigners.com/tools/…`. Chaque page reçoit automatiquement une balise `noindex` ; la section n'est liée nulle part sur le site, ni dans le sitemap, ni dans `llms.txt`, ni nommée dans `robots.txt`. `/tools/` liste les outils (titre = `<title>`, sous-titre = `<meta name="description">`).
+**Attention :** non indexé ≠ privé. Le dépôt GitHub est public et n'importe qui ayant le lien peut ouvrir la page. Ne rien y mettre de confidentiel.
+
+### Réglages partagés des outils (`workers/tools-api/`)
+Les réglages globaux des outils (ex. forfaits ImpaX) sont partagés par toute l'équipe grâce à un petit Cloudflare Worker + KV, servi sur `viesigners.com/tools-api/`. Lecture publique ; modification protégée par un mot de passe (secret Cloudflare `EDIT_PASSWORD`, jamais dans le dépôt), saisi une fois par appareil dans la fenêtre « Réglages globaux ». Si le service est inaccessible, l'outil utilise la copie de l'appareil, puis les valeurs par défaut intégrées.
+Installation (une seule fois, dans `workers/tools-api/`) : `npx wrangler@3 login` → `npx wrangler@3 kv namespace create TOOLS_KV` (coller l'id dans `wrangler.toml`) → `npx wrangler@3 deploy` → `npx wrangler@3 secret put EDIT_PASSWORD`.
+Test local : `.dev.vars` avec `EDIT_PASSWORD=...`, `npx wrangler@3 dev --local`, puis ouvrir l'outil avec `?api=http://127.0.0.1:8787/tools-api`.
