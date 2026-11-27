@@ -115,6 +115,17 @@
   .feats { display: grid; gap: 9px; font-size: .92rem; line-height: 1.4; }
   .feats .plus { color: var(--t2-d); font-size: .85rem; }
   .feats li { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; }
+  /* "i" tooltip on card items */
+  .info { position: relative; display: inline-block; vertical-align: middle; margin-left: 6px; }
+  .info-b { appearance: none; border: 0; width: 17px; height: 17px; border-radius: 50%; padding: 0; cursor: help; display: grid; place-items: center; background: rgba(255, 255, 255, .12); color: var(--t2-d); font: italic 600 .68rem/1 Georgia, serif; transition: background .2s, color .2s; }
+  .info-b:hover, .info.open .info-b, .info-b:focus-visible { background: var(--pink); color: #fff; }
+  .tip { position: absolute; z-index: 20; bottom: calc(100% + 10px); left: 50%; transform: translate(-50%, 4px); width: max-content; max-width: min(280px, 80vw); padding: 12px 14px; border-radius: var(--r-md); background: #fff; color: var(--navy-500); font-size: .8rem; line-height: 1.45; font-style: normal; text-align: left; box-shadow: 0 14px 40px -12px rgba(0, 0, 0, .55); opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .2s, transform .25s var(--ease), visibility .2s; }
+  .tip::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -6px; border: 6px solid transparent; border-top-color: #fff; }
+  .tip b { display: block; color: var(--navy); font-size: .86rem; margin-bottom: 3px; }
+  .tip em { display: block; margin-top: 6px; font-style: normal; font-size: .74rem; color: var(--pink-600); }
+  .tip-list { display: block; margin-top: 6px; font-size: .74rem; color: var(--navy); }
+  .info:hover .tip, .info-b:focus-visible + .tip, .info.open .tip { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+  .feats li.dim .info-b { background: rgba(255, 255, 255, .08); }
   .feats li svg { width: 18px; height: 18px; margin-top: 1px; }
   .feats li .ok { color: var(--pink-300); }
   .feats li .ko { color: rgba(179, 192, 212, .5); }
@@ -609,8 +620,8 @@ function cardFeatures(p) {
   const inc = incOf(p.id, 'intensif');
   const prevInc = prev ? incOf(prev, 'intensif') : {};
   const items = FEATURES.filter((f) => visible(f) && f.id !== 'frozen' && inc[f.id] && (!prev || !prevInc[f.id] || qty(inc[f.id]) !== qty(prevInc[f.id])))
-    .map((f) => `<li><span class="ok">${ICON.check}</span><span>${f.type === 'qty' ? `${inc[f.id]} ${f.s.toLowerCase()} / sem` : f.s}</span></li>`);
-  const miss = (p.miss || []).map((t) => `<li class="dim"><span class="ko">${ICON.cross}</span><span>${t}</span></li>`);
+    .map((f) => `<li><span class="ok">${ICON.check}</span><span>${f.type === 'qty' ? `${inc[f.id]} ${f.s.toLowerCase()} / sem` : f.s}${infoTip(f)}</span></li>`);
+  const miss = (p.miss || []).map((t) => `<li class="dim"><span class="ko">${ICON.cross}</span><span>${t}${infoTip(F.qaMonthly)}</span></li>`);
   const frozen = S.frozen ? `<li class="frozen">${ICON.freeze}<span><b>Prix gelé à vie</b>Tu conserves ce prix tant que tu continues avec nous.</span></li>` : '';
   return `<ul class="feats">${frozen}${prev ? `<li class="plus" style="display:block">Tout le forfait ${P[prev].name}, plus :</li>` : ''}${items.join('')}${miss.join('')}</ul>`;
 }
@@ -684,10 +695,17 @@ function priceTag(f, included) {
   return `<span class="pr">+ ${money(featPrice(f.id) * d)}<span class="note">/ sem${f.type === 'qty' ? ' chacun' : ''}</span></span>`;
 }
 /* small print under an item: the sheet's asterisk notes (Done-for-you discounts are computed from the regular hourly rate) */
-const cond = (f) => {
-  const t = f.pct ? `Sauve ${money(S.dfyRate * f.pct / 100)}/h — paye ${money(S.dfyRate * (1 - f.pct / 100))}/h au lieu de ${money(S.dfyRate)}/h.` : f.cond;
-  return t ? `<small class="cond">${t}</small>` : '';
-};
+const condText = (f) => (f.pct ? `Sauve ${money(S.dfyRate * f.pct / 100)}/h — paye ${money(S.dfyRate * (1 - f.pct / 100))}/h au lieu de ${money(S.dfyRate)}/h.` : f.cond || '');
+const cond = (f) => { const t = condText(f); return t ? `<small class="cond">${t}</small>` : ''; };
+/* "i" next to a plan-card item: its full description (from the Google Sheets) in a tooltip. Hover or focus on desktop, tap on touch screens. */
+let tipN = 0;
+function infoTip(f) {
+  const id = `tip-${++tipN}`;
+  const extra = f.type === 'platform' ? `<span class="tip-list">${SECTIONS.map((s) => esc(s.t.split(' — ')[0])).join(' · ')}</span>` : '';
+  const c = condText(f);
+  return `<span class="info"><button type="button" class="info-b" aria-label="Détails : ${esc(plain(f.b))}" aria-describedby="${id}" data-tip>i</button>`
+    + `<span class="tip" role="tooltip" id="${id}"><b>${f.b}</b>${f.t}${extra}${c ? `<em>${c}</em>` : ''}</span></span>`;
+}
 function rowHtml(f) {
   const inc = incOf(planId);
   const included = !!inc[f.id];
@@ -902,6 +920,10 @@ const keepFocus = (q) => { const el = document.querySelector(q); if (el) el.focu
 document.getElementById('terms').addEventListener('click', (e) => { const b = e.target.closest('[data-term]'); if (!b) return; term = b.dataset.term; render(); keepFocus(`[data-term="${term}"]`); });
 
 document.addEventListener('click', (e) => {
+  /* "i" buttons on the cards: tap toggles the tooltip, without choosing the plan; a tap elsewhere closes it */
+  const tip = e.target.closest('[data-tip]');
+  document.querySelectorAll('.info.open').forEach((el) => { if (!tip || el !== tip.parentElement) el.classList.remove('open'); });
+  if (tip) { tip.parentElement.classList.toggle('open'); return; }
   if (e.target.closest('[data-stop]') || e.target.closest('dialog')) return;
   const gt = e.target.closest('[data-goterm]');
   if (gt) { term = gt.dataset.goterm; render(); keepFocus('[data-copy]'); return; }
