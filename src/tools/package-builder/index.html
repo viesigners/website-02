@@ -119,11 +119,16 @@
   .info { position: relative; display: inline-block; vertical-align: middle; margin-left: 6px; }
   .info-b { appearance: none; border: 0; width: 17px; height: 17px; border-radius: 50%; padding: 0; cursor: help; display: grid; place-items: center; background: rgba(255, 255, 255, .12); color: var(--t2-d); font: italic 600 .68rem/1 Georgia, serif; transition: background .2s, color .2s; }
   .info-b:hover, .info.open .info-b, .info-b:focus-visible { background: var(--pink); color: #fff; }
-  .tip { position: absolute; z-index: 20; bottom: calc(100% + 10px); left: 50%; transform: translate(-50%, 4px); width: max-content; max-width: min(280px, 80vw); padding: 12px 14px; border-radius: var(--r-md); background: #fff; color: var(--navy-500); font-size: .8rem; line-height: 1.45; font-style: normal; text-align: left; box-shadow: 0 14px 40px -12px rgba(0, 0, 0, .55); opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .2s, transform .25s var(--ease), visibility .2s; }
+  .tip { position: absolute; z-index: 20; bottom: calc(100% + 10px); left: 50%; transform: translate(-50%, 4px); width: max-content; max-width: min(320px, 80vw); padding: 12px 14px; border-radius: var(--r-md); background: #fff; color: var(--navy-500); font-size: .8rem; line-height: 1.45; font-style: normal; text-align: left; box-shadow: 0 14px 40px -12px rgba(0, 0, 0, .55); opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .2s, transform .25s var(--ease), visibility .2s; }
   .tip::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -6px; border: 6px solid transparent; border-top-color: #fff; }
   .tip b { display: block; color: var(--navy); font-size: .86rem; margin-bottom: 3px; }
   .tip em { display: block; margin-top: 6px; font-style: normal; font-size: .74rem; color: var(--pink-600); }
-  .tip-list { display: block; margin-top: 6px; font-size: .74rem; color: var(--navy); }
+  .tip-list { display: grid; gap: 4px; margin-top: 8px; font-size: .76rem; color: var(--navy); }
+  .tip-list span { position: relative; padding-left: 14px; }
+  .tip-list span::before { content: ""; position: absolute; left: 2px; top: .5em; width: 5px; height: 5px; border-radius: 50%; background: var(--pink); }
+  /* the card holding an open tooltip sits above the other cards (each card is its own layer because of its hover lift) */
+  .card { z-index: 1; }
+  .card:has(.info:hover), .card:has(.info.open), .card:has(.info-b:focus-visible) { z-index: 60; }
   .info:hover .tip, .info-b:focus-visible + .tip, .info.open .tip { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
   .feats li.dim .info-b { background: rgba(255, 255, 255, .08); }
   .feats li svg { width: 18px; height: 18px; margin-top: 1px; }
@@ -701,10 +706,10 @@ const cond = (f) => { const t = condText(f); return t ? `<small class="cond">${t
 let tipN = 0;
 function infoTip(f) {
   const id = `tip-${++tipN}`;
-  const extra = f.type === 'platform' ? `<span class="tip-list">${SECTIONS.map((s) => esc(s.t.split(' — ')[0])).join(' · ')}</span>` : '';
+  const extra = f.type === 'platform' ? `<span class="tip-list">${SECTIONS.map((s) => `<span>${esc(s.t)}</span>`).join('')}</span>` : '';
   const c = condText(f);
   return `<span class="info"><button type="button" class="info-b" aria-label="Détails : ${esc(plain(f.b))}" aria-describedby="${id}" data-tip>i</button>`
-    + `<span class="tip" role="tooltip" id="${id}"><b>${f.b}</b>${f.t}${extra}${c ? `<em>${c}</em>` : ''}</span></span>`;
+    + `<span class="tip" role="tooltip" id="${id}">${f.t}${extra}${c ? `<em>${c}</em>` : ''}</span></span>`;
 }
 function rowHtml(f) {
   const inc = incOf(planId);
