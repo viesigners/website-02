@@ -166,9 +166,11 @@
   .group { margin-top: 22px; }
   .group > .label, .more > summary { color: var(--navy); margin: 0 4px 12px; flex-wrap: wrap; }
   /* collapsible section heading */
-  .group-h { appearance: none; border: 0; background: none; cursor: pointer; display: flex; width: calc(100% - 8px); padding: 6px 0; text-align: left; }
+  .group-h { appearance: none; border: 0; background: none; cursor: pointer; display: flex; flex-wrap: nowrap; gap: .6rem; min-width: 0; width: calc(100% - 8px); padding: 6px 0; text-align: left; }
   .group-h:hover { color: var(--pink-600); }
-  .group-h .chev { margin-left: auto; width: 8px; height: 8px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg) translateY(-3px); transition: transform .25s var(--ease); }
+  .group-sum { margin-left: 6px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: var(--f-text); font-size: .82rem; letter-spacing: 0; text-transform: none; color: var(--navy-500); font-weight: 400; }
+  .group-h:hover .group-sum { color: var(--navy); }
+  .group-h .chev { flex: none; margin-left: auto; width: 8px; height: 8px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg) translateY(-3px); transition: transform .25s var(--ease); }
   .group-h[aria-expanded="true"] .chev { transform: rotate(-135deg) translateY(-1px); }
   .group-h[aria-expanded="false"] { margin-bottom: 0; }
   .group-b[hidden] { display: none; }
@@ -535,7 +537,27 @@ let secsOpen = false;       // platform sections list: collapsed by default
 let upsellOpen = false, customOpen = false;
 /* panel sections (Options supplémentaires, Rythme d'appels, Inclus dans le forfait) work as an accordion: one open at a time */
 let openGroup = 'options';
-const groupHead = (key, label, hint = '') => `<button type="button" class="label group-h" data-group="${key}" aria-expanded="${openGroup === key}">${label}${hint ? ` <span class="hint">${hint}</span>` : ''}<span class="chev" aria-hidden="true"></span></button>`;
+/* a collapsed section shows what's selected in it, next to its title */
+const groupHead = (key, label, hint = '', summary = '') => {
+  const open = openGroup === key;
+  return `<button type="button" class="label group-h" data-group="${key}" aria-expanded="${open}">${label}${hint && open ? ` <span class="hint">${hint}</span>` : ''}`
+    + `${!open && summary ? `<span class="group-sum">${summary}</span>` : ''}<span class="chev" aria-hidden="true"></span></button>`;
+};
+const optionsSummary = (ups) => {
+  const picked = ups.filter((f) => sel[f.id]).map((f) => (f.type === 'qty' ? `${qty(sel[f.id])} × ${plain(f.b)}` : plain(f.sum || f.b)));
+  return picked.length ? picked.join(' · ') : 'Aucune option ajoutée';
+};
+const paceSummary = () => `${PACES[pace].t} · ${PACES[pace].d}`;
+const inclSummary = (incl) => {
+  const inc = incOf(planId), parts = [];
+  const n = SECTIONS.filter((x) => secs[x.id]).length;
+  parts.push(`Plateforme ${n}/${SECTIONS.length} sections`);
+  for (const f of incl) {
+    if (f.type === 'qty' && qty(sel[f.id]) !== qty(inc[f.id])) parts.push(`${qty(sel[f.id])} × ${plain(f.b)} / sem`);
+    else if (f.type === 'check' && !f.lock && !sel[f.id]) parts.push(`sans ${plain(f.b)}`);
+  }
+  return parts.length === 1 && n === SECTIONS.length ? 'Tout inclus' : parts.join(' · ');
+};
 const groupBody = (key, html) => `<div class="group-b"${openGroup === key ? '' : ' hidden'}>${html}</div>`;
 
 const incOf = (pid, pc = pace) => (pid === 'communaute' ? PACES[pc].inc : P[pid].inc);
@@ -645,7 +667,7 @@ function cardFeatures(p) {
 function paceHtml() {
   const d = 1 - disc();
   const opt = (id) => `<label class="row${pace === id ? ' on' : ''}"><span class="ic"><input type="radio" name="pace" data-pace="${id}" ${pace === id ? 'checked' : ''}><span class="box radio">${ICON.tick}</span></span><span class="tx"><b>${PACES[id].t}${id === 'intensif' ? '<span class="chip inc">Le plus populaire</span>' : ''}</b>${PACES[id].d}</span><span class="pr">${money(planWeekly('communaute', id) * d)}<span class="note">/ sem</span></span></label>`;
-  return `<div class="group">${groupHead('pace', "Rythme d'appels", '— en choisir 1')}${groupBody('pace', `<div class="list">${opt('intensif')}${opt('regulier')}</div>
+  return `<div class="group">${groupHead('pace', "Rythme d'appels", '— en choisir 1', paceSummary())}${groupBody('pace', `<div class="list">${opt('intensif')}${opt('regulier')}</div>
     <p class="pace-note">Progression Flexible — passe des semaines sans appel</p><div class="list">${opt('croisiere')}${opt('ajustee')}</div>`)}</div>`;
 }
 const GEAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg>';
@@ -774,7 +796,7 @@ function renderPanel() {
       <div class="panel-tools no-print"><button class="x" type="button" data-close="all" aria-label="Fermer">×</button></div></div>
     <div class="panel-b">
       <div>
-        ${ups.length ? `<div class="group">${groupHead('options', 'Options supplémentaires')}${groupBody('options', `<div class="list">${ups.map(rowHtml).join('')}</div>`)}</div>` : '<p class="group" style="color:var(--navy-500)">Aucune option supplémentaire pour ce forfait.</p>'}
+        ${ups.length ? `<div class="group">${groupHead('options', 'Options supplémentaires', '', optionsSummary(ups))}${groupBody('options', `<div class="list">${ups.map(rowHtml).join('')}</div>`)}</div>` : '<p class="group" style="color:var(--navy-500)">Aucune option supplémentaire pour ce forfait.</p>'}
         <button class="sublink no-print" type="button" data-custom="${planId}" aria-expanded="${customOpen}">${GEAR}Réglages du plan<span class="chev"></span></button>
         ${customOpen ? '<div class="cset" id="cpanel"></div>' : ''}
       </div>
@@ -790,7 +812,7 @@ function renderCustom(incl, mod) {
   box.innerHTML = `
     ${mod || (planId === 'communaute' && pace !== 'intensif') ? '<div class="cset-h no-print"><button class="pill pill--sm pill--light" type="button" data-reset>Réinitialiser le forfait</button></div>' : ''}
     ${planId === 'communaute' ? paceHtml() : ''}
-    <div class="group">${groupHead('incl', 'Inclus dans le forfait')}${groupBody('incl', `<div class="list">${incl.map(rowHtml).join('')}</div>`)}</div>`;
+    <div class="group">${groupHead('incl', 'Inclus dans le forfait', '', inclSummary(incl))}${groupBody('incl', `<div class="list">${incl.map(rowHtml).join('')}</div>`)}</div>`;
 }
 
 
