@@ -165,6 +165,13 @@
 
   .group { margin-top: 22px; }
   .group > .label, .more > summary { color: var(--navy); margin: 0 4px 12px; flex-wrap: wrap; }
+  /* collapsible section heading */
+  .group-h { appearance: none; border: 0; background: none; cursor: pointer; display: flex; width: calc(100% - 8px); padding: 6px 0; text-align: left; }
+  .group-h:hover { color: var(--pink-600); }
+  .group-h .chev { margin-left: auto; width: 8px; height: 8px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg) translateY(-3px); transition: transform .25s var(--ease); }
+  .group-h[aria-expanded="true"] .chev { transform: rotate(-135deg) translateY(-1px); }
+  .group-h[aria-expanded="false"] { margin-bottom: 0; }
+  .group-b[hidden] { display: none; }
   .hint { color: var(--pink-600); text-transform: none; letter-spacing: 0; font-family: var(--f-text); font-weight: 500; }
   .list { display: grid; border-top: 1px solid var(--line); }
   .more { margin-top: 22px; }
@@ -526,6 +533,10 @@ let sel = {}, secs = {};
 let secsOpen = false;       // platform sections list: collapsed by default
 /* two panels under the cards: the extra options (what a happy client sees) and, below it, the plan settings (downsells, seller only) */
 let upsellOpen = false, customOpen = false;
+/* panel sections (Options supplémentaires, Rythme d'appels, Inclus dans le forfait) work as an accordion: one open at a time */
+let openGroup = 'options';
+const groupHead = (key, label, hint = '') => `<button type="button" class="label group-h" data-group="${key}" aria-expanded="${openGroup === key}">${label}${hint ? ` <span class="hint">${hint}</span>` : ''}<span class="chev" aria-hidden="true"></span></button>`;
+const groupBody = (key, html) => `<div class="group-b"${openGroup === key ? '' : ' hidden'}>${html}</div>`;
 
 const incOf = (pid, pc = pace) => (pid === 'communaute' ? PACES[pc].inc : P[pid].inc);
 function choosePlan(pid) {
@@ -634,8 +645,8 @@ function cardFeatures(p) {
 function paceHtml() {
   const d = 1 - disc();
   const opt = (id) => `<label class="row${pace === id ? ' on' : ''}"><span class="ic"><input type="radio" name="pace" data-pace="${id}" ${pace === id ? 'checked' : ''}><span class="box radio">${ICON.tick}</span></span><span class="tx"><b>${PACES[id].t}${id === 'intensif' ? '<span class="chip inc">Le plus populaire</span>' : ''}</b>${PACES[id].d}</span><span class="pr">${money(planWeekly('communaute', id) * d)}<span class="note">/ sem</span></span></label>`;
-  return `<div class="group"><p class="label">Rythme d'appels <span class="hint">— en choisir 1</span></p><div class="list">${opt('intensif')}${opt('regulier')}</div>
-    <p class="pace-note">Progression Flexible — passe des semaines sans appel</p><div class="list">${opt('croisiere')}${opt('ajustee')}</div></div>`;
+  return `<div class="group">${groupHead('pace', "Rythme d'appels", '— en choisir 1')}${groupBody('pace', `<div class="list">${opt('intensif')}${opt('regulier')}</div>
+    <p class="pace-note">Progression Flexible — passe des semaines sans appel</p><div class="list">${opt('croisiere')}${opt('ajustee')}</div>`)}</div>`;
 }
 const GEAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg>';
 function renderPlans() {
@@ -763,7 +774,7 @@ function renderPanel() {
       <div class="panel-tools no-print"><button class="x" type="button" data-close="all" aria-label="Fermer">×</button></div></div>
     <div class="panel-b">
       <div>
-        ${ups.length ? `<div class="group"><p class="label">Options supplémentaires</p><div class="list">${ups.map(rowHtml).join('')}</div></div>` : '<p class="group" style="color:var(--navy-500)">Aucune option supplémentaire pour ce forfait.</p>'}
+        ${ups.length ? `<div class="group">${groupHead('options', 'Options supplémentaires')}${groupBody('options', `<div class="list">${ups.map(rowHtml).join('')}</div>`)}</div>` : '<p class="group" style="color:var(--navy-500)">Aucune option supplémentaire pour ce forfait.</p>'}
         <button class="sublink no-print" type="button" data-custom="${planId}" aria-expanded="${customOpen}">${GEAR}Réglages du plan<span class="chev"></span></button>
         ${customOpen ? '<div class="cset" id="cpanel"></div>' : ''}
       </div>
@@ -779,7 +790,7 @@ function renderCustom(incl, mod) {
   box.innerHTML = `
     ${mod || (planId === 'communaute' && pace !== 'intensif') ? '<div class="cset-h no-print"><button class="pill pill--sm pill--light" type="button" data-reset>Réinitialiser le forfait</button></div>' : ''}
     ${planId === 'communaute' ? paceHtml() : ''}
-    <div class="group"><p class="label">Inclus dans le forfait</p><div class="list">${incl.map(rowHtml).join('')}</div></div>`;
+    <div class="group">${groupHead('incl', 'Inclus dans le forfait')}${groupBody('incl', `<div class="list">${incl.map(rowHtml).join('')}</div>`)}</div>`;
 }
 
 
@@ -942,16 +953,19 @@ document.addEventListener('click', (e) => {
     if (id === planId) {
       /* the chosen card toggles its panels */
       if (upsellOpen || customOpen) upsellOpen = customOpen = false; else upsellOpen = true;
-    } else { choosePlan(id); upsellOpen = true; customOpen = false; } // choosing a plan shows its extra options only
+    } else { choosePlan(id); upsellOpen = true; customOpen = false; openGroup = 'options'; } // choosing a plan shows its extra options only
     render();
     if (upsellOpen) document.getElementById('panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     return;
   }
+  const gh = e.target.closest('[data-group]');
+  if (gh) { openGroup = openGroup === gh.dataset.group ? null : gh.dataset.group; renderPanel(); keepFocus(`[data-group="${gh.dataset.group}"]`); return; }
   const cu = e.target.closest('[data-custom]');
   if (cu) {
     const id = cu.dataset.custom;
     if (id !== planId) { if (id === 'communaute') pace = 'intensif'; choosePlan(id); customOpen = true; }
     else customOpen = !customOpen;
+    openGroup = customOpen ? (id === 'communaute' ? 'pace' : 'incl') : 'options';
     upsellOpen = true; // plan settings live inside the options panel
     render();
     document.getElementById(customOpen ? 'cpanel' : 'panel')?.scrollIntoView({ behavior: 'smooth', block: customOpen ? 'start' : 'nearest' });
